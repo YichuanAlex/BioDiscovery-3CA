@@ -1,0 +1,28 @@
+Qwen3.5-4B local server is ready: http://127.0.0.1:8000/health
+[tool] search_studies
+[auto-continue] phase=start; completion not verified
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[auto-continue] phase=start; completion not verified
+[tool] get_study
+[tool] read_file
+[tool-error] read_file: ENOENT: no such file or directory, lstat 'C:\Users\User\Desktop\agentic\3CA\Q1_R10\docs'
+[tool] list_files
+[tool] run_powershell
+[tool] run_powershell
+[auto-continue] phase=start; completion not verified
+[tool] plan_asset
+[tool] download_asset
+[tool-error] download_asset: {"error": "ThreeCAError", "message": "Remote asset is 554504664 bytes, above max_bytes=500000000."}
+[auto-continue] phase=start; completion not verified
+[tool] download_asset
+[tool] inspect_dataset
+[auto-continue] phase=start; completion not verified
+[auto-continue] phase=start; completion not verified
+[auto-continue] phase=start; completion not verified
+[tool] run_powershell
+[tool] run_powershell
+[auto-continue] phase=start; completion not verified
+[tool] run_powershell
+[auto-continue] phase=start; completion not verified

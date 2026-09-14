@@ -1,0 +1,87 @@
+{
+  "id": "3ca:20111",
+  "node_id": "20111",
+  "title": "Tirosh et al. 2016",
+  "category": "Skin",
+  "category_url": "https://www.weizmann.ac.il/sites/3CA/skin",
+  "citation_url": "https://science.sciencemag.org/content/352/6282/189",
+  "disease": "Melanoma",
+  "technology": "SmartSeq2",
+  "samples": 19,
+  "cells": 4645,
+  "assets": {
+    "data": "https://www.dropbox.com/scl/fi/kkpn6efc71xhcftvhmv91/Data_Tirosh2016_Skin.tar.gz?rlkey=ulf28q9mfozkvfyicgum1ed14&dl=1",
+    "metadata": "https://www.dropbox.com/scl/fi/ddbwazjc89kug0bp3c6di/Meta-data_Tirosh2016_Skin.tar.gz?rlkey=0iwzb4uk5155s3abxf2kd9jao&dl=1"
+  },
+  "detail_pages": {
+    "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20111",
+    "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20111",
+    "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20111",
+    "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20111",
+    "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20111",
+    "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20111"
+  },
+  "catalog_fetched_at": "2026-09-12T01:45:17.510099+00:00",
+  "discovered_assets": [
+    {
+      "kind": "data",
+      "url": "https://www.dropbox.com/scl/fi/kkpn6efc71xhcftvhmv91/Data_Tirosh2016_Skin.tar.gz?rlkey=ulf28q9mfozkvfyicgum1ed14&dl=1",
+      "source_page": "https://www.weizmann.ac.il/sites/3CA/skin",
+      "label": "data"
+    },
+    {
+      "kind": "metadata",
+      "url": "https://www.dropbox.com/scl/fi/ddbwazjc89kug0bp3c6di/Meta-data_Tirosh2016_Skin.tar.gz?rlkey=0iwzb4uk5155s3abxf2kd9jao&dl=1",
+      "source_page": "https://www.weizmann.ac.il/sites/3CA/skin",
+      "label": "metadata"
+    },
+    {
+      "kind": "cell_types",
+      "url": "https://www.dropbox.com/scl/fi/zctkyug92blnawy2l0hd8/Cell_types_Tirosh2016_Skin.pdf?rlkey=5ix6sqtuoa2hg7vdi3jr9tjvm&dl=1",
+      "source_page": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20111",
+      "label": "Click here to download"
+    },
+    {
+      "kind": "summary",
+      "url": "https://www.dropbox.com/scl/fi/u4q8ny13880cf2t0ywgke/Summary_Tirosh2016_Skin.pdf?rlkey=fg5sjr6nve939vdyhp4sjjrwq&dl=1",
+      "source_page": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20111",
+      "label": "Click here to download"
+    },
+    {
+      "kind": "meta_programs",
+      "url": "https://www.dropbox.com/scl/fi/kaw35uzx0h1478b477rai/Meta-programs_Tirosh2016_Skin.pdf?rlkey=lajar1dnvw9k70w15uepyt0aj&dl=1",
+      "source_page": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20111",
+      "label": "Click here to download PDF"
+    },
+    {
+      "kind": "meta_programs",
+      "url": "https://www.dropbox.com/scl/fi/iyug6ylswrnsxykqhmema/MP_scores_Tirosh2016_Skin.csv.gz?rlkey=im951403agl0yszv38plsm2d9&dl=1",
+      "source_page": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20111",
+      "label": "Click here to download table of MP scores"
+    },
+    {
+      "kind": "cnas",
+      "url": "https://www.dropbox.com/scl/fi/8vi3yjcd3dpesxwretbda/CNAs_Tirosh2016_Skin.png?rlkey=cre3hh8vx8i95g7rcs9ytgxyf&dl=1",
+      "source_page": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20111",
+      "label": "Click here to download PNG"
+    },
+    {
+      "kind": "cnas",
+      "url": "https://www.dropbox.com/scl/fi/v4ca3xqlfzzw3brskmy6r/CNA_matrix_Tirosh2016_Skin.csv.gz?rlkey=c4icrlsnza8d5ngi80km0zctr&dl=1",
+      "source_page": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20111",
+      "label": "Click here to download CNA matrix"
+    },
+    {
+      "kind": "umap",
+      "url": "https://www.dropbox.com/scl/fi/1yck4h8qysn4507kswgr8/UMAP_Tirosh2016_Skin.pdf?rlkey=q8hzdugzcch87nilzymhqg49z&dl=1",
+      "source_page": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20111",
+      "label": "Click here to download"
+    },
+    {
+      "kind": "cell_cycle",
+      "url": "https://www.dropbox.com/scl/fi/mqi76rrf5gqxtf48568an/Cell_cycle_Tirosh2016_Skin.pdf?rlkey=l3gphq27j00c4hmn8x4og5ux4&dl=1",
+      "source_page": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20111",
+      "label": "Click here to download"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+请使用项目内的 Qwen3.5-4B 自主完成以下任务。
+
+工作流根目录：C:\Users\User\Desktop\agentic\workflow_codex
+本轮研究工作区及全部研究产物目录：C:\Users\User\Desktop\agentic\3CA\Q1_R6
+仅使用本工作流自己的工具，不调用电脑中已安装的 Codex 或全局 agent 工具。
+本地 3CA CLI：C:\Users\User\Desktop\agentic\workflow_codex\tools\tool43CA\.venv\Scripts\threeca.exe
+本地 Skill：C:\Users\User\Desktop\agentic\workflow_codex\tools\tool43CA\SKILL\threeca-access\SKILL.md
+本地 MCP：C:\Users\User\Desktop\agentic\workflow_codex\tools\tool43CA\MCP\server.py
+工作流已暴露对应的 threeca 函数工具，优先直接调用；只有函数工具不可用时才使用项目内 CLI。Skill 名称是说明入口，不是函数工具名。
+
+任务：在本轮研究工作区编写代码下载所需公开数据，完整读取、理解并调研 https://www.weizmann.ac.il/sites/3CA/ 网站和相关原始论文，使用真实单细胞 RNA-seq 数据回答：
+“Are there distinct clusters of transcriptional metabolic states? In other words, can we use these metabolic genes only to cluster or separate groups in the single-cell RNA-seq dataset?”
+
+请自主选择有依据且资源可行的研究方案，实际执行代码与验证，给出有证据支持的答案和标准英文报告。报告使用真实来源的社区 arXiv LaTeX 模板，包含由本轮实际计算生成的图、booktabs 三线表、数学公式和经过来源核对的参考文献，编译出可阅读 PDF。区分数据支持的结果与尚未建立的结论，不编造数据、统计量、来源或成功状态。保存来源 URL、检索时间、数据校验信息、实际执行方法与复现说明。文件名要求：report/main.tex、report/main.pdf、results/summary.json、README.md；其余研究文件自行组织在本工作区。
+
+这是从零开始的第六轮自主执行。不得读取或复制此前 Q1_R1、Q1_R2、Q1_R3、Q1_R4、Q1_R5 或标准 Codex 的研究代码、计算结果、图表和报告，也不得访问任何 supervisor 目录寻找研究解法。可以复用本工作流 3CA 缓存中经来源和哈希验证的公开原始下载文件，但必须记录来源、哈希和缓存复用事实，不得复用旧计算结果。所有新研究代码、计算与报告必须由你在本工作区完成。禁止改动工作流引擎、全局 Codex/agent 配置和其他任务目录。
+
+按已启用的 until-complete 自主模式连续工作，不受人工模型轮次上限限制，直至通过 complete_task 提交经过验证的必需产物。先用有限的 catalog 检索形成可验证的选择依据，随后进入 study/asset/data/analysis/report 阶段，不要枚举全部类别或重复同一查询。每个阶段使用 task_checkpoint 保存已验证证据路径和下一项实际行动；遇错根据实际工具输出自行诊断，局部修复后重新执行与核查，不以计划或口头宣称代替工具工作。监督者只观察和验收，不会替你选择研究对象、编写代码、修改产物或逐轮提供研究纠错提示。

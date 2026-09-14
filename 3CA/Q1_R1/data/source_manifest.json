@@ -1,0 +1,25 @@
+{
+  "sources": [
+    {
+      "url": "https://www.dropbox.com/scl/fi/kkpn6efc71xhcftvhmv91/Data_Tirosh2016_Skin.tar.gz?rlkey=ulf28q9mfozkvfyicgum1ed14&dl=1",
+      "download_time": "2026-09-12T05:32:22.362394+00:00",
+      "source_path": "data\\Data_Tirosh2016_Skin.tar.gz",
+      "size": 234187869,
+      "sha256": "9e157aceb5a39add6e04c4d92db7f970bf19413a14a8c87a1262f9424f0818f6",
+      "matrix_shape": [
+        23686,
+        4645
+      ],
+      "nnz": 20564439
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/ddbwazjc89kug0bp3c6di/Meta-data_Tirosh2016_Skin.tar.gz?rlkey=0iwzb4uk5155s3abxf2kd9jao&dl=1",
+      "download_time": "2026-09-12T05:32:29.528051+00:00",
+      "source_path": "data\\Meta-data_Tirosh2016_Skin.tar.gz",
+      "size": 127155,
+      "sha256": "741107ef4ad09cb19b9a22c8af40ce7440e24f18cf1012c2ebb4c03600fede17",
+      "matrix_shape": null,
+      "nnz": null
+    }
+  ]
+}

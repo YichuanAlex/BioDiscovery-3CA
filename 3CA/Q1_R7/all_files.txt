@@ -1,0 +1,8 @@
+﻿
+FullName                                               
+--------                                               
+C:\Users\User\Desktop\agentic\3CA\Q1_R7\all_dirs.txt   
+C:\Users\User\Desktop\agentic\3CA\Q1_R7\all_files.txt  
+C:\Users\User\Desktop\agentic\3CA\Q1_R7\cache_files.txt
+
+

@@ -1,0 +1,21 @@
+name,method,feature_selection_seed,embedding_and_kmeans_seed,silhouette_subsample_seed,gene_count,n_clusters,silhouette,calinski_harabasz,davies_bouldin,metric_cells,genes_path
+HVG_size_matched,KMeans matched to primary Leiden cluster count,,0,7321,1318,6,0.1676386147737503,516.5627238224894,1.6539963912331064,3000,results/cd8_analysis/HVG_size_matched_genes.txt
+random_size_matched_01,KMeans matched to primary Leiden cluster count,10000.0,0,7321,1318,6,0.09370099008083344,391.914806855269,2.1412957585954833,3000,results/cd8_analysis/random_size_matched_01_genes.txt
+random_size_matched_02,KMeans matched to primary Leiden cluster count,10001.0,0,7321,1318,6,0.1281750351190567,428.68951328595256,1.921423734493023,3000,results/cd8_analysis/random_size_matched_02_genes.txt
+random_size_matched_03,KMeans matched to primary Leiden cluster count,10002.0,0,7321,1318,6,0.10091575235128403,393.24876362538987,2.1297765449994395,3000,results/cd8_analysis/random_size_matched_03_genes.txt
+random_size_matched_04,KMeans matched to primary Leiden cluster count,10003.0,0,7321,1318,6,0.11091440916061401,398.6930972846609,1.9813908727041254,3000,results/cd8_analysis/random_size_matched_04_genes.txt
+random_size_matched_05,KMeans matched to primary Leiden cluster count,10004.0,0,7321,1318,6,0.09877032786607742,415.01314974665326,2.063905285888079,3000,results/cd8_analysis/random_size_matched_05_genes.txt
+random_size_matched_06,KMeans matched to primary Leiden cluster count,10005.0,0,7321,1318,6,0.09656193852424622,419.4520978733671,2.0730272159309924,3000,results/cd8_analysis/random_size_matched_06_genes.txt
+random_size_matched_07,KMeans matched to primary Leiden cluster count,10006.0,0,7321,1318,6,0.1027359887957573,406.2809445537288,2.073724790793209,3000,results/cd8_analysis/random_size_matched_07_genes.txt
+random_size_matched_08,KMeans matched to primary Leiden cluster count,10007.0,0,7321,1318,6,0.09164907783269882,441.1016660257347,2.086451061417786,3000,results/cd8_analysis/random_size_matched_08_genes.txt
+random_size_matched_09,KMeans matched to primary Leiden cluster count,10008.0,0,7321,1318,6,0.11188061535358429,433.4118322933931,1.9819357657912697,3000,results/cd8_analysis/random_size_matched_09_genes.txt
+random_size_matched_10,KMeans matched to primary Leiden cluster count,10009.0,0,7321,1318,6,0.10140269249677658,380.62357625709376,2.0902583940014554,3000,results/cd8_analysis/random_size_matched_10_genes.txt
+random_size_matched_11,KMeans matched to primary Leiden cluster count,10010.0,0,7321,1318,6,0.10474928468465805,422.20602994515866,2.075150245219532,3000,results/cd8_analysis/random_size_matched_11_genes.txt
+random_size_matched_12,KMeans matched to primary Leiden cluster count,10011.0,0,7321,1318,6,0.10659375041723251,424.9575058998234,2.011711951974732,3000,results/cd8_analysis/random_size_matched_12_genes.txt
+random_size_matched_13,KMeans matched to primary Leiden cluster count,10012.0,0,7321,1318,6,0.11307244747877121,400.9320708306833,2.093794555035457,3000,results/cd8_analysis/random_size_matched_13_genes.txt
+random_size_matched_14,KMeans matched to primary Leiden cluster count,10013.0,0,7321,1318,6,0.1314728856086731,393.21638823290425,1.9626529468072842,3000,results/cd8_analysis/random_size_matched_14_genes.txt
+random_size_matched_15,KMeans matched to primary Leiden cluster count,10014.0,0,7321,1318,6,0.11999678611755371,416.4112943168923,1.9914554733276297,3000,results/cd8_analysis/random_size_matched_15_genes.txt
+random_size_matched_16,KMeans matched to primary Leiden cluster count,10015.0,0,7321,1318,6,0.10152163356542587,412.71891710912183,2.059077700857673,3000,results/cd8_analysis/random_size_matched_16_genes.txt
+random_size_matched_17,KMeans matched to primary Leiden cluster count,10016.0,0,7321,1318,6,0.10752607882022858,415.98950708291665,2.0550242688085363,3000,results/cd8_analysis/random_size_matched_17_genes.txt
+random_size_matched_18,KMeans matched to primary Leiden cluster count,10017.0,0,7321,1318,6,0.1095200628042221,414.41248017121677,2.083756489270975,3000,results/cd8_analysis/random_size_matched_18_genes.txt
+random_size_matched_19,KMeans matched to primary Leiden cluster count,10018.0,0,7321,1318,6,0.09869943559169769,429.3781843030455,2.069653462474219,3000,results/cd8_analysis/random_size_matched_19_genes.txt

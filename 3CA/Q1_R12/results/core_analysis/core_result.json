@@ -1,0 +1,146 @@
+{
+  "engine": "workflow_research_quality_metabolic_states_v1",
+  "engine_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\tools\\research-quality\\metabolic_states.py",
+  "engine_sha256": "f5e7884e5a166a0ccc60a6b3458ad81fd56f464400e2b6cf51630bec18b146ab",
+  "methods": {
+    "unit": "Exact-symbol aggregated raw counts; all source features form each cell library-size denominator",
+    "normalization": "Per-cell library size to 10000, then log1p",
+    "feature_scaling": "Scanpy scale(zero_center=False, max_value=10)",
+    "pca": {
+      "solver": "arpack",
+      "zero_center": true,
+      "components": 30,
+      "seed": 0
+    },
+    "neighbors": {
+      "n_neighbors": 15,
+      "seed": 0
+    },
+    "leiden": {
+      "flavor": "igraph",
+      "n_iterations": 2,
+      "directed": false
+    },
+    "HVG_control": "Highest variance of library-normalized log1p expression among prevalence-passing non-mitochondrial symbols; no dispersion/mean bin normalization",
+    "random_controls": "Size-matched sampling without replacement from prevalence-passing non-metabolic, non-mitochondrial symbols",
+    "control_partition": {
+      "method": "KMeans",
+      "n_init": 20,
+      "clusters": 17,
+      "seed": 0
+    },
+    "metrics": {
+      "space": "PCA",
+      "silhouette_subsample_seed": 7321,
+      "silhouette_cells": 3000,
+      "CH_DBI_population": "All QC-passing cells"
+    },
+    "stability": "Leiden randomization on a fixed PCA/neighbor graph; resolution chosen on the same dataset"
+  },
+  "inputs": {
+    "expression_path": "inputs/Exp_data_UMIcounts.mtx",
+    "expression_sha256": "51bf0452d166511fecca3f32d89f9fd0f631d173143173d82115f49cdaaa6c1d",
+    "cells_path": "inputs/Cells.csv",
+    "cells_sha256": "459fec35fbd3c89536bab26add4f3b733b4d57ce1deb08ad591455df68b94d37",
+    "genes_path": "inputs/Genes.txt",
+    "genes_sha256": "a285759694b2e6fdb495fa4e996643b50e77588013dbba7b1eb3d1926bd95b60",
+    "matrix_orientation": "genes_by_cells",
+    "matrix_shape": [
+      33538,
+      58843
+    ],
+    "metabolic_genes_path": "sources/reactome/metabolism_R-HSA-1430728_release_97_genes.txt",
+    "metabolic_genes_sha256": "1e7f5adf240a04c95cb30fd2a8ef83bcab7d519f5f2d12447d8b3112b9589164"
+  },
+  "parameters": {
+    "seeds": [
+      0,
+      17,
+      42,
+      73,
+      101
+    ],
+    "resolutions": [
+      0.4,
+      0.8,
+      1.2
+    ],
+    "random_baselines": 19,
+    "min_counts": 500,
+    "min_genes": 200,
+    "max_mito_percent": 20.0,
+    "min_feature_cells": 20,
+    "min_metabolic_genes": 30,
+    "metric_cells": 3000,
+    "duplicate_gene_symbols": "sum_raw_counts_by_exact_symbol_before_qc"
+  },
+  "outputs": {
+    "summary_path": "results/summary.json",
+    "summary_sha256": "1e054e0b014b2d776aab917388e45de9379dbbb8344ada65076ca9625a271c4a",
+    "labels_path": "results/core_analysis/cluster_labels.csv",
+    "labels_sha256": "46045306d10911d40c865a8ef5291e1dccffb8215f29c75e989a43dd53dcb5f3",
+    "matched_genes_path": "results/core_analysis/matched_metabolic_genes.txt",
+    "matched_genes_sha256": "c96a802c5e19d0ab3a0e1f5342e5481341506cf83e09e9fca1819c6ba14a42bc",
+    "baseline_metrics_path": "results/core_analysis/baseline_metrics.csv",
+    "baseline_metrics_sha256": "ac430e41d84401d8f88fb87f2bd51e1d759c1e17e819dac83c75980ecb2154f2",
+    "confounder_metrics_path": "results/core_analysis/confounder_metrics.csv",
+    "confounder_metrics_sha256": "68efad61c6ed7b27e08316910e76c95eea7e4724eee9620f2c8d9e7aa6425959",
+    "source_feature_mapping_path": "results/core_analysis/source_feature_to_symbol.csv",
+    "source_feature_mapping_sha256": "3263bdec7530608796a462a129f5cc74d3866cc3dadd75c04dada6451b62ab1f",
+    "umap_coordinates_path": "results/core_analysis/umap_coordinates.csv",
+    "umap_coordinates_sha256": "ca9401daaaa5b59ba479798d756f68ddd65bedca0d25118114ffe63113f59282",
+    "figures": [
+      "figures/metabolic_umap.pdf",
+      "figures/clustering_diagnostics.pdf"
+    ],
+    "figure_sha256": {
+      "figures/metabolic_umap.pdf": "19a5f26956e55241b2d764d2e830bb9e0b2946de12b08e9c31aca51d764e6b8e",
+      "figures/clustering_diagnostics.pdf": "d3dec0a8797f6c54afea2cad7d7bc370b39ba120053632a0800f6471e713bf75"
+    }
+  },
+  "facts": {
+    "source_cells": 58843,
+    "source_genes": 33538,
+    "unique_gene_symbols": 33514,
+    "duplicate_symbol_rows_aggregated": 24,
+    "cells_analyzed": 58843,
+    "unique_cells_analyzed": 58843,
+    "metabolic_source_genes": 2197,
+    "metabolic_genes_analyzed": 1984,
+    "n_clusters": 17,
+    "conclusion": "inconclusive",
+    "selected_resolution": 0.4,
+    "selected_seed": 0,
+    "metrics": {
+      "silhouette": 0.21600039303302765,
+      "calinski_harabasz": 6393.9647617421015,
+      "davies_bouldin": 1.4783872745190978,
+      "metric_cells": 3000,
+      "mean_pairwise_ari": 0.9548198219193484,
+      "min_pairwise_ari": 0.9164576705563711,
+      "mean_pairwise_nmi": 0.9679262525435209,
+      "min_pairwise_nmi": 0.9563232281482887,
+      "median_silhouette": 0.21600039303302765
+    },
+    "confounders_checked": [
+      "patient",
+      "sample",
+      "source",
+      "cell_type",
+      "cell_subtype",
+      "cell_cycle_phase",
+      "complexity",
+      "computed_total_counts",
+      "computed_detected_genes",
+      "computed_mito_percent"
+    ],
+    "replicate_field": "patient",
+    "baseline_exceedance_fraction": 0.05,
+    "baseline_silhouette_summary": {
+      "HVG": 0.2878866493701935,
+      "random_min": 0.20178064703941345,
+      "random_max": 0.2350311279296875,
+      "random_mean": 0.22070464570271342
+    }
+  }
+}

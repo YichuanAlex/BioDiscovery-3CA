@@ -1,0 +1,103 @@
+﻿{
+    "audited_at":  "2026-09-14T07:04:32.1832929Z",
+    "round":  "QA_R10",
+    "workflow_completion":  "accepted",
+    "scientific_semantic_acceptance":  "needs_followup",
+    "runner_success":  true,
+    "checkpoint":  {
+                       "status":  "completed_candidate",
+                       "phase":  "completion",
+                       "rounds":  58,
+                       "workspace_version":  21,
+                       "last_error":  null
+                   },
+    "validator":  {
+                      "valid":  true,
+                      "verification_call_id":  "chatcmpl-tool-aa57ccf87ceb1ae8",
+                      "manifest_sha256":  "bb4e25bbf82830c3ec67b520e8ae56c1ccea9160b27102b68196cfcbb078dc98",
+                      "errors":  [
+
+                                 ],
+                      "pdf_pages":  6,
+                      "rendered_pages":  6,
+                      "figures":  4,
+                      "references":  2
+                  },
+    "independent_validator":  {
+                                  "valid":  true,
+                                  "checked_at":  "2026-09-14T07:01:28.052676+00:00",
+                                  "errors":  [
+
+                                             ]
+                              },
+    "session":  {
+                    "path":  "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.runtime\\codex-home\\sessions\\QA\\R10-rollout-2026-09-14T14-29-24-0722bd5e-b4a.jsonl",
+                    "sha256":  "a31b9365b9b049554574858af251d463573352286e357a4f4251a204ffb4b825",
+                    "events":  364,
+                    "assistant_responses":  58,
+                    "tool_calls":  55,
+                    "tool_results":  58,
+                    "context_compactions":  0,
+                    "loop_recoveries":  1,
+                    "max_prompt_tokens":  79050,
+                    "last_event":  "session_end",
+                    "reason":  "process_exit"
+                },
+    "context":  {
+                    "model_native":  262144,
+                    "server_max":  262144,
+                    "workflow_budget":  262144,
+                    "generation":  8192,
+                    "trigger":  245760,
+                    "retained":  229376
+                },
+    "frozen_workflow_drift_count":  0,
+    "artifacts":  [
+                      {
+                          "path":  "report/main.tex",
+                          "bytes":  12858,
+                          "sha256":  "4163acb016fc7f0f70d19ea1065f124814ea5a6109156929d5329ff1ae1bec2d"
+                      },
+                      {
+                          "path":  "report/main.pdf",
+                          "bytes":  341663,
+                          "sha256":  "d89a10fdbbad4c23381c66b9a7db1beb9db87d6d5ab2169e105f6bb940842a3d"
+                      },
+                      {
+                          "path":  "results/summary.json",
+                          "bytes":  5317,
+                          "sha256":  "462c16b9a37687f99f8143ed403027110f2ce7c0fbb007c8cf8f5049db4624f2"
+                      },
+                      {
+                          "path":  "results/analysis_manifest.json",
+                          "bytes":  3819,
+                          "sha256":  "bb4e25bbf82830c3ec67b520e8ae56c1ccea9160b27102b68196cfcbb078dc98"
+                      },
+                      {
+                          "path":  "results/core_analysis/core_result.json",
+                          "bytes":  10955,
+                          "sha256":  "d8148486ecbda0d79f0aae4a4ca5a0d1b42a072fb9cbbeb7fbccbc8294fac25f"
+                      },
+                      {
+                          "path":  "results/cd8_analysis/core_result.json",
+                          "bytes":  10314,
+                          "sha256":  "772495beb1a222699c3b6ef75ce63acd93a2ffe61bd142a211c900b0dec3e685"
+                      },
+                      {
+                          "path":  "results/cd8_analysis/summary.json",
+                          "bytes":  4702,
+                          "sha256":  "c61b60a60bb032c3bd3e9c8a0edeadf85199fde68100c9720784f7a5ad28e6a0"
+                      },
+                      {
+                          "path":  "README.md",
+                          "bytes":  4753,
+                          "sha256":  "429017c99407708288dc6b1746c356a3aff95f31cef641277fb452766ed2edef"
+                      }
+                  ],
+    "scientific_followup":  [
+                                "report/main.tex normalization equation uses a median-UMI denominator, inconsistent with the core method: per-cell library size to 10000, then log1p",
+                                "README.md normalization formula is also inconsistent with the core method",
+                                "report/main.tex contains uncalibrated qualitative phrases: moderate, weaker, more similar to random clustering, and not strongly supported",
+                                "report contains two booktabs tables although the round prompt requested one"
+                            ]
+}

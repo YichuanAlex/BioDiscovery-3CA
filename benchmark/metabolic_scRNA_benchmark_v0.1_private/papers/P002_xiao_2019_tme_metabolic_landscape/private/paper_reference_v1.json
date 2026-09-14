@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P002",
+  "status": "paper_reported_reference_not_release_gold",
+  "adjudication_note": "These targets are directly anchored to the article and Supplementary Information. They are suitable for development-round error analysis, but release scoring still requires an independent second curator and frozen tolerances.",
+  "population": {
+    "melanoma_cells": 4054,
+    "hnscc_cells": 5502,
+    "paper_metabolic_gene_count": 1566
+  },
+  "expected_conclusions": {
+    "q1_distinct_transcriptional_structure": "supported",
+    "malignant_patient_specific_structure": "supported",
+    "nonmalignant_patient_specific_structure": "unsupported",
+    "metabolic_gene_specificity_over_random_or_complete_genes": "unsupported",
+    "q2_cell_types_distinguishable_by_metabolic_features": "supported",
+    "q3_within_cd8_state_heterogeneity": "not_tested",
+    "direct_flux_or_causal_inference": false
+  },
+  "paper_reported_values": {
+    "malignant_within_patient_mean_spearman": 0.91,
+    "malignant_between_patient_mean_spearman": 0.79,
+    "nonmalignant_within_minus_between_melanoma": 0.01,
+    "nonmalignant_within_minus_between_hnscc": 0.007,
+    "relative_mutual_information": {
+      "melanoma_malignant_metabolic_vs_complete": 1.0,
+      "melanoma_malignant_metabolic_vs_random": 1.0,
+      "melanoma_nonmalignant_metabolic_vs_complete": 0.96,
+      "melanoma_nonmalignant_metabolic_vs_random": 0.96,
+      "hnscc_malignant_metabolic_vs_complete": 1.0,
+      "hnscc_malignant_metabolic_vs_random": 1.0,
+      "hnscc_nonmalignant_metabolic_vs_complete": 1.0,
+      "hnscc_nonmalignant_metabolic_vs_random": 1.0
+    }
+  },
+  "source_anchors": [
+    {
+      "source": "origin/main_article.xml",
+      "anchor": "Results, Landscape of metabolic gene expression at single-cell level, paragraphs 7-8 and Figure 1"
+    },
+    {
+      "source": "origin/supplementary/41467_2019_11738_MOESM1_ESM.pdf",
+      "anchor": "Supplementary Methods pages 2-3 and Supplementary Table 1 page 23"
+    },
+    {
+      "source": "origin/supplementary/41467_2019_11738_MOESM2_ESM.xlsx",
+      "anchor": "Melanoma and HNSCC sheets, cell-type pathway activity tables"
+    }
+  ],
+  "pass_policy": {
+    "minimum_points": 80,
+    "maximum_points": 100,
+    "critical_errors": [
+      "claiming metabolic specificity when random or full-transcriptome controls are comparable",
+      "claiming held-out transfer without a held-out analysis artifact",
+      "claiming within-CD8 states when no within-CD8 analysis was run",
+      "claiming measured flux or causality from RNA expression"
+    ]
+  }
+}

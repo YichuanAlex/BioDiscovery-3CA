@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "dataset": {
+    "study_id": "3ca:20773",
+    "source_url": "https://www.nature.com/articles/s41588-022-01061-8",
+    "sha256": "51bf0452d166511fecca3f32d89f9fd0f631d173143173d82115f49cdaaa6c1d",
+    "expression_path": "inputs/Exp_data_UMIcounts.mtx",
+    "cells_path": "inputs/Cells.csv",
+    "gene_names_path": "inputs/Genes.txt",
+    "n_cells": 58843,
+    "n_genes": 33538,
+    "matrix_orientation": "genes_by_cells",
+    "cell_id_field": "cell_name"
+  },
+  "feature_set": {
+    "name": "User-supplied metabolic genes",
+    "source_url": "local-user-supplied-input",
+    "retrieved_at": "2026-09-14T03:16:47.218457+00:00",
+    "sha256": "7503180d29693bd1e654ea93281db0e3ec4177ff44842c8b02f6a098402e41a9",
+    "genes_path": "inputs/metabolic_genes_total.csv",
+    "matched_genes_path": "results/core_analysis/matched_metabolic_genes.txt",
+    "source_gene_count": 1988,
+    "matched_gene_count": 900
+  },
+  "analysis": {
+    "engine": "workflow_research_quality_metabolic_states_v2",
+    "core_result_path": "results/core_analysis/core_result.json",
+    "core_result_sha256": "57aa2cd746cc7bc3559bd405b93521bb4d8b4ea4f452b2b380b0c7ae357fa3c8",
+    "input_unit": "cell",
+    "rows_analyzed": 58843,
+    "unique_cells_analyzed": 58843,
+    "random_seeds": [0, 17, 42, 73, 101],
+    "baselines": [
+      {
+        "name": "HVG and random size-matched controls",
+        "metrics": {
+          "metabolic_matched_kmeans_silhouette": 0.22014786303043365,
+          "random_controls_exceeding_or_equal": 2,
+          "random_controls_total": 19,
+          "add_one_rank_fraction": 0.15
+        },
+        "result_path": "results/core_analysis/baseline_metrics.csv"
+      }
+    ],
+    "confounders_checked": [
+      "patient",
+      "sample",
+      "source",
+      "cell_type",
+      "cell_subtype",
+      "cell_cycle_phase",
+      "complexity",
+      "computed_total_counts",
+      "computed_detected_genes",
+      "computed_mito_percent"
+    ],
+    "methods": [
+      {
+        "name": "Scanpy Leiden on supplied metabolic genes",
+        "labels_path": "results/core_analysis/cluster_labels.csv",
+        "cell_id_column": "cell_name",
+        "label_column": "cluster",
+        "n_clusters": 17,
+        "metrics": {
+          "silhouette": 0.21661581099033356,
+          "calinski_harabasz": 6730.739060896593,
+          "davies_bouldin": 1.577973214248373,
+          "metric_cells": 3000,
+          "mean_pairwise_ari": 0.9650730581380069,
+          "min_pairwise_ari": 0.947222016088431,
+          "mean_pairwise_nmi": 0.9681893048564086,
+          "min_pairwise_nmi": 0.9581425272409769,
+          "median_silhouette": 0.22155894339084625
+        }
+      }
+    ],
+    "subgroup_analyses": [
+      {
+        "scope": {
+          "field": "cell_subtype",
+          "values": ["CD8 T cells"],
+          "source_cells_selected": 3624
+        },
+        "core_result_path": "results/cd8_analysis/core_result.json",
+        "core_result_sha256": "811c1102d4b8827bd00982cddd7222bb3c073324be982d1304b7be911d0bed29"
+      }
+    ]
+  },
+  "references": [
+    {
+      "key": "choudhury_2022",
+      "doi": "10.1038/s41588-022-01061-8",
+      "metadata_path": "sources\\literature\\crossref_db798362115f799a.json"
+    },
+    {
+      "key": "gavish_2023",
+      "doi": "10.1038/s41586-023-06130-4",
+      "metadata_path": "sources\\literature\\crossref_f8a41d129a6a5b41.json"
+    }
+  ],
+  "artifacts": {
+    "tex": "report/main.tex",
+    "pdf": "report/main.pdf",
+    "summary": "results/summary.json",
+    "figures": [
+      "figures/metabolic_umap.pdf",
+      "figures/clustering_diagnostics.pdf",
+      "figures/cd8_analysis/metabolic_umap.pdf",
+      "figures/cd8_analysis/clustering_diagnostics.pdf"
+    ]
+  }
+}

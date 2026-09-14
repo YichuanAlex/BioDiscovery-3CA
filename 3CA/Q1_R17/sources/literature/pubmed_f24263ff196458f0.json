@@ -1,0 +1,15 @@
+{
+  "source": "NCBI PubMed E-utilities",
+  "query": "Reactome pathway database Nucleic Acids Research 2021 D518 D527",
+  "retrieved_at": "2026-09-13T11:03:53.889081+00:00",
+  "count": 0,
+  "returned": 0,
+  "records": [],
+  "source_urls": [
+    "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=Reactome+pathway+database+Nucleic+Acids+Research+2021+D518+D527&retmode=json&retmax=5&tool=workflow_codex"
+  ],
+  "response_sha256": {
+    "search": "a0221489f66b7f9ee826364a216377cdc0680036fd34114739ea018eddd9fd54"
+  },
+  "metadata_path": "sources\\literature\\pubmed_f24263ff196458f0.json"
+}

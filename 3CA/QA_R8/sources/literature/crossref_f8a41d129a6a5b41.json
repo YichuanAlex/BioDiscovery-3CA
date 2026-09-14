@@ -1,0 +1,389 @@
+{
+  "source": "Crossref REST API",
+  "requested_identifier": "10.1038/s41586-023-06130-4",
+  "catalog_citation_url": null,
+  "source_url": "https://api.crossref.org/v1/works/10.1038%2Fs41586-023-06130-4",
+  "retrieved_at": "2026-09-14T03:16:58.257770+00:00",
+  "response_sha256": "694ef64b3b05e2d53b336e2599a7172650be5c4d9f3be1879513411045291ef4",
+  "doi": "10.1038/s41586-023-06130-4",
+  "title": [
+    "Hallmarks of transcriptional intratumour heterogeneity across a thousand tumours"
+  ],
+  "container_title": [
+    "Nature"
+  ],
+  "author": [
+    {
+      "given": "Avishai",
+      "family": "Gavish",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-2128-5247",
+      "authenticated-orcid": false,
+      "given": "Michael",
+      "family": "Tyler",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Alissa C.",
+      "family": "Greenwald",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-5197-453X",
+      "authenticated-orcid": false,
+      "given": "Rouven",
+      "family": "Hoefflin",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Dor",
+      "family": "Simkin",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-3539-1940",
+      "authenticated-orcid": false,
+      "given": "Roi",
+      "family": "Tschernichovsky",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Noam",
+      "family": "Galili Darnell",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Einav",
+      "family": "Somech",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Chaya",
+      "family": "Barbolin",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Tomer",
+      "family": "Antman",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Daniel",
+      "family": "Kovarsky",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-6058-1404",
+      "authenticated-orcid": false,
+      "given": "Thomas",
+      "family": "Barrett",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-7699-5188",
+      "authenticated-orcid": false,
+      "given": "L. Nicolas",
+      "family": "Gonzalez Castro",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Debdatta",
+      "family": "Halder",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Rony",
+      "family": "Chanoch-Myers",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Julie",
+      "family": "Laffy",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-9215-9518",
+      "authenticated-orcid": false,
+      "given": "Michael",
+      "family": "Mints",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Adi",
+      "family": "Wider",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Rotem",
+      "family": "Tal",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-6551-9338",
+      "authenticated-orcid": false,
+      "given": "Avishay",
+      "family": "Spitzer",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Toshiro",
+      "family": "Hara",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Maria",
+      "family": "Raitses-Gurevich",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Chani",
+      "family": "Stossel",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Talia",
+      "family": "Golan",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Amit",
+      "family": "Tirosh",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-9898-5351",
+      "authenticated-orcid": false,
+      "given": "Mario L.",
+      "family": "Suvà",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-3543-889X",
+      "authenticated-orcid": false,
+      "given": "Sidharth V.",
+      "family": "Puram",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-5477-2987",
+      "authenticated-orcid": false,
+      "given": "Itay",
+      "family": "Tirosh",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        5,
+        31
+      ]
+    ]
+  },
+  "volume": "618",
+  "issue": "7965",
+  "page": "598-606",
+  "type": "journal-article",
+  "publisher": "Springer Science and Business Media LLC",
+  "url": "https://doi.org/10.1038/s41586-023-06130-4",
+  "metadata_path": "sources\\literature\\crossref_f8a41d129a6a5b41.json"
+}

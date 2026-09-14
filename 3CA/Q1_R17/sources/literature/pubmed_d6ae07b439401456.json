@@ -1,0 +1,788 @@
+{
+  "source": "NCBI PubMed E-utilities",
+  "query": "single cell RNA-seq metabolic states clustering",
+  "retrieved_at": "2026-09-13T09:55:09.224079+00:00",
+  "count": 1624,
+  "returned": 10,
+  "records": [
+    {
+      "uid": "42731998",
+      "title": "A pro-inflammatory metastasis-associated macrophage subset induces tumor-promoting mesothelial cell conversion in ovarian cancer via IL-1α secretion.",
+      "authors": [
+        {
+          "name": "Heidemann S",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Finkernagel F",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Steitz AM",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Koennecke J",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Werner F",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Beutgen VM",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Szymanski W",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Graumann J",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Teply-Szymanski J",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Nist A",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Stiewe T",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Keber CU",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Gremke N",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Wagner U",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Denkert C",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Gómez-Serrano M",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Pogge von Strandmann E",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Müller R",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Reinartz S",
+          "authtype": "Author",
+          "clusterid": ""
+        }
+      ],
+      "fulljournalname": "Cell death & disease",
+      "pubdate": "2026 Sep 12",
+      "volume": "17",
+      "issue": "1",
+      "pages": "",
+      "elocationid": "pii: 794. doi: 10.1038/s41419-026-09280-1",
+      "articleids": [
+        {
+          "idtype": "pubmed",
+          "idtypen": 1,
+          "value": "42731998"
+        },
+        {
+          "idtype": "doi",
+          "idtypen": 3,
+          "value": "10.1038/s41419-026-09280-1"
+        },
+        {
+          "idtype": "pii",
+          "idtypen": 4,
+          "value": "10.1038/s41419-026-09280-1"
+        }
+      ]
+    },
+    {
+      "uid": "42723032",
+      "title": "NNMT-associated metabolic-thromboinflammatory-immune co-activation in heterogeneous CTC clusters: a hypothesis-generating computational framework\".",
+      "authors": [
+        {
+          "name": "Gong J",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Wang Z",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Shi Y",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Ren M",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Li T",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Li G",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Peng R",
+          "authtype": "Author",
+          "clusterid": ""
+        }
+      ],
+      "fulljournalname": "BMC cancer",
+      "pubdate": "2026 Sep 10",
+      "volume": "26",
+      "issue": "1",
+      "pages": "",
+      "elocationid": "pii: 1085. doi: 10.1186/s12885-026-16692-x",
+      "articleids": [
+        {
+          "idtype": "pubmed",
+          "idtypen": 1,
+          "value": "42723032"
+        },
+        {
+          "idtype": "doi",
+          "idtypen": 3,
+          "value": "10.1186/s12885-026-16692-x"
+        },
+        {
+          "idtype": "pii",
+          "idtypen": 4,
+          "value": "10.1186/s12885-026-16692-x"
+        }
+      ]
+    },
+    {
+      "uid": "42711331",
+      "title": "Distinct cell states define larval and adult body plans in a hemichordate.",
+      "authors": [
+        {
+          "name": "Bump P",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Brewster C",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Formery L",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Lubeck L",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Campbell C",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Morri M",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Sit R",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Rokhsar DS",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Benham-Pyle B",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Alvarado AS",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Lowe CJ",
+          "authtype": "Author",
+          "clusterid": ""
+        }
+      ],
+      "fulljournalname": "Nature communications",
+      "pubdate": "2026 Sep 8",
+      "volume": "17",
+      "issue": "1",
+      "pages": "",
+      "elocationid": "pii: 9358. doi: 10.1038/s41467-026-77191-y",
+      "articleids": [
+        {
+          "idtype": "pubmed",
+          "idtypen": 1,
+          "value": "42711331"
+        },
+        {
+          "idtype": "doi",
+          "idtypen": 3,
+          "value": "10.1038/s41467-026-77191-y"
+        },
+        {
+          "idtype": "pii",
+          "idtypen": 4,
+          "value": "10.1038/s41467-026-77191-y"
+        }
+      ]
+    },
+    {
+      "uid": "42706380",
+      "title": "Integrated analysis of single-cell and transcriptome data reveals temporal dynamics of microglial phagocytic reprogramming in neuropathic pain progression.",
+      "authors": [
+        {
+          "name": "Qian Y",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Wang Y",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Liu Y",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Geng Y",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Dong M",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Huang Y",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Zhai C",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Wu Q",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Niu S",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Liu W",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Shen Y",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Wu Q",
+          "authtype": "Author",
+          "clusterid": ""
+        }
+      ],
+      "fulljournalname": "Scientific reports",
+      "pubdate": "2026 Sep 7",
+      "volume": "16",
+      "issue": "1",
+      "pages": "",
+      "elocationid": "doi: 10.1038/s41598-026-69062-9",
+      "articleids": [
+        {
+          "idtype": "pubmed",
+          "idtypen": 1,
+          "value": "42706380"
+        },
+        {
+          "idtype": "pmc",
+          "idtypen": 8,
+          "value": "PMC13550432"
+        },
+        {
+          "idtype": "pmcid",
+          "idtypen": 5,
+          "value": "pmc-id: PMC13550432;"
+        },
+        {
+          "idtype": "doi",
+          "idtypen": 3,
+          "value": "10.1038/s41598-026-69062-9"
+        },
+        {
+          "idtype": "pii",
+          "idtypen": 4,
+          "value": "10.1038/s41598-026-69062-9"
+        }
+      ]
+    },
+    {
+      "uid": "42706255",
+      "title": "Enhancing pan-cancer spatial transcriptomics at single-cell resolution with stPainter.",
+      "authors": [
+        {
+          "name": "Yang Y",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Luo Y",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Zhang K",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Zhang Z",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Peng H",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Cao C",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Liu Q",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Ma B",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Chen Y",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Shen L",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Chen E",
+          "authtype": "Author",
+          "clusterid": ""
+        }
+      ],
+      "fulljournalname": "Nature communications",
+      "pubdate": "2026 Aug 10",
+      "volume": "17",
+      "issue": "1",
+      "pages": "",
+      "elocationid": "doi: 10.1038/s41467-026-76552-x",
+      "articleids": [
+        {
+          "idtype": "pubmed",
+          "idtypen": 1,
+          "value": "42706255"
+        },
+        {
+          "idtype": "pmc",
+          "idtypen": 8,
+          "value": "PMC13550648"
+        },
+        {
+          "idtype": "pmcid",
+          "idtypen": 5,
+          "value": "pmc-id: PMC13550648;"
+        },
+        {
+          "idtype": "doi",
+          "idtypen": 3,
+          "value": "10.1038/s41467-026-76552-x"
+        },
+        {
+          "idtype": "pii",
+          "idtypen": 4,
+          "value": "10.1038/s41467-026-76552-x"
+        }
+      ]
+    },
+    {
+      "uid": "42698543",
+      "title": "Integrated histopathology and single-cell transcriptomics reveal distinct pathological features and foamy macrophage characteristics in spinal tuberculosis and brucellar spondylitis.",
+      "authors": [
+        {
+          "name": "Liu Q",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Guo H",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Liu J",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Tao Z",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Ma L",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Gu Z",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Yue X",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Wei D",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Niu N",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Shi J",
+          "authtype": "Author",
+          "clusterid": ""
+        }
+      ],
+      "fulljournalname": "Frontiers in immunology",
+      "pubdate": "2026",
+      "volume": "17",
+      "issue": "",
+      "pages": "1909083",
+      "elocationid": "doi: 10.3389/fimmu.2026.1909083",
+      "articleids": [
+        {
+          "idtype": "pubmed",
+          "idtypen": 1,
+          "value": "42698543"
+        },
+        {
+          "idtype": "pmc",
+          "idtypen": 8,
+          "value": "PMC13541710"
+        },
+        {
+          "idtype": "pmcid",
+          "idtypen": 5,
+          "value": "pmc-id: PMC13541710;"
+        },
+        {
+          "idtype": "doi",
+          "idtypen": 3,
+          "value": "10.3389/fimmu.2026.1909083"
+        }
+      ]
+    },
+    {
+      "uid": "42689991",
+      "title": "PDE4DIP-Derived MMG8 Supports Proliferation, Migration, and Tumor Growth in Hepatocellular Carcinoma Models.",
+      "authors": [
+        {
+          "name": "Wang C",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Bian C",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Luo T",
+          "authtype": "Author",
+          "clusterid": ""
+        }
+      ],
+      "fulljournalname": "Frontiers in bioscience (Landmark edition)",
+      "pubdate": "2026 Aug 14",
+      "volume": "31",
+      "issue": "8",
+      "pages": "54109",
+      "elocationid": "doi: 10.31083/FBL54109",
+      "articleids": [
+        {
+          "idtype": "pubmed",
+          "idtypen": 1,
+          "value": "42689991"
+        },
+        {
+          "idtype": "doi",
+          "idtypen": 3,
+          "value": "10.31083/FBL54109"
+        },
+        {
+          "idtype": "pii",
+          "idtypen": 4,
+          "value": "S2768-6701(26)02222-7"
+        }
+      ]
+    },
+    {
+      "uid": "42677450",
+      "title": "Integrated Genomic and Proteomic Analysis Reveals T-B Lymphocyte Signatures in the MYCN Driven \"Immune Desert\" of Specific Neuroblastoma Subtypes.",
+      "authors": [
+        {
+          "name": "Hu JJ",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Kang WJ",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Hu JT",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Li YX",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Song FJ",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Deng M",
+          "authtype": "Author",
+          "clusterid": ""
+        }
+      ],
+      "fulljournalname": "CNS neuroscience & therapeutics",
+      "pubdate": "2026 Sep",
+      "volume": "32",
+      "issue": "9",
+      "pages": "e71054",
+      "elocationid": "doi: 10.1002/cns.71054",
+      "articleids": [
+        {
+          "idtype": "pubmed",
+          "idtypen": 1,
+          "value": "42677450"
+        },
+        {
+          "idtype": "pmc",
+          "idtypen": 8,
+          "value": "PMC13531363"
+        },
+        {
+          "idtype": "pmcid",
+          "idtypen": 5,
+          "value": "pmc-id: PMC13531363;"
+        },
+        {
+          "idtype": "doi",
+          "idtypen": 3,
+          "value": "10.1002/cns.71054"
+        }
+      ]
+    },
+    {
+      "uid": "42667495",
+      "title": "Integrative transcriptomics identifies shared aging-associated inhibitory-neuron states and prioritizes RGL2 across postoperative delirium and Alzheimer's disease.",
+      "authors": [
+        {
+          "name": "Fan W",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Han S",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Wang C",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Gao J",
+          "authtype": "Author",
+          "clusterid": ""
+        }
+      ],
+      "fulljournalname": "Journal of molecular neuroscience : MN",
+      "pubdate": "2026 Aug 29",
+      "volume": "76",
+      "issue": "3",
+      "pages": "",
+      "elocationid": "pii: 138. doi: 10.1007/s12031-026-02568-z",
+      "articleids": [
+        {
+          "idtype": "pubmed",
+          "idtypen": 1,
+          "value": "42667495"
+        },
+        {
+          "idtype": "doi",
+          "idtypen": 3,
+          "value": "10.1007/s12031-026-02568-z"
+        },
+        {
+          "idtype": "pii",
+          "idtypen": 4,
+          "value": "10.1007/s12031-026-02568-z"
+        }
+      ]
+    },
+    {
+      "uid": "42661799",
+      "title": "Single-cell transcriptomic profiling of cerebrospinal fluid reveals immune-cell heterogeneity and multicompartment MIF/CD74-related communication in tuberculous and purulent meningitis.",
+      "authors": [
+        {
+          "name": "Hu H",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Hou L",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Wang Y",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Yu Z",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Zhang J",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Yang F",
+          "authtype": "Author",
+          "clusterid": ""
+        }
+      ],
+      "fulljournalname": "Frontiers in cellular and infection microbiology",
+      "pubdate": "2026",
+      "volume": "16",
+      "issue": "",
+      "pages": "1867160",
+      "elocationid": "doi: 10.3389/fcimb.2026.1867160",
+      "articleids": [
+        {
+          "idtype": "pubmed",
+          "idtypen": 1,
+          "value": "42661799"
+        },
+        {
+          "idtype": "pmc",
+          "idtypen": 8,
+          "value": "PMC13518202"
+        },
+        {
+          "idtype": "pmcid",
+          "idtypen": 5,
+          "value": "pmc-id: PMC13518202;"
+        },
+        {
+          "idtype": "doi",
+          "idtypen": 3,
+          "value": "10.3389/fcimb.2026.1867160"
+        }
+      ]
+    }
+  ],
+  "source_urls": [
+    "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=single+cell+RNA-seq+metabolic+states+clustering&retmode=json&retmax=10&tool=workflow_codex",
+    "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=42731998%2C42723032%2C42711331%2C42706380%2C42706255%2C42698543%2C42689991%2C42677450%2C42667495%2C42661799&retmode=json&tool=workflow_codex"
+  ],
+  "response_sha256": {
+    "search": "207327efe730383947878c88ed1f0c53448d09332cfe8540a787a62ba5bb61e6",
+    "summary": "8d89434a1bad1e226aa01f08c50798d915ac974ccd7d669c7d760009288c8cc0"
+  },
+  "metadata_path": "sources\\literature\\pubmed_d6ae07b439401456.json"
+}

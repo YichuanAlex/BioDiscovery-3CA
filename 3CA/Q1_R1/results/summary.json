@@ -1,0 +1,61 @@
+{
+  "dataset": {
+    "cells": 4645,
+    "genes": 23686,
+    "nonzero_entries": 20564439,
+    "samples": 19,
+    "annotated_cells": 4097,
+    "malignant_cells": 1257
+  },
+  "metabolic_features": {
+    "kegg_pathways": 85,
+    "unique_genes_in_dataset_after_detection_filter": 1360,
+    "pca_variance_30_components": 0.19782409071922302
+  },
+  "all_cells_clustering": {
+    "selected_k": 2,
+    "silhouette": 0.37704890966415405,
+    "seed_stability_ari_mean": 0.999646808548745,
+    "seed_stability_ari_sd": 0.0007143648835777338,
+    "matched_random_mean": 0.3155469298362732,
+    "matched_random_sd": 0.008059099316596985,
+    "empirical_p": 0.047619047619047616,
+    "ami_cell_type": 0.48727706077439636,
+    "ami_sample": 0.08790625929269866,
+    "pc1_complexity_spearman_rho": 0.6499191557330929,
+    "pc1_complexity_p": 0.0,
+    "complexity_adjusted_selected_k": 4,
+    "complexity_adjusted_silhouette": 0.22368009227883998,
+    "complexity_adjusted_seed_stability_ari_mean": 0.999667621749833,
+    "complexity_adjusted_seed_stability_ari_sd": 0.00030064743934891605
+  },
+  "patient_blocked_cell_type_classification": {
+    "metabolic_balanced_accuracy": 0.8838894834773928,
+    "metabolic_macro_f1": 0.8559186289872693,
+    "matched_random_balanced_accuracy_mean": 0.8957563112349893,
+    "matched_random_balanced_accuracy_sd": 0.013472163732571377,
+    "matched_random_macro_f1_mean": 0.875396435137868,
+    "matched_random_macro_f1_sd": 0.015021589456812064,
+    "hvg_balanced_accuracy": 0.8922577702601172,
+    "hvg_macro_f1": 0.8973435989623928
+  },
+  "malignant_cells_clustering": {
+    "cells": 1257,
+    "samples": 15,
+    "selected_k": 8,
+    "silhouette": 0.22713162004947662,
+    "seed_stability_ari_mean": 0.8143344847451043,
+    "seed_stability_ari_sd": 0.08450504248514241,
+    "ami_sample": 0.7416554264140627,
+    "patient_and_complexity_adjusted_selected_k": 2,
+    "patient_and_complexity_adjusted_silhouette": 0.22750491760810196,
+    "patient_and_complexity_adjusted_seed_stability_ari_mean": 0.9698866962050059,
+    "patient_and_complexity_adjusted_seed_stability_ari_sd": 0.01333324472301065,
+    "within_patient_median_max_silhouette": 0.2713942527770996,
+    "within_patient_iqr": [
+      0.20606552064418793,
+      0.3466886878013611
+    ],
+    "patients_with_at_least_30_cells": 9
+  }
+}

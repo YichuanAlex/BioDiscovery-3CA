@@ -1,0 +1,107 @@
+{
+  "snapshot_at": "2026-09-14T03:39:54.647Z",
+  "task": "C:\\Users\\User\\Desktop\\agentic\\3CA\\QA_R8",
+  "status": "runner_failed",
+  "runner_pid": 6736,
+  "runner_process": null,
+  "runner_identity_match": false,
+  "checkpoint_status": "needs_attention",
+  "checkpoint_read_error": null,
+  "phase": "bundle_repair",
+  "next_action": "Repair only results/analysis_manifest.json or report/main.tex for these validator errors, then rebuild if TeX changed: ERROR: {\r\n  \"valid\": false,\r\n  \"checked_at\": \"2026-09-14T03:33:11.900400+00:00\",\r\n  \"manifest_path\": \"results\\\\analysis_manifest.json\",\r\n  \"manifest_sha256\": \"395bda3e9386c46419b9b8690694b95c929269fdf5d71f2ecdae43c01dcd6fd3\",\r\n  \"errors\": [\r\n    \"feature_set matched_genes_path must contain matched_gene_count unique genes, all from the source set\",\r\n    \"Manifest matched_gene_count does not match core metabolic features\",\r\n    \"Report applies an unvalidated qualitative threshold to an association metric\",\r\n    \"Report turns descriptive random-control results into a definitive biological conclusion\",\r\n    \"Each manifest figure must appear in its own LaTeX figure environment\",\r\n    \"Figure label is not referenced in report prose: fig:global_umap\",\r\n    \"Figure label is not referenced in repor\n...[OUTPUT TRUNCATED: kept first 800 and last 800 of 1785 characters; use filters or save output to a workspace file]...\nable label is not referenced in report prose: tab:confounders\",\r\n    \"Table label is not referenced in report prose: tab:within_replicate\",\r\n    \"Table label is not referenced in report prose: tab:cd8_clusters\",\r\n    \"Table label is not referenced in report prose: tab:cd8_confounders\",\r\n    \"Each displayed formula must have one label and a prose reference\",\r\n    \"Subgroup 1 report must state the three-decimal within-replicate global-vs-within ARI range\",\r\n    \"Subgroup 1 report must identify the weakest within-replicate result (6)\",\r\n    \"LaTeX log contains overflow, compilation, citation or reference errors\"\r\n  ],\r\n  \"checks\": {\r\n    \"methods\": 1,\r\n    \"figures\": 4,\r\n    \"three_line_tables\": 5,\r\n    \"formulas\": 1,\r\n    \"pdf_pages\": 6,\r\n    \"rendered_pages\": 6,\r\n    \"references\": 2\r\n  }\r\n} Use these core values and this exact nested analysis shape, not flattened method_* fields: dataset.sha256=51bf0452d166511fecca3f32d89f9fd0f631d173143173d82115f49cdaaa6c1d, dataset.cell_id_field=cell_name, feature_set.sha256=7503180d29693bd1e654ea93281db0e3ec4177ff44842c8b02f6a098402e41a9, feature_set.matched_genes_path=results/core_analysis/matched_metabolic_genes.txt, analysis={\"engine\":\"workflow_research_quality_metabolic_states_v2\",\"core_result_path\":\"results/core_analysis/core_result.json\",\"core_result_sha256\":\"57aa2cd746cc7bc3559bd405b93521bb4d8b4ea4f452b2b380b0c7ae357fa3c8\",\"input_unit\":\"cell\",\"rows_analyzed\":58843,\"unique_cells_analyzed\":58843,\"random_seeds\":[0,17,42,73,101],\"baselines\":[{\"name\":\"HVG and random size-matched controls\",\"metrics\":{\"metabolic_matched_kmeans_silhouette\":0.22014786303043365,\"random_controls_exceeding_or_equal\":2,\"random_controls_total\":19,\"add_one_rank_fraction\":0.15},\"result_path\":\"results/core_analysis/baseline_metrics.csv\"}],\"confounders_checked\":[\"patient\",\"sample\",\"source\",\"cell_type\",\"cell_subtype\",\"cell_cycle_phase\",\"complexity\",\"computed_total_counts\",\"computed_detected_genes\",\"computed_mito_percent\"],\"methods\":[{\"name\":\"Scanpy Leiden on supplied metabolic genes\",\"labels_path\":\"results/core_analysis/cluster_labels.csv\",\"cell_id_column\":\"cell_name\",\"label_column\":\"cluster\",\"n_clusters\":17,\"metrics\":{\"silhouette\":0.21661581099033356,\"calinski_harabasz\":6730.739060896593,\"davies_bouldin\":1.577973214248373,\"metric_cells\":3000,\"mean_pairwise_ari\":0.9650730581380069,\"min_pairwise_ari\":0.947222016088431,\"mean_pairwise_nmi\":0.9681893048564086,\"min_pairwise_nmi\":0.9581425272409769,\"median_silhouette\":0.22155894339084625}}],\"subgroup_analyses\":[{\"scope\":{\"field\":\"cell_subtype\",\"values\":[\"CD8 T cells\"],\"source_cells_selected\":3624},\"core_result_path\":\"results/cd8_analysis/core_result.json\",\"core_result_sha256\":\"811c1102d4b8827bd00982cddd7222bb3c073324be982d1304b7be911d0bed29\"}]}.",
+  "rounds": 113,
+  "tool_counts": {
+    "read_file": 7,
+    "run_powershell": 4
+  },
+  "artifacts": [
+    {
+      "path": "report/main.tex",
+      "present": true,
+      "bytes": 11928
+    },
+    {
+      "path": "report/main.pdf",
+      "present": true,
+      "bytes": 350736
+    },
+    {
+      "path": "results/summary.json",
+      "present": true,
+      "bytes": 5317
+    },
+    {
+      "path": "results/analysis_manifest.json",
+      "present": true,
+      "bytes": 3733
+    },
+    {
+      "path": "results/core_analysis/core_result.json",
+      "present": true,
+      "bytes": 10955
+    },
+    {
+      "path": "results/cd8_analysis/core_result.json",
+      "present": true,
+      "bytes": 10314
+    },
+    {
+      "path": "results/cd8_analysis/summary.json",
+      "present": true,
+      "bytes": 4702
+    },
+    {
+      "path": "README.md",
+      "present": true,
+      "bytes": 4012
+    }
+  ],
+  "required_artifacts": [
+    "report/main.tex",
+    "report/main.pdf",
+    "results/summary.json",
+    "results/analysis_manifest.json",
+    "results/core_analysis/core_result.json",
+    "results/cd8_analysis/core_result.json",
+    "results/cd8_analysis/summary.json",
+    "README.md"
+  ],
+  "research_validation": {
+    "valid": false,
+    "checked_at": "2026-09-14T03:39:54.198816+00:00",
+    "manifest_path": "results\\analysis_manifest.json",
+    "manifest_sha256": "395bda3e9386c46419b9b8690694b95c929269fdf5d71f2ecdae43c01dcd6fd3",
+    "errors": [
+      "feature_set matched_genes_path must contain matched_gene_count unique genes, all from the source set",
+      "Manifest matched_gene_count does not match core metabolic features",
+      "Report applies an unvalidated qualitative threshold to an association metric",
+      "Report turns descriptive random-control results into a definitive biological conclusion",
+      "Each manifest figure must appear in its own LaTeX figure environment",
+      "Figure label is not referenced in report prose: fig:global_umap",
+      "Figure label is not referenced in report prose: fig:global_diagnostics",
+      "Figure label is not referenced in report prose: fig:cd8_umap",
+      "Table label is not referenced in report prose: tab:global_clusters",
+      "Table label is not referenced in report prose: tab:confounders",
+      "Table label is not referenced in report prose: tab:within_replicate",
+      "Table label is not referenced in report prose: tab:cd8_clusters",
+      "Table label is not referenced in report prose: tab:cd8_confounders",
+      "Each displayed formula must have one label and a prose reference",
+      "Subgroup 1 report must state the three-decimal within-replicate global-vs-within ARI range",
+      "Subgroup 1 report must identify the weakest within-replicate result (6)",
+      "LaTeX log contains overflow, compilation, citation or reference errors"
+    ],
+    "checks": {
+      "methods": 1,
+      "figures": 4,
+      "three_line_tables": 5,
+      "formulas": 1,
+      "pdf_pages": 6,
+      "rendered_pages": 6,
+      "references": 2
+    }
+  },
+  "frozen_hash_mismatches": [],
+  "structural_completion_candidate": false,
+  "semantic_acceptance": "pending_independent_review",
+  "caveat": "PID liveness requires matching executable, command line, and creation time. Structural completion does not establish biological validity."
+}

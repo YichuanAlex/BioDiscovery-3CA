@@ -1,0 +1,19 @@
+{
+  "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20111",
+  "final_url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20111",
+  "fetched_at": "2026-09-12T05:30:19.028735+00:00",
+  "raw_html_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\pages\\87d678b02f4247ca6f6f66a7fc0b796b024783494d41678e420d12d298489a5d.html",
+  "title": "| Curated Cancer Cell Atlas",
+  "text": "Meta programs Skin: Tirosh et al. 2016 Click here to download PDF Click here to download table of MP scores",
+  "links": [
+    {
+      "url": "https://www.dropbox.com/scl/fi/kaw35uzx0h1478b477rai/Meta-programs_Tirosh2016_Skin.pdf?rlkey=lajar1dnvw9k70w15uepyt0aj&dl=1",
+      "text": "Click here to download PDF"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/iyug6ylswrnsxykqhmema/MP_scores_Tirosh2016_Skin.csv.gz?rlkey=im951403agl0yszv38plsm2d9&dl=1",
+      "text": "Click here to download table of MP scores"
+    }
+  ],
+  "tables": []
+}

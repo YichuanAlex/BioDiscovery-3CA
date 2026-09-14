@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P004",
+  "folder_id": "P004_zheng_2021_pan_cancer_til_tcells",
+  "title": "Pan-cancer single-cell landscape of tumor-infiltrating T cells",
+  "identifiers": {
+    "doi": "10.1126/science.abe6474",
+    "pmid": "34914499",
+    "pmcid": null
+  },
+  "publication": {
+    "venue": "Science",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "peer_reviewed",
+    "published_at": "2021-12-17",
+    "version": "version_of_record"
+  },
+  "integrity": {
+    "checked_at": "2026-09-11T10:13:16+00:00",
+    "sources": [
+      "Crossref metadata",
+      "PubMed publication types/comments when PMID resolved"
+    ],
+    "screening_completeness": "Crossref+PubMed",
+    "retracted": false,
+    "expression_of_concern": false,
+    "corrections": [
+      {
+        "ref_type": "CommentIn",
+        "ref_source": "Science. 2021 Dec 17;374(6574):1446-1447. doi: 10.1126/science.abm9244.34914514"
+      },
+      {
+        "ref_type": "CommentIn",
+        "ref_source": "Sci China Life Sci. 2022 Jul;65(7):1466-1468. doi: 10.1007/s11427-022-2100-2.35606645"
+      }
+    ],
+    "publication_types": [
+      "Journal Article",
+      "Research Support, Non-U.S. Gov't"
+    ]
+  },
+  "selection": {
+    "tier": "A",
+    "role": "direct_biological_benchmark",
+    "primary_axis": "Q3",
+    "secondary_axes": [
+      "Q2"
+    ],
+    "rationale": "The study supplies a large pan-cancer T-cell atlas and processed public data for testing whether metabolic states recur within CD8 cells across cancer types."
+  },
+  "code_sources": [],
+  "data_sources": [
+    {
+      "accession": "GSE156728",
+      "access": "public",
+      "role": "primary_processed_scrna",
+      "verification": "manually_seeded_from_primary_source"
+    },
+    {
+      "accession": "PRJCA001702",
+      "access": "public",
+      "role": "primary_raw_sequencing",
+      "verification": "manually_seeded_from_primary_source"
+    },
+    {
+      "accession": "PRJNA658913",
+      "access": "public",
+      "role": "repository_cross_reference",
+      "verification": "manually_seeded_from_primary_source"
+    }
+  ],
+  "verified_data_urls": [
+    "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156728",
+    "https://ngdc.cncb.ac.cn/bioproject/browse/PRJCA001702",
+    "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA658913"
+  ],
+  "repository_urls_extracted": [
+    "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156728",
+    "https://ngdc.cncb.ac.cn/bioproject/browse/PRJCA001702",
+    "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA658913"
+  ],
+  "curation": {
+    "status": "candidate_requires_independent_reproduction",
+    "completed_stages": [
+      "S0_candidate_registration",
+      "S1_source_inventory",
+      "S2_candidate_insight",
+      "S3_paper_data_task_mapping"
+    ],
+    "pending_stages": [
+      "S4_independent_reproduction",
+      "S5_final_prompt_approval",
+      "S6_answerability_and_leakage_tests",
+      "S7_grader_adversarial_tests",
+      "S8_dual_signoff"
+    ],
+    "domain_curator": null,
+    "computational_curator": null,
+    "reviewed_at": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "task_id",
+    "task_version",
+    "paper_id",
+    "dataset_id",
+    "question",
+    "inference_unit",
+    "required_artifacts"
+  ]
+}

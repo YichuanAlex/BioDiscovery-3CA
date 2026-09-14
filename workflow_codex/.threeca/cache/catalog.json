@@ -1,0 +1,3274 @@
+{
+  "schema_version": 1,
+  "source_url": "https://www.weizmann.ac.il/sites/3CA/",
+  "fetched_at": "2026-09-14T04:17:34.951830+00:00",
+  "categories": [
+    {
+      "name": "Head and Neck",
+      "url": "https://www.weizmann.ac.il/sites/3CA/head-and-neck",
+      "reported_studies": 4,
+      "reported_samples": 113,
+      "reported_cells": 233067
+    },
+    {
+      "name": "Lung",
+      "url": "https://www.weizmann.ac.il/sites/3CA/lung",
+      "reported_studies": 11,
+      "reported_samples": 242,
+      "reported_cells": 529508
+    },
+    {
+      "name": "Liver/Biliary",
+      "url": "https://www.weizmann.ac.il/sites/3CA/liverbiliary",
+      "reported_studies": 5,
+      "reported_samples": 143,
+      "reported_cells": 171429
+    },
+    {
+      "name": "Kidney",
+      "url": "https://www.weizmann.ac.il/sites/3CA/kidney",
+      "reported_studies": 5,
+      "reported_samples": 125,
+      "reported_cells": 376003
+    },
+    {
+      "name": "Prostate",
+      "url": "https://www.weizmann.ac.il/sites/3CA/prostate",
+      "reported_studies": 4,
+      "reported_samples": 49,
+      "reported_cells": 81629
+    },
+    {
+      "name": "Sarcoma",
+      "url": "https://www.weizmann.ac.il/sites/3CA/sarcoma",
+      "reported_studies": 2,
+      "reported_samples": 26,
+      "reported_cells": 80682
+    },
+    {
+      "name": "Other/Models",
+      "url": "https://www.weizmann.ac.il/sites/3CA/othermodels",
+      "reported_studies": 23,
+      "reported_samples": 472,
+      "reported_cells": 650873
+    },
+    {
+      "name": "Brain",
+      "url": "https://www.weizmann.ac.il/sites/3CA/brain",
+      "reported_studies": 11,
+      "reported_samples": 183,
+      "reported_cells": 255713
+    },
+    {
+      "name": "Breast",
+      "url": "https://www.weizmann.ac.il/sites/3CA/breast",
+      "reported_studies": 12,
+      "reported_samples": 336,
+      "reported_cells": 877587
+    },
+    {
+      "name": "Pancreas",
+      "url": "https://www.weizmann.ac.il/sites/3CA/pancreas",
+      "reported_studies": 7,
+      "reported_samples": 132,
+      "reported_cells": 378478
+    },
+    {
+      "name": "Neuroendocrine",
+      "url": "https://www.weizmann.ac.il/sites/3CA/neuroendocrine",
+      "reported_studies": 4,
+      "reported_samples": 50,
+      "reported_cells": 144421
+    },
+    {
+      "name": "Colorectal",
+      "url": "https://www.weizmann.ac.il/sites/3CA/colorectal",
+      "reported_studies": 5,
+      "reported_samples": 287,
+      "reported_cells": 526311
+    },
+    {
+      "name": "Ovarian",
+      "url": "https://www.weizmann.ac.il/sites/3CA/ovarian",
+      "reported_studies": 11,
+      "reported_samples": 115,
+      "reported_cells": 269160
+    },
+    {
+      "name": "Skin",
+      "url": "https://www.weizmann.ac.il/sites/3CA/skin",
+      "reported_studies": 10,
+      "reported_samples": 224,
+      "reported_cells": 470775
+    },
+    {
+      "name": "Hematologic",
+      "url": "https://www.weizmann.ac.il/sites/3CA/hematologic",
+      "reported_studies": 15,
+      "reported_samples": 339,
+      "reported_cells": 613069
+    }
+  ],
+  "studies": [
+    {
+      "id": "3ca:20773",
+      "node_id": "20773",
+      "title": "Choudhury et al. 2022",
+      "category": "Brain",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/brain",
+      "citation_url": "https://www.nature.com/articles/s41588-022-01061-8",
+      "citation_doi_candidate": "10.1038/s41588-022-01061-8",
+      "disease": "Meningioma",
+      "technology": "10x",
+      "samples": 10,
+      "cells": 58843,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/4y8x28n9v6y5bkss3mqgu/Data_Choudhury2022_Brain.tar.gz?rlkey=3jhc85s8p3tp5jatdrauh6ka7&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/bz4b9sosc4kkkw5xmsw8n/Meta-data_Choudhury2022_Brain.tar.gz?rlkey=2r6a5ul6g1yo6b4ffdx9njxpm&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20773",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20773",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20773",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20773",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20773",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20773"
+      }
+    },
+    {
+      "id": "3ca:20056",
+      "node_id": "20056",
+      "title": "Couturier et al. 2020",
+      "category": "Brain",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/brain",
+      "citation_url": "https://www.nature.com/articles/s41467-020-17186-5",
+      "citation_doi_candidate": "10.1038/s41467-020-17186-5",
+      "disease": "GBM",
+      "technology": "10x",
+      "samples": 29,
+      "cells": 100335,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/49hfymw73eut0h45u6n1j/Data_Couturier2020_Brain.tar.gz?rlkey=7gksenf1sht7mkxfl98g0s9ia&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/0h5sk9ytkmgd6o9oxyzlx/Meta-data_Couturier2020_Brain.tar.gz?rlkey=oeoqx0sia7apy0ynb040dnya2&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20056",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20056",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20056",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20056"
+      }
+    },
+    {
+      "id": "3ca:20058",
+      "node_id": "20058",
+      "title": "Darmanis et al. 2017",
+      "category": "Brain",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/brain",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S2211124717314626",
+      "citation_doi_candidate": null,
+      "disease": "GBM",
+      "technology": "SmartSeq2",
+      "samples": 4,
+      "cells": 3589,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/lwc18a3683gk0b381a8ib/Data_Darmanis2017_Brain.tar.gz?rlkey=26z95w9ezdknit7brmpqs0ewh&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/26zoq5dp29ycq2rvb2urc/Meta-data_Darmanis2017_Brain.tar.gz?rlkey=dzwmsai149xcargl159bjeaab&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20058",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20058",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20058",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20058",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20058",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20058"
+      }
+    },
+    {
+      "id": "3ca:20063",
+      "node_id": "20063",
+      "title": "Filbin et al. 2018",
+      "category": "Brain",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/brain",
+      "citation_url": "https://science.sciencemag.org/content/360/6386/331",
+      "citation_doi_candidate": null,
+      "disease": "Pediatric H3-K27M mutant glioma",
+      "technology": "SmartSeq2",
+      "samples": 7,
+      "cells": 2587,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/qv4dfn364go7snxjd9e8q/Data_Filbin2018_Brain.tar.gz?rlkey=is8ljyd5rqnnq01f2x2u4bnri&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/dkl6tlgecpv274it0qa7i/Meta-data_Filbin2018_Brain.tar.gz?rlkey=ln104cq8inn9od3d4afdsv12t&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20063",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20063",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20063",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20063",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20063"
+      }
+    },
+    {
+      "id": "3ca:20070",
+      "node_id": "20070",
+      "title": "Gojo et al. 2020",
+      "category": "Brain",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/brain",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S1535610820303081",
+      "citation_doi_candidate": null,
+      "disease": "Pediatric ependymoma",
+      "technology": "SmartSeq2",
+      "samples": 25,
+      "cells": 6739,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/feacq5t81em3c13hue31p/Data_Gojo2020_Brain.tar.gz?rlkey=r0jgfnutl5qyo1lsp77hdxoy2&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/4r9on73stanfcktlf6fck/Meta-data_Gojo2020_Brain.tar.gz?rlkey=rwzcrphpb4bjbw563le9vvp4v&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20070",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20070",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20070",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20070",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20070",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20070"
+      }
+    },
+    {
+      "id": "3ca:20071",
+      "node_id": "20071",
+      "title": "Hovestadt et al. 2019",
+      "category": "Brain",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/brain",
+      "citation_url": "https://www.nature.com/articles/s41586-019-1434-6",
+      "citation_doi_candidate": "10.1038/s41586-019-1434-6",
+      "disease": "Medulloblastoma",
+      "technology": "SmartSeq2",
+      "samples": 36,
+      "cells": 8691,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/ymvxdrtcq7vt6y5gan5y1/Data_Hovestadt2019_Brain.tar.gz?rlkey=la28fnrkrpq4l7nu9h6vd5k7b&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/sus44lm5b5z63q61bwknh/Meta-data_Hovestadt2019_Brain.tar.gz?rlkey=y7m7l8i0ugdpc1faxdg6y8blo&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20071",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20071",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20071",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20071"
+      }
+    },
+    {
+      "id": "3ca:20099",
+      "node_id": "20099",
+      "title": "Neftel et al. 2019",
+      "category": "Brain",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/brain",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S0092867419306877",
+      "citation_doi_candidate": null,
+      "disease": "GBM",
+      "technology": "SmartSeq2",
+      "samples": 38,
+      "cells": 24131,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/xflvflx73kbug76u6a955/Data_Neftel2019_Brain.tar.gz?rlkey=o8yru9vryof2ndpa0old3rhn1&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/7zz1jyhah1a5teuvipmjc/Meta-data_Neftel2019_Brain.tar.gz?rlkey=jglw4f8t0l4wm2zj9y28ftp4m&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20099",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20099",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20099",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20099",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20099",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20099"
+      }
+    },
+    {
+      "id": "3ca:20110",
+      "node_id": "20110",
+      "title": "Tirosh et al. 2016",
+      "category": "Brain",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/brain",
+      "citation_url": "https://www.nature.com/articles/nature20123",
+      "citation_doi_candidate": "10.1038/nature20123",
+      "disease": "IDH-mutant oligodendroglioma",
+      "technology": "SmartSeq2",
+      "samples": 6,
+      "cells": 4347,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/uhtilmbeq2liwbe8yai1d/Data_Tirosh2016_Brain.tar.gz?rlkey=v5ees0ku3k48i0nqkquxuu5qu&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/gm20dz0gwmb9g1yzhf8r8/Meta-data_Tirosh2016_Brain.tar.gz?rlkey=g30xvst4u2tid8ufo14wp87zx&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20110",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20110",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20110",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20110",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20110"
+      }
+    },
+    {
+      "id": "3ca:20112",
+      "node_id": "20112",
+      "title": "Venteicher et al. 2017",
+      "category": "Brain",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/brain",
+      "citation_url": "https://science.sciencemag.org/content/355/6332/eaai8478",
+      "citation_doi_candidate": null,
+      "disease": "IDH-mutant astrocytoma",
+      "technology": "SmartSeq2",
+      "samples": 10,
+      "cells": 6341,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/cn07yybxnje6k4nh27nbe/Data_Venteicher2017_Brain.tar.gz?rlkey=4w75sdcj2mtyjm83h316x9rgs&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/stf00lhgiqzaxvz1di46m/Meta-data_Venteicher2017_Brain.tar.gz?rlkey=t271kjzaedtghxrfz5yauv0jj&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20112",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20112",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20112",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20112",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20112"
+      }
+    },
+    {
+      "id": "3ca:20113",
+      "node_id": "20113",
+      "title": "Wang et al. 2019",
+      "category": "Brain",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/brain",
+      "citation_url": "https://cancerdiscovery.aacrjournals.org/content/9/12/1708.long",
+      "citation_doi_candidate": null,
+      "disease": "GBM",
+      "technology": "10x",
+      "samples": 10,
+      "cells": 16317,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/u7y3jo2jc1dlv4qsl1cc8/Data_Wang2019_Brain.tar.gz?rlkey=733ldgm8k5ztzfqbgdewlrynh&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/it3075pqkbco9ocrihmps/Meta-data_Wang2019_Brain.tar.gz?rlkey=pg8kco2i0o5huju9w1ypf45ta&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20113",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20113",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20113",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20113",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20113",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20113"
+      }
+    },
+    {
+      "id": "3ca:20119",
+      "node_id": "20119",
+      "title": "Yuan et al. 2018",
+      "category": "Brain",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/brain",
+      "citation_url": "https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-018-0567-9",
+      "citation_doi_candidate": "10.1186/s13073-018-0567-9",
+      "disease": "HGG",
+      "technology": "Microwell array-based platform",
+      "samples": 8,
+      "cells": 23793,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/wsyyrwxv3vtff25wtx6gz/Data_Yuan2018_Brain.tar.gz?rlkey=drj0tbov1yzg689rhauxj9pz7&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/9sz27wt3wglv5wpwjeta1/Meta-data_Yuan2018_Brain.tar.gz?rlkey=i3j1jexcffe1qsnrro3z0v2xx&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20119",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20119",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20119",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20119",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20119",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20119"
+      }
+    },
+    {
+      "id": "3ca:20755",
+      "node_id": "20755",
+      "title": "Azizi et al. 2018",
+      "category": "Breast",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/breast",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S0092867418307232",
+      "citation_doi_candidate": null,
+      "disease": "Breast cancer",
+      "technology": "10x, InDrop",
+      "samples": 58,
+      "cells": 75029,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/mp70v1dyjkvzo0nx8f15m/Data_Azizi2018_Breast.tar.gz?rlkey=fsrjic2rk1dlq2rrmkgdggg72&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/wa39j3or08z97mo2m08ar/Meta-data_Azizi2018_Breast.tar.gz?rlkey=mrmrzagait8eutw2n5z3es37u&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20755",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20755",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20755",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20755",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20755"
+      }
+    },
+    {
+      "id": "3ca:20758",
+      "node_id": "20758",
+      "title": "Bassez et al. 2021",
+      "category": "Breast",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/breast",
+      "citation_url": "https://www.nature.com/articles/s41591-021-01323-8",
+      "citation_doi_candidate": "10.1038/s41591-021-01323-8",
+      "disease": "Breast cancer",
+      "technology": "10x",
+      "samples": 42,
+      "cells": 226635,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/25nrghrrkhlwu7nk994y8/Data_Bassez2021_Breast.tar.gz?rlkey=70jjyfo23omhct29rxw01v9v4&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/q3wlhxjfgrql5no4qllze/Meta-data_Bassez2021_Breast.tar.gz?rlkey=4g19k2d3ygshpirgbptrgotxk&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20758",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20758",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20758",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20758",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20758",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20758"
+      }
+    },
+    {
+      "id": "3ca:20054",
+      "node_id": "20054",
+      "title": "Chung et al. 2017",
+      "category": "Breast",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/breast",
+      "citation_url": "https://www.nature.com/articles/ncomms15081",
+      "citation_doi_candidate": "10.1038/ncomms15081",
+      "disease": "Breast cancer",
+      "technology": "SmartSeq2",
+      "samples": 13,
+      "cells": 515,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/i7ndkauo8y4ozqsiyr1xh/Data_Chung2017_Breast.tar.gz?rlkey=hcubkjhvkqjjluw8c1dcdcf8a&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/6064fm0jd9htvcv2viir9/Meta-data_Chung2017_Breast.tar.gz?rlkey=9yhnl3dxfc8p1xv3xj4iy8bwf&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20054",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20054",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20054",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20054"
+      }
+    },
+    {
+      "id": "3ca:20068",
+      "node_id": "20068",
+      "title": "Gao et al. 2021",
+      "category": "Breast",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/breast",
+      "citation_url": "https://www.nature.com/articles/s41587-020-00795-2",
+      "citation_doi_candidate": "10.1038/s41587-020-00795-2",
+      "disease": "Breast cancer",
+      "technology": "10x",
+      "samples": 11,
+      "cells": 29992,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/xx9nxos1pcucocb7hl776/Data_Gao2021_Breast.tar.gz?rlkey=x5ujg573e5plq9m2t705kuxwh&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/cxiih71p7ad9ciq74wbvl/Meta-data_Gao2021_Breast.tar.gz?rlkey=kyrje3s99u5var9qaqod66n7m&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20068",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20068",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20068",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20068",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20068",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20068"
+      }
+    },
+    {
+      "id": "3ca:20794",
+      "node_id": "20794",
+      "title": "Griffiths et al. 2021",
+      "category": "Breast",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/breast",
+      "citation_url": "https://www.nature.com/articles/s43018-021-00215-7",
+      "citation_doi_candidate": "10.1038/s43018-021-00215-7",
+      "disease": "Breast cancer",
+      "technology": "10x, iCell8",
+      "samples": 95,
+      "cells": 111372,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/9hkznvvcnzuu2kgfixrb1/Data_Griffiths2021_Breast.tar.gz?rlkey=9jz5yz2sw99b9oq4sevfx8vmm&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/gvkcg8mmnnx48c53bkwp3/Meta-data_Griffiths2021_Breast.tar.gz?rlkey=m89fyqux84chkugrwow862pt6&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20794",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20794",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20794",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20794",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20794"
+      }
+    },
+    {
+      "id": "3ca:20800",
+      "node_id": "20800",
+      "title": "Gulati et al. 2020",
+      "category": "Breast",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/breast",
+      "citation_url": "https://www.science.org/doi/10.1126/science.aax0249",
+      "citation_doi_candidate": "10.1126/science.aax0249",
+      "disease": "Breast cancer",
+      "technology": "SmartSeq2",
+      "samples": 15,
+      "cells": 1902,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/hmeedphy1jw21neigzhty/Data_Gulati2020_Breast.tar.gz?rlkey=rugcfbbe0uja2ycxg19nfji5x&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/niax5ghylaig47e1c0tnh/Meta-data_Gulati2020_Breast.tar.gz?rlkey=iawbux45jetltqtvmxvktn4qy&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20800",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20800",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20800",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20800"
+      }
+    },
+    {
+      "id": "3ca:20079",
+      "node_id": "20079",
+      "title": "Jordan et al. 2016",
+      "category": "Breast",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/breast",
+      "citation_url": "https://www.nature.com/articles/nature19328",
+      "citation_doi_candidate": "10.1038/nature19328",
+      "disease": "Breast cancer",
+      "technology": "",
+      "samples": 2,
+      "cells": 74,
+      "assets": {
+        "data": "https://www.dropbox.com/sh/phkw22dvjafh16y/AACH_9_1nCb4hD4WrtB2SWwoa?dl=1",
+        "metadata": "https://www.dropbox.com/s/mr4ngwjqbxqdqd4/Meta-data_Jordan2016_Breast.csv?dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20079",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20079",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20079"
+      }
+    },
+    {
+      "id": "3ca:20080",
+      "node_id": "20080",
+      "title": "Karaayvas et al. 2018",
+      "category": "Breast",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/breast",
+      "citation_url": "https://www.nature.com/articles/s41467-018-06052-0",
+      "citation_doi_candidate": "10.1038/s41467-018-06052-0",
+      "disease": "Breast cancer",
+      "technology": "SmartSeq2",
+      "samples": 6,
+      "cells": 1534,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/txgn2ohzznh9w5snko8kf/Data_Karaayvas2018_Breast.tar.gz?rlkey=5k0rrkbjs8hf3ffmvfu7j46vr&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/1ip29p9g8ce42467wcpjt/Meta-data_Karaayvas2018_Breast.tar.gz?rlkey=yrkfo2y2acccukhl3drh7qut0&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20080",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20080",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20080",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20080",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20080"
+      }
+    },
+    {
+      "id": "3ca:20818",
+      "node_id": "20818",
+      "title": "Kim et al. 2018",
+      "category": "Breast",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/breast",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S0092867418303659",
+      "citation_doi_candidate": null,
+      "disease": "TNBC",
+      "technology": "Nanogrid",
+      "samples": 16,
+      "cells": 2472,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/qb4iao8dq4xf8388u6g4i/Data_Kim2018_Breast.tar.gz?rlkey=a4njtxj15ccbrc4wmic8oi1zw&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/fz3tvh3vjmqfnck0dufuq/Meta-data_Kim2018_Breast.tar.gz?rlkey=a0c1mtvz80bucog96j7vle09d&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20818",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20818",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20818",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20818"
+      }
+    },
+    {
+      "id": "3ca:20102",
+      "node_id": "20102",
+      "title": "Pal et al. 2021",
+      "category": "Breast",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/breast",
+      "citation_url": "https://www.embopress.org/doi/full/10.15252/embj.2020107333",
+      "citation_doi_candidate": "10.15252/embj.2020107333",
+      "disease": "Breast cancer",
+      "technology": "10x",
+      "samples": 45,
+      "cells": 305224,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/dpiypomhd99et0fbvkffd/Data_Pal2021_Breast.tar.gz?rlkey=li9ck5csjtsisn3dq19po1ii6&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/tiwikswm1rxweoxpxitqv/Meta-data_Pal2021_Breast.tar.gz?rlkey=db9rifsyevssq33arxqhv9et8&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20102",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20102",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20102",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20102",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20102",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20102"
+      }
+    },
+    {
+      "id": "3ca:20105",
+      "node_id": "20105",
+      "title": "Qian et al. 2020",
+      "category": "Breast",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/breast",
+      "citation_url": "https://www.nature.com/articles/s41422-020-0355-0",
+      "citation_doi_candidate": "10.1038/s41422-020-0355-0",
+      "disease": "Breast cancer",
+      "technology": "10x",
+      "samples": 7,
+      "cells": 16537,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/5id5b04g3gjcjb2o28pru/Data_Qian2020_Breast.tar.gz?rlkey=asx18v32bddbdz1b2rq8vmv8w&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/lkv55frsqzu956guxyzin/Meta-data_Qian2020_Breast.tar.gz?rlkey=28wubkytvn347tspajlmxcaqk&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20105",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20105",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20105",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20105",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20105",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20105"
+      }
+    },
+    {
+      "id": "3ca:20869",
+      "node_id": "20869",
+      "title": "Savas et al. 2018",
+      "category": "Breast",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/breast",
+      "citation_url": "https://www.nature.com/articles/s41591-018-0078-7",
+      "citation_doi_candidate": "10.1038/s41591-018-0078-7",
+      "disease": "TNBC",
+      "technology": "10x",
+      "samples": 2,
+      "cells": 6311,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/2qt1gnz4m16k9oqcf1nym/Data_Savas2018_Breast.tar.gz?rlkey=tgmvysjib0clnnhyy2furplnh&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/c8p89w5du0acqcrd2x2a2/Meta-data_Savas2018_Breast.tar.gz?rlkey=ruiqaes3nm4a5pdszk5kzt07e&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20869",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20869",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20869",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20869",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20869"
+      }
+    },
+    {
+      "id": "3ca:20893",
+      "node_id": "20893",
+      "title": "Wu et al. 2021",
+      "category": "Breast",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/breast",
+      "citation_url": "https://www.nature.com/articles/s41588-021-00911-1",
+      "citation_doi_candidate": "10.1038/s41588-021-00911-1",
+      "disease": "Breast cancer",
+      "technology": "10x",
+      "samples": 26,
+      "cells": 100064,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/tedg9e7b3x92tyd8kub5l/Data_Wu2021_Breast.tar.gz?rlkey=pftfny91obekk99h1hdad2wyn&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/5kf4vmkru9ehlqvot6unz/Meta-data_Wu2021_Breast.tar.gz?rlkey=smpcvfapk7pcph5tck7xqjvx4&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20893",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20893",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20893",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20893",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20893",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20893"
+      }
+    },
+    {
+      "id": "3ca:20770",
+      "node_id": "20770",
+      "title": "Chen et al. 2021",
+      "category": "Colorectal",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/colorectal",
+      "citation_url": "https://www.cell.com/cell/fulltext/S0092-8674(21)01381-7",
+      "citation_doi_candidate": null,
+      "disease": "Colon adenoma",
+      "technology": "Modified InDrop",
+      "samples": 121,
+      "cells": 122811,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/nf2w09auzxrouwrgl49gh/Data_Chen2021_Colorectal.tar.gz?rlkey=p55t4lqltuinom3leg1fjg3v8&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/djf5r8o0qo9s30a2xug7x/Meta-data_Chen2021_Colorectal.tar.gz?rlkey=o59ymkpnlwqqlso95hk810u1w&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20770",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20770",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20770",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20770",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20770"
+      }
+    },
+    {
+      "id": "3ca:20086",
+      "node_id": "20086",
+      "title": "Lee et al. 2020",
+      "category": "Colorectal",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/colorectal",
+      "citation_url": "https://www.nature.com/articles/s41588-020-0636-z",
+      "citation_doi_candidate": "10.1038/s41588-020-0636-z",
+      "disease": "CRC",
+      "technology": "10x",
+      "samples": 15,
+      "cells": 21657,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/6s8wo5wc311g5koz2nyep/Data_Lee2020_Colorectal.tar.gz?rlkey=lqfq6llcul4ghvhhl3ytxzk04&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/go3m1x3j3gtmhmjexbvk6/Meta-data_Lee2020_Colorectal.tar.gz?rlkey=4p2qlwuz3ay3oztnun3b9kgfu&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20086",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20086",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20086",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20086",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20086",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20086"
+      }
+    },
+    {
+      "id": "3ca:20087",
+      "node_id": "20087",
+      "title": "Li et al. 2017",
+      "category": "Colorectal",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/colorectal",
+      "citation_url": "https://www.nature.com/articles/ng.3818",
+      "citation_doi_candidate": "10.1038/ng.3818",
+      "disease": "CRC",
+      "technology": "SmartSeq2",
+      "samples": 18,
+      "cells": 590,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/n9x8x9rio3fwhtkt0pwrr/Data_Li2017_Colorectal.tar.gz?rlkey=874vywk3fcniwgut4rsmlr56s&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/goa0335tfndvnk6616ggo/Meta-data_Li2017_Colorectal.tar.gz?rlkey=9d6i5qo53kjq16kyygzx5rlv6&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20087",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20087",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20087",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20087"
+      }
+    },
+    {
+      "id": "3ca:20842",
+      "node_id": "20842",
+      "title": "Pelka et al. 2021",
+      "category": "Colorectal",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/colorectal",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S0092867421009454",
+      "citation_doi_candidate": null,
+      "disease": "Colorectal cancer",
+      "technology": "10x",
+      "samples": 100,
+      "cells": 370115,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/2ejgsn2w8k8antywx8npt/Data_Pelka2021_Colorectal.tar.gz?rlkey=fpcqjaa504jue0iwxj4a4vfs4&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/kmmtf5ipmbhn35jtzz1r9/Meta-data_Pelka2021_Colorectal.tar.gz?rlkey=ynuxww25uau686l9h2i6w7mby&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20842",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20842",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20842",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20842",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20842",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20842"
+      }
+    },
+    {
+      "id": "3ca:20899",
+      "node_id": "20899",
+      "title": "Zhang et al. 2018",
+      "category": "Colorectal",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/colorectal",
+      "citation_url": "https://www.nature.com/articles/s41586-018-0694-x",
+      "citation_doi_candidate": "10.1038/s41586-018-0694-x",
+      "disease": "Colorectal cancer",
+      "technology": "SmartSeq2",
+      "samples": 33,
+      "cells": 11138,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/eymfll83lzfg9vaon4zjy/Data_Zhang2018_Colorectal.tar.gz?rlkey=t10p0jb1scri0ibri71us18pz&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/5qd2k4pj8l82kr8mvtr0m/Meta-data_Zhang2018_Colorectal.tar.gz?rlkey=122xy5n9suscnln3obdlxr69p&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20899",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20899",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20899",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20899",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20899"
+      }
+    },
+    {
+      "id": "3ca:20052",
+      "node_id": "20052",
+      "title": "Chen et al. 2020",
+      "category": "Head and Neck",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/head-and-neck",
+      "citation_url": "https://www.nature.com/articles/s41422-020-0374-x",
+      "citation_doi_candidate": "10.1038/s41422-020-0374-x",
+      "disease": "Nasopharyngeal carcinoma",
+      "technology": "10x",
+      "samples": 14,
+      "cells": 71896,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/xgjb48acmwxetabibq865/Data_Chen2020_Head-and-Neck.tar.gz?rlkey=sjgvdhd5habrsl05jor7e5c4t&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/0f1hzymc2zwkw1fh8w34z/Meta-data_Chen2020_Head-and-Neck.tar.gz?rlkey=mp42az689b5yea4e6pb7qmxhb&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20052",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20052",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20052",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20052",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20052",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20052"
+      }
+    },
+    {
+      "id": "3ca:20776",
+      "node_id": "20776",
+      "title": "Cillo et al. 2020",
+      "category": "Head and Neck",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/head-and-neck",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S1074761319304959",
+      "citation_doi_candidate": null,
+      "disease": "HNSCC",
+      "technology": "10x",
+      "samples": 48,
+      "cells": 92569,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/remwxxauka7243ndqcdz3/Data_Cillo2020_Head-and-Neck.tar.gz?rlkey=r6qncup4ifdbsevbvyyaijsu2&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/2n96erjfoe22wk848k9nq/Meta-data_Cillo2020_Head-and-Neck.tar.gz?rlkey=s4oqmb3jt8x34foqsy79vyoul&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20776",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20776",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20776",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20776",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20776"
+      }
+    },
+    {
+      "id": "3ca:a499f8fc45b2",
+      "node_id": null,
+      "title": "Kürten et al. 2021",
+      "category": "Head and Neck",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/head-and-neck",
+      "citation_url": "https://www.nature.com/articles/s41467-021-27619-4",
+      "citation_doi_candidate": "10.1038/s41467-021-27619-4",
+      "disease": "HNSCC",
+      "technology": "10x",
+      "samples": 33,
+      "cells": 62700,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/ujuufns613yl72lol9g0z/Data_K-rten2021_Head-and-Neck.tar.gz?rlkey=g434xmk2pti37t0a7ffkitfsd&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/85riem966wrzhvwhgcc2u/Meta-data_K-rten2021_Head-and-Neck.tar.gz?rlkey=a8lti0sofll8ivkikduwm7j2c&dl=1"
+      },
+      "detail_pages": {}
+    },
+    {
+      "id": "3ca:20104",
+      "node_id": "20104",
+      "title": "Puram et al. 2017",
+      "category": "Head and Neck",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/head-and-neck",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S0092867417312709",
+      "citation_doi_candidate": null,
+      "disease": "HNSCC",
+      "technology": "SmartSeq2",
+      "samples": 18,
+      "cells": 5902,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/7o15xy78muc6qktl436v5/Data_Puram2017_Head-and-Neck.tar.gz?rlkey=s2d0jd97vegfoy66whnbaot54&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/55wxeq2hk8p2cac7x5dbm/Meta-data_Puram2017_Head-and-Neck.tar.gz?rlkey=xssgpoeuhnzq9ulfchccl8t8v&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20104",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20104",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20104",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20104",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20104",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20104"
+      }
+    },
+    {
+      "id": "3ca:20051",
+      "node_id": "20051",
+      "title": "Caron et al. 2020",
+      "category": "Hematologic",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/hematologic",
+      "citation_url": "https://www.nature.com/articles/s41598-020-64929-x",
+      "citation_doi_candidate": "10.1038/s41598-020-64929-x",
+      "disease": "ALL",
+      "technology": "10x",
+      "samples": 10,
+      "cells": 37320,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/gn9eedqc8jw4ji5ophv2j/Data_Caron2020_Hematologic.tar.gz?rlkey=wvupwtcjfw8o49iiowm2z6ham&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/poz98joetahfvovoqwkh8/Meta-data_Caron2020_Hematologic.tar.gz?rlkey=rmhq761d1xjac9j9vtgkl0bal&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20051",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20051",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20051",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20051",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20051",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20051"
+      }
+    },
+    {
+      "id": "3ca:20055",
+      "node_id": "20055",
+      "title": "Cohen et al. 2021",
+      "category": "Hematologic",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/hematologic",
+      "citation_url": "https://www.nature.com/articles/s41591-021-01232-w",
+      "citation_doi_candidate": "10.1038/s41591-021-01232-w",
+      "disease": "Multiple myeloma",
+      "technology": "MARS-seq",
+      "samples": 74,
+      "cells": 39157,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/gkvbe2mq3ra3o3h9q1kxr/Data_Cohen2021_Hematologic.tar.gz?rlkey=ppqa3qzpupdfzpuxs0nrst3uz&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/rmfcewhq99ef4btsitmwm/Meta-data_Cohen2021_Hematologic.tar.gz?rlkey=fb2ibh0ak39q84rj6d6o5t47a&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20055",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20055",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20055",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20055",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20055"
+      }
+    },
+    {
+      "id": "3ca:20066",
+      "node_id": "20066",
+      "title": "Gaiti et al. 2019",
+      "category": "Hematologic",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/hematologic",
+      "citation_url": "https://www.nature.com/articles/s41586-019-1198-z",
+      "citation_doi_candidate": "10.1038/s41586-019-1198-z",
+      "disease": "CLL",
+      "technology": "SmartSeq2",
+      "samples": 8,
+      "cells": 720,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/memseaobk0zh72iftl0yp/Data_Gaiti2019_Hematologic.tar.gz?rlkey=04jtbbjzd3fqrqlvueicscz8x&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/urgimrqcyi1vwjj08wj37/Meta-data_Gaiti2019_Hematologic.tar.gz?rlkey=eiogn04kll086c0m0kwjurhje&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20066",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20066",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20066",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20066"
+      }
+    },
+    {
+      "id": "3ca:20067",
+      "node_id": "20067",
+      "title": "Galen et al. 2019",
+      "category": "Hematologic",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/hematologic",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S0092867419300947",
+      "citation_doi_candidate": null,
+      "disease": "AML",
+      "technology": "SeqWell",
+      "samples": 37,
+      "cells": 33392,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/k7emrfdmmtw1gmm5kmv0x/Data_Galen2019_Hematologic.tar.gz?rlkey=cpxknyzv03fjy3c570i1dya7s&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/0quemrqhv1pomgvwhk5ga/Meta-data_Galen2019_Hematologic.tar.gz?rlkey=ovnzrya3dux9nxmux7xyt0wf4&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20067",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20067",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20067",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20067",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20067",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20067"
+      }
+    },
+    {
+      "id": "3ca:20785",
+      "node_id": "20785",
+      "title": "Gaydosik et al. 2019",
+      "category": "Hematologic",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/hematologic",
+      "citation_url": "https://aacrjournals.org/clincancerres/article/25/14/4443/81646/Single-Cell-Lymphocyte-Heterogeneity-in-Advanced",
+      "citation_doi_candidate": null,
+      "disease": "Cutaneous T cell lymphoma",
+      "technology": "10x",
+      "samples": 9,
+      "cells": 30497,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/jfqtppjry9dghjjs1adfk/Data_Gaydosik2019_Hematologic.tar.gz?rlkey=503yfk4yaebng1epvam4jz8zf&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/c8olix3ovh4lnoyhfeyd1/Meta-data_Gaydosik2019_Hematologic.tar.gz?rlkey=smyia9dcam6flxsm2dhy1c2xw&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20785",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20785",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20785",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20785",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20785"
+      }
+    },
+    {
+      "id": "3ca:20069",
+      "node_id": "20069",
+      "title": "Giustacchini et al. 2017",
+      "category": "Hematologic",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/hematologic",
+      "citation_url": "https://www.nature.com/articles/nm.4336",
+      "citation_doi_candidate": "10.1038/nm.4336",
+      "disease": "CML",
+      "technology": "HiSeq 2000",
+      "samples": 42,
+      "cells": 2287,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/te7g8rh5tipx3srl4e66l/Data_Giustacchini2017_Hematologic.tar.gz?rlkey=hhjc8kmhycfbw619s7peb2saq&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/5scp62z49e0sfc0zyw8vx/Meta-data_Giustacchini2017_Hematologic.tar.gz?rlkey=9q9z9y3w1d61f4dr7ma1sls8f&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20069",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20069",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20069",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20069",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20069"
+      }
+    },
+    {
+      "id": "3ca:20085",
+      "node_id": "20085",
+      "title": "Ledergor et al. 2018",
+      "category": "Hematologic",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/hematologic",
+      "citation_url": "https://www.nature.com/articles/s41591-018-0269-2",
+      "citation_doi_candidate": "10.1038/s41591-018-0269-2",
+      "disease": "Multiple myeloma",
+      "technology": "MARS-seq",
+      "samples": 42,
+      "cells": 51840,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/boonkpfhe1bfk7tcpry8o/Data_Ledergor2018_Hematologic.tar.gz?rlkey=gpbg39q8kw1h89a0nbw38enqm&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/w7s5jidci4s33ckjyj3h7/Meta-data_Ledergor2018_Hematologic.tar.gz?rlkey=z3kvs3la2ezvz3ec746yqzjoh&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20085",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20085",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20085",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20085",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20085"
+      }
+    },
+    {
+      "id": "3ca:20090",
+      "node_id": "20090",
+      "title": "Liu et al. 2021",
+      "category": "Hematologic",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/hematologic",
+      "citation_url": "https://www.nature.com/articles/s41467-021-22804-x",
+      "citation_doi_candidate": "10.1038/s41467-021-22804-x",
+      "disease": "Multiple myeloma",
+      "technology": "10x",
+      "samples": 24,
+      "cells": 74986,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/p5kbhywnj1wbu6wh6y4tk/Data_Liu2021_Hematologic.tar.gz?rlkey=3k400szp8w4q37evxy77sges8&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/5tkthi54mj1y4rgdiy75u/Meta-data_Liu2021_Hematologic.tar.gz?rlkey=u89dcd6e7foc4n0vyv069z1t9&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20090",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20090",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20090",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20090",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20090",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20090"
+      }
+    },
+    {
+      "id": "3ca:20097",
+      "node_id": "20097",
+      "title": "Nam et al. 2019",
+      "category": "Hematologic",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/hematologic",
+      "citation_url": "https://www.nature.com/articles/s41586-019-1367-0",
+      "citation_doi_candidate": "10.1038/s41586-019-1367-0",
+      "disease": "Myeloproliferative neoplasms",
+      "technology": "10x",
+      "samples": 10,
+      "cells": 31703,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/f4cnt9z2gx7e7ctsf3sdr/Data_Nam2019_Hematologic.tar.gz?rlkey=fx7xa2sr8yjaan4p6kjm9037r&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/6kfcl5l8v2d9abomgy3lq/Meta-data_Nam2019_Hematologic.tar.gz?rlkey=4d3yn5ao7hw71dq66olc2hb1z&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20097",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20097",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20097",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20097",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20097",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20097"
+      }
+    },
+    {
+      "id": "3ca:20857",
+      "node_id": "20857",
+      "title": "Rendeiro et al. 2020",
+      "category": "Hematologic",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/hematologic",
+      "citation_url": "https://www.nature.com/articles/s41467-019-14081-6",
+      "citation_doi_candidate": "10.1038/s41467-019-14081-6",
+      "disease": "CLL",
+      "technology": "10x",
+      "samples": 12,
+      "cells": 48016,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/ajol9vbdkw7e6vdlgegd1/Data_Rendeiro2020_Hematologic.tar.gz?rlkey=vne2fmgqrvckswqro6eiwcd0f&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/pf7df9d9jno86pdmeqkau/Meta-data_Rendeiro2020_Hematologic.tar.gz?rlkey=ijtx02vncstonpv4nr4yr1ra6&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20857",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20857",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20857",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20857"
+      }
+    },
+    {
+      "id": "3ca:20860",
+      "node_id": "20860",
+      "title": "Riether et al. 2020",
+      "category": "Hematologic",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/hematologic",
+      "citation_url": "https://www.nature.com/articles/s41591-020-0910-8",
+      "citation_doi_candidate": "10.1038/s41591-020-0910-8",
+      "disease": "AML",
+      "technology": "10x",
+      "samples": 4,
+      "cells": 8103,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/6kt1fbi0h92ha9szx24ad/Data_Riether2020_Hematologic.tar.gz?rlkey=004s3kvgqugdpx3c5a7k8l7tv&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/rag8r32da2kvtg1f6lze9/Meta-data_Riether2020_Hematologic.tar.gz?rlkey=ci4xq1j092k9hiyzmn5kduxn9&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20860",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20860",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20860"
+      }
+    },
+    {
+      "id": "3ca:20863",
+      "node_id": "20863",
+      "title": "Roider et al. 2020",
+      "category": "Hematologic",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/hematologic",
+      "citation_url": "https://www.nature.com/articles/s41556-020-0532-x",
+      "citation_doi_candidate": "10.1038/s41556-020-0532-x",
+      "disease": "B cell lymphoma",
+      "technology": "10x",
+      "samples": 12,
+      "cells": 35278,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/dotmo635ydqmoi7g6jy9k/Data_Roider2020_Hematologic.tar.gz?rlkey=q8cp88dabilavhbyfmuq93q14&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/qiw2rqqbsdai4qqm2yx8s/Meta-data_Roider2020_Hematologic.tar.gz?rlkey=g32g48jccbmqizyhrm9q8wvtd&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20863",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20863",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20863",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20863",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20863",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20863"
+      }
+    },
+    {
+      "id": "3ca:20884",
+      "node_id": "20884",
+      "title": "Steen et al. 2021",
+      "category": "Hematologic",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/hematologic",
+      "citation_url": "https://www.cell.com/cancer-cell/fulltext/S1535-6108(21)00451-7",
+      "citation_doi_candidate": null,
+      "disease": "DLBCL",
+      "technology": "10x",
+      "samples": 10,
+      "cells": 18197,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/25daxap2fv90knsbo8llo/Data_Steen2021_Hematologic.tar.gz?rlkey=ulbpn755ahzk9zfzfp9oj4vut&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/130wphy21n68rzodsc22o/Meta-data_Steen2021_Hematologic.tar.gz?rlkey=jmp3i0a0msv8gajovh8oyrt5d&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20884",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20884",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20884",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20884",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20884",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20884"
+      }
+    },
+    {
+      "id": "3ca:20114",
+      "node_id": "20114",
+      "title": "Wu et al. 2020",
+      "category": "Hematologic",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/hematologic",
+      "citation_url": "https://jhoonline.biomedcentral.com/articles/10.1186/s13045-020-00941-y",
+      "citation_doi_candidate": "10.1186/s13045-020-00941-y",
+      "disease": "AML",
+      "technology": "Microwell-seq",
+      "samples": 41,
+      "cells": 194571,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/3h5mj2ghnf58drlyna9th/Data_Wu2020_Hematologic.tar.gz?rlkey=qvcj1912jjkccvkqy7onjctgh&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/l9segi3xbvmsd7afbqthb/Meta-data_Wu2020_Hematologic.tar.gz?rlkey=3yn9c17rls6bbnzjc9y8q4zbd&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20114",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20114",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20114",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20114",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20114",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20114"
+      }
+    },
+    {
+      "id": "3ca:20905",
+      "node_id": "20905",
+      "title": "Zhang et al. 2019",
+      "category": "Hematologic",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/hematologic",
+      "citation_url": "https://www.nature.com/articles/s41592-019-0529-1",
+      "citation_doi_candidate": "10.1038/s41592-019-0529-1",
+      "disease": "Follicular lymphoma",
+      "technology": "10x",
+      "samples": 4,
+      "cells": 7002,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/mzap4shm86a00web6noev/Data_Zhang2019_Hematologic.tar.gz?rlkey=t0bdidcd4m9028hbiok0jxvah&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/8dl7ft7cold79k3r7lwh6/Meta-data_Zhang2019_Hematologic.tar.gz?rlkey=5942s6r2ouwdogtydm3kqt2sl&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20905",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20905",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20905",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20905",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20905",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20905"
+      }
+    },
+    {
+      "id": "3ca:20050",
+      "node_id": "20050",
+      "title": "Bi et al. 2021",
+      "category": "Kidney",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/kidney",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S1535610821001173",
+      "citation_doi_candidate": null,
+      "disease": "RCC",
+      "technology": "10x",
+      "samples": 8,
+      "cells": 34326,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/35f2koc2et5o1oyi7a5nm/Data_Bi2021_Kidney.tar.gz?rlkey=olthnj9mnqu7jsb3d68jobsgr&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/k1ztobih685khi7ukyrvm/Meta-data_Bi2021_Kidney.tar.gz?rlkey=sel5bffe4orjkubtz5yiy01r5&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20050",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20050",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20050",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20050",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20050",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20050"
+      }
+    },
+    {
+      "id": "3ca:20821",
+      "node_id": "20821",
+      "title": "Krishna et al. 2021",
+      "category": "Kidney",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/kidney",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S1535610821001653",
+      "citation_doi_candidate": null,
+      "disease": "RCC",
+      "technology": "10x",
+      "samples": 29,
+      "cells": 167283,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/mdli6islnfg6x85d36bi6/Data_Krishna2021_Kidney.tar.gz?rlkey=s25mgdka6u62tt9682piosflw&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/zmuel26ucbb6p17f1ljjg/Meta-data_Krishna2021_Kidney.tar.gz?rlkey=l28wvu43nxh9jpy1q1f0mjkvy&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20821",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20821",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20821",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20821",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20821",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20821"
+      }
+    },
+    {
+      "id": "3ca:20100",
+      "node_id": "20100",
+      "title": "Obradovic et al. 2021",
+      "category": "Kidney",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/kidney",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S0092867421005730",
+      "citation_doi_candidate": null,
+      "disease": "RCC",
+      "technology": "10x",
+      "samples": 8,
+      "cells": 19781,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/id6f5f2w439mzi6jar92z/Data_Obradovic2021_Kidney.tar.gz?rlkey=z29ke0ou9vjiv1p7a5hrct8z8&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/a56suhkzzwt6iqeb0tif0/Meta-data_Obradovic2021_Kidney.tar.gz?rlkey=geqcjh82uocxv5af7utzqqyde&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20100",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20100",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20100",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20100",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20100",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20100"
+      }
+    },
+    {
+      "id": "3ca:20117",
+      "node_id": "20117",
+      "title": "Young et al. 2018",
+      "category": "Kidney",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/kidney",
+      "citation_url": "https://science.sciencemag.org/content/361/6402/594",
+      "citation_doi_candidate": null,
+      "disease": "Wilms tumor, ccRCC, papillary RCC",
+      "technology": "10x",
+      "samples": 66,
+      "cells": 125139,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/opewhcog3sd5nc37b9ucv/Data_Young2018_Kidney.tar.gz?rlkey=syu5qmj84agblb9vwq2mur85s&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/2p8xa2ijqtm0rgvt7o9li/Meta-data_Young2018_Kidney.tar.gz?rlkey=qpl8p8oirz7t1nyrvm0nlm6ca&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20117",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20117",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20117",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20117",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20117",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20117"
+      }
+    },
+    {
+      "id": "3ca:20121",
+      "node_id": "20121",
+      "title": "Zhang et al. 2021",
+      "category": "Kidney",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/kidney",
+      "citation_url": "https://www.pnas.org/content/118/24/e2103240118",
+      "citation_doi_candidate": null,
+      "disease": "RCC",
+      "technology": "10x",
+      "samples": 14,
+      "cells": 29474,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/i1n8v8d0ht2p918su3akp/Data_Zhang2021_Kidney.tar.gz?rlkey=friqzf8p24qeg2cvljfb8xtly&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/p2rtwzhq6uq0oovlsh5k9/Meta-data_Zhang2021_Kidney.tar.gz?rlkey=xcfoysr9z2l5479cm2l4p3s8x&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20121",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20121",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20121",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20121",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20121",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20121"
+      }
+    },
+    {
+      "id": "3ca:20091",
+      "node_id": "20091",
+      "title": "Ma et al. 2019",
+      "category": "Liver/Biliary",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/liverbiliary",
+      "citation_url": "http://www.sciencedirect.com/science/article/pii/S1535610819303757",
+      "citation_doi_candidate": null,
+      "disease": "HCC/iCCA",
+      "technology": "10x",
+      "samples": 8,
+      "cells": 3018,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/vi8969rnsgxb7o2a0mr31/Data_Ma2019_Liver-Biliary.tar.gz?rlkey=0okv3bqvggk1bi6l7ov014qfv&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/yyly3rqx2e71vu8n0nx07/Meta-data_Ma2019_Liver-Biliary.tar.gz?rlkey=v31r6l7xw2izkxb26ofx3cf9c&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20091",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20091",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20091",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20091",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20091",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20091"
+      }
+    },
+    {
+      "id": "3ca:20872",
+      "node_id": "20872",
+      "title": "Sharma et al. 2020",
+      "category": "Liver/Biliary",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/liverbiliary",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S0092867420310825",
+      "citation_doi_candidate": null,
+      "disease": "HCC",
+      "technology": "10x",
+      "samples": 58,
+      "cells": 73589,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/7z0e1w0ob471tnh1quxmz/Data_Sharma2020_Liver-Biliary.tar.gz?rlkey=hknvilto1ibp4loeal8f472pf&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/v8iy6gbh50r7eckj1d9z3/Meta-data_Sharma2020_Liver-Biliary.tar.gz?rlkey=zcb8tjekuuhbl3i9wxrjnxhg2&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20872",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20872",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20872",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20872",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20872"
+      }
+    },
+    {
+      "id": "3ca:20109",
+      "node_id": "20109",
+      "title": "Sun et al. 2021",
+      "category": "Liver/Biliary",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/liverbiliary",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S0092867420316135",
+      "citation_doi_candidate": null,
+      "disease": "HCC",
+      "technology": "10x",
+      "samples": 18,
+      "cells": 16498,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/h2zmdzjk2c2ywswzl8688/Data_Sun2021_Liver-Biliary.tar.gz?rlkey=jer8paty8a1lbau2g3o3nk4k3&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/r9p07q9zxq2xrueruqhme/Meta-data_Sun2021_Liver-Biliary.tar.gz?rlkey=i6idaw9yj2cve8addvnyrvcs6&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20109",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20109",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20109",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20109",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20109",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20109"
+      }
+    },
+    {
+      "id": "3ca:20908",
+      "node_id": "20908",
+      "title": "Zhang et al. 2019",
+      "category": "Liver/Biliary",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/liverbiliary",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S0092867419311195",
+      "citation_doi_candidate": null,
+      "disease": "HCC",
+      "technology": "10x, SmartSeq2",
+      "samples": 42,
+      "cells": 73261,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/9zumng7o9jddfsqffu6yt/Data_Zhang2019_Liver-Biliary.tar.gz?rlkey=tot9jxh1jkpwvuprgsd2qd2i5&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/263sujyeqz3cvia0wjlad/Meta-data_Zhang2019_Liver-Biliary.tar.gz?rlkey=7p2t207y0xxhrz78m1qe79m3a&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20908",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20908",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20908",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20908",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20908"
+      }
+    },
+    {
+      "id": "3ca:20917",
+      "node_id": "20917",
+      "title": "Zheng et al. 2017",
+      "category": "Liver/Biliary",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/liverbiliary",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S0092867417305962",
+      "citation_doi_candidate": null,
+      "disease": "HCC",
+      "technology": "10x",
+      "samples": 17,
+      "cells": 5063,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/mhgb601qt0ngrfupjiwpw/Data_Zheng2017_Liver-Biliary.tar.gz?rlkey=yy4cqa6q0nwhdnlqs6uozcird&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/5eepeo5kj8e3ztms57839/Meta-data_Zheng2017_Liver-Biliary.tar.gz?rlkey=ff5hshheh2tt0in5p4dzaiw5u&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20917",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20917",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20917",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20917",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20917"
+      }
+    },
+    {
+      "id": "3ca:20764",
+      "node_id": "20764",
+      "title": "Bischoff et al. 2021",
+      "category": "Lung",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/lung",
+      "citation_url": "https://www.nature.com/articles/s41388-021-02054-3",
+      "citation_doi_candidate": "10.1038/s41388-021-02054-3",
+      "disease": "Lung adenocarcinoma",
+      "technology": "10x",
+      "samples": 20,
+      "cells": 120961,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/08bjhmr5b7zcr9w3qm37n/Data_Bischoff2021_Lung.tar.gz?rlkey=xlv2vwb5xenzczoo9jiktr1ry&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/5phcsqxntjdjjfxypf4l3/Meta-data_Bischoff2021_Lung.tar.gz?rlkey=gmn535v9fqtqaqibvjria1lks&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20764",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20764",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20764",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20764",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20764",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20764"
+      }
+    },
+    {
+      "id": "3ca:20767",
+      "node_id": "20767",
+      "title": "Chan et al. 2021",
+      "category": "Lung",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/lung",
+      "citation_url": "https://www.cell.com/cancer-cell/fulltext/S1535-6108(21)00497-9",
+      "citation_doi_candidate": null,
+      "disease": "SCLC, Lung Adenocarcinoma",
+      "technology": "10x",
+      "samples": 37,
+      "cells": 86662,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/mn5xe6x5hufjy2j570r3y/Data_Chan2021_Lung.tar.gz?rlkey=gptwkhhao0yz3xw0b0olf1l9u&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/n6i0d3km34y5txol8hicy/Meta-data_Chan2021_Lung.tar.gz?rlkey=c6wsubisf8jsnq4ydsppkueec&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20767",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20767",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20767",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20767",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20767",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20767"
+      }
+    },
+    {
+      "id": "3ca:20803",
+      "node_id": "20803",
+      "title": "Guo et al. 2018",
+      "category": "Lung",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/lung",
+      "citation_url": "https://www.nature.com/articles/s41591-018-0045-3",
+      "citation_doi_candidate": "10.1038/s41591-018-0045-3",
+      "disease": "NSCLC",
+      "technology": "SmartSeq2",
+      "samples": 40,
+      "cells": 12346,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/xm4x3thusfqi7vhqbkds6/Data_Guo2018_Lung.tar.gz?rlkey=cnxhnn4c7brjbq6cbdbo2cg5u&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/ni6ja6vcahj1xehyesy6w/Meta-data_Guo2018_Lung.tar.gz?rlkey=dsyaeztbjoa4zkz5p6vjp1ya1&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20803",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20803",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20803",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20803",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20803"
+      }
+    },
+    {
+      "id": "3ca:20072",
+      "node_id": "20072",
+      "title": "Ireland et al. 2020",
+      "category": "Lung",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/lung",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S153561082030218X",
+      "citation_doi_candidate": null,
+      "disease": "SCLC",
+      "technology": "10x",
+      "samples": 12,
+      "cells": 31258,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/8b4p8d551dv9wp0mt4blg/Data_Ireland2020_Lung.tar.gz?rlkey=xidxajfu4ynnbl6f3lw9owqlm&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/0k2lt05cdvc6639h2j3uq/Meta-data_Ireland2020_Lung.tar.gz?rlkey=t9jwymniruu2ia4fh0s33n4di&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20072",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20072",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20072"
+      }
+    },
+    {
+      "id": "3ca:20082",
+      "node_id": "20082",
+      "title": "Kim et al. 2020",
+      "category": "Lung",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/lung",
+      "citation_url": "https://www.nature.com/articles/s41467-020-16164-1",
+      "citation_doi_candidate": "10.1038/s41467-020-16164-1",
+      "disease": "Lung adenocarcinoma",
+      "technology": "10x",
+      "samples": 14,
+      "cells": 32493,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/n3hg4fj9bth2tkroej6t2/Data_Kim2020_Lung.tar.gz?rlkey=fxabtlt57pexdj7hdhvddzyjx&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/0vvy8pugcvfz50cut60gy/Meta-data_Kim2020_Lung.tar.gz?rlkey=hrg78tcmlt7l7py1em19y51g7&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20082",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20082",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20082",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20082",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20082",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20082"
+      }
+    },
+    {
+      "id": "3ca:20084",
+      "node_id": "20084",
+      "title": "Laughney et al. 2020",
+      "category": "Lung",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/lung",
+      "citation_url": "https://www.nature.com/articles/s41591-019-0750-6",
+      "citation_doi_candidate": "10.1038/s41591-019-0750-6",
+      "disease": "Lung cancer",
+      "technology": "10x",
+      "samples": 17,
+      "cells": 40505,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/idlzf638lbwtejs3oruoe/Data_Laughney2020_Lung.tar.gz?rlkey=wu1a2fbj2n4iyya5mf2q1on1b&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/bxagrx8emjcca2h69qwk0/Meta-data_Laughney2020_Lung.tar.gz?rlkey=b715kxnv7f7edc11itp0ap417&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20084",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20084",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20084",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20084",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20084",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20084"
+      }
+    },
+    {
+      "id": "3ca:20093",
+      "node_id": "20093",
+      "title": "Maynard et al. 2020",
+      "category": "Lung",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/lung",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S0092867420308825",
+      "citation_doi_candidate": null,
+      "disease": "Lung cancer",
+      "technology": "SmartSeq2",
+      "samples": 50,
+      "cells": 19777,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/py7z9tgjdp1m3aw2zop7x/Data_Maynard2020_Lung.tar.gz?rlkey=rirsnfhqus3indqpp5g02ce1u&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/r62e9vf0uo60i5fpfsrd3/Meta-data_Maynard2020_Lung.tar.gz?rlkey=on1mc7puyky0tsnlzkg12l0zb&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20093",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20093",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20093",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20093",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20093",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20093"
+      }
+    },
+    {
+      "id": "3ca:20106",
+      "node_id": "20106",
+      "title": "Qian et al. 2020",
+      "category": "Lung",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/lung",
+      "citation_url": "https://www.nature.com/articles/s41422-020-0355-0",
+      "citation_doi_candidate": "10.1038/s41422-020-0355-0",
+      "disease": "Lung cancer",
+      "technology": "10x",
+      "samples": 8,
+      "cells": 27262,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/361w3739nwvc89l2gx4u8/Data_Qian2020_Lung.tar.gz?rlkey=4w00kvwlnp3jz6fmmtoebao5j&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/4jtax8aklbhszx80krl3f/Meta-data_Qian2020_Lung.tar.gz?rlkey=6hbdtx9ro7n8hdi0z5jti0ikd&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20106",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20106",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20106",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20106",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20106",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20106"
+      }
+    },
+    {
+      "id": "3ca:20878",
+      "node_id": "20878",
+      "title": "Song et al. 2019",
+      "category": "Lung",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/lung",
+      "citation_url": "https://onlinelibrary.wiley.com/doi/10.1002/cam4.2113",
+      "citation_doi_candidate": "10.1002/cam4.2113",
+      "disease": "NSCLC",
+      "technology": "10x",
+      "samples": 6,
+      "cells": 8772,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/k7yd3cine5dmwsjgv839h/Data_Song2019_Lung.tar.gz?rlkey=y9ipfcxsu5btza7j8n2wvpnul&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/eyecfgjefrksfv3ve0qar/Meta-data_Song2019_Lung.tar.gz?rlkey=qiz9mluost6nqh11ddcze84w2&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20878",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20878",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20878",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20878",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20878"
+      }
+    },
+    {
+      "id": "3ca:20115",
+      "node_id": "20115",
+      "title": "Xing et al. 2021",
+      "category": "Lung",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/lung",
+      "citation_url": "https://advances.sciencemag.org/content/7/5/eabd9738",
+      "citation_doi_candidate": null,
+      "disease": "Lung cancer",
+      "technology": "10x",
+      "samples": 31,
+      "cells": 118293,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/3ll4j9tdur4485of8s3yf/Data_Xing2021_Lung.tar.gz?rlkey=a4l934jl6hwgqo2tx8f4fuxrk&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/7rawj2jnq8m4wthh9alvg/Meta-data_Xing2021_Lung.tar.gz?rlkey=fdj0tbhi1zi8gnkf6ng724m8t&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20115",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20115",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20115",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20115",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20115",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20115"
+      }
+    },
+    {
+      "id": "3ca:20920",
+      "node_id": "20920",
+      "title": "Zilionis et al. 2019",
+      "category": "Lung",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/lung",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S1074761319301268",
+      "citation_doi_candidate": null,
+      "disease": "NSCLC",
+      "technology": "inDrop",
+      "samples": 7,
+      "cells": 31179,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/ot0tjg6254ne6hqzp11zv/Data_Zilionis2019_Lung.tar.gz?rlkey=kxqcfab6vaj043bvfkiepx2w9&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/0npq2qqtbap05mlzloqvd/Meta-data_Zilionis2019_Lung.tar.gz?rlkey=j9h9kck83ybltirr2t0cnudna&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20920",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20920",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20920",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20920",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20920",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20920"
+      }
+    },
+    {
+      "id": "3ca:20059",
+      "node_id": "20059",
+      "title": "Dong et al. 2020",
+      "category": "Neuroendocrine",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/neuroendocrine",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S1535610820304256",
+      "citation_doi_candidate": null,
+      "disease": "Neuroblastoma",
+      "technology": "10x",
+      "samples": 13,
+      "cells": 55190,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/mvb8uevn5h497cpzde4jq/Data_Dong2020_Neuroendocrine.tar.gz?rlkey=v9aiwotok87yje44stfwt8knk&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/dqzqcw44np14b2ryc2bej/Meta-data_Dong2020_Neuroendocrine.tar.gz?rlkey=31czljwtbuh8ggnipi8xwani2&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20059",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20059",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20059",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20059",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20059",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20059"
+      }
+    },
+    {
+      "id": "3ca:20074",
+      "node_id": "20074",
+      "title": "Jansky et al. 2021",
+      "category": "Neuroendocrine",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/neuroendocrine",
+      "citation_url": "https://www.nature.com/articles/s41588-021-00806-1",
+      "citation_doi_candidate": "10.1038/s41588-021-00806-1",
+      "disease": "Neuroblastoma",
+      "technology": "10x",
+      "samples": 14,
+      "cells": 64769,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/3hm4meeu8q0qz9d2e1eaw/Data_Jansky2021_Neuroendocrine.tar.gz?rlkey=ro65d230ippkd00za1js1wcy0&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/admjp7ftksoblyzhzlg9h/Meta-data_Jansky2021_Neuroendocrine.tar.gz?rlkey=dbyxenvzsobng3t7ydwvus54b&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20074",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20074",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20074",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20074",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20074",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20074"
+      }
+    },
+    {
+      "id": "3ca:20081",
+      "node_id": "20081",
+      "title": "Kildisiute et al. 2021",
+      "category": "Neuroendocrine",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/neuroendocrine",
+      "citation_url": "https://advances.sciencemag.org/node/248364.full",
+      "citation_doi_candidate": null,
+      "disease": "Neuroblastoma",
+      "technology": "10x, CEL-seq2",
+      "samples": 21,
+      "cells": 19723,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/lgiahzdgvt92wf1x2bqy7/Data_Kildisiute2021_Neuroendocrine.tar.gz?rlkey=anls2ppfe86b6tsj36w9xu10k&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/qp28g457yni3aox8avey1/Meta-data_Kildisiute2021_Neuroendocrine.tar.gz?rlkey=rh578quviarlcd20uuitaeo9a&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20081",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20081",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20081",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20081",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20081",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20081"
+      }
+    },
+    {
+      "id": "3ca:20851",
+      "node_id": "20851",
+      "title": "Rao et al. 2020",
+      "category": "Neuroendocrine",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/neuroendocrine",
+      "citation_url": "http://molecularcasestudies.cshlp.org/content/6/2/a004978.long",
+      "citation_doi_candidate": null,
+      "disease": "Small intestinal neuroendocrine tumor",
+      "technology": "10x",
+      "samples": 2,
+      "cells": 4739,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/852uzgfxzy416m6n3kvtn/Data_Rao2020_Neuroendocrine.tar.gz?rlkey=04fyx541fwvh35bmaut3l2tez&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/nw8m8aossprjlr2e9x5bv/Meta-data_Rao2020_Neuroendocrine.tar.gz?rlkey=gx59jw2o7ht8y5xhi3zkd2uvk&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20851",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20851",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20851",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20851",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20851",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20851"
+      }
+    },
+    {
+      "id": "3ca:20049",
+      "node_id": "20049",
+      "title": "Aynaud et al. 2020",
+      "category": "Other/Models",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/othermodels",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S2211124720300747",
+      "citation_doi_candidate": null,
+      "disease": "Ewing sarcoma",
+      "technology": "10x, Fluidigm C1",
+      "samples": 14,
+      "cells": 16337,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/68o4u9h8r72h6ulw4crn8/Data_Aynaud2020_Other-Models.tar.gz?rlkey=2kooqpwlayby3r1gi5hrufbsi&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/efai1sqacc6xtri4ke3rf/Meta-data_Aynaud2020_Other-Models.tar.gz?rlkey=j0xajpx8gicfu0g7e2lol2bt6&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20049",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20049",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20049",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20049"
+      }
+    },
+    {
+      "id": "3ca:20057",
+      "node_id": "20057",
+      "title": "Cui et al. 2021",
+      "category": "Other/Models",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/othermodels",
+      "citation_url": "https://academic.oup.com/neuro-oncology/advance-article/doi/10.1093/neuonc/noab102/6256973",
+      "citation_doi_candidate": "10.1093/neuonc/noab102/6256973",
+      "disease": "Pituitary neuroendocrine tumors",
+      "technology": "STRT seq",
+      "samples": 23,
+      "cells": 2679,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/5kzi47q86o48l9ez4mbns/Data_Cui2021_Other-Models.tar.gz?rlkey=owdiz8asjpnakhkc5aah34n7d&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/j8e5hw3lumn9gtn9wr08b/Meta-data_Cui2021_Other-Models.tar.gz?rlkey=6x2a0gwq573t0fychxdw9opo4&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20057",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20057",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20057",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20057",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20057"
+      }
+    },
+    {
+      "id": "3ca:20061",
+      "node_id": "20061",
+      "title": "Dost et al. 2020",
+      "category": "Other/Models",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/othermodels",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S193459092030360X",
+      "citation_doi_candidate": null,
+      "disease": "Lung cancer",
+      "technology": "10x",
+      "samples": 10,
+      "cells": 32661,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/8ubp64zqb0u7e9dbr4ovn/Data_Dost2020_Other-Models.tar.gz?rlkey=ie2yz818drk5w2b430owc12uf&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/b115yuwtv8fgo268mmgl4/Meta-data_Dost2020_Other-Models.tar.gz?rlkey=rzqo1y0eorcefrz8yhlqkxo18&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20061",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20061",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20061",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20061",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20061",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20061"
+      }
+    },
+    {
+      "id": "3ca:20779",
+      "node_id": "20779",
+      "title": "Durante et al. 2020",
+      "category": "Other/Models",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/othermodels",
+      "citation_url": "https://www.nature.com/articles/s41467-019-14256-1",
+      "citation_doi_candidate": "10.1038/s41467-019-14256-1",
+      "disease": "Uveal melanoma",
+      "technology": "10x",
+      "samples": 11,
+      "cells": 103703,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/x1s7hmmukyp54tcah3spp/Data_Durante2020_Other-Models.tar.gz?rlkey=vjtwtnnjryncc8fw1v1boaru9&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/uu9hmn04l9inxsrc2d3vm/Meta-data_Durante2020_Other-Models.tar.gz?rlkey=hs81oo6igpww817n7bvekgvbi&dl=1"
+      },
+      "detail_pages": {
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20779"
+      }
+    },
+    {
+      "id": "3ca:20062",
+      "node_id": "20062",
+      "title": "Ebinger et al. 2016",
+      "category": "Other/Models",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/othermodels",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S1535610816305086",
+      "citation_doi_candidate": null,
+      "disease": "ALL",
+      "technology": "SMARTer",
+      "samples": 5,
+      "cells": 185,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/s6ki7xzmxso1609b116g8/Data_Ebinger2016_Other-Models.tar.gz?rlkey=vofy7qzckhys3wegtyistlpq0&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/izg6hn5xhrw41y607gi2a/Meta-data_Ebinger2016_Other-Models.tar.gz?rlkey=7zilz9i6w659aietvzh9j5zt2&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20062",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20062",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20062",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20062"
+      }
+    },
+    {
+      "id": "3ca:20064",
+      "node_id": "20064",
+      "title": "Franses et al. 2017",
+      "category": "Other/Models",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/othermodels",
+      "citation_url": "https://theoncologist.onlinelibrary.wiley.com/doi/full/10.1634/theoncologist.2017-0234",
+      "citation_doi_candidate": "10.1634/theoncologist.2017-0234",
+      "disease": "IPMN/PDAC",
+      "technology": "",
+      "samples": 3,
+      "cells": 34,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/jrosrxv1xtiaqzr2yk73m/Data_Franses2017_Other-Models.tar.gz?rlkey=z935diurukjjzydqcxyy4b6a5&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/h9r49qbb4xnqeue0zoq2f/Meta-data_Franses2017_Other-Models.tar.gz?rlkey=u011yzvwf65ktp7ru4xn8z3qm&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20064",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20064",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20064"
+      }
+    },
+    {
+      "id": "3ca:20065",
+      "node_id": "20065",
+      "title": "Franses et al. 2020",
+      "category": "Other/Models",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/othermodels",
+      "citation_url": "https://www.nature.com/articles/s41467-020-17150-3",
+      "citation_doi_candidate": "10.1038/s41467-020-17150-3",
+      "disease": "PDAC",
+      "technology": "10x",
+      "samples": 4,
+      "cells": 81,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/mnp8g5smu9in3dikgyx7u/Data_Franses2020_Other-Models.tar.gz?rlkey=im1pvi1kvs2x7d4atpu3byyze&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/mtw06smxhc82qq416zhgc/Meta-data_Franses2020_Other-Models.tar.gz?rlkey=jwn58h7rr6ljj7hkbgdrw52cx&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20065",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20065",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20065",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20065"
+      }
+    },
+    {
+      "id": "3ca:20791",
+      "node_id": "20791",
+      "title": "Gonzalez et al. 2022",
+      "category": "Other/Models",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/othermodels",
+      "citation_url": "https://www.sciencedirect.com/science/article/abs/pii/S0092867421015658",
+      "citation_doi_candidate": null,
+      "disease": "Brain metastases",
+      "technology": "10x",
+      "samples": 15,
+      "cells": 99150,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/4tnimxs9j7x9akv8h3ofc/Data_Gonzalez2022_Other-Models.tar.gz?rlkey=936ixwyhr93i8nxrvj778ad1r&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/cbekm18xcyfhwnhp1ct9u/Meta-data_Gonzalez2022_Other-Models.tar.gz?rlkey=b1g2cqyzoe3whlgcqpk03jart&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20791",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20791",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20791",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20791",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20791",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20791"
+      }
+    },
+    {
+      "id": "3ca:20797",
+      "node_id": "20797",
+      "title": "Gubin et al. 2018",
+      "category": "Other/Models",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/othermodels",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S009286741831242X",
+      "citation_doi_candidate": null,
+      "disease": "Sarcoma",
+      "technology": "10x",
+      "samples": 4,
+      "cells": 14618,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/w77glyhjsmt7rhm0ot0al/Data_Gubin2018_Other-Models.tar.gz?rlkey=7p2y1dwfaztf94gskok0pc5hb&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/i1kc2mflbb4jvgjvqvbtm/Meta-data_Gubin2018_Other-Models.tar.gz?rlkey=cfl8awcopzmli4p4zb9d2sytw&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20797",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20797",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20797"
+      }
+    },
+    {
+      "id": "3ca:20809",
+      "node_id": "20809",
+      "title": "Hollern et al. 2019",
+      "category": "Other/Models",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/othermodels",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S009286741931178X",
+      "citation_doi_candidate": null,
+      "disease": "TNBC",
+      "technology": "10x",
+      "samples": 4,
+      "cells": 27532,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/hx289ezlkryp8045upbx0/Data_Hollern2019_Other-Models.tar.gz?rlkey=tv6i6lf58jalmeflu1b2zz6v1&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/16yrnh6yrvccudgls5fa5/Meta-data_Hollern2019_Other-Models.tar.gz?rlkey=emn6dg80ng5isu88ukw6auvg3&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20809",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20809",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20809",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20809"
+      }
+    },
+    {
+      "id": "3ca:20075",
+      "node_id": "20075",
+      "title": "Jansky et al. 2021",
+      "category": "Other/Models",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/othermodels",
+      "citation_url": "https://www.nature.com/articles/s41588-021-00806-1",
+      "citation_doi_candidate": "10.1038/s41588-021-00806-1",
+      "disease": "Neuroblastoma",
+      "technology": "MARS-seq",
+      "samples": 4,
+      "cells": 4028,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/3v2om2w8l2z1jd6lucqal/Data_Jansky2021_Other-Models.tar.gz?rlkey=ul6914ly9itm7isr40hluna01&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/d8un6ix9ob042qzx8yyvb/Meta-data_Jansky2021_Other-Models.tar.gz?rlkey=dplr6mpcstzfgnhk3prr38jnm&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20075",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20075",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20075",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20075"
+      }
+    },
+    {
+      "id": "3ca:20815",
+      "node_id": "20815",
+      "title": "Jordan et al. 2016",
+      "category": "Other/Models",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/othermodels",
+      "citation_url": "https://www.nature.com/articles/nature19328",
+      "citation_doi_candidate": "10.1038/nature19328",
+      "disease": "Breast cancer",
+      "technology": "",
+      "samples": 16,
+      "cells": 74,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/sx349k3typyoy7szsk37h/Data_Jordan2016_Other-Models.tar.gz?rlkey=ja31yuh11sa7y3x5kvt8ff78b&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/adeexm50z2rcghivdf0tf/Meta-data_Jordan2016_Other-Models.tar.gz?rlkey=fxnpfqpcw0r0wiqkwbo7479so&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20815",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20815",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20815",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20815"
+      }
+    },
+    {
+      "id": "3ca:20083",
+      "node_id": "20083",
+      "title": "Kinker et al. 2020",
+      "category": "Other/Models",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/othermodels",
+      "citation_url": "https://www.nature.com/articles/s41588-020-00726-6",
+      "citation_doi_candidate": "10.1038/s41588-020-00726-6",
+      "disease": "CCLE collection",
+      "technology": "10x",
+      "samples": 198,
+      "cells": 53513,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/s60dowa5uk5dx3xar9svz/Data_Kinker2020_Other-Models.tar.gz?rlkey=5qwosd9dydjxqlv4ld0sk2tw6&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/m5k6a999bidil8r4ncobg/Meta-data_Kinker2020_Other-Models.tar.gz?rlkey=91osh36vntmyszyaltupu2aj4&dl=1"
+      },
+      "detail_pages": {
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20083",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20083"
+      }
+    },
+    {
+      "id": "3ca:20824",
+      "node_id": "20824",
+      "title": "Kumar et al. 2022",
+      "category": "Other/Models",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/othermodels",
+      "citation_url": "https://cancerdiscovery.aacrjournals.org/content/early/2021/10/11/2159-8290.CD-21-0683",
+      "citation_doi_candidate": null,
+      "disease": "Gastric cancer",
+      "technology": "10x",
+      "samples": 40,
+      "cells": 158500,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/i66mqyrzfsvweq9iujx1k/Data_Kumar2022_Other-Models.tar.gz?rlkey=xdwkirtdsoyod2kdsnwfg3kwn&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/859vz558nwmb9bj785b01/Meta-data_Kumar2022_Other-Models.tar.gz?rlkey=q21y52ga104yllyak8ouhd08p&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20824",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20824",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20824",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20824"
+      }
+    },
+    {
+      "id": "3ca:20088",
+      "node_id": "20088",
+      "title": "Ligorio et al. 2019",
+      "category": "Other/Models",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/othermodels",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S0092867419305100",
+      "citation_doi_candidate": null,
+      "disease": "PDAC",
+      "technology": "SMARTer",
+      "samples": 4,
+      "cells": 93,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/p3lbsseodwwf5l8jc2t4s/Data_Ligorio2019_Other-Models.tar.gz?rlkey=5eydgzedq3rsso3kp33l0ep59&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/euqhz98zjzqon3pmxy2vu/Meta-data_Ligorio2019_Other-Models.tar.gz?rlkey=0q9tdhr3j84ejz2mjlnpq0sww&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20088",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20088",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20088",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20088"
+      }
+    },
+    {
+      "id": "3ca:20092",
+      "node_id": "20092",
+      "title": "Massalha et al. 2020",
+      "category": "Other/Models",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/othermodels",
+      "citation_url": "https://www.embopress.org/doi/full/10.15252/msb.20209682",
+      "citation_doi_candidate": "10.15252/msb.20209682",
+      "disease": "Liver metastases (CRC, Cholangiocarcinoma)",
+      "technology": "10x",
+      "samples": 5,
+      "cells": 1354,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/e6r6az3hy6z3el2h1stii/Data_Massalha2020_Other-Models.tar.gz?rlkey=mdw0mjcbyfz9sav6c0lm9frjb&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/2r5872977hrjgn3pu2o1z/Meta-data_Massalha2020_Other-Models.tar.gz?rlkey=fgz19xpxwgf0re6tf157yuwi3&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20092",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20092",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20092",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20092"
+      }
+    },
+    {
+      "id": "3ca:20094",
+      "node_id": "20094",
+      "title": "Mercatelli et al. 2021",
+      "category": "Other/Models",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/othermodels",
+      "citation_url": "https://www.mdpi.com/2218-273X/11/2/177/htm",
+      "citation_doi_candidate": null,
+      "disease": "Neuroblastoma",
+      "technology": "10x",
+      "samples": 2,
+      "cells": 2067,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/ofjrjllocc8wkxrcs17b7/Data_Mercatelli2021_Other-Models.tar.gz?rlkey=8s3ibsq36k4kj1dev9pk3vnyt&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/17qedtvti75vmkf8r0nmn/Meta-data_Mercatelli2021_Other-Models.tar.gz?rlkey=b675o2g99t1rlduss6f2mkw3g&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20094",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20094",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20094",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20094"
+      }
+    },
+    {
+      "id": "3ca:20095",
+      "node_id": "20095",
+      "title": "Miyamoto et al. 2015",
+      "category": "Other/Models",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/othermodels",
+      "citation_url": "https://science.sciencemag.org/content/349/6254/1351",
+      "citation_doi_candidate": null,
+      "disease": "Prostate cancer",
+      "technology": "",
+      "samples": 26,
+      "cells": 169,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/ey8ye5i0fkdtl9u9aa9wp/Data_Miyamoto2015_Other-Models.tar.gz?rlkey=u2xzfxem0w4w4trnppkszpcd2&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/nj5j21kndqprqtddhaobu/Meta-data_Miyamoto2015_Other-Models.tar.gz?rlkey=3iynz37tzh977aqeobow16z8b&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20095",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20095",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20095",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20095"
+      }
+    },
+    {
+      "id": "3ca:20845",
+      "node_id": "20845",
+      "title": "Raghavan et al. 2021",
+      "category": "Other/Models",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/othermodels",
+      "citation_url": "https://www.cell.com/cell/fulltext/S0092-8674(21)01332-5",
+      "citation_doi_candidate": null,
+      "disease": "PDAC",
+      "technology": "Seq-Well",
+      "samples": 53,
+      "cells": 41663,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/3dj4dlisn244p7x5cuobg/Data_Raghavan2021_Other-Models.tar.gz?rlkey=swlayb9eq12vppv646xhoij0m&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/xal1rbl1nrj25e4dggojj/Meta-data_Raghavan2021_Other-Models.tar.gz?rlkey=hpgj9kf6xw5s51uiyc6ngk5s2&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20845",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20845",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20845",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20845",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20845"
+      }
+    },
+    {
+      "id": "3ca:20887",
+      "node_id": "20887",
+      "title": "Sun et al. 2021",
+      "category": "Other/Models",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/othermodels",
+      "citation_url": "https://www.nature.com/articles/s41467-021-24386-0",
+      "citation_doi_candidate": "10.1038/s41467-021-24386-0",
+      "disease": "HCC CTCs",
+      "technology": "SmartSeq2",
+      "samples": 10,
+      "cells": 113,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/h1ojqztn4mxeuu6jemjvl/Data_Sun2021_Other-Models.tar.gz?rlkey=rf8wgaxsiys3wp177tqzkq3ft&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/rpvbgo6syqc176ne8cek0/Meta-data_Sun2021_Other-Models.tar.gz?rlkey=kai2wmpmrz9wka9yx73943pik&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20887",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20887",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20887",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20887"
+      }
+    },
+    {
+      "id": "3ca:20116",
+      "node_id": "20116",
+      "title": "Yao et al. 2020",
+      "category": "Other/Models",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/othermodels",
+      "citation_url": "https://www.nature.com/articles/s41467-020-17492-y",
+      "citation_doi_candidate": "10.1038/s41467-020-17492-y",
+      "disease": "ESCC",
+      "technology": "10x",
+      "samples": 6,
+      "cells": 35847,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/dq7l5zsn2i9wfw2d3a3lv/Data_Yao2020_Other-Models.tar.gz?rlkey=81z9fx4en3550souou8ivxixg&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/3gpv7ps8o36w3226ojj4r/Meta-data_Yao2020_Other-Models.tar.gz?rlkey=b27768ycs33b94h9gocvzjb7p&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20116",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20116",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20116",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20116"
+      }
+    },
+    {
+      "id": "3ca:20118",
+      "node_id": "20118",
+      "title": "Yu et al. 2012",
+      "category": "Other/Models",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/othermodels",
+      "citation_url": "https://www.nature.com/articles/nature11217",
+      "citation_doi_candidate": "10.1038/nature11217",
+      "disease": "PDAC",
+      "technology": "EpCAM or IgG CTC-Chip",
+      "samples": 2,
+      "cells": 32,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/kdg9724xa0sucrll97so5/Data_Yu2012_Other-Models.tar.gz?rlkey=tn049u6yowei4acgn54agoq7t&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/9eb2db8yy60k15lte9mzl/Meta-data_Yu2012_Other-Models.tar.gz?rlkey=kjvvab80hen0z5o7f8hlzcthy&dl=1"
+      },
+      "detail_pages": {
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20118"
+      }
+    },
+    {
+      "id": "3ca:20902",
+      "node_id": "20902",
+      "title": "Zhang et al. 2019",
+      "category": "Other/Models",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/othermodels",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S221112471930525X",
+      "citation_doi_candidate": null,
+      "disease": "Gastric cancer",
+      "technology": "10x",
+      "samples": 13,
+      "cells": 56440,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/6nliacnqf4b46bg4so7p7/Data_Zhang2019_Other-Models.tar.gz?rlkey=50d3zby5p07b9ybzvwo9zwt9q&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/6p1zliryuekjpbuzzyp7n/Meta-data_Zhang2019_Other-Models.tar.gz?rlkey=dvxwgy80yyrnqrq26n27wz69h&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20902",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20902",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20902",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20902",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20902"
+      }
+    },
+    {
+      "id": "3ca:20788",
+      "node_id": "20788",
+      "title": "Geistlinger et al. 2020",
+      "category": "Ovarian",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/ovarian",
+      "citation_url": "https://aacrjournals.org/cancerres/article/80/20/4335/645870/Multiomic-Analysis-of-Subtype-Evolution-and",
+      "citation_doi_candidate": null,
+      "disease": "HGSOC",
+      "technology": "10x",
+      "samples": 5,
+      "cells": 41031,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/e56qzfue93c6rvmp1uqyh/Data_Geistlinger2020_Ovarian.tar.gz?rlkey=roji3qwv7hg82cs0lumu02haw&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/2x0cwsgtfxwduq9usaoio/Meta-data_Geistlinger2020_Ovarian.tar.gz?rlkey=11aln0ewygm84f5rffw1skjqa&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20788",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20788",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20788",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20788",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20788",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20788"
+      }
+    },
+    {
+      "id": "3ca:20073",
+      "node_id": "20073",
+      "title": "Izar et al. 2020",
+      "category": "Ovarian",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/ovarian",
+      "citation_url": "https://www.nature.com/articles/s41591-020-0926-0",
+      "citation_doi_candidate": "10.1038/s41591-020-0926-0",
+      "disease": "HGSOC",
+      "technology": "10x, SmartSeq2",
+      "samples": 14,
+      "cells": 10788,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/hrnswpi1hvk585y6dbubh/Data_Izar2020_Ovarian.tar.gz?rlkey=91o4x8scuoa8vbn2t6tn2qxx5&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/t6fsws1a3bxiydn6uuvk8/Meta-data_Izar2020_Ovarian.tar.gz?rlkey=rejw6uvrkg22er6lzpyd0zji4&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20073",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20073",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20073",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20073",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20073",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20073"
+      }
+    },
+    {
+      "id": "3ca:20098",
+      "node_id": "20098",
+      "title": "Nath et al. 2021",
+      "category": "Ovarian",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/ovarian",
+      "citation_url": "https://www.nature.com/articles/s41467-021-23171-3",
+      "citation_doi_candidate": "10.1038/s41467-021-23171-3",
+      "disease": "HGSOC",
+      "technology": "10x, iCell8",
+      "samples": 18,
+      "cells": 41729,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/66cf245aafezdh24ei9r1/Data_Nath2021_Ovarian.tar.gz?rlkey=1pw4v49dnqjq8291gw8ybo1oz&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/zhdelewryw2nvi50nl60u/Meta-data_Nath2021_Ovarian.tar.gz?rlkey=47crqz0cehw2qymey2p4cucdd&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20098",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20098",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20098",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20098",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20098",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20098"
+      }
+    },
+    {
+      "id": "3ca:20101",
+      "node_id": "20101",
+      "title": "Olalekan et al. 2021",
+      "category": "Ovarian",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/ovarian",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S2211124721005076",
+      "citation_doi_candidate": null,
+      "disease": "Ovarian",
+      "technology": "Drop-seq",
+      "samples": 6,
+      "cells": 9885,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/pcv405q49ajdckwtsl8lg/Data_Olalekan2021_Ovarian.tar.gz?rlkey=pmdrkvffv2wwcm1yqzzv0k79r&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/h20ghe4d01h9cv72b1v8z/Meta-data_Olalekan2021_Ovarian.tar.gz?rlkey=mmsy3g88u90jlvfq089xbjhmb&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20101",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20101",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20101",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20101",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20101",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20101"
+      }
+    },
+    {
+      "id": "3ca:20836",
+      "node_id": "20836",
+      "title": "Olbrecht et al. 2021",
+      "category": "Ovarian",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/ovarian",
+      "citation_url": "https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-021-00922-x",
+      "citation_doi_candidate": "10.1186/s13073-021-00922-x",
+      "disease": "HGSTOC",
+      "technology": "10x",
+      "samples": 11,
+      "cells": 15528,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/5fhy68kme80oo22zpp7de/Data_Olbrecht2021_Ovarian.tar.gz?rlkey=m3wxolitxiawkyoieptyhi31j&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/59i6jnq5qdmtfcy7fzg9d/Meta-data_Olbrecht2021_Ovarian.tar.gz?rlkey=3ykhle90unekrdo6uw5y7p2h5&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20836",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20836",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20836",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20836",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20836",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20836"
+      }
+    },
+    {
+      "id": "3ca:20107",
+      "node_id": "20107",
+      "title": "Qian et al. 2020",
+      "category": "Ovarian",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/ovarian",
+      "citation_url": "https://www.nature.com/articles/s41422-020-0355-0",
+      "citation_doi_candidate": "10.1038/s41422-020-0355-0",
+      "disease": "Ovarian",
+      "technology": "10x",
+      "samples": 4,
+      "cells": 16951,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/jeyhtp53n79p41oknsvdu/Data_Qian2020_Ovarian.tar.gz?rlkey=j6vcmcg0qdipzqc1dmsmsaj0w&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/00nltkkjuzzcd4z7kt3ya/Meta-data_Qian2020_Ovarian.tar.gz?rlkey=4znxuqqumwesqooprvo1e64gw&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20107",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20107",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20107",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20107",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20107",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20107"
+      }
+    },
+    {
+      "id": "3ca:20854",
+      "node_id": "20854",
+      "title": "Regner et al. 2021",
+      "category": "Ovarian",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/ovarian",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S109727652100842X",
+      "citation_doi_candidate": null,
+      "disease": "Ovarian and Endometrial tumors",
+      "technology": "10x",
+      "samples": 11,
+      "cells": 65144,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/tf7wke99na8my6e1d4cjq/Data_Regner2021_Ovarian.tar.gz?rlkey=6a9sglp68avnj0u1z1ibfplpu&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/kyae3jqbeen7l5zefwvoc/Meta-data_Regner2021_Ovarian.tar.gz?rlkey=z4swcgc6s8aos8iog2evboeqw&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20854",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20854",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20854",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20854",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20854",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20854"
+      }
+    },
+    {
+      "id": "3ca:20875",
+      "node_id": "20875",
+      "title": "Shih et al. 2018",
+      "category": "Ovarian",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/ovarian",
+      "citation_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0206785",
+      "citation_doi_candidate": "10.1371/journal.pone.0206785",
+      "disease": "Ovarian cancer",
+      "technology": "SmartSeq2",
+      "samples": 18,
+      "cells": 3066,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/6nokx9keztpzzmi7m6hgn/Data_Shih2018_Ovarian.tar.gz?rlkey=b1m0ogls64dx66eqapoddc9ef&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/9pvkarphz11zpp0kcd0b9/Meta-data_Shih2018_Ovarian.tar.gz?rlkey=1x4sefscx4h4230z8aunuvfl4&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20875",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20875",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20875",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20875",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20875"
+      }
+    },
+    {
+      "id": "3ca:20890",
+      "node_id": "20890",
+      "title": "Tang-Huau et al. 2018",
+      "category": "Ovarian",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/ovarian",
+      "citation_url": "https://www.nature.com/articles/s41467-018-04985-0",
+      "citation_doi_candidate": "10.1038/s41467-018-04985-0",
+      "disease": "Ovarian cancer",
+      "technology": "10x",
+      "samples": 4,
+      "cells": 8404,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/6g78ztso1nquk84j9lv39/Data_Tang-Huau2018_Ovarian.tar.gz?rlkey=glh7c3ztq1g7rjmrb3t0s1sp8&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/vd3jq8ovkkxzz2pf75thw/Meta-data_Tang-Huau2018_Ovarian.tar.gz?rlkey=c0cls8lfcqqmbzkxse34brn13&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20890",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20890",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20890",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20890"
+      }
+    },
+    {
+      "id": "3ca:20911",
+      "node_id": "20911",
+      "title": "Zhang et al. 2019",
+      "category": "Ovarian",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/ovarian",
+      "citation_url": "https://www.nature.com/articles/s41592-019-0529-1",
+      "citation_doi_candidate": "10.1038/s41592-019-0529-1",
+      "disease": "HGSOC",
+      "technology": "10x",
+      "samples": 2,
+      "cells": 4848,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/xodvbb2ozhyde2rm83q9c/Data_Zhang2019_Ovarian.tar.gz?rlkey=r2p1s9uj370854h226llzxpt6&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/drs9docefehgjdo7mqs5q/Meta-data_Zhang2019_Ovarian.tar.gz?rlkey=7nxr2m3tis24j91upl28oybza&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20911",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20911",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20911",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20911",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20911",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20911"
+      }
+    },
+    {
+      "id": "3ca:20914",
+      "node_id": "20914",
+      "title": "Zhang et al. 2022",
+      "category": "Ovarian",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/ovarian",
+      "citation_url": "https://www.science.org/doi/10.1126/sciadv.abm1831",
+      "citation_doi_candidate": "10.1126/sciadv.abm1831",
+      "disease": "HGSOC",
+      "technology": "10x",
+      "samples": 22,
+      "cells": 51786,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/o3z53txjhsh8jdxmfd0bt/Data_Zhang2022_Ovarian.tar.gz?rlkey=jd6qix1ntvu0tnasy6nbois5o&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/hvt9avgpv1t7do3ycc3ij/Meta-data_Zhang2022_Ovarian.tar.gz?rlkey=j8xqlgeep5a6tp349gixn70tw&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20914",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20914",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20914",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20914",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20914"
+      }
+    },
+    {
+      "id": "3ca:20812",
+      "node_id": "20812",
+      "title": "Hwang et al. 2022",
+      "category": "Pancreas",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/pancreas",
+      "citation_url": "https://www.nature.com/articles/s41588-022-01134-8",
+      "citation_doi_candidate": "10.1038/s41588-022-01134-8",
+      "disease": "PDAC",
+      "technology": "10x",
+      "samples": 43,
+      "cells": 224988,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/r8jwjwepft8j6smta7boc/Data_Hwang2022_Pancreas.tar.gz?rlkey=mkbspxoy3ouu2u4bruwtlxjyg&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/8gnxmcxza1gooh1lr6g7t/Meta-data_Hwang2022_Pancreas.tar.gz?rlkey=wsdtl1b529kkpoyv4259qme08&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20812",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20812",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20812",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20812",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20812",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20812"
+      }
+    },
+    {
+      "id": "3ca:20089",
+      "node_id": "20089",
+      "title": "Lin et al. 2020",
+      "category": "Pancreas",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/pancreas",
+      "citation_url": "https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-020-00776-9",
+      "citation_doi_candidate": "10.1186/s13073-020-00776-9",
+      "disease": "PDAC",
+      "technology": "10x",
+      "samples": 16,
+      "cells": 14926,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/2vla8ougqgjftuo97laqc/Data_Lin2020_Pancreas.tar.gz?rlkey=8w2esp4rsi48nbfjlt35vyrd1&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/m3j61hzdu43ecyjj3xq10/Meta-data_Lin2020_Pancreas.tar.gz?rlkey=6vgjr53hfr22tjfbeoe9nhv9e&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20089",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20089",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20089",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20089",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20089",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20089"
+      }
+    },
+    {
+      "id": "3ca:20096",
+      "node_id": "20096",
+      "title": "Moncada et al. 2020",
+      "category": "Pancreas",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/pancreas",
+      "citation_url": "https://www.nature.com/articles/s41587-019-0392-8",
+      "citation_doi_candidate": "10.1038/s41587-019-0392-8",
+      "disease": "PDAC",
+      "technology": "inDrop",
+      "samples": 2,
+      "cells": 3659,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/t1gy3yff6u4gazex1zhuc/Data_Moncada2020_Pancreas.tar.gz?rlkey=q7u8g5n8fdrumqz72owvdwae0&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/p1rqerjwpjumd1148zwgf/Meta-data_Moncada2020_Pancreas.tar.gz?rlkey=8p2cvyolgyiakadfm3fjov5qu&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20096",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20096",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20096",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20096",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20096",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20096"
+      }
+    },
+    {
+      "id": "3ca:20103",
+      "node_id": "20103",
+      "title": "Peng et al. 2019",
+      "category": "Pancreas",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/pancreas",
+      "citation_url": "https://www.nature.com/articles/s41422-019-0195-y",
+      "citation_doi_candidate": "10.1038/s41422-019-0195-y",
+      "disease": "PDAC",
+      "technology": "10x",
+      "samples": 16,
+      "cells": 27953,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/q0skgmowh7ew27xy6fokj/Data_Peng2019_Pancreas.tar.gz?rlkey=sd8xw1o3zk7n7xz09dz5w6oip&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/gyozponuolhmxrb77wb4w/Meta-data_Peng2019_Pancreas.tar.gz?rlkey=5iy4yaoyt2q684v5w5as4xf0g&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20103",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20103",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20103",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20103",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20103",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20103"
+      }
+    },
+    {
+      "id": "3ca:20848",
+      "node_id": "20848",
+      "title": "Raghavan et al. 2021",
+      "category": "Pancreas",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/pancreas",
+      "citation_url": "https://www.cell.com/cell/fulltext/S0092-8674(21)01332-5",
+      "citation_doi_candidate": null,
+      "disease": "PDAC",
+      "technology": "Seq-Well",
+      "samples": 24,
+      "cells": 24412,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/rmumjt61v4qwuzbpyk68a/Data_Raghavan2021_Pancreas.tar.gz?rlkey=p0rddwz3pjkeotnk5fjzyqqd2&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/uqpvxjjrrgh59marur8gc/Meta-data_Raghavan2021_Pancreas.tar.gz?rlkey=rgp58g3wbitcjagmh2mupiq2r&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20848",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20848",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20848",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20848",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20848",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20848"
+      }
+    },
+    {
+      "id": "3ca:20108",
+      "node_id": "20108",
+      "title": "Steele et al. 2020",
+      "category": "Pancreas",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/pancreas",
+      "citation_url": "https://www.nature.com/articles/s43018-020-00121-4",
+      "citation_doi_candidate": "10.1038/s43018-020-00121-4",
+      "disease": "PDAC",
+      "technology": "10x",
+      "samples": 16,
+      "cells": 48570,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/xnr7rs8t7edd5irc2uj66/Data_Steele2020_Pancreas.tar.gz?rlkey=ndndmzwyxf5roh1xxlprgw3mw&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/cgazabp7ngivwl4s5grqk/Meta-data_Steele2020_Pancreas.tar.gz?rlkey=4oiwmdhw5y35w9fy1bvpbcsl3&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20108",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20108",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20108",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20108",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20108",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20108"
+      }
+    },
+    {
+      "id": "3ca:20120",
+      "node_id": "20120",
+      "title": "Yue et al. 2020",
+      "category": "Pancreas",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/pancreas",
+      "citation_url": "https://www.nature.com/articles/s41588-019-0566-9",
+      "citation_doi_candidate": "10.1038/s41588-019-0566-9",
+      "disease": "PDAC",
+      "technology": "10x",
+      "samples": 15,
+      "cells": 33970,
+      "assets": {},
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20120",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20120",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20120",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20120",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20120",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20120"
+      }
+    },
+    {
+      "id": "3ca:20053",
+      "node_id": "20053",
+      "title": "Chen et al. 2021",
+      "category": "Prostate",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/prostate",
+      "citation_url": "https://www.nature.com/articles/s41556-020-00613-6",
+      "citation_doi_candidate": "10.1038/s41556-020-00613-6",
+      "disease": "Prostate cancer",
+      "technology": "10x",
+      "samples": 13,
+      "cells": 36424,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/e0p4f085z1xu2esv9zm6o/Data_Chen2021_Prostate.tar.gz?rlkey=gvoiyhjhgb8e0w2nzzsndgzt6&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/j25za7cj7y0pqharmqr1z/Meta-data_Chen2021_Prostate.tar.gz?rlkey=947bf6pie44nt6smkiapiruss&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20053",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20053",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20053",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20053",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20053",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20053"
+      }
+    },
+    {
+      "id": "3ca:20060",
+      "node_id": "20060",
+      "title": "Dong et al. 2020",
+      "category": "Prostate",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/prostate",
+      "citation_url": "https://www.nature.com/articles/s42003-020-01476-1",
+      "citation_doi_candidate": "10.1038/s42003-020-01476-1",
+      "disease": "Prostate cancer",
+      "technology": "10x",
+      "samples": 6,
+      "cells": 21292,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/f4foh1noqglwq2rxfw1f5/Data_Dong2020_Prostate.tar.gz?rlkey=fikh1fwgkum9l8zrc4kbi1dsi&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/efetk1s6pncuqf970597w/Meta-data_Dong2020_Prostate.tar.gz?rlkey=ltlxst2hfd9o0l4xe563gyd33&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20060",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20060",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20060",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20060",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20060",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20060"
+      }
+    },
+    {
+      "id": "3ca:20806",
+      "node_id": "20806",
+      "title": "He et al. 2021",
+      "category": "Prostate",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/prostate",
+      "citation_url": "https://www.nature.com/articles/s41591-021-01244-6",
+      "citation_doi_candidate": "10.1038/s41591-021-01244-6",
+      "disease": "Metastatic prostate cancer",
+      "technology": "SmartSeq2",
+      "samples": 15,
+      "cells": 2170,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/jiwf6n9iny4limv4gnc4m/Data_He2021_Prostate.tar.gz?rlkey=63d4khr3x25eeygv1kua22m5z&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/aqn5q60zz8zq6qsek38q5/Meta-data_He2021_Prostate.tar.gz?rlkey=lpz4qlizmuqw45mtjdldoqahn&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20806",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20806",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20806",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20806",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20806",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20806"
+      }
+    },
+    {
+      "id": "3ca:20881",
+      "node_id": "20881",
+      "title": "Song et al. 2022",
+      "category": "Prostate",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/prostate",
+      "citation_url": "https://www.nature.com/articles/s41467-021-27322-4",
+      "citation_doi_candidate": "10.1038/s41467-021-27322-4",
+      "disease": "Prostate cancer",
+      "technology": "Seq-Well S3",
+      "samples": 15,
+      "cells": 21743,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/5s1dheawh1e06hq2x50c9/Data_Song2022_Prostate.tar.gz?rlkey=mppjo7fese8taaxhyftionwn1&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/dnpp9d4iflbvpj8qz268w/Meta-data_Song2022_Prostate.tar.gz?rlkey=z68gff2hwbws595ye35xwklvd&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20881",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20881",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20881",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20881",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20881",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20881"
+      }
+    },
+    {
+      "id": "3ca:20077",
+      "node_id": "20077",
+      "title": "Jerby-Arnon et al. 2021",
+      "category": "Sarcoma",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/sarcoma",
+      "citation_url": "https://www.nature.com/articles/s41591-020-01212-6",
+      "citation_doi_candidate": "10.1038/s41591-020-01212-6",
+      "disease": "Synovial sarcoma",
+      "technology": "10x, SmartSeq2",
+      "samples": 15,
+      "cells": 16125,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/bewdifp9qwt8ie8iek5ct/Data_Jerby-Arnon2021_Sarcoma.tar.gz?rlkey=6ajnrr81f3ep1jfqqot498qmo&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/rhmt6mogqh6fv246ol3qi/Meta-data_Jerby-Arnon2021_Sarcoma.tar.gz?rlkey=8z83fb3086q046m2y63d1bqr3&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20077",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20077",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20077",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20077",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20077",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20077"
+      }
+    },
+    {
+      "id": "3ca:20122",
+      "node_id": "20122",
+      "title": "Zhou et al. 2020",
+      "category": "Sarcoma",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/sarcoma",
+      "citation_url": "https://www.nature.com/articles/s41467-020-20059-6",
+      "citation_doi_candidate": "10.1038/s41467-020-20059-6",
+      "disease": "Osteosarcoma",
+      "technology": "10x",
+      "samples": 11,
+      "cells": 64557,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/g3ou34unwxlnt2mcm7mer/Data_Zhou2020_Sarcoma.tar.gz?rlkey=0czkg02vc89jdvt2p67iaxifq&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/cqj7qa5fvw480pqi89byd/Meta-data_Zhou2020_Sarcoma.tar.gz?rlkey=00vulz6t7u7hms15asurkar54&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20122",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20122",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20122",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20122",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20122"
+      }
+    },
+    {
+      "id": "3ca:20761",
+      "node_id": "20761",
+      "title": "Biermann et al. 2022",
+      "category": "Skin",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/skin",
+      "citation_url": "https://www.cell.com/cell/fulltext/S0092-8674(22)00712-7",
+      "citation_doi_candidate": null,
+      "disease": "Metastatic melanoma",
+      "technology": "10x",
+      "samples": 32,
+      "cells": 136973,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/y0crw564p468wp94ua8he/Data_Biermann2022_Skin.tar.gz?rlkey=xq6n55fyfsjuyqminns00eo28&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/hie2bh542e7rgygkts93j/Meta-data_Biermann2022_Skin.tar.gz?rlkey=pugfopoav4acyosqom7eo2cxl&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20761",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20761",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20761",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20761",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20761"
+      }
+    },
+    {
+      "id": "3ca:20782",
+      "node_id": "20782",
+      "title": "Ferrari de Andrade et al. 2019",
+      "category": "Skin",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/skin",
+      "citation_url": "https://insight.jci.org/articles/view/133103",
+      "citation_doi_candidate": null,
+      "disease": "Metastatic melanoma",
+      "technology": "10x",
+      "samples": 12,
+      "cells": 40823,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/rvuoz5u690543hmo8osth/Data_Ferrari-de-Andrade2019_Skin.tar.gz?rlkey=zmhwl6g7gwv3xxx7qi3r1lrp7&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/xht0ywor5zhddlvuaezth/Meta-data_Ferrari-de-Andrade2019_Skin.tar.gz?rlkey=w2o8t6nyz14z1j3ux88i11r40&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20782",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20782",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20782",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20782",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20782"
+      }
+    },
+    {
+      "id": "3ca:20076",
+      "node_id": "20076",
+      "title": "Jerby-Arnon et al. 2018",
+      "category": "Skin",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/skin",
+      "citation_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6410377/",
+      "citation_doi_candidate": null,
+      "disease": "Melanoma",
+      "technology": "SmartSeq2",
+      "samples": 32,
+      "cells": 7186,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/qq8e5zo71y4sr92a4gyh4/Data_Jerby-Arnon2018_Skin.tar.gz?rlkey=fcg33knlctj2hgg3l9ruj5ev4&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/qgo3gcxng7gceqhphh6rw/Meta-data_Jerby-Arnon2018_Skin.tar.gz?rlkey=6sls3l36o2n2asdrnujuw9zjg&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20076",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20076",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20076",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20076",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20076",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20076"
+      }
+    },
+    {
+      "id": "3ca:20078",
+      "node_id": "20078",
+      "title": "Ji et al. 2020",
+      "category": "Skin",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/skin",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S0092867420306723",
+      "citation_doi_candidate": null,
+      "disease": "Skin SCC",
+      "technology": "10x",
+      "samples": 10,
+      "cells": 48164,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/2kcwh0bzbclatj6zcla20/Data_Ji2020_Skin.tar.gz?rlkey=f8tats8jgaf481gfddcas4vhm&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/yj273p7rsd8qctqqwr3je/Meta-data_Ji2020_Skin.tar.gz?rlkey=e8qqhnpkxpoi6psq3vkavsjth&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20078",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20078",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20078",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20078",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20078",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20078"
+      }
+    },
+    {
+      "id": "3ca:20830",
+      "node_id": "20830",
+      "title": "Li et al. 2019",
+      "category": "Skin",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/skin",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S009286741831568X",
+      "citation_doi_candidate": null,
+      "disease": "Melanoma",
+      "technology": "MARS-seq",
+      "samples": 27,
+      "cells": 78336,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/1krjqfommrghjugeqw3fq/Data_Li2019_Skin.tar.gz?rlkey=d4xyxgr1qxe3cx2bgd8lc5ok9&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/2orah01ltbh7qpiybxeqz/Meta-data_Li2019_Skin.tar.gz?rlkey=u4za7d1uefbw65e2m1lxtox7t&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20830",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20830",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20830",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20830",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20830"
+      }
+    },
+    {
+      "id": "3ca:20833",
+      "node_id": "20833",
+      "title": "Mahuron et al. 2020",
+      "category": "Skin",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/skin",
+      "citation_url": "https://rupress.org/jem/article/217/9/e20192080/151858/Layilin-augments-integrin-activation-to-promote",
+      "citation_doi_candidate": null,
+      "disease": "Metastatic melanoma",
+      "technology": "10x",
+      "samples": 6,
+      "cells": 27935,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/ah93wpw1hhyt1zfijamvx/Data_Mahuron2020_Skin.tar.gz?rlkey=zvsc3v5awncve7lb91zuraqbc&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/7fmqjwwau97bvanilfmap/Meta-data_Mahuron2020_Skin.tar.gz?rlkey=95o8x81vzothwxw6y4aewxrzv&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20833",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20833",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20833",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20833",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20833"
+      }
+    },
+    {
+      "id": "3ca:20839",
+      "node_id": "20839",
+      "title": "Paulson et al. 2020",
+      "category": "Skin",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/skin",
+      "citation_url": "https://www.nature.com/articles/s41467-018-06300-3",
+      "citation_doi_candidate": "10.1038/s41467-018-06300-3",
+      "disease": "Merkel cell carcinoma",
+      "technology": "10x",
+      "samples": 8,
+      "cells": 31376,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/0semr1afsxdzb6gw0k3at/Data_Paulson2020_Skin.tar.gz?rlkey=5kxmyc2nkxzkbml4s5fgwya98&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/swv9dj0hfqms0ne5cp3by/Meta-data_Paulson2020_Skin.tar.gz?rlkey=7c907spltdxrrikt2cl5b08qi&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20839",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20839",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20839",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20839",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20839",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20839"
+      }
+    },
+    {
+      "id": "3ca:20866",
+      "node_id": "20866",
+      "title": "Sade-Feldman et al. 2018",
+      "category": "Skin",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/skin",
+      "citation_url": "https://www.sciencedirect.com/science/article/pii/S0092867418313941",
+      "citation_doi_candidate": null,
+      "disease": "Primary melanoma",
+      "technology": "SmartSeq2",
+      "samples": 48,
+      "cells": 16291,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/nekanicidlj1ryi2ydxyz/Data_Sade-Feldman2018_Skin.tar.gz?rlkey=qqjo6r77zpyre4727wnc3q8r0&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/rdlml0vx2zlbayzy6m1y7/Meta-data_Sade-Feldman2018_Skin.tar.gz?rlkey=nk81e161a27nk62b4uv0ub6ig&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20866",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20866",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20866",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20866",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20866"
+      }
+    },
+    {
+      "id": "3ca:20111",
+      "node_id": "20111",
+      "title": "Tirosh et al. 2016",
+      "category": "Skin",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/skin",
+      "citation_url": "https://science.sciencemag.org/content/352/6282/189",
+      "citation_doi_candidate": null,
+      "disease": "Melanoma",
+      "technology": "SmartSeq2",
+      "samples": 19,
+      "cells": 4645,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/kkpn6efc71xhcftvhmv91/Data_Tirosh2016_Skin.tar.gz?rlkey=ulf28q9mfozkvfyicgum1ed14&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/ddbwazjc89kug0bp3c6di/Meta-data_Tirosh2016_Skin.tar.gz?rlkey=0iwzb4uk5155s3abxf2kd9jao&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20111",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20111",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20111",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20111",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20111",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20111"
+      }
+    },
+    {
+      "id": "3ca:20896",
+      "node_id": "20896",
+      "title": "Yost et al. 2019",
+      "category": "Skin",
+      "category_url": "https://www.weizmann.ac.il/sites/3CA/skin",
+      "citation_url": "https://www.nature.com/articles/s41591-019-0522-3",
+      "citation_doi_candidate": "10.1038/s41591-019-0522-3",
+      "disease": "BCC, SCC",
+      "technology": "10x",
+      "samples": 30,
+      "cells": 79046,
+      "assets": {
+        "data": "https://www.dropbox.com/scl/fi/i6tsjrqpou3oshuckl1bx/Data_Yost2019_Skin.tar.gz?rlkey=nueyzcdrjtnorevswcj7qpc6v&dl=1",
+        "metadata": "https://www.dropbox.com/scl/fi/t57gnu0f2vuk4pdcr389m/Meta-data_Yost2019_Skin.tar.gz?rlkey=kgdgfppoizs1mbpa2fzeorlr6&dl=1"
+      },
+      "detail_pages": {
+        "cell_types": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20896",
+        "summary": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20896",
+        "meta_programs": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20896",
+        "cnas": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20896",
+        "umap": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20896",
+        "cell_cycle": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20896"
+      }
+    }
+  ],
+  "totals": {
+    "categories": 15,
+    "parsed": {
+      "records": 130,
+      "unique_citations": 124,
+      "samples": 2838,
+      "cells": 5658779
+    },
+    "homepage_reported": {
+      "studies": 124,
+      "samples": 2836,
+      "cells": 5658705
+    },
+    "category_cards_reported": {
+      "records": 129,
+      "samples": 2836,
+      "cells": 5658705
+    }
+  },
+  "data_quality_warnings": [
+    "Parsed category rows do not equal the homepage totals; both values are preserved.",
+    "Parsed category rows do not equal the category-card totals; both values are preserved."
+  ]
+}

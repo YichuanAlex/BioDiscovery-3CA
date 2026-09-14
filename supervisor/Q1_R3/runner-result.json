@@ -1,0 +1,7 @@
+﻿{
+    "semantic_acceptance":  "not_accepted",
+    "error":  "Local Qwen3.5-4B agent exited with code 1; checkpoint status: needs_attention.",
+    "ended_at":  "2026-09-12T09:47:17.2064718Z",
+    "runner_success":  false,
+    "started_at":  "2026-09-12T09:45:21.3043346Z"
+}

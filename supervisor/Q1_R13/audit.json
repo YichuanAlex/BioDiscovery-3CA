@@ -1,0 +1,54 @@
+{
+  "snapshot_at": "2026-09-13T08:26:51.300Z",
+  "status": "running",
+  "runner_alive": false,
+  "checkpoint_error": null,
+  "rounds": 39,
+  "phase": "data_preparation_complete",
+  "next_action": "inspect matched metabolic genes and run analyze_metabolic_states",
+  "tools": {
+    "search_studies": 3,
+    "get_study": 2,
+    "plan_asset": 1,
+    "download_asset": 1,
+    "inspect_dataset": 2,
+    "prepare_3ca_dataset": 1,
+    "inspect_research_table": 1,
+    "run_powershell": 19,
+    "fetch_reactome_metabolic_genes": 1,
+    "write_file": 1,
+    "list_files": 5,
+    "task_checkpoint": 1,
+    "read_file": 1
+  },
+  "failures": [],
+  "required_artifacts": [
+    {
+      "file": "report/main.tex",
+      "present": false
+    },
+    {
+      "file": "report/main.pdf",
+      "present": false
+    },
+    {
+      "file": "results/summary.json",
+      "present": false
+    },
+    {
+      "file": "results/analysis_manifest.json",
+      "present": false
+    },
+    {
+      "file": "README.md",
+      "present": false
+    }
+  ],
+  "research_validation": null,
+  "frozen_mismatches": [
+    "codex-cli\\bin\\Qwen3.5-4B.js",
+    "codex-cli\\bin\\test-Qwen3.5-4B-recovery.mjs"
+  ],
+  "structural_completion_candidate": false,
+  "semantic_acceptance": "pending_independent_review"
+}

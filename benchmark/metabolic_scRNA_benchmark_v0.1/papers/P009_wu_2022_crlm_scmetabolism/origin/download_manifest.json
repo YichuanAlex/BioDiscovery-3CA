@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P009",
+  "si_requested": true,
+  "downloaded_at": "2026-09-11T10:13:16+00:00",
+  "pmc_attempt": {
+    "status": "pmcid_not_available",
+    "pmcid": ""
+  },
+  "official_fallback_attempt": {
+    "provider": "official_publisher_or_repository",
+    "status": "full_text_available_si_not_found",
+    "attempts": [
+      {
+        "url": "https://aacrjournals.org/cancerdiscovery/article/12/1/134/675646",
+        "status": "failed:HTTPError:HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://doi.org/10.1158/2159-8290.cd-21-0316",
+        "status": "failed:HTTPError:HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://aacrjournals.org/cancerdiscovery/article-pdf/12/1/134/3020194/134.pdf",
+        "status": "failed:HTTPError"
+      }
+    ]
+  },
+  "files": [
+    {
+      "relative_path": "main_article.pdf",
+      "role": "main_article",
+      "media_type": "application/pdf",
+      "size_bytes": 11577225,
+      "sha256": "073884f391e3f577476c9bc258df4eda1a0171ecec3004e65d526e0d50a7d3f4",
+      "source_url": "user-supplied-local://workspace/Spatiotemporal%20Immune%20Landscape%20of%20Colorectal%20Cancer%20Liver%20Metastasis%20at%20Single-Cell%20Level.pdf",
+      "official_landing_url": "https://doi.org/10.1158/2159-8290.CD-21-0316",
+      "acquisition_method": "user_supplied_local",
+      "original_filename": "Spatiotemporal Immune Landscape of Colorectal Cancer Liver Metastasis at Single-Cell Level.pdf",
+      "pdf_validation": {
+        "checked_at": "2026-09-11",
+        "magic": "%PDF-",
+        "pdfinfo": "pass",
+        "pdftotext_all_pages": "pass",
+        "first_page_render": "pass",
+        "pages": 20,
+        "encrypted": false,
+        "doi_match": true,
+        "title_visual_match": true
+      }
+    }
+  ],
+  "verification": {
+    "checks": [
+      "nonzero size",
+      "PDF magic when applicable",
+      "SHA-256",
+      "source URL recorded"
+    ],
+    "pdf_text_or_title_check": "external acceptance check; see top-level 构建与验收报告.md"
+  },
+  "browser_verification": {
+    "checked_at": "2026-09-11",
+    "status": "security_challenge_blocked",
+    "url": "https://aacrjournals.org/cancerdiscovery/article/12/1/134/675646",
+    "content_exported": false,
+    "note": "Official AACR page displayed a Cloudflare security-verification page. The challenge was not bypassed and no challenge payload was stored."
+  }
+}

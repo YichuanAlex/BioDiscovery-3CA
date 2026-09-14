@@ -1,0 +1,56 @@
+\begin{thebibliography}{7}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Gavish et~al.(2023)]{Gavish2023}
+Avishai Gavish et~al.
+\newblock Hallmarks of transcriptional intratumour heterogeneity across a
+  thousand tumours.
+\newblock \emph{Nature}, 618:\penalty0 598--606, 2023.
+\newblock \doi{10.1038/s41586-023-06130-4}.
+
+\bibitem[Hubert and Arabie(1985)]{Hubert1985}
+Lawrence Hubert and Phipps Arabie.
+\newblock Comparing partitions.
+\newblock \emph{Journal of Classification}, 2:\penalty0 193--218, 1985.
+\newblock \doi{10.1007/bf01908075}.
+
+\bibitem[Kanehisa et~al.(2023)]{Kanehisa2023}
+Minoru Kanehisa et~al.
+\newblock Kegg for taxonomy-based analysis of pathways and genomes.
+\newblock \emph{Nucleic Acids Research}, 51:\penalty0 D587--D592, 2023.
+\newblock \doi{10.1093/nar/gkac963}.
+
+\bibitem[Rousseeuw(1987)]{Rousseeuw1987}
+Peter~J. Rousseeuw.
+\newblock Silhouettes: A graphical aid to the interpretation and validation of
+  cluster analysis.
+\newblock \emph{Journal of Computational and Applied Mathematics}, 20:\penalty0
+  53--65, 1987.
+\newblock \doi{10.1016/0377-0427(87)90125-7}.
+
+\bibitem[Tirosh et~al.(2016)]{Tirosh2016}
+Itay Tirosh et~al.
+\newblock Dissecting the multicellular ecosystem of metastatic melanoma by
+  single-cell rna-seq.
+\newblock \emph{Science}, 352:\penalty0 189--196, 2016.
+\newblock \doi{10.1126/science.aad0501}.
+
+\bibitem[Wu et~al.(2022)]{Wu2022}
+Yingcheng Wu et~al.
+\newblock Spatiotemporal immune landscape of colorectal cancer liver metastasis
+  at single-cell level.
+\newblock \emph{Cancer Discovery}, 12:\penalty0 134--153, 2022.
+\newblock \doi{10.1158/2159-8290.cd-21-0316}.
+
+\bibitem[Xiao et~al.(2019)Xiao, Dai, and Locasale]{Xiao2019}
+Zhengtao Xiao, Ziwei Dai, and Jason~W. Locasale.
+\newblock Metabolic landscape of the tumor microenvironment at single cell
+  resolution.
+\newblock \emph{Nature Communications}, 10:\penalty0 3763, 2019.
+\newblock \doi{10.1038/s41467-019-11738-0}.
+
+\end{thebibliography}

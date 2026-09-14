@@ -1,0 +1,133 @@
+Qwen3.5-4B local server is ready: http://127.0.0.1:8000/health
+[tool] inspect_research_table
+[tool] read_file
+[tool] search_studies
+[tool] search_studies
+[tool] refresh_catalog
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool] get_study
+[tool] plan_asset
+[tool] download_asset
+[tool-error] download_asset: {"error": "ThreeCAError", "message": "A study target requires --kind (data, metadata, or a discovered detail kind)."}
+[tool-error] download_asset: Tool is not currently advertised: download_asset
+[tool] list_files
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] list_files
+[tool-error] list_files: Path leaves workspace: C:\Users\User\Desktop\agentic\workflow_codex\tools
+[tool] verify_doi
+[tool] list_files
+[tool] run_powershell
+[tool] list_files
+[tool] run_powershell
+[tool] list_files
+[tool-error] list_files: Path leaves workspace: C:\Users\User\Desktop\agentic\workflow_codex\tools\tool43CA
+[tool] run_powershell
+[tool] inspect_research_table
+[tool] search_studies
+[tool] get_study
+[tool] plan_asset
+[tool] download_asset
+[tool] run_powershell
+[tool] list_files
+[tool-error] list_files: Tool is not currently advertised: list_files
+[tool] run_powershell
+[tool] search_studies
+[tool] get_study
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] download_asset
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] search_studies
+[tool] search_studies
+[tool] get_study
+[tool] plan_asset
+[tool] inspect_research_table
+[tool] prepare_3ca_dataset
+[tool] analyze_metabolic_states
+[tool] inspect_dataset
+[tool-error] inspect_dataset: ENOENT: no such file or directory, lstat 'C:\Users\User\Desktop\agentic\workflow_codex\.threeca\cache\inputs'
+[tool] list_files
+[tool] inspect_dataset
+[tool] inspect_dataset
+[tool] read_file
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] search_studies
+[tool] search_studies
+[tool] run_powershell
+[tool] get_study
+[tool] inspect_research_table
+[tool] inspect_research_table
+[tool] search_studies
+[tool] search_studies
+[tool] get_study
+[tool] plan_asset
+[tool] list_files
+[tool] run_powershell
+[tool] analyze_metabolic_states
+[tool] read_file
+[tool] read_file
+[tool] verify_doi
+[tool] read_file
+[tool] read_file
+[tool] read_file
+[tool] read_file
+[tool] list_files
+[tool] read_file
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] read_file
+[tool-error] read_file: Tool is not currently advertised: read_file
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] verify_doi
+[tool] run_powershell
+[tool] list_files
+[tool] run_powershell
+[tool] run_powershell
+[tool] read_file
+[tool] read_webpage
+[tool] verify_doi
+[tool] list_files
+[tool] read_file
+[tool-error] read_file: Tool is not currently advertised: read_file
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] list_files
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] list_files
+[tool] read_file
+[tool-error] read_file: Tool is not currently advertised: read_file
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] verify_doi
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool-error] run_powershell: Tool is not currently advertised: run_powershell
+[tool] read_file
+[tool] read_webpage
+[tool] verify_doi
+[tool] list_files
+[tool] read_file
+[tool-error] read_file: Tool is not currently advertised: read_file

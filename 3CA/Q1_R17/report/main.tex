@@ -1,0 +1,142 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{natbib}
+
+\geometry{margin=1in}
+
+\title{Transcriptional Metabolic States in Meningioma: A Single-Cell RNA-seq Analysis}
+\author{3CA Curated Cancer Cell Atlas Analysis}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This study investigates whether distinct clusters of transcriptional metabolic states can be identified using only metabolic genes in single-cell RNA-seq data from meningioma. We analyze the Choudhury et al. (2022) dataset from the 3CA Curated Cancer Cell Atlas, which contains 58,843 cells from 10 meningioma samples. Using Reactome metabolism pathway genes (R-HSA-1430728), we performed Leiden clustering and evaluated cluster stability, confounder associations, and comparison with random gene-set controls.
+\end{abstract}
+
+\section{Methods}
+
+\subsection{Data}
+We used the Choudhury et al. (2022) meningioma dataset (3CA:20773), which contains UMI-count expression data from 10 meningioma samples processed with 10x Genomics technology. The dataset includes 58,843 cells and 33,538 genes with patient and cell type annotations.
+
+\subsection{Metabolic Gene Set}
+We retrieved the Reactome metabolism pathway (R-HSA-1430728) from the Reactome database (release 97), which contains 2,197 genes. After intersecting with the expression features and aggregating exact duplicate gene symbols in raw counts, 1,984 metabolic genes were retained for analysis.
+
+\subsection{Normalization and Preprocessing}
+Expression values were normalized using per-cell library size scaling to 10,000 counts followed by log1p transformation:
+\begin{equation}
+x'_{ig} = \log\left(1 + \frac{10^4 \cdot x_{ig}}{\sum_{g} x_{ig}}\right),
+\end{equation}
+where $i$ indexes cells, $g$ indexes genes, $x_{ig}$ is the raw UMI count for gene $g$ in cell $i$, and $x'_{ig}$ is the normalized expression.
+
+\subsection{Clustering}
+We performed Leiden clustering using Scanpy on the 1,984 metabolic genes. Clustering was evaluated across resolutions 0.4, 0.8, and 1.2 with five random seeds (0, 17, 42, 73, 101). The resolution 0.4 was selected as the primary criterion was highest median silhouette across seeds, with mean pairwise ARI as tie-breaker.
+
+\subsection{Quality Control and Baselines}
+We computed silhouette scores, Calinski-Harabasz, and Davies-Bouldin indices. We also implemented an HVG baseline (highest variance of library-normalized log1p expression) and 19 size-matched random gene-set controls.
+
+\section{Results}
+
+\subsection{Cluster Overview}
+Leiden clustering on metabolic genes produced 17 clusters with sizes ranging from 152 to 9,017 cells. The selected resolution of 0.4 yielded stable clustering across seeds (mean pairwise ARI $\ge$ 0.75).
+
+\begin{table}[h!]
+\centering
+\caption{Cluster size summary and clustering metrics}
+\label{tab:clusters}
+\begin{tabular}{llrr}
+\toprule
+Metric & Value & Metric & Value \\
+\midrule
+Number of clusters & 17 & Silhouette & 0.216 \\
+Minimum cluster size & 152 cells & Calinski-Harabasz & 6,394 \\
+Maximum cluster size & 9,017 cells & Davies-Bouldin & 1.478 \\
+Mean pairwise ARI & 0.955 & Median silhouette & 0.216 \\
+Minimum pairwise ARI & 0.916 & & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Random Gene Set Controls}
+No random gene-set control exceeded the metabolic gene set in silhouette score. The HVG baseline achieved a silhouette of 0.288, which is higher than the metabolic clustering (0.216).
+
+\begin{table}[h!]
+\centering
+\caption{Baseline silhouette comparison}
+\label{tab:baselines}
+\begin{tabular}{llrr}
+\toprule
+Gene set & Silhouette \\
+\midrule
+HVG (highest variance) & 0.288 \\
+Metabolic genes (Reactome) & 0.216 \\
+Random controls (mean) & 0.221 \\
+Random controls (min) & 0.202 \\
+Random controls (max) & 0.235 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Confounder Analysis}
+We checked for confounding by patient, sample, source, cell type, cell subtype, and cell cycle phase. The NMI between clusters and patient was 0.551, and with sample was 0.578, indicating moderate association.
+
+\subsection{Within-Replicate Sensitivity}
+Within each patient, we performed descriptive reclustering. The ARI between global and within-patient clustering ranged from 0.148 to 0.795, with patient 2 showing the weakest agreement (914 cells).
+
+\subsection{Figure 1: Metabolic UMAP}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{figures/metabolic_umap.pdf}
+\caption{UMAP embedding of 58,843 cells clustered using only Reactome metabolism genes (R-HSA-1430728). Each point represents a cell colored by its metabolic cluster label. The embedding was constructed from the first 30 principal components using 1,984 metabolic genes.}
+\label{fig:umap}
+\end{figure}
+
+\subsection{Figure 2: Clustering Diagnostics}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{figures/clustering_diagnostics.pdf}
+\caption{Clustering quality metrics and stability assessment. Panel (a) shows silhouette scores across resolutions and seeds. Panel (b) displays pairwise ARI and NMI across the five random seeds. Panel (c) compares metabolic clustering against HVG and 19 random gene-set controls.}
+\label{fig:diagnostics}
+\end{figure}
+
+\section{Discussion}
+
+\subsection{Metabolic Gene Separation}
+The analysis demonstrates that metabolic genes can separate cells into 17 distinct clusters in this meningioma dataset. However, the silhouette score of 0.216 is modest, and the HVG baseline achieved a higher silhouette of 0.288.
+
+\subsection{Confounder Associations}
+The moderate NMI values for patient (0.551) and sample (0.578) suggest that clusters are partially associated with donor/sample identity. The within-replicate ARI range (0.148--0.795) indicates variable reproducibility across patients.
+
+\subsection{Limitations}
+This analysis is exploratory and does not test for discrete biological metabolic states. The unsupervised clustering approach cannot distinguish between biological metabolic programs and technical artifacts. The random gene-set controls are matched only in size, not in expression mean or dispersion. The resolution was selected using the same dataset, and ARI/NMI assess Leiden randomization conditional on the fixed PCA/neighbor graph.
+
+\subsection{Conclusion}
+Metabolic genes can separate cells into distinct clusters in this meningioma single-cell dataset, but the evidence for discrete biological metabolic states is inconclusive. Further validation with independent datasets and hypothesis-driven approaches is required.
+
+\begin{thebibliography}{9}
+
+\bibitem{choudhury2022}
+Abrar Choudhury, Stephen T. Magill, Charlotte D. Eaton, Briana C. Prager, William C. Chen, Martha A. Cady, Kyounghee Seo, Michael W. McDermott, Jeremy N. Rich, David R. Raleigh, et al.
+\newblock Meningioma DNA methylation groups identify biological drivers and therapeutic vulnerabilities.
+\newblock \textit{Nature Genetics}, 54(5):649--659, 2022.
+\newblock \url{https://doi.org/10.1038/s41588-022-01061-8}
+
+\bibitem{reactome}
+The Reactome Consortium.
+\newblock The Reactome pathway database.
+\newblock \textit{Nucleic Acids Research}, 49(D1):D518--D527, 2021.
+\newblock \url{https://reactome.org}
+
+\end{thebibliography}
+
+\end{document}

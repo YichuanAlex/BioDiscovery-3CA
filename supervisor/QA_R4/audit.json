@@ -1,0 +1,78 @@
+{
+  "snapshot_at": "2026-09-14T00:20:50.503Z",
+  "task": "C:\\Users\\User\\Desktop\\agentic\\3CA\\QA_R4",
+  "status": "running",
+  "runner_pid": 10744,
+  "runner_process": {
+    "Name": "powershell.exe",
+    "ExecutablePath": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "CommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -File C:\\Users\\User\\Desktop\\agentic\\supervisor\\QA_R4\\launch-qa-r4.ps1",
+    "CreationDate": "2026-09-13T15:08:36.9974250Z"
+  },
+  "runner_identity_match": true,
+  "checkpoint_status": "running",
+  "checkpoint_read_error": null,
+  "phase": "report_repair",
+  "next_action": "Repair report/main.tex now for this native build error, then let the engine rebuild: ERROR: {\"error\": \"pdflatex pass 1 failed with exit code 1:\\nThis is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex.fmt)\\n restricted \\\\write18 enabled.\\nentering extended mode\\n(main.tex\\nLaTeX2e <2026-06-01>\\nL3 programming layer <2026-06-18>\\n(C:\\\\Program Files\\\\MiKTeX\\\\tex/latex/base\\\\article.cls\\nDocument Class: article 2025/01/22 v1.4n Standard LaTeX document class\\n(C:\\\\Program Files\\\\MiKTeX\\\\tex/latex/base\\\\size11.clo))\\n(C:\\\\Program Files\\\\MiKTeX\\\\tex/latex/base\\\\inputenc.sty)\\n(C:\\\\Users\\\\User\\\\AppData\\\\Roaming\\\\MiKTeX\\\\tex/latex/booktabs\\\\booktabs.st\n...[OUTPUT TRUNCATED: kept first 600 and last 600 of 4207 characters; use filters or save output to a workspace file]...\ntex/context/base/mkii\\\\supp-pdf.mkii\\n[Loading MPS to PDF converter (version 2006.09.02).]\\n) (C:\\\\Program Files\\\\MiKTeX\\\\tex/latex/epstopdf-pkg\\\\epstopdf-base.sty\\n(C:\\\\Program Files\\\\MiKTeX\\\\tex/latex/00miktex\\\\epstopdf-sys.cfg)) (main.out)\\n(main.out)\\n*geometry* driver: auto-detecting\\n*geometry* detected driver: pdftex\\nmain.tex:18: Missing $ inserted.\\n<inserted text> \\n                $\\nl.18 \\n     \\nmain.tex:18:  ==> Fatal error occurred, no output PDF file produced!\\nTranscript written on main.log.\\n\\npdflatex: major issue: So far, you have not checked for updates as a MiKTeX user.\"}",
+  "rounds": 3237,
+  "tool_counts": {
+    "read_file": 1
+  },
+  "artifacts": [
+    {
+      "path": "report/main.tex",
+      "present": true,
+      "bytes": 6861
+    },
+    {
+      "path": "report/main.pdf",
+      "present": false,
+      "bytes": 0
+    },
+    {
+      "path": "results/summary.json",
+      "present": true,
+      "bytes": 5317
+    },
+    {
+      "path": "results/analysis_manifest.json",
+      "present": true,
+      "bytes": 3162
+    },
+    {
+      "path": "results/core_analysis/core_result.json",
+      "present": true,
+      "bytes": 10955
+    },
+    {
+      "path": "results/cd8_analysis/core_result.json",
+      "present": true,
+      "bytes": 10314
+    },
+    {
+      "path": "results/cd8_analysis/summary.json",
+      "present": true,
+      "bytes": 4702
+    },
+    {
+      "path": "README.md",
+      "present": true,
+      "bytes": 3960
+    }
+  ],
+  "required_artifacts": [
+    "report/main.tex",
+    "report/main.pdf",
+    "results/summary.json",
+    "results/analysis_manifest.json",
+    "results/core_analysis/core_result.json",
+    "results/cd8_analysis/core_result.json",
+    "results/cd8_analysis/summary.json",
+    "README.md"
+  ],
+  "research_validation": null,
+  "frozen_hash_mismatches": [],
+  "structural_completion_candidate": false,
+  "semantic_acceptance": "pending_independent_review",
+  "caveat": "PID liveness requires matching executable, command line, and creation time. Structural completion does not establish biological validity."
+}

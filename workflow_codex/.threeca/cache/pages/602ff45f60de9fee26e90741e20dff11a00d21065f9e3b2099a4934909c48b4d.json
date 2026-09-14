@@ -1,0 +1,2210 @@
+{
+  "url": "https://www.weizmann.ac.il/sites/3CA/hematologic",
+  "final_url": "https://www.weizmann.ac.il/sites/3CA/hematologic",
+  "fetched_at": "2026-09-14T04:17:34.928171+00:00",
+  "raw_html_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\pages\\602ff45f60de9fee26e90741e20dff11a00d21065f9e3b2099a4934909c48b4d.html",
+  "title": "Hematologic | Curated Cancer Cell Atlas",
+  "text": "Hematologic Title Data Meta data Cell types Summary Disease Technology #samples #cells Meta programs CNAs UMAP Cell cycle Caron et al. 2020 Cell types Summary ALL 10x 10 37320 Meta programs CNAs UMAP Cell cycle Cohen et al. 2021 Cell types Summary Multiple myeloma MARS-seq 74 39157 Meta programs UMAP Cell cycle Gaiti et al. 2019 Cell types Summary CLL SmartSeq2 8 720 UMAP Cell cycle Galen et al. 2019 Cell types Summary AML SeqWell 37 33392 Meta programs CNAs UMAP Cell cycle Gaydosik et al. 2019 Cell types Summary Cutaneous T cell lymphoma 10x 9 30497 Meta programs UMAP Cell cycle Giustacchini et al. 2017 Cell types Summary CML HiSeq 2000 42 2287 Meta programs UMAP Cell cycle Ledergor et al. 2018 Cell types Summary Multiple myeloma MARS-seq 42 51840 Meta programs UMAP Cell cycle Liu et al. 2021 Cell types Summary Multiple myeloma 10x 24 74986 Meta programs CNAs UMAP Cell cycle Nam et al. 2019 Cell types Summary Myeloproliferative neoplasms 10x 10 31703 Meta programs CNAs UMAP Cell cycle Rendeiro et al. 2020 Cell types Summary CLL 10x 12 48016 Meta programs UMAP Riether et al. 2020 Cell types Summary AML 10x 4 8103 UMAP Roider et al. 2020 Cell types Summary B cell lymphoma 10x 12 35278 Meta programs CNAs UMAP Cell cycle Steen et al. 2021 Cell types Summary DLBCL 10x 10 18197 Meta programs CNAs UMAP Cell cycle Wu et al. 2020 Cell types Summary AML Microwell-seq 41 194571 Meta programs CNAs UMAP Cell cycle Zhang et al. 2019 Cell types Summary Follicular lymphoma 10x 4 7002 Meta programs CNAs UMAP Cell cycle All Hematologic cancer 339 613069",
+  "links": [
+    {
+      "url": "https://www.nature.com/articles/s41598-020-64929-x",
+      "text": "Caron et al. 2020"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/gn9eedqc8jw4ji5ophv2j/Data_Caron2020_Hematologic.tar.gz?rlkey=wvupwtcjfw8o49iiowm2z6ham&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/poz98joetahfvovoqwkh8/Meta-data_Caron2020_Hematologic.tar.gz?rlkey=rmhq761d1xjac9j9vtgkl0bal&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20051",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20051",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20051",
+      "text": "Meta programs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20051",
+      "text": "CNAs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20051",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20051",
+      "text": "Cell cycle"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41591-021-01232-w",
+      "text": "Cohen et al. 2021"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/gkvbe2mq3ra3o3h9q1kxr/Data_Cohen2021_Hematologic.tar.gz?rlkey=ppqa3qzpupdfzpuxs0nrst3uz&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/rmfcewhq99ef4btsitmwm/Meta-data_Cohen2021_Hematologic.tar.gz?rlkey=fb2ibh0ak39q84rj6d6o5t47a&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20055",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20055",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20055",
+      "text": "Meta programs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20055",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20055",
+      "text": "Cell cycle"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41586-019-1198-z",
+      "text": "Gaiti et al. 2019"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/memseaobk0zh72iftl0yp/Data_Gaiti2019_Hematologic.tar.gz?rlkey=04jtbbjzd3fqrqlvueicscz8x&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/urgimrqcyi1vwjj08wj37/Meta-data_Gaiti2019_Hematologic.tar.gz?rlkey=eiogn04kll086c0m0kwjurhje&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20066",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20066",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20066",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20066",
+      "text": "Cell cycle"
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0092867419300947",
+      "text": "Galen et al. 2019"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/k7emrfdmmtw1gmm5kmv0x/Data_Galen2019_Hematologic.tar.gz?rlkey=cpxknyzv03fjy3c570i1dya7s&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/0quemrqhv1pomgvwhk5ga/Meta-data_Galen2019_Hematologic.tar.gz?rlkey=ovnzrya3dux9nxmux7xyt0wf4&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20067",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20067",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20067",
+      "text": "Meta programs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20067",
+      "text": "CNAs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20067",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20067",
+      "text": "Cell cycle"
+    },
+    {
+      "url": "https://aacrjournals.org/clincancerres/article/25/14/4443/81646/Single-Cell-Lymphocyte-Heterogeneity-in-Advanced",
+      "text": "Gaydosik et al. 2019"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/jfqtppjry9dghjjs1adfk/Data_Gaydosik2019_Hematologic.tar.gz?rlkey=503yfk4yaebng1epvam4jz8zf&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/c8olix3ovh4lnoyhfeyd1/Meta-data_Gaydosik2019_Hematologic.tar.gz?rlkey=smyia9dcam6flxsm2dhy1c2xw&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20785",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20785",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20785",
+      "text": "Meta programs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20785",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20785",
+      "text": "Cell cycle"
+    },
+    {
+      "url": "https://www.nature.com/articles/nm.4336",
+      "text": "Giustacchini et al. 2017"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/te7g8rh5tipx3srl4e66l/Data_Giustacchini2017_Hematologic.tar.gz?rlkey=hhjc8kmhycfbw619s7peb2saq&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/5scp62z49e0sfc0zyw8vx/Meta-data_Giustacchini2017_Hematologic.tar.gz?rlkey=9q9z9y3w1d61f4dr7ma1sls8f&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20069",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20069",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20069",
+      "text": "Meta programs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20069",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20069",
+      "text": "Cell cycle"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41591-018-0269-2",
+      "text": "Ledergor et al. 2018"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/boonkpfhe1bfk7tcpry8o/Data_Ledergor2018_Hematologic.tar.gz?rlkey=gpbg39q8kw1h89a0nbw38enqm&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/w7s5jidci4s33ckjyj3h7/Meta-data_Ledergor2018_Hematologic.tar.gz?rlkey=z3kvs3la2ezvz3ec746yqzjoh&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20085",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20085",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20085",
+      "text": "Meta programs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20085",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20085",
+      "text": "Cell cycle"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41467-021-22804-x",
+      "text": "Liu et al. 2021"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/p5kbhywnj1wbu6wh6y4tk/Data_Liu2021_Hematologic.tar.gz?rlkey=3k400szp8w4q37evxy77sges8&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/5tkthi54mj1y4rgdiy75u/Meta-data_Liu2021_Hematologic.tar.gz?rlkey=u89dcd6e7foc4n0vyv069z1t9&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20090",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20090",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20090",
+      "text": "Meta programs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20090",
+      "text": "CNAs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20090",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20090",
+      "text": "Cell cycle"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41586-019-1367-0",
+      "text": "Nam et al. 2019"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/f4cnt9z2gx7e7ctsf3sdr/Data_Nam2019_Hematologic.tar.gz?rlkey=fx7xa2sr8yjaan4p6kjm9037r&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/6kfcl5l8v2d9abomgy3lq/Meta-data_Nam2019_Hematologic.tar.gz?rlkey=4d3yn5ao7hw71dq66olc2hb1z&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20097",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20097",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20097",
+      "text": "Meta programs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20097",
+      "text": "CNAs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20097",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20097",
+      "text": "Cell cycle"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41467-019-14081-6",
+      "text": "Rendeiro et al. 2020"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/ajol9vbdkw7e6vdlgegd1/Data_Rendeiro2020_Hematologic.tar.gz?rlkey=vne2fmgqrvckswqro6eiwcd0f&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/pf7df9d9jno86pdmeqkau/Meta-data_Rendeiro2020_Hematologic.tar.gz?rlkey=ijtx02vncstonpv4nr4yr1ra6&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20857",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20857",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20857",
+      "text": "Meta programs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20857",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41591-020-0910-8",
+      "text": "Riether et al. 2020"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/6kt1fbi0h92ha9szx24ad/Data_Riether2020_Hematologic.tar.gz?rlkey=004s3kvgqugdpx3c5a7k8l7tv&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/rag8r32da2kvtg1f6lze9/Meta-data_Riether2020_Hematologic.tar.gz?rlkey=ci4xq1j092k9hiyzmn5kduxn9&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20860",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20860",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20860",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41556-020-0532-x",
+      "text": "Roider et al. 2020"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/dotmo635ydqmoi7g6jy9k/Data_Roider2020_Hematologic.tar.gz?rlkey=q8cp88dabilavhbyfmuq93q14&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/qiw2rqqbsdai4qqm2yx8s/Meta-data_Roider2020_Hematologic.tar.gz?rlkey=g32g48jccbmqizyhrm9q8wvtd&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20863",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20863",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20863",
+      "text": "Meta programs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20863",
+      "text": "CNAs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20863",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20863",
+      "text": "Cell cycle"
+    },
+    {
+      "url": "https://www.cell.com/cancer-cell/fulltext/S1535-6108(21)00451-7",
+      "text": "Steen et al. 2021"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/25daxap2fv90knsbo8llo/Data_Steen2021_Hematologic.tar.gz?rlkey=ulbpn755ahzk9zfzfp9oj4vut&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/130wphy21n68rzodsc22o/Meta-data_Steen2021_Hematologic.tar.gz?rlkey=jmp3i0a0msv8gajovh8oyrt5d&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20884",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20884",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20884",
+      "text": "Meta programs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20884",
+      "text": "CNAs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20884",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20884",
+      "text": "Cell cycle"
+    },
+    {
+      "url": "https://jhoonline.biomedcentral.com/articles/10.1186/s13045-020-00941-y",
+      "text": "Wu et al. 2020"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/3h5mj2ghnf58drlyna9th/Data_Wu2020_Hematologic.tar.gz?rlkey=qvcj1912jjkccvkqy7onjctgh&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/l9segi3xbvmsd7afbqthb/Meta-data_Wu2020_Hematologic.tar.gz?rlkey=3yn9c17rls6bbnzjc9y8q4zbd&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20114",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20114",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20114",
+      "text": "Meta programs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20114",
+      "text": "CNAs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20114",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20114",
+      "text": "Cell cycle"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41592-019-0529-1",
+      "text": "Zhang et al. 2019"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/mzap4shm86a00web6noev/Data_Zhang2019_Hematologic.tar.gz?rlkey=t0bdidcd4m9028hbiok0jxvah&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/8dl7ft7cold79k3r7lwh6/Meta-data_Zhang2019_Hematologic.tar.gz?rlkey=5942s6r2ouwdogtydm3kqt2sl&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20905",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20905",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20905",
+      "text": "Meta programs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20905",
+      "text": "CNAs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20905",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20905",
+      "text": "Cell cycle"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fo/gkyzvoq1d5pru0eoywbjg/AG2FACmfLwzbz249XOPO4qU?rlkey=93cnphul0wv908x9lrrgdnw7q&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fo/7cvzf4oy71xmve5a23j0d/AJNiklwmGjH_CbWddt0pSfg?rlkey=5rr22cbft53v5nc54x1epmgkk&dl=1",
+      "text": ""
+    }
+  ],
+  "tables": [
+    [
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [],
+          "text": "Title"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [],
+          "text": "Data"
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [],
+          "text": "Meta data"
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "Disease"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "Technology"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "#samples"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "#cells"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [],
+          "text": "CNAs"
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [],
+          "text": "Cell cycle"
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://www.nature.com/articles/s41598-020-64929-x",
+              "text": "Caron et al. 2020"
+            }
+          ],
+          "text": "Caron et al. 2020"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/gn9eedqc8jw4ji5ophv2j/Data_Caron2020_Hematologic.tar.gz?rlkey=wvupwtcjfw8o49iiowm2z6ham&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/poz98joetahfvovoqwkh8/Meta-data_Caron2020_Hematologic.tar.gz?rlkey=rmhq761d1xjac9j9vtgkl0bal&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20051",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20051",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "ALL"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "10x"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "10"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "37320"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20051",
+              "text": "Meta programs"
+            }
+          ],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20051",
+              "text": "CNAs"
+            }
+          ],
+          "text": "CNAs"
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20051",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20051",
+              "text": "Cell cycle"
+            }
+          ],
+          "text": "Cell cycle"
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://www.nature.com/articles/s41591-021-01232-w",
+              "text": "Cohen et al. 2021"
+            }
+          ],
+          "text": "Cohen et al. 2021"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/gkvbe2mq3ra3o3h9q1kxr/Data_Cohen2021_Hematologic.tar.gz?rlkey=ppqa3qzpupdfzpuxs0nrst3uz&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/rmfcewhq99ef4btsitmwm/Meta-data_Cohen2021_Hematologic.tar.gz?rlkey=fb2ibh0ak39q84rj6d6o5t47a&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20055",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20055",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "Multiple myeloma"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "MARS-seq"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "74"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "39157"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20055",
+              "text": "Meta programs"
+            }
+          ],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [],
+          "text": ""
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20055",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20055",
+              "text": "Cell cycle"
+            }
+          ],
+          "text": "Cell cycle"
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://www.nature.com/articles/s41586-019-1198-z",
+              "text": "Gaiti et al. 2019"
+            }
+          ],
+          "text": "Gaiti et al. 2019"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/memseaobk0zh72iftl0yp/Data_Gaiti2019_Hematologic.tar.gz?rlkey=04jtbbjzd3fqrqlvueicscz8x&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/urgimrqcyi1vwjj08wj37/Meta-data_Gaiti2019_Hematologic.tar.gz?rlkey=eiogn04kll086c0m0kwjurhje&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20066",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20066",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "CLL"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "SmartSeq2"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "8"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "720"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [],
+          "text": ""
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [],
+          "text": ""
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20066",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20066",
+              "text": "Cell cycle"
+            }
+          ],
+          "text": "Cell cycle"
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://www.sciencedirect.com/science/article/pii/S0092867419300947",
+              "text": "Galen et al. 2019"
+            }
+          ],
+          "text": "Galen et al. 2019"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/k7emrfdmmtw1gmm5kmv0x/Data_Galen2019_Hematologic.tar.gz?rlkey=cpxknyzv03fjy3c570i1dya7s&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/0quemrqhv1pomgvwhk5ga/Meta-data_Galen2019_Hematologic.tar.gz?rlkey=ovnzrya3dux9nxmux7xyt0wf4&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20067",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20067",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "AML"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "SeqWell"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "37"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "33392"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20067",
+              "text": "Meta programs"
+            }
+          ],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20067",
+              "text": "CNAs"
+            }
+          ],
+          "text": "CNAs"
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20067",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20067",
+              "text": "Cell cycle"
+            }
+          ],
+          "text": "Cell cycle"
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://aacrjournals.org/clincancerres/article/25/14/4443/81646/Single-Cell-Lymphocyte-Heterogeneity-in-Advanced",
+              "text": "Gaydosik et al. 2019"
+            }
+          ],
+          "text": "Gaydosik et al. 2019"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/jfqtppjry9dghjjs1adfk/Data_Gaydosik2019_Hematologic.tar.gz?rlkey=503yfk4yaebng1epvam4jz8zf&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/c8olix3ovh4lnoyhfeyd1/Meta-data_Gaydosik2019_Hematologic.tar.gz?rlkey=smyia9dcam6flxsm2dhy1c2xw&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20785",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20785",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "Cutaneous T cell lymphoma"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "10x"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "9"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "30497"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20785",
+              "text": "Meta programs"
+            }
+          ],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [],
+          "text": ""
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20785",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20785",
+              "text": "Cell cycle"
+            }
+          ],
+          "text": "Cell cycle"
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://www.nature.com/articles/nm.4336",
+              "text": "Giustacchini et al. 2017"
+            }
+          ],
+          "text": "Giustacchini et al. 2017"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/te7g8rh5tipx3srl4e66l/Data_Giustacchini2017_Hematologic.tar.gz?rlkey=hhjc8kmhycfbw619s7peb2saq&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/5scp62z49e0sfc0zyw8vx/Meta-data_Giustacchini2017_Hematologic.tar.gz?rlkey=9q9z9y3w1d61f4dr7ma1sls8f&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20069",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20069",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "CML"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "HiSeq 2000"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "42"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "2287"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20069",
+              "text": "Meta programs"
+            }
+          ],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [],
+          "text": ""
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20069",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20069",
+              "text": "Cell cycle"
+            }
+          ],
+          "text": "Cell cycle"
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://www.nature.com/articles/s41591-018-0269-2",
+              "text": "Ledergor et al. 2018"
+            }
+          ],
+          "text": "Ledergor et al. 2018"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/boonkpfhe1bfk7tcpry8o/Data_Ledergor2018_Hematologic.tar.gz?rlkey=gpbg39q8kw1h89a0nbw38enqm&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/w7s5jidci4s33ckjyj3h7/Meta-data_Ledergor2018_Hematologic.tar.gz?rlkey=z3kvs3la2ezvz3ec746yqzjoh&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20085",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20085",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "Multiple myeloma"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "MARS-seq"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "42"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "51840"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20085",
+              "text": "Meta programs"
+            }
+          ],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [],
+          "text": ""
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20085",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20085",
+              "text": "Cell cycle"
+            }
+          ],
+          "text": "Cell cycle"
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://www.nature.com/articles/s41467-021-22804-x",
+              "text": "Liu et al. 2021"
+            }
+          ],
+          "text": "Liu et al. 2021"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/p5kbhywnj1wbu6wh6y4tk/Data_Liu2021_Hematologic.tar.gz?rlkey=3k400szp8w4q37evxy77sges8&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/5tkthi54mj1y4rgdiy75u/Meta-data_Liu2021_Hematologic.tar.gz?rlkey=u89dcd6e7foc4n0vyv069z1t9&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20090",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20090",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "Multiple myeloma"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "10x"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "24"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "74986"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20090",
+              "text": "Meta programs"
+            }
+          ],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20090",
+              "text": "CNAs"
+            }
+          ],
+          "text": "CNAs"
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20090",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20090",
+              "text": "Cell cycle"
+            }
+          ],
+          "text": "Cell cycle"
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://www.nature.com/articles/s41586-019-1367-0",
+              "text": "Nam et al. 2019"
+            }
+          ],
+          "text": "Nam et al. 2019"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/f4cnt9z2gx7e7ctsf3sdr/Data_Nam2019_Hematologic.tar.gz?rlkey=fx7xa2sr8yjaan4p6kjm9037r&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/6kfcl5l8v2d9abomgy3lq/Meta-data_Nam2019_Hematologic.tar.gz?rlkey=4d3yn5ao7hw71dq66olc2hb1z&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20097",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20097",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "Myeloproliferative neoplasms"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "10x"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "10"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "31703"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20097",
+              "text": "Meta programs"
+            }
+          ],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20097",
+              "text": "CNAs"
+            }
+          ],
+          "text": "CNAs"
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20097",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20097",
+              "text": "Cell cycle"
+            }
+          ],
+          "text": "Cell cycle"
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://www.nature.com/articles/s41467-019-14081-6",
+              "text": "Rendeiro et al. 2020"
+            }
+          ],
+          "text": "Rendeiro et al. 2020"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/ajol9vbdkw7e6vdlgegd1/Data_Rendeiro2020_Hematologic.tar.gz?rlkey=vne2fmgqrvckswqro6eiwcd0f&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/pf7df9d9jno86pdmeqkau/Meta-data_Rendeiro2020_Hematologic.tar.gz?rlkey=ijtx02vncstonpv4nr4yr1ra6&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20857",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20857",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "CLL"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "10x"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "12"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "48016"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20857",
+              "text": "Meta programs"
+            }
+          ],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [],
+          "text": ""
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20857",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [],
+          "text": ""
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://www.nature.com/articles/s41591-020-0910-8",
+              "text": "Riether et al. 2020"
+            }
+          ],
+          "text": "Riether et al. 2020"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/6kt1fbi0h92ha9szx24ad/Data_Riether2020_Hematologic.tar.gz?rlkey=004s3kvgqugdpx3c5a7k8l7tv&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/rag8r32da2kvtg1f6lze9/Meta-data_Riether2020_Hematologic.tar.gz?rlkey=ci4xq1j092k9hiyzmn5kduxn9&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20860",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20860",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "AML"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "10x"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "4"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "8103"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [],
+          "text": ""
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [],
+          "text": ""
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20860",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [],
+          "text": ""
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://www.nature.com/articles/s41556-020-0532-x",
+              "text": "Roider et al. 2020"
+            }
+          ],
+          "text": "Roider et al. 2020"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/dotmo635ydqmoi7g6jy9k/Data_Roider2020_Hematologic.tar.gz?rlkey=q8cp88dabilavhbyfmuq93q14&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/qiw2rqqbsdai4qqm2yx8s/Meta-data_Roider2020_Hematologic.tar.gz?rlkey=g32g48jccbmqizyhrm9q8wvtd&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20863",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20863",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "B cell lymphoma"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "10x"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "12"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "35278"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20863",
+              "text": "Meta programs"
+            }
+          ],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20863",
+              "text": "CNAs"
+            }
+          ],
+          "text": "CNAs"
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20863",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20863",
+              "text": "Cell cycle"
+            }
+          ],
+          "text": "Cell cycle"
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://www.cell.com/cancer-cell/fulltext/S1535-6108(21)00451-7",
+              "text": "Steen et al. 2021"
+            }
+          ],
+          "text": "Steen et al. 2021"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/25daxap2fv90knsbo8llo/Data_Steen2021_Hematologic.tar.gz?rlkey=ulbpn755ahzk9zfzfp9oj4vut&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/130wphy21n68rzodsc22o/Meta-data_Steen2021_Hematologic.tar.gz?rlkey=jmp3i0a0msv8gajovh8oyrt5d&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20884",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20884",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "DLBCL"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "10x"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "10"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "18197"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20884",
+              "text": "Meta programs"
+            }
+          ],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20884",
+              "text": "CNAs"
+            }
+          ],
+          "text": "CNAs"
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20884",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20884",
+              "text": "Cell cycle"
+            }
+          ],
+          "text": "Cell cycle"
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://jhoonline.biomedcentral.com/articles/10.1186/s13045-020-00941-y",
+              "text": "Wu et al. 2020"
+            }
+          ],
+          "text": "Wu et al. 2020"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/3h5mj2ghnf58drlyna9th/Data_Wu2020_Hematologic.tar.gz?rlkey=qvcj1912jjkccvkqy7onjctgh&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/l9segi3xbvmsd7afbqthb/Meta-data_Wu2020_Hematologic.tar.gz?rlkey=3yn9c17rls6bbnzjc9y8q4zbd&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20114",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20114",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "AML"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "Microwell-seq"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "41"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "194571"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20114",
+              "text": "Meta programs"
+            }
+          ],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20114",
+              "text": "CNAs"
+            }
+          ],
+          "text": "CNAs"
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20114",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20114",
+              "text": "Cell cycle"
+            }
+          ],
+          "text": "Cell cycle"
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://www.nature.com/articles/s41592-019-0529-1",
+              "text": "Zhang et al. 2019"
+            }
+          ],
+          "text": "Zhang et al. 2019"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/mzap4shm86a00web6noev/Data_Zhang2019_Hematologic.tar.gz?rlkey=t0bdidcd4m9028hbiok0jxvah&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/8dl7ft7cold79k3r7lwh6/Meta-data_Zhang2019_Hematologic.tar.gz?rlkey=5942s6r2ouwdogtydm3kqt2sl&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20905",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20905",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "Follicular lymphoma"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "10x"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "4"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "7002"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20905",
+              "text": "Meta programs"
+            }
+          ],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20905",
+              "text": "CNAs"
+            }
+          ],
+          "text": "CNAs"
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20905",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20905",
+              "text": "Cell cycle"
+            }
+          ],
+          "text": "Cell cycle"
+        }
+      ]
+    ]
+  ]
+}

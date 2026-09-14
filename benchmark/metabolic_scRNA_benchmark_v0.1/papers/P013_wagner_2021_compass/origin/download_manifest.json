@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P013",
+  "si_requested": true,
+  "downloaded_at": "2026-09-11T10:13:16+00:00",
+  "pmc_attempt": {
+    "provider": "PMC OA package",
+    "pmcid": "PMC8621950",
+    "status": "oa_package_failed:HTTPError:HTTP Error 404: Not Found",
+    "source_url": ""
+  },
+  "official_fallback_attempt": {
+    "provider": "official_publisher_or_repository",
+    "status": "full_text_available_si_not_found",
+    "attempts": [
+      {
+        "url": "https://linkinghub.elsevier.com/retrieve/pii/S0092867421007005",
+        "status": "not_full_text"
+      },
+      {
+        "url": "https://linkinghub.elsevier.com/retrieve/pii/S0092867421007005",
+        "status": "not_full_text"
+      }
+    ]
+  },
+  "files": [
+    {
+      "relative_path": "main_article.pdf",
+      "role": "main_article",
+      "media_type": "application/pdf",
+      "size_bytes": 10229849,
+      "sha256": "70e95112411cf478ac445ce3d5155ee2542d33d7e28c8e54c7bb9ac5cf4707d6",
+      "source_url": "user-supplied-local://workspace/Metabolic%20modeling%20of%20single%20Th17%20cells%20reveals%20regulators%20of%20autoimmunity.pdf",
+      "official_landing_url": "https://doi.org/10.1016/j.cell.2021.05.045",
+      "acquisition_method": "user_supplied_local",
+      "original_filename": "Metabolic modeling of single Th17 cells reveals regulators of autoimmunity.pdf",
+      "pdf_validation": {
+        "checked_at": "2026-09-11",
+        "magic": "%PDF-",
+        "pdfinfo": "pass",
+        "pdftotext_all_pages": "pass",
+        "first_page_render": "pass",
+        "pages": 40,
+        "encrypted": false,
+        "doi_match": true,
+        "title_visual_match": true
+      }
+    }
+  ],
+  "verification": {
+    "checks": [
+      "nonzero size",
+      "PDF magic when applicable",
+      "SHA-256",
+      "source URL recorded"
+    ],
+    "pdf_text_or_title_check": "external acceptance check; see top-level 构建与验收报告.md"
+  },
+  "browser_verification": {
+    "checked_at": "2026-09-11",
+    "status": "full_text_html_visible_pdf_link_verified_not_exported",
+    "url": "https://www.cell.com/cell/fulltext/S0092-8674(21)00700-5",
+    "title": "Metabolic Modeling of Single Th17 Cells Reveals Regulators of Autoimmunity",
+    "article_body_visible": true,
+    "official_pdf_url": "https://www.cell.com/action/showPdf?pii=S0092-8674%2821%2900700-5",
+    "content_exported": false,
+    "note": "The official Cell full-text page and PDF link were verified interactively. The browser did not yield a verifiable local export, so no file was added to origin/."
+  }
+}

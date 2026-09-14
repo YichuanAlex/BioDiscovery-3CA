@@ -1,0 +1,73 @@
+{
+  "snapshot_at": "2026-09-14T02:45:15.937Z",
+  "task": "C:\\Users\\User\\Desktop\\agentic\\3CA\\QA_R7",
+  "status": "runner_failed",
+  "runner_pid": 29532,
+  "runner_process": null,
+  "runner_identity_match": false,
+  "checkpoint_status": "needs_attention",
+  "checkpoint_read_error": null,
+  "phase": "report_build",
+  "next_action": "Call build_research_report now for report/main.tex and report/main.pdf; do not use a shell compilation wrapper.",
+  "rounds": 64,
+  "tool_counts": {
+    "build_research_report": 1
+  },
+  "artifacts": [
+    {
+      "path": "report/main.tex",
+      "present": true,
+      "bytes": 6381
+    },
+    {
+      "path": "report/main.pdf",
+      "present": false,
+      "bytes": 0
+    },
+    {
+      "path": "results/summary.json",
+      "present": true,
+      "bytes": 5317
+    },
+    {
+      "path": "results/analysis_manifest.json",
+      "present": true,
+      "bytes": 2995
+    },
+    {
+      "path": "results/core_analysis/core_result.json",
+      "present": true,
+      "bytes": 10955
+    },
+    {
+      "path": "results/cd8_analysis/core_result.json",
+      "present": true,
+      "bytes": 10314
+    },
+    {
+      "path": "results/cd8_analysis/summary.json",
+      "present": true,
+      "bytes": 4702
+    },
+    {
+      "path": "README.md",
+      "present": true,
+      "bytes": 2415
+    }
+  ],
+  "required_artifacts": [
+    "report/main.tex",
+    "report/main.pdf",
+    "results/summary.json",
+    "results/analysis_manifest.json",
+    "results/core_analysis/core_result.json",
+    "results/cd8_analysis/core_result.json",
+    "results/cd8_analysis/summary.json",
+    "README.md"
+  ],
+  "research_validation": null,
+  "frozen_hash_mismatches": [],
+  "structural_completion_candidate": false,
+  "semantic_acceptance": "pending_independent_review",
+  "caveat": "PID liveness requires matching executable, command line, and creation time. Structural completion does not establish biological validity."
+}

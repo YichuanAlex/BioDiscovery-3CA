@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P023",
+  "si_requested": true,
+  "downloaded_at": "2026-09-11T10:13:16+00:00",
+  "pmc_attempt": {
+    "provider": "Europe PMC",
+    "pmcid": "PMC9710656",
+    "status": "open_access_downloaded",
+    "source_url": ""
+  },
+  "official_fallback_attempt": {
+    "provider": "official_publisher_or_repository",
+    "status": "full_text_available_si_not_found",
+    "attempts": [
+      {
+        "url": "https://academic.oup.com/bioinformaticsadvances/article/2/1/vbac016/6544613",
+        "status": "failed:HTTPError:HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://doi.org/10.1093/bioadv/vbac016",
+        "status": "failed:HTTPError:HTTP Error 403: Forbidden"
+      }
+    ]
+  },
+  "files": [
+    {
+      "relative_path": "main_article.xml",
+      "role": "main_article",
+      "media_type": "text/xml",
+      "size_bytes": 31272,
+      "sha256": "954af9aa9b648c7cd403621fc91509bd3f3498f420b53c605b133d19f985a55e",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9710656/fullTextXML"
+    },
+    {
+      "relative_path": "main_article.pdf",
+      "role": "main_article",
+      "media_type": "application/pdf",
+      "size_bytes": 292517,
+      "sha256": "99fdf71d3450917c229f18c4b77901da6a39f63ad35d73f9614340c199ad5936",
+      "source_url": "https://europepmc.org/api/getPdf?pmcid=PMC9710656"
+    }
+  ],
+  "verification": {
+    "checks": [
+      "nonzero size",
+      "PDF magic when applicable",
+      "SHA-256",
+      "source URL recorded"
+    ],
+    "pdf_text_or_title_check": "external acceptance check; see top-level 构建与验收报告.md"
+  }
+}

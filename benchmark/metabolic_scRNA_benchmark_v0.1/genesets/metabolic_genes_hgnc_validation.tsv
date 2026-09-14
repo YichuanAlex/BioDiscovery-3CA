@@ -1,0 +1,1989 @@
+input_symbol	inferred_species	human_validation_status	human_approved_symbol	hgnc_id	mouse_validation_status	mouse_approved_symbol	mgi_id	recommended_human_symbol	orthology_status
+SLC10A4	human	approved_exact	SLC10A4	HGNC:22980	unmatched			SLC10A4	not_needed
+SLC6A3	human	approved_exact	SLC6A3	HGNC:11049	unmatched			SLC6A3	not_needed
+SLC6A1	human	approved_exact	SLC6A1	HGNC:11042	unmatched			SLC6A1	not_needed
+SLC6A12	human	approved_exact	SLC6A12	HGNC:11045	unmatched			SLC6A12	not_needed
+SLC25A33	human	approved_exact	SLC25A33	HGNC:29681	unmatched			SLC25A33	not_needed
+SLC6A11	human	approved_exact	SLC6A11	HGNC:11044	unmatched			SLC6A11	not_needed
+SLC25A18	human	approved_exact	SLC25A18	HGNC:10988	unmatched			SLC25A18	not_needed
+SLC6A5	human	approved_exact	SLC6A5	HGNC:11051	unmatched			SLC6A5	not_needed
+SLC22A15	human	approved_exact	SLC22A15	HGNC:20301	unmatched			SLC22A15	not_needed
+SLC44A1	human	approved_exact	SLC44A1	HGNC:18798	unmatched			SLC44A1	not_needed
+SLC5A11	human	approved_exact	SLC5A11	HGNC:23091	unmatched			SLC5A11	not_needed
+SLC7A11	human	approved_exact	SLC7A11	HGNC:11059	unmatched			SLC7A11	not_needed
+SLC1A2	human	approved_exact	SLC1A2	HGNC:10940	unmatched			SLC1A2	not_needed
+SLC39A10	human	approved_exact	SLC39A10	HGNC:20861	unmatched			SLC39A10	not_needed
+SLC9A7	human	approved_exact	SLC9A7	HGNC:17123	unmatched			SLC9A7	not_needed
+SLC2A13	human	approved_exact	SLC2A13	HGNC:15956	unmatched			SLC2A13	not_needed
+SLC38A11	human	approved_exact	SLC38A11	HGNC:26836	unmatched			SLC38A11	not_needed
+SLC35D3	human	approved_exact	SLC35D3	HGNC:15621	unmatched			SLC35D3	not_needed
+SLC18A1	human	approved_exact	SLC18A1	HGNC:10934	unmatched			SLC18A1	not_needed
+SLC1A7	human	approved_exact	SLC1A7	HGNC:10945	unmatched			SLC1A7	not_needed
+SLC16A8	human	approved_exact	SLC16A8	HGNC:16270	unmatched			SLC16A8	not_needed
+SLC4A5	human	approved_exact	SLC4A5	HGNC:18168	unmatched			SLC4A5	not_needed
+SLC16A14	human	approved_exact	SLC16A14	HGNC:26417	unmatched			SLC16A14	not_needed
+SLC6A20	human	approved_exact	SLC6A20	HGNC:30927	unmatched			SLC6A20	not_needed
+SLC23A2	human	approved_exact	SLC23A2	HGNC:10973	unmatched			SLC23A2	not_needed
+SLCO1C1	human	approved_exact	SLCO1C1	HGNC:13819	unmatched			SLCO1C1	not_needed
+SLC2A12	human	approved_exact	SLC2A12	HGNC:18067	unmatched			SLC2A12	not_needed
+SLC39A12	human	approved_exact	SLC39A12	HGNC:20860	unmatched			SLC39A12	not_needed
+SLC17A5	human	approved_exact	SLC17A5	HGNC:10933	unmatched			SLC17A5	not_needed
+SLC26A4	human	approved_exact	SLC26A4	HGNC:8818	unmatched			SLC26A4	not_needed
+SLC26A7	human	approved_exact	SLC26A7	HGNC:14467	unmatched			SLC26A7	not_needed
+SLC30A4	human	approved_exact	SLC30A4	HGNC:11015	unmatched			SLC30A4	not_needed
+SLC5A8	human	approved_exact	SLC5A8	HGNC:19119	unmatched			SLC5A8	not_needed
+SLC4A7	human	approved_exact	SLC4A7	HGNC:11033	unmatched			SLC4A7	not_needed
+SLC24A1	human	approved_exact	SLC24A1	HGNC:10975	unmatched			SLC24A1	not_needed
+SLC6A6	human	approved_exact	SLC6A6	HGNC:11052	unmatched			SLC6A6	not_needed
+SLC16A6	human	approved_exact	SLC16A6	HGNC:10927	unmatched			SLC16A6	not_needed
+SLC25A27	human	approved_exact	SLC25A27	HGNC:21065	unmatched			SLC25A27	not_needed
+SLC35F4	human	approved_exact	SLC35F4	HGNC:19845	unmatched			SLC35F4	not_needed
+SLC17A8	human	approved_exact	SLC17A8	HGNC:20151	unmatched			SLC17A8	not_needed
+SLC4A10	human	approved_exact	SLC4A10	HGNC:13811	unmatched			SLC4A10	not_needed
+SLC2A11	human	approved_exact	SLC2A11	HGNC:14239	unmatched			SLC2A11	not_needed
+SLC38A3	human	approved_exact	SLC38A3	HGNC:18044	unmatched			SLC38A3	not_needed
+SLC24A4	human	approved_exact	SLC24A4	HGNC:10978	unmatched			SLC24A4	not_needed
+SLC18A3	human	approved_exact	SLC18A3	HGNC:10936	unmatched			SLC18A3	not_needed
+SLC1A4	human	approved_exact	SLC1A4	HGNC:10942	unmatched			SLC1A4	not_needed
+SLC24A3	human	approved_exact	SLC24A3	HGNC:10977	unmatched			SLC24A3	not_needed
+SLC35F3	human	approved_exact	SLC35F3	HGNC:23616	unmatched			SLC35F3	not_needed
+SLC1A6	human	approved_exact	SLC1A6	HGNC:10944	unmatched			SLC1A6	not_needed
+SLC30A3	human	approved_exact	SLC30A3	HGNC:11014	unmatched			SLC30A3	not_needed
+SLC17A7	human	approved_exact	SLC17A7	HGNC:16704	unmatched			SLC17A7	not_needed
+SLC6A7	human	approved_exact	SLC6A7	HGNC:11054	unmatched			SLC6A7	not_needed
+SLC45A1	human	approved_exact	SLC45A1	HGNC:17939	unmatched			SLC45A1	not_needed
+SLC4A3	human	approved_exact	SLC4A3	HGNC:11029	unmatched			SLC4A3	not_needed
+SLC25A22	human	approved_exact	SLC25A22	HGNC:19954	unmatched			SLC25A22	not_needed
+SLC2A6	human	approved_exact	SLC2A6	HGNC:11011	unmatched			SLC2A6	not_needed
+SLC32A1	human	approved_exact	SLC32A1	HGNC:11018	unmatched			SLC32A1	not_needed
+SLC12A5	human	approved_exact	SLC12A5	HGNC:13818	unmatched			SLC12A5	not_needed
+SLC6A17	human	approved_exact	SLC6A17	HGNC:31399	unmatched			SLC6A17	not_needed
+SLC8A2	human	approved_exact	SLC8A2	HGNC:11069	unmatched			SLC8A2	not_needed
+SLC7A3	human	approved_exact	SLC7A3	HGNC:11061	unmatched			SLC7A3	not_needed
+SLC38A8	human	approved_exact	SLC38A8	HGNC:32434	unmatched			SLC38A8	not_needed
+SLC8A3	human	approved_exact	SLC8A3	HGNC:11070	unmatched			SLC8A3	not_needed
+SLC17A6	human	approved_exact	SLC17A6	HGNC:16703	unmatched			SLC17A6	not_needed
+SLC44A5	human	approved_exact	SLC44A5	HGNC:28524	unmatched			SLC44A5	not_needed
+SLC36A4	human	approved_exact	SLC36A4	HGNC:19660	unmatched			SLC36A4	not_needed
+SLC4A1AP	human	approved_exact	SLC4A1AP	HGNC:13813	unmatched			SLC4A1AP	not_needed
+SLC25A14	human	approved_exact	SLC25A14	HGNC:10984	unmatched			SLC25A14	not_needed
+SLC1A3	human	approved_exact	SLC1A3	HGNC:10941	unmatched			SLC1A3	not_needed
+SLC35F1	human	approved_exact	SLC35F1	HGNC:21483	unmatched			SLC35F1	not_needed
+SLC26A5	human	approved_exact	SLC26A5	HGNC:9359	unmatched			SLC26A5	not_needed
+SLC9B2	human	approved_exact	SLC9B2	HGNC:25143	unmatched			SLC9B2	not_needed
+SLC9A6	human	approved_exact	SLC9A6	HGNC:11079	unmatched			SLC9A6	not_needed
+SLC7A14	human	approved_exact	SLC7A14	HGNC:29326	unmatched			SLC7A14	not_needed
+SLC4A8	human	approved_exact	SLC4A8	HGNC:11034	unmatched			SLC4A8	not_needed
+SLC25A53	human	approved_exact	SLC25A53	HGNC:31894	unmatched			SLC25A53	not_needed
+SLC7A6OS	human	approved_exact	SLC7A6OS	HGNC:25807	unmatched			SLC7A6OS	not_needed
+SLC15A4	human	approved_exact	SLC15A4	HGNC:23090	unmatched			SLC15A4	not_needed
+SLC7A6	human	approved_exact	SLC7A6	HGNC:11064	unmatched			SLC7A6	not_needed
+SLC12A6	human	approved_exact	SLC12A6	HGNC:10914	unmatched			SLC12A6	not_needed
+SLC38A1	human	approved_exact	SLC38A1	HGNC:13447	unmatched			SLC38A1	not_needed
+SLC9A9	human	approved_exact	SLC9A9	HGNC:20653	unmatched			SLC9A9	not_needed
+SLC40A1	human	approved_exact	SLC40A1	HGNC:10909	unmatched			SLC40A1	not_needed
+SLC25A17	human	approved_exact	SLC25A17	HGNC:10987	unmatched			SLC25A17	not_needed
+SLC14A1	human	approved_exact	SLC14A1	HGNC:10918	unmatched			SLC14A1	not_needed
+SLC45A4	human	approved_exact	SLC45A4	HGNC:29196	unmatched			SLC45A4	not_needed
+SLC4A11	human	approved_exact	SLC4A11	HGNC:16438	unmatched			SLC4A11	not_needed
+SLC22A23	human	approved_exact	SLC22A23	HGNC:21106	unmatched			SLC22A23	not_needed
+SLC31A2	human	approved_exact	SLC31A2	HGNC:11017	unmatched			SLC31A2	not_needed
+SLC38A6	human	approved_exact	SLC38A6	HGNC:19863	unmatched			SLC38A6	not_needed
+SLC9A8	human	approved_exact	SLC9A8	HGNC:20728	unmatched			SLC9A8	not_needed
+SLC36A1	human	approved_exact	SLC36A1	HGNC:18761	unmatched			SLC36A1	not_needed
+SLC35E1	human	approved_exact	SLC35E1	HGNC:20803	unmatched			SLC35E1	not_needed
+SLC22A5	human	approved_exact	SLC22A5	HGNC:10969	unmatched			SLC22A5	not_needed
+SLC26A6	human	approved_exact	SLC26A6	HGNC:14472	unmatched			SLC26A6	not_needed
+SLC26A1	human	approved_exact	SLC26A1	HGNC:10993	unmatched			SLC26A1	not_needed
+SLC25A29	human	approved_exact	SLC25A29	HGNC:20116	unmatched			SLC25A29	not_needed
+SLC45A2	human	approved_exact	SLC45A2	HGNC:16472	unmatched			SLC45A2	not_needed
+SLC22A4	human	approved_exact	SLC22A4	HGNC:10968	unmatched			SLC22A4	not_needed
+SLC25A38	human	approved_exact	SLC25A38	HGNC:26054	unmatched			SLC25A38	not_needed
+SLC11A1	human	approved_exact	SLC11A1	HGNC:10907	unmatched			SLC11A1	not_needed
+SLC43A1	human	approved_exact	SLC43A1	HGNC:9225	unmatched			SLC43A1	not_needed
+SLC43A3	human	approved_exact	SLC43A3	HGNC:17466	unmatched			SLC43A3	not_needed
+SLC17A9	human	approved_exact	SLC17A9	HGNC:16192	unmatched			SLC17A9	not_needed
+SLC16A11	human	approved_exact	SLC16A11	HGNC:23093	unmatched			SLC16A11	not_needed
+SLC13A4	human	approved_exact	SLC13A4	HGNC:15827	unmatched			SLC13A4	not_needed
+SLC5A5	human	approved_exact	SLC5A5	HGNC:11040	unmatched			SLC5A5	not_needed
+SLC25A35	human	approved_exact	SLC25A35	HGNC:31921	unmatched			SLC25A35	not_needed
+SLC5A6	human	approved_exact	SLC5A6	HGNC:11041	unmatched			SLC5A6	not_needed
+SLC35F6	human	approved_exact	SLC35F6	HGNC:26055	unmatched			SLC35F6	not_needed
+SLC29A2	human	approved_exact	SLC29A2	HGNC:11004	unmatched			SLC29A2	not_needed
+SLC25A28	human	approved_exact	SLC25A28	HGNC:23472	unmatched			SLC25A28	not_needed
+SLC26A11	human	approved_exact	SLC26A11	HGNC:14471	unmatched			SLC26A11	not_needed
+SLC43A2	human	approved_exact	SLC43A2	HGNC:23087	unmatched			SLC43A2	not_needed
+SLC25A42	human	approved_exact	SLC25A42	HGNC:28380	unmatched			SLC25A42	not_needed
+SLC41A3	human	approved_exact	SLC41A3	HGNC:31046	unmatched			SLC41A3	not_needed
+SLC37A4	human	approved_exact	SLC37A4	HGNC:4061	unmatched			SLC37A4	not_needed
+SLC25A44	human	approved_exact	SLC25A44	HGNC:29036	unmatched			SLC25A44	not_needed
+SLC16A2	human	approved_exact	SLC16A2	HGNC:10923	unmatched			SLC16A2	not_needed
+SLCO2B1	human	approved_exact	SLCO2B1	HGNC:10962	unmatched			SLCO2B1	not_needed
+SLC7A8	human	approved_exact	SLC7A8	HGNC:11066	unmatched			SLC7A8	not_needed
+SLC44A2	human	approved_exact	SLC44A2	HGNC:17292	unmatched			SLC44A2	not_needed
+SLC8B1	human	approved_exact	SLC8B1	HGNC:26175	unmatched			SLC8B1	not_needed
+SLC12A4	human	approved_exact	SLC12A4	HGNC:10913	unmatched			SLC12A4	not_needed
+SLC35E2B	human	approved_exact	SLC35E2B	HGNC:33941	unmatched			SLC35E2B	not_needed
+SLCO3A1	human	approved_exact	SLCO3A1	HGNC:10952	unmatched			SLCO3A1	not_needed
+SLC12A7	human	approved_exact	SLC12A7	HGNC:10915	unmatched			SLC12A7	not_needed
+SLC29A3	human	approved_exact	SLC29A3	HGNC:23096	unmatched			SLC29A3	not_needed
+SLC48A1	human	approved_exact	SLC48A1	HGNC:26035	unmatched			SLC48A1	not_needed
+SLC38A10	human	approved_exact	SLC38A10	HGNC:28237	unmatched			SLC38A10	not_needed
+SLC39A1	human	approved_exact	SLC39A1	HGNC:12876	unmatched			SLC39A1	not_needed
+SLC35B2	human	approved_exact	SLC35B2	HGNC:16872	unmatched			SLC35B2	not_needed
+SLC35C2	human	previous_symbol_unique	SLC35H1	HGNC:17117	unmatched			SLC35H1	not_needed
+SLC9A1	human	approved_exact	SLC9A1	HGNC:11071	unmatched			SLC9A1	not_needed
+SLC38A7	human	approved_exact	SLC38A7	HGNC:25582	unmatched			SLC38A7	not_needed
+SLC22A18	human	previous_symbol_unique	SLC67A1	HGNC:10964	unmatched			SLC67A1	not_needed
+SLC22A6	human	approved_exact	SLC22A6	HGNC:10970	unmatched			SLC22A6	not_needed
+SLC16A5	human	approved_exact	SLC16A5	HGNC:10926	unmatched			SLC16A5	not_needed
+SLC52A1	human	approved_exact	SLC52A1	HGNC:30225	unmatched			SLC52A1	not_needed
+SLC16A3	human	approved_exact	SLC16A3	HGNC:10924	unmatched			SLC16A3	not_needed
+SLC46A1	human	approved_exact	SLC46A1	HGNC:30521	unmatched			SLC46A1	not_needed
+SLC19A1	human	approved_exact	SLC19A1	HGNC:10937	unmatched			SLC19A1	not_needed
+SLC29A4	human	approved_exact	SLC29A4	HGNC:23097	unmatched			SLC29A4	not_needed
+SLC25A19	human	approved_exact	SLC25A19	HGNC:14409	unmatched			SLC25A19	not_needed
+SLC52A2	human	approved_exact	SLC52A2	HGNC:30224	unmatched			SLC52A2	not_needed
+SLC2A8	human	approved_exact	SLC2A8	HGNC:13812	unmatched			SLC2A8	not_needed
+SLC39A3	human	approved_exact	SLC39A3	HGNC:17128	unmatched			SLC39A3	not_needed
+SLC25A11	human	approved_exact	SLC25A11	HGNC:10981	unmatched			SLC25A11	not_needed
+SLC35E4	human	approved_exact	SLC35E4	HGNC:17058	unmatched			SLC35E4	not_needed
+SLC27A1	human	approved_exact	SLC27A1	HGNC:10995	unmatched			SLC27A1	not_needed
+SLC4A2	human	approved_exact	SLC4A2	HGNC:11028	unmatched			SLC4A2	not_needed
+SLC35A4	human	approved_exact	SLC35A4	HGNC:20753	unmatched			SLC35A4	not_needed
+SLC39A13	human	approved_exact	SLC39A13	HGNC:20859	unmatched			SLC39A13	not_needed
+SLC25A39	human	approved_exact	SLC25A39	HGNC:24279	unmatched			SLC25A39	not_needed
+SLC9A3R1	human	previous_symbol_unique	NHERF1	HGNC:11075	unmatched			NHERF1	not_needed
+SLC12A9	human	approved_exact	SLC12A9	HGNC:17435	unmatched			SLC12A9	not_needed
+SLC27A4	human	approved_exact	SLC27A4	HGNC:10998	unmatched			SLC27A4	not_needed
+SLC25A23	human	approved_exact	SLC25A23	HGNC:19375	unmatched			SLC25A23	not_needed
+SLCO4A1	human	approved_exact	SLCO4A1	HGNC:10953	unmatched			SLCO4A1	not_needed
+SLC15A3	human	approved_exact	SLC15A3	HGNC:18068	unmatched			SLC15A3	not_needed
+SLC22A8	human	approved_exact	SLC22A8	HGNC:10972	unmatched			SLC22A8	not_needed
+SLC3A2	human	approved_exact	SLC3A2	HGNC:11026	unmatched			SLC3A2	not_needed
+SLC2A1	human	approved_exact	SLC2A1	HGNC:11005	unmatched			SLC2A1	not_needed
+SLC7A5	human	approved_exact	SLC7A5	HGNC:11063	unmatched			SLC7A5	not_needed
+SLC9A3R2	human	previous_symbol_unique	NHERF2	HGNC:11076	unmatched			NHERF2	not_needed
+SLC27A3	human	approved_exact	SLC27A3	HGNC:10997	unmatched			SLC27A3	not_needed
+SLC29A1	human	approved_exact	SLC29A1	HGNC:11003	unmatched			SLC29A1	not_needed
+SLC2A4RG	human	approved_exact	SLC2A4RG	HGNC:15930	unmatched			SLC2A4RG	not_needed
+SLC25A1	human	approved_exact	SLC25A1	HGNC:10979	unmatched			SLC25A1	not_needed
+SLC1A5	human	approved_exact	SLC1A5	HGNC:10943	unmatched			SLC1A5	not_needed
+SLC25A45	human	approved_exact	SLC25A45	HGNC:27442	unmatched			SLC25A45	not_needed
+SLC50A1	human	approved_exact	SLC50A1	HGNC:30657	unmatched			SLC50A1	not_needed
+SLC35A2	human	approved_exact	SLC35A2	HGNC:11022	unmatched			SLC35A2	not_needed
+SLC35C1	human	approved_exact	SLC35C1	HGNC:20197	unmatched			SLC35C1	not_needed
+SLC7A4	human	approved_exact	SLC7A4	HGNC:11062	unmatched			SLC7A4	not_needed
+SLC22A16	human	approved_exact	SLC22A16	HGNC:20302	unmatched			SLC22A16	not_needed
+SLC25A37	human	approved_exact	SLC25A37	HGNC:29786	unmatched			SLC25A37	not_needed
+SLC4A1	human	approved_exact	SLC4A1	HGNC:11027	unmatched			SLC4A1	not_needed
+SLC13A5	human	approved_exact	SLC13A5	HGNC:23089	unmatched			SLC13A5	not_needed
+SLC16A13	human	approved_exact	SLC16A13	HGNC:31037	unmatched			SLC16A13	not_needed
+SLC16A10	human	approved_exact	SLC16A10	HGNC:17027	unmatched			SLC16A10	not_needed
+SLC16A12	human	approved_exact	SLC16A12	HGNC:23094	unmatched			SLC16A12	not_needed
+SLC4A4	human	approved_exact	SLC4A4	HGNC:11030	unmatched			SLC4A4	not_needed
+SLC30A8	human	approved_exact	SLC30A8	HGNC:20303	unmatched			SLC30A8	not_needed
+SLC38A5	human	approved_exact	SLC38A5	HGNC:18070	unmatched			SLC38A5	not_needed
+SLC30A2	human	approved_exact	SLC30A2	HGNC:11013	unmatched			SLC30A2	not_needed
+SLC39A5	human	approved_exact	SLC39A5	HGNC:20502	unmatched			SLC39A5	not_needed
+SLC39A7	human	approved_exact	SLC39A7	HGNC:4927	unmatched			SLC39A7	not_needed
+SLC2A10	human	approved_exact	SLC2A10	HGNC:13444	unmatched			SLC2A10	not_needed
+SLC28A3	human	approved_exact	SLC28A3	HGNC:16484	unmatched			SLC28A3	not_needed
+SLC12A8	human	approved_exact	SLC12A8	HGNC:15595	unmatched			SLC12A8	not_needed
+SLC7A1	human_and_mouse	approved_exact	SLC7A1	HGNC:11057	alias_unique	Slc7a3	MGI:1100521	SLC7A1	not_needed
+SLC12A2	human	approved_exact	SLC12A2	HGNC:10911	unmatched			SLC12A2	not_needed
+SLC37A3	human	approved_exact	SLC37A3	HGNC:20651	unmatched			SLC37A3	not_needed
+SLC9A3	human	approved_exact	SLC9A3	HGNC:11073	unmatched			SLC9A3	not_needed
+SLC9A2	human	approved_exact	SLC9A2	HGNC:11072	unmatched			SLC9A2	not_needed
+SLC20A1	human	approved_exact	SLC20A1	HGNC:10946	unmatched			SLC20A1	not_needed
+SLC37A2	human	approved_exact	SLC37A2	HGNC:20644	unmatched			SLC37A2	not_needed
+SLC14A2	human	approved_exact	SLC14A2	HGNC:10919	unmatched			SLC14A2	not_needed
+SLC16A1	human	approved_exact	SLC16A1	HGNC:10922	unmatched			SLC16A1	not_needed
+SLC26A3	human	approved_exact	SLC26A3	HGNC:3018	unmatched			SLC26A3	not_needed
+SLC25A24	human	approved_exact	SLC25A24	HGNC:20662	unmatched			SLC25A24	not_needed
+SLC35G1	human	approved_exact	SLC35G1	HGNC:26607	unmatched			SLC35G1	not_needed
+SLC28A2	human	approved_exact	SLC28A2	HGNC:11002	unmatched			SLC28A2	not_needed
+SLC18B1	human	approved_exact	SLC18B1	HGNC:21573	unmatched			SLC18B1	not_needed
+SLC5A4	human	approved_exact	SLC5A4	HGNC:11039	unmatched			SLC5A4	not_needed
+SLC5A1	human	approved_exact	SLC5A1	HGNC:11036	unmatched			SLC5A1	not_needed
+SLC15A1	human	approved_exact	SLC15A1	HGNC:10920	unmatched			SLC15A1	not_needed
+SLC51B	human	approved_exact	SLC51B	HGNC:29956	unmatched			SLC51B	not_needed
+SLC10A2	human	approved_exact	SLC10A2	HGNC:10906	unmatched			SLC10A2	not_needed
+SLC35F2	human	approved_exact	SLC35F2	HGNC:23615	unmatched			SLC35F2	not_needed
+SLC35A3	human	approved_exact	SLC35A3	HGNC:11023	unmatched			SLC35A3	not_needed
+SLC35B3	human	approved_exact	SLC35B3	HGNC:21601	unmatched			SLC35B3	not_needed
+SLC7A7	human	approved_exact	SLC7A7	HGNC:11065	unmatched			SLC7A7	not_needed
+SLC28A1	human	approved_exact	SLC28A1	HGNC:11001	unmatched			SLC28A1	not_needed
+SLC6A19	human	approved_exact	SLC6A19	HGNC:27960	unmatched			SLC6A19	not_needed
+SLC7A9	human	approved_exact	SLC7A9	HGNC:11067	unmatched			SLC7A9	not_needed
+SLC44A4	human	approved_exact	SLC44A4	HGNC:13941	unmatched			SLC44A4	not_needed
+SLC25A5	human	approved_exact	SLC25A5	HGNC:10991	unmatched			SLC25A5	not_needed
+SLC44A3	human	approved_exact	SLC44A3	HGNC:28689	unmatched			SLC44A3	not_needed
+SLC35D2	human	approved_exact	SLC35D2	HGNC:20799	unmatched			SLC35D2	not_needed
+SLC39A11	human	approved_exact	SLC39A11	HGNC:14463	unmatched			SLC39A11	not_needed
+SLC25A47	human	approved_exact	SLC25A47	HGNC:20115	unmatched			SLC25A47	not_needed
+SLC27A5	human	approved_exact	SLC27A5	HGNC:10999	unmatched			SLC27A5	not_needed
+SLCO1A2	human	approved_exact	SLCO1A2	HGNC:10956	unmatched			SLCO1A2	not_needed
+SLC19A3	human	approved_exact	SLC19A3	HGNC:16266	unmatched			SLC19A3	not_needed
+SLC30A10	human	approved_exact	SLC30A10	HGNC:25355	unmatched			SLC30A10	not_needed
+SLC25A25	human	approved_exact	SLC25A25	HGNC:20663	unmatched			SLC25A25	not_needed
+SLC10A5	human	approved_exact	SLC10A5	HGNC:22981	unmatched			SLC10A5	not_needed
+SLC41A2	human	approved_exact	SLC41A2	HGNC:31045	unmatched			SLC41A2	not_needed
+SLC17A4	human	approved_exact	SLC17A4	HGNC:10932	unmatched			SLC17A4	not_needed
+SLC17A2	human	approved_exact	SLC17A2	HGNC:10930	unmatched			SLC17A2	not_needed
+SLC2A2	human	approved_exact	SLC2A2	HGNC:11006	unmatched			SLC2A2	not_needed
+SLCO1B1	human	approved_exact	SLCO1B1	HGNC:10959	unmatched			SLCO1B1	not_needed
+SLC39A14	human	approved_exact	SLC39A14	HGNC:20858	unmatched			SLC39A14	not_needed
+SLC38A4	human	approved_exact	SLC38A4	HGNC:14679	unmatched			SLC38A4	not_needed
+SLC22A1	human	approved_exact	SLC22A1	HGNC:10963	unmatched			SLC22A1	not_needed
+SLC25A15	human	approved_exact	SLC25A15	HGNC:10985	unmatched			SLC25A15	not_needed
+SLC30A1	human	approved_exact	SLC30A1	HGNC:11012	unmatched			SLC30A1	not_needed
+SLC46A3	human	approved_exact	SLC46A3	HGNC:27501	unmatched			SLC46A3	not_needed
+SLC25A20	human	approved_exact	SLC25A20	HGNC:1421	unmatched			SLC25A20	not_needed
+SLC25A13	human	approved_exact	SLC25A13	HGNC:10983	unmatched			SLC25A13	not_needed
+SLC31A1	human	approved_exact	SLC31A1	HGNC:11016	unmatched			SLC31A1	not_needed
+SLC6A13	human	approved_exact	SLC6A13	HGNC:11046	unmatched			SLC6A13	not_needed
+SLC47A1	human	approved_exact	SLC47A1	HGNC:25588	unmatched			SLC47A1	not_needed
+SLC47A2	human	approved_exact	SLC47A2	HGNC:26439	unmatched			SLC47A2	not_needed
+SLC4A9	human	approved_exact	SLC4A9	HGNC:11035	unmatched			SLC4A9	not_needed
+SLC22A2	human	approved_exact	SLC22A2	HGNC:10966	unmatched			SLC22A2	not_needed
+SLC7A13	human	approved_exact	SLC7A13	HGNC:23092	unmatched			SLC7A13	not_needed
+SLC23A1	human	approved_exact	SLC23A1	HGNC:10974	unmatched			SLC23A1	not_needed
+SLC23A3	human	approved_exact	SLC23A3	HGNC:20601	unmatched			SLC23A3	not_needed
+SLC12A3	human	approved_exact	SLC12A3	HGNC:10912	unmatched			SLC12A3	not_needed
+SLC22A13	human	approved_exact	SLC22A13	HGNC:8494	unmatched			SLC22A13	not_needed
+SLC22A12	human	approved_exact	SLC22A12	HGNC:17989	unmatched			SLC22A12	not_needed
+SLC36A2	human	approved_exact	SLC36A2	HGNC:18762	unmatched			SLC36A2	not_needed
+SLC13A3	human	approved_exact	SLC13A3	HGNC:14430	unmatched			SLC13A3	not_needed
+SLC2A5	human	approved_exact	SLC2A5	HGNC:11010	unmatched			SLC2A5	not_needed
+SLC7A10	human	approved_exact	SLC7A10	HGNC:11058	unmatched			SLC7A10	not_needed
+SLC5A10	human	approved_exact	SLC5A10	HGNC:23155	unmatched			SLC5A10	not_needed
+SLC13A2	human	approved_exact	SLC13A2	HGNC:10917	unmatched			SLC13A2	not_needed
+SLC34A3	human	approved_exact	SLC34A3	HGNC:20305	unmatched			SLC34A3	not_needed
+SLC5A2	human	approved_exact	SLC5A2	HGNC:11037	unmatched			SLC5A2	not_needed
+SLC6A18	human	approved_exact	SLC6A18	HGNC:26441	unmatched			SLC6A18	not_needed
+SLC34A1	human	approved_exact	SLC34A1	HGNC:11019	unmatched			SLC34A1	not_needed
+SLC22A11	human	approved_exact	SLC22A11	HGNC:18120	unmatched			SLC22A11	not_needed
+SLC12A1	human	approved_exact	SLC12A1	HGNC:10910	unmatched			SLC12A1	not_needed
+SLC1A1	human	approved_exact	SLC1A1	HGNC:10939	unmatched			SLC1A1	not_needed
+SLC13A1	human	approved_exact	SLC13A1	HGNC:10916	unmatched			SLC13A1	not_needed
+SLC27A2	human	approved_exact	SLC27A2	HGNC:10996	unmatched			SLC27A2	not_needed
+SLC17A1	human	approved_exact	SLC17A1	HGNC:10929	unmatched			SLC17A1	not_needed
+SLC17A3	human	approved_exact	SLC17A3	HGNC:10931	unmatched			SLC17A3	not_needed
+SLC16A9	human	approved_exact	SLC16A9	HGNC:23520	unmatched			SLC16A9	not_needed
+SLC5A12	human	approved_exact	SLC5A12	HGNC:28750	unmatched			SLC5A12	not_needed
+SLC16A4	human	approved_exact	SLC16A4	HGNC:10925	unmatched			SLC16A4	not_needed
+SLC3A1	human	approved_exact	SLC3A1	HGNC:11025	unmatched			SLC3A1	not_needed
+SLC6A16	human	approved_exact	SLC6A16	HGNC:13622	unmatched			SLC6A16	not_needed
+SLC25A31	human	approved_exact	SLC25A31	HGNC:25319	unmatched			SLC25A31	not_needed
+SLC52A3	human	approved_exact	SLC52A3	HGNC:16187	unmatched			SLC52A3	not_needed
+SLC25A46	human	approved_exact	SLC25A46	HGNC:25198	unmatched			SLC25A46	not_needed
+SLC38A9	human	approved_exact	SLC38A9	HGNC:26907	unmatched			SLC38A9	not_needed
+SLC25A52	human	approved_exact	SLC25A52	HGNC:23324	unmatched			SLC25A52	not_needed
+SLC9C2	human	approved_exact	SLC9C2	HGNC:28664	unmatched			SLC9C2	not_needed
+SLC9B1	human	approved_exact	SLC9B1	HGNC:24244	unmatched			SLC9B1	not_needed
+SLC9C1	human	approved_exact	SLC9C1	HGNC:31401	unmatched			SLC9C1	not_needed
+SLCO6A1	human	approved_exact	SLCO6A1	HGNC:23613	unmatched			SLCO6A1	not_needed
+SLC25A51	human	approved_exact	SLC25A51	HGNC:23323	unmatched			SLC25A51	not_needed
+SLC16A7	human	approved_exact	SLC16A7	HGNC:10928	unmatched			SLC16A7	not_needed
+SLC22A14	human	approved_exact	SLC22A14	HGNC:8495	unmatched			SLC22A14	not_needed
+SLC25A2	human	approved_exact	SLC25A2	HGNC:22921	unmatched			SLC25A2	not_needed
+SLC26A8	human	approved_exact	SLC26A8	HGNC:14468	unmatched			SLC26A8	not_needed
+SLC26A2	human	approved_exact	SLC26A2	HGNC:10994	unmatched			SLC26A2	not_needed
+SLC25A21	human	approved_exact	SLC25A21	HGNC:14411	unmatched			SLC25A21	not_needed
+SLC19A2	human	approved_exact	SLC19A2	HGNC:10938	unmatched			SLC19A2	not_needed
+SLC39A6	human	approved_exact	SLC39A6	HGNC:18607	unmatched			SLC39A6	not_needed
+SLC25A36	human	approved_exact	SLC25A36	HGNC:25554	unmatched			SLC25A36	not_needed
+SLC30A9	human	approved_exact	SLC30A9	HGNC:1329	unmatched			SLC30A9	not_needed
+SLC35B4	human	approved_exact	SLC35B4	HGNC:20584	unmatched			SLC35B4	not_needed
+SLC35A5	human	approved_exact	SLC35A5	HGNC:20792	unmatched			SLC35A5	not_needed
+SLC25A32	human	approved_exact	SLC25A32	HGNC:29683	unmatched			SLC25A32	not_needed
+SLC35E3	human	approved_exact	SLC35E3	HGNC:20864	unmatched			SLC35E3	not_needed
+SLC11A2	human	approved_exact	SLC11A2	HGNC:10908	unmatched			SLC11A2	not_needed
+SLC39A9	human	approved_exact	SLC39A9	HGNC:20182	unmatched			SLC39A9	not_needed
+SLC30A7	human	approved_exact	SLC30A7	HGNC:19306	unmatched			SLC30A7	not_needed
+SLC10A7	human	approved_exact	SLC10A7	HGNC:23088	unmatched			SLC10A7	not_needed
+SLC35D1	human	approved_exact	SLC35D1	HGNC:20800	unmatched			SLC35D1	not_needed
+SLC35A1	human	approved_exact	SLC35A1	HGNC:11021	unmatched			SLC35A1	not_needed
+SLC35F5	human	approved_exact	SLC35F5	HGNC:23617	unmatched			SLC35F5	not_needed
+SLC25A40	human	approved_exact	SLC25A40	HGNC:29680	unmatched			SLC25A40	not_needed
+SLC30A6	human	approved_exact	SLC30A6	HGNC:19305	unmatched			SLC30A6	not_needed
+SLC33A1	human	approved_exact	SLC33A1	HGNC:95	unmatched			SLC33A1	not_needed
+SLC30A5	human	approved_exact	SLC30A5	HGNC:19089	unmatched			SLC30A5	not_needed
+SLC25A34	human	approved_exact	SLC25A34	HGNC:27653	unmatched			SLC25A34	not_needed
+SLC2A4	human	approved_exact	SLC2A4	HGNC:11009	unmatched			SLC2A4	not_needed
+SLC7A2	human_and_mouse	approved_exact	SLC7A2	HGNC:11060	alias_unique	Slc7a3	MGI:1100521	SLC7A2	not_needed
+SLC20A2	human	approved_exact	SLC20A2	HGNC:10947	unmatched			SLC20A2	not_needed
+SLCO5A1	human	approved_exact	SLCO5A1	HGNC:19046	unmatched			SLCO5A1	not_needed
+SLC22A3	human	approved_exact	SLC22A3	HGNC:10967	unmatched			SLC22A3	not_needed
+SLC25A16	human	approved_exact	SLC25A16	HGNC:10986	unmatched			SLC25A16	not_needed
+SLC27A6	human	approved_exact	SLC27A6	HGNC:11000	unmatched			SLC27A6	not_needed
+SLC25A30	human	approved_exact	SLC25A30	HGNC:27371	unmatched			SLC25A30	not_needed
+SLC25A3	human	approved_exact	SLC25A3	HGNC:10989	unmatched			SLC25A3	not_needed
+SLC25A12	human	approved_exact	SLC25A12	HGNC:10982	unmatched			SLC25A12	not_needed
+SLC26A10	human	previous_symbol_unique	SLC26A10P	HGNC:14470	unmatched			SLC26A10P	not_needed
+SLC41A1	human	approved_exact	SLC41A1	HGNC:19429	unmatched			SLC41A1	not_needed
+SLC25A26	human	approved_exact	SLC25A26	HGNC:20661	unmatched			SLC25A26	not_needed
+SLC25A43	human	approved_exact	SLC25A43	HGNC:30557	unmatched			SLC25A43	not_needed
+SLC38A2	human	approved_exact	SLC38A2	HGNC:13448	unmatched			SLC38A2	not_needed
+SLC5A9	human	approved_exact	SLC5A9	HGNC:22146	unmatched			SLC5A9	not_needed
+SLC10A6	human	approved_exact	SLC10A6	HGNC:30603	unmatched			SLC10A6	not_needed
+SLC39A2	human	approved_exact	SLC39A2	HGNC:17127	unmatched			SLC39A2	not_needed
+SLC46A2	human	approved_exact	SLC46A2	HGNC:16055	unmatched			SLC46A2	not_needed
+SLC45A3	human	approved_exact	SLC45A3	HGNC:8642	unmatched			SLC45A3	not_needed
+SLC37A1	human	approved_exact	SLC37A1	HGNC:11024	unmatched			SLC37A1	not_needed
+SLC26A9	human	approved_exact	SLC26A9	HGNC:14469	unmatched			SLC26A9	not_needed
+SLC9A4	human	approved_exact	SLC9A4	HGNC:11077	unmatched			SLC9A4	not_needed
+SLC22A31	human	approved_exact	SLC22A31	HGNC:27091	unmatched			SLC22A31	not_needed
+SLCO2A1	human	approved_exact	SLCO2A1	HGNC:10955	unmatched			SLCO2A1	not_needed
+SLC34A2	human	approved_exact	SLC34A2	HGNC:11020	unmatched			SLC34A2	not_needed
+SLC6A4	human	approved_exact	SLC6A4	HGNC:11050	unmatched			SLC6A4	not_needed
+SLC39A8	human	approved_exact	SLC39A8	HGNC:20862	unmatched			SLC39A8	not_needed
+SLC6A14	human	approved_exact	SLC6A14	HGNC:11047	unmatched			SLC6A14	not_needed
+Aadac	mouse	unmatched			approved_exact	Aadac	MGI:1915008	AADAC	one_to_one
+Aadat	mouse	unmatched			approved_exact	Aadat	MGI:1345167	AADAT	one_to_one
+Aars2	mouse	unmatched			approved_exact	Aars2	MGI:2681839	AARS2	one_to_one
+Aasdh	mouse	unmatched			approved_exact	Aasdh	MGI:2442517	AASDH	one_to_one
+Aass	mouse	unmatched			approved_exact	Aass	MGI:1353573	AASS	one_to_one
+Abat	mouse	unmatched			approved_exact	Abat	MGI:2443582	ABAT	one_to_one
+Abhd1	mouse	unmatched			approved_exact	Abhd1	MGI:1931013		not_found
+Abhd10	mouse	unmatched			approved_exact	Abhd10	MGI:2442422	ABHD10	one_to_one
+Abhd11	mouse	unmatched			approved_exact	Abhd11	MGI:1916008	ABHD11	one_to_one
+Abhd12	mouse	unmatched			approved_exact	Abhd12	MGI:1923442	ABHD12	one_to_one
+Abhd12b	mouse	unmatched			approved_exact	Abhd12b	MGI:2685650	ABHD12B	one_to_one
+Abhd13	mouse	unmatched			approved_exact	Abhd13	MGI:1916154	ABHD13	one_to_one
+Abhd14a	mouse	unmatched			approved_exact	Abhd14a	MGI:1915894	ABHD14A	one_to_one
+Abhd14b	mouse	unmatched			approved_exact	Abhd14b	MGI:1923741	ABHD14B	one_to_one
+Abhd15	mouse	unmatched			approved_exact	Abhd15	MGI:1914727	ABHD15	one_to_one
+Abhd16a	mouse	unmatched			approved_exact	Abhd16a	MGI:99476	ABHD16A	one_to_one
+Abhd16b	mouse	unmatched			approved_exact	Abhd16b	MGI:3607711	ABHD16B	one_to_one
+Abhd17a	mouse	unmatched			approved_exact	Abhd17a	MGI:106388	ABHD17A	one_to_one
+Abhd17b	mouse	unmatched			approved_exact	Abhd17b	MGI:1917816	ABHD17B	one_to_one
+Abhd17c	mouse	unmatched			approved_exact	Abhd17c	MGI:1917428	ABHD17C	one_to_one
+Abhd2	mouse	unmatched			approved_exact	Abhd2	MGI:1914344	ABHD2	one_to_one
+Abhd3	mouse	unmatched			approved_exact	Abhd3	MGI:2147183	ABHD3	one_to_one
+Abhd4	mouse	unmatched			approved_exact	Abhd4	MGI:1915938	ABHD4	one_to_one
+Abhd5	mouse	unmatched			approved_exact	Abhd5	MGI:1914719	ABHD5	one_to_one
+Abhd6	mouse	unmatched			approved_exact	Abhd6	MGI:1913332	ABHD6	one_to_one
+Abhd8	mouse	unmatched			approved_exact	Abhd8	MGI:1918946	ABHD8	one_to_one
+Acaa1a	mouse	unmatched			approved_exact	Acaa1a	MGI:2148491		not_found
+Acaa1b	mouse	unmatched			approved_exact	Acaa1b	MGI:3605455		not_found
+Acaa2	mouse	unmatched			approved_exact	Acaa2	MGI:1098623	ACAA2	one_to_one
+Acaca	mouse	unmatched			approved_exact	Acaca	MGI:108451	ACACA	one_to_one
+Acacb	mouse	unmatched			approved_exact	Acacb	MGI:2140940	ACACB	one_to_one
+Acad10	mouse	unmatched			approved_exact	Acad10	MGI:1919235		not_found
+Acad11	mouse	unmatched			approved_exact	Acad11	MGI:2143169	ACAD11	one_to_one
+Acad12	mouse	unmatched			approved_exact	Acad12	MGI:2443320		not_found
+Acad8	mouse	unmatched			approved_exact	Acad8	MGI:1914198	ACAD8	one_to_one
+Acad9	mouse	unmatched			approved_exact	Acad9	MGI:1914272	ACAD9	one_to_one
+Acadl	mouse	unmatched			approved_exact	Acadl	MGI:87866	ACADL	one_to_one
+Acadm	mouse	unmatched			approved_exact	Acadm	MGI:87867	ACADM	one_to_one
+Acads	mouse	unmatched			approved_exact	Acads	MGI:87868	ACADS	one_to_one
+Acadsb	mouse	unmatched			approved_exact	Acadsb	MGI:1914135	ACADSB	one_to_one
+Acadvl	mouse	unmatched			approved_exact	Acadvl	MGI:895149	ACADVL	one_to_one
+Acat1	mouse	unmatched			approved_exact	Acat1	MGI:87870	ACAT1	one_to_one
+Acat2	mouse	unmatched			approved_exact	Acat2	MGI:87871		not_found
+Acat3	mouse	unmatched			approved_exact	Acat3	MGI:109182		not_found
+Acer1	mouse	unmatched			approved_exact	Acer1	MGI:2181962	ACER1	one_to_one
+Acer2	mouse	unmatched			approved_exact	Acer2	MGI:1920932	ACER2	one_to_one
+Acer3	mouse	unmatched			approved_exact	Acer3	MGI:1913440	ACER3	one_to_one
+Ache	mouse	unmatched			approved_exact	Ache	MGI:87876	ACHE	one_to_one
+Acly	mouse	unmatched			approved_exact	Acly	MGI:103251	ACLY	one_to_one
+Acmsd	mouse	unmatched			approved_exact	Acmsd	MGI:2386323	ACMSD	one_to_one
+Aco1	mouse	unmatched			approved_exact	Aco1	MGI:87879	ACO1	one_to_one
+Aco2	mouse	unmatched			approved_exact	Aco2	MGI:87880	ACO2	one_to_one
+Acot1	mouse	unmatched			approved_exact	Acot1	MGI:1349396		not_found
+Acot10	mouse	unmatched			approved_exact	Acot10	MGI:1928940		not_found
+Acot11	mouse	unmatched			approved_exact	Acot11	MGI:1913736	ACOT11	one_to_one
+Acot12	mouse	unmatched			approved_exact	Acot12	MGI:1921406	ACOT12	one_to_one
+Acot13	mouse	unmatched			approved_exact	Acot13	MGI:1914084	ACOT13	one_to_one
+Acot2	mouse	unmatched			approved_exact	Acot2	MGI:2159605		not_found
+Acot3	mouse	unmatched			approved_exact	Acot3	MGI:2159619		not_found
+Acot4	mouse	unmatched			approved_exact	Acot4	MGI:2159621	ACOT4	one_to_one
+Acot5	mouse	unmatched			approved_exact	Acot5	MGI:2384969		not_found
+Acot6	mouse	unmatched			approved_exact	Acot6	MGI:1921287	ACOT6	one_to_one
+Acot7	mouse	unmatched			approved_exact	Acot7	MGI:1917275	ACOT7	one_to_one
+Acot8	mouse	unmatched			approved_exact	Acot8	MGI:2158201	ACOT8	one_to_one
+Acot9	mouse	unmatched			approved_exact	Acot9	MGI:1928939		not_found
+Acox1	mouse	unmatched			approved_exact	Acox1	MGI:1330812	ACOX1	one_to_one
+Acox2	mouse	unmatched			approved_exact	Acox2	MGI:1934852	ACOX2	one_to_one
+Acox3	mouse	unmatched			approved_exact	Acox3	MGI:1933156	ACOX3	one_to_one
+Acp1	mouse	unmatched			approved_exact	Acp1	MGI:87881	ACP1	one_to_one
+Acp2	mouse	unmatched			approved_exact	Acp2	MGI:87882	ACP2	one_to_one
+Acp5	mouse	unmatched			approved_exact	Acp5	MGI:87883	ACP5	one_to_one
+Acp6	mouse	unmatched			approved_exact	Acp6	MGI:1931010	ACP6	one_to_one
+Acp7	mouse	unmatched			approved_exact	Acp7	MGI:2142121	ACP7	one_to_one
+Acpp	mouse	unmatched			alias_unique	Acp3	MGI:1928480	ACP3	one_to_one
+Acsbg1	mouse	unmatched			approved_exact	Acsbg1	MGI:2385656	ACSBG1	one_to_one
+Acsbg2	mouse	unmatched			approved_exact	Acsbg2	MGI:3587728	ACSBG2	one_to_one
+Acsf2	mouse	unmatched			approved_exact	Acsf2	MGI:2388287	ACSF2	one_to_one
+Acsf3	mouse	unmatched			approved_exact	Acsf3	MGI:2182591	ACSF3	one_to_one
+Acsl1	mouse	unmatched			approved_exact	Acsl1	MGI:102797	ACSL1	one_to_one
+Acsl2	unresolved	unmatched			unmatched				not_found
+Acsl3	mouse	unmatched			approved_exact	Acsl3	MGI:1921455	ACSL3	one_to_one
+Acsl4	mouse	unmatched			approved_exact	Acsl4	MGI:1354713	ACSL4	one_to_one
+Acsl5	mouse	unmatched			approved_exact	Acsl5	MGI:1919129	ACSL5	one_to_one
+Acsl6	mouse	unmatched			approved_exact	Acsl6	MGI:894291	ACSL6	one_to_one
+Acsm1	mouse	unmatched			approved_exact	Acsm1	MGI:2152200	ACSM1	one_to_one
+Acsm2	mouse	unmatched			approved_exact	Acsm2	MGI:2385289		not_found
+Acsm3	mouse	unmatched			approved_exact	Acsm3	MGI:99538	ACSM3	one_to_one
+Acsm4	mouse	unmatched			approved_exact	Acsm4	MGI:2681844	ACSM4	one_to_one
+Acsm5	mouse	unmatched			approved_exact	Acsm5	MGI:2444086	ACSM5	one_to_one
+Acss1	mouse	unmatched			approved_exact	Acss1	MGI:1915988	ACSS1	one_to_one
+Acss2	mouse	unmatched			approved_exact	Acss2	MGI:1890410	ACSS2	one_to_one
+Acss3	mouse	unmatched			approved_exact	Acss3	MGI:2685720	ACSS3	one_to_one
+Acyp1	mouse	unmatched			approved_exact	Acyp1	MGI:1913454	ACYP1	one_to_one
+Acyp2	mouse	unmatched			approved_exact	Acyp2	MGI:1922822	ACYP2	one_to_one
+Ada	mouse	unmatched			approved_exact	Ada	MGI:87916	ADA	one_to_one
+Adcy1	mouse	unmatched			approved_exact	Adcy1	MGI:99677	ADCY1	one_to_one
+Adcy10	mouse	unmatched			approved_exact	Adcy10	MGI:2660854	ADCY10	one_to_one
+Adcy2	mouse	unmatched			approved_exact	Adcy2	MGI:99676	ADCY2	one_to_one
+Adcy3	mouse	unmatched			approved_exact	Adcy3	MGI:99675	ADCY3	one_to_one
+Adcy4	mouse	unmatched			approved_exact	Adcy4	MGI:99674	ADCY4	one_to_one
+Adcy5	mouse	unmatched			approved_exact	Adcy5	MGI:99673	ADCY5	one_to_one
+Adcy6	mouse	unmatched			approved_exact	Adcy6	MGI:87917	ADCY6	one_to_one
+Adcy7	mouse	unmatched			approved_exact	Adcy7	MGI:102891	ADCY7	one_to_one
+Adcy8	mouse	unmatched			approved_exact	Adcy8	MGI:1341110	ADCY8	one_to_one
+Adcy9	mouse	unmatched			approved_exact	Adcy9	MGI:108450	ADCY9	one_to_one
+Adh1	mouse	unmatched			approved_exact	Adh1	MGI:87921		not_found
+Adh1a	unresolved	unmatched			unmatched				not_found
+Adh1b	unresolved	unmatched			unmatched				not_found
+Adh1c	unresolved	unmatched			unmatched				not_found
+Adh3	unresolved	unmatched			alias_ambiguous	Adh5|Adh7			not_found
+Adh4	mouse	unmatched			approved_exact	Adh4	MGI:1349472	ADH4	one_to_one
+Adh5	mouse	unmatched			approved_exact	Adh5	MGI:87929	ADH5	one_to_one
+Adh6	unresolved	unmatched			unmatched				not_found
+Adh7	mouse	unmatched			approved_exact	Adh7	MGI:87926	ADH7	one_to_one
+Adhfe1	mouse	unmatched			approved_exact	Adhfe1	MGI:1923437	ADHFE1	one_to_one
+Adk	mouse	unmatched			approved_exact	Adk	MGI:87930	ADK	one_to_one
+Adsl	mouse	unmatched			approved_exact	Adsl	MGI:103202	ADSL	one_to_one
+Adss	unresolved	unmatched			alias_ambiguous	Adss1|Adss2			not_found
+Adssl1	mouse	unmatched			alias_unique	Adss1	MGI:87947	ADSS1	one_to_one
+Afg3l1	mouse	unmatched			approved_exact	Afg3l1	MGI:1928277	AFG3L1P	one_to_one
+Afg3l2	mouse	unmatched			approved_exact	Afg3l2	MGI:1916847	AFG3L2	one_to_one
+Afmid	mouse	unmatched			approved_exact	Afmid	MGI:2448704	AFMID	one_to_one
+Agk	mouse	unmatched			approved_exact	Agk	MGI:1917173	AGK	one_to_one
+Agmat	mouse	unmatched			approved_exact	Agmat	MGI:1923236	AGMAT	one_to_one
+Agpat1	mouse	unmatched			approved_exact	Agpat1	MGI:1932075	AGPAT1	one_to_one
+Agpat2	mouse	unmatched			approved_exact	Agpat2	MGI:1914762	AGPAT2	one_to_one
+Agpat3	mouse	unmatched			approved_exact	Agpat3	MGI:1336186	AGPAT3	one_to_one
+Agpat4	mouse	unmatched			approved_exact	Agpat4	MGI:1915512	AGPAT4	one_to_one
+Agpat5	mouse	unmatched			approved_exact	Agpat5	MGI:1196345	AGPAT5	one_to_one
+Agpat6	mouse	unmatched			alias_unique	Gpat4	MGI:2142716	GPAT4	one_to_one
+Agpat9	mouse	unmatched			alias_unique	Gpat3	MGI:3603816	GPAT3	one_to_one
+Agxt	mouse	unmatched			approved_exact	Agxt	MGI:1329033	AGXT	one_to_one
+Agxt2	mouse	unmatched			approved_exact	Agxt2	MGI:2146052	AGXT2	one_to_one
+Ahcy	mouse	unmatched			approved_exact	Ahcy	MGI:87968		not_found
+Ahcyl1	mouse	unmatched			approved_exact	Ahcyl1	MGI:2385184	AHCYL1	one_to_one
+Ahcyl2	mouse	unmatched			approved_exact	Ahcyl2	MGI:1921590	AHCYL2	one_to_one
+Aicda	mouse	unmatched			approved_exact	Aicda	MGI:1342279	AICDA	one_to_one
+Aifm1	mouse	unmatched			approved_exact	Aifm1	MGI:1349419	AIFM1	one_to_one
+Aifm2	mouse	unmatched			approved_exact	Aifm2	MGI:1918611	AIFM2	one_to_one
+Aifm3	mouse	unmatched			approved_exact	Aifm3	MGI:1919418	AIFM3	one_to_one
+Ak1	mouse	unmatched			approved_exact	Ak1	MGI:87977	AK1	one_to_one
+Ak2	mouse	unmatched			approved_exact	Ak2	MGI:87978	AK2	one_to_one
+Ak3	mouse	unmatched			approved_exact	Ak3	MGI:1860835	AK3	one_to_one
+Ak4	mouse	unmatched			approved_exact	Ak4	MGI:87979		not_found
+Ak5	mouse	unmatched			approved_exact	Ak5	MGI:2677491	AK5	one_to_one
+Ak6	mouse	unmatched			approved_exact	Ak6	MGI:5510732	AK6	one_to_one
+Ak7	mouse	unmatched			approved_exact	Ak7	MGI:1926051	AK7	one_to_one
+Ak8	mouse	unmatched			approved_exact	Ak8	MGI:1916120	AK8	one_to_one
+Ak9	mouse	unmatched			approved_exact	Ak9	MGI:2685080	AK9	one_to_one
+Akd1	mouse	unmatched			alias_unique	Ak9	MGI:2685080	AK9	one_to_one
+Akd2	mouse	unmatched			alias_unique	Ak9	MGI:2685080	AK9	one_to_one
+Akp1	mouse	unmatched			approved_exact	Akp1	MGI:87982		not_found
+Akp3	mouse	unmatched			approved_exact	Akp3	MGI:87984		not_found
+Akp4	mouse	unmatched			approved_exact	Akp4	MGI:87985		not_found
+Akr1a1	mouse	unmatched			approved_exact	Akr1a1	MGI:1929955	AKR1A1	one_to_one
+Akr1b1	mouse	unmatched			approved_exact	Akr1b1	MGI:1353494	AKR1B1	one_to_one
+Akr1b10	mouse	unmatched			approved_exact	Akr1b10	MGI:1915111		not_found
+Akr1b3	mouse	unmatched			alias_unique	Akr1b1	MGI:1353494	AKR1B1	one_to_one
+Akr1b7	mouse	unmatched			approved_exact	Akr1b7	MGI:101918		not_found
+Akr1b8	mouse	unmatched			approved_exact	Akr1b8	MGI:107673		not_found
+Akr1c1	mouse	unmatched			alias_unique	Akr1c6	MGI:1933427		not_found
+Akr1c2	unresolved	unmatched			unmatched				not_found
+Akr1c3	unresolved	unmatched			unmatched				not_found
+Akr1d1	mouse	unmatched			approved_exact	Akr1d1	MGI:2384785	AKR1D1	one_to_one
+Akr1e2	unresolved	unmatched			unmatched				not_found
+Akr7a5	mouse	unmatched			approved_exact	Akr7a5	MGI:107796		not_found
+Alad	mouse	unmatched			approved_exact	Alad	MGI:96853	ALAD	one_to_one
+Alas1	mouse	unmatched			approved_exact	Alas1	MGI:87989	ALAS1	one_to_one
+Alas2	mouse	unmatched			approved_exact	Alas2	MGI:87990	ALAS2	one_to_one
+Aldh18a1	mouse	unmatched			approved_exact	Aldh18a1	MGI:1888908	ALDH18A1	one_to_one
+Aldh1a1	mouse	unmatched			approved_exact	Aldh1a1	MGI:1353450		not_found
+Aldh1a2	mouse	unmatched			approved_exact	Aldh1a2	MGI:107928	ALDH1A2	one_to_one
+Aldh1a3	mouse	unmatched			approved_exact	Aldh1a3	MGI:1861722	ALDH1A3	one_to_one
+Aldh1a7	mouse	unmatched			approved_exact	Aldh1a7	MGI:1347050		not_found
+Aldh1b1	mouse	unmatched			approved_exact	Aldh1b1	MGI:1919785	ALDH1B1	one_to_one
+Aldh1l1	mouse	unmatched			approved_exact	Aldh1l1	MGI:1340024	ALDH1L1	one_to_one
+Aldh1l2	mouse	unmatched			approved_exact	Aldh1l2	MGI:2444680	ALDH1L2	one_to_one
+Aldh2	mouse	unmatched			approved_exact	Aldh2	MGI:99600	ALDH2	one_to_one
+Aldh3a1	mouse	unmatched			approved_exact	Aldh3a1	MGI:1353451	ALDH3A1	one_to_one
+Aldh3a2	mouse	unmatched			approved_exact	Aldh3a2	MGI:1353452	ALDH3A2	one_to_one
+Aldh3b1	mouse	unmatched			approved_exact	Aldh3b1	MGI:1914939	ALDH3B1	one_to_one
+Aldh3b2	mouse	unmatched			approved_exact	Aldh3b2	MGI:2147613		not_found
+Aldh4a1	mouse	unmatched			approved_exact	Aldh4a1	MGI:2443883	ALDH4A1	one_to_one
+Aldh5a1	mouse	unmatched			approved_exact	Aldh5a1	MGI:2441982	ALDH5A1	one_to_one
+Aldh6a1	mouse	unmatched			approved_exact	Aldh6a1	MGI:1915077	ALDH6A1	one_to_one
+Aldh7a1	mouse	unmatched			approved_exact	Aldh7a1	MGI:108186	ALDH7A1	one_to_one
+Aldh9a1	mouse	unmatched			approved_exact	Aldh9a1	MGI:1861622	ALDH9A1	one_to_one
+Aldoa	mouse	unmatched			approved_exact	Aldoa	MGI:87994	ALDOA	one_to_one
+Aldoart1	mouse	unmatched			approved_exact	Aldoart1	MGI:2447811		not_found
+Aldoart2	mouse	unmatched			approved_exact	Aldoart2	MGI:1931052		not_found
+Aldob	mouse	unmatched			approved_exact	Aldob	MGI:87995	ALDOB	one_to_one
+Aldoc	mouse	unmatched			approved_exact	Aldoc	MGI:101863	ALDOC	one_to_one
+Allc	mouse	unmatched			approved_exact	Allc	MGI:2136971	ALLC	one_to_one
+Alox15	mouse	unmatched			approved_exact	Alox15	MGI:87997	ALOX15	one_to_one
+Alox15b	mouse	unmatched			alias_unique	Alox8	MGI:1098228	ALOX15B	one_to_one
+Alox5	mouse	unmatched			approved_exact	Alox5	MGI:87999	ALOX5	one_to_one
+Alpi	mouse	unmatched			approved_exact	Alpi	MGI:1924018		not_found
+Alpl	mouse	unmatched			approved_exact	Alpl	MGI:87983	ALPL	one_to_one
+Alpp	unresolved	unmatched			unmatched				not_found
+Alppl2	mouse	unmatched			approved_exact	Alppl2	MGI:108009		not_found
+Amacr	mouse	unmatched			approved_exact	Amacr	MGI:1098273	AMACR	one_to_one
+Amdhd1	mouse	unmatched			approved_exact	Amdhd1	MGI:1919011	AMDHD1	one_to_one
+Amdhd2	mouse	unmatched			approved_exact	Amdhd2	MGI:2443978	AMDHD2	one_to_one
+Ampd1	mouse	unmatched			approved_exact	Ampd1	MGI:88015	AMPD1	one_to_one
+Ampd2	mouse	unmatched			approved_exact	Ampd2	MGI:88016	AMPD2	one_to_one
+Ampd3	mouse	unmatched			approved_exact	Ampd3	MGI:1096344	AMPD3	one_to_one
+Amt	mouse	unmatched			approved_exact	Amt	MGI:3646700	AMT	one_to_one
+Amy1	mouse	unmatched			approved_exact	Amy1	MGI:88019		not_found
+Amy1a	unresolved	unmatched			unmatched				not_found
+Amy1b	unresolved	unmatched			unmatched				not_found
+Amy1c	unresolved	unmatched			unmatched				not_found
+Amy2-3	unresolved	unmatched			unmatched				not_found
+Amy2a	unresolved	unmatched			unmatched				not_found
+Amy2a1	mouse	unmatched			approved_exact	Amy2a1	MGI:104548		not_found
+Amy2a2	mouse	unmatched			approved_exact	Amy2a2	MGI:3711220		not_found
+Amy2a3	mouse	unmatched			approved_exact	Amy2a3	MGI:3714985		not_found
+Amy2a4	mouse	unmatched			approved_exact	Amy2a4	MGI:3711258		not_found
+Amy2a5	mouse	unmatched			approved_exact	Amy2a5	MGI:88020		not_found
+Amy2b	mouse	unmatched			approved_exact	Amy2b	MGI:104547		not_found
+Aoc1	mouse	unmatched			approved_exact	Aoc1	MGI:1923757		not_found
+Aoc2	mouse	unmatched			approved_exact	Aoc2	MGI:2668431	AOC2	one_to_one
+Aoc2-ps1	unresolved	unmatched			unmatched				not_found
+Aoc3	mouse	unmatched			approved_exact	Aoc3	MGI:1306797	AOC3	one_to_one
+Aox1	mouse	unmatched			approved_exact	Aox1	MGI:88035	AOX1	one_to_one
+Aox2	mouse	unmatched			approved_exact	Aox2	MGI:3529596	AOX2P	one_to_one
+Aox3	mouse	unmatched			approved_exact	Aox3	MGI:1918974	AOX3P	one_to_one
+Aox4	mouse	unmatched			approved_exact	Aox4	MGI:1919122		not_found
+Apoa1bp	mouse	unmatched			alias_unique	Naxe	MGI:2180167	NAXE	one_to_one
+Apobec1	mouse	unmatched			approved_exact	Apobec1	MGI:103298	APOBEC1	one_to_one
+Apobec2	mouse	unmatched			approved_exact	Apobec2	MGI:1343178	APOBEC2	one_to_one
+Apobec3	mouse	unmatched			approved_exact	Apobec3	MGI:1933111		not_found
+Apobec4	mouse	unmatched			approved_exact	Apobec4	MGI:1918531	APOBEC4	one_to_one
+Aprt	mouse	unmatched			approved_exact	Aprt	MGI:88061	APRT	one_to_one
+Arg1	mouse	unmatched			approved_exact	Arg1	MGI:88070	ARG1	one_to_one
+Arg2	mouse	unmatched			approved_exact	Arg2	MGI:1330806	ARG2	one_to_one
+Arsa	mouse	unmatched			approved_exact	Arsa	MGI:88077	ARSA	one_to_one
+Arsb	mouse	unmatched			approved_exact	Arsb	MGI:88075	ARSB	one_to_one
+Arsd	unresolved	unmatched			unmatched				not_found
+Arse	unresolved	unmatched			unmatched				not_found
+Arsf	unresolved	unmatched			unmatched				not_found
+Arsg	mouse	unmatched			approved_exact	Arsg	MGI:1921258	ARSG	one_to_one
+Arsh	unresolved	unmatched			unmatched				not_found
+Arsi	mouse	unmatched			approved_exact	Arsi	MGI:2670959	ARSI	one_to_one
+Arsj	mouse	unmatched			approved_exact	Arsj	MGI:2443513	ARSJ	one_to_one
+Arsk	mouse	unmatched			approved_exact	Arsk	MGI:1924291	ARSK	one_to_one
+As3mt	mouse	unmatched			approved_exact	As3mt	MGI:1929882	AS3MT	one_to_one
+Asah1	mouse	unmatched			approved_exact	Asah1	MGI:1277124	ASAH1	one_to_one
+Asah2	mouse	unmatched			approved_exact	Asah2	MGI:1859310	ASAH2	one_to_one
+Asah2c	unresolved	unmatched			unmatched				not_found
+Asl	mouse	unmatched			approved_exact	Asl	MGI:88084	ASL	one_to_one
+Asmt	mouse	unmatched			approved_exact	Asmt	MGI:96090	ASMT	one_to_one
+Asns	mouse	unmatched			approved_exact	Asns	MGI:1350929	ASNS	one_to_one
+Aspg	mouse	unmatched			approved_exact	Aspg	MGI:2144822	ASPG	one_to_one
+Asrgl1	mouse	unmatched			approved_exact	Asrgl1	MGI:1913764	ASRGL1	one_to_one
+Ass1	mouse	unmatched			approved_exact	Ass1	MGI:88090	ASS1	one_to_one
+Atad1	mouse	unmatched			approved_exact	Atad1	MGI:1915229	ATAD1	one_to_one
+Atad2	mouse	unmatched			approved_exact	Atad2	MGI:1917722	ATAD2	one_to_one
+Atad3a	mouse	unmatched			approved_exact	Atad3a	MGI:1919214		not_found
+Atad3b	unresolved	unmatched			unmatched				not_found
+Atad3c	unresolved	unmatched			unmatched				not_found
+Atic	mouse	unmatched			approved_exact	Atic	MGI:1351352	ATIC	one_to_one
+Atp10a	mouse	unmatched			approved_exact	Atp10a	MGI:1330809	ATP10A	one_to_one
+Atp1a1	mouse	unmatched			approved_exact	Atp1a1	MGI:88105	ATP1A1	one_to_one
+Atp1a2	mouse	unmatched			approved_exact	Atp1a2	MGI:88106	ATP1A2	one_to_one
+Atp1a3	mouse	unmatched			approved_exact	Atp1a3	MGI:88107	ATP1A3	one_to_one
+Atp1a4	mouse	unmatched			approved_exact	Atp1a4	MGI:1351335	ATP1A4	one_to_one
+Atp1b1	mouse	unmatched			approved_exact	Atp1b1	MGI:88108	ATP1B1	one_to_one
+Atp1b2	mouse	unmatched			approved_exact	Atp1b2	MGI:88109	ATP1B2	one_to_one
+Atp1b3	mouse	unmatched			approved_exact	Atp1b3	MGI:107788	ATP1B3	one_to_one
+Atp1b4	mouse	unmatched			approved_exact	Atp1b4	MGI:1915071	ATP1B4	one_to_one
+Atp2b1	mouse	unmatched			approved_exact	Atp2b1	MGI:104653	ATP2B1	one_to_one
+Atp2b2	mouse	unmatched			approved_exact	Atp2b2	MGI:105368	ATP2B2	one_to_one
+Atp2b3	mouse	unmatched			approved_exact	Atp2b3	MGI:1347353	ATP2B3	one_to_one
+Atp2b4	mouse	unmatched			approved_exact	Atp2b4	MGI:88111	ATP2B4	one_to_one
+Atp4b	mouse	unmatched			approved_exact	Atp4b	MGI:88114	ATP4B	one_to_one
+Atp5a1	mouse	unmatched			alias_unique	Atp5f1a	MGI:88115	ATP5F1A	one_to_one
+Atp5b	mouse	unmatched			alias_unique	Atp5f1b	MGI:107801	ATP5F1B	one_to_one
+Atp5c1	mouse	unmatched			alias_unique	Atp5f1c	MGI:1261437	ATP5F1C	one_to_one
+Atp5d	mouse	unmatched			alias_unique	Atp5f1d	MGI:1913293	ATP5F1D	one_to_one
+Atp5e	mouse	unmatched			alias_unique	Atp5f1e	MGI:1855697		not_found
+Atp5f1	mouse	unmatched			alias_unique	Atp5pb	MGI:1100495	ATP5PB	one_to_one
+Atp5g1	mouse	unmatched			alias_unique	Atp5mc1	MGI:107653	ATP5MC1	one_to_one
+Atp5g2	mouse	unmatched			alias_unique	Atp5mc2	MGI:1915192	ATP5MC2	one_to_one
+Atp5g3	mouse	unmatched			alias_unique	Atp5mc3	MGI:2442035	ATP5MC3	one_to_one
+Atp5h	mouse	unmatched			alias_unique	Atp5pd	MGI:1918929	ATP5PD	one_to_one
+Atp5i	unresolved	unmatched			unmatched				not_found
+Atp5j	mouse	unmatched			alias_unique	Atp5pf	MGI:107777	ATP5PF	one_to_one
+Atp5j2	mouse	unmatched			alias_unique	Atp5mf	MGI:1927558	ATP5MF	one_to_one
+Atp5l	mouse	unmatched			alias_unique	Atp5mg	MGI:1351597		not_found
+Atp5o	mouse	unmatched			alias_unique	Atp5po	MGI:106341	ATP5PO	one_to_one
+Atp6v0a1	mouse	unmatched			approved_exact	Atp6v0a1	MGI:103286	ATP6V0A1	one_to_one
+Atp6v0a2	mouse	unmatched			approved_exact	Atp6v0a2	MGI:104855	ATP6V0A2	one_to_one
+Atp6v0a4	mouse	unmatched			approved_exact	Atp6v0a4	MGI:2153480	ATP6V0A4	one_to_one
+Atp6v0b	mouse	unmatched			approved_exact	Atp6v0b	MGI:1890510	ATP6V0B	one_to_one
+Atp6v0c	mouse	unmatched			approved_exact	Atp6v0c	MGI:88116	ATP6V0C	one_to_one
+Atp6v0d1	mouse	unmatched			approved_exact	Atp6v0d1	MGI:1201778	ATP6V0D1	one_to_one
+Atp6v0d2	mouse	unmatched			approved_exact	Atp6v0d2	MGI:1924415	ATP6V0D2	one_to_one
+Atp6v0e1	unresolved	unmatched			unmatched				not_found
+Atp6v1a	mouse	unmatched			approved_exact	Atp6v1a	MGI:1201780	ATP6V1A	one_to_one
+Atp6v1b1	mouse	unmatched			approved_exact	Atp6v1b1	MGI:103285	ATP6V1B1	one_to_one
+Atp6v1b2	mouse	unmatched			approved_exact	Atp6v1b2	MGI:109618	ATP6V1B2	one_to_one
+Atp6v1c1	mouse	unmatched			approved_exact	Atp6v1c1	MGI:1913585	ATP6V1C1	one_to_one
+Atp6v1c2	mouse	unmatched			approved_exact	Atp6v1c2	MGI:1916025	ATP6V1C2	one_to_one
+Atp6v1d	mouse	unmatched			approved_exact	Atp6v1d	MGI:1921084	ATP6V1D	one_to_one
+Atp6v1e1	mouse	unmatched			approved_exact	Atp6v1e1	MGI:894326	ATP6V1E1	one_to_one
+Atp6v1e2	mouse	unmatched			approved_exact	Atp6v1e2	MGI:1922165	ATP6V1E2	one_to_one
+Atp6v1f	mouse	unmatched			approved_exact	Atp6v1f	MGI:1913394	ATP6V1F	one_to_one
+Atp6v1g1	mouse	unmatched			approved_exact	Atp6v1g1	MGI:1913540	ATP6V1G1	one_to_one
+Atp6v1g2	mouse	unmatched			approved_exact	Atp6v1g2	MGI:1913487	ATP6V1G2	one_to_one
+Atp6v1g3	mouse	unmatched			approved_exact	Atp6v1g3	MGI:2450548	ATP6V1G3	one_to_one
+Atp6v1h	mouse	unmatched			approved_exact	Atp6v1h	MGI:1914864	ATP6V1H	one_to_one
+Atp8a1	mouse	unmatched			approved_exact	Atp8a1	MGI:1330848	ATP8A1	one_to_one
+Auh	mouse	unmatched			approved_exact	Auh	MGI:1338011	AUH	one_to_one
+Awat1	mouse	unmatched			approved_exact	Awat1	MGI:3588200	AWAT1	one_to_one
+Awat2	mouse	unmatched			approved_exact	Awat2	MGI:3045345	AWAT2	one_to_one
+B3galt1	mouse	unmatched			approved_exact	B3galt1	MGI:1349403	B3GALT1	one_to_one
+B3galt2	mouse	unmatched			approved_exact	B3galt2	MGI:1349461	B3GALT2	one_to_one
+B3galt4	mouse	unmatched			approved_exact	B3galt4	MGI:1859517	B3GALT4	one_to_one
+B3galt5	mouse	unmatched			approved_exact	B3galt5	MGI:2136878	B3GALT5	one_to_one
+B3galt6	mouse	unmatched			approved_exact	B3galt6	MGI:2152819	B3GALT6	one_to_one
+B4galt1	mouse	unmatched			approved_exact	B4galt1	MGI:95705	B4GALT1	one_to_one
+B4galt2	mouse	unmatched			approved_exact	B4galt2	MGI:1858493	B4GALT2	one_to_one
+B4galt3	mouse	unmatched			approved_exact	B4galt3	MGI:1928767	B4GALT3	one_to_one
+B4galt4	mouse	unmatched			approved_exact	B4galt4	MGI:1928387	B4GALT4	one_to_one
+B4galt5	mouse	unmatched			approved_exact	B4galt5	MGI:1927169	B4GALT5	one_to_one
+B4galt6	mouse	unmatched			approved_exact	B4galt6	MGI:1928380	B4GALT6	one_to_one
+B4galt7	mouse	unmatched			approved_exact	B4galt7	MGI:2384987	B4GALT7	one_to_one
+Baat	mouse	unmatched			approved_exact	Baat	MGI:106642	BAAT	one_to_one
+Bbox1	mouse	unmatched			approved_exact	Bbox1	MGI:1891372	BBOX1	one_to_one
+Bbox2	mouse	unmatched			alias_unique	Tmlhe	MGI:2180203	TMLHE	one_to_one
+Bcat1	mouse	unmatched			approved_exact	Bcat1	MGI:104861	BCAT1	one_to_one
+Bcat2	mouse	unmatched			approved_exact	Bcat2	MGI:1276534	BCAT2	one_to_one
+Bckdha	mouse	unmatched			approved_exact	Bckdha	MGI:107701	BCKDHA	one_to_one
+Bckdhb	mouse	unmatched			approved_exact	Bckdhb	MGI:88137	BCKDHB	one_to_one
+Bckdk	mouse	unmatched			approved_exact	Bckdk	MGI:1276121	BCKDK	one_to_one
+Bcmo1	mouse	unmatched			alias_unique	Bco1	MGI:1926923	BCO1	one_to_one
+Bdh1	mouse	unmatched			approved_exact	Bdh1	MGI:1919161	BDH1	one_to_one
+Bdh2	mouse	unmatched			approved_exact	Bdh2	MGI:1917022	BDH2	one_to_one
+Bhmt	mouse	unmatched			approved_exact	Bhmt	MGI:1339972	BHMT	one_to_one
+Bhmt2	mouse	unmatched			approved_exact	Bhmt2	MGI:1891379	BHMT2	one_to_one
+Blvra	mouse	unmatched			approved_exact	Blvra	MGI:88170	BLVRA	one_to_one
+Blvrb	mouse	unmatched			approved_exact	Blvrb	MGI:2385271	BLVRB	one_to_one
+Bp3	mouse	unmatched			alias_unique	Bst1	MGI:105370	BST1	one_to_one
+Bpgm	mouse	unmatched			approved_exact	Bpgm	MGI:1098242	BPGM	one_to_one
+Bphl	mouse	unmatched			approved_exact	Bphl	MGI:1915271	BPHL	one_to_one
+Bpnt1	mouse	unmatched			approved_exact	Bpnt1	MGI:1338800	BPNT1	one_to_one
+Bst1	human_and_mouse	alias_symbol_unique	PGAP1	HGNC:25712	approved_exact	Bst1	MGI:105370	PGAP1	not_needed
+C12orf5	human	previous_symbol_unique	TIGAR	HGNC:1185	unmatched			TIGAR	not_needed
+Cad	human_and_mouse	alias_symbol_unique	B4GALNT2	HGNC:24136	approved_exact	Cad	MGI:1916969	B4GALNT2	not_needed
+Cant1	mouse	unmatched			approved_exact	Cant1	MGI:1923275	CANT1	one_to_one
+Car5a	mouse	unmatched			alias_unique	Ca5a	MGI:101946	CA5A	one_to_one
+Car5b	mouse	unmatched			alias_unique	Ca5b	MGI:1926249	CA5B	one_to_one
+Carns1	mouse	unmatched			approved_exact	Carns1	MGI:2147595	CARNS1	one_to_one
+Cars2	mouse	unmatched			approved_exact	Cars2	MGI:1919191	CARS2	one_to_one
+Casp1	mouse	unmatched			approved_exact	Casp1	MGI:96544	CASP1	one_to_one
+Casp12	mouse	unmatched			approved_exact	Casp12	MGI:1312922	CASP12	one_to_one
+Casp2	mouse	unmatched			approved_exact	Casp2	MGI:97295	CASP2	one_to_one
+Casp3	mouse	unmatched			approved_exact	Casp3	MGI:107739	CASP3	one_to_one
+Casp4	mouse	unmatched			approved_exact	Casp4	MGI:107700		not_found
+Casp6	mouse	unmatched			approved_exact	Casp6	MGI:1312921	CASP6	one_to_one
+Casp7	mouse	unmatched			approved_exact	Casp7	MGI:109383	CASP7	one_to_one
+Casp8	mouse	unmatched			approved_exact	Casp8	MGI:1261423	CASP8	one_to_one
+Casp9	mouse	unmatched			approved_exact	Casp9	MGI:1277950	CASP9	one_to_one
+Cat	mouse	unmatched			approved_exact	Cat	MGI:88271	CAT	one_to_one
+Cbr1	mouse	unmatched			approved_exact	Cbr1	MGI:88284		not_found
+Cbr2	mouse	unmatched			approved_exact	Cbr2	MGI:107200		not_found
+Cbr3	mouse	unmatched			approved_exact	Cbr3	MGI:1309992	CBR3	one_to_one
+Cbr4	mouse	unmatched			approved_exact	Cbr4	MGI:2384567	CBR4	one_to_one
+Cbs	mouse	unmatched			approved_exact	Cbs	MGI:88285	CBS	one_to_one
+Ccbl1	mouse	unmatched			alias_unique	Kyat1	MGI:1917516	KYAT1	one_to_one
+Ccbl2	mouse	unmatched			alias_unique	Kyat3	MGI:2677849	KYAT3	one_to_one
+Cd38	mouse	unmatched			approved_exact	Cd38	MGI:107474	CD38	one_to_one
+Cda	mouse	unmatched			approved_exact	Cda	MGI:1919519	CDA	one_to_one
+Cdipt	mouse	unmatched			approved_exact	Cdipt	MGI:105491	CDIPT	one_to_one
+Cdo1	mouse	unmatched			approved_exact	Cdo1	MGI:105925	CDO1	one_to_one
+Cds1	mouse	unmatched			approved_exact	Cds1	MGI:1921846	CDS1	one_to_one
+Cds2	mouse	unmatched			approved_exact	Cds2	MGI:1332236	CDS2	one_to_one
+Cel	mouse	unmatched			approved_exact	Cel	MGI:88374	CEL	one_to_one
+Cept1	mouse	unmatched			approved_exact	Cept1	MGI:2139793	CEPT1	one_to_one
+Cers1	mouse	unmatched			approved_exact	Cers1	MGI:2136690	CERS1	one_to_one
+Cers2	mouse	unmatched			approved_exact	Cers2	MGI:1924143	CERS2	one_to_one
+Cers3	mouse	unmatched			approved_exact	Cers3	MGI:2681008	CERS3	one_to_one
+Cers4	mouse	unmatched			approved_exact	Cers4	MGI:1914510	CERS4	one_to_one
+Cers5	mouse	unmatched			approved_exact	Cers5	MGI:1919199	CERS5	one_to_one
+Cers6	mouse	unmatched			approved_exact	Cers6	MGI:2442564	CERS6	one_to_one
+Ces1a	mouse	unmatched			approved_exact	Ces1a	MGI:3648919		not_found
+Ces1b	mouse	unmatched			approved_exact	Ces1b	MGI:3779470		not_found
+Ces1c	mouse	unmatched			approved_exact	Ces1c	MGI:95420		not_found
+Ces1d	mouse	unmatched			approved_exact	Ces1d	MGI:2148202		not_found
+Ces1e	mouse	unmatched			approved_exact	Ces1e	MGI:95432		not_found
+Ces1f	mouse	unmatched			approved_exact	Ces1f	MGI:2142687		not_found
+Ces1g	mouse	unmatched			approved_exact	Ces1g	MGI:88378		not_found
+Ces1h	mouse	unmatched			approved_exact	Ces1h	MGI:1922954		not_found
+Ces2	mouse	unmatched			alias_unique	Ces2c	MGI:2385905		not_found
+Ces2a	mouse	unmatched			approved_exact	Ces2a	MGI:2142491		not_found
+Ces2b	mouse	unmatched			approved_exact	Ces2b	MGI:2448547		not_found
+Ces2c	mouse	unmatched			approved_exact	Ces2c	MGI:2385905		not_found
+Ces2e	mouse	unmatched			approved_exact	Ces2e	MGI:2443170		not_found
+Ces2f	mouse	unmatched			approved_exact	Ces2f	MGI:1919153		not_found
+Ces2g	mouse	unmatched			approved_exact	Ces2g	MGI:1919611		not_found
+Ces2h	mouse	unmatched			approved_exact	Ces2h	MGI:3648740		not_found
+Ces2i	unresolved	unmatched			unmatched				not_found
+Ces2j	unresolved	unmatched			unmatched				not_found
+Ces3	mouse	unmatched			alias_unique	Ces1d	MGI:2148202		not_found
+Ces3a	mouse	unmatched			approved_exact	Ces3a	MGI:102773		not_found
+Ces3b	mouse	unmatched			approved_exact	Ces3b	MGI:3644960		not_found
+Ces5a	mouse	unmatched			approved_exact	Ces5a	MGI:1915185	CES5A	one_to_one
+Cesl1	unresolved	unmatched			unmatched				not_found
+Chat	mouse	unmatched			approved_exact	Chat	MGI:88392	CHAT	one_to_one
+Chdh	mouse	unmatched			approved_exact	Chdh	MGI:1860776	CHDH	one_to_one
+Chka	mouse	unmatched			approved_exact	Chka	MGI:107760	CHKA	one_to_one
+Chkb	mouse	unmatched			approved_exact	Chkb	MGI:1328313	CHKB	one_to_one
+Chpt1	mouse	unmatched			approved_exact	Chpt1	MGI:2384841	CHPT1	one_to_one
+Chst1	mouse	unmatched			approved_exact	Chst1	MGI:1924219	CHST1	one_to_one
+Chst10	mouse	unmatched			approved_exact	Chst10	MGI:2138283	CHST10	one_to_one
+Chst11	mouse	unmatched			approved_exact	Chst11	MGI:1927166	CHST11	one_to_one
+Chst12	mouse	unmatched			approved_exact	Chst12	MGI:1929064	CHST12	one_to_one
+Chst13	mouse	unmatched			approved_exact	Chst13	MGI:1919047	CHST13	one_to_one
+Chst14	mouse	unmatched			approved_exact	Chst14	MGI:1919386	CHST14	one_to_one
+Chst15	mouse	unmatched			approved_exact	Chst15	MGI:1924840	CHST15	one_to_one
+Chst2	mouse	unmatched			approved_exact	Chst2	MGI:1891160	CHST2	one_to_one
+Chst3	mouse	unmatched			approved_exact	Chst3	MGI:1858224	CHST3	one_to_one
+Chst4	mouse	unmatched			approved_exact	Chst4	MGI:1349479	CHST4	one_to_one
+Chst5	mouse	unmatched			approved_exact	Chst5	MGI:1931825		not_found
+Chst6	unresolved	unmatched			unmatched				not_found
+Chst7	mouse	unmatched			approved_exact	Chst7	MGI:1891767	CHST7	one_to_one
+Chst8	mouse	unmatched			approved_exact	Chst8	MGI:1916197	CHST8	one_to_one
+Chst9	mouse	unmatched			approved_exact	Chst9	MGI:1918617	CHST9	one_to_one
+Ckb	mouse	unmatched			approved_exact	Ckb	MGI:88407	CKB	one_to_one
+Ckm	mouse	unmatched			approved_exact	Ckm	MGI:88413	CKM	one_to_one
+Ckmt1	mouse	unmatched			approved_exact	Ckmt1	MGI:99441		not_found
+Ckmt1a	unresolved	unmatched			unmatched				not_found
+Ckmt1b	unresolved	unmatched			unmatched				not_found
+Ckmt2	mouse	unmatched			approved_exact	Ckmt2	MGI:1923972	CKMT2	one_to_one
+Clybl	mouse	unmatched			approved_exact	Clybl	MGI:1916884	CLYBL	one_to_one
+Cmas	mouse	unmatched			approved_exact	Cmas	MGI:1337124	CMAS	one_to_one
+Cmpk1	mouse	unmatched			approved_exact	Cmpk1	MGI:1913838	CMPK1	one_to_one
+Cmpk2	mouse	unmatched			approved_exact	Cmpk2	MGI:99830	CMPK2	one_to_one
+Coasy	mouse	unmatched			approved_exact	Coasy	MGI:1918993	COASY	one_to_one
+Colgalt1	mouse	unmatched			approved_exact	Colgalt1	MGI:1924348	COLGALT1	one_to_one
+Colgalt2	mouse	unmatched			approved_exact	Colgalt2	MGI:2138232	COLGALT2	one_to_one
+Comt	mouse	unmatched			approved_exact	Comt	MGI:88470	COMT	one_to_one
+Comtd1	mouse	unmatched			approved_exact	Comtd1	MGI:1916406	COMTD1	one_to_one
+Coq2	mouse	unmatched			approved_exact	Coq2	MGI:1919133	COQ2	one_to_one
+Coq3	mouse	unmatched			approved_exact	Coq3	MGI:101813	COQ3	one_to_one
+Coq4	mouse	unmatched			approved_exact	Coq4	MGI:1098826	COQ4	one_to_one
+Coq5	mouse	unmatched			approved_exact	Coq5	MGI:1098643	COQ5	one_to_one
+Coq6	mouse	unmatched			approved_exact	Coq6	MGI:1924408	COQ6	one_to_one
+Coq7	mouse	unmatched			approved_exact	Coq7	MGI:107207	COQ7	one_to_one
+Coq8a	mouse	unmatched			approved_exact	Coq8a	MGI:1914676	COQ8A	one_to_one
+Coq8b	mouse	unmatched			approved_exact	Coq8b	MGI:1924139	COQ8B	one_to_one
+Coq9	mouse	unmatched			approved_exact	Coq9	MGI:1915164	COQ9	one_to_one
+Cox1	unresolved	unmatched			unmatched				not_found
+Cox10	mouse	unmatched			approved_exact	Cox10	MGI:1917633	COX10	one_to_one
+Cox11	mouse	unmatched			approved_exact	Cox11	MGI:1917052	COX11	one_to_one
+Cox14	mouse	unmatched			approved_exact	Cox14	MGI:1913629	COX14	one_to_one
+Cox15	mouse	unmatched			approved_exact	Cox15	MGI:1920112	COX15	one_to_one
+Cox16	mouse	unmatched			approved_exact	Cox16	MGI:1913522	COX16	one_to_one
+Cox17	mouse	unmatched			approved_exact	Cox17	MGI:1333806	COX17	one_to_one
+Cox18	mouse	unmatched			approved_exact	Cox18	MGI:2448532	COX18	one_to_one
+Cox19	mouse	unmatched			approved_exact	Cox19	MGI:1915283	COX19	one_to_one
+Cox2	unresolved	unmatched			unmatched				not_found
+Cox20	mouse	unmatched			approved_exact	Cox20	MGI:1913609	COX20	one_to_one
+Cox3	unresolved	unmatched			unmatched				not_found
+Cox4i1	mouse	unmatched			approved_exact	Cox4i1	MGI:88473	COX4I1	one_to_one
+Cox4i2	mouse	unmatched			approved_exact	Cox4i2	MGI:2135755	COX4I2	one_to_one
+Cox5a	mouse	unmatched			approved_exact	Cox5a	MGI:88474	COX5A	one_to_one
+Cox5b	mouse	unmatched			approved_exact	Cox5b	MGI:88475	COX5B	one_to_one
+Cox6a1	mouse	unmatched			approved_exact	Cox6a1	MGI:103099	COX6A1	one_to_one
+Cox6a2	mouse	unmatched			approved_exact	Cox6a2	MGI:104649	COX6A2	one_to_one
+Cox6b1	mouse	unmatched			approved_exact	Cox6b1	MGI:107460	COX6B1	one_to_one
+Cox6b2	mouse	unmatched			approved_exact	Cox6b2	MGI:3044182	COX6B2	one_to_one
+Cox6c	mouse	unmatched			approved_exact	Cox6c	MGI:104614	COX6C	one_to_one
+Cox6c2	mouse	unmatched			approved_exact	Cox6c2	MGI:3649160		not_found
+Cox7a1	mouse	unmatched			approved_exact	Cox7a1	MGI:1316714	COX7A1	one_to_one
+Cox7a2	mouse	unmatched			approved_exact	Cox7a2	MGI:1316715		not_found
+Cox7a2l	mouse	unmatched			approved_exact	Cox7a2l	MGI:106015	COX7A2L	one_to_one
+Cox7b	mouse	unmatched			approved_exact	Cox7b	MGI:1913392	COX7B	one_to_one
+Cox7b2	mouse	unmatched			approved_exact	Cox7b2	MGI:1925424	COX7B2	one_to_one
+Cox7c	mouse	unmatched			approved_exact	Cox7c	MGI:103226	COX7C	one_to_one
+Cox8a	mouse	unmatched			approved_exact	Cox8a	MGI:105959	COX8A	one_to_one
+Cox8b	mouse	unmatched			approved_exact	Cox8b	MGI:105958	COX8BP	one_to_one
+Cox8c	mouse	unmatched			approved_exact	Cox8c	MGI:1922733	COX8C	one_to_one
+Cp	mouse	unmatched			approved_exact	Cp	MGI:88476	CP	one_to_one
+Cpox	mouse	unmatched			approved_exact	Cpox	MGI:104841	CPOX	one_to_one
+Cps1	human_and_mouse	alias_symbol_unique	PM20D1	HGNC:26518	approved_exact	Cps1	MGI:891996	PM20D1	not_needed
+Cpt1a	mouse	unmatched			approved_exact	Cpt1a	MGI:1098296	CPT1A	one_to_one
+Cpt1b	mouse	unmatched			approved_exact	Cpt1b	MGI:1098297	CPT1B	one_to_one
+Cpt1c	mouse	unmatched			approved_exact	Cpt1c	MGI:2446526	CPT1C	one_to_one
+Cpt2	mouse	unmatched			approved_exact	Cpt2	MGI:109176	CPT2	one_to_one
+Crat	mouse	unmatched			approved_exact	Crat	MGI:109501	CRAT	one_to_one
+Crls1	mouse	unmatched			approved_exact	Crls1	MGI:1913836	CRLS1	one_to_one
+Crot	mouse	unmatched			approved_exact	Crot	MGI:1921364	CROT	one_to_one
+Cryl1	mouse	unmatched			approved_exact	Cryl1	MGI:1915881	CRYL1	one_to_one
+Cs	mouse	unmatched			approved_exact	Cs	MGI:88529		not_found
+Csad	mouse	unmatched			approved_exact	Csad	MGI:2180098	CSAD	one_to_one
+Cth	mouse	unmatched			approved_exact	Cth	MGI:1339968	CTH	one_to_one
+Ctps1	mouse	unmatched			approved_exact	Ctps1	MGI:1858304	CTPS1	one_to_one
+Ctps2	mouse	unmatched			approved_exact	Ctps2	MGI:1933185	CTPS2	one_to_one
+Ctu1	mouse	unmatched			approved_exact	Ctu1	MGI:2385277	CTU1	one_to_one
+Ctu2	mouse	unmatched			approved_exact	Ctu2	MGI:1914215	CTU2	one_to_one
+Cyb5r1	mouse	unmatched			approved_exact	Cyb5r1	MGI:1919267	CYB5R1	one_to_one
+Cyb5r2	mouse	unmatched			approved_exact	Cyb5r2	MGI:2444415	CYB5R2	one_to_one
+Cyb5r3	mouse	unmatched			approved_exact	Cyb5r3	MGI:94893	CYB5R3	one_to_one
+Cyb5r4	mouse	unmatched			approved_exact	Cyb5r4	MGI:2386848	CYB5R4	one_to_one
+Cyp11a1	mouse	unmatched			approved_exact	Cyp11a1	MGI:88582	CYP11A1	one_to_one
+Cyp11b1	mouse	unmatched			approved_exact	Cyp11b1	MGI:88583		not_found
+Cyp11b2	mouse	unmatched			approved_exact	Cyp11b2	MGI:88584		not_found
+Cyp11b3	unresolved	unmatched			unmatched				not_found
+Cyp17a1	mouse	unmatched			approved_exact	Cyp17a1	MGI:88586	CYP17A1	one_to_one
+Cyp19a1	mouse	unmatched			approved_exact	Cyp19a1	MGI:88587	CYP19A1	one_to_one
+Cyp21	mouse	unmatched			alias_unique	Cyp21a1	MGI:88591		not_found
+Cyp21a1	mouse	unmatched			approved_exact	Cyp21a1	MGI:88591		not_found
+Cyp21a2	unresolved	unmatched			unmatched				not_found
+Cyp24a1	mouse	unmatched			approved_exact	Cyp24a1	MGI:88593	CYP24A1	one_to_one
+Cyp27a1	mouse	unmatched			approved_exact	Cyp27a1	MGI:88594	CYP27A1	one_to_one
+Cyp27b1	mouse	unmatched			approved_exact	Cyp27b1	MGI:1098274	CYP27B1	one_to_one
+Cyp2r1	mouse	unmatched			approved_exact	Cyp2r1	MGI:2449771	CYP2R1	one_to_one
+Cyp7a1	mouse	unmatched			approved_exact	Cyp7a1	MGI:106091	CYP7A1	one_to_one
+Cyp7b1	mouse	unmatched			approved_exact	Cyp7b1	MGI:104978	CYP7B1	one_to_one
+D2hgdh	mouse	unmatched			approved_exact	D2hgdh	MGI:2138209	D2HGDH	one_to_one
+Dak	mouse	unmatched			alias_unique	Tkfc	MGI:2385084	TKFC	one_to_one
+Dao	mouse	unmatched			approved_exact	Dao	MGI:94859	DAO	one_to_one
+Dars2	mouse	unmatched			approved_exact	Dars2	MGI:2442510	DARS2	one_to_one
+Dbh	mouse	unmatched			approved_exact	Dbh	MGI:94864	DBH	one_to_one
+Dbt	mouse	unmatched			approved_exact	Dbt	MGI:105386	DBT	one_to_one
+Dck	mouse	unmatched			approved_exact	Dck	MGI:102726	DCK	one_to_one
+Dctd	mouse	unmatched			approved_exact	Dctd	MGI:2444529	DCTD	one_to_one
+Dcxr	mouse	unmatched			approved_exact	Dcxr	MGI:1915130	DCXR	one_to_one
+Ddah1	mouse	unmatched			approved_exact	Ddah1	MGI:1916469	DDAH1	one_to_one
+Ddah2	mouse	unmatched			approved_exact	Ddah2	MGI:1859016	DDAH2	one_to_one
+Ddc	mouse	unmatched			approved_exact	Ddc	MGI:94876	DDC	one_to_one
+Decr1	mouse	unmatched			approved_exact	Decr1	MGI:1914710	DECR1	one_to_one
+Decr2	mouse	unmatched			approved_exact	Decr2	MGI:1347059	DECR2	one_to_one
+Dgat1	mouse	unmatched			approved_exact	Dgat1	MGI:1333825	DGAT1	one_to_one
+Dgat2	mouse	unmatched			approved_exact	Dgat2	MGI:1915050	DGAT2	one_to_one
+Dgka	mouse	unmatched			approved_exact	Dgka	MGI:102952	DGKA	one_to_one
+Dgkb	mouse	unmatched			approved_exact	Dgkb	MGI:2442474	DGKB	one_to_one
+Dgkd	mouse	unmatched			approved_exact	Dgkd	MGI:2138334	DGKD	one_to_one
+Dgke	mouse	unmatched			approved_exact	Dgke	MGI:1889276	DGKE	one_to_one
+Dgkg	mouse	unmatched			approved_exact	Dgkg	MGI:105060	DGKG	one_to_one
+Dgkh	mouse	unmatched			approved_exact	Dgkh	MGI:2444188	DGKH	one_to_one
+Dgki	mouse	unmatched			approved_exact	Dgki	MGI:2443430	DGKI	one_to_one
+Dgkk	mouse	unmatched			approved_exact	Dgkk	MGI:3580254	DGKK	one_to_one
+Dgkq	mouse	unmatched			approved_exact	Dgkq	MGI:102918	DGKQ	one_to_one
+Dgkz	mouse	unmatched			approved_exact	Dgkz	MGI:1278339	DGKZ	one_to_one
+Dguok	mouse	unmatched			approved_exact	Dguok	MGI:1351602	DGUOK	one_to_one
+Dhcr7	mouse	unmatched			approved_exact	Dhcr7	MGI:1298378	DHCR7	one_to_one
+Dhfr	mouse	unmatched			approved_exact	Dhfr	MGI:94890		not_found
+Dhfrl1	unresolved	unmatched			unmatched				not_found
+Dhodh	mouse	unmatched			approved_exact	Dhodh	MGI:1928378	DHODH	one_to_one
+Dhrs1	mouse	unmatched			approved_exact	Dhrs1	MGI:1196314	DHRS1	one_to_one
+Dhrs2	mouse	unmatched			approved_exact	Dhrs2	MGI:1918662	DHRS2	one_to_one
+Dhrs3	mouse	unmatched			approved_exact	Dhrs3	MGI:1315215	DHRS3	one_to_one
+Dhrs4	mouse	unmatched			approved_exact	Dhrs4	MGI:90169		not_found
+Dhrs7b	mouse	unmatched			approved_exact	Dhrs7b	MGI:2384931	DHRS7B	one_to_one
+Dhtkd1	mouse	unmatched			approved_exact	Dhtkd1	MGI:2445096	DHTKD1	one_to_one
+Dlat	mouse	unmatched			approved_exact	Dlat	MGI:2385311	DLAT	one_to_one
+Dld	mouse	unmatched			approved_exact	Dld	MGI:107450	DLD	one_to_one
+Dlst	mouse	unmatched			approved_exact	Dlst	MGI:1926170	DLST	one_to_one
+Dmgdh	mouse	unmatched			approved_exact	Dmgdh	MGI:1921379	DMGDH	one_to_one
+Dnase1	mouse	unmatched			approved_exact	Dnase1	MGI:103157	DNASE1	one_to_one
+Dnase2	unresolved	unmatched			unmatched				not_found
+Dnase2b	mouse	unmatched			approved_exact	Dnase2b	MGI:1913283	DNASE2B	one_to_one
+Dnmt1	mouse	unmatched			approved_exact	Dnmt1	MGI:94912	DNMT1	one_to_one
+Dnmt3a	mouse	unmatched			approved_exact	Dnmt3a	MGI:1261827	DNMT3A	one_to_one
+Dnmt3b	mouse	unmatched			approved_exact	Dnmt3b	MGI:1261819	DNMT3B	one_to_one
+Dolk	mouse	unmatched			approved_exact	Dolk	MGI:2677836	DOLK	one_to_one
+Dpyd	mouse	unmatched			approved_exact	Dpyd	MGI:2139667	DPYD	one_to_one
+Dpys	mouse	unmatched			approved_exact	Dpys	MGI:1928679	DPYS	one_to_one
+Dtymk	mouse	unmatched			approved_exact	Dtymk	MGI:108396	DTYMK	one_to_one
+Dus2	mouse	unmatched			approved_exact	Dus2	MGI:1913619	DUS2	one_to_one
+Dut	mouse	unmatched			approved_exact	Dut	MGI:1346051	DUT	one_to_one
+Ears2	mouse	unmatched			approved_exact	Ears2	MGI:1914667	EARS2	one_to_one
+Ech1	mouse	unmatched			approved_exact	Ech1	MGI:1858208	ECH1	one_to_one
+Echdc1	mouse	unmatched			approved_exact	Echdc1	MGI:1277169	ECHDC1	one_to_one
+Echdc2	mouse	unmatched			approved_exact	Echdc2	MGI:1289238	ECHDC2	one_to_one
+Echdc3	mouse	unmatched			approved_exact	Echdc3	MGI:1915106	ECHDC3	one_to_one
+Echs1	mouse	unmatched			approved_exact	Echs1	MGI:2136460	ECHS1	one_to_one
+Eci1	mouse	unmatched			approved_exact	Eci1	MGI:94871	ECI1	one_to_one
+Eci2	mouse	unmatched			approved_exact	Eci2	MGI:1346064		not_found
+Eci3	mouse	unmatched			approved_exact	Eci3	MGI:1916373		not_found
+Ehhadh	mouse	unmatched			approved_exact	Ehhadh	MGI:1277964	EHHADH	one_to_one
+Elac1	mouse	unmatched			approved_exact	Elac1	MGI:1890495	ELAC1	one_to_one
+Elac2	mouse	unmatched			approved_exact	Elac2	MGI:1890496	ELAC2	one_to_one
+Endog	mouse	unmatched			approved_exact	Endog	MGI:1261433	ENDOG	one_to_one
+Eno1	mouse	unmatched			approved_exact	Eno1	MGI:95393		not_found
+Eno2	mouse	unmatched			approved_exact	Eno2	MGI:95394	ENO2	one_to_one
+Eno3	mouse	unmatched			approved_exact	Eno3	MGI:95395	ENO3	one_to_one
+Eno4	mouse	unmatched			approved_exact	Eno4	MGI:2441717	ENO4	one_to_one
+Enpp1	mouse	unmatched			approved_exact	Enpp1	MGI:97370	ENPP1	one_to_one
+Enpp2	mouse	unmatched			approved_exact	Enpp2	MGI:1321390	ENPP2	one_to_one
+Enpp3	mouse	unmatched			approved_exact	Enpp3	MGI:2143702	ENPP3	one_to_one
+Enpp4	mouse	unmatched			approved_exact	Enpp4	MGI:2682634	ENPP4	one_to_one
+Enpp5	mouse	unmatched			approved_exact	Enpp5	MGI:1933830	ENPP5	one_to_one
+Enpp6	mouse	unmatched			approved_exact	Enpp6	MGI:2445171	ENPP6	one_to_one
+Enpp7	mouse	unmatched			approved_exact	Enpp7	MGI:3027917	ENPP7	one_to_one
+Entpd1	mouse	unmatched			approved_exact	Entpd1	MGI:102805	ENTPD1	one_to_one
+Entpd2	mouse	unmatched			approved_exact	Entpd2	MGI:1096863	ENTPD2	one_to_one
+Entpd3	mouse	unmatched			approved_exact	Entpd3	MGI:1321386	ENTPD3	one_to_one
+Entpd4	mouse	unmatched			approved_exact	Entpd4	MGI:1914714		not_found
+Entpd5	mouse	unmatched			approved_exact	Entpd5	MGI:1321385	ENTPD5	one_to_one
+Entpd6	mouse	unmatched			approved_exact	Entpd6	MGI:1202295	ENTPD6	one_to_one
+Entpd7	mouse	unmatched			approved_exact	Entpd7	MGI:2135885	ENTPD7	one_to_one
+Entpd8	mouse	unmatched			approved_exact	Entpd8	MGI:1919340	ENTPD8	one_to_one
+Ephx1	mouse	unmatched			approved_exact	Ephx1	MGI:95405	EPHX1	one_to_one
+Ephx2	mouse	unmatched			approved_exact	Ephx2	MGI:99500	EPHX2	one_to_one
+Ephx3	mouse	unmatched			approved_exact	Ephx3	MGI:1919182	EPHX3	one_to_one
+Ephx4	mouse	unmatched			approved_exact	Ephx4	MGI:2686228	EPHX4	one_to_one
+Eprs	mouse	unmatched			alias_unique	Eprs1	MGI:97838	EPRS1	one_to_one
+Ept1	mouse	unmatched			alias_unique	Selenoi	MGI:107898	SELENOI	one_to_one
+Eri1	mouse	unmatched			approved_exact	Eri1	MGI:1914526	ERI1	one_to_one
+Eri2	mouse	unmatched			approved_exact	Eri2	MGI:1918401	ERI2	one_to_one
+Eri3	mouse	unmatched			approved_exact	Eri3	MGI:2153887	ERI3	one_to_one
+Etfa	mouse	unmatched			approved_exact	Etfa	MGI:106092	ETFA	one_to_one
+Etfdh	mouse	unmatched			approved_exact	Etfdh	MGI:106100	ETFDH	one_to_one
+Ethe1	mouse	unmatched			approved_exact	Ethe1	MGI:1913321	ETHE1	one_to_one
+Etnk1	mouse	unmatched			approved_exact	Etnk1	MGI:1922570	ETNK1	one_to_one
+Etnk2	mouse	unmatched			approved_exact	Etnk2	MGI:2443760	ETNK2	one_to_one
+Exog	mouse	unmatched			approved_exact	Exog	MGI:2143333	EXOG	one_to_one
+Fah	mouse	unmatched			approved_exact	Fah	MGI:95482	FAH	one_to_one
+Fahd1	mouse	unmatched			approved_exact	Fahd1	MGI:1915886	FAHD1	one_to_one
+Fahd2a	mouse	unmatched			approved_exact	Fahd2a	MGI:1915376		not_found
+Fan1	mouse	unmatched			approved_exact	Fan1	MGI:3045266	FAN1	one_to_one
+Fars2	mouse	unmatched			approved_exact	Fars2	MGI:1917205	FARS2	one_to_one
+Fasn	mouse	unmatched			approved_exact	Fasn	MGI:95485	FASN	one_to_one
+Fbp1	mouse	unmatched			approved_exact	Fbp1	MGI:95492	FBP1	one_to_one
+Fbp2	mouse	unmatched			approved_exact	Fbp2	MGI:95491	FBP2	one_to_one
+Fbp3	mouse	unmatched			alias_unique	Fbp1	MGI:95492	FBP1	one_to_one
+Fdft1	mouse	unmatched			approved_exact	Fdft1	MGI:102706	FDFT1	one_to_one
+Fdps	mouse	unmatched			approved_exact	Fdps	MGI:104888	FDPS	one_to_one
+Fdxr	mouse	unmatched			approved_exact	Fdxr	MGI:104724	FDXR	one_to_one
+Fech	mouse	unmatched			approved_exact	Fech	MGI:95513	FECH	one_to_one
+Fh	unresolved	unmatched			unmatched				not_found
+Fh1	mouse	unmatched			approved_exact	Fh1	MGI:95530	FH	one_to_one
+Fhit	mouse	unmatched			approved_exact	Fhit	MGI:1277947	FHIT	one_to_one
+Fkbp10	mouse	unmatched			approved_exact	Fkbp10	MGI:104769	FKBP10	one_to_one
+Fkbp11	mouse	unmatched			approved_exact	Fkbp11	MGI:1913370	FKBP11	one_to_one
+Fkbp14	mouse	unmatched			approved_exact	Fkbp14	MGI:2387639	FKBP14	one_to_one
+Fkbp15	mouse	unmatched			approved_exact	Fkbp15	MGI:2444782	FKBP15	one_to_one
+Fkbp2	mouse	unmatched			approved_exact	Fkbp2	MGI:95542	FKBP2	one_to_one
+Fkbp3	mouse	unmatched			approved_exact	Fkbp3	MGI:1353460	FKBP3	one_to_one
+Fkbp4	mouse	unmatched			approved_exact	Fkbp4	MGI:95543	FKBP4	one_to_one
+Fkbp5	mouse	unmatched			approved_exact	Fkbp5	MGI:104670	FKBP5	one_to_one
+Fkbp6	mouse	unmatched			approved_exact	Fkbp6	MGI:2137612	FKBP6	one_to_one
+Fkbp7	mouse	unmatched			approved_exact	Fkbp7	MGI:1336879	FKBP7	one_to_one
+Fkbp8	mouse	unmatched			approved_exact	Fkbp8	MGI:1341070	FKBP8	one_to_one
+Fkbp9	mouse	unmatched			approved_exact	Fkbp9	MGI:1350921	FKBP9	one_to_one
+Flad1	mouse	unmatched			approved_exact	Flad1	MGI:2443030	FLAD1	one_to_one
+Fnta	mouse	unmatched			approved_exact	Fnta	MGI:104683	FNTA	one_to_one
+Foxred1	mouse	unmatched			approved_exact	Foxred1	MGI:2446262	FOXRED1	one_to_one
+Foxred2	mouse	unmatched			approved_exact	Foxred2	MGI:106315	FOXRED2	one_to_one
+Fpgs	mouse	unmatched			approved_exact	Fpgs	MGI:95576	FPGS	one_to_one
+Ftcd	mouse	unmatched			approved_exact	Ftcd	MGI:1339962	FTCD	one_to_one
+Fth1	mouse	unmatched			approved_exact	Fth1	MGI:95588	FTH1	one_to_one
+Ftmt	mouse	unmatched			approved_exact	Ftmt	MGI:1914884	FTMT	one_to_one
+Fut1	mouse	unmatched			approved_exact	Fut1	MGI:109375	FUT1	one_to_one
+Fut10	mouse	unmatched			alias_unique	Pofut3	MGI:2384748	POFUT3	one_to_one
+Fut11	mouse	unmatched			alias_unique	Pofut4	MGI:1920318	POFUT4	one_to_one
+Fut2	mouse	unmatched			approved_exact	Fut2	MGI:109374		not_found
+Fut3	mouse	unmatched			alias_unique	Fut2b	MGI:1928893		not_found
+Fut4	mouse	unmatched			approved_exact	Fut4	MGI:95594	FUT4	one_to_one
+Fut5	unresolved	unmatched			unmatched				not_found
+Fut6	unresolved	unmatched			unmatched				not_found
+Fut7	mouse	unmatched			approved_exact	Fut7	MGI:107692	FUT7	one_to_one
+Fut8	mouse	unmatched			approved_exact	Fut8	MGI:1858901	FUT8	one_to_one
+Fut9	mouse	unmatched			approved_exact	Fut9	MGI:1330859	FUT9	one_to_one
+Fxn	mouse	unmatched			approved_exact	Fxn	MGI:1096879	FXN	one_to_one
+G6pc	mouse	unmatched			alias_unique	G6pc1	MGI:95607	G6PC1	one_to_one
+G6pc2	mouse	unmatched			approved_exact	G6pc2	MGI:1277193	G6PC2	one_to_one
+G6pc3	mouse	unmatched			approved_exact	G6pc3	MGI:1915651	G6PC3	one_to_one
+G6pd	mouse	unmatched			alias_unique	G6pdx	MGI:105979		not_found
+G6pd2	mouse	unmatched			approved_exact	G6pd2	MGI:105977		not_found
+G6pdx	mouse	unmatched			approved_exact	G6pdx	MGI:105979		not_found
+Gaa	mouse	unmatched			approved_exact	Gaa	MGI:95609	GAA	one_to_one
+Gad1	mouse	unmatched			approved_exact	Gad1	MGI:95632	GAD1	one_to_one
+Gad2	mouse	unmatched			approved_exact	Gad2	MGI:95634	GAD2	one_to_one
+Gadl1	mouse	unmatched			approved_exact	Gadl1	MGI:1920998	GADL1	one_to_one
+Gal3st1	mouse	unmatched			approved_exact	Gal3st1	MGI:1858277	GAL3ST1	one_to_one
+Gal3st2	mouse	unmatched			approved_exact	Gal3st2	MGI:2685834		not_found
+Gal3st3	mouse	unmatched			approved_exact	Gal3st3	MGI:3617843	GAL3ST3	one_to_one
+Gal3st4	mouse	unmatched			approved_exact	Gal3st4	MGI:1916254	GAL3ST4	one_to_one
+Galc	mouse	unmatched			approved_exact	Galc	MGI:95636	GALC	one_to_one
+Gale	mouse	unmatched			approved_exact	Gale	MGI:1921496	GALE	one_to_one
+Galk1	mouse	unmatched			approved_exact	Galk1	MGI:95730	GALK1	one_to_one
+Galk2	mouse	unmatched			approved_exact	Galk2	MGI:1917226	GALK2	one_to_one
+Galt	mouse	unmatched			approved_exact	Galt	MGI:95638	GALT	one_to_one
+Gamt	mouse	unmatched			approved_exact	Gamt	MGI:1098221	GAMT	one_to_one
+Ganc	mouse	unmatched			approved_exact	Ganc	MGI:1923301	GANC	one_to_one
+Gapdh	mouse	unmatched			approved_exact	Gapdh	MGI:95640		not_found
+Gapdhs	mouse	unmatched			approved_exact	Gapdhs	MGI:95653	GAPDHS	one_to_one
+Gars	mouse	unmatched			alias_unique	Gars1	MGI:2449057	GARS1	one_to_one
+Gart	mouse	unmatched			approved_exact	Gart	MGI:95654	GART	one_to_one
+Gatc	mouse	unmatched			approved_exact	Gatc	MGI:1923776	GATC	one_to_one
+Gatm	mouse	unmatched			approved_exact	Gatm	MGI:1914342	GATM	one_to_one
+Gba	mouse	unmatched			alias_unique	Gba1	MGI:95665	GBA1	one_to_one
+Gba2	mouse	unmatched			approved_exact	Gba2	MGI:2654325	GBA2	one_to_one
+Gba3	unresolved	unmatched			unmatched				not_found
+Gbe1	mouse	unmatched			approved_exact	Gbe1	MGI:1921435	GBE1	one_to_one
+Gcdh	mouse	unmatched			approved_exact	Gcdh	MGI:104541	GCDH	one_to_one
+Gch1	mouse	unmatched			approved_exact	Gch1	MGI:95675	GCH1	one_to_one
+Gck	mouse	unmatched			approved_exact	Gck	MGI:1270854	GCK	one_to_one
+Gclc	mouse	unmatched			approved_exact	Gclc	MGI:104990	GCLC	one_to_one
+Gclm	mouse	unmatched			approved_exact	Gclm	MGI:104995	GCLM	one_to_one
+Gcsh	mouse	unmatched			approved_exact	Gcsh	MGI:1915383	GCSH	one_to_one
+Gda	mouse	unmatched			approved_exact	Gda	MGI:95678	GDA	one_to_one
+Gfpt1	mouse	unmatched			approved_exact	Gfpt1	MGI:95698	GFPT1	one_to_one
+Gfpt2	mouse	unmatched			approved_exact	Gfpt2	MGI:1338883	GFPT2	one_to_one
+Ggps1	mouse	unmatched			approved_exact	Ggps1	MGI:1341724	GGPS1	one_to_one
+Gk	mouse	unmatched			approved_exact	Gk	MGI:106594		not_found
+Gk2	mouse	unmatched			approved_exact	Gk2	MGI:1329027	GK2	one_to_one
+Gk3p	unresolved	unmatched			unmatched				not_found
+Gk5	mouse	unmatched			approved_exact	Gk5	MGI:2443336	GK5	one_to_one
+Glb1	mouse	unmatched			approved_exact	Glb1	MGI:88151	GLB1	one_to_one
+Glb1l2	mouse	unmatched			approved_exact	Glb1l2	MGI:2388283	GLB1L2	one_to_one
+Gldc	mouse	unmatched			approved_exact	Gldc	MGI:1341155	GLDC	one_to_one
+Glo1	mouse	unmatched			approved_exact	Glo1	MGI:95742	GLO1	one_to_one
+Gls	mouse	unmatched			approved_exact	Gls	MGI:95752	GLS	one_to_one
+Gls2	mouse	unmatched			approved_exact	Gls2	MGI:2143539	GLS2	one_to_one
+Glud1	mouse	unmatched			approved_exact	Glud1	MGI:95753		not_found
+Glud2	mouse	unmatched			alias_unique	Glud-ps	MGI:95754		not_found
+Glul	mouse	unmatched			approved_exact	Glul	MGI:95739	GLUL	one_to_one
+Glyat	mouse	unmatched			approved_exact	Glyat	MGI:2147502		not_found
+Glyctk	mouse	unmatched			approved_exact	Glyctk	MGI:2444085	GLYCTK	one_to_one
+Gmds	mouse	unmatched			approved_exact	Gmds	MGI:1891112	GMDS	one_to_one
+Gmpr	mouse	unmatched			approved_exact	Gmpr	MGI:1913605	GMPR	one_to_one
+Gmpr2	mouse	unmatched			approved_exact	Gmpr2	MGI:1917903	GMPR2	one_to_one
+Gmps	mouse	unmatched			approved_exact	Gmps	MGI:2448526	GMPS	one_to_one
+Gne	mouse	unmatched			approved_exact	Gne	MGI:1354951	GNE	one_to_one
+Gnmt	mouse	unmatched			approved_exact	Gnmt	MGI:1202304	GNMT	one_to_one
+Gnpda1	mouse	unmatched			approved_exact	Gnpda1	MGI:1347054	GNPDA1	one_to_one
+Gnpda2	mouse	unmatched			approved_exact	Gnpda2	MGI:1915230	GNPDA2	one_to_one
+Gnpnat1	mouse	unmatched			approved_exact	Gnpnat1	MGI:1858963	GNPNAT1	one_to_one
+Got1	mouse	unmatched			approved_exact	Got1	MGI:95791	GOT1	one_to_one
+Got1l1	mouse	unmatched			approved_exact	Got1l1	MGI:1923865	GOT1L1	one_to_one
+Got2	mouse	unmatched			approved_exact	Got2	MGI:95792	GOT2	one_to_one
+Gpam	mouse	unmatched			approved_exact	Gpam	MGI:109162	GPAM	one_to_one
+Gpat2	mouse	unmatched			approved_exact	Gpat2	MGI:2684962	GPAT2	one_to_one
+Gpcpd1	mouse	unmatched			approved_exact	Gpcpd1	MGI:104898	GPCPD1	one_to_one
+Gpd1	mouse	unmatched			approved_exact	Gpd1	MGI:95679	GPD1	one_to_one
+Gpd1l	mouse	unmatched			approved_exact	Gpd1l	MGI:1289257	GPD1L	one_to_one
+Gpd2	mouse	unmatched			approved_exact	Gpd2	MGI:99778	GPD2	one_to_one
+Gpi	unresolved	unmatched			unmatched				not_found
+Gpi1	mouse	unmatched			approved_exact	Gpi1	MGI:95797	GPI	one_to_one
+Gpt	mouse	unmatched			approved_exact	Gpt	MGI:95802	GPT	one_to_one
+Gpt2	mouse	unmatched			approved_exact	Gpt2	MGI:1915391	GPT2	one_to_one
+Gpx1	mouse	unmatched			approved_exact	Gpx1	MGI:104887	GPX1	one_to_one
+Gpx2	mouse	unmatched			approved_exact	Gpx2	MGI:106609	GPX2	one_to_one
+Gpx3	mouse	unmatched			approved_exact	Gpx3	MGI:105102	GPX3	one_to_one
+Gpx4	mouse	unmatched			approved_exact	Gpx4	MGI:104767	GPX4	one_to_one
+Gpx5	mouse	unmatched			approved_exact	Gpx5	MGI:104886	GPX5	one_to_one
+Gpx6	mouse	unmatched			approved_exact	Gpx6	MGI:1922762	GPX6	one_to_one
+Gpx7	mouse	unmatched			approved_exact	Gpx7	MGI:1914555	GPX7	one_to_one
+Gpx8	mouse	unmatched			approved_exact	Gpx8	MGI:1916840	GPX8	one_to_one
+Grhpr	mouse	unmatched			approved_exact	Grhpr	MGI:1923488	GRHPR	one_to_one
+Gsr	mouse	unmatched			approved_exact	Gsr	MGI:95804	GSR	one_to_one
+Gss	mouse	unmatched			approved_exact	Gss	MGI:95852	GSS	one_to_one
+Gsta1	mouse	unmatched			approved_exact	Gsta1	MGI:1095417		not_found
+Gsta2	mouse	unmatched			approved_exact	Gsta2	MGI:95863		not_found
+Gsta3	mouse	unmatched			approved_exact	Gsta3	MGI:95856		not_found
+Gsta4	mouse	unmatched			approved_exact	Gsta4	MGI:1309515		not_found
+Gsta5	mouse	unmatched			approved_exact	Gsta5	MGI:3704339		not_found
+Gsta6	unresolved	unmatched			unmatched				not_found
+Gstk1	mouse	unmatched			approved_exact	Gstk1	MGI:1923513	GSTK1	one_to_one
+Gstm1	mouse	unmatched			approved_exact	Gstm1	MGI:95860		not_found
+Gstm2	mouse	unmatched			approved_exact	Gstm2	MGI:95861		not_found
+Gstm3	mouse	unmatched			approved_exact	Gstm3	MGI:106026		not_found
+Gstm4	mouse	unmatched			approved_exact	Gstm4	MGI:95862	GSTM4	one_to_one
+Gstm5	mouse	unmatched			approved_exact	Gstm5	MGI:1309466	GSTM3	one_to_one
+Gstm6	mouse	unmatched			approved_exact	Gstm6	MGI:1309467		not_found
+Gstm7	mouse	unmatched			approved_exact	Gstm7	MGI:1915562	GSTM2	one_to_one
+Gsto1	mouse	unmatched			approved_exact	Gsto1	MGI:1342273	GSTO1	one_to_one
+Gsto2	mouse	unmatched			approved_exact	Gsto2	MGI:1915464	GSTO2	one_to_one
+Gstp1	mouse	unmatched			approved_exact	Gstp1	MGI:95865		not_found
+Gstp2	mouse	unmatched			approved_exact	Gstp2	MGI:95864		not_found
+Gstt1	mouse	unmatched			approved_exact	Gstt1	MGI:107379	GSTT1	one_to_one
+Gstt2	mouse	unmatched			approved_exact	Gstt2	MGI:106188		not_found
+Gstt2b	unresolved	unmatched			unmatched				not_found
+Gstt3	mouse	unmatched			approved_exact	Gstt3	MGI:2143526	GSTT3P	one_to_one
+Gstt4	mouse	unmatched			approved_exact	Gstt4	MGI:1923136	GSTT4	one_to_one
+Gstya	unresolved	unmatched			unmatched				not_found
+Gstz1	mouse	unmatched			approved_exact	Gstz1	MGI:1341859	GSTZ1	one_to_one
+Guk1	mouse	unmatched			approved_exact	Guk1	MGI:95871	GUK1	one_to_one
+Guk2	unresolved	unmatched			unmatched				not_found
+Gulo	mouse	unmatched			approved_exact	Gulo	MGI:1353434	GULOP	one_to_one
+Gusb	mouse	unmatched			approved_exact	Gusb	MGI:95872	GUSB	one_to_one
+Gys1	mouse	unmatched			approved_exact	Gys1	MGI:101805	GYS1	one_to_one
+Gys2	mouse	unmatched			approved_exact	Gys2	MGI:2385254	GYS2	one_to_one
+H2-Ke6	mouse	unmatched			alias_unique	Hsd17b8	MGI:95911	HSD17B8	one_to_one
+H6pd	mouse	unmatched			approved_exact	H6pd	MGI:2140356	H6PD	one_to_one
+Haao	mouse	unmatched			approved_exact	Haao	MGI:1349444	HAAO	one_to_one
+Hadh	mouse	unmatched			approved_exact	Hadh	MGI:96009	HADH	one_to_one
+Hadha	mouse	unmatched			approved_exact	Hadha	MGI:2135593	HADHA	one_to_one
+Hadhb	mouse	unmatched			approved_exact	Hadhb	MGI:2136381	HADHB	one_to_one
+Hagh	mouse	unmatched			approved_exact	Hagh	MGI:95745	HAGH	one_to_one
+Hal	mouse	unmatched			approved_exact	Hal	MGI:96010	HAL	one_to_one
+Hao1	mouse	unmatched			approved_exact	Hao1	MGI:96011	HAO1	one_to_one
+Hao2	mouse	unmatched			approved_exact	Hao2	MGI:96012	HAO2	one_to_one
+Hars2	mouse	unmatched			approved_exact	Hars2	MGI:1918041	HARS2	one_to_one
+Hccs	mouse	unmatched			approved_exact	Hccs	MGI:106911	HCCS	one_to_one
+Hdc	mouse	unmatched			approved_exact	Hdc	MGI:96062	HDC	one_to_one
+Hdhd2	mouse	unmatched			approved_exact	Hdhd2	MGI:1924237	HDHD2	one_to_one
+Hdhd3	mouse	unmatched			approved_exact	Hdhd3	MGI:1919998	HDHD3	one_to_one
+Hemk1	mouse	unmatched			approved_exact	Hemk1	MGI:1916786	HEMK1	one_to_one
+Hgd	mouse	unmatched			approved_exact	Hgd	MGI:96078	HGD	one_to_one
+Hibadh	mouse	unmatched			approved_exact	Hibadh	MGI:1889802	HIBADH	one_to_one
+Hibch	mouse	unmatched			approved_exact	Hibch	MGI:1923792	HIBCH	one_to_one
+Hk1	mouse	unmatched			approved_exact	Hk1	MGI:96103	HK1	one_to_one
+Hk2	mouse	unmatched			approved_exact	Hk2	MGI:1315197	HK2	one_to_one
+Hk3	mouse	unmatched			approved_exact	Hk3	MGI:2670962	HK3	one_to_one
+Hkdc1	mouse	unmatched			approved_exact	Hkdc1	MGI:2384910	HKDC1	one_to_one
+Hmbs	mouse	unmatched			approved_exact	Hmbs	MGI:96112	HMBS	one_to_one
+Hmgcl	mouse	unmatched			approved_exact	Hmgcl	MGI:96158	HMGCL	one_to_one
+Hmgcll1	mouse	unmatched			approved_exact	Hmgcll1	MGI:2446108	HMGCLL1	one_to_one
+Hmgcr	mouse	unmatched			approved_exact	Hmgcr	MGI:96159	HMGCR	one_to_one
+Hmgcs1	mouse	unmatched			approved_exact	Hmgcs1	MGI:107592	HMGCS1	one_to_one
+Hmgcs2	mouse	unmatched			approved_exact	Hmgcs2	MGI:101939	HMGCS2	one_to_one
+Hmox1	mouse	unmatched			approved_exact	Hmox1	MGI:96163	HMOX1	one_to_one
+Hmox2	mouse	unmatched			approved_exact	Hmox2	MGI:109373	HMOX2	one_to_one
+Hmox2-ps1	unresolved	unmatched			unmatched				not_found
+Hnmt	mouse	unmatched			approved_exact	Hnmt	MGI:2153181	HNMT	one_to_one
+Hoga1	mouse	unmatched			approved_exact	Hoga1	MGI:1914682	HOGA1	one_to_one
+Hpd	mouse	unmatched			approved_exact	Hpd	MGI:96213	HPD	one_to_one
+Hpgds	mouse	unmatched			approved_exact	Hpgds	MGI:1859384	HPGDS	one_to_one
+Hprt1	mouse	unmatched			approved_exact	Hprt1	MGI:96217	HPRT1	one_to_one
+Hsd11b1	mouse	unmatched			approved_exact	Hsd11b1	MGI:103562	HSD11B1	one_to_one
+Hsd11b2	mouse	unmatched			approved_exact	Hsd11b2	MGI:104720	HSD11B2	one_to_one
+Hsd17b1	mouse	unmatched			approved_exact	Hsd17b1	MGI:105077	HSD17B1	one_to_one
+Hsd17b10	mouse	unmatched			approved_exact	Hsd17b10	MGI:1333871	HSD17B10	one_to_one
+Hsd17b11	mouse	unmatched			approved_exact	Hsd17b11	MGI:2149821	HSD17B11	one_to_one
+Hsd17b12	mouse	unmatched			approved_exact	Hsd17b12	MGI:1926967	HSD17B12	one_to_one
+Hsd17b13	mouse	unmatched			approved_exact	Hsd17b13	MGI:2140804	HSD17B13	one_to_one
+Hsd17b14	mouse	unmatched			approved_exact	Hsd17b14	MGI:1913315	HSD17B14	one_to_one
+Hsd17b2	mouse	unmatched			approved_exact	Hsd17b2	MGI:1096386	HSD17B2	one_to_one
+Hsd17b3	mouse	unmatched			approved_exact	Hsd17b3	MGI:107177	HSD17B3	one_to_one
+Hsd17b4	mouse	unmatched			approved_exact	Hsd17b4	MGI:105089	HSD17B4	one_to_one
+Hsd17b5	mouse	unmatched			alias_unique	Akr1c6	MGI:1933427		not_found
+Hsd17b6	mouse	unmatched			approved_exact	Hsd17b6	MGI:1351670	HSD17B6	one_to_one
+Hsd17b7	mouse	unmatched			approved_exact	Hsd17b7	MGI:1330808	HSD17B7	one_to_one
+Hsd17b8	mouse	unmatched			approved_exact	Hsd17b8	MGI:95911	HSD17B8	one_to_one
+Hsd3b	mouse	unmatched			approved_exact	Hsd3b	MGI:96232		not_found
+Hsd3b1	mouse	unmatched			approved_exact	Hsd3b1	MGI:96233		not_found
+Hsd3b2	mouse	unmatched			approved_exact	Hsd3b2	MGI:96234		not_found
+Hsd3b3	mouse	unmatched			approved_exact	Hsd3b3	MGI:96235		not_found
+Hsd3b4	mouse	unmatched			approved_exact	Hsd3b4	MGI:96236		not_found
+Hsd3b5	mouse	unmatched			approved_exact	Hsd3b5	MGI:104645		not_found
+Hsd3b6	mouse	unmatched			approved_exact	Hsd3b6	MGI:109598		not_found
+Hsd3b7	mouse	unmatched			approved_exact	Hsd3b7	MGI:2141879	HSD3B7	one_to_one
+Hsdl1	mouse	unmatched			approved_exact	Hsdl1	MGI:1919802	HSDL1	one_to_one
+Hsdl2	mouse	unmatched			approved_exact	Hsdl2	MGI:1919729	HSDL2	one_to_one
+Htatip2	mouse	unmatched			approved_exact	Htatip2	MGI:1859271	HTATIP2	one_to_one
+Hykk	mouse	unmatched			approved_exact	Hykk	MGI:2443139	HYKK	one_to_one
+Iars	mouse	unmatched			alias_unique	Iars1	MGI:2145219	IARS1	one_to_one
+Iars2	mouse	unmatched			approved_exact	Iars2	MGI:1919586	IARS2	one_to_one
+Ide	mouse	unmatched			approved_exact	Ide	MGI:96412	IDE	one_to_one
+Idh1	mouse	unmatched			approved_exact	Idh1	MGI:96413	IDH1	one_to_one
+Idh2	mouse	unmatched			approved_exact	Idh2	MGI:96414	IDH2	one_to_one
+Idh3a	mouse	unmatched			approved_exact	Idh3a	MGI:1915084	IDH3A	one_to_one
+Idh3B	unresolved	unmatched			unmatched				not_found
+Idh3g	mouse	unmatched			approved_exact	Idh3g	MGI:1099463	IDH3G	one_to_one
+Idi1	mouse	unmatched			approved_exact	Idi1	MGI:2442264	IDI1	one_to_one
+Idi2	mouse	unmatched			approved_exact	Idi2	MGI:2444315	IDI2	one_to_one
+Idnk	mouse	unmatched			approved_exact	Idnk	MGI:1922981	IDNK	one_to_one
+Il4i1	mouse	unmatched			approved_exact	Il4i1	MGI:109552		not_found
+Impa1	mouse	unmatched			approved_exact	Impa1	MGI:1933158	IMPA1	one_to_one
+Impa2	mouse	unmatched			approved_exact	Impa2	MGI:2149728	IMPA2	one_to_one
+Impad1	mouse	unmatched			alias_unique	Bpnt2	MGI:1915720	BPNT2	one_to_one
+Impdh1	mouse	unmatched			approved_exact	Impdh1	MGI:96567	IMPDH1	one_to_one
+Impdh2	mouse	unmatched			approved_exact	Impdh2	MGI:109367	IMPDH2	one_to_one
+Isoc2a	mouse	unmatched			approved_exact	Isoc2a	MGI:3609243		not_found
+Isyna1	mouse	unmatched			approved_exact	Isyna1	MGI:1919030	ISYNA1	one_to_one
+Ivd	mouse	unmatched			approved_exact	Ivd	MGI:1929242	IVD	one_to_one
+Jmjd4	mouse	unmatched			approved_exact	Jmjd4	MGI:2144404	JMJD4	one_to_one
+Jmjd6	mouse	unmatched			approved_exact	Jmjd6	MGI:1858910	JMJD6	one_to_one
+Jmjd7	mouse	unmatched			approved_exact	Jmjd7	MGI:3845785	JMJD7	one_to_one
+Jmjd8	mouse	unmatched			approved_exact	Jmjd8	MGI:1919356	JMJD8	one_to_one
+Kars	mouse	unmatched			alias_unique	Kars1	MGI:1934754	KARS1	one_to_one
+Kat3	mouse	unmatched			alias_unique	Kyat3	MGI:2677849	KYAT3	one_to_one
+Kdsr	mouse	unmatched			approved_exact	Kdsr	MGI:1918000	KDSR	one_to_one
+Khk	mouse	unmatched			approved_exact	Khk	MGI:1096353	KHK	one_to_one
+Kmo	mouse	unmatched			approved_exact	Kmo	MGI:2138151	KMO	one_to_one
+Kynu	mouse	unmatched			approved_exact	Kynu	MGI:1918039	KYNU	one_to_one
+L2hgdh	mouse	unmatched			approved_exact	L2hgdh	MGI:2384968	L2HGDH	one_to_one
+Lactb	mouse	unmatched			approved_exact	Lactb	MGI:1933395	LACTB	one_to_one
+Lactb2	mouse	unmatched			approved_exact	Lactb2	MGI:2442551	LACTB2	one_to_one
+Lars	mouse	unmatched			alias_unique	Lars1	MGI:1913808	LARS1	one_to_one
+Lars2	mouse	unmatched			approved_exact	Lars2	MGI:2142973	LARS2	one_to_one
+Lclat1	mouse	unmatched			approved_exact	Lclat1	MGI:2684937	LCLAT1	one_to_one
+Ldha	mouse	unmatched			approved_exact	Ldha	MGI:96759	LDHA	one_to_one
+Ldhal6a	unresolved	unmatched			unmatched				not_found
+Ldhal6b	mouse	unmatched			approved_exact	Ldhal6b	MGI:2146830		not_found
+Ldhb	mouse	unmatched			approved_exact	Ldhb	MGI:96763	LDHB	one_to_one
+Ldhc	mouse	unmatched			approved_exact	Ldhc	MGI:96764	LDHC	one_to_one
+Ldhd	mouse	unmatched			approved_exact	Ldhd	MGI:106428	LDHD	one_to_one
+Lhpp	mouse	unmatched			approved_exact	Lhpp	MGI:1923679	LHPP	one_to_one
+Lias	mouse	unmatched			approved_exact	Lias	MGI:1934604	LIAS	one_to_one
+Lipa	mouse	unmatched			approved_exact	Lipa	MGI:96789	LIPA	one_to_one
+Lipc	mouse	unmatched			approved_exact	Lipc	MGI:96216	LIPC	one_to_one
+Lipf	mouse	unmatched			approved_exact	Lipf	MGI:1914967	LIPF	one_to_one
+Lipg	mouse	unmatched			approved_exact	Lipg	MGI:1341803	LIPG	one_to_one
+Lipt1	mouse	unmatched			approved_exact	Lipt1	MGI:3645211	LIPT1	one_to_one
+Lipt2	mouse	unmatched			approved_exact	Lipt2	MGI:1914414	LIPT2	one_to_one
+Lpcat1	mouse	unmatched			approved_exact	Lpcat1	MGI:2384812	LPCAT1	one_to_one
+Lpcat2	mouse	unmatched			approved_exact	Lpcat2	MGI:3606214	LPCAT2	one_to_one
+Lpcat3	mouse	unmatched			approved_exact	Lpcat3	MGI:1315211	LPCAT3	one_to_one
+Lpcat4	mouse	unmatched			approved_exact	Lpcat4	MGI:2138993	LPCAT4	one_to_one
+Lpin1	mouse	unmatched			approved_exact	Lpin1	MGI:1891340	LPIN1	one_to_one
+Lpin2	mouse	unmatched			approved_exact	Lpin2	MGI:1891341	LPIN2	one_to_one
+Lpin3	mouse	unmatched			approved_exact	Lpin3	MGI:1891342	LPIN3	one_to_one
+Lpl	mouse	unmatched			approved_exact	Lpl	MGI:96820	LPL	one_to_one
+Lrat	mouse	unmatched			approved_exact	Lrat	MGI:1891259	LRAT	one_to_one
+Lss	mouse	unmatched			approved_exact	Lss	MGI:1336155	LSS	one_to_one
+Lypla1	mouse	unmatched			approved_exact	Lypla1	MGI:1344588	LYPLA1	one_to_one
+Lypla2	mouse	unmatched			approved_exact	Lypla2	MGI:1347000	LYPLA2	one_to_one
+Lyplal1	mouse	unmatched			approved_exact	Lyplal1	MGI:2385115	LYPLAL1	one_to_one
+Macrod1	mouse	unmatched			approved_exact	Macrod1	MGI:2147583	MACROD1	one_to_one
+Macrod2	mouse	unmatched			approved_exact	Macrod2	MGI:1920149	MACROD2	one_to_one
+Maoa	mouse	unmatched			approved_exact	Maoa	MGI:96915	MAOA	one_to_one
+Maob	mouse	unmatched			approved_exact	Maob	MGI:96916	MAOB	one_to_one
+Marc1	mouse	unmatched			alias_unique	Mtarc1	MGI:1913362	MTARC1	one_to_one
+Marc2	unresolved	unmatched			alias_ambiguous	Mtarc2|Nes			not_found
+Mars	mouse	unmatched			alias_unique	Mars1	MGI:1345633	MARS1	one_to_one
+Mars2	mouse	unmatched			approved_exact	Mars2	MGI:2444136	MARS2	one_to_one
+Mat1a	mouse	unmatched			approved_exact	Mat1a	MGI:88017	MAT1A	one_to_one
+Mat2a	mouse	unmatched			approved_exact	Mat2a	MGI:2443731	MAT2A	one_to_one
+Mat2b	mouse	unmatched			approved_exact	Mat2b	MGI:1913667	MAT2B	one_to_one
+Mboat1	mouse	unmatched			approved_exact	Mboat1	MGI:2387184	MBOAT1	one_to_one
+Mboat2	mouse	unmatched			approved_exact	Mboat2	MGI:1914466	MBOAT2	one_to_one
+Mcat	mouse	unmatched			approved_exact	Mcat	MGI:2388651	MCAT	one_to_one
+Mccc1	mouse	unmatched			approved_exact	Mccc1	MGI:1919289	MCCC1	one_to_one
+Mccc2	mouse	unmatched			approved_exact	Mccc2	MGI:1925288	MCCC2	one_to_one
+Mcee	mouse	unmatched			approved_exact	Mcee	MGI:1920974	MCEE	one_to_one
+Mdh1	mouse	unmatched			approved_exact	Mdh1	MGI:97051	MDH1	one_to_one
+Mdh2	mouse	unmatched			approved_exact	Mdh2	MGI:97050	MDH2	one_to_one
+Mdp1	mouse	unmatched			approved_exact	Mdp1	MGI:1915131	MDP1	one_to_one
+Me1	mouse	unmatched			approved_exact	Me1	MGI:97043	ME1	one_to_one
+Me2	mouse	unmatched			approved_exact	Me2	MGI:2147351	ME2	one_to_one
+Me3	mouse	unmatched			approved_exact	Me3	MGI:1916679	ME3	one_to_one
+Mecr	mouse	unmatched			approved_exact	Mecr	MGI:1349441	MECR	one_to_one
+Metap1d	mouse	unmatched			approved_exact	Metap1d	MGI:1913809	METAP1D	one_to_one
+Mettl1	mouse	unmatched			approved_exact	Mettl1	MGI:1339986	METTL1	one_to_one
+Mettl10	mouse	unmatched			alias_unique	Eef1akmt2	MGI:1919346	EEF1AKMT2	one_to_one
+Mettl13	mouse	unmatched			approved_exact	Mettl13	MGI:1918699	METTL13	one_to_one
+Mettl14	mouse	unmatched			approved_exact	Mettl14	MGI:2442926	METTL14	one_to_one
+Mettl15	mouse	unmatched			approved_exact	Mettl15	MGI:1924144		not_found
+Mettl16	mouse	unmatched			approved_exact	Mettl16	MGI:1914743	METTL16	one_to_one
+Mettl17	mouse	unmatched			approved_exact	Mettl17	MGI:1098577	METTL17	one_to_one
+Mettl18	mouse	unmatched			approved_exact	Mettl18	MGI:1917212	METTL18	one_to_one
+Mettl2	mouse	unmatched			approved_exact	Mettl2	MGI:1289171		not_found
+Mettl20	mouse	unmatched			alias_unique	Etfbkmt	MGI:2443575	ETFBKMT	one_to_one
+Mettl3	mouse	unmatched			approved_exact	Mettl3	MGI:1927165	METTL3	one_to_one
+Mettl4	mouse	unmatched			approved_exact	Mettl4	MGI:1924031	METTL4	one_to_one
+Mettl5	mouse	unmatched			approved_exact	Mettl5	MGI:1922672	METTL5	one_to_one
+Mettl6	mouse	unmatched			approved_exact	Mettl6	MGI:1914261	METTL6	one_to_one
+Mettl8	mouse	unmatched			approved_exact	Mettl8	MGI:2385142	METTL8	one_to_one
+Mettl9	mouse	unmatched			approved_exact	Mettl9	MGI:1914862	METTL9	one_to_one
+Mgam	mouse	unmatched			approved_exact	Mgam	MGI:1203495	MGAM	one_to_one
+Mgll	mouse	unmatched			approved_exact	Mgll	MGI:1346042	MGLL	one_to_one
+Mgme1	mouse	unmatched			approved_exact	Mgme1	MGI:1921778	MGME1	one_to_one
+Mgmt	mouse	unmatched			approved_exact	Mgmt	MGI:96977	MGMT	one_to_one
+Mgst1	mouse	unmatched			approved_exact	Mgst1	MGI:1913850	MGST1	one_to_one
+Mgst2	mouse	unmatched			approved_exact	Mgst2	MGI:2448481	MGST2	one_to_one
+Mgst3	mouse	unmatched			approved_exact	Mgst3	MGI:1913697	MGST3	one_to_one
+Miox	mouse	unmatched			approved_exact	Miox	MGI:1891725	MIOX	one_to_one
+Mlycd	mouse	unmatched			approved_exact	Mlycd	MGI:1928485	MLYCD	one_to_one
+Mmab	mouse	unmatched			approved_exact	Mmab	MGI:1924947	MMAB	one_to_one
+Mmachc	mouse	unmatched			approved_exact	Mmachc	MGI:1914346	MMACHC	one_to_one
+Mocs1	mouse	unmatched			approved_exact	Mocs1	MGI:1928904	MOCS1	one_to_one
+Mocs2	mouse	unmatched			approved_exact	Mocs2	MGI:1336894	MOCS2	one_to_one
+Mocs3	mouse	unmatched			approved_exact	Mocs3	MGI:1916622	MOCS3	one_to_one
+Mogat1	mouse	unmatched			approved_exact	Mogat1	MGI:1915643	MOGAT1	one_to_one
+Mogat2	mouse	unmatched			approved_exact	Mogat2	MGI:2663253	MOGAT2	one_to_one
+Mogat3	unresolved	unmatched			unmatched				not_found
+Mpi	mouse	unmatched			approved_exact	Mpi	MGI:97075	MPI	one_to_one
+Mpst	mouse	unmatched			approved_exact	Mpst	MGI:2179733	MPST	one_to_one
+Mrm1	mouse	unmatched			approved_exact	Mrm1	MGI:2443470	MRM1	one_to_one
+Mrm2	mouse	unmatched			approved_exact	Mrm2	MGI:1915267	MRM2	one_to_one
+Msra	mouse	unmatched			approved_exact	Msra	MGI:106916	MSRA	one_to_one
+Msrb1	mouse	unmatched			approved_exact	Msrb1	MGI:1351642	MSRB1	one_to_one
+Msrb2	mouse	unmatched			approved_exact	Msrb2	MGI:1923717	MSRB2	one_to_one
+Msrb3	mouse	unmatched			approved_exact	Msrb3	MGI:2443538	MSRB3	one_to_one
+mt-Co1	mouse	unmatched			approved_exact	mt-Co1	MGI:102504	COX1	one_to_one
+mt-Co2	mouse	unmatched			approved_exact	mt-Co2	MGI:102503	COX2	one_to_one
+mt-Co3	mouse	unmatched			approved_exact	mt-Co3	MGI:102502	COX3	one_to_one
+Mthfd1	mouse	unmatched			approved_exact	Mthfd1	MGI:1342005	MTHFD1	one_to_one
+Mthfd1l	mouse	unmatched			approved_exact	Mthfd1l	MGI:1924836	MTHFD1L	one_to_one
+Mthfd2	mouse	unmatched			approved_exact	Mthfd2	MGI:1338850	MTHFD2	one_to_one
+Mthfd2l	mouse	unmatched			approved_exact	Mthfd2l	MGI:1915871	MTHFD2L	one_to_one
+Mthfr	mouse	unmatched			approved_exact	Mthfr	MGI:106639	MTHFR	one_to_one
+Mthfs	mouse	unmatched			approved_exact	Mthfs	MGI:1340032		not_found
+mt-Nd1	mouse	unmatched			approved_exact	mt-Nd1	MGI:101787	ND1	one_to_one
+mt-Nd2	mouse	unmatched			approved_exact	mt-Nd2	MGI:102500	ND2	one_to_one
+mt-Nd3	mouse	unmatched			approved_exact	mt-Nd3	MGI:102499	ND3	one_to_one
+mt-Nd4	mouse	unmatched			approved_exact	mt-Nd4	MGI:102498	ND4	one_to_one
+mt-Nd4l	mouse	unmatched			approved_exact	mt-Nd4l	MGI:102497	ND4L	one_to_one
+mt-Nd5	mouse	unmatched			approved_exact	mt-Nd5	MGI:102496	ND5	one_to_one
+mt-Nd6	mouse	unmatched			approved_exact	mt-Nd6	MGI:102495	ND6	one_to_one
+Mto1	mouse	unmatched			approved_exact	Mto1	MGI:1915541	MTO1	one_to_one
+Mtr	mouse	unmatched			approved_exact	Mtr	MGI:894292	MTR	one_to_one
+Mut	mouse	unmatched			alias_unique	Mmut	MGI:97239	MMUT	one_to_one
+Mutyh	mouse	unmatched			approved_exact	Mutyh	MGI:1917853	MUTYH	one_to_one
+Mvd	mouse	unmatched			approved_exact	Mvd	MGI:2179327	MVD	one_to_one
+Mvk	mouse	unmatched			approved_exact	Mvk	MGI:107624	MVK	one_to_one
+Nadk	mouse	unmatched			approved_exact	Nadk	MGI:2183149	NADK	one_to_one
+Nadk2	mouse	unmatched			approved_exact	Nadk2	MGI:1915896	NADK2	one_to_one
+Nadsyn1	mouse	unmatched			approved_exact	Nadsyn1	MGI:1926164	NADSYN1	one_to_one
+Naglu	mouse	unmatched			approved_exact	Naglu	MGI:1351641	NAGLU	one_to_one
+Nags	mouse	unmatched			approved_exact	Nags	MGI:2387600	NAGS	one_to_one
+Nanp	mouse	unmatched			approved_exact	Nanp	MGI:1914561	NANP	one_to_one
+Nans	mouse	unmatched			approved_exact	Nans	MGI:2149820	NANS	one_to_one
+Naprt1	mouse	unmatched			alias_unique	Naprt	MGI:2442664	NAPRT	one_to_one
+Nars2	mouse	unmatched			approved_exact	Nars2	MGI:2142075	NARS2	one_to_one
+Nat1	mouse	unmatched			approved_exact	Nat1	MGI:97279		not_found
+Nat2	mouse	unmatched			approved_exact	Nat2	MGI:109201		not_found
+Nat3	mouse	unmatched			approved_exact	Nat3	MGI:102537		not_found
+Naxd	mouse	unmatched			approved_exact	Naxd	MGI:1913353	NAXD	one_to_one
+ND1	unresolved	alias_symbol_ambiguous	IVNS1ABP|MT-ND1		alias_ambiguous	Avpr2|Ivns1abp|mt-Nd1			not_found
+ND2	human	alias_symbol_unique	MT-ND2	HGNC:7456	unmatched			MT-ND2	not_needed
+ND3	human	alias_symbol_unique	MT-ND3	HGNC:7458	unmatched			MT-ND3	not_needed
+ND4	human_and_mouse	alias_symbol_unique	MT-ND4	HGNC:7459	alias_unique	Tg(PLP1*)4Rsj	MGI:4459440	MT-ND4	not_needed
+ND4L	human	alias_symbol_unique	MT-ND4L	HGNC:7460	unmatched			MT-ND4L	not_needed
+ND5	human	alias_symbol_unique	MT-ND5	HGNC:7461	unmatched			MT-ND5	not_needed
+ND6	human	alias_symbol_unique	MT-ND6	HGNC:7462	unmatched			MT-ND6	not_needed
+Ndor1	mouse	unmatched			approved_exact	Ndor1	MGI:1926047	NDOR1	one_to_one
+Ndufa1	mouse	unmatched			approved_exact	Ndufa1	MGI:1929511	NDUFA1	one_to_one
+Ndufa10	mouse	unmatched			approved_exact	Ndufa10	MGI:1914523	NDUFA10	one_to_one
+Ndufa11	mouse	unmatched			approved_exact	Ndufa11	MGI:1917125	NDUFA11	one_to_one
+Ndufa12	mouse	unmatched			approved_exact	Ndufa12	MGI:1913664	NDUFA12	one_to_one
+Ndufa13	mouse	unmatched			approved_exact	Ndufa13	MGI:1914434	NDUFA13	one_to_one
+Ndufa2	mouse	unmatched			approved_exact	Ndufa2	MGI:1343103	NDUFA2	one_to_one
+Ndufa3	mouse	unmatched			approved_exact	Ndufa3	MGI:1913341	NDUFA3	one_to_one
+Ndufa4	mouse	unmatched			alias_unique	Coxfa4	MGI:107686	COXFA4	one_to_one
+Ndufa5	mouse	unmatched			approved_exact	Ndufa5	MGI:1915452	NDUFA5	one_to_one
+Ndufa6	mouse	unmatched			approved_exact	Ndufa6	MGI:1914380	NDUFA6	one_to_one
+Ndufa7	mouse	unmatched			approved_exact	Ndufa7	MGI:1913666	NDUFA7	one_to_one
+Ndufa8	mouse	unmatched			approved_exact	Ndufa8	MGI:1915625	NDUFA8	one_to_one
+Ndufa9	mouse	unmatched			approved_exact	Ndufa9	MGI:1913358	NDUFA9	one_to_one
+Ndufaf1	mouse	unmatched			approved_exact	Ndufaf1	MGI:1916952	NDUFAF1	one_to_one
+Ndufaf2	mouse	unmatched			approved_exact	Ndufaf2	MGI:1922847	NDUFAF2	one_to_one
+Ndufaf3	mouse	unmatched			approved_exact	Ndufaf3	MGI:1913956	NDUFAF3	one_to_one
+Ndufaf4	mouse	unmatched			approved_exact	Ndufaf4	MGI:1915743	NDUFAF4	one_to_one
+Ndufaf5	mouse	unmatched			approved_exact	Ndufaf5	MGI:1916737	NDUFAF5	one_to_one
+Ndufaf6	mouse	unmatched			approved_exact	Ndufaf6	MGI:1924197	NDUFAF6	one_to_one
+Ndufaf7	mouse	unmatched			approved_exact	Ndufaf7	MGI:1920944	NDUFAF7	one_to_one
+Ndufaf8	mouse	unmatched			approved_exact	Ndufaf8	MGI:1913676	NDUFAF8	one_to_one
+Ndufb1	mouse	unmatched			approved_exact	Ndufb1	MGI:3780865	NDUFB1	one_to_one
+Ndufb10	mouse	unmatched			approved_exact	Ndufb10	MGI:1915592	NDUFB10	one_to_one
+Ndufb11	mouse	unmatched			approved_exact	Ndufb11	MGI:1349919		not_found
+Ndufb2	mouse	unmatched			approved_exact	Ndufb2	MGI:1915448	NDUFB2	one_to_one
+Ndufb3	mouse	unmatched			approved_exact	Ndufb3	MGI:1913745	NDUFB3	one_to_one
+Ndufb4	mouse	unmatched			approved_exact	Ndufb4	MGI:1915444		not_found
+Ndufb5	mouse	unmatched			approved_exact	Ndufb5	MGI:1913296	NDUFB5	one_to_one
+Ndufb6	mouse	unmatched			approved_exact	Ndufb6	MGI:2684983	NDUFB6	one_to_one
+Ndufb7	mouse	unmatched			approved_exact	Ndufb7	MGI:1914166	NDUFB7	one_to_one
+Ndufb8	mouse	unmatched			approved_exact	Ndufb8	MGI:1914514	NDUFB8	one_to_one
+Ndufb9	mouse	unmatched			approved_exact	Ndufb9	MGI:1913468	NDUFB9	one_to_one
+Ndufc1	mouse	unmatched			approved_exact	Ndufc1	MGI:1913627	NDUFC1	one_to_one
+Ndufc2	mouse	unmatched			approved_exact	Ndufc2	MGI:1344370		not_found
+Ndufs1	mouse	unmatched			approved_exact	Ndufs1	MGI:2443241	NDUFS1	one_to_one
+Ndufs2	mouse	unmatched			approved_exact	Ndufs2	MGI:2385112	NDUFS2	one_to_one
+Ndufs3	mouse	unmatched			approved_exact	Ndufs3	MGI:1915599	NDUFS3	one_to_one
+Ndufs4	mouse	unmatched			approved_exact	Ndufs4	MGI:1343135	NDUFS4	one_to_one
+Ndufs5	mouse	unmatched			approved_exact	Ndufs5	MGI:1890889	NDUFS5	one_to_one
+Ndufs6	mouse	unmatched			approved_exact	Ndufs6	MGI:107932	NDUFS6	one_to_one
+Ndufs7	mouse	unmatched			approved_exact	Ndufs7	MGI:1922656	NDUFS7	one_to_one
+Ndufs8	mouse	unmatched			approved_exact	Ndufs8	MGI:2385079	NDUFS8	one_to_one
+Ndufv1	mouse	unmatched			approved_exact	Ndufv1	MGI:107851	NDUFV1	one_to_one
+Ndufv2	mouse	unmatched			approved_exact	Ndufv2	MGI:1920150	NDUFV2	one_to_one
+Ndufv3	mouse	unmatched			approved_exact	Ndufv3	MGI:1890894	NDUFV3	one_to_one
+Neu1	mouse	unmatched			approved_exact	Neu1	MGI:97305	NEU1	one_to_one
+Neu2	mouse	unmatched			approved_exact	Neu2	MGI:1344417	NEU2	one_to_one
+Neu3	mouse	unmatched			approved_exact	Neu3	MGI:1355305	NEU3	one_to_one
+Neu4	mouse	unmatched			approved_exact	Neu4	MGI:2661364	NEU4	one_to_one
+Nfs1	mouse	unmatched			approved_exact	Nfs1	MGI:1316706	NFS1	one_to_one
+Nit1	mouse	unmatched			approved_exact	Nit1	MGI:1350916	NIT1	one_to_one
+Nit2	mouse	unmatched			approved_exact	Nit2	MGI:1261838	NIT2	one_to_one
+Nme1	mouse	unmatched			approved_exact	Nme1	MGI:97355	NME1	one_to_one
+Nme2	mouse	unmatched			approved_exact	Nme2	MGI:97356		not_found
+Nme2p1	unresolved	unmatched			unmatched				not_found
+Nme3	mouse	unmatched			approved_exact	Nme3	MGI:1930182	NME3	one_to_one
+Nme4	mouse	unmatched			approved_exact	Nme4	MGI:1931148	NME4	one_to_one
+Nme5	mouse	unmatched			approved_exact	Nme5	MGI:1922783	NME5	one_to_one
+Nme6	mouse	unmatched			approved_exact	Nme6	MGI:1861676	NME6	one_to_one
+Nme7	mouse	unmatched			approved_exact	Nme7	MGI:2449121	NME7	one_to_one
+Nmnat1	mouse	unmatched			approved_exact	Nmnat1	MGI:1913704	NMNAT1	one_to_one
+Nmnat2	mouse	unmatched			approved_exact	Nmnat2	MGI:2444155	NMNAT2	one_to_one
+Nmnat3	mouse	unmatched			approved_exact	Nmnat3	MGI:1921330	NMNAT3	one_to_one
+Nnt	mouse	unmatched			approved_exact	Nnt	MGI:109279	NNT	one_to_one
+Nos1	mouse	unmatched			approved_exact	Nos1	MGI:97360	NOS1	one_to_one
+Nos2	mouse	unmatched			approved_exact	Nos2	MGI:97361	NOS2	one_to_one
+Nos3	mouse	unmatched			approved_exact	Nos3	MGI:97362	NOS3	one_to_one
+Npl	mouse	unmatched			approved_exact	Npl	MGI:1921341	NPL	one_to_one
+Nrd1	mouse	unmatched			alias_unique	Nrdc	MGI:1201386	NRDC	one_to_one
+Nsun2	mouse	unmatched			approved_exact	Nsun2	MGI:107252	NSUN2	one_to_one
+Nsun3	mouse	unmatched			approved_exact	Nsun3	MGI:2146565	NSUN3	one_to_one
+Nsun4	mouse	unmatched			approved_exact	Nsun4	MGI:1919431	NSUN4	one_to_one
+Nsun5	mouse	unmatched			approved_exact	Nsun5	MGI:2140844		not_found
+Nsun6	mouse	unmatched			approved_exact	Nsun6	MGI:1921705	NSUN6	one_to_one
+Nsun7	mouse	unmatched			approved_exact	Nsun7	MGI:1918168	NSUN7	one_to_one
+Nt5c	mouse	unmatched			approved_exact	Nt5c	MGI:1354954	NT5C	one_to_one
+Nt5c1a	mouse	unmatched			approved_exact	Nt5c1a	MGI:2155700	NT5C1A	one_to_one
+Nt5c1b	mouse	unmatched			approved_exact	Nt5c1b	MGI:1918131		not_found
+Nt5c2	mouse	unmatched			approved_exact	Nt5c2	MGI:2178563	NT5C2	one_to_one
+Nt5c3a	unresolved	unmatched			unmatched				not_found
+Nt5c3b	mouse	unmatched			approved_exact	Nt5c3b	MGI:1915356	NT5C3B	one_to_one
+Nt5dc1	mouse	unmatched			approved_exact	Nt5dc1	MGI:2442446	NT5DC1	one_to_one
+Nt5dc2	mouse	unmatched			approved_exact	Nt5dc2	MGI:1917271	NT5DC2	one_to_one
+Nt5dc3	mouse	unmatched			approved_exact	Nt5dc3	MGI:3513266	NT5DC3	one_to_one
+Nt5dc4	unresolved	unmatched			unmatched				not_found
+Nt5e	mouse	unmatched			approved_exact	Nt5e	MGI:99782	NT5E	one_to_one
+Nt5m	mouse	unmatched			approved_exact	Nt5m	MGI:1917127	NT5M	one_to_one
+Nthl1	mouse	unmatched			approved_exact	Nthl1	MGI:1313275	NTHL1	one_to_one
+Ntpcr	mouse	unmatched			approved_exact	Ntpcr	MGI:1913816	NTPCR	one_to_one
+Nudt1	mouse	unmatched			approved_exact	Nudt1	MGI:109280	NUDT1	one_to_one
+Nudt10	mouse	unmatched			approved_exact	Nudt10	MGI:2147931		not_found
+Nudt11	mouse	unmatched			approved_exact	Nudt11	MGI:1930957		not_found
+Nudt12	mouse	unmatched			approved_exact	Nudt12	MGI:1915243	NUDT12	one_to_one
+Nudt13	mouse	unmatched			approved_exact	Nudt13	MGI:1914975	NUDT13	one_to_one
+Nudt14	mouse	unmatched			approved_exact	Nudt14	MGI:1913424	NUDT14	one_to_one
+Nudt15	mouse	unmatched			approved_exact	Nudt15	MGI:2443366	NUDT15	one_to_one
+Nudt16	mouse	unmatched			approved_exact	Nudt16	MGI:1922936	NUDT16	one_to_one
+Nudt17	mouse	unmatched			approved_exact	Nudt17	MGI:1925623	NUDT17	one_to_one
+Nudt18	mouse	unmatched			approved_exact	Nudt18	MGI:2385853	NUDT18	one_to_one
+Nudt19	mouse	unmatched			approved_exact	Nudt19	MGI:94203	NUDT19	one_to_one
+Nudt2	mouse	unmatched			approved_exact	Nudt2	MGI:1913651	NUDT2	one_to_one
+Nudt3	mouse	unmatched			approved_exact	Nudt3	MGI:1928484	NUDT3	one_to_one
+Nudt4	mouse	unmatched			approved_exact	Nudt4	MGI:1918457	NUDT4	one_to_one
+Nudt5	mouse	unmatched			approved_exact	Nudt5	MGI:1858232	NUDT5	one_to_one
+Nudt6	mouse	unmatched			approved_exact	Nudt6	MGI:2387618	NUDT6	one_to_one
+Nudt7	mouse	unmatched			approved_exact	Nudt7	MGI:1914778	NUDT7	one_to_one
+Nudt8	mouse	unmatched			approved_exact	Nudt8	MGI:1913637	NUDT8	one_to_one
+Nudt9	mouse	unmatched			approved_exact	Nudt9	MGI:1921417	NUDT9	one_to_one
+Oat	mouse	unmatched			approved_exact	Oat	MGI:97394	OAT	one_to_one
+Obscn	mouse	unmatched			approved_exact	Obscn	MGI:2681862	OBSCN	one_to_one
+Odc1	mouse	unmatched			approved_exact	Odc1	MGI:97402	ODC1	one_to_one
+Ogdh	mouse	unmatched			approved_exact	Ogdh	MGI:1098267	OGDH	one_to_one
+Ogdhl	mouse	unmatched			approved_exact	Ogdhl	MGI:3616088	OGDHL	one_to_one
+Ogg1	mouse	unmatched			approved_exact	Ogg1	MGI:1097693	OGG1	one_to_one
+Olah	mouse	unmatched			approved_exact	Olah	MGI:2139018	OLAH	one_to_one
+Ostc	mouse	unmatched			approved_exact	Ostc	MGI:1913607	OSTC	one_to_one
+Otc	mouse	unmatched			approved_exact	Otc	MGI:97448	OTC	one_to_one
+Oxct1	mouse	unmatched			approved_exact	Oxct1	MGI:1914291	OXCT1	one_to_one
+Oxct2	mouse	unmatched			alias_unique	Oxct2a	MGI:1891061		not_found
+Oxct2a	mouse	unmatched			approved_exact	Oxct2a	MGI:1891061		not_found
+Oxct2b	mouse	unmatched			approved_exact	Oxct2b	MGI:2664115		not_found
+Oxnad1	mouse	unmatched			approved_exact	Oxnad1	MGI:1916953	OXNAD1	one_to_one
+Oxsm	mouse	unmatched			approved_exact	Oxsm	MGI:1918397	OXSM	one_to_one
+P4ha1	mouse	unmatched			approved_exact	P4ha1	MGI:97463	P4HA1	one_to_one
+P4ha2	mouse	unmatched			approved_exact	P4ha2	MGI:894286	P4HA2	one_to_one
+P4ha3	mouse	unmatched			approved_exact	P4ha3	MGI:2444049	P4HA3	one_to_one
+P4hb	mouse	unmatched			approved_exact	P4hb	MGI:97464	P4HB	one_to_one
+Pah	mouse	unmatched			approved_exact	Pah	MGI:97473	PAH	one_to_one
+Paics	mouse	unmatched			approved_exact	Paics	MGI:1914304	PAICS	one_to_one
+Pank1	mouse	unmatched			approved_exact	Pank1	MGI:1922985	PANK1	one_to_one
+Pank2	mouse	unmatched			approved_exact	Pank2	MGI:1921700	PANK2	one_to_one
+Pank3	mouse	unmatched			approved_exact	Pank3	MGI:2387464	PANK3	one_to_one
+Pank4	mouse	unmatched			approved_exact	Pank4	MGI:2387466	PANK4	one_to_one
+Papd4	mouse	unmatched			alias_unique	Tent2	MGI:2140950	TENT2	one_to_one
+Papd5	mouse	unmatched			alias_unique	Tent4b	MGI:1917820	TENT4B	one_to_one
+Papd7	mouse	unmatched			alias_unique	Tent4a	MGI:2682295	TENT4A	one_to_one
+Papss1	mouse	unmatched			approved_exact	Papss1	MGI:1330587	PAPSS1	one_to_one
+Papss2	mouse	unmatched			approved_exact	Papss2	MGI:1330223	PAPSS2	one_to_one
+Park2	mouse	unmatched			alias_unique	Prkn	MGI:1355296	PRKN	one_to_one
+Park7	mouse	unmatched			approved_exact	Park7	MGI:2135637	PARK7	one_to_one
+Pars2	mouse	unmatched			approved_exact	Pars2	MGI:2386296	PARS2	one_to_one
+Pc	mouse	unmatched			alias_unique	Pcx	MGI:97520	PC	one_to_one
+Pcbd1	mouse	unmatched			approved_exact	Pcbd1	MGI:94873	PCBD1	one_to_one
+Pcbd2	mouse	unmatched			approved_exact	Pcbd2	MGI:1919812	PCBD2	one_to_one
+Pcca	mouse	unmatched			approved_exact	Pcca	MGI:97499	PCCA	one_to_one
+Pccb	mouse	unmatched			approved_exact	Pccb	MGI:1914154	PCCB	one_to_one
+Pck1	mouse	unmatched			approved_exact	Pck1	MGI:97501	PCK1	one_to_one
+Pck2	mouse	unmatched			approved_exact	Pck2	MGI:1860456	PCK2	one_to_one
+Pcx	mouse	unmatched			approved_exact	Pcx	MGI:97520	PC	one_to_one
+Pcyt1a	mouse	unmatched			approved_exact	Pcyt1a	MGI:88557	PCYT1A	one_to_one
+Pcyt1b	mouse	unmatched			approved_exact	Pcyt1b	MGI:2147987	PCYT1B	one_to_one
+Pcyt2	mouse	unmatched			approved_exact	Pcyt2	MGI:1915921	PCYT2	one_to_one
+Pde10a	mouse	unmatched			approved_exact	Pde10a	MGI:1345143	PDE10A	one_to_one
+Pde11a	mouse	unmatched			approved_exact	Pde11a	MGI:3036251	PDE11A	one_to_one
+Pde12	mouse	unmatched			approved_exact	Pde12	MGI:2443226	PDE12	one_to_one
+Pde1a	mouse	unmatched			approved_exact	Pde1a	MGI:1201792	PDE1A	one_to_one
+Pde1b	mouse	unmatched			approved_exact	Pde1b	MGI:97523	PDE1B	one_to_one
+Pde1c	mouse	unmatched			approved_exact	Pde1c	MGI:108413	PDE1C	one_to_one
+Pde2a	mouse	unmatched			approved_exact	Pde2a	MGI:2446107	PDE2A	one_to_one
+Pde3a	mouse	unmatched			approved_exact	Pde3a	MGI:1860764	PDE3A	one_to_one
+Pde3b	mouse	unmatched			approved_exact	Pde3b	MGI:1333863	PDE3B	one_to_one
+Pde4a	mouse	unmatched			approved_exact	Pde4a	MGI:99558	PDE4A	one_to_one
+Pde4b	mouse	unmatched			approved_exact	Pde4b	MGI:99557	PDE4B	one_to_one
+Pde4c	mouse	unmatched			approved_exact	Pde4c	MGI:99556	PDE4C	one_to_one
+Pde4d	mouse	unmatched			approved_exact	Pde4d	MGI:99555	PDE4D	one_to_one
+Pde5a	mouse	unmatched			approved_exact	Pde5a	MGI:2651499	PDE5A	one_to_one
+Pde6a	mouse	unmatched			approved_exact	Pde6a	MGI:97524	PDE6A	one_to_one
+Pde6b	mouse	unmatched			approved_exact	Pde6b	MGI:97525	PDE6B	one_to_one
+Pde6c	mouse	unmatched			approved_exact	Pde6c	MGI:105956	PDE6C	one_to_one
+Pde6d	mouse	unmatched			approved_exact	Pde6d	MGI:1270843	PDE6D	one_to_one
+Pde7a	mouse	unmatched			approved_exact	Pde7a	MGI:1202402	PDE7A	one_to_one
+Pde7b	mouse	unmatched			approved_exact	Pde7b	MGI:1352752	PDE7B	one_to_one
+Pde8a	mouse	unmatched			approved_exact	Pde8a	MGI:1277116	PDE8A	one_to_one
+Pde8b	mouse	unmatched			approved_exact	Pde8b	MGI:2443999	PDE8B	one_to_one
+Pde9a	mouse	unmatched			approved_exact	Pde9a	MGI:1277179	PDE9A	one_to_one
+Pdha1	mouse	unmatched			approved_exact	Pdha1	MGI:97532	PDHA1	one_to_one
+Pdha2	mouse	unmatched			approved_exact	Pdha2	MGI:97533	PDHA2	one_to_one
+Pdhb	mouse	unmatched			approved_exact	Pdhb	MGI:1915513	PDHB	one_to_one
+Pdhx	mouse	unmatched			approved_exact	Pdhx	MGI:1351627	PDHX	one_to_one
+Pdk1	mouse	unmatched			approved_exact	Pdk1	MGI:1926119	PDK1	one_to_one
+Pdk2	mouse	unmatched			approved_exact	Pdk2	MGI:1343087	PDK2	one_to_one
+Pdk3	mouse	unmatched			approved_exact	Pdk3	MGI:2384308	PDK3	one_to_one
+Pdk4	mouse	unmatched			approved_exact	Pdk4	MGI:1351481	PDK4	one_to_one
+Pdp1	mouse	unmatched			approved_exact	Pdp1	MGI:2685870	PDP1	one_to_one
+Pdp2	mouse	unmatched			approved_exact	Pdp2	MGI:1918878	PDP2	one_to_one
+Pdpr	mouse	unmatched			approved_exact	Pdpr	MGI:2442188	PDPR	one_to_one
+Pdss1	mouse	unmatched			approved_exact	Pdss1	MGI:1889278	PDSS1	one_to_one
+Pdss2	mouse	unmatched			approved_exact	Pdss2	MGI:1918615	PDSS2	one_to_one
+Pdxp	mouse	unmatched			approved_exact	Pdxp	MGI:1919282	PDXP	one_to_one
+Pemt	mouse	unmatched			approved_exact	Pemt	MGI:104535	PEMT	one_to_one
+Peo1	mouse	unmatched			alias_unique	Twnk	MGI:2137410	TWNK	one_to_one
+Pfas	mouse	unmatched			approved_exact	Pfas	MGI:2684864	PFAS	one_to_one
+Pfkfb1	mouse	unmatched			approved_exact	Pfkfb1	MGI:107816	PFKFB1	one_to_one
+Pfkfb2	mouse	unmatched			approved_exact	Pfkfb2	MGI:107815	PFKFB2	one_to_one
+Pfkfb3	mouse	unmatched			approved_exact	Pfkfb3	MGI:2181202	PFKFB3	one_to_one
+Pfkfb4	mouse	unmatched			approved_exact	Pfkfb4	MGI:2687284	PFKFB4	one_to_one
+Pfkl	mouse	unmatched			approved_exact	Pfkl	MGI:97547	PFKL	one_to_one
+Pfkm	mouse	unmatched			approved_exact	Pfkm	MGI:97548	PFKM	one_to_one
+Pfkp	mouse	unmatched			approved_exact	Pfkp	MGI:1891833	PFKP	one_to_one
+Pgam1	mouse	unmatched			approved_exact	Pgam1	MGI:97552		not_found
+Pgam2	mouse	unmatched			approved_exact	Pgam2	MGI:1933118	PGAM2	one_to_one
+Pgam4	unresolved	unmatched			unmatched				not_found
+Pgam5	mouse	unmatched			approved_exact	Pgam5	MGI:1919792	PGAM5	one_to_one
+Pgd	mouse	unmatched			approved_exact	Pgd	MGI:97553	PGD	one_to_one
+Pgk1	mouse	unmatched			approved_exact	Pgk1	MGI:97555	PGK1	one_to_one
+Pgk2	mouse	unmatched			approved_exact	Pgk2	MGI:97563	PGK2	one_to_one
+Pgls	mouse	unmatched			approved_exact	Pgls	MGI:1913421	PGLS	one_to_one
+Pgm1	mouse	unmatched			approved_exact	Pgm1	MGI:97565	PGM1	one_to_one
+Pgm2	mouse	unmatched			approved_exact	Pgm2	MGI:97564	PGM2	one_to_one
+Pgm3	mouse	unmatched			approved_exact	Pgm3	MGI:97566	PGM3	one_to_one
+Pgs1	mouse	unmatched			approved_exact	Pgs1	MGI:1921701	PGS1	one_to_one
+Phgdh	mouse	unmatched			approved_exact	Phgdh	MGI:1355330	PHGDH	one_to_one
+Phka1	mouse	unmatched			approved_exact	Phka1	MGI:97576	PHKA1	one_to_one
+Phka2	mouse	unmatched			approved_exact	Phka2	MGI:97577	PHKA2	one_to_one
+Phkb	mouse	unmatched			approved_exact	Phkb	MGI:97578	PHKB	one_to_one
+Phkg1	mouse	unmatched			approved_exact	Phkg1	MGI:97579	PHKG1	one_to_one
+Phkg2	mouse	unmatched			approved_exact	Phkg2	MGI:1916211	PHKG2	one_to_one
+Phyh	mouse	unmatched			approved_exact	Phyh	MGI:891978	PHYH	one_to_one
+Pigz	mouse	unmatched			approved_exact	Pigz	MGI:2443822	PIGZ	one_to_one
+Pisd	mouse	unmatched			approved_exact	Pisd	MGI:2445114	PISD	one_to_one
+Pklr	mouse	unmatched			approved_exact	Pklr	MGI:97604	PKLR	one_to_one
+Pkm	mouse	unmatched			approved_exact	Pkm	MGI:97591	PKM	one_to_one
+Pla2g10	mouse	unmatched			approved_exact	Pla2g10	MGI:1347522	PLA2G10	one_to_one
+Pla2g12a	mouse	unmatched			approved_exact	Pla2g12a	MGI:1913600	PLA2G12A	one_to_one
+Pla2g12b	mouse	unmatched			approved_exact	Pla2g12b	MGI:1917086	PLA2G12B	one_to_one
+Pla2g15	mouse	unmatched			approved_exact	Pla2g15	MGI:2178076	PLA2G15	one_to_one
+Pla2g16	mouse	unmatched			alias_unique	Plaat3	MGI:2179715	PLAAT3	one_to_one
+Pla2g1b	mouse	unmatched			approved_exact	Pla2g1b	MGI:101842	PLA2G1B	one_to_one
+Pla2g2a	mouse	unmatched			approved_exact	Pla2g2a	MGI:104642		not_found
+Pla2g2c	mouse	unmatched			approved_exact	Pla2g2c	MGI:106638	PLA2G2C	one_to_one
+Pla2g2d	mouse	unmatched			approved_exact	Pla2g2d	MGI:1341796	PLA2G2D	one_to_one
+Pla2g2e	mouse	unmatched			approved_exact	Pla2g2e	MGI:1349660	PLA2G2E	one_to_one
+Pla2g2f	mouse	unmatched			approved_exact	Pla2g2f	MGI:1349661	PLA2G2F	one_to_one
+Pla2g3	mouse	unmatched			approved_exact	Pla2g3	MGI:2444945	PLA2G3	one_to_one
+Pla2g4a	mouse	unmatched			approved_exact	Pla2g4a	MGI:1195256	PLA2G4A	one_to_one
+Pla2g4b	mouse	unmatched			approved_exact	Pla2g4b	MGI:2384819		not_found
+Pla2g4c	mouse	unmatched			approved_exact	Pla2g4c	MGI:1196403	PLA2G4C	one_to_one
+Pla2g4d	mouse	unmatched			approved_exact	Pla2g4d	MGI:1925640	PLA2G4D	one_to_one
+Pla2g4e	mouse	unmatched			approved_exact	Pla2g4e	MGI:1919144	PLA2G4E	one_to_one
+Pla2g4f	mouse	unmatched			approved_exact	Pla2g4f	MGI:2685493	PLA2G4F	one_to_one
+Pla2g5	mouse	unmatched			approved_exact	Pla2g5	MGI:101899	PLA2G5	one_to_one
+Pla2g6	mouse	unmatched			approved_exact	Pla2g6	MGI:1859152	PLA2G6	one_to_one
+Pla2g7	mouse	unmatched			approved_exact	Pla2g7	MGI:1351327	PLA2G7	one_to_one
+Plb1	mouse	unmatched			approved_exact	Plb1	MGI:1922406	PLB1	one_to_one
+Pld1	mouse	unmatched			approved_exact	Pld1	MGI:109585	PLD1	one_to_one
+Pld2	mouse	unmatched			approved_exact	Pld2	MGI:892877	PLD2	one_to_one
+Pld3	mouse	unmatched			approved_exact	Pld3	MGI:1333782	PLD3	one_to_one
+Pld4	mouse	unmatched			approved_exact	Pld4	MGI:2144765	PLD4	one_to_one
+Pld5	mouse	unmatched			approved_exact	Pld5	MGI:2442056	PLD5	one_to_one
+Pld6	mouse	unmatched			approved_exact	Pld6	MGI:2687283	PLD6	one_to_one
+Plod1	mouse	unmatched			approved_exact	Plod1	MGI:99907	PLOD1	one_to_one
+Plod2	mouse	unmatched			approved_exact	Plod2	MGI:1347007	PLOD2	one_to_one
+Plod3	mouse	unmatched			approved_exact	Plod3	MGI:1347008	PLOD3	one_to_one
+Pmm1	mouse	unmatched			approved_exact	Pmm1	MGI:1353418	PMM1	one_to_one
+Pmm2	mouse	unmatched			approved_exact	Pmm2	MGI:1859214	PMM2	one_to_one
+Pmvk	mouse	unmatched			approved_exact	Pmvk	MGI:1915853	PMVK	one_to_one
+Pnlip	mouse	unmatched			approved_exact	Pnlip	MGI:97722	PNLIP	one_to_one
+Pnliprp1	mouse	unmatched			approved_exact	Pnliprp1	MGI:97723	PNLIPRP1	one_to_one
+Pnliprp2	mouse	unmatched			approved_exact	Pnliprp2	MGI:1336202	PNLIPRP2	one_to_one
+Pnliprp3	unresolved	unmatched			unmatched				not_found
+Pnmt	mouse	unmatched			approved_exact	Pnmt	MGI:97724	PNMT	one_to_one
+Pnp	mouse	unmatched			approved_exact	Pnp	MGI:97365		not_found
+Pnpla1	mouse	unmatched			approved_exact	Pnpla1	MGI:3617850	PNPLA1	one_to_one
+Pnpla2	mouse	unmatched			approved_exact	Pnpla2	MGI:1914103	PNPLA2	one_to_one
+Pnpla3	mouse	unmatched			approved_exact	Pnpla3	MGI:2151796	PNPLA3	one_to_one
+Pnpla4	unresolved	unmatched			unmatched				not_found
+Pnpla5	mouse	unmatched			approved_exact	Pnpla5	MGI:1923022	PNPLA5	one_to_one
+Pnpla6	mouse	unmatched			approved_exact	Pnpla6	MGI:1354723	PNPLA6	one_to_one
+Pnpla7	mouse	unmatched			approved_exact	Pnpla7	MGI:2385325	PNPLA7	one_to_one
+Pnpla8	mouse	unmatched			approved_exact	Pnpla8	MGI:1914702	PNPLA8	one_to_one
+Pnpo	mouse	unmatched			approved_exact	Pnpo	MGI:2144151	PNPO	one_to_one
+Pnpt1	mouse	unmatched			approved_exact	Pnpt1	MGI:1918951	PNPT1	one_to_one
+Pola1	mouse	unmatched			approved_exact	Pola1	MGI:99660	POLA1	one_to_one
+Pola2	mouse	unmatched			approved_exact	Pola2	MGI:99690	POLA2	one_to_one
+Polb	mouse	unmatched			approved_exact	Polb	MGI:97740	POLB	one_to_one
+Pold1	mouse	unmatched			approved_exact	Pold1	MGI:97741	POLD1	one_to_one
+Pold2	mouse	unmatched			approved_exact	Pold2	MGI:1097163	POLD2	one_to_one
+Pold3	mouse	unmatched			approved_exact	Pold3	MGI:1915217	POLD3	one_to_one
+Pold4	mouse	unmatched			approved_exact	Pold4	MGI:1916995	POLD4	one_to_one
+Pole	mouse	unmatched			approved_exact	Pole	MGI:1196391	POLE	one_to_one
+Pole2	mouse	unmatched			approved_exact	Pole2	MGI:1197514	POLE2	one_to_one
+Pole3	mouse	unmatched			approved_exact	Pole3	MGI:1933378	POLE3	one_to_one
+Pole4	mouse	unmatched			approved_exact	Pole4	MGI:1914229	POLE4	one_to_one
+Polg	mouse	unmatched			approved_exact	Polg	MGI:1196389	POLG	one_to_one
+Polg2	mouse	unmatched			approved_exact	Polg2	MGI:1354947	POLG2	one_to_one
+Polh	mouse	unmatched			approved_exact	Polh	MGI:1891457	POLH	one_to_one
+Poli	mouse	unmatched			approved_exact	Poli	MGI:1347081	POLI	one_to_one
+Polk	mouse	unmatched			approved_exact	Polk	MGI:1349767	POLK	one_to_one
+Poll	mouse	unmatched			approved_exact	Poll	MGI:1889000	POLL	one_to_one
+Polm	mouse	unmatched			approved_exact	Polm	MGI:1860191	POLM	one_to_one
+Poln	mouse	unmatched			approved_exact	Poln	MGI:2675617	POLN	one_to_one
+Polq	mouse	unmatched			approved_exact	Polq	MGI:2155399	POLQ	one_to_one
+Polr1a	mouse	unmatched			approved_exact	Polr1a	MGI:1096397	POLR1A	one_to_one
+Polr1b	mouse	unmatched			approved_exact	Polr1b	MGI:108014	POLR1B	one_to_one
+Polr1c	mouse	unmatched			approved_exact	Polr1c	MGI:103288	POLR1C	one_to_one
+Polr1d	mouse	unmatched			approved_exact	Polr1d	MGI:108403	POLR1D	one_to_one
+Polr1e	mouse	unmatched			approved_exact	Polr1e	MGI:1929022	POLR1E	one_to_one
+Polr2a	mouse	unmatched			approved_exact	Polr2a	MGI:98086	POLR2A	one_to_one
+Polr2b	mouse	unmatched			approved_exact	Polr2b	MGI:2388280	POLR2B	one_to_one
+Polr2c	mouse	unmatched			approved_exact	Polr2c	MGI:109299	POLR2C	one_to_one
+Polr2d	mouse	unmatched			approved_exact	Polr2d	MGI:1916491	POLR2D	one_to_one
+Polr2e	mouse	unmatched			approved_exact	Polr2e	MGI:1913670	POLR2E	one_to_one
+Polr2f	mouse	unmatched			approved_exact	Polr2f	MGI:1349393	POLR2F	one_to_one
+Polr2g	mouse	unmatched			approved_exact	Polr2g	MGI:1914960	POLR2G	one_to_one
+Polr2h	mouse	unmatched			approved_exact	Polr2h	MGI:2384309	POLR2H	one_to_one
+Polr2i	mouse	unmatched			approved_exact	Polr2i	MGI:1917170	POLR2I	one_to_one
+Polr2j	mouse	unmatched			approved_exact	Polr2j	MGI:109582		not_found
+Polr2k	mouse	unmatched			approved_exact	Polr2k	MGI:102725	POLR2K	one_to_one
+Polr2l	mouse	unmatched			approved_exact	Polr2l	MGI:1913741	POLR2L	one_to_one
+Polr2m	mouse	unmatched			approved_exact	Polr2m	MGI:107282		not_found
+Polr3a	mouse	unmatched			approved_exact	Polr3a	MGI:2681836	POLR3A	one_to_one
+Polr3b	mouse	unmatched			approved_exact	Polr3b	MGI:1917678	POLR3B	one_to_one
+Polr3c	mouse	unmatched			approved_exact	Polr3c	MGI:1921664	POLR3C	one_to_one
+Polr3d	mouse	unmatched			approved_exact	Polr3d	MGI:1914315	POLR3D	one_to_one
+Polr3e	mouse	unmatched			approved_exact	Polr3e	MGI:1349452	POLR3E	one_to_one
+Polr3f	mouse	unmatched			approved_exact	Polr3f	MGI:1924086	POLR3F	one_to_one
+Polr3g	mouse	unmatched			approved_exact	Polr3g	MGI:1914736	POLR3G	one_to_one
+Polr3h	mouse	unmatched			approved_exact	Polr3h	MGI:1926179	POLR3H	one_to_one
+Polrmt	mouse	unmatched			approved_exact	Polrmt	MGI:1915843	POLRMT	one_to_one
+Ppa1	mouse	unmatched			approved_exact	Ppa1	MGI:97831	PPA1	one_to_one
+Ppa2	mouse	unmatched			approved_exact	Ppa2	MGI:1922026	PPA2	one_to_one
+Ppap2a	mouse	unmatched			alias_unique	Plpp1	MGI:108412	PLPP1	one_to_one
+Ppap2b	mouse	unmatched			alias_unique	Plpp3	MGI:1915166	PLPP3	one_to_one
+Ppap2c	mouse	unmatched			alias_unique	Plpp2	MGI:1354945	PLPP2	one_to_one
+Ppapdc1a	mouse	unmatched			alias_unique	Plpp4	MGI:2685936	PLPP4	one_to_one
+Ppapdc1b	mouse	unmatched			alias_unique	Plpp5	MGI:1919160	PLPP5	one_to_one
+Ppat	mouse	unmatched			approved_exact	Ppat	MGI:2387203	PPAT	one_to_one
+Ppcdc	mouse	unmatched			approved_exact	Ppcdc	MGI:1914062	PPCDC	one_to_one
+Ppcs	mouse	unmatched			approved_exact	Ppcs	MGI:1915237	PPCS	one_to_one
+Ppif	mouse	unmatched			approved_exact	Ppif	MGI:2145814	PPIF	one_to_one
+Ppox	mouse	unmatched			approved_exact	Ppox	MGI:104968	PPOX	one_to_one
+Prdx1	mouse	unmatched			approved_exact	Prdx1	MGI:99523	PRDX1	one_to_one
+Prdx2	mouse	unmatched			approved_exact	Prdx2	MGI:109486	PRDX2	one_to_one
+Prdx3	mouse	unmatched			approved_exact	Prdx3	MGI:88034	PRDX3	one_to_one
+Prdx4	mouse	unmatched			approved_exact	Prdx4	MGI:1859815	PRDX4	one_to_one
+Prdx5	mouse	unmatched			approved_exact	Prdx5	MGI:1859821	PRDX5	one_to_one
+Prdx6	mouse	unmatched			approved_exact	Prdx6	MGI:894320		not_found
+Prg1	mouse	unmatched			alias_unique	Srgn	MGI:97756	SRGN	one_to_one
+Prg2	mouse	unmatched			approved_exact	Prg2	MGI:103294	PRG2	one_to_one
+Prg3	mouse	unmatched			approved_exact	Prg3	MGI:1858200	PRG3	one_to_one
+Prg4	mouse	unmatched			approved_exact	Prg4	MGI:1891344	PRG4	one_to_one
+Prim1	mouse	unmatched			approved_exact	Prim1	MGI:97757	PRIM1	one_to_one
+Prim2	mouse	unmatched			approved_exact	Prim2	MGI:97758	PRIM2	one_to_one
+Prkaa1	mouse	unmatched			approved_exact	Prkaa1	MGI:2145955	PRKAA1	one_to_one
+Prkaa2	mouse	unmatched			approved_exact	Prkaa2	MGI:1336173	PRKAA2	one_to_one
+Prodh	mouse	unmatched			approved_exact	Prodh	MGI:97770	PRODH	one_to_one
+Prodh2	mouse	unmatched			approved_exact	Prodh2	MGI:1929093	PRODH2	one_to_one
+Prps1	mouse	unmatched			approved_exact	Prps1	MGI:97775		not_found
+Prps1l1	mouse	unmatched			approved_exact	Prps1l1	MGI:1922706	PRPS1L1	one_to_one
+Prps2	mouse	unmatched			approved_exact	Prps2	MGI:97776	PRPS2	one_to_one
+Prtfdc1	unresolved	unmatched			unmatched				not_found
+Prune	mouse	unmatched			alias_unique	Prune1	MGI:1925152	PRUNE1	one_to_one
+Psat1	mouse	unmatched			approved_exact	Psat1	MGI:2183441	PSAT1	one_to_one
+Psph	mouse	unmatched			approved_exact	Psph	MGI:97788	PSPH	one_to_one
+Pstk	mouse	unmatched			approved_exact	Pstk	MGI:2685945	PSTK	one_to_one
+Ptgds	mouse	unmatched			approved_exact	Ptgds	MGI:99261	PTGDS	one_to_one
+Ptges	mouse	unmatched			approved_exact	Ptges	MGI:1927593	PTGES	one_to_one
+Ptges1	unresolved	unmatched			unmatched				not_found
+Ptges2	mouse	unmatched			approved_exact	Ptges2	MGI:1917592	PTGES2	one_to_one
+Ptges3	mouse	unmatched			approved_exact	Ptges3	MGI:1929282	PTGES3	one_to_one
+Ptges3l1	unresolved	unmatched			unmatched				not_found
+Ptgis	mouse	unmatched			approved_exact	Ptgis	MGI:1097156	PTGIS	one_to_one
+Ptgs1	mouse	unmatched			approved_exact	Ptgs1	MGI:97797	PTGS1	one_to_one
+Ptgs2	mouse	unmatched			approved_exact	Ptgs2	MGI:97798	PTGS2	one_to_one
+Pts	mouse	unmatched			approved_exact	Pts	MGI:1338783	PTS	one_to_one
+Pus1	mouse	unmatched			approved_exact	Pus1	MGI:1929237	PUS1	one_to_one
+Pus10	mouse	unmatched			approved_exact	Pus10	MGI:1921717	PUS10	one_to_one
+Pus3	mouse	unmatched			approved_exact	Pus3	MGI:1914299	PUS3	one_to_one
+Pus7	mouse	unmatched			approved_exact	Pus7	MGI:1925947	PUS7	one_to_one
+Pusl1	mouse	unmatched			approved_exact	Pusl1	MGI:3047787	PUSL1	one_to_one
+Pycr1	mouse	unmatched			approved_exact	Pycr1	MGI:2384795	PYCR1	one_to_one
+Pycr2	mouse	unmatched			approved_exact	Pycr2	MGI:1277956	PYCR2	one_to_one
+Pycrl	mouse	unmatched			alias_unique	Pycr3	MGI:1913444	PYCR3	one_to_one
+Pygb	mouse	unmatched			approved_exact	Pygb	MGI:97828	PYGB	one_to_one
+Pygl	mouse	unmatched			approved_exact	Pygl	MGI:97829	PYGL	one_to_one
+Pygm	mouse	unmatched			approved_exact	Pygm	MGI:97830	PYGM	one_to_one
+Qars	mouse	unmatched			alias_unique	Qars1	MGI:1915851	QARS1	one_to_one
+Qdpr	mouse	unmatched			approved_exact	Qdpr	MGI:97836	QDPR	one_to_one
+Qprt	mouse	unmatched			approved_exact	Qprt	MGI:1914625	QPRT	one_to_one
+Qrsl1	mouse	unmatched			approved_exact	Qrsl1	MGI:1923813	QRSL1	one_to_one
+Qtrt1	mouse	unmatched			approved_exact	Qtrt1	MGI:1931441	QTRT1	one_to_one
+Rars	mouse	unmatched			alias_unique	Rars1	MGI:1914297	RARS1	one_to_one
+Rars2	mouse	unmatched			approved_exact	Rars2	MGI:1923596	RARS2	one_to_one
+Rbks	mouse	unmatched			approved_exact	Rbks	MGI:1918586	RBKS	one_to_one
+Rdh1	mouse	unmatched			approved_exact	Rdh1	MGI:1195275		not_found
+Rdh10	mouse	unmatched			approved_exact	Rdh10	MGI:1924238	RDH10	one_to_one
+Rdh11	mouse	unmatched			approved_exact	Rdh11	MGI:102581	RDH11	one_to_one
+Rdh12	mouse	unmatched			approved_exact	Rdh12	MGI:1925224	RDH12	one_to_one
+Rdh13	mouse	unmatched			approved_exact	Rdh13	MGI:1918732	RDH13	one_to_one
+Rdh14	mouse	unmatched			approved_exact	Rdh14	MGI:1920402	RDH14	one_to_one
+Rdh16	mouse	unmatched			approved_exact	Rdh16	MGI:1201375		not_found
+Rdh19	mouse	unmatched			approved_exact	Rdh19	MGI:2678390		not_found
+Rdh2	mouse	unmatched			approved_exact	Rdh2	MGI:1201385		not_found
+Rdh5	mouse	unmatched			approved_exact	Rdh5	MGI:1201412	RDH5	one_to_one
+Rdh7	mouse	unmatched			approved_exact	Rdh7	MGI:1860517		not_found
+Rdh8	mouse	unmatched			approved_exact	Rdh8	MGI:2685028	RDH8	one_to_one
+Rdh9	mouse	unmatched			approved_exact	Rdh9	MGI:2143528		not_found
+Renbp	mouse	unmatched			approved_exact	Renbp	MGI:105940	RENBP	one_to_one
+Rev3l	mouse	unmatched			approved_exact	Rev3l	MGI:1337131	REV3L	one_to_one
+Rexo1	mouse	unmatched			approved_exact	Rexo1	MGI:1914182	REXO1	one_to_one
+Rexo2	mouse	unmatched			approved_exact	Rexo2	MGI:1888981	REXO2	one_to_one
+Rexo4	mouse	unmatched			approved_exact	Rexo4	MGI:2684957	REXO4	one_to_one
+Rfk	mouse	unmatched			approved_exact	Rfk	MGI:1914688	RFK	one_to_one
+Rnaseh1	mouse	unmatched			approved_exact	Rnaseh1	MGI:1335073	RNASEH1	one_to_one
+Rpa1	mouse	unmatched			approved_exact	Rpa1	MGI:1915525	RPA1	one_to_one
+Rpa2	mouse	unmatched			approved_exact	Rpa2	MGI:1339939	RPA2	one_to_one
+Rpe	mouse	unmatched			approved_exact	Rpe	MGI:1913896		not_found
+Rpe65	mouse	unmatched			approved_exact	Rpe65	MGI:98001	RPE65	one_to_one
+Rpia	mouse	unmatched			approved_exact	Rpia	MGI:103254	RPIA	one_to_one
+Rrm1	mouse	unmatched			approved_exact	Rrm1	MGI:98180	RRM1	one_to_one
+Rrm2	mouse	unmatched			approved_exact	Rrm2	MGI:98181	RRM2	one_to_one
+Rrm2b	mouse	unmatched			approved_exact	Rrm2b	MGI:2155865	RRM2B	one_to_one
+Rsad1	mouse	unmatched			approved_exact	Rsad1	MGI:3039628	RSAD1	one_to_one
+Rsad2	mouse	unmatched			approved_exact	Rsad2	MGI:1929628	RSAD2	one_to_one
+Rtn4ip1	mouse	unmatched			approved_exact	Rtn4ip1	MGI:2178759	RTN4IP1	one_to_one
+Sardh	mouse	unmatched			approved_exact	Sardh	MGI:2183102	SARDH	one_to_one
+Sars2	mouse	unmatched			approved_exact	Sars2	MGI:1919234	SARS2	one_to_one
+Sc5d	mouse	unmatched			approved_exact	Sc5d	MGI:1353611	SC5D	one_to_one
+Sccpdh	mouse	unmatched			approved_exact	Sccpdh	MGI:1924486	SCCPDH	one_to_one
+Scd	unresolved	unmatched			unmatched				not_found
+Scd1	mouse	unmatched			approved_exact	Scd1	MGI:98239		not_found
+Scd2	mouse	unmatched			approved_exact	Scd2	MGI:98240		not_found
+Scd3	mouse	unmatched			approved_exact	Scd3	MGI:1353437		not_found
+Scd4	mouse	unmatched			approved_exact	Scd4	MGI:2670997		not_found
+Scd5	unresolved	unmatched			unmatched				not_found
+Scp2	mouse	unmatched			approved_exact	Scp2	MGI:98254	SCP2	one_to_one
+Sdha	mouse	unmatched			approved_exact	Sdha	MGI:1914195	SDHA	one_to_one
+Sdhb	mouse	unmatched			approved_exact	Sdhb	MGI:1914930	SDHB	one_to_one
+Sdr16c5	mouse	unmatched			approved_exact	Sdr16c5	MGI:2668443	SDR16C5	one_to_one
+Sdr39u1	mouse	unmatched			approved_exact	Sdr39u1	MGI:1916876	SDR39U1	one_to_one
+Sds	mouse	unmatched			approved_exact	Sds	MGI:98270	SDS	one_to_one
+Sdsl	mouse	unmatched			approved_exact	Sdsl	MGI:2182607	SDSL	one_to_one
+Seli	unresolved	unmatched			unmatched				not_found
+Sephs1	mouse	unmatched			approved_exact	Sephs1	MGI:1923580	SEPHS1	one_to_one
+Sephs2	mouse	unmatched			approved_exact	Sephs2	MGI:108388	SEPHS2	one_to_one
+Sgms1	mouse	unmatched			approved_exact	Sgms1	MGI:2444110	SGMS1	one_to_one
+Sgms2	mouse	unmatched			approved_exact	Sgms2	MGI:1921692	SGMS2	one_to_one
+Shmt1	mouse	unmatched			approved_exact	Shmt1	MGI:98299	SHMT1	one_to_one
+Shmt2	mouse	unmatched			approved_exact	Shmt2	MGI:1277989	SHMT2	one_to_one
+Si	mouse	unmatched			alias_unique	Pmel	MGI:98301	PMEL	one_to_one
+Sirt1	mouse	unmatched			approved_exact	Sirt1	MGI:2135607	SIRT1	one_to_one
+Sirt2	mouse	unmatched			approved_exact	Sirt2	MGI:1927664	SIRT2	one_to_one
+Sirt3	mouse	unmatched			approved_exact	Sirt3	MGI:1927665	SIRT3	one_to_one
+Sirt4	mouse	unmatched			approved_exact	Sirt4	MGI:1922637	SIRT4	one_to_one
+Sirt5	mouse	unmatched			approved_exact	Sirt5	MGI:1915596	SIRT5	one_to_one
+Sirt6	mouse	unmatched			approved_exact	Sirt6	MGI:1354161	SIRT6	one_to_one
+Sirt7	mouse	unmatched			approved_exact	Sirt7	MGI:2385849	SIRT7	one_to_one
+Smpd1	mouse	unmatched			approved_exact	Smpd1	MGI:98325	SMPD1	one_to_one
+Smpd2	mouse	unmatched			approved_exact	Smpd2	MGI:1278330	SMPD2	one_to_one
+Smpd3	mouse	unmatched			approved_exact	Smpd3	MGI:1927578	SMPD3	one_to_one
+Smpd4	mouse	unmatched			approved_exact	Smpd4	MGI:1924876	SMPD4	one_to_one
+Smpd5	mouse	unmatched			approved_exact	Smpd5	MGI:3709877	SMPD5	one_to_one
+Sms	mouse	unmatched			approved_exact	Sms	MGI:109490	SMS	one_to_one
+Soat1	mouse	unmatched			approved_exact	Soat1	MGI:104665	SOAT1	one_to_one
+Soat2	mouse	unmatched			approved_exact	Soat2	MGI:1332226	SOAT2	one_to_one
+Sod1	mouse	unmatched			approved_exact	Sod1	MGI:98351	SOD1	one_to_one
+Sod2	mouse	unmatched			approved_exact	Sod2	MGI:98352	SOD2	one_to_one
+Sod3	mouse	unmatched			approved_exact	Sod3	MGI:103181	SOD3	one_to_one
+Sord	mouse	unmatched			approved_exact	Sord	MGI:98266	SORD	one_to_one
+Spr	mouse	unmatched			approved_exact	Spr	MGI:103078	SPR	one_to_one
+Sptlc1	mouse	unmatched			approved_exact	Sptlc1	MGI:1099431	SPTLC1	one_to_one
+Sptlc2	mouse	unmatched			approved_exact	Sptlc2	MGI:108074	SPTLC2	one_to_one
+Sptlc3	mouse	unmatched			approved_exact	Sptlc3	MGI:2444678	SPTLC3	one_to_one
+Sqle	mouse	unmatched			approved_exact	Sqle	MGI:109296	SQLE	one_to_one
+Sqrdl	mouse	unmatched			alias_unique	Sqor	MGI:1929899	SQOR	one_to_one
+Srd5a1	mouse	unmatched			approved_exact	Srd5a1	MGI:98400	SRD5A1	one_to_one
+Srd5a2	mouse	unmatched			approved_exact	Srd5a2	MGI:2150380	SRD5A2	one_to_one
+Srd5a3	mouse	unmatched			approved_exact	Srd5a3	MGI:1930252	SRD5A3	one_to_one
+Srm	mouse	unmatched			approved_exact	Srm	MGI:102690	SRM	one_to_one
+Srr	mouse	unmatched			approved_exact	Srr	MGI:1351636	SRR	one_to_one
+St6galnac1	mouse	unmatched			approved_exact	St6galnac1	MGI:1341826	ST6GALNAC1	one_to_one
+St6galnac2	mouse	unmatched			approved_exact	St6galnac2	MGI:107553	ST6GALNAC2	one_to_one
+St6galnac3	mouse	unmatched			approved_exact	St6galnac3	MGI:1341828	ST6GALNAC3	one_to_one
+St6galnac4	mouse	unmatched			approved_exact	St6galnac4	MGI:1341894	ST6GALNAC4	one_to_one
+St6galnac5	mouse	unmatched			approved_exact	St6galnac5	MGI:1349471	ST6GALNAC5	one_to_one
+St6galnac6	mouse	unmatched			approved_exact	St6galnac6	MGI:1355316	ST6GALNAC6	one_to_one
+Steap1	mouse	unmatched			approved_exact	Steap1	MGI:1917608		not_found
+Steap2	mouse	unmatched			approved_exact	Steap2	MGI:1921301	STEAP2	one_to_one
+Steap3	mouse	unmatched			approved_exact	Steap3	MGI:1915678	STEAP3	one_to_one
+Steap4	mouse	unmatched			approved_exact	Steap4	MGI:1923560	STEAP4	one_to_one
+Sts	mouse	unmatched			approved_exact	Sts	MGI:98438	STS	one_to_one
+Sucla2	mouse	unmatched			approved_exact	Sucla2	MGI:1306775	SUCLA2	one_to_one
+Suclg1	mouse	unmatched			approved_exact	Suclg1	MGI:1927234	SUCLG1	one_to_one
+Suclg2	mouse	unmatched			approved_exact	Suclg2	MGI:1306824	SUCLG2	one_to_one
+Sugct	mouse	unmatched			approved_exact	Sugct	MGI:1923221	SUGCT	one_to_one
+Sult1a1	mouse	unmatched			approved_exact	Sult1a1	MGI:102896		not_found
+Sult1a2	mouse	unmatched			alias_unique	Sult1c1	MGI:102928		not_found
+Sult1a3	unresolved	unmatched			unmatched				not_found
+Sult1a4	unresolved	unmatched			unmatched				not_found
+Sult1b1	mouse	unmatched			approved_exact	Sult1b1	MGI:2136282	SULT1B1	one_to_one
+Sult1c1	mouse	unmatched			approved_exact	Sult1c1	MGI:102928		not_found
+Sult1c2	mouse	unmatched			approved_exact	Sult1c2	MGI:1916333	SULT1C2	one_to_one
+Sult1c3	unresolved	unmatched			unmatched				not_found
+Sult1c4	unresolved	unmatched			unmatched				not_found
+Sult1d1	mouse	unmatched			approved_exact	Sult1d1	MGI:1926341	SULT1D1P	one_to_one
+Sult1e1	mouse	unmatched			approved_exact	Sult1e1	MGI:98431	SULT1E1	one_to_one
+Sult2a1	mouse	unmatched			approved_exact	Sult2a1	MGI:98430		not_found
+Sult2a2	mouse	unmatched			approved_exact	Sult2a2	MGI:107550		not_found
+Sult2a3	mouse	unmatched			approved_exact	Sult2a3	MGI:3645873		not_found
+Sult2a4	mouse	unmatched			approved_exact	Sult2a4	MGI:3645854		not_found
+Sult2a5	mouse	unmatched			approved_exact	Sult2a5	MGI:3648378		not_found
+Sult2a6	mouse	unmatched			approved_exact	Sult2a6	MGI:3648915		not_found
+Sult2a7	mouse	unmatched			approved_exact	Sult2a7	MGI:3645246		not_found
+Sult2b1	mouse	unmatched			approved_exact	Sult2b1	MGI:1926342	SULT2B1	one_to_one
+Suox	mouse	unmatched			approved_exact	Suox	MGI:2446117	SUOX	one_to_one
+Taldo1	mouse	unmatched			approved_exact	Taldo1	MGI:1274789	TALDO1	one_to_one
+Tars	mouse	unmatched			alias_unique	Tars1	MGI:106314	TARS1	one_to_one
+Tars2	mouse	unmatched			approved_exact	Tars2	MGI:1919057	TARS2	one_to_one
+Tat	mouse	unmatched			approved_exact	Tat	MGI:98487	TAT	one_to_one
+Tbxas1	mouse	unmatched			approved_exact	Tbxas1	MGI:98497	TBXAS1	one_to_one
+Tdh	mouse	unmatched			approved_exact	Tdh	MGI:1926231	TDH	one_to_one
+Tdo2	mouse	unmatched			approved_exact	Tdo2	MGI:1928486	TDO2	one_to_one
+Tfb1m	mouse	unmatched			approved_exact	Tfb1m	MGI:2146851	TFB1M	one_to_one
+Tfb2m	mouse	unmatched			approved_exact	Tfb2m	MGI:107937	TFB2M	one_to_one
+Tgds	mouse	unmatched			approved_exact	Tgds	MGI:1923605	TGDS	one_to_one
+Th	mouse	unmatched			approved_exact	Th	MGI:98735	TH	one_to_one
+Them4	mouse	unmatched			approved_exact	Them4	MGI:1923028	THEM4	one_to_one
+Them5	mouse	unmatched			approved_exact	Them5	MGI:1913448	THEM5	one_to_one
+Them6	mouse	unmatched			approved_exact	Them6	MGI:1925301	THEM6	one_to_one
+Them7	mouse	unmatched			approved_exact	Them7	MGI:1921338	THEM7P	one_to_one
+Thg1l	mouse	unmatched			approved_exact	Thg1l	MGI:1913878	THG1L	one_to_one
+Tk1	mouse	unmatched			approved_exact	Tk1	MGI:98763	TK1	one_to_one
+Tk2	mouse	unmatched			approved_exact	Tk2	MGI:1913266	TK2	one_to_one
+Tkt	mouse	unmatched			approved_exact	Tkt	MGI:105992	TKT	one_to_one
+Tktl1	mouse	unmatched			approved_exact	Tktl1	MGI:1933244	TKTL1	one_to_one
+Tktl2	mouse	unmatched			approved_exact	Tktl2	MGI:1921669	TKTL2	one_to_one
+Tmlhe	mouse	unmatched			approved_exact	Tmlhe	MGI:2180203	TMLHE	one_to_one
+Tomt	mouse	unmatched			approved_exact	Tomt	MGI:3769724		not_found
+Tph1	mouse	unmatched			approved_exact	Tph1	MGI:98796	TPH1	one_to_one
+Tph2	mouse	unmatched			approved_exact	Tph2	MGI:2651811	TPH2	one_to_one
+Tpi1	mouse	unmatched			approved_exact	Tpi1	MGI:98797	TPI1	one_to_one
+Tpo	mouse	unmatched			approved_exact	Tpo	MGI:98813	TPO	one_to_one
+Trit1	mouse	unmatched			approved_exact	Trit1	MGI:1914216	TRIT1	one_to_one
+Trmt1	mouse	unmatched			approved_exact	Trmt1	MGI:1289155	TRMT1	one_to_one
+Trmt10c	mouse	unmatched			approved_exact	Trmt10c	MGI:1196261	TRMT10C	one_to_one
+Trmt11	mouse	unmatched			approved_exact	Trmt11	MGI:1920931	TRMT11	one_to_one
+Trmt12	mouse	unmatched			alias_unique	Tyw2	MGI:1915510	TYW2	one_to_one
+Trmt13	mouse	unmatched			approved_exact	Trmt13	MGI:1925219	TRMT13	one_to_one
+Trmt2a	mouse	unmatched			approved_exact	Trmt2a	MGI:96270	TRMT2A	one_to_one
+Trmt2b	mouse	unmatched			approved_exact	Trmt2b	MGI:2442530	TRMT2B	one_to_one
+Trmt5	mouse	unmatched			approved_exact	Trmt5	MGI:1923607	TRMT5	one_to_one
+Trmt6	mouse	unmatched			approved_exact	Trmt6	MGI:1914176	TRMT6	one_to_one
+Trmu	mouse	unmatched			approved_exact	Trmu	MGI:1919276	TRMU	one_to_one
+Trnt1	mouse	unmatched			approved_exact	Trnt1	MGI:1917297	TRNT1	one_to_one
+Trub1	mouse	unmatched			approved_exact	Trub1	MGI:1919383	TRUB1	one_to_one
+Trub2	mouse	unmatched			approved_exact	Trub2	MGI:2442186	TRUB2	one_to_one
+Tst	mouse	unmatched			approved_exact	Tst	MGI:98852	TST	one_to_one
+Txndc11	mouse	unmatched			approved_exact	Txndc11	MGI:1923620	TXNDC11	one_to_one
+Txndc12	mouse	unmatched			approved_exact	Txndc12	MGI:1913323	TXNDC12	one_to_one
+Txndc15	mouse	unmatched			approved_exact	Txndc15	MGI:1916922	TXNDC15	one_to_one
+Txndc16	mouse	unmatched			approved_exact	Txndc16	MGI:1917811	TXNDC16	one_to_one
+Txndc17	mouse	unmatched			approved_exact	Txndc17	MGI:1289248	TXNDC17	one_to_one
+Txndc2	mouse	unmatched			approved_exact	Txndc2	MGI:2389312	TXNDC2	one_to_one
+Txndc5	mouse	unmatched			approved_exact	Txndc5	MGI:2145316	TXNDC5	one_to_one
+Txndc8	mouse	unmatched			approved_exact	Txndc8	MGI:1914652	TXNDC8	one_to_one
+Txndc9	mouse	unmatched			approved_exact	Txndc9	MGI:2138153	TXNDC9	one_to_one
+Txnrd1	mouse	unmatched			approved_exact	Txnrd1	MGI:1354175	TXNRD1	one_to_one
+Txnrd2	mouse	unmatched			approved_exact	Txnrd2	MGI:1347023	TXNRD2	one_to_one
+Txnrd3	mouse	unmatched			approved_exact	Txnrd3	MGI:2386711	TXNRD3	one_to_one
+Tymp	mouse	unmatched			approved_exact	Tymp	MGI:1920212	TYMP	one_to_one
+Tyms	mouse	unmatched			approved_exact	Tyms	MGI:98878	TYMS	one_to_one
+Tyr	mouse	unmatched			approved_exact	Tyr	MGI:98880	TYR	one_to_one
+Uap1	mouse	unmatched			approved_exact	Uap1	MGI:1334459	UAP1	one_to_one
+Uck1	mouse	unmatched			approved_exact	Uck1	MGI:98904	UCK1	one_to_one
+Uck1l	unresolved	unmatched			unmatched				not_found
+Uck2	mouse	unmatched			approved_exact	Uck2	MGI:1931744	UCK2	one_to_one
+Uckl1	mouse	unmatched			approved_exact	Uckl1	MGI:1915806	UCKL1	one_to_one
+Ugdh	mouse	unmatched			approved_exact	Ugdh	MGI:1306785	UGDH	one_to_one
+Ugp2	mouse	unmatched			approved_exact	Ugp2	MGI:2183447	UGP2	one_to_one
+Ugt1a1	mouse	unmatched			approved_exact	Ugt1a1	MGI:98898	UGT1A1	one_to_one
+Ugt1a10	mouse	unmatched			approved_exact	Ugt1a10	MGI:3580642		not_found
+Ugt1a2	mouse	unmatched			approved_exact	Ugt1a2	MGI:3576049		not_found
+Ugt1a3	unresolved	unmatched			unmatched				not_found
+Ugt1a4	unresolved	unmatched			unmatched				not_found
+Ugt1a5	mouse	unmatched			approved_exact	Ugt1a5	MGI:3032634		not_found
+Ugt1a6	mouse	unmatched			alias_unique	Ugt1a6a	MGI:2137698		not_found
+Ugt1a7c	mouse	unmatched			approved_exact	Ugt1a7c	MGI:3032636		not_found
+Ugt1a8	mouse	unmatched			approved_exact	Ugt1a8	MGI:3576090		not_found
+Ugt1a9	mouse	unmatched			approved_exact	Ugt1a9	MGI:3576092		not_found
+Ugt2a1	mouse	unmatched			approved_exact	Ugt2a1	MGI:2149905	UGT2A1	one_to_one
+Ugt2a2	mouse	unmatched			approved_exact	Ugt2a2	MGI:3576095	UGT2A2	one_to_one
+Ugt2a3	mouse	unmatched			approved_exact	Ugt2a3	MGI:1919344	UGT2A3	one_to_one
+Ugt2b	unresolved	unmatched			unmatched				not_found
+Ugt2b1	mouse	unmatched			approved_exact	Ugt2b1	MGI:1919023		not_found
+Ugt2b10	unresolved	unmatched			unmatched				not_found
+Ugt2b11	unresolved	unmatched			unmatched				not_found
+Ugt2b15	unresolved	unmatched			unmatched				not_found
+Ugt2b17	unresolved	unmatched			unmatched				not_found
+Ugt2b28	unresolved	unmatched			unmatched				not_found
+Ugt2b37	mouse	unmatched			approved_exact	Ugt2b37	MGI:2148239		not_found
+Ugt2b4	unresolved	unmatched			unmatched				not_found
+Ugt2b5	mouse	unmatched			approved_exact	Ugt2b5	MGI:98900		not_found
+Ugt2b7	unresolved	unmatched			unmatched				not_found
+Ugt3a1	mouse	unmatched			approved_exact	Ugt3a1	MGI:2145969		not_found
+Ugt3a2	mouse	unmatched			approved_exact	Ugt3a2	MGI:2146055		not_found
+Ugt8	mouse	unmatched			alias_unique	Ugt8a	MGI:109522	UGT8	one_to_one
+Umps	mouse	unmatched			approved_exact	Umps	MGI:1298388	UMPS	one_to_one
+Ung	mouse	unmatched			approved_exact	Ung	MGI:109352	UNG	one_to_one
+Uox	mouse	unmatched			approved_exact	Uox	MGI:98907	UOX	one_to_one
+Upb1	mouse	unmatched			approved_exact	Upb1	MGI:2143535	UPB1	one_to_one
+Upp1	mouse	unmatched			approved_exact	Upp1	MGI:1097668	UPP1	one_to_one
+Upp2	mouse	unmatched			approved_exact	Upp2	MGI:1923904	UPP2	one_to_one
+Uqcrb	mouse	unmatched			approved_exact	Uqcrb	MGI:1914780	UQCRB	one_to_one
+Uqcrc1	mouse	unmatched			approved_exact	Uqcrc1	MGI:107876	UQCRC1	one_to_one
+Uqcrc2	mouse	unmatched			approved_exact	Uqcrc2	MGI:1914253	UQCRC2	one_to_one
+Uqcrfs1	mouse	unmatched			approved_exact	Uqcrfs1	MGI:1913944		not_found
+Uqcrh	mouse	unmatched			approved_exact	Uqcrh	MGI:1913826		not_found
+Uqcrq	mouse	unmatched			approved_exact	Uqcrq	MGI:107807	UQCRQ	one_to_one
+Uroc1	mouse	unmatched			approved_exact	Uroc1	MGI:2385332	UROC1	one_to_one
+Urod	mouse	unmatched			approved_exact	Urod	MGI:98916	UROD	one_to_one
+Uros	mouse	unmatched			approved_exact	Uros	MGI:98917	UROS	one_to_one
+Vars	mouse	unmatched			alias_unique	Vars1	MGI:90675	VARS1	one_to_one
+Vars2	mouse	unmatched			approved_exact	Vars2	MGI:1916165	VARS2	one_to_one
+Vps29	mouse	unmatched			approved_exact	Vps29	MGI:1928344	VPS29	one_to_one
+Vps4a	mouse	unmatched			approved_exact	Vps4a	MGI:1890520	VPS4A	one_to_one
+Vps4b	mouse	unmatched			approved_exact	Vps4b	MGI:1100499	VPS4B	one_to_one
+Wars2	mouse	unmatched			approved_exact	Wars2	MGI:1917810	WARS2	one_to_one
+Wrnip1	mouse	unmatched			approved_exact	Wrnip1	MGI:1926153	WRNIP1	one_to_one
+Xdh	mouse	unmatched			approved_exact	Xdh	MGI:98973	XDH	one_to_one
+Xylb	mouse	unmatched			approved_exact	Xylb	MGI:2142985	XYLB	one_to_one
+Yars2	mouse	unmatched			approved_exact	Yars2	MGI:1917370	YARS2	one_to_one
+Zadh2	mouse	unmatched			alias_unique	Ptgr3	MGI:2444835	PTGR3	one_to_one
+Znrd1	mouse	unmatched			alias_unique	Polr1h	MGI:1913386	POLR1H	one_to_one

@@ -1,0 +1,85 @@
+Qwen3.5-4B local server is ready: http://127.0.0.1:8000/health
+[tool] list_files
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool] refresh_catalog
+[tool] get_page
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool] get_study
+[tool] get_study
+[tool] get_page
+[tool] run_powershell
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool] run_powershell
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool-error] threeca-access: Tool is not enabled: threeca-access
+[tool-error] threeca-access: Tool is not enabled: threeca-access
+[tool-error] threeca-access: Tool is not enabled: threeca-access
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool-error] threeca-access: Tool is not enabled: threeca-access
+[tool-error] threeca-access: Tool is not enabled: threeca-access
+[tool-error] threeca-access: Tool is not enabled: threeca-access
+[tool] run_powershell
+[tool] web_search: 3CA Curated Cancer Cell Atlas metabolic gene expression clustering single cell
+[tool] web_search: 3CA transcriptional metabolic states cluster single cell RNA-seq
+[tool] run_powershell
+[tool] run_powershell
+[tool] get_page
+[tool] run_powershell
+[tool] run_powershell
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool] run_powershell
+[tool] run_powershell
+[tool] search_cached_pages
+[tool] search_cached_pages
+[tool] search_cached_pages
+[tool] run_powershell
+[tool] web_search: 3CA Curated Cancer Cell Atlas metabolic gene expression clustering
+[tool] web_search: 3CA transcriptional metabolic states single cell RNA-seq
+[tool] run_powershell
+[tool] get_study
+[tool] get_study
+[tool] get_page
+[tool] run_powershell
+[tool] plan_asset
+[tool] plan_asset
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] get_study
+[tool] get_study
+[tool] download_asset
+[tool] download_asset
+[tool] download_asset
+[tool] download_asset
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell

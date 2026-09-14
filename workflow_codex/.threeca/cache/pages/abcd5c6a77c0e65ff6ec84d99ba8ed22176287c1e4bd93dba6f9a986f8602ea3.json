@@ -1,0 +1,19 @@
+{
+  "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20111",
+  "final_url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20111",
+  "fetched_at": "2026-09-12T05:30:26.344159+00:00",
+  "raw_html_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\pages\\abcd5c6a77c0e65ff6ec84d99ba8ed22176287c1e4bd93dba6f9a986f8602ea3.html",
+  "title": "| Curated Cancer Cell Atlas",
+  "text": "CNAs Skin: Tirosh et al. 2016 Click here to download PNG Click here to download CNA matrix",
+  "links": [
+    {
+      "url": "https://www.dropbox.com/scl/fi/8vi3yjcd3dpesxwretbda/CNAs_Tirosh2016_Skin.png?rlkey=cre3hh8vx8i95g7rcs9ytgxyf&dl=1",
+      "text": "Click here to download PNG"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/v4ca3xqlfzzw3brskmy6r/CNA_matrix_Tirosh2016_Skin.csv.gz?rlkey=c4icrlsnza8d5ngi80km0zctr&dl=1",
+      "text": "Click here to download CNA matrix"
+    }
+  ],
+  "tables": []
+}

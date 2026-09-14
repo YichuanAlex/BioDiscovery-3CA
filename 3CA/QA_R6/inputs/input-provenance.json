@@ -1,0 +1,8 @@
+{
+  "source_path": "C:\\Users\\User\\Desktop\\agentic\\material\\QuestionAll\\metabolic genes total.csv",
+  "bytes": 14789,
+  "role": "immutable_user_supplied_gene_set",
+  "staged_path": "inputs/metabolic_genes_total.csv",
+  "staged_at": "2026-09-14T01:33:08.0236591Z",
+  "sha256": "7503180d29693bd1e654ea93281db0e3ec4177ff44842c8b02f6a098402e41a9"
+}

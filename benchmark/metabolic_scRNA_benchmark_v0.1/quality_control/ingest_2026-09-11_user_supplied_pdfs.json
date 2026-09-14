@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "INGEST-2026-09-11-USER-PDFS",
+  "checked_at": "2026-09-11",
+  "acquisition_method": "user_supplied_local",
+  "operation": "validated_then_moved",
+  "summary": {
+    "files_expected": 5,
+    "files_ingested": 5,
+    "total_size_bytes": 58593904,
+    "total_pages": 143,
+    "encrypted_files": 0,
+    "pdf_magic_pass": 5,
+    "pdfinfo_pass": 5,
+    "all_page_text_extraction_pass": 5,
+    "first_page_render_pass": 5,
+    "doi_match_pass": 5,
+    "title_visual_match_pass": 5,
+    "result": "pass"
+  },
+  "checks": [
+    "source and destination resolved inside the benchmark workspace",
+    "destination did not already exist",
+    "PDF file signature",
+    "Poppler pdfinfo parse",
+    "all-page pdftotext extraction",
+    "first-page PNG render and visual title inspection",
+    "DOI match against the target paper",
+    "SHA-256 after move",
+    "entry-level manifest registration"
+  ],
+  "files": [
+    {
+      "paper_id": "P004",
+      "original_filename": "Pan-cancer single-cell landscape of tumor-infiltrating T cells.pdf",
+      "final_path": "papers/P004_zheng_2021_pan_cancer_til_tcells/origin/main_article.pdf",
+      "size_bytes": 6889404,
+      "pages": 13,
+      "sha256": "482725328e4b8500d52f8f85ba45c4ac8af965ccb327e916614471c2135d63e5",
+      "doi": "10.1126/science.abe6474",
+      "result": "pass"
+    },
+    {
+      "paper_id": "P005",
+      "original_filename": "Landscape of Infiltrating T Cells in Liver Cancer Revealed by Single-Cell Sequencing.pdf",
+      "final_path": "papers/P005_zheng_2017_liver_cancer_tcells/origin/main_article.pdf",
+      "size_bytes": 10339111,
+      "pages": 32,
+      "sha256": "7447552ebab6808df3f20593c3a2b5f9097735c5402b7f3f69cdb1d991bc0dce",
+      "doi": "10.1016/j.cell.2017.05.035",
+      "result": "pass"
+    },
+    {
+      "paper_id": "P007",
+      "original_filename": "A Cancer Cell Program Promotes T Cell Exclusion and Resistance to Checkpoint Blockade.pdf",
+      "final_path": "papers/P007_jerby_arnon_2018_tcell_exclusion/origin/main_article.pdf",
+      "size_bytes": 19558315,
+      "pages": 38,
+      "sha256": "2fd3e263630cc1103d0633fcd084404b7acab97793420b1ade4de6cb72e06d47",
+      "doi": "10.1016/j.cell.2018.09.006",
+      "result": "pass"
+    },
+    {
+      "paper_id": "P009",
+      "original_filename": "Spatiotemporal Immune Landscape of Colorectal Cancer Liver Metastasis at Single-Cell Level.pdf",
+      "final_path": "papers/P009_wu_2022_crlm_scmetabolism/origin/main_article.pdf",
+      "size_bytes": 11577225,
+      "pages": 20,
+      "sha256": "073884f391e3f577476c9bc258df4eda1a0171ecec3004e65d526e0d50a7d3f4",
+      "doi": "10.1158/2159-8290.CD-21-0316",
+      "result": "pass"
+    },
+    {
+      "paper_id": "P013",
+      "original_filename": "Metabolic modeling of single Th17 cells reveals regulators of autoimmunity.pdf",
+      "final_path": "papers/P013_wagner_2021_compass/origin/main_article.pdf",
+      "size_bytes": 10229849,
+      "pages": 40,
+      "sha256": "70e95112411cf478ac445ce3d5155ee2542d33d7e28c8e54c7bb9ac5cf4707d6",
+      "doi": "10.1016/j.cell.2021.05.045",
+      "result": "pass"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20058",
+  "final_url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20058",
+  "fetched_at": "2026-09-13T00:26:36.764377+00:00",
+  "raw_html_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\pages\\cf9ff330bb94c183568cd3bf1369a7784e59392a20b97f0e7ad05ff24a61ab3e.html",
+  "title": "| Curated Cancer Cell Atlas",
+  "text": "CNAs Brain: Darmanis et al. 2017 Click here to download PNG Click here to download CNA matrix",
+  "links": [
+    {
+      "url": "https://www.dropbox.com/scl/fi/zpbkocg7p9ot5i5ln5yan/CNAs_Darmanis2017_Brain.png?rlkey=sakqf72c5plduzjff5c666h67&dl=1",
+      "text": "Click here to download PNG"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/a72ubf87wzxg7b4ry81r8/CNA_matrix_Darmanis2017_Brain.csv.gz?rlkey=s81vk8ckmbb39cb54o9m8l9j1&dl=1",
+      "text": "Click here to download CNA matrix"
+    }
+  ],
+  "tables": []
+}

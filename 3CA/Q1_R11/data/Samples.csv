@@ -1,0 +1,21 @@
+sample,technology,n_cells,patient,cancer_type,sample_type
+p018_N,10x,11173,p018,Lung Adenocarcinoma,Normal
+p018_T,10x,13248,p018,Lung Adenocarcinoma,Tumor
+p019_N,10x,1084,p019,Lung Adenocarcinoma,Normal
+p019_T,10x,1368,p019,Lung Adenocarcinoma,Tumor
+p023_T,10x,7199,p023,Lung Adenocarcinoma,Tumor
+p024_T,10x,6375,p024,Lung Adenocarcinoma,Tumor
+p027_N,10x,8520,p027,Lung Adenocarcinoma,Normal
+p027_T,10x,8713,p027,Lung Adenocarcinoma,Tumor
+p028_N,10x,6157,p028,Lung Adenocarcinoma,Normal
+p029_N,10x,4722,p029,Lung Adenocarcinoma,Normal
+p030_N,10x,2807,p030,Lung Adenocarcinoma,Normal
+p030_T,10x,4613,p030,Lung Adenocarcinoma,Tumor
+p031_N,10x,5299,p031,Lung Adenocarcinoma,Normal
+p031_T,10x,5526,p031,Lung Adenocarcinoma,Tumor
+p032_N,10x,5246,p032,Lung Adenocarcinoma,Normal
+p032_T,10x,10162,p032,Lung Adenocarcinoma,Tumor
+p033_N,10x,5237,p033,Lung Adenocarcinoma,Normal
+p033_T,10x,4491,p033,Lung Adenocarcinoma,Tumor
+p034_N,10x,4541,p034,Lung Adenocarcinoma,Normal
+p034_T,10x,4480,p034,Lung Adenocarcinoma,Tumor

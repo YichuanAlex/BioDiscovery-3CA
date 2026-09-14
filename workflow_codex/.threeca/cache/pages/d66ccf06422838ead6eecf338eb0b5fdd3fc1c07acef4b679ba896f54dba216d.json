@@ -1,0 +1,19 @@
+{
+  "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20773",
+  "final_url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20773",
+  "fetched_at": "2026-09-13T00:26:14.567474+00:00",
+  "raw_html_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\pages\\d66ccf06422838ead6eecf338eb0b5fdd3fc1c07acef4b679ba896f54dba216d.html",
+  "title": "| Curated Cancer Cell Atlas",
+  "text": "Meta programs Brain: Choudhury et al. 2022 Click here to download PDF Click here to download table of MP scores",
+  "links": [
+    {
+      "url": "https://www.dropbox.com/scl/fi/t0r7bnck3m5j3jdfqwnk6/Meta-programs_Choudhury2022_Brain.pdf?rlkey=93mjol40wjt4p49ub1pidngu5&dl=1",
+      "text": "Click here to download PDF"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/h09sairf58ncx3ihvzh7n/MP_scores_Choudhury2022_Brain.csv.gz?rlkey=157b6fcyyxn9szoydvyfczb8u&dl=1",
+      "text": "Click here to download table of MP scores"
+    }
+  ],
+  "tables": []
+}

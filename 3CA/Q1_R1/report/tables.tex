@@ -1,0 +1,32 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Clustering settings: $k$ is the optimal candidate from a 2--8 search, not a biological state count.}
+\label{tab:clustering}
+\begin{tabular}{llcc}
+\toprule
+Population & Adjustment & $k$ & Silhouette & Seed ARI \\
+\midrule
+All cells & None & 2 & 0.377 & 0.99965 \\
+All cells & Complexity & 4 & 0.224 & 0.99967 \\
+Malignant & None & 8 & 0.227 & 0.81433 \\
+Malignant & Patient+complexity & 2 & 0.228 & 0.96989 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Classification on 4\,097 annotated cells using GroupKFold5; random SD reflects 20 gene sets, not a biological CI.}
+\label{tab:classification}
+\begin{tabular}{llc}
+\toprule
+Feature set & Balanced accuracy & Macro-F1 \\
+\midrule
+Metabolic & 0.884 & 0.856 \\
+Matched random (20) & 0.896 $\pm$ 0.013 & 0.875 $\pm$ 0.015 \\
+HVG & 0.892 & 0.897 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,75 @@
+Qwen3.5-4B local server is ready: http://127.0.0.1:8000/health
+[tool-error] inspect_research_table: Tool is not currently advertised: inspect_research_table
+[tool] search_studies
+[tool-error] search_studies: Tool is not currently advertised: search_studies
+[tool-error] C:\Users\User\Desktop\agentic\workflow_codex\tools\tool43CA\.venv\Scripts\threeca.exe: Tool is not currently advertised: C:\Users\User\Desktop\agentic\workflow_codex\tools\tool43CA\.venv\Scripts\threeca.exe
+[tool] get_study
+[tool-error] search_studies: Tool is not currently advertised: search_studies
+[tool-error] C:\Users\User\Desktop\agentic\workflow_codex\tools\tool43CA\.venv\Scripts\threeca.exe: Tool is not currently advertised: C:\Users\User\Desktop\agentic\workflow_codex\tools\tool43CA\.venv\Scripts\threeca.exe
+[tool] plan_asset
+[tool-error] search_studies: Tool is not currently advertised: search_studies
+[tool] download_asset
+[tool-error] plan_asset: Tool is not currently advertised: plan_asset
+[tool-error] C:\Users\User\Desktop\agentic\workflow_codex\tools\tool43CA\.venv\Scripts\threeca.exe: Tool is not currently advertised: C:\Users\User\Desktop\agentic\workflow_codex\tools\tool43CA\.venv\Scripts\threeca.exe
+[tool] prepare_3ca_dataset
+[tool] task_checkpoint
+[tool-error] run_powershell: Tool is not currently advertised: run_powershell
+[tool-error] inspect_research_table: Tool is not currently advertised: inspect_research_table
+[tool] analyze_metabolic_states
+[tool-error] run_powershell: Tool is not currently advertised: run_powershell
+[tool] analyze_metabolic_states
+[tool] verify_doi
+[tool] read_file
+[tool] read_file
+[tool] read_file
+[tool] list_files
+[tool] write_file
+[tool] read_file
+[tool] read_file
+[tool] read_file
+[tool] read_file
+[tool] read_file
+[tool] read_file
+[tool] read_file
+[tool] read_file
+[tool] list_files
+[tool] read_file
+[tool] read_file
+[tool] write_file
+[tool-error] run_powershell: Tool is not currently advertised: run_powershell
+[tool-error] run_powershell: Tool is not currently advertised: run_powershell
+[tool-error] run_powershell: Tool is not currently advertised: run_powershell
+[tool-error] run_powershell: Tool is not currently advertised: run_powershell
+[tool-error] run_powershell: Tool is not currently advertised: run_powershell
+[tool-error] run_powershell: Tool is not currently advertised: run_powershell
+[tool] task_checkpoint
+[tool-error] run_powershell: Tool is not currently advertised: run_powershell
+[tool] read_file
+[tool] read_file
+[tool] read_file
+[tool] read_file
+[tool] list_files
+[tool] write_file
+[tool-error] read_file: Tool is not currently advertised: read_file
+[tool-error] get_study: Tool is not currently advertised: get_study
+[tool-error] get_study: Tool is not currently advertised: get_study
+[tool-error] get_study: Tool is not currently advertised: get_study
+[tool-error] run_powershell: Tool is not currently advertised: run_powershell
+[tool-error] read_file: Tool is not currently advertised: read_file
+[tool-error] read_file: Tool is not currently advertised: read_file
+[tool] task_checkpoint
+[tool] build_research_report
+[tool-error] build_research_report: {"error": "pdflatex pass 1 failed with exit code 1:\nThis is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex.fmt)\n restricted \\write18 enabled.\nentering extended mode\n(main.tex\nLaTeX2e <2026-06-01>\nL3 programming layer <2026-06-18>\n(C:\\Program Files\\MiKTeX\\tex/latex/base\\article.cls\nDocument Class: article 2025/01/22 v1.4n Standard LaTeX document class\n(C:\\Program Files\\MiKTeX\\tex/latex/base\\size11.clo))\n(C:\\Program Files\\MiKTeX\\tex/latex/base\\inputenc.sty)\n(C:\\Users\\User\\AppData\\Roaming\\MiKTeX\\tex/latex/booktabs\\booktabs.sty)\n(C:\\Program Files\\MiKTeX\\tex/latex/graphics\\graphicx.sty\n(C:\\Program Files\\MiKTeX\\tex/latex/graphics\\keyval.sty)\n(C:\\Program Files\\MiKTeX\\tex/latex/graphics\\graphics.sty\n(C:\\Program Files\\MiKTeX\\tex/latex/graphics\\trig.sty)\n(C:\\Program Files\\MiKTeX\\tex/latex/graphics-cfg\\graphics.cfg)\n(C:\\Program Files\\MiKTeX\\tex/latex/graphics-def\\pdftex.def)))\n(C:\\Program Files\\MiKTeX\\tex/latex/amsmath\\amsmath.sty\nFor additional information on amsmath, use the `?' option.\n(C:\\Program Files\\MiKTeX\\tex/latex/amsmath\\amstext.sty\n(C:\\Program Files\\MiKTeX\\tex/latex/amsmath\\amsgen.sty))\n(C:\\Program Files\\MiKTeX\\tex/latex/amsmath\\amsbsy.sty)\n(C:\\Program Files\\MiKTeX\\tex/latex/amsmath\\amsopn.sty))\n(C:\\Users\\User\\AppData\\Roaming\\MiKTeX\\tex/latex/caption\\caption.sty\n(C:\\Users\\User\\AppData\\Roaming\\MiKTeX\\tex/latex/caption\\caption3.sty))\n(C:\\Users\\User\\AppData\\Roaming\\MiKTeX\\tex/latex/caption\\subcaption.sty)\n(C:\\Users\\User\\AppData\\Roaming\\MiKTeX\\tex/latex/natbib\\natbib.sty)\n(C:\\Program Files\\MiKTeX\\tex/latex/hyperref\\hyperref.sty\n(C:\\Program Files\\MiKTeX\\tex/generic/iftex\\iftex.sty)\n(C:\\Users\\User\\AppData\\Roaming\\MiKTeX\\tex/latex/kvsetkeys\\kvsetkeys.sty)\n(C:\\Users\\User\\AppData\\Roaming\\MiKTeX\\tex/generic/kvdefinekeys\\kvdefinekeys.sty\n) (C:\\Users\\User\\AppData\\Roaming\\MiKTeX\\tex/generic/pdfescape\\pdfescape.sty\n(C:\\Users\\User\\AppData\\Roaming\\MiKTeX\\tex/generic/ltxcmds\\ltxcmds.sty)\n(C:\\Program Files\\MiKTeX\\tex/generic/pdftexcmds\\pdftexcmds.sty\n(C:\\Users\\User\\AppData\\Roaming\\MiKTeX\\tex/generic/infwarerr\\infwarerr.sty)))\n(C:\\Users\\User\\AppData\\Roaming\\MiKTeX\\tex/latex/hycolor\\hycolor.sty)\n(C:\\Program Files\\MiKTeX\\tex/latex/hyperref\\nameref.sty\n(C:\\Users\\User\\AppData\\Roaming\\MiKTeX\\tex/latex/refcount\\refcount.sty)\n(C:\\Users\\User\\AppData\\Roaming\\MiKTeX\\tex/generic/gettitlestring\\gettitlestring\n.sty (C:\\Users\\User\\AppData\\Roaming\\MiKTeX\\tex/latex/kvoptions\\kvoptions.sty)))\n (C:\\Program Files\\MiKTeX\\tex/latex/etoolbox\\etoolbox.sty)\n(C:\\Users\\User\\AppData\\Roaming\\MiKTeX\\tex/generic/stringenc\\stringenc.sty)\n(C:\\Program Files\\MiKTeX\\tex/latex/hyperref\\pd1enc.def)\n(C:\\Users\\User\\AppData\\Roaming\\MiKTeX\\tex/generic/intcalc\\intcalc.sty)\n(C:\\Program Files\\MiKTeX\\tex/latex/hyperref\\puenc.def)\n(C:\\Program Files\\MiKTeX\\tex/latex/url\\url.sty)\n(C:\\Users\\User\\AppData\\Roaming\\MiKTeX\\tex/generic/bitset\\bitset.sty\n(C:\\Users\\User\\AppData\\Roaming\\MiKTeX\\tex/generic/bigintcalc\\bigintcalc.sty)))\n(C:\\Program Files\\MiKTeX\\tex/latex/hyperref\\hpdftex.def\n(C:\\Users\\User\\AppData\\Roaming\\MiKTeX\\tex/latex/rerunfilecheck\\rerunfilecheck.s\nty\n(C:\\Users\\User\\AppData\\Roaming\\MiKTeX\\tex/generic/uniquecounter\\uniquecounter.s\nty))) (C:\\Program Files\\MiKTeX\\tex/latex/l3backend\\l3backend-pdftex.def)\nNo file main.aux.\n(C:\\Program Files\\MiKTeX\\tex/context/base/mkii\\supp-pdf.mkii\n[Loading MPS to PDF converter (version 2006.09.02).]\n) (C:\\Program Files\\MiKTeX\\tex/latex/epstopdf-pkg\\epstopdf-base.sty\n(C:\\Program Files\\MiKTeX\\tex/latex/00miktex\\epstopdf-sys.cfg))\nmain.tex:33: Missing $ inserted.\n<inserted text> \n                $\nl.33 ...ed using Scanpy's zero-centering with max_\n                                                  value=10.\nmain.tex:33:  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on main.log.\n\npdflatex: major issue: So far, you have not checked for updates as a MiKTeX user."}
+[tool-error] read_file: Tool is not currently advertised: read_file
+[tool-error] Get-Content: Tool is not currently advertised: Get-Content
+[tool-error] New-Item: Tool is not currently advertised: New-Item
+[tool-error] Get-Content: Tool is not currently advertised: Get-Content
+[tool-error] Get-Content: Tool is not currently advertised: Get-Content
+[tool-error] Get-Content: Tool is not currently advertised: Get-Content
+[tool-error] Get-Content: Tool is not currently advertised: Get-Content
+[tool] build_research_report
+[tool-error] read_file: Tool is not currently advertised: read_file
+[tool-error] run_powershell: Tool is not currently advertised: run_powershell
+[tool-error] read_file: Tool is not currently advertised: read_file
+[tool-error] run_powershell: Tool is not currently advertised: run_powershell
+[tool-error] run_powershell: Tool is not currently advertised: run_powershell

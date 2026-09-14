@@ -1,0 +1,29 @@
+import readline from "node:readline";
+
+// Minimal local app-server surface used by @oai/sky to resolve Computer Use
+// policy. The project-local Qwen chat loop remains the model/runtime for this workflow.
+process.stdin.setEncoding("utf8");
+const input = readline.createInterface({ input: process.stdin });
+input.on("line", (line) => {
+  if (!line.trim()) return;
+  let request;
+  try { request = JSON.parse(line); } catch { return; }
+  if (request.id === undefined) return;
+  const method = request.method;
+  let result = {};
+  if (method === "initialize") {
+    result = { protocolVersion: 1, serverInfo: { name: "workflow_codex", version: "local" }, capabilities: {} };
+  } else if (method === "configRequirements/read") {
+    result = { requirements: null };
+  } else if (method === "config/read") {
+    result = {
+      config: {
+        model: "Qwen3.5-4B",
+        model_provider: "local-vllm",
+        computer_use: { default_app_access: "allow", windows: null },
+      },
+      origins: {},
+    };
+  }
+  process.stdout.write(`${JSON.stringify({ jsonrpc: "2.0", id: request.id, result })}\n`);
+});

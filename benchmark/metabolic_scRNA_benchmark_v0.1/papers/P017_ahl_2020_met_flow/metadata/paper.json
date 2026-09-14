@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P017",
+  "folder_id": "P017_ahl_2020_met_flow",
+  "title": "Met-Flow, a strategy for single-cell metabolic analysis highlights dynamic changes in immune subpopulations",
+  "identifiers": {
+    "doi": "10.1038/s42003-020-1027-9",
+    "pmid": "32533056",
+    "pmcid": "PMC7292829"
+  },
+  "publication": {
+    "venue": "Communications Biology",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "peer_reviewed",
+    "published_at": "2020-06-12",
+    "version": "version_of_record"
+  },
+  "integrity": {
+    "checked_at": "2026-09-11T10:13:16+00:00",
+    "sources": [
+      "Crossref metadata",
+      "PubMed publication types/comments when PMID resolved"
+    ],
+    "screening_completeness": "Crossref+PubMed",
+    "retracted": false,
+    "expression_of_concern": false,
+    "corrections": [],
+    "publication_types": [
+      "Journal Article",
+      "Research Support, Non-U.S. Gov't"
+    ]
+  },
+  "selection": {
+    "tier": "C",
+    "role": "orthogonal_biological_validation",
+    "primary_axis": "Q2",
+    "secondary_axes": [
+      "Q3"
+    ],
+    "rationale": "Met-Flow measures metabolic proteins at single-cell resolution and is retained as an orthogonal comparator, not as an scRNA-seq leaderboard task."
+  },
+  "code_sources": [],
+  "data_sources": [],
+  "verified_data_urls": [],
+  "repository_urls_extracted": [],
+  "curation": {
+    "status": "reference_only_non_scrna_input",
+    "completed_stages": [
+      "S0_candidate_registration",
+      "S1_source_inventory",
+      "S2_candidate_insight",
+      "S3_paper_data_task_mapping"
+    ],
+    "pending_stages": [
+      "S4_independent_reproduction",
+      "S5_final_prompt_approval",
+      "S6_answerability_and_leakage_tests",
+      "S7_grader_adversarial_tests",
+      "S8_dual_signoff"
+    ],
+    "domain_curator": null,
+    "computational_curator": null,
+    "reviewed_at": null
+  }
+}

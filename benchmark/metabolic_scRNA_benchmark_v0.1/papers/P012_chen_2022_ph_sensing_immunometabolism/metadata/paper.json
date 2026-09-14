@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P012",
+  "folder_id": "P012_chen_2022_ph_sensing_immunometabolism",
+  "title": "pH sensing controls tissue inflammation by modulating cellular metabolism and endo-lysosomal function of immune cells",
+  "identifiers": {
+    "doi": "10.1038/s41590-022-01231-0",
+    "pmid": "35668320",
+    "pmcid": "PMC9720675"
+  },
+  "publication": {
+    "venue": "Nature Immunology",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "peer_reviewed",
+    "published_at": "2022-07-01",
+    "version": "version_of_record"
+  },
+  "integrity": {
+    "checked_at": "2026-09-11T10:13:16+00:00",
+    "sources": [
+      "Crossref metadata",
+      "PubMed publication types/comments when PMID resolved"
+    ],
+    "screening_completeness": "Crossref+PubMed",
+    "retracted": false,
+    "expression_of_concern": false,
+    "corrections": [
+      {
+        "ref_type": "CommentIn",
+        "ref_source": "Nat Immunol. 2022 Jul;23(7):991-993. doi: 10.1038/s41590-022-01241-y.35697839"
+      }
+    ],
+    "publication_types": [
+      "Journal Article",
+      "Research Support, N.I.H., Extramural",
+      "Research Support, Non-U.S. Gov't"
+    ]
+  },
+  "selection": {
+    "tier": "B",
+    "role": "orthogonal_biological_validation",
+    "primary_axis": "Q3",
+    "secondary_axes": [],
+    "rationale": "Uses Compass together with metabolomic and functional measurements, providing a guardrail against equating transcript-derived metabolic scores with measured flux."
+  },
+  "code_sources": [],
+  "data_sources": [
+    {
+      "accession": "GSE182767",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    }
+  ],
+  "verified_data_urls": [],
+  "repository_urls_extracted": [],
+  "curation": {
+    "status": "candidate_requires_independent_reproduction",
+    "completed_stages": [
+      "S0_candidate_registration",
+      "S1_source_inventory",
+      "S2_candidate_insight",
+      "S3_paper_data_task_mapping"
+    ],
+    "pending_stages": [
+      "S4_independent_reproduction",
+      "S5_final_prompt_approval",
+      "S6_answerability_and_leakage_tests",
+      "S7_grader_adversarial_tests",
+      "S8_dual_signoff"
+    ],
+    "domain_curator": null,
+    "computational_curator": null,
+    "reviewed_at": null
+  }
+}

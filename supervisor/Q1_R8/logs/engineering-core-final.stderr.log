@@ -1,0 +1,7 @@
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.063s
+
+OK
+Processing request of type ListToolsRequest
+Processing request of type CallToolRequest

@@ -1,0 +1,2 @@
+  Extracted to C:\Users\User\AppData\Local\Temp\q1-tar-audit-8r48fgdl\out
+PASS: traversal/link/device rejection and valid file extraction.

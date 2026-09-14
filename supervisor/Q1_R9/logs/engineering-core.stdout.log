@@ -1,0 +1,36 @@
+PASS: exact path, no installed-Codex references, no project Codex auto-discovery config, no external tool links.
+PASS: actual project CLI directory listing stays valid bounded JSON; file preview and cache boundary remain enforced.
+PASS: empty-reply recovery, failed-tool recovery, repeated verification, unchanged-read loop guard, isolated workspace.
+PASS: max-rounds 0 survives the old no-action stop and continues until verified completion.
+PASS: context recovery preserves independent asset references and reuses the actual original result without re-execution or new verification.
+PASS: a bare data path is rejected as a shell no-op and PowerShell is cooled for one response.
+PASS: autonomous plan recovery, nested paths, premature completion rejection, shell mutation validation, actual reasoning persistence, resume without mutation replay, unfinished budget nonzero exit.
+PASS: 3CA catalog budget cools a CLI-search tool for one response and preserves other tools for completion.
+PASS: empty JSON and fake PDF completion candidates are rejected; valid nonempty JSON can pass structural verification.
+PASS: structured actions preserve raw provider output/reasoning; missing arguments and cooled tools cannot execute; budgets and actual returned ids survive recovery.
+PASS: cookie challenge is rejected as unusable evidence.
+PASS: persistent checkpoint ENOSPC returns the retryable worker exit code with a stale resumable checkpoint.
+PASS: actual PowerShell launcher resumes stale-running exit 75, ignores unrelated malformed checkpoints, and releases its exclusive lock.
+PASS: tool43CA MCP initialized, listed all 10 tools, and completed a tool call.
+SKIP: desktop integration explicitly excluded; this run certifies core paths only, not desktop actions.
+Starting Qwen3.5-4B from the requested local weights; waiting for health and model identity...
+Qwen3.5-4B local server is ready: http://127.0.0.1:8000/health
+PASS: attachment copied under C:\Users\User\Desktop\agentic\workflow_codex\.runtime\codex-home\attachments
+PASS: model, path guard, read, list, tool protocol, computer use, 3CA, network, write, shell.
+Qwen3.5-4B local server is ready: http://127.0.0.1:8000/health
+[tool] web_search: 最新科技新闻 2026
+
+Qwen3.5-4B> 检索已完成。
+
+- 检索日期：2026-09-13
+- 新闻 1：博乐盈 APP 下载系列科技新闻：用户突破 3 亿、安全更新与 AI 集成等 8 大动态  
+  来源：体坛加  
+  链接：https://news.google.com/rss/articles/CBMiR0FVX3lxTE5LWm9QNUlFQmJGRFdfWExqT3RPYnhjM1NGV0F3dWNJZXN3Mk5nelFqa19LUGhTWG40aS1fVUhncmU4X1l4MlhJ?oc=5
+
+- 新闻 2：2026 年 5 月科技新闻简报：吉祥正规网址开启实时数据新时代  
+  来源：体坛加  
+  链接：https://news.google.com/rss/articles/CBMiUEFVX3lxTE5ZM01SU002QUc0amxqVF85ajdhdEtJZ1NkbUpodDFaLXdXR0tPZDJ6eVRwMjJiY0dFYjdDSlEydDhkTy1yTzFMYnN5clRsTXNO?oc=5
+
+PASS: session transcript C:\Users\User\Desktop\agentic\workflow_codex\.runtime\codex-home\sessions\2026\09\13\rollout-2026-09-13T08-56-30-d91b477e-b6f.jsonl
+PASS: exact path, no installed-Codex references, no project Codex auto-discovery config, no external tool links.
+PASS: workflow_codex core functional test completed; desktop action NOT certified.

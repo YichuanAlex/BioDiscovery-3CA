@@ -1,0 +1,123 @@
+{
+  "status": "PASS",
+  "scope": "data, computed metrics, table populations/counts, figure files",
+  "report_status": "pending separate PDF/content audit",
+  "matrix_shape": [
+    23686,
+    4645
+  ],
+  "nnz": 20564439,
+  "exact_reference_metric_match": true,
+  "files": [
+    {
+      "path": "results\\figures\\figure1_dataset_and_design.pdf",
+      "bytes": 74209,
+      "sha256": "7b611e2eb7a2f04569c0d3586758680394c4adae5cd92661ff0c4032075ea1b9"
+    },
+    {
+      "path": "results\\figures\\figure1_dataset_and_design.png",
+      "bytes": 472208,
+      "sha256": "7a4cc2675dd6f3ede6d4a593c3a1ad4d12d0df74348bb07e23602c2e768e3b23"
+    },
+    {
+      "path": "results\\figures\\figure1_dataset_and_design.svg",
+      "bytes": 59972,
+      "sha256": "312920161fd023c61cf85ea76087e4101a7f0079eb9ad8f51e0222aadd355399"
+    },
+    {
+      "path": "results\\figures\\figure1_dataset_and_design.tiff",
+      "bytes": 1571312,
+      "sha256": "8ff2052ed7f858339fdd065ebf5b5c3fb73bcc7bbee117a3d7ec3ff72d51a30e"
+    },
+    {
+      "path": "results\\figures\\figure2_metabolic_separation.pdf",
+      "bytes": 111464,
+      "sha256": "73cd5e8921e3b1098ce0f4d9634689ddeccd0db2295d67dc2db8c8f3fb0177a8"
+    },
+    {
+      "path": "results\\figures\\figure2_metabolic_separation.png",
+      "bytes": 1009762,
+      "sha256": "4bdb2128748a3b151b4585bc1b2de41332da337cffbb4444b8b8d2919adcaf3e"
+    },
+    {
+      "path": "results\\figures\\figure2_metabolic_separation.svg",
+      "bytes": 138452,
+      "sha256": "dbd6e618e99cbfd604e3287cd59e37d35c2ba01b0cbd55bf233e477884418488"
+    },
+    {
+      "path": "results\\figures\\figure2_metabolic_separation.tiff",
+      "bytes": 3689506,
+      "sha256": "f9c8de52ee4bf98ed4d1e485fa439a112101797b8fb5af3453fe6a213d7f652e"
+    },
+    {
+      "path": "results\\figures\\figure3_robustness_and_interpretation.pdf",
+      "bytes": 89585,
+      "sha256": "4f18c280caede5b4023c9f5a96ecc917bfeacb1963dd07054f4744348a3f0d44"
+    },
+    {
+      "path": "results\\figures\\figure3_robustness_and_interpretation.png",
+      "bytes": 1016316,
+      "sha256": "98da7a4548b3a920b1555ddb8f7f7b239e141e83b6949bef628bc3d7725725fd"
+    },
+    {
+      "path": "results\\figures\\figure3_robustness_and_interpretation.svg",
+      "bytes": 102949,
+      "sha256": "896a72d57712c9f1b93048f16e590d8d1f93157b201499b131a51a7f985e0f93"
+    },
+    {
+      "path": "results\\figures\\figure3_robustness_and_interpretation.tiff",
+      "bytes": 3889446,
+      "sha256": "ab09dfbab012adeaa2723cba2115c4742a0b353ed335ee967760b975b1698f33"
+    },
+    {
+      "path": "results\\summary.json",
+      "bytes": 2377,
+      "sha256": "d105be03005f450824456ca62eeeeb9fcd13a9091bfa609e0da490417c38103d"
+    },
+    {
+      "path": "results\\tables\\cell_assignments.csv",
+      "bytes": 494633,
+      "sha256": "6f2e6068ee76859940c5c403bfe1774914b686b697dc509661ac477d7d173eb5"
+    },
+    {
+      "path": "results\\tables\\matched_random_classification.csv",
+      "bytes": 861,
+      "sha256": "6626bc0f8485d6c6328f759b9b08e7494853f3dc94c36842eb77cad97c13ba49"
+    },
+    {
+      "path": "results\\tables\\matched_random_gene_sets.csv",
+      "bytes": 311,
+      "sha256": "bfff6e059d09b50b3e50d522b46ded14e87c13d404ab6d36c7cf7a4e061ceab5"
+    },
+    {
+      "path": "results\\tables\\pathway_scores_by_cell_type.csv",
+      "bytes": 9744,
+      "sha256": "6f9049a538b965b8570fb2a02618410188e3275820c56e7b2b64750245ce3f0b"
+    },
+    {
+      "path": "results\\tables\\silhouette_all_cells.csv",
+      "bytes": 138,
+      "sha256": "d5f36c1d2f4e6844a4ec00dcb6639c2a0df31b50d5590eef0cf3dfed5e70277f"
+    },
+    {
+      "path": "results\\tables\\silhouette_complexity_adjusted_all_cells.csv",
+      "bytes": 221,
+      "sha256": "794f39ef117bc89ed0a221eed06ea081f0af3a184152e5c414a787c5f0e28489"
+    },
+    {
+      "path": "results\\tables\\silhouette_malignant_cells.csv",
+      "bytes": 112,
+      "sha256": "ee3948f2027d44632449c656d1521a25e3b63f5043d74a34192669409511616e"
+    },
+    {
+      "path": "results\\tables\\silhouette_patient_complexity_adjusted_malignant.csv",
+      "bytes": 178,
+      "sha256": "a4616d46f9fc2aa37034f95761bb48ea8de0eadf4c7dc5571d5e407ab3a1bccb"
+    },
+    {
+      "path": "results\\tables\\within_patient_malignant_clustering.csv",
+      "bytes": 205,
+      "sha256": "bfa3b91784de25c9f789eb2e29d1e9865c8e5a90e859f41e18ac15398416604e"
+    }
+  ]
+}

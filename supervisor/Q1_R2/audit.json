@@ -1,0 +1,51 @@
+{
+  "snapshot_at": "2026-09-12T09:24:00.710Z",
+  "task": "C:\\Users\\User\\Desktop\\agentic\\3CA\\Q1_R2",
+  "status": "runner_failed",
+  "checkpoint_status": "needs_attention",
+  "phase": "initialization",
+  "next_action": "explore 3CA catalog for metabolic-related studies and understand data structure",
+  "rounds": 31,
+  "last_error": "Autonomous recovery exhausted without verified progress.",
+  "sessions": [
+    {
+      "file": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.runtime\\codex-home\\sessions\\2026\\09\\12\\rollout-2026-09-12T17-08-14-c9989685-0c8.jsonl",
+      "bytes": 24411,
+      "sha256": "366056d2192050c75ef77ee0bae444663b58ad3cf2270faf926cc12e8e32045f",
+      "events": 4,
+      "partial_lines": 0,
+      "noncanonical_metadata_order": false,
+      "pending_tool_calls": []
+    },
+    {
+      "file": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.runtime\\codex-home\\sessions\\2026\\09\\12\\rollout-2026-09-12T17-16-09-d41e4aa6-b5c.jsonl",
+      "bytes": 721809,
+      "sha256": "2e9b543a47f87c39bc63a5277a364b230484dea12757c3cf72962eec2e4f9755",
+      "events": 221,
+      "partial_lines": 0,
+      "noncanonical_metadata_order": true,
+      "pending_tool_calls": []
+    }
+  ],
+  "tools": 54,
+  "failed_tools": 1,
+  "original_user_inputs": 1,
+  "supervisor_research_interventions": 0,
+  "engine_continuations": 1,
+  "reasoning_responses": 17,
+  "responses_without_returned_reasoning": 15,
+  "artifacts": [],
+  "runner": {
+    "started_at": "2026-09-12T09:16:08.7764252Z",
+    "semantic_acceptance": "not_accepted",
+    "attempt": 3,
+    "error": "Local Qwen3.5-4B agent exited with code 1; checkpoint status: needs_attention.",
+    "ended_at": "2026-09-12T09:21:38.4804239Z",
+    "runner_success": false
+  },
+  "semantic_acceptance": "not_accepted",
+  "caveat": "Tool return, exit 0 and artifact existence do not establish scientific correctness. Missing reasoning is not reconstructed. Persisted running status is not liveness; runner failure overrides a stale checkpoint.",
+  "attempt": 3,
+  "supervisor_operational_restarts": 2,
+  "checkpoint_read_error": null
+}

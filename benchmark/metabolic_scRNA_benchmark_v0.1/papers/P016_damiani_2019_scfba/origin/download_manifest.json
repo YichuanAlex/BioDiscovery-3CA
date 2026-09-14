@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P016",
+  "si_requested": true,
+  "downloaded_at": "2026-09-11T10:13:16+00:00",
+  "pmc_attempt": {
+    "provider": "Europe PMC",
+    "pmcid": "PMC6413955",
+    "status": "open_access_downloaded",
+    "source_url": ""
+  },
+  "official_fallback_attempt": {
+    "provider": "official_publisher_or_repository",
+    "status": "downloaded_with_si",
+    "attempts": [
+      {
+        "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006733",
+        "status": "full_text_html_available"
+      }
+    ]
+  },
+  "files": [
+    {
+      "relative_path": "main_article.xml",
+      "role": "main_article",
+      "media_type": "text/xml",
+      "size_bytes": 202542,
+      "sha256": "07ee2412dd378817bcf3bf403753d115eb35bb882ce630bc34c8580be8a65368",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6413955/fullTextXML"
+    },
+    {
+      "relative_path": "main_article.pdf",
+      "role": "main_article",
+      "media_type": "application/pdf",
+      "size_bytes": 3119313,
+      "sha256": "417e036d2f92858b49b906f96aa10dd6c1645c7829694815728fe8758c944d57",
+      "source_url": "https://europepmc.org/api/getPdf?pmcid=PMC6413955"
+    },
+    {
+      "relative_path": "supplementary/pcbi.1006733.s005.pdf",
+      "role": "supporting_information",
+      "media_type": "application/pdf",
+      "size_bytes": 39646,
+      "sha256": "e9fffa083d4089726dd8284c2e9eb29b9947774dc7f9e1fb39a68a3bae1c0b30",
+      "source_url": "https://storage.googleapis.com/plos-corpus-prod/10.1371/journal.pcbi.1006733/2/pcbi.1006733.s005.pdf?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=wombat-sa%40plos-prod.iam.gserviceaccount.com%2F20260911%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260911T052728Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=a1137066d44cbf03f927b1b1b95b607296cf7a8ee60c76118a967c2bf9bf301f0ce2c6330e87e5fa7b71b090e3551c2f9d0e64f4649d747cfa7b11d450a74ecf8126c037720111ea22321dc970ea905f3aabd1860e40f15c7363f4f599cf12d53329ddbb682adc5bc103b1a633957e3afc00975bd328f1fdc9a82a3d26e5ba2077f362995a56ea49b12bcf6c3a20740a91ee21d872363c4f6ed0c4734e5b4d8971cb6d4606dbf20119e015d95048f58f791790afbb1c27d56b95582a278d7c4db5f2260648f8a074b341edb1e3d1cd18d5fc8101a3e4c8b8dd24df73bcd556470af8dc9e6af99e51974e4f61df0fec6985d6be50b1190ed02cbf9c460159b193"
+    },
+    {
+      "relative_path": "supplementary/pcbi.1006733.s006.pdf",
+      "role": "supporting_information",
+      "media_type": "application/pdf",
+      "size_bytes": 31946,
+      "sha256": "d1c3b266afc9b2124467dbce4d99265fee205c48b49401b0bd77bb6fe7619e1e",
+      "source_url": "https://storage.googleapis.com/plos-corpus-prod/10.1371/journal.pcbi.1006733/2/pcbi.1006733.s006.pdf?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=wombat-sa%40plos-prod.iam.gserviceaccount.com%2F20260911%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260911T030358Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=1fac83e0ef9dd9e84ea4a319a3eb4aa4b1bb454a843b7ee546c4b8124a05792aaefb25e35a29f007a82179069f0f7788e24a1f0628505a2fadc6e36bdaf93bf033a3b0a101c0353da33cd21f5ca091a21a9e93fcffe80166790a704e651aa38b8a6314ded09b79bc7240191c54fb5c00a84fb410f58a2b8f714307379be97cdecbbb261437a54b974441d0f282e163b79cbbb4f1d3ebf01fd55e897590394330159580c16fc2c1dafb388255954bdfaef05614b33ea9981b881a6edcd7c4cae68f7945163a90a1558059f16ed827d8971475f100af5107e6ed61168b2fd91a4375cfcd64014b77ec0761cd5ff5a9ee0951f62bbde3de587113897ae2c2d11475"
+    },
+    {
+      "relative_path": "supplementary/pcbi.1006733.s007.xlsx",
+      "role": "supporting_information",
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "size_bytes": 46858,
+      "sha256": "790bdab5b95aaa1bde56d2cf32df3f88aa5345cb6501005ccff133585fa17e8d",
+      "source_url": "https://storage.googleapis.com/plos-corpus-prod/10.1371/journal.pcbi.1006733/2/pcbi.1006733.s007.xlsx?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=wombat-sa%40plos-prod.iam.gserviceaccount.com%2F20260911%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260911T052741Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=0a97134d662a2c1b5217b32d56a2bbc6160e7fb6510ee265aea8c321c21f27bfb301018faaf6c71f594238018e8972dd23c61f2d4ca3d6612f9cc0884f424d4fa555e4b0a403ad01893c8baf69f523dde224f220dfe626b9d29a0f138d3dda7f997d19974437eed6491ca793637e80c8622598f96be34c54db2a1cbd83263dfd0940ed7b2f04b6173ed5a1de53b2299cd21feaa49028b9e6e2103d7c60b66d9ae63189bf4ff329f56949998907d6eb78267ef572922534e966dd41ab96005975b7ec166638693b70d78b182974b7b7deceaeb0a1f23bea18b2a0a2b366b90b979c3d1d4e89a490de11b59bda8681b2650310f67efa18bf70deaf3b763745f5ee"
+    },
+    {
+      "relative_path": "supplementary/pcbi.1006733.s008.xlsx",
+      "role": "supporting_information",
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "size_bytes": 10760,
+      "sha256": "f087792f000ae197788716f2a82971a32b437e3789b0a35fad39a02e7b7f524c",
+      "source_url": "https://storage.googleapis.com/plos-corpus-prod/10.1371/journal.pcbi.1006733/2/pcbi.1006733.s008.xlsx?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=wombat-sa%40plos-prod.iam.gserviceaccount.com%2F20260911%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260911T052753Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=28f0c284335b34cd2558e00085309eb633fa0c8f69843770ed5073516b3c2394b35c96562c91709e5cf62995091bbebcf8e19f9cbea1cde864d1e01a39b98981ce1c2230a3a1e01c44bce7e5971d820d46aee889edad6b7ee3968031be570384f89446a36eb6775a36790321c7eda47b3f3debf2b9d65f5ff4fd544be830af84f59263a705c22dec888e0700f9bc30f413bd8762778c268accca717e83e38bb4971728cc34009cf9e14b41ea1672411526bca279eb10d432e8edd51569afa89f9dec475a47d8d8ed59c811131ec1abae4c89d69a2e8499bc3f86c46a955e1acdc5c0b36ddbdc88ee2b9595ebd67982848331b9f57872d8928b083530a012da71"
+    }
+  ],
+  "verification": {
+    "checks": [
+      "nonzero size",
+      "PDF magic when applicable",
+      "SHA-256",
+      "source URL recorded"
+    ],
+    "pdf_text_or_title_check": "external acceptance check; see top-level 构建与验收报告.md"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P026",
+  "folder_id": "P026_shi_2025_paasc",
+  "title": "Inferring pathway activity from single-cell and spatial transcriptomics data with PaaSc",
+  "identifiers": {
+    "doi": "10.1371/journal.pcbi.1013666",
+    "pmid": "41212919",
+    "pmcid": "PMC12622815"
+  },
+  "publication": {
+    "venue": "PLOS Computational Biology",
+    "publisher": "Public Library of Science (PLoS)",
+    "type": "peer_reviewed",
+    "published_at": "2025-11-10",
+    "version": "version_of_record"
+  },
+  "integrity": {
+    "checked_at": "2026-09-11T10:13:16+00:00",
+    "sources": [
+      "Crossref metadata",
+      "PubMed publication types/comments when PMID resolved"
+    ],
+    "screening_completeness": "Crossref+PubMed",
+    "retracted": false,
+    "expression_of_concern": false,
+    "corrections": [],
+    "publication_types": [
+      "Journal Article",
+      "Research Support, Non-U.S. Gov't"
+    ]
+  },
+  "selection": {
+    "tier": "A",
+    "role": "gene_set_scoring_method",
+    "primary_axis": "Q1",
+    "secondary_axes": [
+      "Q2",
+      "Q3"
+    ],
+    "rationale": "A recent peer-reviewed pathway-activity method benchmarked on multimodal and cancer datasets with versioned Zenodo source data and code."
+  },
+  "code_sources": [
+    {
+      "url": "https://github.com/yoyoong/PaaSc",
+      "commit": null,
+      "license": "to_verify"
+    }
+  ],
+  "data_sources": [
+    {
+      "accession": "10.5281/zenodo.17138447",
+      "access": "public",
+      "role": "unspecified",
+      "verification": "manually_seeded_from_primary_source"
+    },
+    {
+      "accession": "10.5281/zenodo.17136774",
+      "access": "public",
+      "role": "unspecified",
+      "verification": "manually_seeded_from_primary_source"
+    },
+    {
+      "accession": "GSE175533",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE102090",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE119807",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE115301",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE100501",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE96583",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    }
+  ],
+  "verified_data_urls": [],
+  "repository_urls_extracted": [
+    "https://figshare.com/",
+    "https://figshare.com/articles/dataset/Processed_files_to_use_with_scanpy_/8273102",
+    "https://github.com/yoyoong/PaaSc"
+  ],
+  "curation": {
+    "status": "candidate_requires_independent_reproduction",
+    "completed_stages": [
+      "S0_candidate_registration",
+      "S1_source_inventory",
+      "S2_candidate_insight",
+      "S3_paper_data_task_mapping"
+    ],
+    "pending_stages": [
+      "S4_independent_reproduction",
+      "S5_final_prompt_approval",
+      "S6_answerability_and_leakage_tests",
+      "S7_grader_adversarial_tests",
+      "S8_dual_signoff"
+    ],
+    "domain_curator": null,
+    "computational_curator": null,
+    "reviewed_at": null
+  }
+}

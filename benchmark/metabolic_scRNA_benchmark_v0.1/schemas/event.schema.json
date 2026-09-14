@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "sequence",
+    "timestamp",
+    "event_type"
+  ],
+  "properties": {
+    "sequence": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "event_type": {
+      "type": "string"
+    }
+  }
+}

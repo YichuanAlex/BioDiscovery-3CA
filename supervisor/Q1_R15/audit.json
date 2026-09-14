@@ -1,0 +1,89 @@
+{
+  "snapshot_at": "2026-09-13T09:06:14.805Z",
+  "status": "running",
+  "runner_alive": false,
+  "checkpoint_error": null,
+  "rounds": 70,
+  "phase": "start",
+  "next_action": "inspect available tools and task sources",
+  "tools": {
+    "search_studies": 2,
+    "get_study": 1,
+    "plan_asset": 1,
+    "download_asset": 1,
+    "inspect_dataset": 5,
+    "prepare_3ca_dataset": 1,
+    "inspect_research_table": 2,
+    "fetch_reactome_metabolic_genes": 1,
+    "list_files": 2,
+    "read_file": 24,
+    "run_powershell": 20,
+    "analyze_metabolic_states": 1,
+    "verify_doi": 1,
+    "write_file": 4,
+    "validate_research_bundle": 1,
+    "replace_in_file": 3
+  },
+  "failures": [
+    {
+      "session": "rollout-2026-09-13T16-46-42-62a5d151-d79.jsonl",
+      "tool": "inspect_dataset",
+      "result": "ERROR: ENOENT: no such file or directory, lstat 'C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\inputs'"
+    },
+    {
+      "session": "rollout-2026-09-13T16-46-42-62a5d151-d79.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: ENOENT: no such file or directory, lstat 'C:\\Users\\User\\Desktop\\agentic\\3CA\\Q1_R15\\README.md'"
+    },
+    {
+      "session": "rollout-2026-09-13T16-46-42-62a5d151-d79.jsonl",
+      "tool": "validate_research_bundle",
+      "result": "ERROR: {\r\n  \"valid\": false,\r\n  \"checked_at\": \"2026-09-13T09:00:37.954653+00:00\",\r\n  \"manifest_path\": \"results\\\\analysis_manifest.json\",\r\n  \"manifest_sha256\": \"6f99eb3061d85c6f5a95e217f0273f138c6ba81abe44ad9973d5eacdca761a6b\",\r\n  \"errors\": [\r\n    \"feature_set.matched_genes_path is required\",\r\n    \"LaTeX report contains no included figure\",\r\n    \"Figure is not referenced by LaTeX: figures/metabolic_umap.pdf\",\r\n    \"Figure is not referenced by LaTeX: figures/clustering_diagnostics.pdf\"\r\n  ],\r\n  \"checks\": {\r\n    \"methods\": 1,\r\n    \"figures\": 2,\r\n    \"references\": 1\r\n  }\r\n}"
+    },
+    {
+      "session": "rollout-2026-09-13T16-46-42-62a5d151-d79.jsonl",
+      "tool": "replace_in_file",
+      "result": "ERROR: old_text must occur exactly once; found 0."
+    }
+  ],
+  "required_artifacts": [
+    {
+      "file": "report/main.tex",
+      "present": true
+    },
+    {
+      "file": "report/main.pdf",
+      "present": true
+    },
+    {
+      "file": "results/summary.json",
+      "present": true
+    },
+    {
+      "file": "results/analysis_manifest.json",
+      "present": true
+    },
+    {
+      "file": "README.md",
+      "present": true
+    }
+  ],
+  "research_validation": {
+    "valid": false,
+    "checked_at": "2026-09-13T09:06:14.777290+00:00",
+    "manifest_path": "results\\analysis_manifest.json",
+    "manifest_sha256": "93f1e971b7d990e0ca41958df71a89dc789446cb97f788b102835f4fa31d4941",
+    "errors": [
+      "PDF is older than LaTeX source; rebuild it",
+      "Figure is not referenced by LaTeX: figures/clustering_diagnostics.pdf"
+    ],
+    "checks": {
+      "methods": 1,
+      "figures": 2,
+      "references": 1
+    }
+  },
+  "frozen_mismatches": [],
+  "structural_completion_candidate": false,
+  "semantic_acceptance": "pending_independent_review"
+}

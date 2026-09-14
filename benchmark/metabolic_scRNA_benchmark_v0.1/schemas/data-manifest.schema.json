@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "dataset_id",
+    "version",
+    "source_accessions",
+    "biological_scope",
+    "files",
+    "materialization_status"
+  ]
+}

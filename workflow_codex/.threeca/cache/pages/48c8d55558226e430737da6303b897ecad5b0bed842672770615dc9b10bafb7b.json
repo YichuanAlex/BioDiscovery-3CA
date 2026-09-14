@@ -1,0 +1,1654 @@
+{
+  "url": "https://www.weizmann.ac.il/sites/3CA/brain",
+  "final_url": "https://www.weizmann.ac.il/sites/3CA/brain",
+  "fetched_at": "2026-09-14T04:17:31.281668+00:00",
+  "raw_html_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\pages\\48c8d55558226e430737da6303b897ecad5b0bed842672770615dc9b10bafb7b.html",
+  "title": "Brain | Curated Cancer Cell Atlas",
+  "text": "Brain Title Data Meta data Cell types Summary Disease Technology #samples #cells Meta programs CNAs UMAP Cell cycle Choudhury et al. 2022 Cell types Summary Meningioma 10x 10 58843 Meta programs CNAs UMAP Cell cycle Couturier et al. 2020 Cell types Summary GBM 10x 29 100335 Meta programs Cell cycle Darmanis et al. 2017 Cell types Summary GBM SmartSeq2 4 3589 Meta programs CNAs UMAP Cell cycle Filbin et al. 2018 Cell types Summary Pediatric H3-K27M mutant glioma SmartSeq2 7 2587 Meta programs UMAP Cell cycle Gojo et al. 2020 Cell types Summary Pediatric ependymoma SmartSeq2 25 6739 Meta programs CNAs UMAP Cell cycle Hovestadt et al. 2019 Cell types Summary Medulloblastoma SmartSeq2 36 8691 UMAP Cell cycle Neftel et al. 2019 Cell types Summary GBM SmartSeq2 38 24131 Meta programs CNAs UMAP Cell cycle Tirosh et al. 2016 Cell types Summary IDH-mutant oligodendroglioma SmartSeq2 6 4347 Meta programs UMAP Cell cycle Venteicher et al. 2017 Cell types Summary IDH-mutant astrocytoma SmartSeq2 10 6341 Meta programs UMAP Cell cycle Wang et al. 2019 Cell types Summary GBM 10x 10 16317 Meta programs CNAs UMAP Cell cycle Yuan et al. 2018 Cell types Summary HGG Microwell array-based platform 8 23793 Meta programs CNAs UMAP Cell cycle All Brain cancer 183 255713",
+  "links": [
+    {
+      "url": "https://www.nature.com/articles/s41588-022-01061-8",
+      "text": "Choudhury et al. 2022"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/4y8x28n9v6y5bkss3mqgu/Data_Choudhury2022_Brain.tar.gz?rlkey=3jhc85s8p3tp5jatdrauh6ka7&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/bz4b9sosc4kkkw5xmsw8n/Meta-data_Choudhury2022_Brain.tar.gz?rlkey=2r6a5ul6g1yo6b4ffdx9njxpm&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20773",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20773",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20773",
+      "text": "Meta programs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20773",
+      "text": "CNAs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20773",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20773",
+      "text": "Cell cycle"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41467-020-17186-5",
+      "text": "Couturier et al. 2020"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/49hfymw73eut0h45u6n1j/Data_Couturier2020_Brain.tar.gz?rlkey=7gksenf1sht7mkxfl98g0s9ia&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/0h5sk9ytkmgd6o9oxyzlx/Meta-data_Couturier2020_Brain.tar.gz?rlkey=oeoqx0sia7apy0ynb040dnya2&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20056",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20056",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20056",
+      "text": "Meta programs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20056",
+      "text": "Cell cycle"
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S2211124717314626",
+      "text": "Darmanis et al. 2017"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/lwc18a3683gk0b381a8ib/Data_Darmanis2017_Brain.tar.gz?rlkey=26z95w9ezdknit7brmpqs0ewh&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/26zoq5dp29ycq2rvb2urc/Meta-data_Darmanis2017_Brain.tar.gz?rlkey=dzwmsai149xcargl159bjeaab&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20058",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20058",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20058",
+      "text": "Meta programs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20058",
+      "text": "CNAs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20058",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20058",
+      "text": "Cell cycle"
+    },
+    {
+      "url": "https://science.sciencemag.org/content/360/6386/331",
+      "text": "Filbin et al. 2018"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/qv4dfn364go7snxjd9e8q/Data_Filbin2018_Brain.tar.gz?rlkey=is8ljyd5rqnnq01f2x2u4bnri&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/dkl6tlgecpv274it0qa7i/Meta-data_Filbin2018_Brain.tar.gz?rlkey=ln104cq8inn9od3d4afdsv12t&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20063",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20063",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20063",
+      "text": "Meta programs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20063",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20063",
+      "text": "Cell cycle"
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S1535610820303081",
+      "text": "Gojo et al. 2020"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/feacq5t81em3c13hue31p/Data_Gojo2020_Brain.tar.gz?rlkey=r0jgfnutl5qyo1lsp77hdxoy2&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/4r9on73stanfcktlf6fck/Meta-data_Gojo2020_Brain.tar.gz?rlkey=rwzcrphpb4bjbw563le9vvp4v&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20070",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20070",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20070",
+      "text": "Meta programs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20070",
+      "text": "CNAs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20070",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20070",
+      "text": "Cell cycle"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41586-019-1434-6",
+      "text": "Hovestadt et al. 2019"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/ymvxdrtcq7vt6y5gan5y1/Data_Hovestadt2019_Brain.tar.gz?rlkey=la28fnrkrpq4l7nu9h6vd5k7b&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/sus44lm5b5z63q61bwknh/Meta-data_Hovestadt2019_Brain.tar.gz?rlkey=y7m7l8i0ugdpc1faxdg6y8blo&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20071",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20071",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20071",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20071",
+      "text": "Cell cycle"
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0092867419306877",
+      "text": "Neftel et al. 2019"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/xflvflx73kbug76u6a955/Data_Neftel2019_Brain.tar.gz?rlkey=o8yru9vryof2ndpa0old3rhn1&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/7zz1jyhah1a5teuvipmjc/Meta-data_Neftel2019_Brain.tar.gz?rlkey=jglw4f8t0l4wm2zj9y28ftp4m&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20099",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20099",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20099",
+      "text": "Meta programs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20099",
+      "text": "CNAs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20099",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20099",
+      "text": "Cell cycle"
+    },
+    {
+      "url": "https://www.nature.com/articles/nature20123",
+      "text": "Tirosh et al. 2016"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/uhtilmbeq2liwbe8yai1d/Data_Tirosh2016_Brain.tar.gz?rlkey=v5ees0ku3k48i0nqkquxuu5qu&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/gm20dz0gwmb9g1yzhf8r8/Meta-data_Tirosh2016_Brain.tar.gz?rlkey=g30xvst4u2tid8ufo14wp87zx&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20110",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20110",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20110",
+      "text": "Meta programs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20110",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20110",
+      "text": "Cell cycle"
+    },
+    {
+      "url": "https://science.sciencemag.org/content/355/6332/eaai8478",
+      "text": "Venteicher et al. 2017"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/cn07yybxnje6k4nh27nbe/Data_Venteicher2017_Brain.tar.gz?rlkey=4w75sdcj2mtyjm83h316x9rgs&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/stf00lhgiqzaxvz1di46m/Meta-data_Venteicher2017_Brain.tar.gz?rlkey=t271kjzaedtghxrfz5yauv0jj&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20112",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20112",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20112",
+      "text": "Meta programs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20112",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20112",
+      "text": "Cell cycle"
+    },
+    {
+      "url": "https://cancerdiscovery.aacrjournals.org/content/9/12/1708.long",
+      "text": "Wang et al. 2019"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/u7y3jo2jc1dlv4qsl1cc8/Data_Wang2019_Brain.tar.gz?rlkey=733ldgm8k5ztzfqbgdewlrynh&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/it3075pqkbco9ocrihmps/Meta-data_Wang2019_Brain.tar.gz?rlkey=pg8kco2i0o5huju9w1ypf45ta&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20113",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20113",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20113",
+      "text": "Meta programs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20113",
+      "text": "CNAs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20113",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20113",
+      "text": "Cell cycle"
+    },
+    {
+      "url": "https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-018-0567-9",
+      "text": "Yuan et al. 2018"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/wsyyrwxv3vtff25wtx6gz/Data_Yuan2018_Brain.tar.gz?rlkey=drj0tbov1yzg689rhauxj9pz7&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/9sz27wt3wglv5wpwjeta1/Meta-data_Yuan2018_Brain.tar.gz?rlkey=i3j1jexcffe1qsnrro3z0v2xx&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20119",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20119",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20119",
+      "text": "Meta programs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20119",
+      "text": "CNAs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20119",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20119",
+      "text": "Cell cycle"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fo/o0wn5mhfray04sz0id4at/AL1vtPsDgyb2bWL0ZXPOcmM?rlkey=jllu9gpg2irecfbde34b0xzmt&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fo/uqsr99w36xhpnlt1c1lw6/AAXKupI-BU5UaDrRI4VLj-I?rlkey=50api212ec35cba6l9zzum8yi&dl=1",
+      "text": ""
+    }
+  ],
+  "tables": [
+    [
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [],
+          "text": "Title"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [],
+          "text": "Data"
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [],
+          "text": "Meta data"
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "Disease"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "Technology"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "#samples"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "#cells"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [],
+          "text": "CNAs"
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [],
+          "text": "Cell cycle"
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://www.nature.com/articles/s41588-022-01061-8",
+              "text": "Choudhury et al. 2022"
+            }
+          ],
+          "text": "Choudhury et al. 2022"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/4y8x28n9v6y5bkss3mqgu/Data_Choudhury2022_Brain.tar.gz?rlkey=3jhc85s8p3tp5jatdrauh6ka7&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/bz4b9sosc4kkkw5xmsw8n/Meta-data_Choudhury2022_Brain.tar.gz?rlkey=2r6a5ul6g1yo6b4ffdx9njxpm&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20773",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20773",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "Meningioma"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "10x"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "10"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "58843"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20773",
+              "text": "Meta programs"
+            }
+          ],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20773",
+              "text": "CNAs"
+            }
+          ],
+          "text": "CNAs"
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20773",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20773",
+              "text": "Cell cycle"
+            }
+          ],
+          "text": "Cell cycle"
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://www.nature.com/articles/s41467-020-17186-5",
+              "text": "Couturier et al. 2020"
+            }
+          ],
+          "text": "Couturier et al. 2020"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/49hfymw73eut0h45u6n1j/Data_Couturier2020_Brain.tar.gz?rlkey=7gksenf1sht7mkxfl98g0s9ia&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/0h5sk9ytkmgd6o9oxyzlx/Meta-data_Couturier2020_Brain.tar.gz?rlkey=oeoqx0sia7apy0ynb040dnya2&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20056",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20056",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "GBM"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "10x"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "29"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "100335"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20056",
+              "text": "Meta programs"
+            }
+          ],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [],
+          "text": ""
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20056",
+              "text": "Cell cycle"
+            }
+          ],
+          "text": "Cell cycle"
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://www.sciencedirect.com/science/article/pii/S2211124717314626",
+              "text": "Darmanis et al. 2017"
+            }
+          ],
+          "text": "Darmanis et al. 2017"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/lwc18a3683gk0b381a8ib/Data_Darmanis2017_Brain.tar.gz?rlkey=26z95w9ezdknit7brmpqs0ewh&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/26zoq5dp29ycq2rvb2urc/Meta-data_Darmanis2017_Brain.tar.gz?rlkey=dzwmsai149xcargl159bjeaab&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20058",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20058",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "GBM"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "SmartSeq2"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "4"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "3589"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20058",
+              "text": "Meta programs"
+            }
+          ],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20058",
+              "text": "CNAs"
+            }
+          ],
+          "text": "CNAs"
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20058",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20058",
+              "text": "Cell cycle"
+            }
+          ],
+          "text": "Cell cycle"
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://science.sciencemag.org/content/360/6386/331",
+              "text": "Filbin et al. 2018"
+            }
+          ],
+          "text": "Filbin et al. 2018"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/qv4dfn364go7snxjd9e8q/Data_Filbin2018_Brain.tar.gz?rlkey=is8ljyd5rqnnq01f2x2u4bnri&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/dkl6tlgecpv274it0qa7i/Meta-data_Filbin2018_Brain.tar.gz?rlkey=ln104cq8inn9od3d4afdsv12t&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20063",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20063",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "Pediatric H3-K27M mutant glioma"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "SmartSeq2"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "7"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "2587"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20063",
+              "text": "Meta programs"
+            }
+          ],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [],
+          "text": ""
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20063",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20063",
+              "text": "Cell cycle"
+            }
+          ],
+          "text": "Cell cycle"
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://www.sciencedirect.com/science/article/pii/S1535610820303081",
+              "text": "Gojo et al. 2020"
+            }
+          ],
+          "text": "Gojo et al. 2020"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/feacq5t81em3c13hue31p/Data_Gojo2020_Brain.tar.gz?rlkey=r0jgfnutl5qyo1lsp77hdxoy2&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/4r9on73stanfcktlf6fck/Meta-data_Gojo2020_Brain.tar.gz?rlkey=rwzcrphpb4bjbw563le9vvp4v&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20070",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20070",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "Pediatric ependymoma"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "SmartSeq2"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "25"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "6739"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20070",
+              "text": "Meta programs"
+            }
+          ],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20070",
+              "text": "CNAs"
+            }
+          ],
+          "text": "CNAs"
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20070",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20070",
+              "text": "Cell cycle"
+            }
+          ],
+          "text": "Cell cycle"
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://www.nature.com/articles/s41586-019-1434-6",
+              "text": "Hovestadt et al. 2019"
+            }
+          ],
+          "text": "Hovestadt et al. 2019"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/ymvxdrtcq7vt6y5gan5y1/Data_Hovestadt2019_Brain.tar.gz?rlkey=la28fnrkrpq4l7nu9h6vd5k7b&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/sus44lm5b5z63q61bwknh/Meta-data_Hovestadt2019_Brain.tar.gz?rlkey=y7m7l8i0ugdpc1faxdg6y8blo&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20071",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20071",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "Medulloblastoma"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "SmartSeq2"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "36"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "8691"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [],
+          "text": ""
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [],
+          "text": ""
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20071",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20071",
+              "text": "Cell cycle"
+            }
+          ],
+          "text": "Cell cycle"
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://www.sciencedirect.com/science/article/pii/S0092867419306877",
+              "text": "Neftel et al. 2019"
+            }
+          ],
+          "text": "Neftel et al. 2019"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/xflvflx73kbug76u6a955/Data_Neftel2019_Brain.tar.gz?rlkey=o8yru9vryof2ndpa0old3rhn1&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/7zz1jyhah1a5teuvipmjc/Meta-data_Neftel2019_Brain.tar.gz?rlkey=jglw4f8t0l4wm2zj9y28ftp4m&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20099",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20099",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "GBM"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "SmartSeq2"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "38"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "24131"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20099",
+              "text": "Meta programs"
+            }
+          ],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20099",
+              "text": "CNAs"
+            }
+          ],
+          "text": "CNAs"
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20099",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20099",
+              "text": "Cell cycle"
+            }
+          ],
+          "text": "Cell cycle"
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://www.nature.com/articles/nature20123",
+              "text": "Tirosh et al. 2016"
+            }
+          ],
+          "text": "Tirosh et al. 2016"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/uhtilmbeq2liwbe8yai1d/Data_Tirosh2016_Brain.tar.gz?rlkey=v5ees0ku3k48i0nqkquxuu5qu&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/gm20dz0gwmb9g1yzhf8r8/Meta-data_Tirosh2016_Brain.tar.gz?rlkey=g30xvst4u2tid8ufo14wp87zx&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20110",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20110",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "IDH-mutant oligodendroglioma"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "SmartSeq2"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "6"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "4347"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20110",
+              "text": "Meta programs"
+            }
+          ],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [],
+          "text": ""
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20110",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20110",
+              "text": "Cell cycle"
+            }
+          ],
+          "text": "Cell cycle"
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://science.sciencemag.org/content/355/6332/eaai8478",
+              "text": "Venteicher et al. 2017"
+            }
+          ],
+          "text": "Venteicher et al. 2017"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/cn07yybxnje6k4nh27nbe/Data_Venteicher2017_Brain.tar.gz?rlkey=4w75sdcj2mtyjm83h316x9rgs&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/stf00lhgiqzaxvz1di46m/Meta-data_Venteicher2017_Brain.tar.gz?rlkey=t271kjzaedtghxrfz5yauv0jj&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20112",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20112",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "IDH-mutant astrocytoma"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "SmartSeq2"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "10"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "6341"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20112",
+              "text": "Meta programs"
+            }
+          ],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [],
+          "text": ""
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20112",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20112",
+              "text": "Cell cycle"
+            }
+          ],
+          "text": "Cell cycle"
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://cancerdiscovery.aacrjournals.org/content/9/12/1708.long",
+              "text": "Wang et al. 2019"
+            }
+          ],
+          "text": "Wang et al. 2019"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/u7y3jo2jc1dlv4qsl1cc8/Data_Wang2019_Brain.tar.gz?rlkey=733ldgm8k5ztzfqbgdewlrynh&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/it3075pqkbco9ocrihmps/Meta-data_Wang2019_Brain.tar.gz?rlkey=pg8kco2i0o5huju9w1ypf45ta&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20113",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20113",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "GBM"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "10x"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "10"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "16317"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20113",
+              "text": "Meta programs"
+            }
+          ],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20113",
+              "text": "CNAs"
+            }
+          ],
+          "text": "CNAs"
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20113",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20113",
+              "text": "Cell cycle"
+            }
+          ],
+          "text": "Cell cycle"
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-018-0567-9",
+              "text": "Yuan et al. 2018"
+            }
+          ],
+          "text": "Yuan et al. 2018"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/wsyyrwxv3vtff25wtx6gz/Data_Yuan2018_Brain.tar.gz?rlkey=drj0tbov1yzg689rhauxj9pz7&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/9sz27wt3wglv5wpwjeta1/Meta-data_Yuan2018_Brain.tar.gz?rlkey=i3j1jexcffe1qsnrro3z0v2xx&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20119",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20119",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "HGG"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "Microwell array-based platform"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "8"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "23793"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20119",
+              "text": "Meta programs"
+            }
+          ],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20119",
+              "text": "CNAs"
+            }
+          ],
+          "text": "CNAs"
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20119",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20119",
+              "text": "Cell cycle"
+            }
+          ],
+          "text": "Cell cycle"
+        }
+      ]
+    ]
+  ]
+}

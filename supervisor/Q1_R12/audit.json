@@ -1,0 +1,58 @@
+{
+  "snapshot_at": "2026-09-13T08:10:42.279Z",
+  "status": "runner_failed",
+  "runner_alive": false,
+  "checkpoint_error": null,
+  "rounds": 45,
+  "phase": "start",
+  "next_action": "inspect available tools and task sources",
+  "tools": {
+    "search_studies": 3,
+    "get_study": 1,
+    "plan_asset": 1,
+    "download_asset": 1,
+    "inspect_dataset": 2,
+    "prepare_3ca_dataset": 1,
+    "inspect_research_table": 1,
+    "run_powershell": 19,
+    "read_file": 11,
+    "fetch_reactome_metabolic_genes": 1,
+    "analyze_metabolic_states": 1,
+    "verify_doi": 1,
+    "write_file": 1,
+    "list_files": 1
+  },
+  "failures": [
+    {
+      "session": "rollout-2026-09-13T15-49-27-913110c3-7ad.jsonl",
+      "tool": "run_powershell",
+      "result": "ERROR: Missing required argument: command"
+    }
+  ],
+  "required_artifacts": [
+    {
+      "file": "report/main.tex",
+      "present": true
+    },
+    {
+      "file": "report/main.pdf",
+      "present": false
+    },
+    {
+      "file": "results/summary.json",
+      "present": true
+    },
+    {
+      "file": "results/analysis_manifest.json",
+      "present": false
+    },
+    {
+      "file": "README.md",
+      "present": false
+    }
+  ],
+  "research_validation": null,
+  "frozen_mismatches": [],
+  "structural_completion_candidate": false,
+  "semantic_acceptance": "pending_independent_review"
+}

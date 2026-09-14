@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P014",
+  "si_requested": true,
+  "downloaded_at": "2026-09-11T10:13:16+00:00",
+  "pmc_attempt": {
+    "provider": "Europe PMC",
+    "pmcid": "PMC8494226",
+    "status": "open_access_downloaded",
+    "source_url": ""
+  },
+  "official_fallback_attempt": {
+    "provider": "official_publisher_or_repository",
+    "status": "full_text_available_si_not_found",
+    "attempts": [
+      {
+        "url": "https://genome.cshlp.org/content/31/10/1867",
+        "status": "failed:HTTPError:HTTP Error 302: The HTTP server returned a redirect error that would lead to an "
+      },
+      {
+        "url": "https://doi.org/10.1101/gr.271205.120",
+        "status": "failed:HTTPError:HTTP Error 302: The HTTP server returned a redirect error that would lead to an "
+      }
+    ]
+  },
+  "files": [
+    {
+      "relative_path": "main_article.xml",
+      "role": "main_article",
+      "media_type": "text/xml",
+      "size_bytes": 271129,
+      "sha256": "7cfcee24f7eb8e9d77bb819f767b7c4fff6f3bfb2a312620999e41a7be6c3c1a",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8494226/fullTextXML"
+    }
+  ],
+  "verification": {
+    "checks": [
+      "nonzero size",
+      "PDF magic when applicable",
+      "SHA-256",
+      "source URL recorded"
+    ],
+    "pdf_text_or_title_check": "external acceptance check; see top-level 构建与验收报告.md"
+  }
+}

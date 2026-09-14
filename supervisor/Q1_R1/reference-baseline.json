@@ -1,0 +1,59 @@
+{
+  "purpose": "Independent regression baseline only; never substitute these values for workflow-computed results.",
+  "reference_project": "C:\\Users\\User\\Desktop\\3ca\\Q1",
+  "reference_rollout": "C:\\Users\\User\\Desktop\\3ca\\Q1-rollout-2026-09-12T08-53-23-01a0931a-d23d-7712-9078-e0574c2e5322.jsonl",
+  "study": {
+    "id": "3ca:20111",
+    "cells": 4645,
+    "genes": 23686,
+    "samples": 19,
+    "annotated_cells": 4097,
+    "malignant_cells": 1257
+  },
+  "source_files": {
+    "expression": {
+      "bytes": 234187869,
+      "sha256": "9e157aceb5a39add6e04c4d92db7f970bf19413a14a8c87a1262f9424f0818f6"
+    },
+    "metadata": {
+      "bytes": 127155,
+      "sha256": "741107ef4ad09cb19b9a22c8af40ce7440e24f18cf1012c2ebb4c03600fede17"
+    }
+  },
+  "reference_metrics": {
+    "metabolic_pathways": 85,
+    "metabolic_genes_after_detection_filter": 1360,
+    "metabolic_30pc_variance": 0.197824,
+    "all_cells": {
+      "selected_k": 2,
+      "silhouette": 0.3770489,
+      "seed_ari_mean": 0.9996468,
+      "random_silhouette_mean": 0.3155469,
+      "random_sets": 20,
+      "empirical_p": 0.047619,
+      "ami_cell_type": 0.487277,
+      "ami_sample": 0.0879063,
+      "complexity_adjusted_k": 4,
+      "complexity_adjusted_silhouette": 0.223680
+    },
+    "patient_blocked_classification": {
+      "metabolic_balanced_accuracy": 0.8838895,
+      "metabolic_macro_f1": 0.8559186,
+      "random_balanced_accuracy_mean": 0.8957563,
+      "random_macro_f1_mean": 0.8753964,
+      "hvg_balanced_accuracy": 0.8922578,
+      "hvg_macro_f1": 0.8973436
+    },
+    "malignant_cells": {
+      "selected_k": 8,
+      "silhouette": 0.2271316,
+      "seed_ari_mean": 0.814334,
+      "ami_sample": 0.741655,
+      "patient_complexity_adjusted_k": 2,
+      "patient_complexity_adjusted_silhouette": 0.2275049,
+      "patient_complexity_adjusted_seed_ari": 0.969887,
+      "within_patient_median_max_silhouette": 0.271394,
+      "patients_with_at_least_30_cells": 9
+    }
+  }
+}

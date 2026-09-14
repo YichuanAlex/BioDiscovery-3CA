@@ -1,0 +1,23 @@
+{
+  "url": "https://www.weizmann.ac.il/sites/3CA/marker-genes",
+  "final_url": "https://www.weizmann.ac.il/sites/3CA/marker-genes",
+  "fetched_at": "2026-09-13T00:25:43.932584+00:00",
+  "raw_html_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\pages\\1cd9ff7773df15f9f1575d1b17d1a9de23a16381666bee3998828e4b184c9ab3.html",
+  "title": "Marker genes | Curated Cancer Cell Atlas",
+  "text": "Global cell type markers Malignant markers Cancer type markers Select cell type B cell Dendritic Endothelial Epithelial Fibroblast Macrophage Malignant Mast NK cell Plasma T cell",
+  "links": [
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/quicktabs/nojs/marker_genes/0",
+      "text": "Global cell type markers"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/quicktabs/nojs/marker_genes/1",
+      "text": "Malignant markers"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/quicktabs/nojs/marker_genes/2",
+      "text": "Cancer type markers"
+    }
+  ],
+  "tables": []
+}

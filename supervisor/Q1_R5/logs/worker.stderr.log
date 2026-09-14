@@ -1,0 +1,5 @@
+[session-log-error] ENOSPC: no space left on device, write
+[checkpoint-retry] ENOSPC attempt=1/3; preserving last committed checkpoint
+[checkpoint-retry] ENOSPC attempt=2/3; preserving last committed checkpoint
+[checkpoint-retry] ENOSPC attempt=1/3; preserving last committed checkpoint
+ERROR: ENOSPC: no space left on device, write

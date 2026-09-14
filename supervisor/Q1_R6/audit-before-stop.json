@@ -1,0 +1,83 @@
+{
+  "snapshot_at": "2026-09-12T16:55:56.370Z",
+  "task": "C:\\Users\\User\\Desktop\\agentic\\3CA\\Q1_R6",
+  "status": "running",
+  "runner_alive": true,
+  "checkpoint_status": "running",
+  "phase": "initialization",
+  "next_action": "refresh_catalog and search_studies for metabolic/single-cell RNA-seq data",
+  "rounds": 1108,
+  "sessions": [
+    {
+      "file": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.runtime\\codex-home\\sessions\\2026\\09\\12\\rollout-2026-09-12T23-07-32-4f728fb3-316.jsonl",
+      "source_in_runtime": true,
+      "bytes": 8959067,
+      "sha256": "e1240ebe96e1497b876ba090cee2b875a9184ff50e0c8ab9af64d10740eee07c",
+      "events": 7340,
+      "partial_lines": 0,
+      "noncanonical_metadata_order": false,
+      "pending_tool_calls": []
+    }
+  ],
+  "tools": 1335,
+  "tool_counts": {
+    "list_files": 207,
+    "search_studies": 298,
+    "get_page": 58,
+    "run_powershell": 579,
+    "refresh_catalog": 78,
+    "web_search": 4,
+    "read_file": 19,
+    "threeca-access": 19,
+    "search_cached_pages": 24,
+    "read_webpage": 24,
+    "task_checkpoint": 17,
+    "crawl_site": 1,
+    "get_study": 5,
+    "write_file": 2
+  },
+  "failed_tools": 83,
+  "guarded_tools": 1098,
+  "loop_breakers": 917,
+  "loop_recoveries": 111,
+  "original_user_inputs": 1,
+  "supervisor_research_interventions": 0,
+  "engine_continuations": 111,
+  "thinking_enabled_responses": 1108,
+  "reasoning_present_responses": 1108,
+  "reasoning_missing_responses": 0,
+  "artifacts": [
+    {
+      "path": "check_catalog.py",
+      "bytes": 446
+    }
+  ],
+  "required_artifacts": [
+    {
+      "file": "report/main.tex",
+      "present": false
+    },
+    {
+      "file": "report/main.pdf",
+      "present": false
+    },
+    {
+      "file": "results/summary.json",
+      "present": false
+    },
+    {
+      "file": "README.md",
+      "present": false
+    }
+  ],
+  "free_bytes": 350219030528,
+  "runner": null,
+  "run_until_complete": true,
+  "max_rounds": 0,
+  "frozen_hash_mismatches": [],
+  "semantic_acceptance": "pending_independent_review",
+  "supervisor_operational_restarts": 0,
+  "checkpoint_read_error": null,
+  "caveat": "Tool return, exit 0 and artifact existence do not establish scientific correctness. Missing reasoning is not reconstructed. Persisted state is not process liveness.",
+  "structural_completion_candidate": false
+}

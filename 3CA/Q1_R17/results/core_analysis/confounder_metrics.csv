@@ -1,0 +1,11 @@
+field,kind,levels,nmi_with_cluster,ari_with_cluster,eta_squared
+patient,categorical,6,0.5509645495576738,0.33998245014324163,
+sample,categorical,10,0.5775835806692949,0.4417732998977412,
+source,categorical,3,0.21180036294718624,0.08603021064464872,
+cell_type,categorical,6,0.496992614329812,0.18921552936754052,
+cell_subtype,categorical,15,0.6538436555403182,0.5286356992106718,
+cell_cycle_phase,categorical,5,0.19132708802145867,0.037732083535259996,
+complexity,numeric,,,,0.6076747057904127
+computed_total_counts,numeric,,,,0.44988799526520457
+computed_detected_genes,numeric,,,,0.607694105931632
+computed_mito_percent,numeric,,,,0.2804625577261283

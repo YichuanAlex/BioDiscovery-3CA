@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P006",
+  "folder_id": "P006_thommen_2018_nsclc_pd1_cd8",
+  "title": "A transcriptionally and functionally distinct PD-1+ CD8+ T cell pool with predictive potential in non-small-cell lung cancer treated with PD-1 blockade",
+  "identifiers": {
+    "doi": "10.1038/s41591-018-0057-z",
+    "pmid": "29892065",
+    "pmcid": "PMC6110381"
+  },
+  "publication": {
+    "venue": "Nature Medicine",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "peer_reviewed",
+    "published_at": "2018-07-01",
+    "version": "version_of_record"
+  },
+  "integrity": {
+    "checked_at": "2026-09-11T10:13:16+00:00",
+    "sources": [
+      "Crossref metadata",
+      "PubMed publication types/comments when PMID resolved"
+    ],
+    "screening_completeness": "Crossref+PubMed",
+    "retracted": false,
+    "expression_of_concern": false,
+    "corrections": [],
+    "publication_types": [
+      "Journal Article",
+      "Research Support, Non-U.S. Gov't"
+    ]
+  },
+  "selection": {
+    "tier": "B",
+    "role": "direct_biological_benchmark",
+    "primary_axis": "Q3",
+    "secondary_axes": [],
+    "rationale": "The paper anchors the distinction between activation, dysfunction, and tumour-reactivity within CD8 T cells and provides orthogonal functional measurements."
+  },
+  "code_sources": [],
+  "data_sources": [
+    {
+      "accession": "GSE99531",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    }
+  ],
+  "verified_data_urls": [],
+  "repository_urls_extracted": [],
+  "curation": {
+    "status": "candidate_requires_independent_reproduction",
+    "completed_stages": [
+      "S0_candidate_registration",
+      "S1_source_inventory",
+      "S2_candidate_insight",
+      "S3_paper_data_task_mapping"
+    ],
+    "pending_stages": [
+      "S4_independent_reproduction",
+      "S5_final_prompt_approval",
+      "S6_answerability_and_leakage_tests",
+      "S7_grader_adversarial_tests",
+      "S8_dual_signoff"
+    ],
+    "domain_curator": null,
+    "computational_curator": null,
+    "reviewed_at": null
+  }
+}

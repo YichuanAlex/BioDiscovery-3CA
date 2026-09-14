@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P007",
+  "folder_id": "P007_jerby_arnon_2018_tcell_exclusion",
+  "title": "A Cancer Cell Program Promotes T Cell Exclusion and Resistance to Checkpoint Blockade",
+  "identifiers": {
+    "doi": "10.1016/j.cell.2018.09.006",
+    "pmid": "30388455",
+    "pmcid": "PMC6410377"
+  },
+  "publication": {
+    "venue": "Cell",
+    "publisher": "Elsevier BV",
+    "type": "peer_reviewed",
+    "published_at": "2018-11-01",
+    "version": "version_of_record"
+  },
+  "integrity": {
+    "checked_at": "2026-09-11T10:13:16+00:00",
+    "sources": [
+      "Crossref metadata",
+      "PubMed publication types/comments when PMID resolved"
+    ],
+    "screening_completeness": "Crossref+PubMed",
+    "retracted": false,
+    "expression_of_concern": false,
+    "corrections": [
+      {
+        "ref_type": "CommentIn",
+        "ref_source": "Cancer Discov. 2019 Jan;9(1):10. doi: 10.1158/2159-8290.CD-ND2018-010.30487234"
+      }
+    ],
+    "publication_types": [
+      "Journal Article",
+      "Research Support, N.I.H., Extramural",
+      "Research Support, Non-U.S. Gov't"
+    ]
+  },
+  "selection": {
+    "tier": "A",
+    "role": "direct_biological_benchmark",
+    "primary_axis": "Q2",
+    "secondary_axes": [
+      "Q1"
+    ],
+    "rationale": "Provides a patient-level test of whether a malignant-cell transcriptional state is associated with an immune-cell phenotype and clinical response, useful as an association-control task."
+  },
+  "code_sources": [],
+  "data_sources": [
+    {
+      "accession": "GSE115978",
+      "access": "public",
+      "role": "primary_processed_scrna",
+      "verification": "manually_seeded_from_primary_source"
+    },
+    {
+      "accession": "DUOS-000001",
+      "access": "controlled",
+      "role": "primary_raw_scrna_controlled",
+      "verification": "manually_seeded_from_primary_source"
+    },
+    {
+      "accession": "GSE99063",
+      "access": "public",
+      "role": "external_validation_bulk_expression",
+      "verification": "automatically_extracted_candidate"
+    }
+  ],
+  "verified_data_urls": [
+    "https://portals.broadinstitute.org/single_cell/study/melanoma-immunotherapy-resistance",
+    "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE115978",
+    "https://duos.broadinstitute.org/#/home"
+  ],
+  "repository_urls_extracted": [
+    "https://github.com/hms-dbmi/scde",
+    "https://github.com/broadinstitute/inferCNV",
+    "https://portals.broadinstitute.org/single_cell/study/melanoma-immunotherapy-resistance",
+    "https://github.com/livnatje/ImmuneResistance",
+    "https://github.com/livnatje/ImmuneResistance/wiki/Mapping-immune-resistance-in-melanoma",
+    "https://portals.broadinstitute.org/single_cell/study/melanoma-immunotherapy-resistance#study-download",
+    "https://github.com/livnatje/ImmuneResistance/wiki/Predicting-immunotherapy-resistance",
+    "https://github.com/livnatje/ImmuneResistance/wiki/Repressing-the-immune-resistance-program",
+    "https://portals.broadinstitute.org/",
+    "https://portals.broadinstitute.org/single_cell/study/",
+    "https://github.com/",
+    "https://github.com/livnatje/ImmuneResistance/wiki/Mapping-immune-resistance-inmelanoma",
+    "https://github.com/livnatje/ImmuneResistance/",
+    "https://github.com/livnatje/ImmuneResistance/wiki/",
+    "https://github.com/livnatje/ImmuneResistance/wiki/Predictingimmunotherapy-resistance",
+    "https://github.com/livnatje/ImmuneResistance/wiki/Predicting-immunotherapyresistance",
+    "https://github.com/livnatje/ImmuneResistance/wiki/Repressing-the-immuneresistance-program",
+    "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE115978",
+    "https://duos.broadinstitute.org/#/home"
+  ],
+  "curation": {
+    "status": "candidate_requires_independent_reproduction",
+    "completed_stages": [
+      "S0_candidate_registration",
+      "S1_source_inventory",
+      "S2_candidate_insight",
+      "S3_paper_data_task_mapping"
+    ],
+    "pending_stages": [
+      "S4_independent_reproduction",
+      "S5_final_prompt_approval",
+      "S6_answerability_and_leakage_tests",
+      "S7_grader_adversarial_tests",
+      "S8_dual_signoff"
+    ],
+    "domain_curator": null,
+    "computational_curator": null,
+    "reviewed_at": null
+  }
+}

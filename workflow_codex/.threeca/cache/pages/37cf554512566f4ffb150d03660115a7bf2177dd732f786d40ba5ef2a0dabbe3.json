@@ -1,0 +1,376 @@
+{
+  "url": "https://www.weizmann.ac.il/sites/3CA/sarcoma",
+  "final_url": "https://www.weizmann.ac.il/sites/3CA/sarcoma",
+  "fetched_at": "2026-09-14T04:17:31.313032+00:00",
+  "raw_html_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\pages\\37cf554512566f4ffb150d03660115a7bf2177dd732f786d40ba5ef2a0dabbe3.html",
+  "title": "Sarcoma | Curated Cancer Cell Atlas",
+  "text": "Sarcoma Title Data Meta data Cell types Summary Disease Technology #samples #cells Meta programs CNAs UMAP Cell cycle Jerby-Arnon et al. 2021 Cell types Summary Synovial sarcoma 10x, SmartSeq2 15 16125 Meta programs CNAs UMAP Cell cycle Zhou et al. 2020 Cell types Summary Osteosarcoma 10x 11 64557 Meta programs UMAP Cell cycle All Sarcoma 26 80682",
+  "links": [
+    {
+      "url": "https://www.nature.com/articles/s41591-020-01212-6",
+      "text": "Jerby-Arnon et al. 2021"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/bewdifp9qwt8ie8iek5ct/Data_Jerby-Arnon2021_Sarcoma.tar.gz?rlkey=6ajnrr81f3ep1jfqqot498qmo&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/rhmt6mogqh6fv246ol3qi/Meta-data_Jerby-Arnon2021_Sarcoma.tar.gz?rlkey=8z83fb3086q046m2y63d1bqr3&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20077",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20077",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20077",
+      "text": "Meta programs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20077",
+      "text": "CNAs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20077",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20077",
+      "text": "Cell cycle"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41467-020-20059-6",
+      "text": "Zhou et al. 2020"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/g3ou34unwxlnt2mcm7mer/Data_Zhou2020_Sarcoma.tar.gz?rlkey=0czkg02vc89jdvt2p67iaxifq&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/cqj7qa5fvw480pqi89byd/Meta-data_Zhou2020_Sarcoma.tar.gz?rlkey=00vulz6t7u7hms15asurkar54&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20122",
+      "text": "Cell types"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20122",
+      "text": "Summary"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20122",
+      "text": "Meta programs"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20122",
+      "text": "UMAP"
+    },
+    {
+      "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20122",
+      "text": "Cell cycle"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fo/cocl5eiabco9507iskjr6/AAyu9NLz2pB8IqSs4nu0Vek?rlkey=gvlkxafj7l49fx3l07upwb0zn&dl=1",
+      "text": ""
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fo/61hqhcb4ov7jbc78v702u/AONgLf_Sm7trms-uoPxl4_w?rlkey=gmbip8nnrcev4z2ytarzchgbl&dl=1",
+      "text": ""
+    }
+  ],
+  "tables": [
+    [
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [],
+          "text": "Title"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [],
+          "text": "Data"
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [],
+          "text": "Meta data"
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "Disease"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "Technology"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "#samples"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "#cells"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [],
+          "text": "CNAs"
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [],
+          "text": "Cell cycle"
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://www.nature.com/articles/s41591-020-01212-6",
+              "text": "Jerby-Arnon et al. 2021"
+            }
+          ],
+          "text": "Jerby-Arnon et al. 2021"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/bewdifp9qwt8ie8iek5ct/Data_Jerby-Arnon2021_Sarcoma.tar.gz?rlkey=6ajnrr81f3ep1jfqqot498qmo&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/rhmt6mogqh6fv246ol3qi/Meta-data_Jerby-Arnon2021_Sarcoma.tar.gz?rlkey=8z83fb3086q046m2y63d1bqr3&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20077",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20077",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "Synovial sarcoma"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "10x, SmartSeq2"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "15"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "16125"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20077",
+              "text": "Meta programs"
+            }
+          ],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20077",
+              "text": "CNAs"
+            }
+          ],
+          "text": "CNAs"
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20077",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20077",
+              "text": "Cell cycle"
+            }
+          ],
+          "text": "Cell cycle"
+        }
+      ],
+      [
+        {
+          "header": "view-title-table-column",
+          "links": [
+            {
+              "url": "https://www.nature.com/articles/s41467-020-20059-6",
+              "text": "Zhou et al. 2020"
+            }
+          ],
+          "text": "Zhou et al. 2020"
+        },
+        {
+          "header": "view-field-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/g3ou34unwxlnt2mcm7mer/Data_Zhou2020_Sarcoma.tar.gz?rlkey=0czkg02vc89jdvt2p67iaxifq&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-meta-data-table-column",
+          "links": [
+            {
+              "url": "https://www.dropbox.com/scl/fi/cqj7qa5fvw480pqi89byd/Meta-data_Zhou2020_Sarcoma.tar.gz?rlkey=00vulz6t7u7hms15asurkar54&dl=1",
+              "text": ""
+            }
+          ],
+          "text": ""
+        },
+        {
+          "header": "view-field-cell-types-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-types/20122",
+              "text": "Cell types"
+            }
+          ],
+          "text": "Cell types"
+        },
+        {
+          "header": "view-field-comments-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/comments/20122",
+              "text": "Summary"
+            }
+          ],
+          "text": "Summary"
+        },
+        {
+          "header": "view-field-disease-table-column",
+          "links": [],
+          "text": "Osteosarcoma"
+        },
+        {
+          "header": "view-field-technology-table-column",
+          "links": [],
+          "text": "10x"
+        },
+        {
+          "header": "view-field-samples-table-column",
+          "links": [],
+          "text": "11"
+        },
+        {
+          "header": "view-field-cells-table-column",
+          "links": [],
+          "text": "64557"
+        },
+        {
+          "header": "view-field-meta-programs-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20122",
+              "text": "Meta programs"
+            }
+          ],
+          "text": "Meta programs"
+        },
+        {
+          "header": "view-field-cnas-table-column",
+          "links": [],
+          "text": ""
+        },
+        {
+          "header": "view-field-umap-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/umap/20122",
+              "text": "UMAP"
+            }
+          ],
+          "text": "UMAP"
+        },
+        {
+          "header": "view-field-cell-cycle-table-column",
+          "links": [
+            {
+              "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cell-cycle/20122",
+              "text": "Cell cycle"
+            }
+          ],
+          "text": "Cell cycle"
+        }
+      ]
+    ]
+  ]
+}

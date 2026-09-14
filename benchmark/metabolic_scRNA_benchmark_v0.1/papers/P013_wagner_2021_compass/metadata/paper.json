@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P013",
+  "folder_id": "P013_wagner_2021_compass",
+  "title": "Metabolic modeling of single Th17 cells reveals regulators of autoimmunity",
+  "identifiers": {
+    "doi": "10.1016/j.cell.2021.05.045",
+    "pmid": "34216539",
+    "pmcid": "PMC8621950"
+  },
+  "publication": {
+    "venue": "Cell",
+    "publisher": "Elsevier BV",
+    "type": "peer_reviewed",
+    "published_at": "2021-08-01",
+    "version": "version_of_record"
+  },
+  "integrity": {
+    "checked_at": "2026-09-11T10:13:16+00:00",
+    "sources": [
+      "Crossref metadata",
+      "PubMed publication types/comments when PMID resolved"
+    ],
+    "screening_completeness": "Crossref+PubMed",
+    "retracted": false,
+    "expression_of_concern": false,
+    "corrections": [
+      {
+        "ref_type": "CommentIn",
+        "ref_source": "Cell. 2021 Aug 5;184(16):4109-4112. doi: 10.1016/j.cell.2021.07.012.34358466"
+      },
+      {
+        "ref_type": "CommentIn",
+        "ref_source": "Immunometabolism. 2022;4(1):e220001. doi: 10.20900/immunometab20220001.34900348"
+      }
+    ],
+    "publication_types": [
+      "Journal Article",
+      "Research Support, N.I.H., Extramural",
+      "Research Support, Non-U.S. Gov't"
+    ]
+  },
+  "selection": {
+    "tier": "A",
+    "role": "metabolic_inference_method",
+    "primary_axis": "Q1",
+    "secondary_axes": [
+      "Q3"
+    ],
+    "rationale": "Compass is a central single-cell constraint-based metabolic method with perturbational validation and explicit metabolic-state clustering."
+  },
+  "code_sources": [
+    {
+      "url": "https://github.com/YosefLab/Compass",
+      "commit": null,
+      "license": "to_verify"
+    }
+  ],
+  "data_sources": [
+    {
+      "accession": "GSE164999",
+      "access": "public",
+      "role": "primary_bulk_rnaseq_and_atacseq",
+      "verification": "manually_seeded_from_primary_source"
+    },
+    {
+      "accession": "GSE74833",
+      "access": "public",
+      "role": "reused_single_cell_scrna_input",
+      "verification": "manually_seeded_from_primary_source"
+    }
+  ],
+  "verified_data_urls": [
+    "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE164999",
+    "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE74833"
+  ],
+  "repository_urls_extracted": [
+    "https://github.com/YosefLab/Compass",
+    "https://github.com/jdstorey/qvalue",
+    "https://github.com/YosefLab/VISION",
+    "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE164999",
+    "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE74833"
+  ],
+  "curation": {
+    "status": "candidate_requires_independent_reproduction",
+    "completed_stages": [
+      "S0_candidate_registration",
+      "S1_source_inventory",
+      "S2_candidate_insight",
+      "S3_paper_data_task_mapping"
+    ],
+    "pending_stages": [
+      "S4_independent_reproduction",
+      "S5_final_prompt_approval",
+      "S6_answerability_and_leakage_tests",
+      "S7_grader_adversarial_tests",
+      "S8_dual_signoff"
+    ],
+    "domain_curator": null,
+    "computational_curator": null,
+    "reviewed_at": null
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "scope": "bibliography metadata, source artifact hashes, required figures/tables/equations, LaTeX diagnostics, PDF text and key numerical values",
+  "visual_qa": "separate manual page inspection required; not certified by this script",
+  "pages": 9,
+  "page_text_lengths": [
+    4228,
+    4896,
+    4892,
+    2762,
+    4053,
+    11866,
+    13880,
+    5168,
+    3412
+  ],
+  "bibliography": [
+    {
+      "key": "Tirosh2016",
+      "doi": "10.1126/science.aad0501",
+      "verified_against": "saved Crossref response"
+    },
+    {
+      "key": "Gavish2023",
+      "doi": "10.1038/s41586-023-06130-4",
+      "verified_against": "saved Crossref response"
+    },
+    {
+      "key": "Xiao2019",
+      "doi": "10.1038/s41467-019-11738-0",
+      "verified_against": "saved Crossref response"
+    },
+    {
+      "key": "Kanehisa2023",
+      "doi": "10.1093/nar/gkac963",
+      "verified_against": "saved Crossref response"
+    },
+    {
+      "key": "Rousseeuw1987",
+      "doi": "10.1016/0377-0427(87)90125-7",
+      "verified_against": "saved Crossref response"
+    },
+    {
+      "key": "Hubert1985",
+      "doi": "10.1007/bf01908075",
+      "verified_against": "saved Crossref response"
+    },
+    {
+      "key": "Wu2022",
+      "doi": "10.1158/2159-8290.cd-21-0316",
+      "verified_against": "saved Crossref response"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "file": "data\\Data_Tirosh2016_Skin.tar.gz",
+      "bytes": 234187869,
+      "sha256": "9e157aceb5a39add6e04c4d92db7f970bf19413a14a8c87a1262f9424f0818f6"
+    },
+    {
+      "file": "data\\Meta-data_Tirosh2016_Skin.tar.gz",
+      "bytes": 127155,
+      "sha256": "741107ef4ad09cb19b9a22c8af40ce7440e24f18cf1012c2ebb4c03600fede17"
+    },
+    {
+      "file": "data\\KEGG_metabolism_nc.gmt",
+      "bytes": 21439,
+      "sha256": "754f60c535516449f601a34351f8be0846abe8d86fd0080c77c4d6ceac069262"
+    }
+  ],
+  "pdf_sha256": "1622e0c77749c31d99f7ef2ab03a18cfcf670ab2d932d7b89834d9ea60643ea9"
+}

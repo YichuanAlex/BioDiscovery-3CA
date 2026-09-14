@@ -1,0 +1,124 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LC_ALL = "C.UTF-8",
+	LC_CTYPE = "C.UTF-8",
+	LC_NUMERIC = (unset),
+	LC_COLLATE = (unset),
+	LC_TIME = (unset),
+	LC_MONETARY = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the system default locale ("English_United States.1252").
+Initial Win CP for (console input, console output, system): (CP936, CP65001, CP936)
+I changed them all to CP936
+Rc files read (in order):
+  NONE
+Latexmk: This is Latexmk, John Collins, 9 March 2026. Version 4.88.
+Latexmk: applying rule 'pdflatex'...
+Rule 'pdflatex':  Reasons for rerun
+Changed files or newly in use/created:
+  metabolic_states_report.tex
+Category 'changed_user':
+  metabolic_states_report.tex
+
+------------
+Run number 1 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex  -interaction=nonstopmode -halt-on-error -recorder  "metabolic_states_report.tex"'
+------------
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex.fmt)
+ restricted \write18 enabled.
+entering extended mode
+(metabolic_states_report.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-06-18>
+(C:\Program Files\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Program Files\MiKTeX\tex/latex/base\size11.clo))
+(C:\Users\User\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty)
+(C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty
+(C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty))
+(C:\Users\User\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty)
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg)
+(C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def)))
+(C:\Users\User\AppData\Roaming\MiKTeX\tex/latex/booktabs\booktabs.sty)
+(C:\Program Files\MiKTeX\tex/latex/tools\array.sty)
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
+For additional information on amsmath, use the `?' option.
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty))
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty)
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty))
+(C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg)
+(C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx))
+(C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
+(C:\Users\User\AppData\Roaming\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty)
+(C:\Users\User\AppData\Roaming\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+) (C:\Users\User\AppData\Roaming\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+(C:\Users\User\AppData\Roaming\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty)
+(C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+(C:\Users\User\AppData\Roaming\MiKTeX\tex/generic/infwarerr\infwarerr.sty)))
+(C:\Users\User\AppData\Roaming\MiKTeX\tex/latex/hycolor\hycolor.sty)
+(C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
+(C:\Users\User\AppData\Roaming\MiKTeX\tex/latex/refcount\refcount.sty)
+(C:\Users\User\AppData\Roaming\MiKTeX\tex/generic/gettitlestring\gettitlestring
+.sty (C:\Users\User\AppData\Roaming\MiKTeX\tex/latex/kvoptions\kvoptions.sty)))
+ (C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty)
+(C:\Users\User\AppData\Roaming\MiKTeX\tex/generic/stringenc\stringenc.sty)
+(C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def)
+(C:\Users\User\AppData\Roaming\MiKTeX\tex/generic/intcalc\intcalc.sty)
+(C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def)
+(C:\Program Files\MiKTeX\tex/latex/url\url.sty)
+(C:\Users\User\AppData\Roaming\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Users\User\AppData\Roaming\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty)))
+(C:\Program Files\MiKTeX\tex/latex/hyperref\hpdftex.def
+(C:\Users\User\AppData\Roaming\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.s
+ty
+(C:\Users\User\AppData\Roaming\MiKTeX\tex/generic/uniquecounter\uniquecounter.s
+ty))) (C:\Users\User\AppData\Roaming\MiKTeX\tex/latex/caption\caption.sty
+(C:\Users\User\AppData\Roaming\MiKTeX\tex/latex/caption\caption3.sty))
+(C:\Users\User\AppData\Roaming\MiKTeX\tex/latex/float\float.sty)
+(C:\Users\User\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype.sty
+(C:\Users\User\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype-pdftex.def)
+(C:\Users\User\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype.cfg))
+(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def)
+(metabolic_states_report.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+(C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg))
+(metabolic_states_report.out) (metabolic_states_report.out)
+(C:\Users\User\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-cmr.cfg) [1{C:/Use
+rs/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] [3] [4 <../figur
+es/global_embedding.png> <../figures/global_evidence.png>] [5 <../figures/globa
+l_signatures.png>] [6 <../figures/cd8_embedding.png> <../figures/cd8_evidence.p
+ng>] [7 <../figures/cd8_signatures.png>] [8] (metabolic_states_report.aux) ) <C
+:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.p
+k><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Progra
+m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr1
+7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Prog
+ram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmtt10.pfb>
+Output written on metabolic_states_report.pdf (8 pages, 2552686 bytes).
+Transcript written on metabolic_states_report.log.
+pdflatex: major issue: So far, you have not checked for updates as a MiKTeX user.
+Latexmk: Getting log file 'metabolic_states_report.log'
+Latexmk: Examining 'metabolic_states_report.fls'
+Latexmk: Examining 'metabolic_states_report.log'
+Latexmk: Log file says output to 'metabolic_states_report.pdf'
+Latexmk: All targets (metabolic_states_report.pdf) are up-to-date
+
+Reverting Windows console CPs to (in,out) = (936,65001)
+latexmk: major issue: So far, you have not checked for updates as a MiKTeX user.

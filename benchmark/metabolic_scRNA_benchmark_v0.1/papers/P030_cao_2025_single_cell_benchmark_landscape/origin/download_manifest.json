@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P030",
+  "si_requested": true,
+  "downloaded_at": "2026-09-11T10:13:16+00:00",
+  "pmc_attempt": {
+    "provider": "Europe PMC",
+    "pmcid": "PMC12495992",
+    "status": "open_access_downloaded",
+    "source_url": ""
+  },
+  "official_fallback_attempt": {
+    "provider": "official_publisher_or_repository",
+    "status": "full_text_available_si_not_found",
+    "attempts": [
+      {
+        "url": "https://academic.oup.com/bib/article/26/5/bbaf380/8242685",
+        "status": "failed:HTTPError:HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://doi.org/10.1093/bib/bbaf380",
+        "status": "failed:HTTPError:HTTP Error 403: Forbidden"
+      }
+    ]
+  },
+  "files": [
+    {
+      "relative_path": "main_article.xml",
+      "role": "main_article",
+      "media_type": "text/xml",
+      "size_bytes": 103970,
+      "sha256": "64871e1a840e5c00d2cf99a5a5175360c92d78c11bfda41dde461d9d8060c4b4",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12495992/fullTextXML"
+    },
+    {
+      "relative_path": "main_article.pdf",
+      "role": "main_article",
+      "media_type": "application/pdf",
+      "size_bytes": 1885788,
+      "sha256": "36b92b4d377a4c36ab545f6b6ab835a9bd6ba9237298d8dd124e73f10c50bdf8",
+      "source_url": "https://europepmc.org/api/getPdf?pmcid=PMC12495992"
+    }
+  ],
+  "verification": {
+    "checks": [
+      "nonzero size",
+      "PDF magic when applicable",
+      "SHA-256",
+      "source URL recorded"
+    ],
+    "pdf_text_or_title_check": "external acceptance check; see top-level 构建与验收报告.md"
+  }
+}

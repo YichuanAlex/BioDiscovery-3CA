@@ -1,0 +1,19 @@
+{
+  "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20068",
+  "final_url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20068",
+  "fetched_at": "2026-09-12T17:32:05.353641+00:00",
+  "raw_html_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\pages\\f9f98558e62ec2e93e338b0787aa34f0ba01c98e4e170547ac5d75a34bab4243.html",
+  "title": "| Curated Cancer Cell Atlas",
+  "text": "CNAs Breast: Gao et al. 2021 Click here to download PNG Click here to download CNA matrix",
+  "links": [
+    {
+      "url": "https://www.dropbox.com/scl/fi/3pb9s95bnyvjglqvo25n8/CNAs_Gao2021_Breast.png?rlkey=mjq3bis11gabuqjj4zq6kjg8t&dl=1",
+      "text": "Click here to download PNG"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/0fhofkhtvxd4kgdrqg9vk/CNA_matrix_Gao2021_Breast.tar.gz?rlkey=li176w9bqf3urt242bsl22kxx&dl=1",
+      "text": "Click here to download CNA matrix"
+    }
+  ],
+  "tables": []
+}

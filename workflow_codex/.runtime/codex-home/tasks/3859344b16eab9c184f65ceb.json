@@ -1,0 +1,1 @@
+{"model":"WiNGPT-4.0-4B","workspace":"C:\\Users\\User\\AppData\\Local\\Temp\\wingpt-recovery-jTO6m9\\stale-checkpoint","prompt":"stale probe","required_artifacts":[],"phase":"start","next_action":"continue","artifacts":[],"evidence":[],"observations":[],"rounds":0,"status":"running","messages":[{"role":"system","content":"stale"}]}

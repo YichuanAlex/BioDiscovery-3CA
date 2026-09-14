@@ -1,0 +1,42 @@
+{
+  "id": "chatcmpl-9190b76ef0b6dec6",
+  "object": "chat.completion",
+  "created": 1789232338,
+  "model": "Qwen3.5-4B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"name\": \"write_file\",\n  \"arguments\": {\n    \"path\": \"probe.txt\",\n    \"content\": \"SCHEMA_OK\"\n  }\n}",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "reasoning": "The user wants me to write a file called \"probe.txt\" with the content \"SCHEMA_OK\" using the write_file function. I need to include both required arguments: \"path\" and \"content\".\n"
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "stop_reason": null,
+      "token_ids": null,
+      "routed_experts": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": "vllm-0.28.0-3b16b16c",
+  "usage": {
+    "prompt_tokens": 318,
+    "total_tokens": 403,
+    "completion_tokens": 85,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": {
+      "reasoning_tokens": 43
+    }
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "prompt_text": null,
+  "kv_transfer_params": null,
+  "ec_transfer_params": null,
+  "metrics": null
+}

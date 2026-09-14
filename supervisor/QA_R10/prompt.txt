@@ -1,0 +1,33 @@
+﻿You are running a fresh, isolated scRNA-seq research task. Your only workspace is:
+`C:\Users\User\Desktop\agentic\3CA\QA_R10`
+
+Do not read or reuse any previous `Q1_R*` or `QA_R*` research code, calculations, reports, manifests, logs, or task state. The supervisor has staged the user's CSV byte-for-byte as `inputs/metabolic_genes_total.csv` with provenance. A verified hash-addressed public raw-data cache may be reused only through the native tools.
+
+Answer these questions using only the metabolic genes in that CSV:
+1. Do all cells form distinct, reproducible candidate transcriptional metabolic clusters?
+2. How are those candidate metabolic partitions associated with the supplied cell types and subtypes?
+3. Within the exact annotated subset `cell_subtype=CD8 T cells`, are there distinct candidate metabolic states?
+
+Follow this finite sequence and advance after every successful stage:
+
+1. Establish source provenance by actually calling `search_studies`, `get_study`, `plan_asset`, `download_asset(extract=true)`, and `prepare_3ca_dataset` for the fixed public study `3ca:20773`. Use the tool-returned Matrix Market, Cells.csv, and Genes.txt paths and hashes.
+2. Call `inspect_research_table` on the user CSV and prepared Cells.csv. Confirm the `symbol` column and the exact metadata fields/values, including `cell_name`, `cell_type`, `cell_subtype`, `patient`, `sample`, and `CD8 T cells`. Do not uppercase or replace the user's gene list.
+3. Call `analyze_metabolic_states` on all cells with the user CSV, output `results/core_analysis`, and 19 random-gene controls. Do not create matched-gene files or custom Python yourself.
+4. Call `analyze_metabolic_states` independently for `subset_field=cell_subtype`, `subset_values=["CD8 T cells"]`, output `results/cd8_analysis`, and 19 random-gene controls.
+5. Verify and save exactly two bibliographic records: the dataset record through `verify_doi(doi="3ca:20773")` and the method-background paper through `verify_doi(doi="10.1038/s41586-023-06130-4")`. Use only returned metadata. The local Co-Scientist and BKI-Ludwig PDFs informed workflow design and evidence boundaries; do not invent citations for them.
+6. Write `results/analysis_manifest.json`, `report/main.tex`, and `README.md` from the two saved core results. Never overwrite `results/summary.json` or `results/cd8_analysis/summary.json`.
+7. Call `build_research_report` after the last TeX edit. Repair the first concrete compiler error and rebuild. Then call `validate_research_bundle`, repair only its named report/manifest errors, rebuild after any TeX change, and validate again. Call `complete_task` only with the final `valid=true` verification ID.
+
+Scientific reporting contract:
+
+- Give separate English sections titled Question 1, Question 2, and Question 3. Each section must report the exact cell count, prevalence-passing matched-gene count, selected resolution, cluster count and size range, stability, matched-k KMeans control, 19 random-gene controls, patient-within analysis, and relevant patient/sample/cell-type association metrics available in the core.
+- Use the core's exact saved numbers, paths, hashes, seed grid, normalization, feature scaling, and weakest within-patient replicate. Keep the metric-only sampling seed separate from clustering seeds.
+- Call observed partitions `candidate` and conclusions `descriptive` or `inconclusive`. Do not claim significance, causation, mechanistic states, qualitative NMI strength, generic similarity/better/worse versus random, or direct Leiden-versus-KMeans superiority.
+- Explain that global cell-type separation cannot establish within-cell-type metabolic states, patient-within sensitivity is not independent-cohort replication, and patient/sample mixing can confound interpretation.
+- Include exactly the four native PDF figures produced by the two cores as four referenced figure environments, using paths relative to `report/main.tex`. Include one referenced `booktabs` three-line table and one referenced normalization equation with `where` definitions. Load `graphicx`, `booktabs`, `amsmath`, and `url`; escape ordinary-text underscores and use `\url` for DOI links.
+- The manifest must use the global core as primary analysis and preserve the validator's nested schema. Register the exact user input SHA/source symbol count, the prevalence-passing global matched count and matched-gene file, both core receipts/hashes, full methods/baselines/confounders, the exact CD8 scope, and all four figure paths. Do not flatten nested analysis fields.
+
+Required artifacts:
+`report/main.tex`, `report/main.pdf`, `results/summary.json`, `results/analysis_manifest.json`, `results/core_analysis/core_result.json`, `results/cd8_analysis/core_result.json`, `results/cd8_analysis/summary.json`, and `README.md`.
+
+

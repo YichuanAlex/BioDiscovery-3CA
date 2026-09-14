@@ -1,0 +1,120 @@
+{
+  "snapshot_at": "2026-09-12T23:52:58.275Z",
+  "task": "C:\\Users\\User\\Desktop\\agentic\\3CA\\Q1_R7",
+  "status": "running",
+  "runner_alive": true,
+  "checkpoint_status": "running",
+  "phase": "catalog_discovery",
+  "next_action": "Use threeca CLI to search for Bischoff 2021 study and download assets",
+  "rounds": 3719,
+  "catalog_searches": 8,
+  "web_searches": 3,
+  "catalog_references": [
+    {
+      "id": "3ca:20764",
+      "title": "Bischoff et al. 2021"
+    }
+  ],
+  "discovery_cooldown": 0,
+  "last_error": "fetch failed",
+  "sessions": [
+    {
+      "file": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.runtime\\codex-home\\sessions\\2026\\09\\13\\rollout-2026-09-13T01-11-26-714fe0c5-e44.jsonl",
+      "source_in_runtime": true,
+      "bytes": 2171603,
+      "sha256": "0ebe9d14f21f9d576b431395dc44d981b415864cd96df0b164718385cbbfc01b",
+      "events": 1929,
+      "partial_lines": 0,
+      "noncanonical_metadata_order": false,
+      "pending_tool_calls": []
+    },
+    {
+      "file": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.runtime\\codex-home\\sessions\\2026\\09\\13\\rollout-2026-09-13T01-35-32-b0a930b2-acf.jsonl",
+      "source_in_runtime": true,
+      "bytes": 33795912,
+      "sha256": "b64206b8fb921aa076d9987920654f9905ce742e7dcccfdf4887846a92457b8b",
+      "events": 28807,
+      "partial_lines": 0,
+      "noncanonical_metadata_order": false,
+      "pending_tool_calls": []
+    }
+  ],
+  "tools": 3712,
+  "tool_counts": {
+    "list_files": 708,
+    "web_search": 3,
+    "search_studies": 74,
+    "get_page": 32,
+    "run_powershell": 1384,
+    "refresh_catalog": 24,
+    "search_cached_pages": 325,
+    "crawl_site": 5,
+    "read_file": 289,
+    "read_webpage": 23,
+    "get_study": 679,
+    "task_checkpoint": 68,
+    "plan_asset": 48,
+    "download_asset": 14,
+    "inspect_dataset": 30,
+    "replace_in_file": 4,
+    "complete_task": 2
+  },
+  "failed_tools": 131,
+  "guarded_tools": 3239,
+  "loop_breakers": 3141,
+  "loop_recoveries": 382,
+  "structured_actions": 3712,
+  "structured_requests": 3721,
+  "original_user_inputs": 1,
+  "supervisor_research_interventions": 0,
+  "engine_continuations": 389,
+  "thinking_enabled_responses": 3719,
+  "reasoning_present_responses": 3719,
+  "reasoning_missing_responses": 0,
+  "artifacts": [
+    {
+      "path": "all_dirs.txt",
+      "bytes": 0
+    },
+    {
+      "path": "all_files.txt",
+      "bytes": 294
+    },
+    {
+      "path": "cache_files.txt",
+      "bytes": 30501
+    },
+    {
+      "path": "workspace_files.txt",
+      "bytes": 375
+    }
+  ],
+  "required_artifacts": [
+    {
+      "file": "report/main.tex",
+      "present": false
+    },
+    {
+      "file": "report/main.pdf",
+      "present": false
+    },
+    {
+      "file": "results/summary.json",
+      "present": false
+    },
+    {
+      "file": "README.md",
+      "present": false
+    }
+  ],
+  "free_bytes": 269833986048,
+  "runner": null,
+  "run_until_complete": true,
+  "max_rounds": 0,
+  "frozen_hash_mismatches": [],
+  "semantic_acceptance": "pending_independent_review",
+  "supervisor_operational_restarts": 0,
+  "checkpoint_read_error": null,
+  "caveat": "Tool return, exit 0 and artifact existence do not establish scientific correctness. Missing reasoning is not reconstructed. Persisted state is not process liveness.",
+  "structural_completion_candidate": false
+}

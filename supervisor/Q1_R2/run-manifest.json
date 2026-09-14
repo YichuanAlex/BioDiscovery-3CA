@@ -1,0 +1,55 @@
+{
+  "task": "C:\\Users\\User\\Desktop\\agentic\\3CA\\Q1_R2",
+  "supervisor_research_interventions": 0,
+  "model": "Qwen3.5-4B",
+  "started_at": "2026-09-12T09:08:14.1090570Z",
+  "research_workspace_initially_empty": true,
+  "runner_pid": 6320,
+  "engineering_tests": "passed",
+  "semantic_acceptance": "pending",
+  "frozen_files": [
+    {
+      "sha256": "bbf7abdcb60976f1130b0b444c44f015cdda580ddbce03ffa60ff154d7ae1878",
+      "file": "run-Qwen3.5-4B.ps1"
+    },
+    {
+      "sha256": "fde7699567265ab2285363523deec328a42343dff15ecb66da1f37840c999dc0",
+      "file": "start-Qwen3.5-4B-server.ps1"
+    },
+    {
+      "sha256": "ae41734ca2b38d45be3ff3dcbc52548768bfcba1d5128deb8065530256be614a",
+      "file": "codex-cli\\bin\\codex.js"
+    },
+    {
+      "sha256": "316e726e264967c1421086651d3e00e61ad0cd8a5885dc58034b832b6f8e50b3",
+      "file": "codex-cli\\bin\\Qwen3.5-4B.js"
+    },
+    {
+      "sha256": "fd42fdb43d5d2b4ade06356cb25267d0ed64bfdd91c70bef49ac07f2df420f8c",
+      "file": "codex-cli\\bin\\Qwen3.5-4B-threeca.js"
+    },
+    {
+      "sha256": "76af75d7e5f4a53fe3340ee848fba3f84eda0f083fda49c0260b144f3ffc5731",
+      "file": "codex-cli\\bin\\Qwen3.5-4B-network.js"
+    },
+    {
+      "sha256": "e720d254b550ac0bff2560dd1a5acbbd1b0901565f9c9efd3492e81ab9bb5c75",
+      "file": "codex-cli\\bin\\Qwen3.5-4B-computer-use.js"
+    },
+    {
+      "sha256": "1ce1d14e747189a6831df3d24a1626ce79144fe441d5fa96ac459c1797f1ec0a",
+      "file": "codex-cli\\bin\\test-Qwen3.5-4B-recovery.mjs"
+    },
+    {
+      "sha256": "98fcf6f30281f974a1b929676d3fda6d8a1735ec15bfded5cd7c61cf0b4e1a0c",
+      "file": "tools\\tool43CA\\MCP\\server.py"
+    },
+    {
+      "sha256": "1e8d567622dd18d3d578dc8cb7b0cb259d72391962f984556b18ae824ee54c87",
+      "file": "tools\\tool43CA\\SKILL\\threeca-access\\SKILL.md"
+    }
+  ],
+  "supervisor": "C:\\Users\\User\\Desktop\\agentic\\supervisor\\Q1_R2",
+  "prompt_sha256": "f11d8b0b2858be5066e88348b887d4d945d0aa6d0c92d69b81340ae3224cf8b2",
+  "workflow": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex"
+}

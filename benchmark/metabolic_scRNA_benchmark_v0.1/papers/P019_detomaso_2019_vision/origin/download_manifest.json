@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P019",
+  "si_requested": true,
+  "downloaded_at": "2026-09-11T10:13:16+00:00",
+  "pmc_attempt": {
+    "provider": "Europe PMC",
+    "pmcid": "PMC6763499",
+    "status": "open_access_downloaded",
+    "source_url": ""
+  },
+  "official_fallback_attempt": {
+    "provider": "official_publisher_or_repository",
+    "status": "downloaded_with_si",
+    "attempts": [
+      {
+        "url": "https://www.nature.com/articles/s41467-019-12235-0?error=cookies_not_supported&code=6d1ebd20-5565-495e-8689-5e4823810c11",
+        "status": "full_text_html_available"
+      }
+    ]
+  },
+  "files": [
+    {
+      "relative_path": "main_article.xml",
+      "role": "main_article",
+      "media_type": "text/xml",
+      "size_bytes": 183474,
+      "sha256": "b61e6d2179d52091390f43bc6151e2bfd868c525467dfb25e89822fdfa26d765",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6763499/fullTextXML"
+    },
+    {
+      "relative_path": "main_article.pdf",
+      "role": "main_article",
+      "media_type": "application/pdf",
+      "size_bytes": 1835587,
+      "sha256": "0e20d85e020cc00f6692a5d365040a974dddfb81a2a4360b56094c269ebd6b04",
+      "source_url": "https://europepmc.org/api/getPdf?pmcid=PMC6763499"
+    },
+    {
+      "relative_path": "supplementary/41467_2019_12235_MOESM1_ESM.pdf",
+      "role": "supporting_information",
+      "media_type": "application/pdf",
+      "size_bytes": 9222993,
+      "sha256": "579d0c03b3d4728d74ae66f2938ed83237e2b89bb81c70783a341f5f83c24723",
+      "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-019-12235-0/MediaObjects/41467_2019_12235_MOESM1_ESM.pdf"
+    },
+    {
+      "relative_path": "supplementary/41467_2019_12235_MOESM2_ESM.pdf",
+      "role": "supporting_information",
+      "media_type": "application/pdf",
+      "size_bytes": 153987,
+      "sha256": "b4be9633d788e692911cb2e030abd2dae7f7e7e585adb57a1c49c424aa63e97f",
+      "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-019-12235-0/MediaObjects/41467_2019_12235_MOESM2_ESM.pdf"
+    },
+    {
+      "relative_path": "supplementary/41467_2019_12235_MOESM3_ESM.pdf",
+      "role": "supporting_information",
+      "media_type": "application/pdf",
+      "size_bytes": 69798,
+      "sha256": "71a6559b94f53d4fb6854dce6086dccc894aa5c5cbe626e6c9a1f5c73a66ceca",
+      "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-019-12235-0/MediaObjects/41467_2019_12235_MOESM3_ESM.pdf"
+    }
+  ],
+  "verification": {
+    "checks": [
+      "nonzero size",
+      "PDF magic when applicable",
+      "SHA-256",
+      "source URL recorded"
+    ],
+    "pdf_text_or_title_check": "external acceptance check; see top-level 构建与验收报告.md"
+  }
+}

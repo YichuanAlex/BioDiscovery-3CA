@@ -1,0 +1,47 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{arxiv}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[numbers]{natbib}
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+
+\title{Metabolic Gene Expression Separates Broad Cell Groups in Melanoma Reanalysis}
+\author{Project-local Qwen3.5-4B supervised workflow}
+\date{}
+
+\renewcommand{\shorttitle}{Metabolic genes in melanoma}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We reanalyzed the Tirosh et al. melanoma single-cell RNA-seq dataset (3ca:20111) to test whether 1,360 metabolic genes from KEGG pathways define discrete, reproducible cell states. Clustering of all 4,645 cells with $k=2$ yielded a silhouette of 0.377 and a mean pairwise ARI across seed fits of 0.99965, but matched random gene sets achieved a mean silhouette of 0.316 (SD 0.008) with an empirical $p$-value of 0.0476. The metabolic feature set achieved a balanced accuracy of 0.884 and macro-F1 of 0.856 in patient-blocked cross-validation, comparable to matched random sets (balanced accuracy 0.896 $\pm$ 0.013; macro-F1 0.875 $\pm$ 0.015) and the highly variable gene baseline (balanced accuracy 0.892; macro-F1 0.897). PC1 correlated strongly with library complexity ($\rho = 0.650$, $p < 0.001$); complexity residualization shifted the optimal $k$ from 2 to 4 and reduced silhouette to 0.224. Malignant-cell clustering with $k=8$ yielded silhouette 0.227 and seed ARI 0.814, while joint patient and complexity residualization selected $k=2$ with silhouette 0.228 and seed ARI 0.970. These results indicate that metabolic genes can separate cells into broad groups but do not establish universal, discrete malignant metabolic states.
+\end{abstract}
+
+\input{introduction.tex}
+
+\input{methods.tex}
+
+\section{Results}
+\input{results.tex}
+
+\clearpage
+\input{figures.tex}
+\clearpage
+
+\input{discussion.tex}
+
+\input{availability.tex}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}

@@ -1,0 +1,9 @@
+{
+  "started_at": "2026-09-13T01:31:29.2904192Z",
+  "ended_at": "2026-09-13T01:49:54.4418506Z",
+  "runner_success": false,
+  "status": "stopped_by_user_for_R11_workflow_optimization",
+  "checkpoint_status": "running",
+  "semantic_acceptance": "not_accepted",
+  "required_artifacts_present": 0
+}

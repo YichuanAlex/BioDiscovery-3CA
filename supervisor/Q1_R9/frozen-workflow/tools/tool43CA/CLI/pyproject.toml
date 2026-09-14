@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "threeca-access"
+version = "1.0.0"
+description = "Local, traceable access to the Curated Cancer Cell Atlas (3CA)"
+requires-python = ">=3.10"
+
+[project.scripts]
+threeca = "threeca:main"
+
+[tool.setuptools]
+py-modules = ["threeca"]
+
+[tool.setuptools.package-dir]
+"" = "src"

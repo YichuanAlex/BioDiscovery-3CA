@@ -1,0 +1,166 @@
+{
+  "scope": "Every saved observable workflow event; private internal reasoning is not inferred or reconstructed",
+  "snapshot_note": "Active sessions may be incomplete; rerun this audit after final exit",
+  "sessions": [
+    {
+      "file": "rollout-2026-09-12T13-25-14-a6e72af1-f31.jsonl",
+      "bytes": 276354,
+      "sha256": "4a76a6d783e20a670db45b41aec54a21bfccb55991f34c1186632bd592b9c1b0",
+      "events": 103,
+      "workflow_event_counts": {
+        "session_start": 1,
+        "user_message": 12,
+        "assistant_response": 30,
+        "tool_call": 28,
+        "tool_result": 28,
+        "turn_complete": 2,
+        "session_error": 1,
+        "session_end": 1
+      },
+      "pending_tools_at_snapshot": 0
+    },
+    {
+      "file": "rollout-2026-09-12T13-46-24-fedb5e54-3e9.jsonl",
+      "bytes": 274524,
+      "sha256": "3c1e65140f44b927fa6e9e4a4697576aa04e44461cdadc58ef2aa16979c568c4",
+      "events": 139,
+      "workflow_event_counts": {
+        "session_start": 1,
+        "user_message": 32,
+        "assistant_response": 45,
+        "tool_call": 23,
+        "tool_result": 23,
+        "turn_complete": 12,
+        "control": 2,
+        "session_end": 1
+      },
+      "pending_tools_at_snapshot": 0
+    },
+    {
+      "file": "rollout-2026-09-12T14-13-43-111dddeb-b39.jsonl",
+      "bytes": 358922,
+      "sha256": "5c2ebada8108c14179bacbe6f94d43a64677e039258fd9d2c3caa05ac1baf5d2",
+      "events": 207,
+      "workflow_event_counts": {
+        "session_start": 1,
+        "user_message": 36,
+        "assistant_response": 67,
+        "tool_call": 44,
+        "tool_result": 44,
+        "turn_complete": 15
+      },
+      "pending_tools_at_snapshot": 0
+    },
+    {
+      "file": "rollout-2026-09-12T15-05-22-0cfae8f4-1b3.jsonl",
+      "bytes": 124265,
+      "sha256": "be7438b5f0e5a87a4495edc066a852acb7f0185208f2b2d699b4f639cd82aa4c",
+      "events": 74,
+      "workflow_event_counts": {
+        "session_start": 1,
+        "user_message": 4,
+        "assistant_response": 19,
+        "tool_call": 23,
+        "tool_result": 23,
+        "turn_complete": 2,
+        "session_error": 1,
+        "session_end": 1
+      },
+      "pending_tools_at_snapshot": 0
+    },
+    {
+      "file": "rollout-2026-09-12T15-09-41-b48e9984-ce9.jsonl",
+      "bytes": 280726,
+      "sha256": "36617d3065e072efc2165d58f1dc05bc2bf1046d491e7d2f3f9c5f5d7928f77a",
+      "events": 66,
+      "workflow_event_counts": {
+        "session_start": 1,
+        "user_message": 6,
+        "assistant_response": 22,
+        "tool_call": 15,
+        "tool_result": 15,
+        "turn_complete": 3,
+        "control": 3,
+        "session_end": 1
+      },
+      "pending_tools_at_snapshot": 0
+    },
+    {
+      "file": "rollout-2026-09-12T15-18-29-35b2491a-75c.jsonl",
+      "bytes": 229786,
+      "sha256": "fe34d1bff6d3307fb88b903d4cb790dd39d4eed5c4e2258ba9d14b8160066717",
+      "events": 60,
+      "workflow_event_counts": {
+        "session_start": 1,
+        "task_state_snapshot": 1,
+        "user_message": 2,
+        "assistant_response": 24,
+        "tool_call": 15,
+        "tool_result": 15,
+        "control": 1,
+        "session_end": 1
+      },
+      "pending_tools_at_snapshot": 0
+    },
+    {
+      "file": "rollout-2026-09-12T15-20-57-53c33d05-e0c.jsonl",
+      "bytes": 97805,
+      "sha256": "ccb7aef056619656c88269ffa11fb54d05c432318041d828fd7400d3014ad412",
+      "events": 45,
+      "workflow_event_counts": {
+        "session_start": 1,
+        "task_state_snapshot": 3,
+        "user_message": 8,
+        "assistant_response": 15,
+        "tool_call": 6,
+        "tool_result": 6,
+        "turn_complete": 3,
+        "control": 2,
+        "session_end": 1
+      },
+      "pending_tools_at_snapshot": 0
+    },
+    {
+      "file": "rollout-2026-09-12T15-28-58-edda16f5-c2d.jsonl",
+      "bytes": 284001,
+      "sha256": "fba3468068a2226fd07ed40c12575e803f91c0ccc077dc06afd1af4c527399c4",
+      "events": 108,
+      "workflow_event_counts": {
+        "session_start": 1,
+        "task_state_snapshot": 9,
+        "user_message": 18,
+        "assistant_response": 34,
+        "tool_call": 16,
+        "tool_result": 16,
+        "turn_complete": 9,
+        "control": 5
+      },
+      "pending_tools_at_snapshot": 0
+    },
+    {
+      "file": "rollout-2026-09-12T15-53-08-ea373e64-ffa.jsonl",
+      "bytes": 912277,
+      "sha256": "36c633415c37c9164c6347fb9b10ef6ba0ea2d535a7b1c9f1447ab1c489f6222",
+      "events": 333,
+      "workflow_event_counts": {
+        "session_start": 1,
+        "task_state_snapshot": 17,
+        "user_message": 38,
+        "assistant_response": 107,
+        "tool_call": 75,
+        "tool_result": 75,
+        "turn_complete": 16,
+        "control": 4
+      },
+      "pending_tools_at_snapshot": 0
+    }
+  ],
+  "tool_count": 245,
+  "tool_status_counts": {
+    "returned_unvalidated": 180,
+    "loop_guard": 7,
+    "command_exit_0_not_semantic_proof": 33,
+    "failed": 24,
+    "unusable_source_challenge": 1
+  }
+}

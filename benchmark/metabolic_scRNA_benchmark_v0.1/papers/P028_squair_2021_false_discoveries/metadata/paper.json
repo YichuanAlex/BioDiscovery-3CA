@@ -1,0 +1,266 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P028",
+  "folder_id": "P028_squair_2021_false_discoveries",
+  "title": "Confronting false discoveries in single-cell differential expression",
+  "identifiers": {
+    "doi": "10.1038/s41467-021-25960-2",
+    "pmid": "34584091",
+    "pmcid": "PMC8479118"
+  },
+  "publication": {
+    "venue": "Nature Communications",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "peer_reviewed",
+    "published_at": "2021-09-28",
+    "version": "version_of_record"
+  },
+  "integrity": {
+    "checked_at": "2026-09-11T10:13:16+00:00",
+    "sources": [
+      "Crossref metadata",
+      "PubMed publication types/comments when PMID resolved"
+    ],
+    "screening_completeness": "Crossref+PubMed",
+    "retracted": false,
+    "expression_of_concern": false,
+    "corrections": [],
+    "publication_types": [
+      "Journal Article",
+      "Research Support, N.I.H., Intramural",
+      "Research Support, U.S. Gov't, Non-P.H.S."
+    ]
+  },
+  "selection": {
+    "tier": "A",
+    "role": "statistical_guardrail",
+    "primary_axis": "Q3",
+    "secondary_axes": [
+      "Q2"
+    ],
+    "rationale": "Establishes the hard requirement to model biological replicates rather than treating cells as independent observations in state comparisons."
+  },
+  "code_sources": [],
+  "data_sources": [
+    {
+      "accession": "GSE124872",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE101901",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE118918",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "E-MTAB-7716",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE124952",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE141552",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE130653",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE141115",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE134174",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE129150",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE92332",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "E-MTAB-6754",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "E-MTAB-6773",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "E-MTAB-7051",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE102827",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE118257",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE96583",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE144136",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE148339",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "SCP548",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE122960",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE103892",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE138266",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE142245",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE137398",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "SCP509",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE112294",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE130664",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE131776",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE103976",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "SCP263",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE165003",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    }
+  ],
+  "verified_data_urls": [],
+  "repository_urls_extracted": [
+    "http://github.com/jordansquair/Seurat",
+    "https://github.com/theislab/2018_Angelidis",
+    "https://github.com/chenlingantelope/MSscRNAseq2019",
+    "https://github.com/neurorestore/Libra",
+    "https://github.com/wulabupenn/Hu_MolCell_2017",
+    "https://github.com/neurorestore/DE-analysis"
+  ],
+  "curation": {
+    "status": "candidate_requires_independent_reproduction",
+    "completed_stages": [
+      "S0_candidate_registration",
+      "S1_source_inventory",
+      "S2_candidate_insight",
+      "S3_paper_data_task_mapping"
+    ],
+    "pending_stages": [
+      "S4_independent_reproduction",
+      "S5_final_prompt_approval",
+      "S6_answerability_and_leakage_tests",
+      "S7_grader_adversarial_tests",
+      "S8_dual_signoff"
+    ],
+    "domain_curator": null,
+    "computational_curator": null,
+    "reviewed_at": null
+  }
+}

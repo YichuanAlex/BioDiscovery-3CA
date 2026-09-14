@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P005",
+  "folder_id": "P005_zheng_2017_liver_cancer_tcells",
+  "title": "Landscape of Infiltrating T Cells in Liver Cancer Revealed by Single-Cell Sequencing",
+  "identifiers": {
+    "doi": "10.1016/j.cell.2017.05.035",
+    "pmid": "28622514",
+    "pmcid": null
+  },
+  "publication": {
+    "venue": "Cell",
+    "publisher": "Elsevier BV",
+    "type": "peer_reviewed",
+    "published_at": "2017-06-01",
+    "version": "version_of_record"
+  },
+  "integrity": {
+    "checked_at": "2026-09-11T10:13:16+00:00",
+    "sources": [
+      "Crossref metadata",
+      "PubMed publication types/comments when PMID resolved"
+    ],
+    "screening_completeness": "Crossref+PubMed",
+    "retracted": false,
+    "expression_of_concern": false,
+    "corrections": [
+      {
+        "ref_type": "CommentIn",
+        "ref_source": "Hepatobiliary Surg Nutr. 2018 Feb;7(1):48-51. doi: 10.21037/hbsn.2017.12.04.29531946"
+      }
+    ],
+    "publication_types": [
+      "Journal Article"
+    ]
+  },
+  "selection": {
+    "tier": "A",
+    "role": "direct_biological_benchmark",
+    "primary_axis": "Q3",
+    "secondary_axes": [],
+    "rationale": "A foundational patient-resolved tumour T-cell dataset with CD8 subpopulations and paired TCR information, useful for within-CD8 metabolic-state tests."
+  },
+  "code_sources": [],
+  "data_sources": [
+    {
+      "accession": "GSE98638",
+      "access": "public",
+      "role": "primary_processed_scrna",
+      "verification": "manually_seeded_from_primary_source"
+    },
+    {
+      "accession": "EGAS00001002072",
+      "access": "controlled",
+      "role": "primary_raw_sequencing_controlled",
+      "verification": "manually_seeded_from_primary_source"
+    }
+  ],
+  "verified_data_urls": [
+    "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE98638",
+    "https://ega-archive.org/studies/EGAS00001002072"
+  ],
+  "repository_urls_extracted": [
+    "https://github.com/hemberg-lab/SC3",
+    "https://github.com/PMBio/scLVM",
+    "https://github.com/teichlab/tracer",
+    "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE98638",
+    "https://ega-archive.org/studies/EGAS00001002072"
+  ],
+  "curation": {
+    "status": "candidate_requires_independent_reproduction",
+    "completed_stages": [
+      "S0_candidate_registration",
+      "S1_source_inventory",
+      "S2_candidate_insight",
+      "S3_paper_data_task_mapping"
+    ],
+    "pending_stages": [
+      "S4_independent_reproduction",
+      "S5_final_prompt_approval",
+      "S6_answerability_and_leakage_tests",
+      "S7_grader_adversarial_tests",
+      "S8_dual_signoff"
+    ],
+    "domain_curator": null,
+    "computational_curator": null,
+    "reviewed_at": null
+  }
+}

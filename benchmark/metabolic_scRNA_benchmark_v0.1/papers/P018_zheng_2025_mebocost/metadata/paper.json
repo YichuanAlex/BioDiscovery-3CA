@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P018",
+  "folder_id": "P018_zheng_2025_mebocost",
+  "title": "MEBOCOST maps metabolite-mediated intercellular communications using single-cell RNA-seq",
+  "identifiers": {
+    "doi": "10.1093/nar/gkaf569",
+    "pmid": "40568942",
+    "pmcid": "PMC12199156"
+  },
+  "publication": {
+    "venue": "Nucleic Acids Research",
+    "publisher": "Oxford University Press (OUP)",
+    "type": "peer_reviewed",
+    "published_at": "2025-06-20",
+    "version": "version_of_record"
+  },
+  "integrity": {
+    "checked_at": "2026-09-11T10:13:16+00:00",
+    "sources": [
+      "Crossref metadata",
+      "PubMed publication types/comments when PMID resolved"
+    ],
+    "screening_completeness": "Crossref+PubMed",
+    "retracted": false,
+    "expression_of_concern": false,
+    "corrections": [],
+    "publication_types": [
+      "Journal Article"
+    ]
+  },
+  "selection": {
+    "tier": "B",
+    "role": "metabolic_communication_method",
+    "primary_axis": "Q2",
+    "secondary_axes": [],
+    "rationale": "Extends cell-type metabolic states to metabolite-mediated communication and includes simulation, spatial, CRISPR, and clinical validation."
+  },
+  "code_sources": [
+    {
+      "url": "https://github.com/kaifuchenlab/MEBOCOST",
+      "commit": null,
+      "license": "to_verify"
+    },
+    {
+      "url": "https://github.com/kaifuchenlab/mebocost_paper_scripts",
+      "commit": null,
+      "license": "to_verify"
+    }
+  ],
+  "data_sources": [
+    {
+      "accession": "10.6084/m9.figshare.28291367.v1",
+      "access": "public",
+      "role": "unspecified",
+      "verification": "manually_seeded_from_primary_source"
+    },
+    {
+      "accession": "10.6084/m9.figshare.28291850.v1",
+      "access": "public",
+      "role": "unspecified",
+      "verification": "manually_seeded_from_primary_source"
+    },
+    {
+      "accession": "SCP1376",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE160585",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    }
+  ],
+  "verified_data_urls": [],
+  "repository_urls_extracted": [
+    "https://github.com/kaifuchenlab/MEBOCOST",
+    "https://github.com/",
+    "https://github.com/kaifuchenlab/mebocost_paper_scripts"
+  ],
+  "curation": {
+    "status": "candidate_requires_independent_reproduction",
+    "completed_stages": [
+      "S0_candidate_registration",
+      "S1_source_inventory",
+      "S2_candidate_insight",
+      "S3_paper_data_task_mapping"
+    ],
+    "pending_stages": [
+      "S4_independent_reproduction",
+      "S5_final_prompt_approval",
+      "S6_answerability_and_leakage_tests",
+      "S7_grader_adversarial_tests",
+      "S8_dual_signoff"
+    ],
+    "domain_curator": null,
+    "computational_curator": null,
+    "reviewed_at": null
+  }
+}

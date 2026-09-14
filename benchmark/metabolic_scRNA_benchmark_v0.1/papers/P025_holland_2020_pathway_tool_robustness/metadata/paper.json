@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P025",
+  "folder_id": "P025_holland_2020_pathway_tool_robustness",
+  "title": "Robustness and applicability of transcription factor and pathway analysis tools on single-cell RNA-seq data",
+  "identifiers": {
+    "doi": "10.1186/s13059-020-1949-z",
+    "pmid": "32051003",
+    "pmcid": "PMC7017576"
+  },
+  "publication": {
+    "venue": "Genome Biology",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "peer_reviewed",
+    "published_at": "2020-12-01",
+    "version": "version_of_record"
+  },
+  "integrity": {
+    "checked_at": "2026-09-11T10:13:16+00:00",
+    "sources": [
+      "Crossref metadata",
+      "PubMed publication types/comments when PMID resolved"
+    ],
+    "screening_completeness": "Crossref+PubMed",
+    "retracted": false,
+    "expression_of_concern": false,
+    "corrections": [],
+    "publication_types": [
+      "Comparative Study",
+      "Journal Article",
+      "Research Support, N.I.H., Extramural",
+      "Research Support, Non-U.S. Gov't"
+    ]
+  },
+  "selection": {
+    "tier": "A",
+    "role": "method_benchmark",
+    "primary_axis": "Q1",
+    "secondary_axes": [
+      "Q2"
+    ],
+    "rationale": "Uses perturbation-based ground truth to separate the value of gene-set resources from the scoring algorithms applied to single-cell data."
+  },
+  "code_sources": [
+    {
+      "url": "https://github.com/saezlab/ConservedFootprints",
+      "commit": null,
+      "license": "to_verify"
+    }
+  ],
+  "data_sources": [
+    {
+      "accession": "GSM2396858",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSM2396859",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSM3630200",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSM3630201",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSM3630202",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSM3630203",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE133549",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    }
+  ],
+  "verified_data_urls": [],
+  "repository_urls_extracted": [
+    "https://github.com/",
+    "https://github.com/saezlab/FootprintMethods_on_",
+    "https://zenodo.org/record/3564179",
+    "https://github.com/tidymodels/yardstick",
+    "https://github.com/saezlab/FootprintMethods_on_scRNAseq",
+    "https://github.com/saezlab/ConservedFootprints"
+  ],
+  "curation": {
+    "status": "candidate_requires_independent_reproduction",
+    "completed_stages": [
+      "S0_candidate_registration",
+      "S1_source_inventory",
+      "S2_candidate_insight",
+      "S3_paper_data_task_mapping"
+    ],
+    "pending_stages": [
+      "S4_independent_reproduction",
+      "S5_final_prompt_approval",
+      "S6_answerability_and_leakage_tests",
+      "S7_grader_adversarial_tests",
+      "S8_dual_signoff"
+    ],
+    "domain_curator": null,
+    "computational_curator": null,
+    "reviewed_at": null
+  }
+}

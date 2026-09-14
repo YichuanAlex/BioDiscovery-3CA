@@ -1,0 +1,1083 @@
+﻿{
+    "status":  "ok",
+    "message-type":  "work",
+    "message-version":  "1.0.0",
+    "message":  {
+                    "indexed":  {
+                                    "date-parts":  [
+                                                       [
+                                                           2026,
+                                                           9,
+                                                           10
+                                                       ]
+                                                   ],
+                                    "date-time":  "2026-09-10T12:09:00Z",
+                                    "timestamp":  1789042140246,
+                                    "version":  "build-2803163510"
+                                },
+                    "reference-count":  42,
+                    "publisher":  "Springer Science and Business Media LLC",
+                    "issue":  "7965",
+                    "license":  [
+                                    {
+                                        "start":  {
+                                                      "date-parts":  [
+                                                                         [
+                                                                             2023,
+                                                                             5,
+                                                                             31
+                                                                         ]
+                                                                     ],
+                                                      "date-time":  "2023-05-31T00:00:00Z",
+                                                      "timestamp":  1685491200000
+                                                  },
+                                        "content-version":  "tdm",
+                                        "delay-in-days":  0,
+                                        "URL":  "https://www.springernature.com/gp/researchers/text-and-data-mining"
+                                    },
+                                    {
+                                        "start":  {
+                                                      "date-parts":  [
+                                                                         [
+                                                                             2023,
+                                                                             5,
+                                                                             31
+                                                                         ]
+                                                                     ],
+                                                      "date-time":  "2023-05-31T00:00:00Z",
+                                                      "timestamp":  1685491200000
+                                                  },
+                                        "content-version":  "vor",
+                                        "delay-in-days":  0,
+                                        "URL":  "https://www.springernature.com/gp/researchers/text-and-data-mining"
+                                    }
+                                ],
+                    "content-domain":  {
+                                           "domain":  [
+                                                          "link.springer.com"
+                                                      ],
+                                           "crossmark-restriction":  false
+                                       },
+                    "short-container-title":  [
+                                                  "Nature"
+                                              ],
+                    "published-print":  {
+                                            "date-parts":  [
+                                                               [
+                                                                   2023,
+                                                                   6,
+                                                                   15
+                                                               ]
+                                                           ]
+                                        },
+                    "DOI":  "10.1038/s41586-023-06130-4",
+                    "type":  "journal-article",
+                    "created":  {
+                                    "date-parts":  [
+                                                       [
+                                                           2023,
+                                                           5,
+                                                           31
+                                                       ]
+                                                   ],
+                                    "date-time":  "2023-05-31T11:02:31Z",
+                                    "timestamp":  1685530951000
+                                },
+                    "page":  "598-606",
+                    "update-policy":  "https://doi.org/10.1007/springer_crossmark_policy",
+                    "source":  "Crossref",
+                    "is-referenced-by-count":  564,
+                    "title":  [
+                                  "Hallmarks of transcriptional intratumour heterogeneity across a thousand tumours"
+                              ],
+                    "prefix":  "10.1038",
+                    "volume":  "618",
+                    "author":  [
+                                   {
+                                       "given":  "Avishai",
+                                       "family":  "Gavish",
+                                       "sequence":  "first",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "ORCID":  "https://orcid.org/0000-0003-2128-5247",
+                                       "authenticated-orcid":  false,
+                                       "given":  "Michael",
+                                       "family":  "Tyler",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "given":  "Alissa C.",
+                                       "family":  "Greenwald",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "ORCID":  "https://orcid.org/0000-0002-5197-453X",
+                                       "authenticated-orcid":  false,
+                                       "given":  "Rouven",
+                                       "family":  "Hoefflin",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "given":  "Dor",
+                                       "family":  "Simkin",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "ORCID":  "https://orcid.org/0000-0002-3539-1940",
+                                       "authenticated-orcid":  false,
+                                       "given":  "Roi",
+                                       "family":  "Tschernichovsky",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "given":  "Noam",
+                                       "family":  "Galili Darnell",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "given":  "Einav",
+                                       "family":  "Somech",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "given":  "Chaya",
+                                       "family":  "Barbolin",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "given":  "Tomer",
+                                       "family":  "Antman",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "given":  "Daniel",
+                                       "family":  "Kovarsky",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "ORCID":  "https://orcid.org/0000-0002-6058-1404",
+                                       "authenticated-orcid":  false,
+                                       "given":  "Thomas",
+                                       "family":  "Barrett",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "ORCID":  "https://orcid.org/0000-0001-7699-5188",
+                                       "authenticated-orcid":  false,
+                                       "given":  "L. Nicolas",
+                                       "family":  "Gonzalez Castro",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "given":  "Debdatta",
+                                       "family":  "Halder",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "given":  "Rony",
+                                       "family":  "Chanoch-Myers",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "given":  "Julie",
+                                       "family":  "Laffy",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "ORCID":  "https://orcid.org/0000-0001-9215-9518",
+                                       "authenticated-orcid":  false,
+                                       "given":  "Michael",
+                                       "family":  "Mints",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "given":  "Adi",
+                                       "family":  "Wider",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "given":  "Rotem",
+                                       "family":  "Tal",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "ORCID":  "https://orcid.org/0000-0001-6551-9338",
+                                       "authenticated-orcid":  false,
+                                       "given":  "Avishay",
+                                       "family":  "Spitzer",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "given":  "Toshiro",
+                                       "family":  "Hara",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "given":  "Maria",
+                                       "family":  "Raitses-Gurevich",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "given":  "Chani",
+                                       "family":  "Stossel",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "given":  "Talia",
+                                       "family":  "Golan",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "given":  "Amit",
+                                       "family":  "Tirosh",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "ORCID":  "https://orcid.org/0000-0001-9898-5351",
+                                       "authenticated-orcid":  false,
+                                       "given":  "Mario L.",
+                                       "family":  "Suvà",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "ORCID":  "https://orcid.org/0000-0003-3543-889X",
+                                       "authenticated-orcid":  false,
+                                       "given":  "Sidharth V.",
+                                       "family":  "Puram",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   },
+                                   {
+                                       "ORCID":  "https://orcid.org/0000-0001-5477-2987",
+                                       "authenticated-orcid":  false,
+                                       "given":  "Itay",
+                                       "family":  "Tirosh",
+                                       "sequence":  "additional",
+                                       "affiliation":  [
+
+                                                       ],
+                                       "role":  [
+                                                    {
+                                                        "vocabulary":  "crossref",
+                                                        "role":  "author"
+                                                    }
+                                                ]
+                                   }
+                               ],
+                    "member":  "297",
+                    "published-online":  {
+                                             "date-parts":  [
+                                                                [
+                                                                    2023,
+                                                                    5,
+                                                                    31
+                                                                ]
+                                                            ]
+                                         },
+                    "reference":  [
+                                      {
+                                          "key":  "6130_CR1",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "323",
+                                          "DOI":  "10.1038/nrc3261",
+                                          "volume":  "12",
+                                          "author":  "A Marusyk",
+                                          "year":  "2012",
+                                          "unstructured":  "Marusyk, A., Almendro, V. \u0026 Polyak, K. Intra-tumour heterogeneity: a looking glass for cancer? Nat. Rev. Cancer 12, 323–334 (2012).",
+                                          "journal-title":  "Nat. Rev. Cancer"
+                                      },
+                                      {
+                                          "key":  "6130_CR2",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "7",
+                                          "DOI":  "10.1016/j.molcel.2019.05.003",
+                                          "volume":  "75",
+                                          "author":  "ML Suva",
+                                          "year":  "2019",
+                                          "unstructured":  "Suva, M. L. \u0026 Tirosh, I. Single-cell RNA sequencing in cancer: lessons learned and emerging challenges. Mol. Cell 75, 7–12 (2019).",
+                                          "journal-title":  "Mol. Cell"
+                                      },
+                                      {
+                                          "key":  "6130_CR3",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "189",
+                                          "DOI":  "10.1126/science.aad0501",
+                                          "volume":  "352",
+                                          "author":  "I Tirosh",
+                                          "year":  "2016",
+                                          "unstructured":  "Tirosh, I. et al. Dissecting the multicellular ecosystem of metastatic melanoma by single-cell RNA-seq. Science 352, 189–196 (2016).",
+                                          "journal-title":  "Science"
+                                      },
+                                      {
+                                          "key":  "6130_CR4",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "843",
+                                          "DOI":  "10.1016/j.cell.2018.06.025",
+                                          "volume":  "174",
+                                          "author":  "F Rambow",
+                                          "year":  "2018",
+                                          "unstructured":  "Rambow, F. et al. Toward minimal residual disease-directed therapy in melanoma. Cell 174, 843–855 (2018).",
+                                          "journal-title":  "Cell"
+                                      },
+                                      {
+                                          "key":  "6130_CR5",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "835",
+                                          "DOI":  "10.1016/j.cell.2019.06.024",
+                                          "volume":  "178",
+                                          "author":  "C Neftel",
+                                          "year":  "2019",
+                                          "unstructured":  "Neftel, C. et al. An integrative model of cellular states, plasticity, and genetics for glioblastoma. Cell 178, 835–849 (2019).",
+                                          "journal-title":  "Cell"
+                                      },
+                                      {
+                                          "key":  "6130_CR6",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "1611",
+                                          "DOI":  "10.1016/j.cell.2017.10.044",
+                                          "volume":  "171",
+                                          "author":  "S Puram",
+                                          "year":  "2017",
+                                          "unstructured":  "Puram, S. et al. Single-cell transcriptomic analysis of primary and metastatic tumor ecosystems in head and neck cancer. Cell 171, 1611–1624 (2017).",
+                                          "journal-title":  "Cell"
+                                      },
+                                      {
+                                          "key":  "6130_CR7",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "1208",
+                                          "DOI":  "10.1038/s41588-020-00726-6",
+                                          "volume":  "52",
+                                          "author":  "GS Kinker",
+                                          "year":  "2020",
+                                          "unstructured":  "Kinker, G. S. et al. Pan-cancer single-cell RNA-seq identifies recurring programs of cellular heterogeneity. Nat. Genet. 52, 1208–1218 (2020).",
+                                          "journal-title":  "Nat. Genet."
+                                      },
+                                      {
+                                          "key":  "6130_CR8",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "536",
+                                          "DOI":  "10.1016/j.cels.2020.08.018",
+                                          "volume":  "11",
+                                          "author":  "M Baron",
+                                          "year":  "2020",
+                                          "unstructured":  "Baron, M. et al. The stress-like cancer cell state is a consistent component of tumorigenesis. Cell Syst. 11, 536–546 (2020).",
+                                          "journal-title":  "Cell Syst."
+                                      },
+                                      {
+                                          "key":  "6130_CR9",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "1192",
+                                          "DOI":  "10.1038/s41588-022-01141-9",
+                                          "volume":  "54",
+                                          "author":  "D Barkley",
+                                          "year":  "2022",
+                                          "unstructured":  "Barkley, D. et al. Cancer cell states recur across tumor types and form specific interactions with the tumor microenvironment. Nat. Genet. 54, 1192–1201 (2022).",
+                                          "journal-title":  "Nat. Genet."
+                                      },
+                                      {
+                                          "key":  "6130_CR10",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "1083",
+                                          "DOI":  "10.1038/nmeth.4463",
+                                          "volume":  "14",
+                                          "author":  "S Aibar",
+                                          "year":  "2017",
+                                          "unstructured":  "Aibar, S. et al. SCENIC: single-cell regulatory network inference and clustering. Nat. Methods 14, 1083–1086 (2017).",
+                                          "journal-title":  "Nat. Methods"
+                                      },
+                                      {
+                                          "key":  "6130_CR11",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "1833",
+                                          "DOI":  "10.1016/j.ejca.2007.05.028",
+                                          "volume":  "43",
+                                          "author":  "N Meister",
+                                          "year":  "2007",
+                                          "unstructured":  "Meister, N. et al. Interferon-gamma mediated up-regulation of caspase-8 sensitizes medulloblastoma cells to radio- and chemotherapy. Eur. J. Cancer 43, 1833–1841 (2007).",
+                                          "journal-title":  "Eur. J. Cancer"
+                                      },
+                                      {
+                                          "key":  "6130_CR12",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "1029",
+                                          "DOI":  "10.1126/science.1160809",
+                                          "volume":  "324",
+                                          "author":  "MG Vander Heiden",
+                                          "year":  "2009",
+                                          "unstructured":  "Vander Heiden, M. G., Cantley, L. C. \u0026 Thompson, C. B. Understanding the Warburg effect: the metabolic requirements of cell proliferation. Science 324, 1029–1033 (2009).",
+                                          "journal-title":  "Science"
+                                      },
+                                      {
+                                          "key":  "6130_CR13",
+                                          "doi-asserted-by":  "publisher",
+                                          "unstructured":  "Denisenko, E. et al. Spatial transcriptomics reveals ovarian cancer subclones with distinct tumour microenvironments. Preprint at https://doi.org/10.1101/2022.08.29.505206 (2022).",
+                                          "DOI":  "10.1101/2022.08.29.505206"
+                                      },
+                                      {
+                                          "key":  "6130_CR14",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "1661",
+                                          "DOI":  "10.1016/j.cell.2020.08.043",
+                                          "volume":  "182",
+                                          "author":  "AL Ji",
+                                          "year":  "2020",
+                                          "unstructured":  "Ji, A. L. et al. Multimodal analysis of composition and spatial architecture in human squamous cell carcinoma. Cell 182, 1661–1662 (2020).",
+                                          "journal-title":  "Cell"
+                                      },
+                                      {
+                                          "key":  "6130_CR15",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "639",
+                                          "DOI":  "10.1016/j.ccell.2022.05.009",
+                                          "volume":  "40",
+                                          "author":  "VM Ravi",
+                                          "year":  "2022",
+                                          "unstructured":  "Ravi, V. M. et al. Spatially resolved multi-omics deciphers bidirectional tumor-host interdependence in glioblastoma. Cancer Cell 40, 639–655 e613 (2022).",
+                                          "journal-title":  "Cancer Cell"
+                                      },
+                                      {
+                                          "key":  "6130_CR16",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "1168",
+                                          "DOI":  "10.1038/ng.3398",
+                                          "volume":  "47",
+                                          "author":  "RA Moffitt",
+                                          "year":  "2015",
+                                          "unstructured":  "Moffitt, R. A. et al. Virtual microdissection identifies distinct tumor- and stroma-specific subtypes of pancreatic ductal adenocarcinoma. Nat. Genet. 47, 1168–1178 (2015).",
+                                          "journal-title":  "Nat. Genet."
+                                      },
+                                      {
+                                          "key":  "6130_CR17",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "6119",
+                                          "DOI":  "10.1016/j.cell.2021.11.017",
+                                          "volume":  "184",
+                                          "author":  "S Raghavan",
+                                          "year":  "2021",
+                                          "unstructured":  "Raghavan, S. et al. Microenvironment drives cell state, plasticity, and drug response in pancreatic cancer. Cell 184, 6119–6137 (2021).",
+                                          "journal-title":  "Cell"
+                                      },
+                                      {
+                                          "key":  "6130_CR18",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "1156",
+                                          "DOI":  "10.1097/JTO.0000000000000579",
+                                          "volume":  "10",
+                                          "author":  "HS Shim",
+                                          "year":  "2015",
+                                          "unstructured":  "Shim, H. S. et al. Unique genetic and survival characteristics of invasive mucinous adenocarcinoma of the lung. J. Thorac. Oncol. 10, 1156–1162 (2015).",
+                                          "journal-title":  "J. Thorac. Oncol."
+                                      },
+                                      {
+                                          "key":  "6130_CR19",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "8144",
+                                          "DOI":  "10.1074/jbc.M111.332593",
+                                          "volume":  "287",
+                                          "author":  "R Asada",
+                                          "year":  "2012",
+                                          "unstructured":  "Asada, R. et al. The endoplasmic reticulum stress transducer OASIS is involved in the terminal differentiation of goblet cells in the large intestine. J. Biol. Chem. 287, 8144–8153 (2012).",
+                                          "journal-title":  "J. Biol. Chem."
+                                      },
+                                      {
+                                          "key":  "6130_CR20",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "301",
+                                          "DOI":  "10.1164/rccm.201306-1181OC",
+                                          "volume":  "189",
+                                          "author":  "G Chen",
+                                          "year":  "2014",
+                                          "unstructured":  "Chen, G. et al. Foxa3 induces goblet cell metaplasia and inhibits innate antiviral immunity. Am. J. Respir. Crit. Care Med. 189, 301–313 (2014).",
+                                          "journal-title":  "Am. J. Respir. Crit. Care Med."
+                                      },
+                                      {
+                                          "key":  "6130_CR21",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "6262",
+                                          "DOI":  "10.1016/j.cell.2021.11.031",
+                                          "volume":  "184",
+                                          "author":  "B Chen",
+                                          "year":  "2021",
+                                          "unstructured":  "Chen, B. et al. Differential pre-malignant programs and microenvironment chart distinct paths to malignancy in human colorectal polyps. Cell 184, 6262–6280 (2021).",
+                                          "journal-title":  "Cell"
+                                      },
+                                      {
+                                          "key":  "6130_CR22",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "379",
+                                          "DOI":  "10.1016/j.cell.2021.12.018",
+                                          "volume":  "185",
+                                          "author":  "M Guilliams",
+                                          "year":  "2022",
+                                          "unstructured":  "Guilliams, M. et al. Spatial proteogenomics reveals distinct and evolutionarily conserved hepatic macrophage niches. Cell 185, 379–396 (2022).",
+                                          "journal-title":  "Cell"
+                                      },
+                                      {
+                                          "key":  "6130_CR23",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "1636",
+                                          "DOI":  "10.1164/rccm.201911-2199OC",
+                                          "volume":  "202",
+                                          "author":  "M Deprez",
+                                          "year":  "2020",
+                                          "unstructured":  "Deprez, M. et al. A single-cell atlas of the human healthy airways. Am. J. Respir. Crit. Care Med. 202, 1636–1645 (2020).",
+                                          "journal-title":  "Am. J. Respir. Crit. Care Med."
+                                      },
+                                      {
+                                          "key":  "6130_CR24",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "1554",
+                                          "DOI":  "10.1016/j.jcmgh.2022.02.007",
+                                          "volume":  "13",
+                                          "author":  "J Burclaff",
+                                          "year":  "2022",
+                                          "unstructured":  "Burclaff, J. et al. A proximal-to-distal survey of healthy adult human small intestine and colon epithelium by single-cell transcriptomics. Cell Mol. Gastroenterol. Hepatol. 13, 1554–1589 (2022).",
+                                          "journal-title":  "Cell Mol. Gastroenterol. Hepatol."
+                                      },
+                                      {
+                                          "key":  "6130_CR25",
+                                          "unstructured":  "The Tabula Sapiens Consortium. The Tabula Sapiens: a multiple-organ, single-cell transcriptomic atlas of humans. Science 376, eabl4896 (2022)."
+                                      },
+                                      {
+                                          "key":  "6130_CR26",
+                                          "doi-asserted-by":  "publisher",
+                                          "DOI":  "10.1038/s41467-021-23619-6",
+                                          "volume":  "12",
+                                          "author":  "SA Toulmin",
+                                          "year":  "2021",
+                                          "unstructured":  "Toulmin, S. A. et al. Type II alveolar cell MHCII improves respiratory viral disease outcomes while exhibiting limited antigen presentation. Nat. Commun. 12, 3993 (2021).",
+                                          "journal-title":  "Nat. Commun."
+                                      },
+                                      {
+                                          "key":  "6130_CR27",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "1745",
+                                          "DOI":  "10.1007/s00018-019-03351-7",
+                                          "volume":  "77",
+                                          "author":  "R Lugano",
+                                          "year":  "2020",
+                                          "unstructured":  "Lugano, R., Ramachandran, M. \u0026 Dimberg, A. Tumor angiogenesis: causes, consequences, challenges and opportunities. Cell. Mol. Life Sci. 77, 1745–1770 (2020).",
+                                          "journal-title":  "Cell. Mol. Life Sci."
+                                      },
+                                      {
+                                          "key":  "6130_CR28",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "1341",
+                                          "DOI":  "10.1016/j.cell.2020.07.005",
+                                          "volume":  "182",
+                                          "author":  "CM Schurch",
+                                          "year":  "2020",
+                                          "unstructured":  "Schurch, C. M. et al. Coordinated cellular neighborhoods orchestrate antitumoral immunity at the colorectal cancer invasive front. Cell 182, 1341–1359 (2020).",
+                                          "journal-title":  "Cell"
+                                      },
+                                      {
+                                          "key":  "6130_CR29",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "759",
+                                          "DOI":  "10.1038/s41592-022-01498-z",
+                                          "volume":  "19",
+                                          "author":  "W Zhang",
+                                          "year":  "2022",
+                                          "unstructured":  "Zhang, W. et al. Identification of cell types in multiplexed in situ images by combining protein expression and spatial information using CELESTA. Nat. Methods 19, 759–769 (2022).",
+                                          "journal-title":  "Nat. Methods"
+                                      },
+                                      {
+                                          "key":  "6130_CR30",
+                                          "doi-asserted-by":  "publisher",
+                                          "DOI":  "10.1038/s41698-022-00253-z",
+                                          "volume":  "6",
+                                          "author":  "KE Blise",
+                                          "year":  "2022",
+                                          "unstructured":  "Blise, K. E., Sivagnanam, S., Banik, G. L., Coussens, L. M. \u0026 Goecks, J. Single-cell spatial architectures associated with clinical outcome in head and neck squamous cell carcinoma. NPJ Precis. Oncol. 6, 10 (2022).",
+                                          "journal-title":  "NPJ Precis. Oncol."
+                                      },
+                                      {
+                                          "key":  "6130_CR31",
+                                          "doi-asserted-by":  "publisher",
+                                          "DOI":  "10.1038/s41419-019-2003-5",
+                                          "volume":  "10",
+                                          "author":  "C Borzi",
+                                          "year":  "2019",
+                                          "unstructured":  "Borzi, C. et al. c-Myc shuttled by tumour-derived extracellular vesicles promotes lung bronchial cell proliferation through miR-19b and miR-92a. Cell Death Dis. 10, 759 (2019).",
+                                          "journal-title":  "Cell Death Dis."
+                                      },
+                                      {
+                                          "key":  "6130_CR32",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "1600",
+                                          "DOI":  "10.1016/j.ccell.2022.11.002",
+                                          "volume":  "40",
+                                          "author":  "Y Hua",
+                                          "year":  "2022",
+                                          "unstructured":  "Hua, Y. et al. Cancer immunotherapies transition endothelial cells into HEVs that generate TCF1+ T lymphocyte niches through a feed-forward loop. Cancer cell 40, 1600–1618 (2022).",
+                                          "journal-title":  "Cancer cell"
+                                      },
+                                      {
+                                          "key":  "6130_CR33",
+                                          "doi-asserted-by":  "publisher",
+                                          "unstructured":  "Lee, H.-O. et al. Lineage-dependent gene expression programs influence the immune landscape of colorectal cancer. Nat. Genet., https://doi.org/10.1038/s41588-020-0636-z (2020).",
+                                          "DOI":  "10.1038/s41588-020-0636-z"
+                                      },
+                                      {
+                                          "key":  "6130_CR34",
+                                          "doi-asserted-by":  "crossref",
+                                          "unstructured":  "Steele, N. G. et al. Multimodal mapping of the tumor and peripheral blood immune landscape in human pancreatic cancer. Nat. Cancer 1, 1097–1112 (2020).",
+                                          "DOI":  "10.1038/s43018-020-00121-4"
+                                      },
+                                      {
+                                          "key":  "6130_CR35",
+                                          "doi-asserted-by":  "publisher",
+                                          "unstructured":  "Luca, B. A. et al. Atlas of clinically distinct cell states and ecosystems across human solid tumors. Cell, https://doi.org/10.1016/j.cell.2021.09.014 (2021).",
+                                          "DOI":  "10.1016/j.cell.2021.09.014"
+                                      },
+                                      {
+                                          "key":  "6130_CR36",
+                                          "doi-asserted-by":  "crossref",
+                                          "unstructured":  "Tirosh, I. et al. Single-cell RNA-seq supports a developmental hierarchy in human oligodendroglioma. Nature 539, 309–313 (2016).",
+                                          "DOI":  "10.1038/nature20123"
+                                      },
+                                      {
+                                          "key":  "6130_CR37",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "495",
+                                          "DOI":  "10.1038/nature12912",
+                                          "volume":  "505",
+                                          "author":  "MS Lawrence",
+                                          "year":  "2014",
+                                          "unstructured":  "Lawrence, M. S. et al. Discovery and saturation analysis of cancer genes across 21 tumour types. Nature 505, 495–501 (2014).",
+                                          "journal-title":  "Nature"
+                                      },
+                                      {
+                                          "key":  "6130_CR38",
+                                          "doi-asserted-by":  "publisher",
+                                          "first-page":  "400",
+                                          "DOI":  "10.1016/j.cell.2018.02.052",
+                                          "volume":  "173",
+                                          "author":  "J Liu",
+                                          "year":  "2018",
+                                          "unstructured":  "Liu, J. et al. An integrated TCGA pan-cancer clinical data resource to drive high-quality survival outcome analytics. Cell 173, 400–416 (2018).",
+                                          "journal-title":  "Cell"
+                                      },
+                                      {
+                                          "key":  "6130_CR39",
+                                          "doi-asserted-by":  "publisher",
+                                          "DOI":  "10.1038/s41598-017-17204-5",
+                                          "volume":  "7",
+                                          "author":  "P Bankhead",
+                                          "year":  "2017",
+                                          "unstructured":  "Bankhead, P. et al. QuPath: open source software for digital pathology image analysis. Sci. Rep. 7, 16878 (2017).",
+                                          "journal-title":  "Sci. Rep."
+                                      },
+                                      {
+                                          "key":  "6130_CR40",
+                                          "doi-asserted-by":  "publisher",
+                                          "DOI":  "10.1038/ncomms8866",
+                                          "volume":  "6",
+                                          "author":  "JA Ramilowski",
+                                          "year":  "2015",
+                                          "unstructured":  "Ramilowski, J. A. et al. A draft network of ligand-receptor-mediated multicellular signalling in human. Nat. Commun. 6, 7866 (2015).",
+                                          "journal-title":  "Nat. Commun."
+                                      },
+                                      {
+                                          "key":  "6130_CR41",
+                                          "doi-asserted-by":  "crossref",
+                                          "unstructured":  "Chan-Seng-Yue, M. et al. Transcription phenotypes of pancreatic cancer are driven by genomic events during tumor evolution. Nat. Genet. 52, 231–240 (2020).",
+                                          "DOI":  "10.1038/s41588-019-0566-9"
+                                      },
+                                      {
+                                          "key":  "6130_CR42",
+                                          "doi-asserted-by":  "publisher",
+                                          "unstructured":  "Tyler, M. \u0026 Gavish, A. tiroshlab/3ca: First release (v1.0.0). Zenodo, https://doi.org/10.5281/zenodo.7688626 (2023).",
+                                          "DOI":  "10.5281/zenodo.7688626"
+                                      }
+                                  ],
+                    "container-title":  [
+                                            "Nature"
+                                        ],
+                    "original-title":  [
+
+                                       ],
+                    "language":  "en",
+                    "link":  [
+                                 {
+                                     "URL":  "https://www.nature.com/articles/s41586-023-06130-4.pdf",
+                                     "content-type":  "application/pdf",
+                                     "content-version":  "vor",
+                                     "intended-application":  "text-mining"
+                                 },
+                                 {
+                                     "URL":  "https://www.nature.com/articles/s41586-023-06130-4",
+                                     "content-type":  "text/html",
+                                     "content-version":  "vor",
+                                     "intended-application":  "text-mining"
+                                 },
+                                 {
+                                     "URL":  "https://www.nature.com/articles/s41586-023-06130-4.pdf",
+                                     "content-type":  "application/pdf",
+                                     "content-version":  "vor",
+                                     "intended-application":  "similarity-checking"
+                                 }
+                             ],
+                    "deposited":  {
+                                      "date-parts":  [
+                                                         [
+                                                             2023,
+                                                             6,
+                                                             15
+                                                         ]
+                                                     ],
+                                      "date-time":  "2023-06-15T02:09:17Z",
+                                      "timestamp":  1686794957000
+                                  },
+                    "score":  1,
+                    "resource":  {
+                                     "primary":  {
+                                                     "URL":  "https://www.nature.com/articles/s41586-023-06130-4"
+                                                 }
+                                 },
+                    "subtitle":  [
+
+                                 ],
+                    "short-title":  [
+
+                                    ],
+                    "issued":  {
+                                   "date-parts":  [
+                                                      [
+                                                          2023,
+                                                          5,
+                                                          31
+                                                      ]
+                                                  ]
+                               },
+                    "references-count":  42,
+                    "journal-issue":  {
+                                          "issue":  "7965",
+                                          "published-print":  {
+                                                                  "date-parts":  [
+                                                                                     [
+                                                                                         2023,
+                                                                                         6,
+                                                                                         15
+                                                                                     ]
+                                                                                 ]
+                                                              }
+                                      },
+                    "alternative-id":  [
+                                           "6130"
+                                       ],
+                    "URL":  "https://doi.org/10.1038/s41586-023-06130-4",
+                    "relation":  {
+
+                                 },
+                    "ISSN":  [
+                                 "0028-0836",
+                                 "1476-4687"
+                             ],
+                    "issn-type":  [
+                                      {
+                                          "value":  "0028-0836",
+                                          "type":  "print"
+                                      },
+                                      {
+                                          "value":  "1476-4687",
+                                          "type":  "electronic"
+                                      }
+                                  ],
+                    "subject":  [
+
+                                ],
+                    "published":  {
+                                      "date-parts":  [
+                                                         [
+                                                             2023,
+                                                             5,
+                                                             31
+                                                         ]
+                                                     ]
+                                  },
+                    "assertion":  [
+                                      {
+                                          "value":  "5 May 2022",
+                                          "order":  1,
+                                          "name":  "received",
+                                          "label":  "Received",
+                                          "group":  {
+                                                        "name":  "ArticleHistory",
+                                                        "label":  "Article History"
+                                                    }
+                                      },
+                                      {
+                                          "value":  "25 April 2023",
+                                          "order":  2,
+                                          "name":  "accepted",
+                                          "label":  "Accepted",
+                                          "group":  {
+                                                        "name":  "ArticleHistory",
+                                                        "label":  "Article History"
+                                                    }
+                                      },
+                                      {
+                                          "value":  "31 May 2023",
+                                          "order":  3,
+                                          "name":  "first_online",
+                                          "label":  "First Online",
+                                          "group":  {
+                                                        "name":  "ArticleHistory",
+                                                        "label":  "Article History"
+                                                    }
+                                      },
+                                      {
+                                          "value":  "I.T. is an advisory board member of Immunitas Therapeutics. M.L.S. is an equity holder, scientific co-founder and advisory board member of Immunitas Therapeutics.",
+                                          "order":  1,
+                                          "name":  "Ethics",
+                                          "group":  {
+                                                        "name":  "EthicsHeading",
+                                                        "label":  "Competing interests"
+                                                    }
+                                      }
+                                  ]
+                }
+}

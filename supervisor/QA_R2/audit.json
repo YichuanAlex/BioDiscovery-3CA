@@ -1,0 +1,85 @@
+{
+  "snapshot_at": "2026-09-13T14:35:04.808Z",
+  "task": "C:\\Users\\User\\Desktop\\agentic\\3CA\\QA_R2",
+  "status": "runner_missing",
+  "runner_pid": 28772,
+  "runner_process": null,
+  "runner_identity_match": false,
+  "checkpoint_status": "running",
+  "checkpoint_read_error": null,
+  "phase": "core_analysis",
+  "next_action": "Create results/core_analysis/core_result.json with the native analyze_metabolic_states tool using the requested exact scope.",
+  "rounds": 27,
+  "tool_counts": {
+    "inspect_research_table": 1,
+    "download_asset": 2
+  },
+  "artifacts": [
+    {
+      "path": "report/main.tex",
+      "present": false,
+      "bytes": 0
+    },
+    {
+      "path": "report/main.pdf",
+      "present": false,
+      "bytes": 0
+    },
+    {
+      "path": "results/summary.json",
+      "present": false,
+      "bytes": 0
+    },
+    {
+      "path": "results/analysis_manifest.json",
+      "present": false,
+      "bytes": 0
+    },
+    {
+      "path": "results/core_analysis/core_result.json",
+      "present": false,
+      "bytes": 0
+    },
+    {
+      "path": "results/cd8_analysis/core_result.json",
+      "present": false,
+      "bytes": 0
+    },
+    {
+      "path": "results/cd8_analysis/summary.json",
+      "present": false,
+      "bytes": 0
+    },
+    {
+      "path": "README.md",
+      "present": false,
+      "bytes": 0
+    }
+  ],
+  "required_artifacts": [
+    "report/main.tex",
+    "report/main.pdf",
+    "results/summary.json",
+    "results/analysis_manifest.json",
+    "results/core_analysis/core_result.json",
+    "results/cd8_analysis/core_result.json",
+    "results/cd8_analysis/summary.json",
+    "README.md"
+  ],
+  "research_validation": null,
+  "frozen_hash_mismatches": [
+    {
+      "file": "codex-cli\\bin\\Qwen3.5-4B.js",
+      "expected": "f1cb50de07cb245ab02c85af8cc05afe9bf32d8a98f1476242758c074754f32b",
+      "actual": "58a75aa566cc88e2462a37a2927292eb438049630edb2a961addeab5779a830b"
+    },
+    {
+      "file": "codex-cli\\bin\\test-Qwen3.5-4B-recovery.mjs",
+      "expected": "2877f30eac566d23e4d7bf77c3f09c5b599cb372f6c778af815bfb37ea3e8f47",
+      "actual": "365a7fdd65c4777548b7983ecf7590cdb91bc8050ff17da7898b1aa3185520fe"
+    }
+  ],
+  "structural_completion_candidate": false,
+  "semantic_acceptance": "pending_independent_review",
+  "caveat": "PID liveness requires matching executable, command line, and creation time. Structural completion does not establish biological validity."
+}

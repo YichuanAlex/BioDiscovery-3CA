@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "task_id",
+    "task_version",
+    "system_id",
+    "started_at",
+    "status"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "running",
+        "completed",
+        "failed",
+        "invalid"
+      ]
+    }
+  }
+}

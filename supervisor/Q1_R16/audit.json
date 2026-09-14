@@ -1,0 +1,37 @@
+{
+  "snapshot_at": "2026-09-13T09:32:58.123Z",
+  "status": "running",
+  "runner_alive": false,
+  "checkpoint_error": null,
+  "rounds": 9,
+  "phase": "start",
+  "next_action": "inspect available tools and task sources",
+  "tools": {},
+  "failures": [],
+  "required_artifacts": [
+    {
+      "file": "report/main.tex",
+      "present": false
+    },
+    {
+      "file": "report/main.pdf",
+      "present": false
+    },
+    {
+      "file": "results/summary.json",
+      "present": false
+    },
+    {
+      "file": "results/analysis_manifest.json",
+      "present": false
+    },
+    {
+      "file": "README.md",
+      "present": false
+    }
+  ],
+  "research_validation": null,
+  "frozen_mismatches": [],
+  "structural_completion_candidate": false,
+  "semantic_acceptance": "pending_independent_review"
+}

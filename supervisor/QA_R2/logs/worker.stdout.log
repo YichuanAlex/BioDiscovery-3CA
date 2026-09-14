@@ -1,0 +1,30 @@
+Qwen3.5-4B local server is ready: http://127.0.0.1:8000/health
+[tool] inspect_research_table
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool] web_search: 3CA 20773 BKI Ludwig T cell atlas
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool] web_search: 3CA catalog T cell atlas BKI Ludwig
+[tool] search_studies
+[tool] search_studies
+[tool] web_search: "3CA" "BKI" "Ludwig" "T cell" atlas single cell
+[tool] web_search: BKI Ludwig T cell atlas single cell RNA-seq
+[tool] refresh_catalog
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool] web_search: 3CA catalog BKI Ludwig T cell atlas study ID
+[tool] web_search: "3ca:20773" OR "3CA" "BKI" "Ludwig" "T cell"
+[tool] get_study
+[tool] plan_asset
+[tool] search_studies
+[tool] download_asset
+[tool-error] download_asset: {"error": "ThreeCAError", "message": "A study target requires --kind (data, metadata, or a discovered detail kind)."}
+[tool] inspect_research_table
+[tool] download_asset
+[tool] download_asset

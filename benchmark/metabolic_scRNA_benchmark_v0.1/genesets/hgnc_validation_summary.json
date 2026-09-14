@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "checked_at": "2026-09-11T07:38:50+00:00",
+  "references": [
+    {
+      "name": "HGNC complete set",
+      "url": "https://storage.googleapis.com/public-download-files/hgnc/tsv/tsv/hgnc_complete_set.txt",
+      "last_modified": "Wed, 09 Sep 2026 15:20:51 GMT",
+      "sha256": "6a1423507780773fbcb373eaef84dba5f9357b36e7219db2aeaae13d8a42d62b"
+    },
+    {
+      "name": "MGI current marker list",
+      "url": "https://www.informatics.jax.org/downloads/reports/MRK_List2.rpt.gz",
+      "sha256": "7c38bd22d61a75958ea8d691ec8a8a8f44cc3456694ee8edd34ae6ce43ee07d7"
+    },
+    {
+      "name": "MGI one-to-one mouse/human protein-coding orthology",
+      "url": "https://www.informatics.jax.org/downloads/reports/HOM_ProteinCoding.rpt",
+      "sha256": "14b81c2c8c6540789c4dd6f8d949bae1f1208770b4f46e808e7755e41a9a2421"
+    }
+  ],
+  "input_sha256": "00909e54eefb828908059d014b8590afc88e8099257f4622ad8590af8ccbe306",
+  "n_symbols": 1988,
+  "human_symbol_counts": {
+    "approved_exact": 336,
+    "previous_symbol_unique": 6,
+    "unmatched": 1636,
+    "alias_symbol_unique": 9,
+    "alias_symbol_ambiguous": 1
+  },
+  "inferred_species_counts": {
+    "human": 345,
+    "human_and_mouse": 6,
+    "mouse": 1555,
+    "unresolved": 82
+  },
+  "recommended_human_symbols": 1727,
+  "recommended_human_unique_symbols": 1719,
+  "all_resolved_unambiguously": false,
+  "validation_tsv": {
+    "path": "genesets/metabolic_genes_hgnc_validation.tsv",
+    "sha256": "cc67413c6510d7d8c822e69b6e0c0c9a567d9e9db279598f5aabc2fb22b4bc37"
+  },
+  "mapped_human_candidate_csv": {
+    "path": "genesets/metabolic_genes_human_mapped_candidate_v1.csv",
+    "sha256": "6ab0596ccfbbeff53f20bf46da533407fc32bc3812b0eeb11d304f8fe83a22d3"
+  },
+  "note": "Symbol validity does not establish that the list is biologically complete or specifically metabolic."
+}

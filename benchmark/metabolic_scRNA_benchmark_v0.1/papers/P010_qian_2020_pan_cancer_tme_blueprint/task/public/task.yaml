@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "benchmark_version": "0.1.0-curation",
+  "task_id": "metabolic-scrna-p010-q2",
+  "task_version": "0.1.0",
+  "paper_id": "P010",
+  "dataset_id": "metabolic-scrna-p010",
+  "dataset_version": "0.1.0",
+  "task_family_id": "metabolic-scrna-q2",
+  "leakage_group_id": "paper-and-source-data-p010",
+  "track": "blind_rediscovery",
+  "curation_status": "candidate_requires_independent_reproduction",
+  "domain": {
+    "disease": "cancer or immune-state method validation",
+    "modality": "scRNA-seq",
+    "analysis_types": [
+      "Q2",
+      "metabolic_gene_set",
+      "robustness",
+      "evidence_reporting"
+    ]
+  },
+  "scientific_context": "Determine what can be learned from a fixed metabolic-gene set without confusing transcriptional programs with measured metabolic flux.",
+  "question": "Derive metabolic states without using cell-type labels, then determine whether those states are associated with annotated cell types. Use patient/sample-aware effect sizes and blocked permutations, and distinguish cell-type association from study, batch, tissue, library-size, and mitochondrial-quality effects.",
+  "inference_unit": "patient",
+  "visible_inputs": [
+    {
+      "path": "benchmark://genesets/metabolic_genes_input_v1.csv",
+      "description": "Frozen unsigned metabolic-gene list supplied by the user."
+    },
+    {
+      "path": "data_manifest.public.json",
+      "description": "Versioned pointers and metadata for the paper-associated dataset; materialize only licensed public objects."
+    }
+  ],
+  "external_resources": {
+    "literature": "prohibited during scored blind rediscovery",
+    "network": "disabled after input materialization"
+  },
+  "resource_budget": {
+    "wall_time_hours": 8,
+    "cpu_cores": 8,
+    "memory_gb": 64,
+    "gpu": "optional"
+  },
+  "required_artifacts": [
+    {
+      "path": "submission/associations.tsv",
+      "format": "TSV",
+      "required": true,
+      "columns": [
+        "metabolic_state",
+        "cell_type",
+        "effect_size",
+        "p_value",
+        "q_value",
+        "inference_unit"
+      ]
+    },
+    {
+      "path": "submission/metrics.json",
+      "format": "JSON",
+      "required": true
+    },
+    {
+      "path": "submission/claims.jsonl",
+      "format": "JSONL",
+      "required": true
+    },
+    {
+      "path": "submission/provenance.json",
+      "format": "JSON",
+      "required": true
+    },
+    {
+      "path": "submission/report.md",
+      "format": "Markdown",
+      "required": true
+    }
+  ],
+  "hard_gates": [
+    "gene-symbol and overlap coverage reported",
+    "biological replicate is the inferential unit",
+    "negative-control gene sets included",
+    "batch, library-size, and mitochondrial-quality confounding assessed",
+    "RNA-derived activity is not reported as measured flux",
+    "all required files conform to the output contract"
+  ]
+}

@@ -1,0 +1,110 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{Metabolic Gene Clustering Analysis of 3CA Study 3ca:20773}
+\author{QA\_R7}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Question 1: Do all cells form reproducible transcriptional metabolic groupings using only the supplied metabolic genes?}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{../figures/metabolic_umap.pdf}
+    \caption{UMAP embedding of 58,843 cells using 1,646 matched metabolic genes. Cells are colored by Leiden cluster (17 clusters) at resolution 0.8. Cluster sizes range from 714 to 8,806 cells.}
+    \label{fig:global_umap}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{../figures/clustering_diagnostics.pdf}
+    \caption{Clustering diagnostics for the global analysis. Shows silhouette scores, pairwise ARI, and NMI metrics across seeds.}
+    \label{fig:global_diagnostics}
+\end{figure}
+
+Using the user-supplied metabolic genes from \textit{inputs/metabolic\_genes\_total.csv} (1,988 source symbols, 1,646 matched after case-insensitive resolution), we performed Leiden clustering on 58,843 cells at resolution 0.8. The analysis yielded 17 clusters with sizes ranging from 714 to 8,806 cells.
+
+The Leiden silhouette score was 0.217, with the matched-k KMeans silhouette at 0.220. Among 19 random-gene controls of the same size, 2 exceeded or matched the metabolic clustering silhouette (add-one rank fraction: 0.15). The HVG-based control achieved a silhouette of 0.283, higher than the metabolic clustering.
+
+\textbf{Verdict: inconclusive.} The metabolic gene set produces clustering, but the silhouette is comparable to random controls and lower than HVG-based clustering. The clustering does not demonstrate strong, reproducible metabolic groupings beyond what could arise from random gene selection.
+
+\section*{Question 2: What is the relationship between these groupings and known cell types and cell subtypes?}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{lrr}
+\toprule
+Metric & Global & Within Replicates \\
+\midrule
+Cell type NMI & 0.496 & min: 0.379, max: 0.745, median: 0.592 \\
+Cell subtype NMI & 0.648 & min: 0.224, max: 0.679, median: 0.636 \\
+\bottomrule
+\end{tabular}
+\caption{Cell type and cell subtype association with metabolic clusters. NMI values are descriptive; they do not establish discrete biological states.}
+\label{tab:cell_type_association}
+\end{table}
+
+The clustering shows moderate association with cell type (NMI = 0.496) and stronger association with cell subtype (NMI = 0.648). Within each patient replicate (n = 6), the cell type NMI ranged from 0.379 to 0.745, and cell subtype NMI ranged from 0.224 to 0.679.
+
+\textbf{Verdict: descriptive.} The metabolic clusters show moderate-to-strong association with cell type and cell subtype annotations. However, these associations are consistent with the clusters being driven by cell identity rather than independent metabolic states. The clustering does not demonstrate that metabolic genes define cell types beyond what is already annotated.
+
+\section*{Question 3: Within the same cell type, specifically for cell\_subtype = CD8 T cells, are there distinct metabolic groupings?}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{../figures/cd8_analysis/metabolic_umap.pdf}
+    \caption{UMAP embedding of 3,624 CD8 T cells using 1,318 metabolic genes. Cells are colored by Leiden cluster (6 clusters) at resolution 0.4. Cluster sizes range from 55 to 2,002 cells.}
+    \label{fig:cd8_umap}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{../figures/cd8_analysis/clustering_diagnostics.pdf}
+    \caption{Clustering diagnostics for the CD8 T cell subset analysis. Shows silhouette scores, pairwise ARI, and NMI metrics across seeds.}
+    \label{fig:cd8_diagnostics}
+\end{figure}
+
+For the CD8 T cell subset (n = 3,624 cells), we performed Leiden clustering at resolution 0.4, yielding 6 clusters with sizes ranging from 55 to 2,002 cells. The Leiden silhouette score was 0.099, with the matched-k KMeans silhouette at 0.095. Among 19 random-gene controls, 17 exceeded or matched the metabolic clustering silhouette (add-one rank fraction: 0.9).
+
+The patient-within ARI ranged from 0.511 to 0.845, with the weakest replicate (patient 3) having 2,002 cells. The patient NMI was 0.393.
+
+\textbf{Verdict: inconclusive.} The clustering within CD8 T cells shows very low silhouette scores comparable to random controls. The high proportion of random controls exceeding the metabolic clustering indicates that the observed groupings are not robustly reproducible beyond what could arise from random gene selection.
+
+\section*{Methods}
+
+\subsection*{Normalization}
+
+Cells were normalized using per-cell library size scaling to 10,000 counts, followed by log1p transformation:
+\begin{equation}
+x'_{gi} = \log\left(1 + \frac{10^4 \cdot x_{gi}}{\sum_h x_{hi}}\right)
+\end{equation}
+where $x_{gi}$ is the raw UMI count for gene $g$ in cell $i$, and the denominator is the sum of counts across all genes in cell $i$.
+
+\subsection*{Feature Scaling}
+
+After normalization, features were scaled using Scanpy's \texttt{scale} function with \texttt{zero\_center=False} and \texttt{max\_value=10}.
+
+\subsection*{Clustering}
+
+Leiden clustering was performed with the igraph flavor, using seeds [0, 17, 42, 73, 101]. Resolution was selected based on the highest median silhouette across seeds, with a tie-breaker of highest mean pairwise ARI.
+
+\subsection*{Baseline Controls}
+
+We compared the metabolic clustering against: (1) HVG-based clustering using highest variance genes among prevalence-passing non-mitochondrial symbols, and (2) 19 random-gene controls of the same size sampled without replacement.
+
+\section*{References}
+
+\begin{enumerate}
+    \item Choudhury et al. \textit{Meningioma DNA methylation groups identify biological drivers and therapeutic vulnerabilities}. Nature Genetics 54, 649-659 (2022). \url{https://doi.org/10.1038/s41588-022-01061-8}
+    \item Gavish et al. \textit{Hallmarks of transcriptional intratumour heterogeneity across a thousand tumours}. Nature 618, 598-606 (2023). \url{https://doi.org/10.1038/s41586-023-06130-4}
+\end{enumerate}
+
+\end{document}

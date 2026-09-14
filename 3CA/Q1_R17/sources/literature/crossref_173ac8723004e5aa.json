@@ -1,0 +1,89 @@
+{
+  "source": "Crossref REST API",
+  "requested_identifier": "10.1093/nar/gkaa1081",
+  "catalog_citation_url": null,
+  "source_url": "https://api.crossref.org/v1/works/10.1093%2Fnar%2Fgkaa1081",
+  "retrieved_at": "2026-09-13T11:01:03.777713+00:00",
+  "response_sha256": "8b3b5d6fda4d53c218606bdbb166ec714e3eee573a47ba7977071c3f116d5c3d",
+  "doi": "10.1093/nar/gkaa1081",
+  "title": [
+    "Interstitial telomere sequences disrupt break-induced replication and drive formation of ectopic telomeres"
+  ],
+  "container_title": [
+    "Nucleic Acids Research"
+  ],
+  "author": [
+    {
+      "given": "Elizabeth A",
+      "family": "Stivison",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Program in Nutritional and Metabolic Biology, Columbia University Irving Medical Center, New York, NY 10032, USA"
+        },
+        {
+          "name": "Department of Microbiology and Immunology, Columbia University Irving Medical Center, New York, NY 10032, USA"
+        }
+      ],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Kati J",
+      "family": "Young",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Department of Microbiology and Immunology, Columbia University Irving Medical Center, New York, NY 10032, USA"
+        }
+      ],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-1519-4800",
+      "authenticated-orcid": false,
+      "given": "Lorraine S",
+      "family": "Symington",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Department of Microbiology and Immunology, Columbia University Irving Medical Center, New York, NY 10032, USA"
+        },
+        {
+          "name": "Department of Genetics and Development, Columbia University Irving Medical Center, New York, NY 10032, USA"
+        }
+      ],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    }
+  ],
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        12,
+        2
+      ]
+    ]
+  },
+  "volume": "48",
+  "issue": "22",
+  "page": "12697-12710",
+  "type": "journal-article",
+  "publisher": "Oxford University Press (OUP)",
+  "url": "https://doi.org/10.1093/nar/gkaa1081",
+  "metadata_path": "sources\\literature\\crossref_173ac8723004e5aa.json"
+}

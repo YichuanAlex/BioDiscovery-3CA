@@ -1,0 +1,14 @@
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.018s
+
+OK
+Processing request of type ListToolsRequest
+Processing request of type CallToolRequest
+Local Qwen3.5-4B agent exited with code -1; checkpoint status: .
+At C:\Users\User\Desktop\agentic\workflow_codex\run-Qwen3.5-4B.ps1:65 char:13
++             throw "Local Qwen3.5-4B agent exited with code $workerExitCod ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Local Qwen3.5-4B ag...point status: .:String) [], RuntimeException
+    + FullyQualifiedErrorId : Local Qwen3.5-4B agent exited with code -1; checkpoint status: .
+ 

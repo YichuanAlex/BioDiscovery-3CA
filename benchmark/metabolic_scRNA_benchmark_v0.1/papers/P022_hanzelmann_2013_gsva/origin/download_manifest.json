@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P022",
+  "si_requested": true,
+  "downloaded_at": "2026-09-11T10:13:16+00:00",
+  "pmc_attempt": {
+    "provider": "Europe PMC",
+    "pmcid": "PMC3618321",
+    "status": "open_access_downloaded",
+    "source_url": ""
+  },
+  "official_fallback_attempt": {
+    "provider": "official_publisher_or_repository",
+    "status": "full_text_available_si_not_found",
+    "attempts": [
+      {
+        "url": "https://link.springer.com/article/10.1186/1471-2105-14-7?error=cookies_not_supported&code=025e584c-b8c8-461c-8126-bc6a5c423403",
+        "status": "not_full_text"
+      },
+      {
+        "url": "https://link.springer.com/article/10.1186/1471-2105-14-7?error=cookies_not_supported&code=ecc028a2-ca46-4d42-b953-84c19bc3ec61",
+        "status": "not_full_text"
+      }
+    ]
+  },
+  "files": [
+    {
+      "relative_path": "main_article.xml",
+      "role": "main_article",
+      "media_type": "text/xml",
+      "size_bytes": 165608,
+      "sha256": "893b3d719ba726edbd072b965f18bdde634228483231045a22089b1e95d1b0af",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3618321/fullTextXML"
+    },
+    {
+      "relative_path": "main_article.pdf",
+      "role": "main_article",
+      "media_type": "application/pdf",
+      "size_bytes": 2973888,
+      "sha256": "f091e0b57c7bddb0b327cd230e54cafc9ddff09e023d0940f7c85210c18649e7",
+      "source_url": "https://europepmc.org/api/getPdf?pmcid=PMC3618321"
+    }
+  ],
+  "verification": {
+    "checks": [
+      "nonzero size",
+      "PDF magic when applicable",
+      "SHA-256",
+      "source URL recorded"
+    ],
+    "pdf_text_or_title_check": "external acceptance check; see top-level 构建与验收报告.md"
+  }
+}

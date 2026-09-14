@@ -1,0 +1,148 @@
+﻿{
+    "run_until_complete":  true,
+    "semantic_acceptance":  "pending",
+    "node_runtime":  {
+                         "path":  "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.runtime\\node-v24.21.0-win-x64\\node.exe",
+                         "sha256":  "ba4e6d110e8c1592a1ecd390f6b05f3da124b13871a5be62b341a07a853c6c32",
+                         "versions":  {
+                                          "node":  "24.21.0",
+                                          "uv":  "1.52.1",
+                                          "v8":  "13.6.233.17-node.53"
+                                      }
+                     },
+    "started_at":  "2026-09-13T01:31:29.2904192Z",
+    "engineering_tests":  "core_passed_desktop_action_failed",
+    "model_identity":  {
+                           "id":  "Qwen3.5-4B",
+                           "object":  "model",
+                           "created":  1789263089,
+                           "owned_by":  "vllm",
+                           "root":  "/mnt/c/Users/User/Desktop/agentic/model/Qwen3.5-4B",
+                           "parent":  null,
+                           "max_model_len":  65536,
+                           "permission":  [
+                                              {
+                                                  "id":  "modelperm-ac285e3a1e88f5e7",
+                                                  "object":  "model_permission",
+                                                  "created":  1789263089,
+                                                  "allow_create_engine":  false,
+                                                  "allow_sampling":  true,
+                                                  "allow_logprobs":  true,
+                                                  "allow_search_indices":  false,
+                                                  "allow_view":  true,
+                                                  "allow_fine_tuning":  false,
+                                                  "organization":  "*",
+                                                  "group":  null,
+                                                  "is_blocking":  false
+                                              }
+                                          ]
+                       },
+    "frozen_files":  [
+                         {
+                             "sha256":  "67d8101cea6f8119ad0b44b8ae3dab08fc65df1ef50da754e47806862b0d8a6a",
+                             "file":  "README.md"
+                         },
+                         {
+                             "sha256":  "0f54d729e0711b4696a505c3905bb67a052b6aefbfe9818ffbdec6d58c0b19df",
+                             "file":  "run-Qwen3.5-4B.ps1"
+                         },
+                         {
+                             "sha256":  "2f376d827c7736234b9bef6cc58e0f598c608fc19f015c3fb84e7fc161a2a98c",
+                             "file":  "start-Qwen3.5-4B-server.ps1"
+                         },
+                         {
+                             "sha256":  "ae41734ca2b38d45be3ff3dcbc52548768bfcba1d5128deb8065530256be614a",
+                             "file":  "codex-cli\\bin\\codex.js"
+                         },
+                         {
+                             "sha256":  "d555a6439bfe9532c73353897eb3ce5749c2504c206299293d4a17ffd151632d",
+                             "file":  "codex-cli\\bin\\Qwen3.5-4B.js"
+                         },
+                         {
+                             "sha256":  "d6f6347956e7c32cd578ea334fca20af2df1e742ea36dc320d0b4f18a9148006",
+                             "file":  "codex-cli\\bin\\Qwen3.5-4B-threeca.js"
+                         },
+                         {
+                             "sha256":  "76af75d7e5f4a53fe3340ee848fba3f84eda0f083fda49c0260b144f3ffc5731",
+                             "file":  "codex-cli\\bin\\Qwen3.5-4B-network.js"
+                         },
+                         {
+                             "sha256":  "e720d254b550ac0bff2560dd1a5acbbd1b0901565f9c9efd3492e81ab9bb5c75",
+                             "file":  "codex-cli\\bin\\Qwen3.5-4B-computer-use.js"
+                         },
+                         {
+                             "sha256":  "5e886dc3117f4bdb40f26f64bb9830a7023595da8b09057a79ecaf0dda141dad",
+                             "file":  "codex-cli\\bin\\test-Qwen3.5-4B-recovery.mjs"
+                         },
+                         {
+                             "sha256":  "626f5064ea7f8527be3170df538c091deeae65f365ff3bd3aa472df4a710131c",
+                             "file":  "tools\\tool43CA\\MCP\\server.py"
+                         },
+                         {
+                             "sha256":  "87594efc36572b54f7defc0ba83e07d8bbb3c59939bb2216e4c6ff10633834be",
+                             "file":  "tools\\tool43CA\\SKILL\\threeca-access\\SKILL.md"
+                         },
+                         {
+                             "sha256":  "0fbb79dd3833dbdc4f894ce804745f9f0a08d951cf35b5bd487040931cdb9979",
+                             "file":  "test-Qwen3.5-4B.ps1"
+                         },
+                         {
+                             "sha256":  "071d0dc47bc1c82efb27d2d753c1cf5d76e105fdd94025c27013b2c261db27e6",
+                             "file":  "test-isolation.ps1"
+                         },
+                         {
+                             "sha256":  "82682db1a45a4d096133b261a23d86e356c69cb47f920473f5ae9bb1bd6c465c",
+                             "file":  "codex-local.cmd"
+                         },
+                         {
+                             "sha256":  "3d18945664407030546deecbd3e0fc9fbc8a6b0f26374261539f704754667225",
+                             "file":  "app-server"
+                         },
+                         {
+                             "sha256":  "b4de7d589b2793b9f5c234446fe5a46ae949c85e7316a4a801e4c7e8412c343b",
+                             "file":  "tools\\tool43CA\\CLI\\src\\threeca.py"
+                         },
+                         {
+                             "sha256":  "e0d53b8f7c8a64984f2d59dfd0ae4a1797cba9a56516de440acf09c161e3bade",
+                             "file":  "tools\\tool43CA\\CLI\\test_threeca.py"
+                         },
+                         {
+                             "sha256":  "65861c1d28acac9bd9899e3a29addc0c0cf5b7e1f837eea0851450ee972278d3",
+                             "file":  "tools\\tool43CA\\CLI\\pyproject.toml"
+                         },
+                         {
+                             "sha256":  "b4de7d589b2793b9f5c234446fe5a46ae949c85e7316a4a801e4c7e8412c343b",
+                             "file":  "tools\\tool43CA\\.venv\\Lib\\site-packages\\threeca.py"
+                         },
+                         {
+                             "sha256":  "277f708edbddcb5927bc45eba9a7747add98f3a63ce4cb014fcc74d89ec6b515",
+                             "file":  "tools\\tool43CA\\test_mcp.py"
+                         }
+                     ],
+    "task":  "C:\\Users\\User\\Desktop\\agentic\\3CA\\Q1_R10",
+    "supervisor":  "C:\\Users\\User\\Desktop\\agentic\\supervisor\\Q1_R10",
+    "runner_pid":  29428,
+    "prompt_sha256":  "ed81a9b0d68c8dc25c018efbd981a2d6bebf860e7c1c74b7dce77e820fb1ec51",
+    "research_workspace_initially_empty":  true,
+    "desktop_action_test":  "failed_activation_not_used_by_R10",
+    "model_metadata":  [
+                           {
+                               "sha256":  "ddc63e1c717afa86c865bb5e01313d89d72bb53b97ad4a8a03ba8510c0621670",
+                               "file":  "config.json"
+                           },
+                           {
+                               "sha256":  "cf3f798ee02ba45f9622aa8892a47369ab667d0afbf154ee7c2212de42e6302d",
+                               "file":  "model.safetensors.index.json"
+                           },
+                           {
+                               "sha256":  "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+                               "file":  "chat_template.jinja"
+                           }
+                       ],
+    "supervisor_operational_restarts":  0,
+    "model":  "Qwen3.5-4B",
+    "max_rounds":  0,
+    "model_directory":  "C:\\Users\\User\\Desktop\\agentic\\model\\Qwen3.5-4B",
+    "supervisor_research_interventions":  0,
+    "workflow":  "C:\\Users\\User\\Desktop\\agentic\\workflow_codex"
+}

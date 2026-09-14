@@ -1,0 +1,14 @@
+PASS: exact path, no installed-Codex references, no project Codex auto-discovery config, no external tool links.
+PASS: actual project CLI directory listing stays valid bounded JSON; file preview and cache boundary remain enforced.
+PASS: empty-reply recovery, failed-tool recovery, repeated verification, unchanged-read loop guard, isolated workspace.
+PASS: max-rounds 0 survives the old no-action stop and continues until verified completion.
+PASS: context recovery preserves independent asset references and reuses the actual original result without re-execution or new verification.
+PASS: a bare data path is rejected as a shell no-op and PowerShell is cooled for one response.
+PASS: autonomous plan recovery, nested paths, premature completion rejection, shell mutation validation, actual reasoning persistence, resume without mutation replay, unfinished budget nonzero exit.
+PASS: 3CA catalog budget cools a CLI-search tool for one response and preserves other tools for completion.
+PASS: empty JSON and fake PDF completion candidates are rejected; valid nonempty JSON can pass structural verification.
+PASS: structured actions preserve raw provider output/reasoning; missing arguments and cooled tools cannot execute; budgets and actual returned ids survive recovery.
+PASS: cookie challenge is rejected as unusable evidence.
+PASS: persistent checkpoint ENOSPC returns the retryable worker exit code with a stale resumable checkpoint.
+PASS: actual PowerShell launcher resumes stale-running exit 75, ignores unrelated malformed checkpoints, and releases its exclusive lock.
+PASS: tool43CA MCP initialized, listed all 10 tools, and completed a tool call.

@@ -1,0 +1,20 @@
+{
+  "engine": "workflow_research_quality_metabolic_states_v2",
+  "conclusion": "inconclusive",
+  "core_result_path": "results/core_analysis/core_result.json",
+  "core_result_sha256": "0da19b546073463f6341cb411b21287f3e50b2b9733a6f39dfc53e1fb9ca5848",
+  "summary_path": "results/summary.json",
+  "labels_path": "results/core_analysis/cluster_labels.csv",
+  "figures": [
+    "figures/metabolic_umap.pdf",
+    "figures/clustering_diagnostics.pdf"
+  ],
+  "analysis_scope": {
+    "field": null,
+    "values": [],
+    "source_cells_selected": 58843
+  },
+  "cells_analyzed": 58843,
+  "metabolic_genes_analyzed": 1646,
+  "n_clusters": 17
+}

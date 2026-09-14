@@ -1,0 +1,149 @@
+{
+  "node_runtime": {
+    "versions": {
+      "node": "24.21.0",
+      "uv": "1.52.1"
+    },
+    "path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.runtime\\node-v24.21.0-win-x64\\node.exe",
+    "sha256": "ba4e6d110e8c1592a1ecd390f6b05f3da124b13871a5be62b341a07a853c6c32"
+  },
+  "semantic_acceptance": "pending",
+  "run_until_complete": true,
+  "supervisor": "C:\\Users\\User\\Desktop\\agentic\\supervisor\\QA_R8",
+  "model": "Qwen3.5-4B",
+  "seeded_inputs": [
+    {
+      "role": "immutable_user_supplied_gene_set",
+      "staged_at": "2026-09-14T03:09:03.9413621Z",
+      "staged_path": "inputs/metabolic_genes_total.csv",
+      "bytes": 14789,
+      "sha256": "7503180d29693bd1e654ea93281db0e3ec4177ff44842c8b02f6a098402e41a9",
+      "source_path": "C:\\Users\\User\\Desktop\\agentic\\material\\QuestionAll\\metabolic genes total.csv"
+    },
+    {
+      "role": "round_execution_contract",
+      "staged_path": "AGENTS.md",
+      "sha256": "95ae3797924436cef4b300a47f550528f443945b2636dfe42adbe21f2d47ac69"
+    }
+  ],
+  "engineering_tests": "full_passed",
+  "task": "C:\\Users\\User\\Desktop\\agentic\\3CA\\QA_R8",
+  "prompt_sha256": "a60e9085394944097ceb5fb20b769ae6b51d482223e80a099fc6b55ac3911a75",
+  "runner_expected": {
+    "name": "powershell.exe",
+    "command_fragment": "launch-qa-r8.ps1"
+  },
+  "research_workspace_initially_empty_before_supplied_input": true,
+  "research_gate": "final validate_research_bundle verification required",
+  "model_identity": {
+    "id": "Qwen3.5-4B",
+    "object": "model",
+    "created": 1789355343,
+    "owned_by": "vllm",
+    "root": "/mnt/c/Users/User/Desktop/agentic/model/Qwen3.5-4B",
+    "parent": null,
+    "max_model_len": 65536,
+    "permission": [
+      {
+        "id": "modelperm-8705a0140c12df28",
+        "object": "model_permission",
+        "created": 1789355343,
+        "allow_create_engine": false,
+        "allow_sampling": true,
+        "allow_logprobs": true,
+        "allow_search_indices": false,
+        "allow_view": true,
+        "allow_fine_tuning": false,
+        "organization": "*",
+        "group": null,
+        "is_blocking": false
+      }
+    ]
+  },
+  "max_rounds": 0,
+  "started_at": "2026-09-14T03:09:03.9530826Z",
+  "workflow": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex",
+  "frozen_files": [
+    {
+      "file": "run-Qwen3.5-4B.ps1",
+      "sha256": "aec6b89a2c4b3af84ce13e5c1a1dcd73bb50e2464c3354bbde3ab04438b0cc79"
+    },
+    {
+      "file": "start-Qwen3.5-4B-server.ps1",
+      "sha256": "0da8522bc1403117c406c0ca5267710c7c1ff09e52dbb88a4bea4b308fd27dfb"
+    },
+    {
+      "file": "test-Qwen3.5-4B.ps1",
+      "sha256": "d98223e0b4aa52eecc1b3ba82a1243dc4f4b5b76da7d2e213a97ee04f11851b5"
+    },
+    {
+      "file": "codex-cli\\bin\\codex.js",
+      "sha256": "e700bf77cafa82367d8bd586af98cfb8640da2690ec2330c51c81cf319bb575f"
+    },
+    {
+      "file": "codex-cli\\bin\\Qwen3.5-4B.js",
+      "sha256": "24e235b8c5668e15a43d04224cab547b3ecd7862ce4a039da7249a67a7cf7780"
+    },
+    {
+      "file": "codex-cli\\bin\\Qwen3.5-4B-network.js",
+      "sha256": "e4b029859560fbd94566bd7c1d6d048d77e06f66ab42cffcab82d88c6eb028c5"
+    },
+    {
+      "file": "codex-cli\\bin\\Qwen3.5-4B-threeca.js",
+      "sha256": "176b9ed99fdf31908ec3785ef7000b28bcb0e6a3a5325f6cb11e6622ad161386"
+    },
+    {
+      "file": "codex-cli\\bin\\Qwen3.5-4B-research.js",
+      "sha256": "90348a7b44d5ed0a69179875cc3d8851ff6c738b22e0f8feb260c3a8b7a7eb64"
+    },
+    {
+      "file": "codex-cli\\bin\\test-Qwen3.5-4B-recovery.mjs",
+      "sha256": "2ddcc1b222c77e07dcb92ddd9a211482fdec1dd21d12463d9ff0e65976d116d8"
+    },
+    {
+      "file": "tools\\tool43CA\\CLI\\src\\threeca.py",
+      "sha256": "b41eec38ab990178d5ff5cb5fe127971bdd8949310a948b0fcddb958bb631018"
+    },
+    {
+      "file": "tools\\tool43CA\\MCP\\server.py",
+      "sha256": "53840d616b722c728b07c74c263a5d979e289421d9fedc8236f3251a1964adf5"
+    },
+    {
+      "file": "tools\\tool43CA\\SKILL\\threeca-access\\SKILL.md",
+      "sha256": "33d3e9bbad74249487956fa1034f083479ebb0ab8a683411adcbc24f5545f2bb"
+    },
+    {
+      "file": "tools\\research-quality\\research_quality.py",
+      "sha256": "7f3fd456b172b6a9f76b71fc818bebc5d3becc934b7e8ab7206c992b9424970c"
+    },
+    {
+      "file": "tools\\research-quality\\metabolic_states.py",
+      "sha256": "51ddbf26c336a932f10d216db6092bc5aa24f402adf9dafee6a0435382592401"
+    },
+    {
+      "file": "tools\\research-quality\\mcp_server.py",
+      "sha256": "e8a4f19937435374b840a02788841596d6b4baf71e600da1128eedcaa580e957"
+    },
+    {
+      "file": "tools\\research-quality\\SKILL.md",
+      "sha256": "df0455b9c454965f8c7ee8710daafbfba208730663f644d44feb4cd12a114d83"
+    },
+    {
+      "file": "tools\\research-quality\\references\\analysis-manifest.md",
+      "sha256": "bdd84c2c36298bc699b94a291f129e08340278c13ec0f8973de7aaf3895e78f9"
+    },
+    {
+      "file": "tools\\research-quality\\science-requirements.txt",
+      "sha256": "ca1e39629f6efabc8ad50a6004940107f047f864089af375a6912bc6b78b8a5d"
+    },
+    {
+      "file": "tools\\research-quality\\test_metabolic_states.py",
+      "sha256": "c08d061acbdb7f5dc60f742d288aa35ebd8f1fa84798ad6b77fea46c22a0e32d"
+    },
+    {
+      "file": "tools\\research-quality\\test_mcp.py",
+      "sha256": "3a91cf5e00a93e7bcf366cc19e725b03b32392c205d2a82e167a92f0af970457"
+    }
+  ],
+  "runner_pid": 6736
+}

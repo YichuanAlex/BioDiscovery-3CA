@@ -1,0 +1,8 @@
+ERROR: API 400: {"error":{"message":"System message must be at the beginning.","type":"BadRequestError","param":null,"code":400}}
+Local Qwen3.5-4B agent exited with code 1; checkpoint status: interrupted.
+At C:\Users\User\Desktop\agentic\workflow_codex\run-Qwen3.5-4B.ps1:65 char:13
++             throw "Local Qwen3.5-4B agent exited with code $workerExitCod ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Local Qwen3.5-4B ag...s: interrupted.:String) [], RuntimeException
+    + FullyQualifiedErrorId : Local Qwen3.5-4B agent exited with code 1; checkpoint status: interrupted.
+ 

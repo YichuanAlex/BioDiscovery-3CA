@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P008",
+  "folder_id": "P008_pretto_2025_elovl1_cd8_metabolic_screen",
+  "title": "A functional single-cell metabolic survey identifies Elovl1 as a target to enhance CD8+ T cell fitness in solid tumours",
+  "identifiers": {
+    "doi": "10.1038/s42255-025-01233-w",
+    "pmid": "40065102",
+    "pmcid": "PMC11946891"
+  },
+  "publication": {
+    "venue": "Nature Metabolism",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "peer_reviewed",
+    "published_at": "2025-03-10",
+    "version": "version_of_record"
+  },
+  "integrity": {
+    "checked_at": "2026-09-11T10:13:16+00:00",
+    "sources": [
+      "Crossref metadata",
+      "PubMed publication types/comments when PMID resolved"
+    ],
+    "screening_completeness": "Crossref+PubMed",
+    "retracted": false,
+    "expression_of_concern": false,
+    "corrections": [],
+    "publication_types": [
+      "Journal Article"
+    ]
+  },
+  "selection": {
+    "tier": "A",
+    "role": "direct_biological_benchmark",
+    "primary_axis": "Q3",
+    "secondary_axes": [
+      "Q1"
+    ],
+    "rationale": "The strongest recent perturbational study directly linking metabolic genes, single-cell transcriptional states, and CD8 T-cell function in solid tumours."
+  },
+  "code_sources": [],
+  "data_sources": [
+    {
+      "accession": "GSE255833",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE255832",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE282895",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE282894",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE120575",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE211644",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE179351",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    }
+  ],
+  "verified_data_urls": [],
+  "repository_urls_extracted": [],
+  "curation": {
+    "status": "candidate_requires_independent_reproduction",
+    "completed_stages": [
+      "S0_candidate_registration",
+      "S1_source_inventory",
+      "S2_candidate_insight",
+      "S3_paper_data_task_mapping"
+    ],
+    "pending_stages": [
+      "S4_independent_reproduction",
+      "S5_final_prompt_approval",
+      "S6_answerability_and_leakage_tests",
+      "S7_grader_adversarial_tests",
+      "S8_dual_signoff"
+    ],
+    "domain_curator": null,
+    "computational_curator": null,
+    "reviewed_at": null
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P019",
+  "folder_id": "P019_detomaso_2019_vision",
+  "title": "Functional interpretation of single cell similarity maps",
+  "identifiers": {
+    "doi": "10.1038/s41467-019-12235-0",
+    "pmid": "31558714",
+    "pmcid": "PMC6763499"
+  },
+  "publication": {
+    "venue": "Nature Communications",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "peer_reviewed",
+    "published_at": "2019-09-26",
+    "version": "version_of_record"
+  },
+  "integrity": {
+    "checked_at": "2026-09-11T10:13:16+00:00",
+    "sources": [
+      "Crossref metadata",
+      "PubMed publication types/comments when PMID resolved"
+    ],
+    "screening_completeness": "Crossref+PubMed",
+    "retracted": false,
+    "expression_of_concern": false,
+    "corrections": [],
+    "publication_types": [
+      "Journal Article",
+      "Research Support, N.I.H., Extramural",
+      "Research Support, Non-U.S. Gov't"
+    ]
+  },
+  "selection": {
+    "tier": "A",
+    "role": "gene_set_scoring_method",
+    "primary_axis": "Q1",
+    "secondary_axes": [
+      "Q2",
+      "Q3"
+    ],
+    "rationale": "VISION is the default engine used by scMetabolism and directly annotates variation over a cell-cell similarity graph."
+  },
+  "code_sources": [
+    {
+      "url": "https://github.com/YosefLab/VISION",
+      "commit": null,
+      "license": "to_verify"
+    }
+  ],
+  "data_sources": [
+    {
+      "accession": "GSE25088",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE100866",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE96583",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE116256",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE89754",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSM2388072",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    }
+  ],
+  "verified_data_urls": [],
+  "repository_urls_extracted": [
+    "http://www.github.com/YosefLab/VISION",
+    "https://github.com/YosefLab/VISION"
+  ],
+  "curation": {
+    "status": "candidate_requires_independent_reproduction",
+    "completed_stages": [
+      "S0_candidate_registration",
+      "S1_source_inventory",
+      "S2_candidate_insight",
+      "S3_paper_data_task_mapping"
+    ],
+    "pending_stages": [
+      "S4_independent_reproduction",
+      "S5_final_prompt_approval",
+      "S6_answerability_and_leakage_tests",
+      "S7_grader_adversarial_tests",
+      "S8_dual_signoff"
+    ],
+    "domain_curator": null,
+    "computational_curator": null,
+    "reviewed_at": null
+  }
+}

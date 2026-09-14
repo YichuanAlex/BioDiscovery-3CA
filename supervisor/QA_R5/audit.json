@@ -1,0 +1,105 @@
+{
+  "snapshot_at": "2026-09-14T01:11:32.633Z",
+  "task": "C:\\Users\\User\\Desktop\\agentic\\3CA\\QA_R5",
+  "status": "runner_failed",
+  "runner_pid": 23712,
+  "runner_process": null,
+  "runner_identity_match": false,
+  "checkpoint_status": "running",
+  "checkpoint_read_error": null,
+  "phase": "bundle_repair",
+  "next_action": "Repair only these validator errors, then rebuild if TeX changed: ERROR: {\r\n  \"valid\": false,\r\n  \"checked_at\": \"2026-09-14T01:10:39.943362+00:00\",\r\n  \"manifest_path\": \"results\\\\analysis_manifest.json\",\r\n  \"manifest_sha256\": \"e4c33f6a35bf8ca0a8b6c7db460463ea4ea5ef90d9b42cafafa61986cab2fb2d\",\r\n  \"errors\": [\r\n    \"dataset.cell_id_field is required\",\r\n    \"feature_set.sha256 must be a complete SHA-256\",\r\n    \"feature_set.sha256 does not match genes_path\",\r\n    \"Core result expression hash does not match manifest dataset\",\r\n    \"Manifest random_seeds do not match core parameters\",\r\n    \"analysis.methods[0] metrics or cluster count do not match core facts\",\r\n    \"LaTeX report contains no included figure\",\r\n    \"Each manifest figure must appear in its own LaTeX figure environment\",\r\n    \"Table label is not referenced in report prose: tab:confounders\",\r\n    \"Each displayed formula must have one label and a prose reference\",\r\n    \"Figure is not referenced by LaTeX: figures/metabolic_umap.pdf\",\r\n    \"Figure is not referenced by LaTeX: figures/clustering_diagnostics.pdf\",\r\n    \"Figure is not referenced by LaTeX: figures/cd8_analysis/metabolic_umap.pdf\",\r\n    \"Figure is not referenced by LaTeX: figures/cd8_analysis/clustering_diagnostics.pdf\"\r\n  ],\r\n  \"checks\": {\r\n    \"methods\": 1,\r\n    \"figures\": 4,\r\n    \"three_line_tables\": 1,\r\n    \"formulas\": 1,\r\n    \"pdf_pages\": 4,\r\n    \"rendered_pages\": 4,\r\n    \"references\": 2\r\n  }\r\n}",
+  "rounds": 85,
+  "tool_counts": {
+    "validate_research_bundle": 1,
+    "read_file": 5,
+    "run_powershell": 1
+  },
+  "artifacts": [
+    {
+      "path": "report/main.tex",
+      "present": true,
+      "bytes": 8572
+    },
+    {
+      "path": "report/main.pdf",
+      "present": true,
+      "bytes": 183627
+    },
+    {
+      "path": "results/summary.json",
+      "present": true,
+      "bytes": 5317
+    },
+    {
+      "path": "results/analysis_manifest.json",
+      "present": true,
+      "bytes": 3119
+    },
+    {
+      "path": "results/core_analysis/core_result.json",
+      "present": true,
+      "bytes": 10955
+    },
+    {
+      "path": "results/cd8_analysis/core_result.json",
+      "present": true,
+      "bytes": 10314
+    },
+    {
+      "path": "results/cd8_analysis/summary.json",
+      "present": true,
+      "bytes": 4702
+    },
+    {
+      "path": "README.md",
+      "present": true,
+      "bytes": 3650
+    }
+  ],
+  "required_artifacts": [
+    "report/main.tex",
+    "report/main.pdf",
+    "results/summary.json",
+    "results/analysis_manifest.json",
+    "results/core_analysis/core_result.json",
+    "results/cd8_analysis/core_result.json",
+    "results/cd8_analysis/summary.json",
+    "README.md"
+  ],
+  "research_validation": {
+    "valid": false,
+    "checked_at": "2026-09-14T01:11:32.240689+00:00",
+    "manifest_path": "results\\analysis_manifest.json",
+    "manifest_sha256": "e4c33f6a35bf8ca0a8b6c7db460463ea4ea5ef90d9b42cafafa61986cab2fb2d",
+    "errors": [
+      "dataset.cell_id_field is required",
+      "feature_set.sha256 must be a complete SHA-256",
+      "feature_set.sha256 does not match genes_path",
+      "Core result expression hash does not match manifest dataset",
+      "Manifest random_seeds do not match core parameters",
+      "analysis.methods[0] metrics or cluster count do not match core facts",
+      "LaTeX report contains no included figure",
+      "Each manifest figure must appear in its own LaTeX figure environment",
+      "Table label is not referenced in report prose: tab:confounders",
+      "Each displayed formula must have one label and a prose reference",
+      "Figure is not referenced by LaTeX: figures/metabolic_umap.pdf",
+      "Figure is not referenced by LaTeX: figures/clustering_diagnostics.pdf",
+      "Figure is not referenced by LaTeX: figures/cd8_analysis/metabolic_umap.pdf",
+      "Figure is not referenced by LaTeX: figures/cd8_analysis/clustering_diagnostics.pdf"
+    ],
+    "checks": {
+      "methods": 1,
+      "figures": 4,
+      "three_line_tables": 1,
+      "formulas": 1,
+      "pdf_pages": 4,
+      "rendered_pages": 4,
+      "references": 2
+    }
+  },
+  "frozen_hash_mismatches": [],
+  "structural_completion_candidate": false,
+  "semantic_acceptance": "pending_independent_review",
+  "caveat": "PID liveness requires matching executable, command line, and creation time. Structural completion does not establish biological validity."
+}

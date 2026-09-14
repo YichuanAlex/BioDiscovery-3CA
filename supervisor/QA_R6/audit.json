@@ -1,0 +1,76 @@
+{
+  "snapshot_at": "2026-09-14T01:55:56.418Z",
+  "task": "C:\\Users\\User\\Desktop\\agentic\\3CA\\QA_R6",
+  "status": "runner_failed",
+  "runner_pid": 27696,
+  "runner_process": null,
+  "runner_identity_match": false,
+  "checkpoint_status": "running",
+  "checkpoint_read_error": null,
+  "phase": "report_build",
+  "next_action": "Call build_research_report now for report/main.tex and report/main.pdf; do not use a shell compilation wrapper.",
+  "rounds": 61,
+  "tool_counts": {
+    "build_research_report": 1,
+    "read_file": 1,
+    "replace_in_file": 2,
+    "run_powershell": 1
+  },
+  "artifacts": [
+    {
+      "path": "report/main.tex",
+      "present": true,
+      "bytes": 8413
+    },
+    {
+      "path": "report/main.pdf",
+      "present": false,
+      "bytes": 0
+    },
+    {
+      "path": "results/summary.json",
+      "present": true,
+      "bytes": 5317
+    },
+    {
+      "path": "results/analysis_manifest.json",
+      "present": true,
+      "bytes": 3155
+    },
+    {
+      "path": "results/core_analysis/core_result.json",
+      "present": true,
+      "bytes": 10955
+    },
+    {
+      "path": "results/cd8_analysis/core_result.json",
+      "present": true,
+      "bytes": 10314
+    },
+    {
+      "path": "results/cd8_analysis/summary.json",
+      "present": true,
+      "bytes": 4702
+    },
+    {
+      "path": "README.md",
+      "present": true,
+      "bytes": 4154
+    }
+  ],
+  "required_artifacts": [
+    "report/main.tex",
+    "report/main.pdf",
+    "results/summary.json",
+    "results/analysis_manifest.json",
+    "results/core_analysis/core_result.json",
+    "results/cd8_analysis/core_result.json",
+    "results/cd8_analysis/summary.json",
+    "README.md"
+  ],
+  "research_validation": null,
+  "frozen_hash_mismatches": [],
+  "structural_completion_candidate": false,
+  "semantic_acceptance": "pending_independent_review",
+  "caveat": "PID liveness requires matching executable, command line, and creation time. Structural completion does not establish biological validity."
+}

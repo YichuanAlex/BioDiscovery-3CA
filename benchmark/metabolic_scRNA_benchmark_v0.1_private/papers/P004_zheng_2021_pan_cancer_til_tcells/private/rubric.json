@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "task_id": "metabolic-scrna-p004-q3",
+  "status": "draft_not_scoreable",
+  "release_eligible": false,
+  "hard_gates": [
+    "gene-symbol and overlap coverage reported",
+    "biological replicate is the inferential unit",
+    "negative-control gene sets included",
+    "batch, library-size, and mitochondrial-quality confounding assessed",
+    "RNA-derived activity is not reported as measured flux",
+    "all required files conform to the output contract"
+  ],
+  "weights": {
+    "data_and_gene_set_integrity": 15,
+    "replicate_aware_statistics": 20,
+    "primary_artifact_agreement": 30,
+    "robustness_and_negative_controls": 20,
+    "claim_evidence_and_uncertainty": 15
+  },
+  "deterministic_metrics_to_finalize": [
+    "schema validity",
+    "ARI/NMI or label-invariant set agreement",
+    "held-out-patient transfer",
+    "blocked-permutation association",
+    "effect-size direction",
+    "required artifact completeness"
+  ],
+  "blocking_reason": "Gold artifacts, tolerances, and independent reproduction anchors are not yet available."
+}

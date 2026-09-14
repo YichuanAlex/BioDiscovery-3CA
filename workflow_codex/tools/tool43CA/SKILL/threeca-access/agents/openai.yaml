@@ -1,0 +1,6 @@
+interface:
+  display_name: "3CA Data Access"
+  short_description: "Search, retrieve, and inspect Curated Cancer Cell Atlas data"
+  default_prompt: "Use $threeca-access to find and inspect relevant 3CA studies with source provenance."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P003",
+  "folder_id": "P003_chu_2023_pan_cancer_tcell_atlas",
+  "title": "Pan-cancer T cell atlas links a cellular stress response state to immunotherapy resistance",
+  "identifiers": {
+    "doi": "10.1038/s41591-023-02371-y",
+    "pmid": "37248301",
+    "pmcid": "PMC11421770"
+  },
+  "publication": {
+    "venue": "Nature Medicine",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "peer_reviewed",
+    "published_at": "2023-06-01",
+    "version": "version_of_record"
+  },
+  "integrity": {
+    "checked_at": "2026-09-11T10:13:16+00:00",
+    "sources": [
+      "Crossref metadata",
+      "PubMed publication types/comments when PMID resolved"
+    ],
+    "screening_completeness": "Crossref+PubMed",
+    "retracted": false,
+    "expression_of_concern": false,
+    "corrections": [],
+    "publication_types": [
+      "Journal Article",
+      "Research Support, N.I.H., Extramural",
+      "Research Support, Non-U.S. Gov't"
+    ]
+  },
+  "selection": {
+    "tier": "A",
+    "role": "direct_biological_benchmark",
+    "primary_axis": "Q3",
+    "secondary_axes": [
+      "Q2"
+    ],
+    "rationale": "A large, multi-cancer T-cell reference with explicit CD8 subsets and sample-level clinical metadata is suitable for within-cell-type state discovery and cross-cohort validation."
+  },
+  "code_sources": [],
+  "data_sources": [
+    {
+      "accession": "GSE222522",
+      "access": "public",
+      "role": "unspecified",
+      "verification": "manually_seeded_from_primary_source"
+    },
+    {
+      "accession": "GSE222859",
+      "access": "public",
+      "role": "unspecified",
+      "verification": "manually_seeded_from_primary_source"
+    },
+    {
+      "accession": "GSE203610",
+      "access": "public",
+      "role": "unspecified",
+      "verification": "manually_seeded_from_primary_source"
+    },
+    {
+      "accession": "GSE123814",
+      "access": "public",
+      "role": "unspecified",
+      "verification": "manually_seeded_from_primary_source"
+    },
+    {
+      "accession": "GSE179994",
+      "access": "public",
+      "role": "unspecified",
+      "verification": "manually_seeded_from_primary_source"
+    },
+    {
+      "accession": "GSE173351",
+      "access": "public",
+      "role": "unspecified",
+      "verification": "manually_seeded_from_primary_source"
+    },
+    {
+      "accession": "GSE169246",
+      "access": "public",
+      "role": "unspecified",
+      "verification": "manually_seeded_from_primary_source"
+    },
+    {
+      "accession": "SCP1288",
+      "access": "public",
+      "role": "unspecified",
+      "verification": "manually_seeded_from_primary_source"
+    },
+    {
+      "accession": "EGAD00001007672",
+      "access": "controlled",
+      "role": "unspecified",
+      "verification": "manually_seeded_from_primary_source"
+    },
+    {
+      "accession": "EGAS00001005021",
+      "access": "controlled",
+      "role": "unspecified",
+      "verification": "manually_seeded_from_primary_source"
+    },
+    {
+      "accession": "EGAS00001006052",
+      "access": "controlled",
+      "role": "unspecified",
+      "verification": "manually_seeded_from_primary_source"
+    },
+    {
+      "accession": "EGAD00001006994",
+      "access": "controlled",
+      "role": "unspecified",
+      "verification": "manually_seeded_from_primary_source"
+    },
+    {
+      "accession": "EGAS00001004809",
+      "access": "controlled",
+      "role": "unspecified",
+      "verification": "manually_seeded_from_primary_source"
+    },
+    {
+      "accession": "GSE144240",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE175540",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    }
+  ],
+  "verified_data_urls": [],
+  "repository_urls_extracted": [
+    "https://github.com/Coolgenome/TCM",
+    "https://github.com/jianhuupenn/TESLA",
+    "https://github.com/Coolgenome/TCM/blob/main/res_largerT.py#L230",
+    "https://github.com/almaan/her2st"
+  ],
+  "curation": {
+    "status": "candidate_requires_independent_reproduction",
+    "completed_stages": [
+      "S0_candidate_registration",
+      "S1_source_inventory",
+      "S2_candidate_insight",
+      "S3_paper_data_task_mapping"
+    ],
+    "pending_stages": [
+      "S4_independent_reproduction",
+      "S5_final_prompt_approval",
+      "S6_answerability_and_leakage_tests",
+      "S7_grader_adversarial_tests",
+      "S8_dual_signoff"
+    ],
+    "domain_curator": null,
+    "computational_curator": null,
+    "reviewed_at": null
+  }
+}

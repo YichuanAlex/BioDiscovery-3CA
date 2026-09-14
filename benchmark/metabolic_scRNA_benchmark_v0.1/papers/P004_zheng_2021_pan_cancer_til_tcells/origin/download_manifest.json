@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P004",
+  "si_requested": true,
+  "downloaded_at": "2026-09-11T10:13:16+00:00",
+  "pmc_attempt": {
+    "status": "pmcid_not_available",
+    "pmcid": ""
+  },
+  "official_fallback_attempt": {
+    "provider": "official_publisher_or_repository",
+    "status": "full_text_available_si_not_found",
+    "attempts": [
+      {
+        "url": "https://www.science.org/doi/10.1126/science.abe6474",
+        "status": "failed:HTTPError:HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://www.science.org/doi/suppl/10.1126/science.abe6474/suppl_file/science.abe6474_sm.pdf",
+        "status": "official_si_pointer_verified_download_blocked:HTTP_403"
+      },
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA658913",
+        "status": "dataset_landing_page_not_full_text"
+      }
+    ]
+  },
+  "files": [
+    {
+      "relative_path": "main_article.pdf",
+      "role": "main_article",
+      "media_type": "application/pdf",
+      "size_bytes": 6889404,
+      "sha256": "482725328e4b8500d52f8f85ba45c4ac8af965ccb327e916614471c2135d63e5",
+      "source_url": "user-supplied-local://workspace/Pan-cancer%20single-cell%20landscape%20of%20tumor-infiltrating%20T%20cells.pdf",
+      "official_landing_url": "https://doi.org/10.1126/science.abe6474",
+      "acquisition_method": "user_supplied_local",
+      "original_filename": "Pan-cancer single-cell landscape of tumor-infiltrating T cells.pdf",
+      "pdf_validation": {
+        "checked_at": "2026-09-11",
+        "magic": "%PDF-",
+        "pdfinfo": "pass",
+        "pdftotext_all_pages": "pass",
+        "first_page_render": "pass",
+        "pages": 13,
+        "encrypted": false,
+        "doi_match": true,
+        "title_visual_match": true
+      }
+    }
+  ],
+  "verification": {
+    "checks": [
+      "nonzero size",
+      "PDF magic when applicable",
+      "SHA-256",
+      "source URL recorded"
+    ],
+    "pdf_text_or_title_check": "external acceptance check; see top-level 构建与验收报告.md"
+  },
+  "browser_verification": {
+    "checked_at": "2026-09-11",
+    "status": "security_challenge_blocked",
+    "url": "https://www.science.org/doi/10.1126/science.abe6474",
+    "content_exported": false,
+    "note": "Official Science page displayed a Cloudflare/Turnstile security challenge. The challenge was not bypassed and no challenge payload was stored."
+  }
+}

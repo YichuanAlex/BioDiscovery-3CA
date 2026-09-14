@@ -1,0 +1,100 @@
+{
+  "snapshot_at": "2026-09-13T00:42:57.897Z",
+  "task": "C:\\Users\\User\\Desktop\\agentic\\3CA\\Q1_R8",
+  "status": "runner_failed",
+  "runner_alive": false,
+  "checkpoint_status": "running",
+  "phase": "start",
+  "next_action": "inspect available tools and task sources",
+  "rounds": 27,
+  "model": "Qwen3.5-4B",
+  "model_mismatch": false,
+  "reused_actual_results": 0,
+  "asset_references": [
+    {
+      "path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\downloads\\3ae2d47d6197\\Meta-programs.pdf",
+      "source_url": "https://www.dropbox.com/scl/fi/4g0erbadyea2zsxl6fprs/Meta-programs.pdf?rlkey=t91q2yo03we22dezeuxyxqi9o&dl=1",
+      "bytes": 1645012,
+      "sha256": "c85ffaf966a2c9b8413270604fb0615079da947125c6563eeede49cc9223e019",
+      "downloaded_at": "2026-09-13T00:23:19.315597+00:00",
+      "cache_hit": false
+    }
+  ],
+  "catalog_searches": 8,
+  "web_searches": 1,
+  "catalog_references": [],
+  "discovery_cooldown": 0,
+  "sessions": [
+    {
+      "file": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.runtime\\codex-home\\sessions\\2026\\09\\13\\rollout-2026-09-13T08-22-18-6543cf42-a5a.jsonl",
+      "source_in_runtime": true,
+      "bytes": 330221,
+      "sha256": "011307450db072d891eaa4a8fff0c139469ca784d5b44bf900c73491d99b9474",
+      "events": 198,
+      "partial_lines": 0,
+      "noncanonical_metadata_order": false,
+      "pending_tool_calls": []
+    }
+  ],
+  "tools": 19,
+  "tool_counts": {
+    "search_studies": 7,
+    "web_search": 1,
+    "get_page": 2,
+    "download_asset": 1,
+    "inspect_dataset": 1,
+    "run_powershell": 1,
+    "read_file": 1,
+    "list_files": 1,
+    "search_cached_pages": 2,
+    "refresh_catalog": 1,
+    "crawl_site": 1
+  },
+  "failed_tools": 2,
+  "guarded_tools": 0,
+  "loop_breakers": 1,
+  "loop_recoveries": 1,
+  "structured_actions": 19,
+  "structured_requests": 28,
+  "original_user_inputs": 1,
+  "supervisor_research_interventions": 0,
+  "engine_continuations": 9,
+  "thinking_enabled_responses": 27,
+  "reasoning_present_responses": 27,
+  "reasoning_missing_responses": 0,
+  "artifacts": [],
+  "required_artifacts": [
+    {
+      "file": "report/main.tex",
+      "present": false
+    },
+    {
+      "file": "report/main.pdf",
+      "present": false
+    },
+    {
+      "file": "results/summary.json",
+      "present": false
+    },
+    {
+      "file": "README.md",
+      "present": false
+    }
+  ],
+  "free_bytes": 150353903616,
+  "runner": {
+    "semantic_acceptance": "not_accepted",
+    "error": "Local Qwen3.5-4B agent exited with code -1073740791; checkpoint status: running.",
+    "ended_at": "2026-09-13T00:27:06.2650379Z",
+    "runner_success": false,
+    "started_at": "2026-09-13T00:22:18.0220226Z"
+  },
+  "run_until_complete": true,
+  "max_rounds": 0,
+  "frozen_hash_mismatches": [],
+  "semantic_acceptance": "not_accepted",
+  "supervisor_operational_restarts": 0,
+  "checkpoint_read_error": null,
+  "caveat": "Tool return, exit 0 and artifact existence do not establish scientific correctness. Missing reasoning is not reconstructed. Persisted state is not process liveness.",
+  "structural_completion_candidate": false
+}

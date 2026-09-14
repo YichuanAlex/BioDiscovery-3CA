@@ -1,0 +1,45 @@
+\section{Methods}
+
+\subsection{Data and feature definition}
+We analyzed single-cell RNA-seq data from the Tirosh et al. melanoma study (3ca:20111), which comprises 19 samples and 4,645 cells \cite{Tirosh2016}. The supplied TPM expression matrix has 23,686 gene rows and 4,645 cell columns; the code transposes it into a cells-by-genes CSR sparse matrix. Dense conversion is restricted to selected feature matrices. The retained 1,360 metabolic genes were detected in at least 1\% of cells and had nonzero variance. No imputation was performed; observed zeros were retained. TPM values were transformed according to the 3CA expression-scale convention:
+\begin{equation}
+x_{ig} = \log_2(\text{TPM}_{ig}/10 + 1),
+\end{equation}
+where $x_{ig}$ is the transformed expression for cell $i$ and gene $g$. Division by 10 follows the 3CA scale convention; the pseudocount of 1 preserves zeros and makes the logarithm defined \cite{Gavish2023}. For each gene, features were standardized to zero mean and unit variance:
+\begin{equation}
+z_{ig} = \frac{x_{ig} - \mu_g}{\sigma_g},
+\end{equation}
+where $\mu_g$ and $\sigma_g$ are the population mean and standard deviation across the analyzed cells. Gene membership was taken from a saved 85-pathway KEGG metabolic GMT snapshot in the scMetabolism repository, intersected with dataset genes and detection-filtered \cite{Kanehisa2023}. This is a repository snapshot, not a fresh KEGG database query. We used its gene sets, not the scMetabolism scoring algorithms \cite{Wu2022}.
+
+\subsection{PCA and clustering}
+Principal component analysis (PCA) used 50 randomized components and seed 20260912. K-means used the first 30 PCs, 20 initializations, and the same seed. Candidates were $k=2,\ldots,10$ for all 4,645 cells, including unannotated cells, and $k=2,\ldots,8$ for malignant cells. The silhouette coefficient was evaluated on a fixed random sample of 2,000 cells, or all cells when fewer than 2,000 were available:
+\begin{equation}
+s = \frac{b - a}{\max(a, b)},
+\end{equation}
+where $a$ is a cell's mean within-cluster distance and $b$ is its smallest mean distance to another cluster \cite{Rousseeuw1987}. Clustering fits used the full analysis population; only silhouette evaluation was sampled. For the selected $k$, ten additional seed fits used ten initializations each. The mean and sample SD of 45 pairwise adjusted Rand indices (ARIs) describe algorithmic stability, not biological replication or independent confidence intervals \cite{Hubert1985}.
+\subsection{Matched gene controls}
+We generated 20 size-matched control sets of 1,360 genes each from eligible non-metabolic genes detected in at least 1\% of cells. Sampling without replacement matched detection-rate deciles; a bin shortfall was filled from the remaining eligible non-metabolic pool. A PCG64 generator used seed 20260912. For each set, PCA and clustering were refitted across $k=2,\ldots,10$, and the maximum silhouette was recorded. The single empirical comparison with the metabolic maximum was:
+\begin{equation}
+p_{\text{emp}} = \frac{1 + \sum_{r=1}^{20} \mathbb{I}[T_r \ge T_{\text{met}}]}{21},
+\end{equation}
+where $T_r$ and $T_{\text{met}}$ are the corresponding maxima. The plus-one correction gives a minimum resolution of $1/21$. This exploratory comparison was not multiple-testing corrected. Variability across gene sets is descriptive, not a biological confidence interval.
+
+\subsection{Patient-blocked classification}
+Classification used the 4,097 annotated cells. Five-fold GroupKFold held out complete sample groups; each fold could contain several patients, with no patient shared between training and test partitions. StandardScaler and a 40-component PCA were fitted only on training cells. Logistic regression used balanced class weights, $C=1$, and a maximum of 2,000 iterations. Predictions from all held-out folds were pooled to calculate macro-F1 and balanced accuracy:
+\begin{equation}
+\text{balanced accuracy} = \frac{1}{K} \sum_{i=1}^{K} \text{recall}_i,
+\end{equation}
+where $K$ is the number of classes. The highly variable gene (HVG) baseline used the 1,360 largest pooled log-expression variances. Detection eligibility and HVG selection were defined using the full dataset before fold partitioning. Thus, although scaler and PCA fitting were training-only, feature selection was not fully nested. Prospective evaluation should repeat eligibility and HVG selection within training folds.
+\subsection{Covariate analyses}
+To test whether library complexity influenced the clustering results, we included the complexity metric (log1p-transformed) as a covariate in an ordinary least squares (OLS) regression. For the all-4,645 cells (including unannotated), the design matrix $D$ contained an intercept and the standardized log1p complexity. For malignant cells (1,257 cells across 15 samples), we additionally included drop-first sample dummies to control for sample-specific effects. The residual matrix was computed as:
+\begin{equation}
+R = Z - D D^{+} Z,
+\end{equation}
+where $Z$ is $n\times g$, $D$ is $n\times q$, and $D^{+}$ is the Moore--Penrose pseudoinverse. Residuals were reduced with a new 50-component PCA, followed by clustering on the first 30 PCs with the original candidate ranges. For nine samples with at least 30 malignant cells, separate $k=2,\ldots,6$ scans used subsets of the globally fitted malignant PCA. These within-patient summaries are exploratory, not independently fitted validation analyses.
+
+\subsection{Descriptive pathway summaries}
+For pathways containing at least five retained genes, a descriptive expression summary was calculated as $m_{ip}=\operatorname{mean}_{g\in p}(z_{ig})$, then averaged over cells of type $t$ to obtain $M_{tp}$. Heatmap values were standardized across cell types:
+\begin{equation}
+z_{tp} = \frac{M_{tp} - \text{mean}_{\text{cell type}}(M_{tp})}{\text{sd}_{\text{cell type}}(M_{tp})},
+\end{equation}
+with $\text{sd}$ computed with $\text{ddof}=0$. These 18 selected pathways were described in the results; they were not weighted using Xiao's method, nor were they derived from the scMetabolism algorithm or metabolic flux analysis.

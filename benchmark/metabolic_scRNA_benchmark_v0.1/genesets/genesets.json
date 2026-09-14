@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "geneset_id": "metabolic-genes-input-v1",
+  "species": "mixed human/mouse symbols; human ortholog mapping is a candidate and requires curation",
+  "id_space": "mixed HGNC/MGI symbol candidates",
+  "source": "C:\\Users\\User\\Desktop\\agentic\\data\\metabolic genes total.csv",
+  "source_sha256": "7503180d29693bd1e654ea93281db0e3ec4177ff44842c8b02f6a098402e41a9",
+  "direction": "unsigned",
+  "weights": "absent",
+  "provenance": "user_supplied; upstream biological source not present in the CSV",
+  "n_input_rows": 1988,
+  "n_unique_symbols": 1988,
+  "n_blank": 0,
+  "n_duplicate": 0,
+  "files": [
+    {
+      "relative_path": "genesets/metabolic_genes_input_v1.csv",
+      "role": "source_material",
+      "media_type": "application/vnd.ms-excel",
+      "size_bytes": 12802,
+      "sha256": "00909e54eefb828908059d014b8590afc88e8099257f4622ad8590af8ccbe306",
+      "source_url": ""
+    },
+    {
+      "relative_path": "genesets/metabolic_genes_input_v1.gmt",
+      "role": "source_material",
+      "media_type": "application/octet-stream",
+      "size_bytes": 12855,
+      "sha256": "3db7c3e3e3e647d07249ab54cc1f7ab4c3e84a72ce26f3c96dea450758b810f5",
+      "source_url": ""
+    },
+    {
+      "relative_path": "genesets/hgnc_validation_summary.json",
+      "role": "source_material",
+      "media_type": "application/json",
+      "size_bytes": 1906,
+      "sha256": "072fc63b9dd6b9c94cc5c1565ce100920a759b54b91b1b4193f3f077bd52cd6f",
+      "source_url": ""
+    },
+    {
+      "relative_path": "genesets/metabolic_genes_hgnc_validation.tsv",
+      "role": "source_material",
+      "media_type": "text/tab-separated-values",
+      "size_bytes": 145969,
+      "sha256": "cc67413c6510d7d8c822e69b6e0c0c9a567d9e9db279598f5aabc2fb22b4bc37",
+      "source_url": ""
+    },
+    {
+      "relative_path": "genesets/metabolic_genes_human_mapped_candidate_v1.csv",
+      "role": "source_material",
+      "media_type": "application/vnd.ms-excel",
+      "size_bytes": 11104,
+      "sha256": "6ab0596ccfbbeff53f20bf46da533407fc32bc3812b0eeb11d304f8fe83a22d3",
+      "source_url": ""
+    }
+  ],
+  "symbol_validation": {
+    "status": "completed_with_unresolved_symbols",
+    "reference_summary": "genesets/hgnc_validation_summary.json",
+    "inferred_species_counts": {
+      "human": 345,
+      "human_and_mouse": 6,
+      "mouse": 1555,
+      "unresolved": 82
+    },
+    "recommended_human_symbols": 1727,
+    "recommended_human_unique_symbols": 1719,
+    "all_resolved_unambiguously": false
+  },
+  "blocking_fields_before_biological_gold": [
+    "upstream_source",
+    "species_confirmation",
+    "HGNC_release",
+    "inclusion_rule"
+  ]
+}

@@ -1,0 +1,29 @@
+你正在执行一个新的、独立的单细胞科研任务。本轮唯一研究工作区是：
+`C:\Users\User\Desktop\agentic\3CA\QA_R8`
+
+不要读取、复制、恢复或修改任何旧 `Q1_R*`、其他 `QA_R*` 的代码、计算、结果或报告。可复用的仅限 3CA 工具返回并经哈希核验的公共原始数据缓存。本轮已由监督者把用户原始基因表按原字节复制为 `inputs/metabolic_genes_total.csv`，并保存 `inputs/input-provenance.json`；它是不可改写的用户输入。
+
+研究对象继续使用当前工作流已核验的公开 3CA 原始计数研究 `3ca:20773`。仍须实际调用 `search_studies`、`get_study`、`plan_asset`、`download_asset(extract=true)` 和 `prepare_3ca_dataset` 建立本轮来源、下载与输入哈希证据；缓存命中可以接受。不得用旧研究目录里的 inputs。若该稳定 ID 的当前 3CA 页面或资源事实与提示冲突，以工具的实际返回为准并记录。
+
+用户问题是使用 `inputs/metabolic_genes_total.csv` 的代谢基因处理该单细胞 RNA-seq 原始计数，并分别回答：
+
+1. 仅使用这些代谢基因时，全体细胞是否形成可复现的转录代谢分组？
+2. 这些分组与已知细胞类型、细胞亚型之间有什么关系？
+3. 在相同细胞类型内部，具体以元数据中的精确值 `cell_subtype=CD8 T cells` 为例，是否仍有不同的代谢分组？
+
+以下是本轮固定执行合同。每个阶段完成后用 `task_checkpoint` 保存下一项具体动作；每次响应只调用一个原生工具。
+
+1. 先用 `inspect_research_table` 检查用户 CSV 的行和 `symbol` 列，并核对准备后的 Cells.csv 的唯一 `cell_name`、`cell_type`、`cell_subtype`、`patient`、`sample`。用户表包含混合大小写；不得自行统一大写。原生分析器会先精确匹配，再做唯一的大小写不敏感匹配，并保存每个输入符号的匹配方式、未匹配项、歧义和 prevalence 结果。
+2. 用准备工具返回的原始 Matrix Market、Cells.csv、Genes.txt 路径调用第一次 `analyze_metabolic_states`：基因表为 `inputs/metabolic_genes_total.csv`，输出保持默认 `results/core_analysis`，随机基因对照数为 19。不要先写或执行自定义 Python，也不要自行制作 matched gene 文件。
+3. 全局核心成功后，检查实际 Cells.csv 确有 `cell_subtype` 精确值 `CD8 T cells`。第二次调用同一个 `analyze_metabolic_states`，参数使用 `subset_field=cell_subtype`、`subset_values=["CD8 T cells"]`、`output_dir=results/cd8_analysis`、随机基因对照数 19。不得按关键词猜标签，也不得由第一次聚类标签定义 CD8。
+4. 第一个核心用于问题 1，并从 `cell_type_association_summary`、`stratified_cell_type_associations.csv`、cluster composition 及患者/样本混杂指标回答问题 2。第二个核心独立回答问题 3。报告每一问都须给出：实际细胞数、匹配基因数、簇数和范围、分辨率选择、稳定性、metabolic matched-k KMeans、HVG 与 19 个随机对照、患者内结果及局限。不得把 Leiden silhouette 与 KMeans 对照直接比较；随机对照必须使用核心保存的 matched-k 数值和实际超过数。
+5. 把细胞视为嵌套在患者和样本中。全局或患者内 NMI/ARI、silhouette 和 composition 是描述性证据，不是把数万细胞当独立重复的显著性检验。不得用同一矩阵上数据导出的簇标签再做细胞级显著性检验来证明状态；不得从阈值、UMAP 或稳定性单独宣称离散代谢状态、机制或因果。若证据主要由 cell type、patient、sample 或 QC 主导，要直接报告混杂。
+6. 2023 年 Nature 的泛癌转录异质性工作说明：先在每个肿瘤/样本内提取稳健程序，再跨研究形成共识，从而把肿瘤身份、细胞类型与肿瘤内状态分开。本轮不需要重建其 NMF 元程序，但必须遵守同一证据边界：全局细胞类型分离不能替代同类型内部状态，患者内敏感性不能冒充独立队列验证。
+7. BKI-Ludwig T-cell atlas 的设计强调统一 QC、细致临床元数据、患者/批次效应和稳定的 T-cell 参考标签。因此 CD8 分析使用已有精确注释并单独呈现患者/样本构成；不要因新增数据重命名已有细胞类型，也不要把 CD8 内聚类外推成泛癌 T-cell atlas。
+8. Co-Scientist 的生成、反思、排序和元审查在本工作流中被压缩为有终止条件的产物阶段。反思只针对一个实际错误、事实冲突或 validator 输出进行一次修复，然后前进；不要开放式自我辩论、重复检索或重启已成功阶段。外部工具结果、核心 receipt 和最终 validator 优先于模型记忆。
+9. 本轮报告只引用两个预先指定且必须逐一核验的来源：对数据集原始论文调用 `verify_doi(doi="3ca:20773")`，对方法背景调用 `verify_doi(doi="10.1038/s41586-023-06130-4")`。标题、作者、年份和期刊只能来自各自保存的 Crossref 元数据；不要添加或猜测其他 DOI。Co-Scientist 与 BKI-Ludwig 演示文稿仅用于编排和证据边界，不放进生物学参考文献。
+10. 从两个 `core_result.json` 写最终英文报告 `report/main.tex` 和 README。报告明确分成 Question 1、Question 2、Question 3，并给出受证据约束的答案；每一节必须明确写出 descriptive、candidate 或 inconclusive verdict。禁止使用 significantly、better/worse than random、driven by、strongly/moderately/weakly associated、no evidence of metabolic states，以及把 Leiden 与 KMeans silhouette 直接判为相同问题的优劣。至少纳入全局核心和 CD8 核心各两张原生矢量 PDF 图，共四个独立 figure 环境；每图有与实际面板一致的 caption、唯一 label 和正文引用。至少一张 `booktabs` 三线表，无竖线，有 caption/label/ref；至少一个真实使用的归一化公式，有 label/ref，并用 where 定义符号。正文引用上述已核验文献。LaTeX 正文参数中的下划线必须转义，例如作者行写 `QA\_R8`；编译器返回的首个诊断、邻近源码和可疑未转义行优先于反复读取完整日志。
+11. `results/analysis_manifest.json` 以全局 core 为主分析；`feature_set` 指向用户 CSV、其真实 SHA-256、真实 1,988 个源符号和全局 matched gene 文件。`analysis.subgroup_analyses` 必须登记 CD8 的精确 scope、core 路径和哈希；`artifacts.figures` 列出两个核心的全部四张 PDF 图。不要覆盖 `results/summary.json` 或 `results/cd8_analysis/summary.json`。
+12. 最后一次 TeX 修改后调用原生 `build_research_report`，修复真实编译错误；禁止用 PowerShell/Python 包装器或自建 validator 代替。随后调用 `validate_research_bundle`，按它的结构、事实、文献、图表、日志、PDF 全页渲染错误逐项修复；每次改 TeX 后必须重新 build，再重新 validate。只把最后一次 `valid=true` 返回的 `verification_call_id` 传给 `complete_task`。
+
+必需交付物：`report/main.tex`、`report/main.pdf`、`results/summary.json`、`results/analysis_manifest.json`、`results/core_analysis/core_result.json`、`results/cd8_analysis/core_result.json`、`results/cd8_analysis/summary.json`、`README.md`。完成闸门通过只表示结构与保存事实一致，最终报告仍必须把三个答案保持为描述性、可复核且不越过证据边界。

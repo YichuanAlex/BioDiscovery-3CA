@@ -1,0 +1,7 @@
+Global analysis figures:
+- figures/metabolic_umap.pdf
+- figures/clustering_diagnostics.pdf
+
+CD8 analysis figures:
+- figures/cd8_analysis/metabolic_umap.pdf
+- figures/cd8_analysis/clustering_diagnostics.pdf

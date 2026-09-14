@@ -1,0 +1,149 @@
+{
+  "runner_expected": {
+    "command_fragment": "launch-qa-r6.ps1",
+    "name": "powershell.exe"
+  },
+  "supervisor": "C:\\Users\\User\\Desktop\\agentic\\supervisor\\QA_R6",
+  "run_until_complete": true,
+  "node_runtime": {
+    "sha256": "ba4e6d110e8c1592a1ecd390f6b05f3da124b13871a5be62b341a07a853c6c32",
+    "versions": {
+      "node": "24.21.0",
+      "uv": "1.52.1"
+    },
+    "path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.runtime\\node-v24.21.0-win-x64\\node.exe"
+  },
+  "research_gate": "final validate_research_bundle verification required",
+  "model": "Qwen3.5-4B",
+  "semantic_acceptance": "pending",
+  "frozen_files": [
+    {
+      "sha256": "aec6b89a2c4b3af84ce13e5c1a1dcd73bb50e2464c3354bbde3ab04438b0cc79",
+      "file": "run-Qwen3.5-4B.ps1"
+    },
+    {
+      "sha256": "0da8522bc1403117c406c0ca5267710c7c1ff09e52dbb88a4bea4b308fd27dfb",
+      "file": "start-Qwen3.5-4B-server.ps1"
+    },
+    {
+      "sha256": "34a585653a4cbbc525eaa2a2d8b8aed078c8df8c343105d304bab9eba8554ed6",
+      "file": "test-Qwen3.5-4B.ps1"
+    },
+    {
+      "sha256": "e700bf77cafa82367d8bd586af98cfb8640da2690ec2330c51c81cf319bb575f",
+      "file": "codex-cli\\bin\\codex.js"
+    },
+    {
+      "sha256": "a892702a87a933bcfb53ec1e59ea11ef0c69018bf53fe4b81a187c5f9236461b",
+      "file": "codex-cli\\bin\\Qwen3.5-4B.js"
+    },
+    {
+      "sha256": "e4b029859560fbd94566bd7c1d6d048d77e06f66ab42cffcab82d88c6eb028c5",
+      "file": "codex-cli\\bin\\Qwen3.5-4B-network.js"
+    },
+    {
+      "sha256": "176b9ed99fdf31908ec3785ef7000b28bcb0e6a3a5325f6cb11e6622ad161386",
+      "file": "codex-cli\\bin\\Qwen3.5-4B-threeca.js"
+    },
+    {
+      "sha256": "90348a7b44d5ed0a69179875cc3d8851ff6c738b22e0f8feb260c3a8b7a7eb64",
+      "file": "codex-cli\\bin\\Qwen3.5-4B-research.js"
+    },
+    {
+      "sha256": "bc81ea7dac796b2e84f8592484a9a0e05652c2a03ff78c758875a2a229b347fa",
+      "file": "codex-cli\\bin\\test-Qwen3.5-4B-recovery.mjs"
+    },
+    {
+      "sha256": "b41eec38ab990178d5ff5cb5fe127971bdd8949310a948b0fcddb958bb631018",
+      "file": "tools\\tool43CA\\CLI\\src\\threeca.py"
+    },
+    {
+      "sha256": "53840d616b722c728b07c74c263a5d979e289421d9fedc8236f3251a1964adf5",
+      "file": "tools\\tool43CA\\MCP\\server.py"
+    },
+    {
+      "sha256": "33d3e9bbad74249487956fa1034f083479ebb0ab8a683411adcbc24f5545f2bb",
+      "file": "tools\\tool43CA\\SKILL\\threeca-access\\SKILL.md"
+    },
+    {
+      "sha256": "6bcb6d131d256546cf0e377807fbcdaa0b3bc3958b0382d6a8d573ea0524f446",
+      "file": "tools\\research-quality\\research_quality.py"
+    },
+    {
+      "sha256": "51ddbf26c336a932f10d216db6092bc5aa24f402adf9dafee6a0435382592401",
+      "file": "tools\\research-quality\\metabolic_states.py"
+    },
+    {
+      "sha256": "e8a4f19937435374b840a02788841596d6b4baf71e600da1128eedcaa580e957",
+      "file": "tools\\research-quality\\mcp_server.py"
+    },
+    {
+      "sha256": "40cecf9f67fc2af46271f912e1aab5d364de4cefaccf9d6ae108fcc5c3ac3e88",
+      "file": "tools\\research-quality\\SKILL.md"
+    },
+    {
+      "sha256": "25da511632d27a9a322a7a64da171defb0fa8219e0020390fdf916c31cb57eaa",
+      "file": "tools\\research-quality\\references\\analysis-manifest.md"
+    },
+    {
+      "sha256": "ca1e39629f6efabc8ad50a6004940107f047f864089af375a6912bc6b78b8a5d",
+      "file": "tools\\research-quality\\science-requirements.txt"
+    },
+    {
+      "sha256": "89b5bd6551213a3f7514c80b8d903f7a7c11c3c711f8da3b503d8c3dfd51eef2",
+      "file": "tools\\research-quality\\test_metabolic_states.py"
+    },
+    {
+      "sha256": "3a91cf5e00a93e7bcf366cc19e725b03b32392c205d2a82e167a92f0af970457",
+      "file": "tools\\research-quality\\test_mcp.py"
+    }
+  ],
+  "engineering_tests": "full_passed",
+  "task": "C:\\Users\\User\\Desktop\\agentic\\3CA\\QA_R6",
+  "model_identity": {
+    "id": "Qwen3.5-4B",
+    "object": "model",
+    "created": 1789349587,
+    "owned_by": "vllm",
+    "root": "/mnt/c/Users/User/Desktop/agentic/model/Qwen3.5-4B",
+    "parent": null,
+    "max_model_len": 65536,
+    "permission": [
+      {
+        "id": "modelperm-84007faf92c517a9",
+        "object": "model_permission",
+        "created": 1789349587,
+        "allow_create_engine": false,
+        "allow_sampling": true,
+        "allow_logprobs": true,
+        "allow_search_indices": false,
+        "allow_view": true,
+        "allow_fine_tuning": false,
+        "organization": "*",
+        "group": null,
+        "is_blocking": false
+      }
+    ]
+  },
+  "runner_pid": 27696,
+  "prompt_sha256": "b2881e11e897a88916f1c9f22408d0b3b87453c5e169f82018ca0971d70a79d0",
+  "seeded_inputs": [
+    {
+      "source_path": "C:\\Users\\User\\Desktop\\agentic\\material\\QuestionAll\\metabolic genes total.csv",
+      "bytes": 14789,
+      "role": "immutable_user_supplied_gene_set",
+      "staged_path": "inputs/metabolic_genes_total.csv",
+      "staged_at": "2026-09-14T01:33:08.0236591Z",
+      "sha256": "7503180d29693bd1e654ea93281db0e3ec4177ff44842c8b02f6a098402e41a9"
+    },
+    {
+      "staged_path": "AGENTS.md",
+      "role": "round_execution_contract",
+      "sha256": "33302176301d920e1036514389c1d4b6457c47a954b4ecb6a3ec2a3c7e3bfd23"
+    }
+  ],
+  "started_at": "2026-09-14T01:33:08.0378748Z",
+  "max_rounds": 0,
+  "workflow": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex",
+  "research_workspace_initially_empty_before_supplied_input": true
+}

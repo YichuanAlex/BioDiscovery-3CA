@@ -1,0 +1,54 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{Tirosh2016}
+\citation{Tirosh2016}
+\citation{Xiao2019}
+\citation{Xiao2019}
+\citation{Gavish2023}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\citation{Tirosh2016}
+\citation{Gavish2023}
+\citation{Kanehisa2023}
+\citation{Wu2022}
+\citation{Rousseeuw1987}
+\citation{Hubert1985}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Methods}{2}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Data and feature definition}{2}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}PCA and clustering}{2}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Matched gene controls}{2}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Patient-blocked classification}{3}{subsection.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Covariate analyses}{3}{subsection.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Descriptive pathway summaries}{3}{subsection.2.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{3}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Dataset and Restricted Features}{3}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}All-Cell Separation and Complexity}{3}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Patient-Blocked Classification}{4}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Malignant-Only Structure}{4}{subsection.3.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Exploratory clustering settings. Candidates were $k=2$--$10$ for all cells and $k=2$--$8$ for malignant cells. Seed ARI is the descriptive mean across 45 pairwise comparisons of 10 seed fits, not biological replication.}}{4}{table.1}\protected@file@percent }
+\newlabel{tab:clustering}{{1}{4}{Exploratory clustering settings. Candidates were $k=2$--$10$ for all cells and $k=2$--$8$ for malignant cells. Seed ARI is the descriptive mean across 45 pairwise comparisons of 10 seed fits, not biological replication}{table.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Classification on 4\,097 annotated cells using GroupKFold5; random SD reflects 20 gene sets, not a biological CI.}}{4}{table.2}\protected@file@percent }
+\newlabel{tab:classification}{{2}{4}{Classification on 4\,097 annotated cells using GroupKFold5; random SD reflects 20 gene sets, not a biological CI}{table.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Dataset and analysis design. (a) Analysis design overview: 4,645 cells from 19 melanoma samples analyzed using 1,360 metabolic genes from KEGG pathways. (b) Cell annotation counts: 4,097 annotated cells, 548 unannotated cells. (c) UMAP embedding of cells colored by annotation, using 3CA-provided whole-transcriptome coordinates; metabolic gene re-fitting was not performed on this embedding. (d) Study scope: 19 patients, 4,645 cells total, 1,360 metabolic genes.}}{5}{figure.1}\protected@file@percent }
+\newlabel{fig:dataset}{{1}{5}{Dataset and analysis design. (a) Analysis design overview: 4,645 cells from 19 melanoma samples analyzed using 1,360 metabolic genes from KEGG pathways. (b) Cell annotation counts: 4,097 annotated cells, 548 unannotated cells. (c) UMAP embedding of cells colored by annotation, using 3CA-provided whole-transcriptome coordinates; metabolic gene re-fitting was not performed on this embedding. (d) Study scope: 19 patients, 4,645 cells total, 1,360 metabolic genes}{figure.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Metabolic gene separation. (a) PCA of 1,360 metabolic genes on 4,645 cells, colored by cell type. (b) Same PCA colored by k-means cluster assignment at k = 2. (c) Silhouette scores across k = 2..10 for all cells, with raw and complexity-adjusted curves; the 95\% empirical range of 20 matched random gene sets is shown as a shaded band (not a confidence interval, not an HVG result). (d) Patient-blocked 5-fold cross-validation on 4,097 annotated cells using pooled row-normalized data, showing confusion matrix for cell-type classification.}}{6}{figure.2}\protected@file@percent }
+\newlabel{fig:separation}{{2}{6}{Metabolic gene separation. (a) PCA of 1,360 metabolic genes on 4,645 cells, colored by cell type. (b) Same PCA colored by k-means cluster assignment at k = 2. (c) Silhouette scores across k = 2..10 for all cells, with raw and complexity-adjusted curves; the 95\% empirical range of 20 matched random gene sets is shown as a shaded band (not a confidence interval, not an HVG result). (d) Patient-blocked 5-fold cross-validation on 4,097 annotated cells using pooled row-normalized data, showing confusion matrix for cell-type classification}{figure.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Robustness and interpretation. (a) All-cell maximum silhouette comparison of 20 matched random gene sets against the metabolic gene set. (b) PCA of 1,257 malignant cells colored by patient, showing patient-level clustering. (c) Silhouette curves for malignant cells across k = 2..8, with raw and patient+complexity-adjusted curves. (d) Heatmap of 18 KEGG metabolic pathway z-scores across cell types, showing across-type mean scores (not flux or scMetabolism scoring). (e) Adjusted mutual information (AMI) for alignment with cell type, patient, and malignant patient, comparing all-cell, all-patient, and malignant-patient analyses.}}{7}{figure.3}\protected@file@percent }
+\newlabel{fig:robustness}{{3}{7}{Robustness and interpretation. (a) All-cell maximum silhouette comparison of 20 matched random gene sets against the metabolic gene set. (b) PCA of 1,257 malignant cells colored by patient, showing patient-level clustering. (c) Silhouette curves for malignant cells across k = 2..8, with raw and patient+complexity-adjusted curves. (d) Heatmap of 18 KEGG metabolic pathway z-scores across cell types, showing across-type mean scores (not flux or scMetabolism scoring). (e) Adjusted mutual information (AMI) for alignment with cell type, patient, and malignant patient, comparing all-cell, all-patient, and malignant-patient analyses}{figure.3}{}}
+\citation{Tirosh2016,Xiao2019}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{8}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Limitations}{8}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{8}{section.5}\protected@file@percent }
+\bibstyle{plainnat}
+\bibdata{references}
+\bibcite{Gavish2023}{{1}{2023}{{Gavish et~al.}}{{}}}
+\bibcite{Hubert1985}{{2}{1985}{{Hubert and Arabie}}{{}}}
+\bibcite{Kanehisa2023}{{3}{2023}{{Kanehisa et~al.}}{{}}}
+\bibcite{Rousseeuw1987}{{4}{1987}{{Rousseeuw}}{{}}}
+\bibcite{Tirosh2016}{{5}{2016}{{Tirosh et~al.}}{{}}}
+\bibcite{Wu2022}{{6}{2022}{{Wu et~al.}}{{}}}
+\bibcite{Xiao2019}{{7}{2019}{{Xiao et~al.}}{{Xiao, Dai, and Locasale}}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Data and Code Availability}{9}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Workflow Provenance}{9}{section.7}\protected@file@percent }
+\gdef \@abspage@last{9}

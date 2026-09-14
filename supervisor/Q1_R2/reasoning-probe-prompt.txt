@@ -1,0 +1,1 @@
+This is an engineering-only autonomous logging probe. Create probe.txt containing exactly REASONING_LOG_OK, run a PowerShell command that verifies its exact content, then call complete_task with the actual verification_call_id. Do not perform research or access any other task directory.

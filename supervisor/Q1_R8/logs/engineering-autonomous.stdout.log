@@ -1,0 +1,8 @@
+Qwen3.5-4B local server is ready: http://127.0.0.1:8000/health
+[tool] write_file
+[tool] run_powershell
+[auto-continue] phase=start; completion not verified
+[tool] complete_task
+
+Qwen3.5-4B> Created probe.txt with content ENGINE_R8_OK, verified via run_powershell Get-Content command showing exit_code=0
+

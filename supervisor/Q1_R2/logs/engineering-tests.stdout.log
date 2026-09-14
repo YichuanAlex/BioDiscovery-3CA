@@ -1,0 +1,40 @@
+PASS: exact path, no installed-Codex references, no project Codex auto-discovery config, no external tool links.
+PASS: empty-reply recovery, failed-tool recovery, repeated verification, unchanged-read loop guard, isolated workspace.
+PASS: autonomous plan recovery, nested paths, premature completion rejection, shell mutation validation, actual reasoning persistence, resume without mutation replay, unfinished budget nonzero exit.
+PASS: cookie challenge is rejected as unusable evidence.
+PASS: tool43CA MCP initialized, listed all 10 tools, and completed a tool call.
+PASS: workflow-local Computer Use listed, launched, selected, observed, acted, and re-observed.
+Qwen3.5-4B local server is ready: http://127.0.0.1:8000/health
+PASS: attachment copied under C:\Users\User\Desktop\agentic\workflow_codex\.runtime\codex-home\attachments
+PASS: model, path guard, read, list, tool protocol, computer use, 3CA, network, write, shell.
+Qwen3.5-4B local server is ready: http://127.0.0.1:8000/health
+[tool] web_search: 最新新闻 2026年
+
+Qwen3.5-4B> 根据搜索结果，这里为您整理2026年最新的新闻摘要：
+
+## 📰 2026年最新新闻
+
+### 🔴 国际局势
+- **伊朗战争新进展**：也门胡塞武装迅速控制曼德海峡，可能进一步推高国际油价（来源：RFI，2026年9月11日）
+
+### 🏢 国内大事
+- **2026年服贸会启幕**：今日正式开幕，同时有"梅姨"最新信息披露（来源：新京报，2026年9月8日）
+- **国庆促消费活动**：泰州发布2026年国庆促消费活动新闻发布会（来源：taizhou.gov.cn，2026年9月8日）
+
+### 💰 民生经济
+- **四川社保缴费基数公布**：2026年最新缴费基数标准已公布（来源：川观新闻，2026年9月7日）
+- **澳门月饼价格调查**：2026年月饼价格调查已公布（来源：澳门特区政府，2026年9月11日）
+
+### 📺 媒体动态
+- **CGTN审查机制曝光**：中国官媒CGTN前外籍雇员揭露其"令人羞耻"的新闻审查机制（来源：美国之音，2026年9月10日）
+
+### 👗 时尚娱乐
+- **迪奥2026年最新新闻**：时尚品牌迪奥发布最新动态（来源：新浪财经，2026年9月9日）
+
+---
+
+这些新闻主要集中于**2026年9月**的时间段，涵盖国际局势、国内政策、民生经济、媒体动态和时尚娱乐等多个领域。需要我针对某个特定领域进行更详细的搜索吗？
+
+PASS: session transcript C:\Users\User\Desktop\agentic\workflow_codex\.runtime\codex-home\sessions\2026\09\12\rollout-2026-09-12T17-05-56-a9061b11-f77.jsonl
+PASS: exact path, no installed-Codex references, no project Codex auto-discovery config, no external tool links.
+PASS: workflow_codex functional test completed.

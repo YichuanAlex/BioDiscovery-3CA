@@ -1,0 +1,66 @@
+{
+  "started_at": "2026-09-12T15:06:11.4342571Z",
+  "model": "Qwen3.5-4B",
+  "supervisor_research_interventions": 0,
+  "task": "C:\\Users\\User\\Desktop\\agentic\\3CA\\Q1_R6",
+  "semantic_acceptance": "pending",
+  "engineering_tests": "passed",
+  "research_workspace_initially_empty": true,
+  "prompt_sha256": "c7ed4adcf9451e41e7be6b190a00e5dc172da0f750a5fb4d3defc98041ca7402",
+  "supervisor_operational_restarts": 0,
+  "frozen_files": [
+    {
+      "file": "README.md",
+      "sha256": "9a6a80456ff5df30250b21ab18fb81a0b36ff41e4e8ced8e261596ba526b6dd3"
+    },
+    {
+      "file": "run-Qwen3.5-4B.ps1",
+      "sha256": "daced0888ea0bdfe7a5656a1c4601e07dcb4c4ca495209f52e097a2de05ebdd4"
+    },
+    {
+      "file": "start-Qwen3.5-4B-server.ps1",
+      "sha256": "fde7699567265ab2285363523deec328a42343dff15ecb66da1f37840c999dc0"
+    },
+    {
+      "file": "codex-cli\\bin\\codex.js",
+      "sha256": "ae41734ca2b38d45be3ff3dcbc52548768bfcba1d5128deb8065530256be614a"
+    },
+    {
+      "file": "codex-cli\\bin\\Qwen3.5-4B.js",
+      "sha256": "72f65a04cc2eccfb050663807585dded56fee1c6ad3b43250904a7829b75b683"
+    },
+    {
+      "file": "codex-cli\\bin\\Qwen3.5-4B-threeca.js",
+      "sha256": "53c24f997d4e050574f30995c580ddb152f142b619917fa82b4f63e976b8bcff"
+    },
+    {
+      "file": "codex-cli\\bin\\Qwen3.5-4B-network.js",
+      "sha256": "76af75d7e5f4a53fe3340ee848fba3f84eda0f083fda49c0260b144f3ffc5731"
+    },
+    {
+      "file": "codex-cli\\bin\\Qwen3.5-4B-computer-use.js",
+      "sha256": "e720d254b550ac0bff2560dd1a5acbbd1b0901565f9c9efd3492e81ab9bb5c75"
+    },
+    {
+      "file": "codex-cli\\bin\\test-Qwen3.5-4B-recovery.mjs",
+      "sha256": "52f460094232df6b9bcbc55390f2e9e0c738b454a6125ef266ea9337051b8312"
+    },
+    {
+      "file": "tools\\tool43CA\\MCP\\server.py",
+      "sha256": "98fcf6f30281f974a1b929676d3fda6d8a1735ec15bfded5cd7c61cf0b4e1a0c"
+    },
+    {
+      "file": "tools\\tool43CA\\SKILL\\threeca-access\\SKILL.md",
+      "sha256": "6ed24b94f64dd91a924021477e245d2418afc2cd91f0e0b7730877bae6cf873d"
+    },
+    {
+      "file": "test-Qwen3.5-4B.ps1",
+      "sha256": "862944ff30efd462f179bf8dabf17795b34360b4888d556be47712328d011760"
+    }
+  ],
+  "max_rounds": 0,
+  "runner_pid": 26048,
+  "run_until_complete": true,
+  "workflow": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex",
+  "supervisor": "C:\\Users\\User\\Desktop\\agentic\\supervisor\\Q1_R6"
+}

@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P009",
+  "folder_id": "P009_wu_2022_crlm_scmetabolism",
+  "title": "Spatiotemporal Immune Landscape of Colorectal Cancer Liver Metastasis at Single-Cell Level",
+  "identifiers": {
+    "doi": "10.1158/2159-8290.CD-21-0316",
+    "pmid": "34417225",
+    "pmcid": null
+  },
+  "publication": {
+    "venue": "Cancer Discovery",
+    "publisher": "American Association for Cancer Research (AACR)",
+    "type": "peer_reviewed",
+    "published_at": "2022-01-01",
+    "version": "version_of_record"
+  },
+  "integrity": {
+    "checked_at": "2026-09-11T10:13:16+00:00",
+    "sources": [
+      "Crossref metadata",
+      "PubMed publication types/comments when PMID resolved"
+    ],
+    "screening_completeness": "Crossref+PubMed",
+    "retracted": false,
+    "expression_of_concern": false,
+    "corrections": [],
+    "publication_types": [
+      "Journal Article",
+      "Research Support, Non-U.S. Gov't"
+    ]
+  },
+  "selection": {
+    "tier": "B",
+    "role": "direct_biological_benchmark",
+    "primary_axis": "Q2",
+    "secondary_axes": [
+      "Q1"
+    ],
+    "rationale": "This paper introduced the scMetabolism package in a tumour atlas and directly compared metabolic activities across immune-cell states and anatomical sites."
+  },
+  "code_sources": [
+    {
+      "url": "https://github.com/wu-yc/scMetabolism",
+      "commit": null,
+      "license": "to_verify"
+    }
+  ],
+  "data_sources": [
+    {
+      "accession": "OEP001756",
+      "access": "public",
+      "role": "primary_raw_scrna_and_spatial",
+      "verification": "manually_seeded_from_primary_source"
+    },
+    {
+      "accession": "GSE41568",
+      "access": "public",
+      "role": "external_validation_microarray",
+      "verification": "automatically_extracted_candidate"
+    }
+  ],
+  "verified_data_urls": [
+    "https://www.biosino.org/node/project/detail/OEP001756",
+    "http://www.cancerdiversity.asia/scCRLM"
+  ],
+  "repository_urls_extracted": [
+    "http://www.cancerdiversity.asia/scCRLM",
+    "https://github.com/wu-yc/scMetabolism",
+    "https://www.cancerdiversity.asia/scMetabolism",
+    "http://www.cancerdiversity.asia/",
+    "https://www.github.com/wu-yc/scMetabolism",
+    "https://www.biosino.org/node/project/detail/OEP001756"
+  ],
+  "curation": {
+    "status": "candidate_requires_independent_reproduction",
+    "completed_stages": [
+      "S0_candidate_registration",
+      "S1_source_inventory",
+      "S2_candidate_insight",
+      "S3_paper_data_task_mapping"
+    ],
+    "pending_stages": [
+      "S4_independent_reproduction",
+      "S5_final_prompt_approval",
+      "S6_answerability_and_leakage_tests",
+      "S7_grader_adversarial_tests",
+      "S8_dual_signoff"
+    ],
+    "domain_curator": null,
+    "computational_curator": null,
+    "reviewed_at": null
+  }
+}

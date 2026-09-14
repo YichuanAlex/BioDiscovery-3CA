@@ -1,0 +1,19 @@
+{
+  "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20764",
+  "final_url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20764",
+  "fetched_at": "2026-09-12T10:33:26.099207+00:00",
+  "raw_html_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\pages\\56a8172a933675f8a7ca72dbde58ed69ee05a7e559e88a1b58b524ebd51ea69b.html",
+  "title": "| Curated Cancer Cell Atlas",
+  "text": "Meta programs Lung: Bischoff et al. 2021 Click here to download PDF Click here to download table of MP scores",
+  "links": [
+    {
+      "url": "https://www.dropbox.com/scl/fi/pj7x4rz77ili2nehpzf5m/Meta-programs_Bischoff2021_Lung.pdf?rlkey=69yb300abdmgh0ihtwu5sp9cm&dl=1",
+      "text": "Click here to download PDF"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/6p526lvh855tc2mn9nzvj/MP_scores_Bischoff2021_Lung.csv.gz?rlkey=1pttubygk0elulrp0vtl2rcze&dl=1",
+      "text": "Click here to download table of MP scores"
+    }
+  ],
+  "tables": []
+}

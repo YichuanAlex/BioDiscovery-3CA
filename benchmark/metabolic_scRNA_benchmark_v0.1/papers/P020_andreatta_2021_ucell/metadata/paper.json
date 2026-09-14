@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P020",
+  "folder_id": "P020_andreatta_2021_ucell",
+  "title": "UCell: Robust and scalable single-cell gene signature scoring",
+  "identifiers": {
+    "doi": "10.1016/j.csbj.2021.06.043",
+    "pmid": "34285779",
+    "pmcid": "PMC8271111"
+  },
+  "publication": {
+    "venue": "Computational and Structural Biotechnology Journal",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "type": "peer_reviewed",
+    "published_at": "2021-01-01",
+    "version": "version_of_record"
+  },
+  "integrity": {
+    "checked_at": "2026-09-11T10:13:16+00:00",
+    "sources": [
+      "Crossref metadata",
+      "PubMed publication types/comments when PMID resolved"
+    ],
+    "screening_completeness": "Crossref+PubMed",
+    "retracted": false,
+    "expression_of_concern": false,
+    "corrections": [],
+    "publication_types": [
+      "Journal Article"
+    ]
+  },
+  "selection": {
+    "tier": "A",
+    "role": "gene_set_scoring_method",
+    "primary_axis": "Q1",
+    "secondary_axes": [
+      "Q2",
+      "Q3"
+    ],
+    "rationale": "UCell offers composition-robust, rank-based per-cell scoring and is a strong baseline for the fixed 1,988-gene list."
+  },
+  "code_sources": [
+    {
+      "url": "https://github.com/carmonalab/UCell",
+      "commit": null,
+      "license": "to_verify"
+    }
+  ],
+  "data_sources": [],
+  "verified_data_urls": [],
+  "repository_urls_extracted": [
+    "https://github.com/carmonalab/UCell",
+    "https://github.com/"
+  ],
+  "curation": {
+    "status": "candidate_requires_independent_reproduction",
+    "completed_stages": [
+      "S0_candidate_registration",
+      "S1_source_inventory",
+      "S2_candidate_insight",
+      "S3_paper_data_task_mapping"
+    ],
+    "pending_stages": [
+      "S4_independent_reproduction",
+      "S5_final_prompt_approval",
+      "S6_answerability_and_leakage_tests",
+      "S7_grader_adversarial_tests",
+      "S8_dual_signoff"
+    ],
+    "domain_curator": null,
+    "computational_curator": null,
+    "reviewed_at": null
+  }
+}

@@ -1,0 +1,16 @@
+[session-log-error] ENOSPC: no space left on device, write
+node:fs:2414
+    return binding.writeFileUtf8(
+                   ^
+
+Error: ENOSPC: no space left on device, write
+    at Object.writeFileSync (node:fs:2414:20)
+    at saveJob (file:///C:/Users/User/Desktop/agentic/workflow_codex/codex-cli/bin/Qwen3.5-4B.js:81:6)
+    at file:///C:/Users/User/Desktop/agentic/workflow_codex/codex-cli/bin/Qwen3.5-4B.js:897:63
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+  errno: -4055,
+  code: 'ENOSPC',
+  syscall: 'write'
+}
+
+Node.js v24.15.0

@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P027",
+  "si_requested": true,
+  "downloaded_at": "2026-09-11T10:13:16+00:00",
+  "pmc_attempt": {
+    "provider": "Europe PMC",
+    "pmcid": "PMC8748196",
+    "status": "open_access_downloaded",
+    "source_url": ""
+  },
+  "official_fallback_attempt": {
+    "provider": "official_publisher_or_repository",
+    "status": "downloaded_with_si",
+    "attempts": [
+      {
+        "url": "https://www.nature.com/articles/s41592-021-01336-8?error=cookies_not_supported&code=6f6a8d1c-8184-4343-8fec-e1ae87cda1b6",
+        "status": "full_text_html_available"
+      }
+    ]
+  },
+  "files": [
+    {
+      "relative_path": "main_article.xml",
+      "role": "main_article",
+      "media_type": "text/xml",
+      "size_bytes": 230141,
+      "sha256": "f65dd8b63336ff1a5045dad3cb9c5905ec3bb8b494a221f67dfbffb9a6f612db",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8748196/fullTextXML"
+    },
+    {
+      "relative_path": "supplementary/41592_2021_1336_MOESM1_ESM.pdf",
+      "role": "supporting_information",
+      "media_type": "application/pdf",
+      "size_bytes": 40764156,
+      "sha256": "3dd00328fc37044aca1390d3b5ebc34799375d097666a84e24a9d2516abc7318",
+      "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41592-021-01336-8/MediaObjects/41592_2021_1336_MOESM1_ESM.pdf"
+    },
+    {
+      "relative_path": "supplementary/41592_2021_1336_MOESM2_ESM.pdf",
+      "role": "supporting_information",
+      "media_type": "application/pdf",
+      "size_bytes": 75604,
+      "sha256": "77213f6ea80a5aa7a2252343a016796197fc9ad88a41aca271cd1ef709088ab7",
+      "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41592-021-01336-8/MediaObjects/41592_2021_1336_MOESM2_ESM.pdf"
+    },
+    {
+      "relative_path": "supplementary/41592_2021_1336_MOESM3_ESM.xlsx",
+      "role": "supporting_information",
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "size_bytes": 170130,
+      "sha256": "1e40eb911242bc8b46ad660a959bcfbc83427d8bcbd7755e8fb0db2164e4236c",
+      "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41592-021-01336-8/MediaObjects/41592_2021_1336_MOESM3_ESM.xlsx"
+    },
+    {
+      "relative_path": "supplementary/41592_2021_1336_MOESM4_ESM.xlsx",
+      "role": "supporting_information",
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "size_bytes": 20843,
+      "sha256": "ff0fc4a02eb437454d3f1b4aec6abc28b65054f66693e26e4ac4241665c1e8e7",
+      "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41592-021-01336-8/MediaObjects/41592_2021_1336_MOESM4_ESM.xlsx"
+    },
+    {
+      "relative_path": "supplementary/41592_2021_1336_MOESM5_ESM.xlsx",
+      "role": "supporting_information",
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "size_bytes": 72908,
+      "sha256": "73c549f83a193d7424c9efd1b34e9a3e789ee9ed35d359a8c1683cf0bfc1c7e2",
+      "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41592-021-01336-8/MediaObjects/41592_2021_1336_MOESM5_ESM.xlsx"
+    },
+    {
+      "relative_path": "supplementary/41592_2021_1336_MOESM6_ESM.xlsx",
+      "role": "supporting_information",
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "size_bytes": 11181,
+      "sha256": "afbd77f0952c5c72c4a6b7b24ee9672c9657f20c9d64b2ae59c8b6f0a6e22ff3",
+      "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41592-021-01336-8/MediaObjects/41592_2021_1336_MOESM6_ESM.xlsx"
+    },
+    {
+      "relative_path": "supplementary/41592_2021_1336_MOESM7_ESM.xlsx",
+      "role": "supporting_information",
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "size_bytes": 10104,
+      "sha256": "3f39036124f6878967512475cd17f75e801bcfc1eb36f295b3e1678e5fcb481d",
+      "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41592-021-01336-8/MediaObjects/41592_2021_1336_MOESM7_ESM.xlsx"
+    },
+    {
+      "relative_path": "supplementary/41592_2021_1336_MOESM8_ESM.xlsx",
+      "role": "supporting_information",
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "size_bytes": 17821,
+      "sha256": "025e1a1047a86b2e1b9c2f293829fa7594f9ecd63c92f125f020f81b1fb55998",
+      "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41592-021-01336-8/MediaObjects/41592_2021_1336_MOESM8_ESM.xlsx"
+    },
+    {
+      "relative_path": "supplementary/41592_2021_1336_MOESM9_ESM.xlsx",
+      "role": "supporting_information",
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "size_bytes": 21569,
+      "sha256": "85268bbdc85667728bee6839a31bfb1537561f8b927ff38277b375ad33873f4d",
+      "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41592-021-01336-8/MediaObjects/41592_2021_1336_MOESM9_ESM.xlsx"
+    }
+  ],
+  "verification": {
+    "checks": [
+      "nonzero size",
+      "PDF magic when applicable",
+      "SHA-256",
+      "source URL recorded"
+    ],
+    "pdf_text_or_title_check": "external acceptance check; see top-level 构建与验收报告.md"
+  }
+}

@@ -1,0 +1,91 @@
+Qwen3.5-4B local server is ready: http://127.0.0.1:8000/health
+[tool] search_studies
+[tool] search_studies
+[tool] get_study
+[tool] plan_asset
+[tool] download_asset
+[tool] inspect_dataset
+[tool] inspect_dataset
+[tool] prepare_3ca_dataset
+[tool] inspect_research_table
+[tool] inspect_research_table
+[tool] fetch_reactome_metabolic_genes
+[tool] inspect_dataset
+[tool-error] inspect_dataset: ENOENT: no such file or directory, lstat 'C:\Users\User\Desktop\agentic\workflow_codex\.threeca\cache\inputs'
+[tool] list_files
+[tool] inspect_dataset
+[tool] inspect_dataset
+[tool] read_file
+[tool] read_file
+[tool] run_powershell
+[tool] run_powershell
+[tool] analyze_metabolic_states
+[tool] read_file
+[tool] read_file
+[tool] read_file
+[tool] verify_doi
+[tool] write_file
+[tool] list_files
+[tool] run_powershell
+[tool] run_powershell
+[tool] read_file
+[tool] read_file
+[tool] write_file
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] read_file
+[tool] read_file
+[tool] read_file
+[tool] read_file
+[tool] read_file
+[tool] run_powershell
+[tool] read_file
+[tool] run_powershell
+[tool] read_file
+[tool-error] read_file: ENOENT: no such file or directory, lstat 'C:\Users\User\Desktop\agentic\3CA\Q1_R15\README.md'
+[tool] write_file
+[tool] run_powershell
+[tool] run_powershell
+[tool] validate_research_bundle
+[tool-error] validate_research_bundle: {
+  "valid": false,
+  "checked_at": "2026-09-13T09:00:37.954653+00:00",
+  "manifest_path": "results\\analysis_manifest.json",
+  "manifest_sha256": "6f99eb3061d85c6f5a95e217f0273f138c6ba81abe44ad9973d5eacdca761a6b",
+  "errors": [
+    "feature_set.matched_genes_path is required",
+    "LaTeX report contains no included figure",
+    "Figure is not referenced by LaTeX: figures/metabolic_umap.pdf",
+    "Figure is not referenced by LaTeX: figures/clustering_diagnostics.pdf"
+  ],
+  "checks": {
+    "methods": 1,
+    "figures": 2,
+    "references": 1
+  }
+}
+[tool] read_file
+[tool] replace_in_file
+[tool] read_file
+[tool] replace_in_file
+[tool-error] replace_in_file: old_text must occur exactly once; found 0.
+[tool] read_file
+[tool] replace_in_file
+[tool] write_file
+[tool] run_powershell
+[tool] run_powershell
+[tool] read_file
+[tool] read_file
+[tool] read_file
+[tool] read_file
+[tool] read_file
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] read_file
+[tool] read_file

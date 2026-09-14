@@ -1,0 +1,1 @@
+PASS: exact path, no installed-Codex references, no project Codex auto-discovery config, no external tool links.

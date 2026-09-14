@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/metabolic-scrna/metabolic-scrna-p018-q2/metrics.schema.json",
+  "title": "Metrics contract for metabolic-scrna-p018-q2",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "task_id",
+    "primary_question",
+    "conclusion",
+    "inference_unit",
+    "sensitivity",
+    "uncertainty",
+    "evidence_level"
+  ],
+  "properties": {
+    "task_id": {
+      "const": "metabolic-scrna-p018-q2"
+    },
+    "primary_question": {
+      "const": "Q2"
+    },
+    "conclusion": {
+      "type": "string",
+      "minLength": 20
+    },
+    "inference_unit": {
+      "enum": [
+        "patient",
+        "donor",
+        "sample",
+        "tumour"
+      ]
+    },
+    "state_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "cluster_stability_ari": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": -1,
+      "maximum": 1
+    },
+    "heldout_macro_f1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "blocked_permutation_p": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "sensitivity": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object"
+      }
+    },
+    "uncertainty": {
+      "type": "object"
+    },
+    "evidence_level": {
+      "enum": [
+        "transcriptional_program",
+        "model_inferred_metabolic_potential",
+        "orthogonally_supported",
+        "inconclusive"
+      ]
+    },
+    "flux_claim_made": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P022",
+  "folder_id": "P022_hanzelmann_2013_gsva",
+  "title": "GSVA: gene set variation analysis for microarray and RNA-Seq data",
+  "identifiers": {
+    "doi": "10.1186/1471-2105-14-7",
+    "pmid": "23323831",
+    "pmcid": "PMC3618321"
+  },
+  "publication": {
+    "venue": "BMC Bioinformatics",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "peer_reviewed",
+    "published_at": "2013-12-01",
+    "version": "version_of_record"
+  },
+  "integrity": {
+    "checked_at": "2026-09-11T10:13:16+00:00",
+    "sources": [
+      "Crossref metadata",
+      "PubMed publication types/comments when PMID resolved"
+    ],
+    "screening_completeness": "Crossref+PubMed",
+    "retracted": false,
+    "expression_of_concern": false,
+    "corrections": [],
+    "publication_types": [
+      "Journal Article",
+      "Research Support, N.I.H., Extramural",
+      "Research Support, Non-U.S. Gov't"
+    ]
+  },
+  "selection": {
+    "tier": "A",
+    "role": "gene_set_scoring_method",
+    "primary_axis": "Q1",
+    "secondary_axes": [],
+    "rationale": "GSVA/ssGSEA-style scoring remains a widely used magnitude-aware baseline and is necessary for method-family sensitivity comparisons."
+  },
+  "code_sources": [
+    {
+      "url": "https://bioconductor.org/packages/GSVA",
+      "commit": null,
+      "license": "to_verify"
+    }
+  ],
+  "data_sources": [
+    {
+      "accession": "GSE10927",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE7792",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    }
+  ],
+  "verified_data_urls": [],
+  "repository_urls_extracted": [
+    "http://www.ncbi.nlm.nih.gov/geo",
+    "https://bioconductor.org/packages/GSVA"
+  ],
+  "curation": {
+    "status": "candidate_requires_independent_reproduction",
+    "completed_stages": [
+      "S0_candidate_registration",
+      "S1_source_inventory",
+      "S2_candidate_insight",
+      "S3_paper_data_task_mapping"
+    ],
+    "pending_stages": [
+      "S4_independent_reproduction",
+      "S5_final_prompt_approval",
+      "S6_answerability_and_leakage_tests",
+      "S7_grader_adversarial_tests",
+      "S8_dual_signoff"
+    ],
+    "domain_curator": null,
+    "computational_curator": null,
+    "reviewed_at": null
+  }
+}

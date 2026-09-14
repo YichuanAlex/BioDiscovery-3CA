@@ -1,0 +1,38 @@
+Qwen3.5-4B local server is ready: http://127.0.0.1:8000/health
+[tool] search_studies
+[tool] search_studies
+[tool] get_study
+[tool] get_page
+[tool] get_page
+[tool] plan_asset
+[tool] download_asset
+[tool] inspect_dataset
+[tool] inspect_dataset
+[tool] prepare_3ca_dataset
+[tool] inspect_research_table
+[tool] inspect_research_table
+[tool] fetch_reactome_metabolic_genes
+[tool] inspect_dataset
+[tool-error] inspect_dataset: ENOENT: no such file or directory, lstat 'C:\Users\User\Desktop\agentic\workflow_codex\.threeca\cache\sources'
+[tool] list_files
+[tool] read_file
+[tool] read_file
+[tool] write_file
+[tool] run_powershell
+[tool-error] run_powershell: Run audit_analysis_code successfully for the current Q1_R14/match_genes.py content before executing it.
+[tool] audit_analysis_code
+[tool] run_powershell
+[tool] analyze_metabolic_states
+[tool-error] analyze_metabolic_states: {"error": "genes path is missing or leaves workspace: results/matched_metabolic_genes.txt"}
+[tool] list_files
+[tool] run_powershell
+[tool] read_file
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] replace_in_file
+[tool] run_powershell
+[tool-error] run_powershell: Run audit_analysis_code successfully for the current Q1_R14/match_genes.py content before executing it.
+[tool] audit_analysis_code
+[tool] run_powershell

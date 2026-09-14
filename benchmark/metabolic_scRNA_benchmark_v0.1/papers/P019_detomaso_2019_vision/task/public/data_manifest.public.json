@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "metabolic-scrna-p019",
+  "version": "0.1.0",
+  "created_at": "2026-09-11T10:13:16+00:00",
+  "source_accessions": [
+    {
+      "accession": "GSE25088",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE100866",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE96583",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE116256",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE89754",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSM2388072",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    }
+  ],
+  "verified_data_urls": [],
+  "repository_urls": [
+    "http://www.github.com/YosefLab/VISION",
+    "https://github.com/YosefLab/VISION"
+  ],
+  "license": {
+    "identifier": "per-upstream-object",
+    "redistribution_allowed": false,
+    "reason": "Pointers are registered; each upstream object requires an object-level licence check before redistribution."
+  },
+  "biological_scope": {
+    "species": "Homo sapiens unless the paper-specific manifest states otherwise",
+    "disease": "cancer or immune-state method validation",
+    "assay": "scRNA-seq or orthogonal single-cell assay",
+    "unit_of_observation": "cell",
+    "unit_of_inference": "patient/donor/sample",
+    "reference_genome": "paper-specific; unresolved until materialization",
+    "gene_id_space": "paper-specific input mapped to HGNC symbols"
+  },
+  "processing_level": "registered_source",
+  "materialization_status": "registered_not_materialized",
+  "files": [
+    {
+      "relative_path": "benchmark://genesets/metabolic_genes_input_v1.csv",
+      "role": "shared_gene_set",
+      "media_type": "text/csv",
+      "agent_visible": true,
+      "sha256": "00909e54eefb828908059d014b8590afc88e8099257f4622ad8590af8ccbe306"
+    }
+  ],
+  "transformations": [],
+  "required_before_release": [
+    "resolve exact raw/processed file list",
+    "record file sizes and SHA-256 after lawful materialization",
+    "record counts/log-normalized/scaled matrix location",
+    "map patient, sample, tumour, batch, cell_type, and CD8 annotations",
+    "confirm object-level licences and access conditions"
+  ]
+}

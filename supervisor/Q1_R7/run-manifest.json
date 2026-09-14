@@ -1,0 +1,66 @@
+﻿{
+    "research_workspace_initially_empty":  true,
+    "model":  "Qwen3.5-4B",
+    "supervisor":  "C:\\Users\\User\\Desktop\\agentic\\supervisor\\Q1_R7",
+    "frozen_files":  [
+                         {
+                             "sha256":  "6ece10bb350f5363ff5fb91ebc6219df13eea220170a96dac16bec6bd5cb17cd",
+                             "file":  "README.md"
+                         },
+                         {
+                             "sha256":  "daced0888ea0bdfe7a5656a1c4601e07dcb4c4ca495209f52e097a2de05ebdd4",
+                             "file":  "run-Qwen3.5-4B.ps1"
+                         },
+                         {
+                             "sha256":  "fde7699567265ab2285363523deec328a42343dff15ecb66da1f37840c999dc0",
+                             "file":  "start-Qwen3.5-4B-server.ps1"
+                         },
+                         {
+                             "sha256":  "ae41734ca2b38d45be3ff3dcbc52548768bfcba1d5128deb8065530256be614a",
+                             "file":  "codex-cli\\bin\\codex.js"
+                         },
+                         {
+                             "sha256":  "d2939b8246cf7e4041c89eafea47f6e47a9f83c8d41092828450d1f2d7126cea",
+                             "file":  "codex-cli\\bin\\Qwen3.5-4B.js"
+                         },
+                         {
+                             "sha256":  "53c24f997d4e050574f30995c580ddb152f142b619917fa82b4f63e976b8bcff",
+                             "file":  "codex-cli\\bin\\Qwen3.5-4B-threeca.js"
+                         },
+                         {
+                             "sha256":  "76af75d7e5f4a53fe3340ee848fba3f84eda0f083fda49c0260b144f3ffc5731",
+                             "file":  "codex-cli\\bin\\Qwen3.5-4B-network.js"
+                         },
+                         {
+                             "sha256":  "e720d254b550ac0bff2560dd1a5acbbd1b0901565f9c9efd3492e81ab9bb5c75",
+                             "file":  "codex-cli\\bin\\Qwen3.5-4B-computer-use.js"
+                         },
+                         {
+                             "sha256":  "f7f630597f96da690618a543f65a6ec507c4172e758cef1b06b5cd67de452e20",
+                             "file":  "codex-cli\\bin\\test-Qwen3.5-4B-recovery.mjs"
+                         },
+                         {
+                             "sha256":  "98fcf6f30281f974a1b929676d3fda6d8a1735ec15bfded5cd7c61cf0b4e1a0c",
+                             "file":  "tools\\tool43CA\\MCP\\server.py"
+                         },
+                         {
+                             "sha256":  "cb21c88db6c2b906418c85f26f3995bd3552c6bf78bd1446418cf53419e88f2a",
+                             "file":  "tools\\tool43CA\\SKILL\\threeca-access\\SKILL.md"
+                         },
+                         {
+                             "sha256":  "862944ff30efd462f179bf8dabf17795b34360b4888d556be47712328d011760",
+                             "file":  "test-Qwen3.5-4B.ps1"
+                         }
+                     ],
+    "task":  "C:\\Users\\User\\Desktop\\agentic\\3CA\\Q1_R7",
+    "prompt_sha256":  "f591737b872ecc4e36c1bb2be1ad414ea560cfd3f21f5e0655ee8892b254e132",
+    "semantic_acceptance":  "pending",
+    "started_at":  "2026-09-12T17:11:23.8345153Z",
+    "supervisor_operational_restarts":  0,
+    "run_until_complete":  true,
+    "max_rounds":  0,
+    "supervisor_research_interventions":  0,
+    "engineering_tests":  "passed",
+    "runner_pid":  24560,
+    "workflow":  "C:\\Users\\User\\Desktop\\agentic\\workflow_codex"
+}

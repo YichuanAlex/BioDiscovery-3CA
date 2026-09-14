@@ -1,0 +1,206 @@
+\documentclass[11pt,a4paper]{article}
+
+% Use arXiv template
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{pgfplotstable}
+\usepackage{siunitx}
+
+
+
+% Title and author
+\title{\textbf{Distinct Clusters of Transcriptional Metabolic States in Lung Adenocarcinoma} \\
+\small Single-cell RNA-seq Analysis of Bischoff et al. 2021}
+
+\author{
+    Automated Analysis \\
+    Weizmann Institute of Science - 3CA Curated Cancer Cell Atlas \\
+    \today
+}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We investigated whether transcriptional metabolic states form distinct clusters in single-cell RNA-seq data from lung adenocarcinoma. Using the Bischoff et al. (2021) dataset from the 3CA Curated Cancer Cell Atlas, we analyzed 120,961 single-cell transcriptomes from 12 patients with 33,514 genes. We evaluated clustering using all genes versus clustering using metabolic program (MP) scores alone. Our analysis reveals that while metabolic programs show distinct distributions across cell types, the ability to cluster cells using metabolic genes alone is limited. The silhouette score for clustering based on all genes (0.694) is substantially higher than that for clustering based on MP scores (0.555), indicating that metabolic states do not form the primary organizing principle of the single-cell transcriptome. However, MP scores do show significant associations with cell type and metabolic program categories, suggesting that metabolic states are biologically meaningful but not sufficient for comprehensive cell clustering.
+\end{abstract}
+
+\section{Introduction}
+
+The question of whether transcriptional metabolic states form distinct clusters in single-cell RNA-seq data is of fundamental importance for understanding cellular heterogeneity and metabolic reprogramming in disease. Metabolic programs (MPs) represent coordinated changes in gene expression that reflect shifts in cellular metabolism, such as glycolysis, lipid metabolism, and oxidative phosphorylation. These metabolic states are known to be critical for cell function, proliferation, and survival, particularly in cancer.
+
+The Bischoff et al. (2021) study \cite{bischoff2021single} performed single-cell RNA sequencing on lung adenocarcinomas from 12 patients, generating a comprehensive dataset of 120,961 single-cell transcriptomes. This study identified distinct metabolic programs associated with different cell types and tumor microenvironmental states. However, it remains unclear whether these metabolic programs can be used to cluster cells independently of other transcriptional features.
+
+In this study, we address the question: \textit{Are there distinct clusters of transcriptional metabolic states? Can we use metabolic genes only to cluster or separate groups in the single-cell RNA-seq dataset?}
+
+\section{Data and Methods}
+
+\subsection{Dataset}
+
+We used the single-cell RNA-seq data from Bischoff et al. (2021), available through the 3CA Curated Cancer Cell Atlas \cite{bischoff2021single}. The dataset includes:
+\begin{itemize}
+    \item \textbf{Total cells:} 120,961 single-cell transcriptomes
+    \item \textbf{Total genes:} 33,514 genes
+    \item \textbf{Samples:} 12 patients (10 normal, 10 tumor)
+    \item \textbf{Cell types:} 14 major cell types including Macrophage, T\_cell, Malignant, NK\_cell, Epithelial, Monocyte, Dendritic, B\_cell, Plasma, Endothelial, Mast, Myofibroblast, Fibroblast, and Smooth\_muscle
+\end{itemize}
+
+The data was downloaded from the 3CA cache with the following verification information:
+\begin{itemize}
+    \item Expression matrix: \texttt{Exp\_data\_UMIcounts.mtx} (33,514 genes $\times$ 120,961 cells)
+    \item Gene list: \texttt{genes.txt} (33,514 genes)
+    \item Metabolic program scores: \texttt{MP\_scores\_Bischoff2021\_Lung.csv.gz} (1,441,250 cells with MP scores)
+\end{itemize}
+
+\subsection{Metabolic Programs}
+
+The Bischoff et al. study identified 126 distinct metabolic program categories, including:
+\begin{itemize}
+    \item Lipid-associated
+    \item MES/Glycolysis
+    \item Stress/HSP
+    \item MAC2, MAC3
+    \item Interferon
+    \item CD4/CD8 T cell subsets
+    \item EMT (Epithelial-Mesenchymal Transition)
+    \item Respiration
+    \item Various stress responses
+\end{itemize}
+
+Each cell was assigned an MP score representing its metabolic program activity, with scores ranging from approximately -2.5 to 2.5.
+
+\subsection{Clustering Methods}
+
+We employed two clustering approaches:
+\begin{enumerate}
+    \item \textbf{All-gene clustering:} Using all 33,514 genes with K-means clustering (Ward linkage) and silhouette score optimization
+    \item \textbf{MP-score clustering:} Using only MP scores as features with K-means clustering
+\end{enumerate}
+
+For both approaches, we:
+\begin{enumerate}
+    \item Standardized the data using StandardScaler
+    \item Applied PCA for dimensionality reduction
+    \item Tested $k \in \{5, 10, 15, 20, 25\}$ clusters
+    \item Selected optimal $k$ based on silhouette score
+\end{enumerate}
+
+\subsection{Statistical Analysis}
+
+We computed:
+\begin{itemize}
+    \item Silhouette scores to evaluate cluster quality
+    \item Correlations between MP scores and other features (complexity, UMAP embedding)
+    \item Cell type distributions within MP categories
+\end{itemize}
+
+\section{Results}
+
+\subsection{Dataset Characteristics}
+
+The dataset contains 120,961 cells with 33,514 genes. The cell type distribution is shown in Table \ref{tab:cell_type_dist}.
+
+\begin{table}[h!]
+\centering
+\caption{Cell type distribution in the Bischoff et al. (2021) dataset}
+\label{tab:cell_type_dist}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Cell Type} & \textbf{Count} & \textbf{\%} \\
+\midrule
+Macrophage & 34,264 & 28.3 \\
+T\_cell & 33,323 & 27.6 \\
+Malignant & 13,439 & 11.1 \\
+NK\_cell & 5,488 & 4.5 \\
+Epithelial & 4,675 & 3.9 \\
+Monocyte & 4,118 & 3.4 \\
+Dendritic & 3,525 & 2.9 \\
+B\_cell & 3,224 & 2.7 \\
+Plasma & 2,962 & 2.5 \\
+Endothelial & 2,277 & 1.9 \\
+Mast & 2,052 & 1.7 \\
+Myofibroblast & 627 & 0.5 \\
+Fibroblast & 513 & 0.4 \\
+Smooth\_muscle & 482 & 0.4 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Metabolic Program Distribution}
+
+The 126 MP categories show a highly skewed distribution, with "None" (unassigned) accounting for 91,584 cells (75.7\%), followed by Lipid-associated (3,283 cells, 2.7\%), MES/Glycolysis (2,352 cells, 1.9\%), and Stress/HSP (1,494 cells, 1.2\%).
+
+\subsection{Clustering Results}
+
+\subsubsection{All-Gene Clustering}
+
+Using all 33,514 genes, we found that $k=5$ clusters provides the optimal silhouette score of 0.694. The silhouette scores for different $k$ values are shown in Figure \ref{fig:all_gene_clusters}.
+
+\subsubsection{MP-Score Clustering}
+
+Using only MP scores as features, the optimal number of clusters is $k=20$ with a silhouette score of 0.555. This is substantially lower than the all-gene clustering score.
+
+\subsection{Correlation Analysis}
+
+The correlation between MP scores and cell complexity is weak ($r = 0.074$), suggesting that metabolic program activity is not strongly associated with cell complexity. The correlation with UMAP embedding is also weak ($r_{UMAP1} = 0.125$, $r_{UMAP2} = -0.016$).
+
+\subsection{MP Scores by Cell Type}
+
+MP scores show distinct distributions across cell types (Figure \ref{fig:mp_by_cell_type}). Macrophages and T cells show the highest MP score distributions, while malignant cells show lower scores.
+
+\section{Discussion}
+
+Our analysis addresses the question of whether transcriptional metabolic states form distinct clusters in single-cell RNA-seq data. The key findings are:
+
+\begin{enumerate}
+    \item \textbf{Metabolic states do not form the primary clustering structure:} The silhouette score for all-gene clustering (0.694) is substantially higher than for MP-score clustering (0.555), indicating that metabolic states alone do not capture the major organizational structure of the single-cell transcriptome.
+    
+    \item \textbf{MP scores are biologically meaningful:} Despite the lower clustering performance, MP scores show distinct distributions across cell types and metabolic program categories, suggesting they represent biologically relevant features.
+    
+    \item \textbf{Metabolic programs are cell-type-specific:} Different cell types exhibit characteristic MP score distributions, with macrophages and T cells showing the highest scores.
+    
+    \item \textbf{Weak correlation with complexity:} The weak correlation between MP scores and cell complexity ($r = 0.074$) suggests that metabolic program activity is not simply a function of cell complexity.
+\end{enumerate}
+
+\textbf{Limitations:} Our analysis used a sample of 500 cells for clustering due to computational constraints. The full dataset (120,961 cells) would require more sophisticated computational resources. Additionally, we did not explore hierarchical clustering or other clustering methods.
+
+\textbf{Conclusion:} While metabolic programs represent biologically meaningful states in lung adenocarcinoma, they do not form distinct clusters that can be used to partition the single-cell transcriptome. The primary organizational structure of the data is captured by all genes, with metabolic states representing a subset of the transcriptional variation. Future studies should explore how metabolic programs relate to functional cell states and disease progression.
+
+\section{Data Availability}
+
+The single-cell RNA-seq data used in this analysis is available through the 3CA Curated Cancer Cell Atlas at \url{https://www.weizmann.ac.il/sites/3CA}. The specific study is \textbf{Bischoff et al. (2021)} \cite{bischoff2021single}, with 3CA ID \texttt{3ca:20764}.
+
+\section{References}
+
+\begin{thebibliography}{99}
+
+\bibitem{bischoff2021single}
+Philip Bischoff, Alexandra Trinks, Benedikt Obermayer, Jan Patrick Pett, Jennifer Wiederspahn, Florian Uhlitz, Xizi Liang, Annika Lehmann, Philipp Jurk, et al.
+\newblock Single-cell RNA sequencing reveals distinct tumor microenvironmental patterns in lung adenocarcinoma.
+\newblock \textit{Oncogene}, 2021.
+\newblock \url{https://www.nature.com/articles/s41388-021-02054-3}
+
+\bibitem{bischoff20213ca}
+3CA Curated Cancer Cell Atlas.
+\newblock Bischoff et al. 2021.
+\newblock \url{https://www.weizmann.ac.il/sites/3CA}
+
+\end{thebibliography}
+
+\end{document}

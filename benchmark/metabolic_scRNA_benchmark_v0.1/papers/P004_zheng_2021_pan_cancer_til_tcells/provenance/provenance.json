@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P004",
+  "created_at": "2026-09-11T10:13:16+00:00",
+  "selection_source": "curation_seed.json",
+  "crossref_status": "cached",
+  "id_converter_record": {
+    "requested-id": "10.1126/science.abe6474",
+    "pmid": "34914499",
+    "pmcid": null
+  },
+  "origin_manifest": "origin/download_manifest.json",
+  "data_manifest": "data/data_manifest.json",
+  "task_source": "task/public/task.yaml",
+  "network_sources": [
+    "Crossref REST",
+    "NCBI ID Converter",
+    "PubMed E-utilities",
+    "PMC OA API",
+    "Europe PMC",
+    "https://www.science.org/doi/10.1126/science.abe6474",
+    "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA658913"
+  ]
+}

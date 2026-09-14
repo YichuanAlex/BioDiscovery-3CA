@@ -1,0 +1,79 @@
+{
+  "snapshot_at": "2026-09-13T14:53:35.251Z",
+  "task": "C:\\Users\\User\\Desktop\\agentic\\3CA\\QA_R3",
+  "status": "running",
+  "runner_pid": 26768,
+  "runner_process": {
+    "Name": "powershell.exe",
+    "ExecutablePath": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "CommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -File C:\\Users\\User\\Desktop\\agentic\\supervisor\\QA_R3\\launch-qa-r3.ps1",
+    "CreationDate": "2026-09-13T14:36:47.5873870Z"
+  },
+  "runner_identity_match": true,
+  "checkpoint_status": "running",
+  "checkpoint_read_error": null,
+  "phase": "report_build",
+  "next_action": "Call build_research_report now for report/main.tex and report/main.pdf; do not use a shell compilation wrapper.",
+  "rounds": 61,
+  "tool_counts": {
+    "build_research_report": 1,
+    "read_file": 1
+  },
+  "artifacts": [
+    {
+      "path": "report/main.tex",
+      "present": true,
+      "bytes": 12509
+    },
+    {
+      "path": "report/main.pdf",
+      "present": false,
+      "bytes": 0
+    },
+    {
+      "path": "results/summary.json",
+      "present": true,
+      "bytes": 5317
+    },
+    {
+      "path": "results/analysis_manifest.json",
+      "present": true,
+      "bytes": 2890
+    },
+    {
+      "path": "results/core_analysis/core_result.json",
+      "present": true,
+      "bytes": 10955
+    },
+    {
+      "path": "results/cd8_analysis/core_result.json",
+      "present": true,
+      "bytes": 10314
+    },
+    {
+      "path": "results/cd8_analysis/summary.json",
+      "present": true,
+      "bytes": 4702
+    },
+    {
+      "path": "README.md",
+      "present": true,
+      "bytes": 9227
+    }
+  ],
+  "required_artifacts": [
+    "report/main.tex",
+    "report/main.pdf",
+    "results/summary.json",
+    "results/analysis_manifest.json",
+    "results/core_analysis/core_result.json",
+    "results/cd8_analysis/core_result.json",
+    "results/cd8_analysis/summary.json",
+    "README.md"
+  ],
+  "research_validation": null,
+  "frozen_hash_mismatches": [],
+  "structural_completion_candidate": false,
+  "semantic_acceptance": "pending_independent_review",
+  "caveat": "PID liveness requires matching executable, command line, and creation time. Structural completion does not establish biological validity."
+}

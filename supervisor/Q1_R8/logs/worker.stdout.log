@@ -1,0 +1,29 @@
+Qwen3.5-4B local server is ready: http://127.0.0.1:8000/health
+[tool] search_studies
+[auto-continue] phase=start; completion not verified
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[auto-continue] phase=start; completion not verified
+[tool] web_search: 3CA weizmann.ac.il single cell RNA-seq metabolic genes clusters
+[tool] get_page
+[auto-continue] phase=start; completion not verified
+[tool] download_asset
+[auto-continue] phase=start; completion not verified
+[tool] inspect_dataset
+[auto-continue] phase=start; completion not verified
+[tool] search_studies
+[tool] get_page
+[tool] search_studies
+[tool] run_powershell
+[tool] read_file
+[tool-error] read_file: Path leaves workspace: C:\Users\User\Desktop\agentic\workflow_codex\.threeca\cache\downloads\3ae2d47d6197\Meta-programs.pdf
+[auto-continue] phase=start; completion not verified
+[tool] list_files
+[auto-continue] phase=start; completion not verified
+[tool] search_studies
+[tool] search_cached_pages
+[auto-continue] phase=start; completion not verified
+[tool] refresh_catalog
+[tool] search_cached_pages
+[tool] crawl_site

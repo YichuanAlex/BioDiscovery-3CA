@@ -1,0 +1,69 @@
+{
+  "snapshot_at": "2026-09-13T08:34:47.045Z",
+  "status": "running",
+  "runner_alive": true,
+  "checkpoint_error": null,
+  "rounds": 28,
+  "phase": "start",
+  "next_action": "inspect available tools and task sources",
+  "tools": {
+    "search_studies": 2,
+    "get_study": 1,
+    "get_page": 2,
+    "plan_asset": 1,
+    "download_asset": 1,
+    "inspect_dataset": 3,
+    "prepare_3ca_dataset": 1,
+    "inspect_research_table": 2,
+    "fetch_reactome_metabolic_genes": 1,
+    "list_files": 2,
+    "read_file": 3,
+    "write_file": 1,
+    "run_powershell": 6,
+    "audit_analysis_code": 1,
+    "analyze_metabolic_states": 1
+  },
+  "failures": [
+    {
+      "session": "rollout-2026-09-13T16-31-01-8cfcf784-e6c.jsonl",
+      "tool": "inspect_dataset",
+      "result": "ERROR: ENOENT: no such file or directory, lstat 'C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\sources'"
+    },
+    {
+      "session": "rollout-2026-09-13T16-31-01-8cfcf784-e6c.jsonl",
+      "tool": "run_powershell",
+      "result": "ERROR: Run audit_analysis_code successfully for the current Q1_R14/match_genes.py content before executing it."
+    },
+    {
+      "session": "rollout-2026-09-13T16-31-01-8cfcf784-e6c.jsonl",
+      "tool": "analyze_metabolic_states",
+      "result": "ERROR: {\"error\": \"genes path is missing or leaves workspace: results/matched_metabolic_genes.txt\"}"
+    }
+  ],
+  "required_artifacts": [
+    {
+      "file": "report/main.tex",
+      "present": false
+    },
+    {
+      "file": "report/main.pdf",
+      "present": false
+    },
+    {
+      "file": "results/summary.json",
+      "present": false
+    },
+    {
+      "file": "results/analysis_manifest.json",
+      "present": false
+    },
+    {
+      "file": "README.md",
+      "present": false
+    }
+  ],
+  "research_validation": null,
+  "frozen_mismatches": [],
+  "structural_completion_candidate": false,
+  "semantic_acceptance": "pending_independent_review"
+}

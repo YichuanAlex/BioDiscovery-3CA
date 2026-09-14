@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P001",
+  "folder_id": "P001_gavish_2023_3ca_intratumour_heterogeneity",
+  "title": "Hallmarks of transcriptional intratumour heterogeneity across a thousand tumours",
+  "identifiers": {
+    "doi": "10.1038/s41586-023-06130-4",
+    "pmid": "37258682",
+    "pmcid": null
+  },
+  "publication": {
+    "venue": "Nature",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "peer_reviewed",
+    "published_at": "2023-06-15",
+    "version": "version_of_record"
+  },
+  "integrity": {
+    "checked_at": "2026-09-11T10:13:16+00:00",
+    "sources": [
+      "Crossref metadata",
+      "PubMed publication types/comments when PMID resolved"
+    ],
+    "screening_completeness": "Crossref+PubMed",
+    "retracted": false,
+    "expression_of_concern": false,
+    "corrections": [
+      {
+        "ref_type": "CommentIn",
+        "ref_source": "Nature. 2023 Jun;618(7965):464-465. doi: 10.1038/d41586-023-01744-0.37258729"
+      },
+      {
+        "ref_type": "CommentIn",
+        "ref_source": "Cancer Cell. 2023 Sep 11;41(9):1548-1550. doi: 10.1016/j.ccell.2023.07.008.37595585"
+      }
+    ],
+    "publication_types": [
+      "Journal Article",
+      "Research Support, Non-U.S. Gov't"
+    ]
+  },
+  "selection": {
+    "tier": "A",
+    "role": "direct_biological_benchmark",
+    "primary_axis": "Q1",
+    "secondary_axes": [
+      "Q2"
+    ],
+    "rationale": "The 3CA source study provides the pan-cancer program-discovery design, frozen 2023 data snapshot, and recurrent metabolic-related transcriptional programs needed for the first benchmark family."
+  },
+  "code_sources": [
+    {
+      "url": "https://github.com/tiroshlab/3ca",
+      "commit": null,
+      "license": "to_verify"
+    }
+  ],
+  "data_sources": [
+    {
+      "accession": "10.5281/zenodo.7688626",
+      "access": "public",
+      "role": "unspecified",
+      "verification": "manually_seeded_from_primary_source"
+    },
+    {
+      "accession": "EGAS00001002543",
+      "access": "controlled",
+      "role": "unspecified",
+      "verification": "manually_seeded_from_primary_source"
+    }
+  ],
+  "verified_data_urls": [],
+  "repository_urls_extracted": [
+    "https://weizmann.ac.il/sites/3CA",
+    "https://www.weizmann.ac.il/sites/3CA",
+    "https://github.com/jlaffy/infercna",
+    "https://github.com/tiroshlab/3ca/tree/",
+    "https://github.com/tiroshlab/3ca)42",
+    "https://github.com/tiroshlab/3ca/tree/main/ITH_hallmarks",
+    "https://github.com/tiroshlab/3ca"
+  ],
+  "curation": {
+    "status": "candidate_requires_independent_reproduction",
+    "completed_stages": [
+      "S0_candidate_registration",
+      "S1_source_inventory",
+      "S2_candidate_insight",
+      "S3_paper_data_task_mapping"
+    ],
+    "pending_stages": [
+      "S4_independent_reproduction",
+      "S5_final_prompt_approval",
+      "S6_answerability_and_leakage_tests",
+      "S7_grader_adversarial_tests",
+      "S8_dual_signoff"
+    ],
+    "domain_curator": null,
+    "computational_curator": null,
+    "reviewed_at": null
+  }
+}

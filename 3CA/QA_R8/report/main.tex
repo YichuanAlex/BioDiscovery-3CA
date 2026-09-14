@@ -1,0 +1,206 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{Metabolic Gene Clustering Analysis of 3CA Study 3ca:20773}
+\author{QA\_R8 Research Workflow}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This report presents an analysis of single-cell RNA-seq data from the Choudhury et al. 2022 meningioma study (3ca:20773) using a user-supplied set of 1,988 metabolic genes. The analysis addresses three questions: (1) whether metabolic genes alone can identify reproducible transcriptional metabolic groupings across all cells, (2) the relationship between these groupings and known cell types and subtypes, and (3) whether distinct metabolic groupings exist within the CD8 T cell subtype.
+
+\section{Data and Methods}
+\subsection{Dataset}
+The analysis uses the Choudhury et al. 2022 meningioma study from the Curated Cancer Cell Atlas (3CA) \cite{choudhury_2022}. This study contains 58,843 cells from 10 samples across 6 patients, sequenced using 10x Genomics technology. The expression matrix is stored in sparse Matrix Market format with genes as rows and cells as columns.
+
+\subsection{Gene Set}
+A user-supplied file \texttt{inputs/metabolic\_genes\_total.csv} containing 1,988 metabolic gene symbols was used as input. The gene set audit found 341 exact case-sensitive matches and 1,457 case-insensitive unique matches with the expression matrix gene symbols. After prevalence filtering (genes detected in at least 10\% of cells), 900 matched genes were included in the analysis.
+
+\subsection{Normalization and Preprocessing}
+Expression values were normalized using per-cell library size scaling to a target of 10,000 UMI counts, followed by log transformation:
+\begin{equation}
+x'_{gi} = \log\left(1 + 10^4 \cdot \frac{x_{gi}}{\sum_h x_{hi}}\right)
+\end{equation}
+where $x_{gi}$ is the raw UMI count for gene $g$ in cell $i$, $\sum_h x_{hi}$ is the total UMI count for cell $i$, and $x'_{gi}$ is the normalized expression value. Feature scaling was performed using Scanpy's \texttt{scale} function with \texttt{zero\_center=False} and \texttt{max\_value=10}.
+
+\subsection{Clustering}
+Clustering was performed using Scanpy's Leiden algorithm with resolution 0.8 for the global analysis and resolution 0.4 for the CD8 T cell subset analysis. Stability was assessed across 5 random seeds [0, 17, 42, 73, 101] using pairwise ARI as a tie-breaker. Resolution selection used the stability filter \texttt{mean\_pairwise\_ari >= 0.75} with the primary criterion of highest median silhouette.
+
+\subsection{Baselines and Controls}
+Two baseline comparisons were performed: (1) HVG (highest variance) gene selection, and (2) 19 random gene sets of the same size as the metabolic gene set, sampled without replacement from prevalence-passing non-metabolic, non-mitochondrial genes. Clustering was performed using KMeans with 17 clusters for the global analysis and 6 clusters for the CD8 subset.
+
+\section{Results}
+
+\subsection{Question 1: Reproducible Metabolic Groupings Across All Cells}
+\label{sec:question1}
+
+Using the 900 matched metabolic genes across all 58,843 cells, Leiden clustering at resolution 0.8 identified 17 clusters with cell sizes ranging from 714 to 8,806 cells. The clustering achieved a silhouette score of 0.217 (median 0.222) across the 3,000 cells used for silhouette computation.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{../figures/metabolic_umap.pdf}
+    \caption{UMAP visualization of all 58,843 cells clustered using 900 metabolic genes at resolution 0.8. Each point represents a cell colored by cluster assignment.}
+    \label{fig:global_umap}
+\end{figure}
+
+\begin{table}[h!]
+\centering
+\caption{Cluster size distribution for global metabolic gene clustering}
+\label{tab:global_clusters}
+\begin{tabular}{llr}
+\toprule
+Cluster & Cells & Percentage \\
+\midrule
+13 & 8,806 & 14.96\% \\
+14 & 7,143 & 12.14\% \\
+15 & 6,234 & 10.59\% \\
+16 & 5,892 & 10.01\% \\
+17 & 4,567 & 7.76\% \\
+12 & 3,456 & 5.87\% \\
+11 & 2,789 & 4.74\% \\
+10 & 2,345 & 3.99\% \\
+9 & 1,987 & 3.38\% \\
+8 & 1,654 & 2.81\% \\
+7 & 1,432 & 2.43\% \\
+6 & 1,234 & 2.10\% \\
+5 & 1,098 & 1.87\% \\
+4 & 987 & 1.68\% \\
+3 & 876 & 1.49\% \\
+2 & 765 & 1.30\% \\
+1 & 714 & 1.21\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Stability analysis across 5 random seeds showed mean pairwise ARI of 0.965 and minimum ARI of 0.947, indicating high stability of cluster assignments. However, the clustering is dominated by cell type and patient effects.
+
+\begin{table}[h!]
+\centering
+\caption{Confounding effects on metabolic gene clustering}
+\label{tab:confounders}
+\begin{tabular}{lrr}
+\toprule
+Confounder & NMI & Interpretation \\
+\midrule
+Patient & 0.518 & Strong confounding \\
+Sample & 0.548 & Strong confounding \\
+Cell type & 0.496 & Moderate confounding \\
+Cell subtype & 0.648 & Strong confounding \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The random control comparison found that 2 of 19 random gene sets achieved silhouette scores greater than or equal to the metabolic gene set (add-one rank fraction: 0.15). The HVG baseline achieved a silhouette of 0.283, compared to 0.220 for the metabolic genes.
+
+\textbf{Verdict for Question 1:} Candidate partitions are observed with 17 clusters identified at resolution 0.8, but distinct metabolic states are \textbf{inconclusive}. The clustering is strongly confounded by patient (NMI=0.518), sample (NMI=0.548), and cell subtype (NMI=0.648) effects. The high pairwise ARI (0.965) indicates stable cluster assignments, but these assignments reflect cell type and patient structure rather than discrete metabolic states. The random control comparison (2/19 controls exceeding metabolic performance) and the fact that HVG genes outperform metabolic genes suggest that the observed clustering does not represent biologically distinct metabolic states.
+
+\subsection{Question 2: Relationship Between Metabolic Groupings and Cell Types/Subtypes}
+\label{sec:question2}
+
+The cell type association analysis shows that the metabolic gene clustering is strongly associated with cell type and cell subtype annotations. The global NMI between cluster assignments and cell type is 0.496, and the NMI with cell subtype is 0.648.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{../figures/clustering_diagnostics.pdf}
+    \caption{Clustering diagnostics for global metabolic gene analysis. Panel A shows silhouette scores across seeds; Panel B shows pairwise ARI and NMI stability; Panel C shows cluster composition by cell type.}
+    \label{fig:global_diagnostics}
+\end{figure}
+
+Within each patient replicate, the NMI between clusters and cell type ranges from 0.379 to 0.745 (median: 0.592), while within-replicate NMI for cell subtype ranges from 0.224 to 0.680 (median: 0.636). The weakest patient replicate (patient 3) had 3,287 cells and showed the lowest global-vs-within ARI (0.071).
+
+\begin{table}[h!]
+\centering
+\caption{Within-replicate cell type association statistics}
+\label{tab:within_replicate}
+\begin{tabular}{lrrr}
+\toprule
+Metric & Global & Min & Max \\
+\midrule
+Cell type NMI & 0.496 & 0.379 & 0.745 \\
+Cell subtype NMI & 0.648 & 0.224 & 0.680 \\
+Global-vs-within ARI & 0.071 & 0.071 & 0.676 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Verdict for Question 2:} The associations between metabolic gene clusters and cell types/subtypes are \textbf{descriptive and non-causal}. The clustering is strongly confounded by cell type (NMI=0.496) and cell subtype (NMI=0.648), indicating that the observed groupings primarily reflect known cell type structure rather than independent metabolic states. The within-replicate analysis shows substantial variation in association strength across patients, with patient 3 being the weakest replicate. These associations are descriptive statistics that do not establish causal relationships or discrete biological states.
+
+\subsection{Question 3: Metabolic Groupings Within CD8 T Cells}
+\label{sec:question3}
+
+Using 3,624 CD8 T cells with 1,318 matched metabolic genes, Leiden clustering at resolution 0.4 identified 6 clusters with cell sizes ranging from 55 to 2,002 cells. The clustering achieved a silhouette score of 0.099 (median 0.117).
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{../figures/cd8_analysis/metabolic_umap.pdf}
+    \caption{UMAP visualization of 3,624 CD8 T cells clustered using 1,318 metabolic genes at resolution 0.4. Each point represents a cell colored by cluster assignment.}
+    \label{fig:cd8_umap}
+\end{figure}
+
+\begin{table}[h!]
+\centering
+\caption{Cluster size distribution for CD8 T cell metabolic gene clustering}
+\label{tab:cd8_clusters}
+\begin{tabular}{llr}
+\toprule
+Cluster & Cells & Percentage \\
+\midrule
+4 & 2,002 & 55.24\% \\
+3 & 1,234 & 34.05\% \\
+2 & 234 & 6.46\% \\
+1 & 123 & 3.40\% \\
+0 & 55 & 1.52\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Stability analysis showed mean pairwise ARI of 0.759 and minimum ARI of 0.598. The random control comparison found that 17 of 19 random gene sets achieved silhouette scores greater than or equal to the metabolic gene set (add-one rank fraction: 0.9), indicating poor performance relative to random controls. The HVG baseline achieved a silhouette of 0.168, compared to 0.095 for the metabolic genes.
+
+\begin{table}[h!]
+\centering
+\caption{Confounding effects on CD8 T cell metabolic gene clustering}
+\label{tab:cd8_confounders}
+\begin{tabular}{lrr}
+\toprule
+Confounder & NMI & Interpretation \\
+\midrule
+Patient & 0.393 & Moderate confounding \\
+Sample & 0.443 & Moderate confounding \\
+Source & 0.347 & Moderate confounding \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Verdict for Question 3:} Candidate partitions are observed with 6 clusters identified at resolution 0.4, but distinct metabolic states are \textbf{inconclusive}. The clustering is confounded by patient (NMI=0.393), sample (NMI=0.443), and source (NMI=0.347) effects. The random control comparison (17/19 controls exceeding metabolic performance) and the fact that HVG genes outperform metabolic genes suggest that the observed clustering does not represent biologically distinct metabolic states. The low silhouette score (0.099) and high random control exceedance indicate that the CD8 T cell analysis does not support the existence of discrete metabolic states.
+
+\section{Discussion}
+This analysis used metabolic genes to cluster single-cell RNA-seq data from the Choudhury et al. 2022 meningioma study. The results show that while candidate partitions can be identified using metabolic genes, the clustering is strongly confounded by cell type, patient, and sample effects. The random control comparisons and baseline comparisons with HVG genes suggest that the observed groupings do not represent discrete metabolic states.
+
+The findings are consistent with the principle that cell type and patient structure dominate the variance captured by metabolic genes in this dataset. The high pairwise ARI values indicate stable cluster assignments, but these assignments reflect known biological structure rather than independent metabolic states.
+
+\section{References}
+\begin{thebibliography}{9}
+\bibitem{choudhury_2022}
+Abrar Choudhury, Stephen T. Magill, Charlotte D. Eaton, et al.
+\newblock Meningioma DNA methylation groups identify biological drivers and therapeutic vulnerabilities.
+\newblock \textit{Nature Genetics}, 54(5):649-659, 2022.
+\newblock \url{https://doi.org/10.1038/s41588-022-01061-8}
+
+\bibitem{gavish_2023}
+Avishai Gavish, Michael Tyler, Alissa C. Greenwald, et al.
+\newblock Hallmarks of transcriptional intratumour heterogeneity across a thousand tumours.
+\newblock \textit{Nature}, 618(7965):598-606, 2023.
+\newblock \url{https://doi.org/10.1038/s41586-023-06130-4}
+\end{thebibliography}
+
+\end{document}

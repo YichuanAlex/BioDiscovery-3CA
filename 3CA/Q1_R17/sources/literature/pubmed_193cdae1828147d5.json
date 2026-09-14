@@ -1,0 +1,202 @@
+{
+  "source": "NCBI PubMed E-utilities",
+  "query": "Reactome pathway database Nucleic Acids Research 2021",
+  "retrieved_at": "2026-09-13T11:04:06.276911+00:00",
+  "count": 1,
+  "returned": 1,
+  "records": [
+    {
+      "uid": "33170273",
+      "title": "Gramene 2021: harnessing the power of comparative genomics and pathways for plant research.",
+      "authors": [
+        {
+          "name": "Tello-Ruiz MK",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Naithani S",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Gupta P",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Olson A",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Wei S",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Preece J",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Jiao Y",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Wang B",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Chougule K",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Garg P",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Elser J",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Kumari S",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Kumar V",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Contreras-Moreira B",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Naamati G",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "George N",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Cook J",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Bolser D",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "D'Eustachio P",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Stein LD",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Gupta A",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Xu W",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Regala J",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Papatheodorou I",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Kersey PJ",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Flicek P",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Taylor C",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Jaiswal P",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Ware D",
+          "authtype": "Author",
+          "clusterid": ""
+        }
+      ],
+      "fulljournalname": "Nucleic acids research",
+      "pubdate": "2021 Jan 8",
+      "volume": "49",
+      "issue": "D1",
+      "pages": "D1452-D1463",
+      "elocationid": "doi: 10.1093/nar/gkaa979",
+      "articleids": [
+        {
+          "idtype": "pubmed",
+          "idtypen": 1,
+          "value": "33170273"
+        },
+        {
+          "idtype": "pmc",
+          "idtypen": 8,
+          "value": "PMC7779000"
+        },
+        {
+          "idtype": "pmcid",
+          "idtypen": 5,
+          "value": "pmc-id: PMC7779000;"
+        },
+        {
+          "idtype": "doi",
+          "idtypen": 3,
+          "value": "10.1093/nar/gkaa979"
+        },
+        {
+          "idtype": "pii",
+          "idtypen": 4,
+          "value": "5973447"
+        }
+      ]
+    }
+  ],
+  "source_urls": [
+    "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=Reactome+pathway+database+Nucleic+Acids+Research+2021&retmode=json&retmax=5&tool=workflow_codex",
+    "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=33170273&retmode=json&tool=workflow_codex"
+  ],
+  "response_sha256": {
+    "search": "d1ef8125a32e73f162761a29e9dca5264973477bda262180c643f3ff47b1b2b0",
+    "summary": "b7b778ff3bc4eef1fd4e8b8eee48c5c036f1ea09c6948b6b58e839bfd148dd75"
+  },
+  "metadata_path": "sources\\literature\\pubmed_193cdae1828147d5.json"
+}

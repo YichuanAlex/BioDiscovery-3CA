@@ -1,0 +1,7 @@
+{
+  "source_url": "https://raw.githubusercontent.com/wu-yc/scMetabolism/main/data/KEGG_metabolism_nc.gmt",
+  "retrieved_at": "2026-09-12T06:05:41.000Z",
+  "bytes": 21439,
+  "sha256": "754f60c535516449f601a34351f8be0846abe8d86fd0080c77c4d6ceac069262",
+  "retrieved_at_basis": "download tool-call start timestamp from session; not HTTP completion time"
+}

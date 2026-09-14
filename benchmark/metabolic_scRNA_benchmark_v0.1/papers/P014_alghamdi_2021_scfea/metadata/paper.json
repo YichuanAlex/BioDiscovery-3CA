@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P014",
+  "folder_id": "P014_alghamdi_2021_scfea",
+  "title": "A graph neural network model to estimate cell-wise metabolic flux using single-cell RNA-seq data",
+  "identifiers": {
+    "doi": "10.1101/gr.271205.120",
+    "pmid": "34301623",
+    "pmcid": "PMC8494226"
+  },
+  "publication": {
+    "venue": "Genome Research",
+    "publisher": "Cold Spring Harbor Laboratory",
+    "type": "peer_reviewed",
+    "published_at": "2021-10-01",
+    "version": "version_of_record"
+  },
+  "integrity": {
+    "checked_at": "2026-09-11T10:13:16+00:00",
+    "sources": [
+      "Crossref metadata",
+      "PubMed publication types/comments when PMID resolved"
+    ],
+    "screening_completeness": "Crossref+PubMed",
+    "retracted": false,
+    "expression_of_concern": false,
+    "corrections": [],
+    "publication_types": [
+      "Journal Article",
+      "Research Support, N.I.H., Extramural",
+      "Research Support, Non-U.S. Gov't",
+      "Research Support, U.S. Gov't, Non-P.H.S."
+    ]
+  },
+  "selection": {
+    "tier": "A",
+    "role": "metabolic_inference_method",
+    "primary_axis": "Q1",
+    "secondary_axes": [
+      "Q2",
+      "Q3"
+    ],
+    "rationale": "scFEA directly produces cell-wise module flux scores and includes downstream clustering of cells with distinct metabolic states plus matched metabolomic validation."
+  },
+  "code_sources": [
+    {
+      "url": "https://github.com/changwn/scFEA",
+      "commit": null,
+      "license": "to_verify"
+    }
+  ],
+  "data_sources": [
+    {
+      "accession": "GSE132581",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE72056",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE103322",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE99305",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    },
+    {
+      "accession": "GSE173433",
+      "access": "public",
+      "role": "unspecified_candidate",
+      "verification": "automatically_extracted_candidate"
+    }
+  ],
+  "verified_data_urls": [],
+  "repository_urls_extracted": [
+    "https://www.ncbi.nlm.nih.gov/geo/",
+    "https://github.com/changwn/scFEA"
+  ],
+  "curation": {
+    "status": "candidate_requires_independent_reproduction",
+    "completed_stages": [
+      "S0_candidate_registration",
+      "S1_source_inventory",
+      "S2_candidate_insight",
+      "S3_paper_data_task_mapping"
+    ],
+    "pending_stages": [
+      "S4_independent_reproduction",
+      "S5_final_prompt_approval",
+      "S6_answerability_and_leakage_tests",
+      "S7_grader_adversarial_tests",
+      "S8_dual_signoff"
+    ],
+    "domain_curator": null,
+    "computational_curator": null,
+    "reviewed_at": null
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "score_schema_version",
+    "run_id",
+    "task_id",
+    "total_score",
+    "hard_gate_pass"
+  ],
+  "properties": {
+    "total_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "hard_gate_pass": {
+      "type": "boolean"
+    }
+  }
+}

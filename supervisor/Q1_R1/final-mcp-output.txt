@@ -1,0 +1,3 @@
+Processing request of type ListToolsRequest
+Processing request of type CallToolRequest
+PASS: tool43CA MCP initialized, listed all 10 tools, and completed a tool call.

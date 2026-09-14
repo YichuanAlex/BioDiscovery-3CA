@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P015",
+  "si_requested": true,
+  "downloaded_at": "2026-09-11T10:13:16+00:00",
+  "pmc_attempt": {
+    "provider": "Europe PMC",
+    "pmcid": "PMC10423258",
+    "status": "open_access_downloaded",
+    "source_url": ""
+  },
+  "official_fallback_attempt": {
+    "provider": "official_publisher_or_repository",
+    "status": "downloaded_with_si",
+    "attempts": [
+      {
+        "url": "https://www.nature.com/articles/s41467-023-40457-w?error=cookies_not_supported&code=1cf6166e-ae7a-4e56-847b-3f035959679b",
+        "status": "full_text_html_available"
+      }
+    ]
+  },
+  "files": [
+    {
+      "relative_path": "main_article.xml",
+      "role": "main_article",
+      "media_type": "text/xml",
+      "size_bytes": 228073,
+      "sha256": "972dc7cf6acb12038823d0f4a7a87a3314fe789f6e8386893679aecea41d8bb0",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10423258/fullTextXML"
+    },
+    {
+      "relative_path": "main_article.pdf",
+      "role": "main_article",
+      "media_type": "application/pdf",
+      "size_bytes": 2626432,
+      "sha256": "30c8e4a0de2ab701fd47a7aade95993269fe5edd4d60e0d48ad28a207254a821",
+      "source_url": "https://europepmc.org/api/getPdf?pmcid=PMC10423258"
+    },
+    {
+      "relative_path": "supplementary/41467_2023_40457_MOESM1_ESM.pdf",
+      "role": "supporting_information",
+      "media_type": "application/pdf",
+      "size_bytes": 1524633,
+      "sha256": "9279565a3c301110c68131d27bb42732aed482573fa329f82b92340f00c618ea",
+      "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-023-40457-w/MediaObjects/41467_2023_40457_MOESM1_ESM.pdf"
+    },
+    {
+      "relative_path": "supplementary/41467_2023_40457_MOESM2_ESM.pdf",
+      "role": "supporting_information",
+      "media_type": "application/pdf",
+      "size_bytes": 7000755,
+      "sha256": "6b4498542909b502d59fa6896cac2ebaa33efb1dac84ef8ec00a30a35781eab3",
+      "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-023-40457-w/MediaObjects/41467_2023_40457_MOESM2_ESM.pdf"
+    },
+    {
+      "relative_path": "supplementary/41467_2023_40457_MOESM3_ESM.pdf",
+      "role": "supporting_information",
+      "media_type": "application/pdf",
+      "size_bytes": 82627,
+      "sha256": "8b5cf0f16d96b707cfc61b651c5e299cc3806a8c0af97f9ccacc1477693444b3",
+      "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-023-40457-w/MediaObjects/41467_2023_40457_MOESM3_ESM.pdf"
+    },
+    {
+      "relative_path": "supplementary/41467_2023_40457_MOESM4_ESM.xls",
+      "role": "supporting_information",
+      "media_type": "application/vnd.ms-excel",
+      "size_bytes": 41472,
+      "sha256": "88d69873c384a23ff8a10f6c5236ad52460f5f49ca6b85ea98f9531f8aaa8188",
+      "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-023-40457-w/MediaObjects/41467_2023_40457_MOESM4_ESM.xls"
+    },
+    {
+      "relative_path": "supplementary/41467_2023_40457_MOESM5_ESM.xls",
+      "role": "supporting_information",
+      "media_type": "application/vnd.ms-excel",
+      "size_bytes": 35840,
+      "sha256": "be361f574c60a9a813dee1b0c56ab963dcd0a8eddf2ab9c44b563123f68afdab",
+      "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-023-40457-w/MediaObjects/41467_2023_40457_MOESM5_ESM.xls"
+    },
+    {
+      "relative_path": "supplementary/41467_2023_40457_MOESM6_ESM.pdf",
+      "role": "supporting_information",
+      "media_type": "application/pdf",
+      "size_bytes": 956476,
+      "sha256": "3a242104d1f39152061b2bb3af9d06f83fac333da270d5e4f771c8be62e640ba",
+      "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-023-40457-w/MediaObjects/41467_2023_40457_MOESM6_ESM.pdf"
+    }
+  ],
+  "verification": {
+    "checks": [
+      "nonzero size",
+      "PDF magic when applicable",
+      "SHA-256",
+      "source URL recorded"
+    ],
+    "pdf_text_or_title_check": "external acceptance check; see top-level 构建与验收报告.md"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "snapshot_at": "2026-09-13T00:42:13.102Z",
+  "task": "C:\\Users\\User\\Desktop\\agentic\\3CA\\Q1_R6",
+  "status": "stopped_by_user",
+  "runner_alive": false,
+  "checkpoint_status": "running",
+  "phase": "initialization",
+  "next_action": "refresh_catalog and search_studies for metabolic/single-cell RNA-seq data",
+  "rounds": 1117,
+  "sessions": [
+    {
+      "file": "C:\\Users\\User\\Desktop\\agentic\\supervisor\\Q1_R6\\logs\\rollout-2026-09-12T23-07-32-4f728fb3-316.jsonl",
+      "source_in_runtime": false,
+      "bytes": 9028076,
+      "sha256": "e67314ecd0b942802743351162a4de497f158d2c2cb6c109dc833c52d1cb6f67",
+      "events": 7396,
+      "partial_lines": 0,
+      "noncanonical_metadata_order": false,
+      "pending_tool_calls": []
+    },
+    {
+      "file": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.runtime\\codex-home\\sessions\\2026\\09\\12\\R6-rollout-2026-09-12T23-07-32-4f728fb3-316.jsonl",
+      "source_in_runtime": true,
+      "bytes": 9028076,
+      "sha256": "e67314ecd0b942802743351162a4de497f158d2c2cb6c109dc833c52d1cb6f67",
+      "events": 7396,
+      "partial_lines": 0,
+      "noncanonical_metadata_order": false,
+      "pending_tool_calls": []
+    }
+  ],
+  "tools": 2688,
+  "tool_counts": {
+    "list_files": 416,
+    "search_studies": 600,
+    "get_page": 118,
+    "run_powershell": 1166,
+    "refresh_catalog": 158,
+    "web_search": 8,
+    "read_file": 38,
+    "threeca-access": 38,
+    "search_cached_pages": 48,
+    "read_webpage": 48,
+    "task_checkpoint": 34,
+    "crawl_site": 2,
+    "get_study": 10,
+    "write_file": 4
+  },
+  "failed_tools": 166,
+  "guarded_tools": 2214,
+  "loop_breakers": 1848,
+  "loop_recoveries": 224,
+  "original_user_inputs": 2,
+  "supervisor_research_interventions": 1,
+  "engine_continuations": 224,
+  "thinking_enabled_responses": 2234,
+  "reasoning_present_responses": 2234,
+  "reasoning_missing_responses": 0,
+  "artifacts": [
+    {
+      "path": "check_catalog.py",
+      "bytes": 446
+    }
+  ],
+  "required_artifacts": [
+    {
+      "file": "report/main.tex",
+      "present": false
+    },
+    {
+      "file": "report/main.pdf",
+      "present": false
+    },
+    {
+      "file": "results/summary.json",
+      "present": false
+    },
+    {
+      "file": "README.md",
+      "present": false
+    }
+  ],
+  "free_bytes": 150865739776,
+  "runner": {
+    "ended_at": "2026-09-12T16:56:49.5126826Z",
+    "status": "stopped_by_user",
+    "runner_success": false,
+    "stopped_runner_pid": 26048,
+    "stopped_worker_pids": [
+      22164
+    ],
+    "semantic_acceptance": "not_accepted",
+    "error": "User requested stopping R6 before workflow optimization and R7."
+  },
+  "run_until_complete": true,
+  "max_rounds": 0,
+  "frozen_hash_mismatches": [
+    "README.md",
+    "start-Qwen3.5-4B-server.ps1",
+    "codex-cli\\bin\\Qwen3.5-4B.js",
+    "codex-cli\\bin\\Qwen3.5-4B-threeca.js",
+    "codex-cli\\bin\\test-Qwen3.5-4B-recovery.mjs",
+    "tools\\tool43CA\\MCP\\server.py",
+    "tools\\tool43CA\\SKILL\\threeca-access\\SKILL.md",
+    "test-Qwen3.5-4B.ps1"
+  ],
+  "semantic_acceptance": "not_accepted",
+  "supervisor_operational_restarts": 0,
+  "checkpoint_read_error": null,
+  "caveat": "Tool return, exit 0 and artifact existence do not establish scientific correctness. Missing reasoning is not reconstructed. Persisted state is not process liveness.",
+  "structural_completion_candidate": false
+}

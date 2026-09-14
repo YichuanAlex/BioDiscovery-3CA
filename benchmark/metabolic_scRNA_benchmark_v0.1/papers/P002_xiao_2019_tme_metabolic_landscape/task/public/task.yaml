@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "benchmark_version": "0.1.0-curation",
+  "task_id": "metabolic-scrna-p002-q1",
+  "task_version": "0.1.0",
+  "paper_id": "P002",
+  "dataset_id": "metabolic-scrna-p002",
+  "dataset_version": "0.1.0",
+  "task_family_id": "metabolic-scrna-q1",
+  "leakage_group_id": "paper-and-source-data-p002",
+  "track": "blind_rediscovery",
+  "curation_status": "candidate_requires_independent_reproduction",
+  "domain": {
+    "disease": "cancer or immune-state method validation",
+    "modality": "scRNA-seq",
+    "analysis_types": [
+      "Q1",
+      "metabolic_gene_set",
+      "robustness",
+      "evidence_reporting"
+    ]
+  },
+  "scientific_context": "Determine what can be learned from a fixed metabolic-gene set without confusing transcriptional programs with measured metabolic flux.",
+  "question": "Using only the provided fixed metabolic-gene set as expression features after documented symbol and coverage QC, determine whether the cells contain distinct, reproducible transcriptional metabolic states. Compare against expression-matched random gene sets and a full-transcriptome representation; quantify stability across seeds and biological-replicate bootstraps, and test transfer to held-out patients or samples.",
+  "inference_unit": "patient",
+  "visible_inputs": [
+    {
+      "path": "benchmark://genesets/metabolic_genes_input_v1.csv",
+      "description": "Frozen unsigned metabolic-gene list supplied by the user."
+    },
+    {
+      "path": "data_manifest.public.json",
+      "description": "Versioned pointers and metadata for the paper-associated dataset; materialize only licensed public objects."
+    }
+  ],
+  "external_resources": {
+    "literature": "prohibited during scored blind rediscovery",
+    "network": "disabled after input materialization"
+  },
+  "resource_budget": {
+    "wall_time_hours": 8,
+    "cpu_cores": 8,
+    "memory_gb": 64,
+    "gpu": "optional"
+  },
+  "required_artifacts": [
+    {
+      "path": "submission/cluster_assignments.tsv",
+      "format": "TSV",
+      "required": true,
+      "columns": [
+        "cell_id",
+        "metabolic_state",
+        "confidence"
+      ]
+    },
+    {
+      "path": "submission/state_summary.tsv",
+      "format": "TSV",
+      "required": true,
+      "columns": [
+        "metabolic_state",
+        "n_cells",
+        "n_samples",
+        "n_patients",
+        "top_features"
+      ]
+    },
+    {
+      "path": "submission/metrics.json",
+      "format": "JSON",
+      "required": true
+    },
+    {
+      "path": "submission/claims.jsonl",
+      "format": "JSONL",
+      "required": true
+    },
+    {
+      "path": "submission/provenance.json",
+      "format": "JSON",
+      "required": true
+    },
+    {
+      "path": "submission/report.md",
+      "format": "Markdown",
+      "required": true
+    }
+  ],
+  "hard_gates": [
+    "gene-symbol and overlap coverage reported",
+    "biological replicate is the inferential unit",
+    "negative-control gene sets included",
+    "batch, library-size, and mitochondrial-quality confounding assessed",
+    "RNA-derived activity is not reported as measured flux",
+    "all required files conform to the output contract"
+  ]
+}

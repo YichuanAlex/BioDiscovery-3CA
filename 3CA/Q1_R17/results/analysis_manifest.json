@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "dataset": {
+    "study_id": "3ca:20773",
+    "source_url": "https://www.nature.com/articles/s41588-022-01061-8",
+    "sha256": "51bf0452d166511fecca3f32d89f9fd0f631d173143173d82115f49cdaaa6c1d",
+    "expression_path": "inputs/Exp_data_UMIcounts.mtx",
+    "cells_path": "inputs/Cells.csv",
+    "gene_names_path": "inputs/Genes.txt",
+    "n_cells": 58843,
+    "n_genes": 33538,
+    "matrix_orientation": "genes_by_cells",
+    "cell_id_field": "cell_name"
+  },
+  "feature_set": {
+    "name": "Reactome Metabolism R-HSA-1430728",
+    "source_url": "https://reactome.org/ContentService/data/pathway/R-HSA-1430728/containedEvents",
+    "retrieved_at": "2026-09-13T09:48:39.140017+00:00",
+    "sha256": "1e7f5adf240a04c95cb30fd2a8ef83bcab7d519f5f2d12447d8b3112b9589164",
+    "genes_path": "sources/reactome/metabolism_R-HSA-1430728_release_97_genes.txt",
+    "source_gene_count": 2197,
+    "matched_gene_count": 1984
+  },
+  "analysis": {
+    "engine": "workflow_research_quality_metabolic_states_v1",
+    "core_result_path": "results/core_analysis/core_result.json",
+    "core_result_sha256": "cf7f7045ca7faffdcf7af1ca7d81460da675731bf89c6218c28aa5b58f95b7bb",
+    "input_unit": "cell",
+    "rows_analyzed": 58843,
+    "unique_cells_analyzed": 58843,
+    "random_seeds": [0, 17, 42, 73, 101],
+    "baselines": [
+      {
+        "name": "HVG and random size-matched controls",
+        "metrics": {
+          "random_controls_exceeding_or_equal": 0,
+          "random_controls_total": 19,
+          "add_one_rank_fraction": 0.05
+        },
+        "result_path": "results/core_analysis/baseline_metrics.csv"
+      }
+    ],
+    "confounders_checked": ["patient", "sample", "source", "cell_type", "cell_subtype", "cell_cycle_phase", "complexity", "computed_total_counts", "computed_detected_genes", "computed_mito_percent"],
+    "methods": [
+      {
+        "name": "Scanpy Leiden on Reactome metabolic genes",
+        "labels_path": "results/core_analysis/cluster_labels.csv",
+        "cell_id_column": "cell_name",
+        "label_column": "cluster",
+        "n_clusters": 17,
+        "metrics": {
+          "silhouette": 0.21600039303302765,
+          "mean_pairwise_ari": 0.9548198219193484
+        }
+      }
+    ]
+  },
+  "references": [
+    {
+      "key": "choudhury2022",
+      "doi": "10.1038/s41588-022-01061-8",
+      "metadata_path": "sources/literature/crossref_db798362115f799a.json"
+    },
+    {
+      "key": "reactome",
+      "doi": "10.1093/nar/gkaa1081",
+      "metadata_path": "sources/literature/crossref_reactome.json"
+    }
+  ],
+  "artifacts": {
+    "tex": "report/main.tex",
+    "pdf": "report/main.pdf",
+    "summary": "results/summary.json",
+    "figures": ["figures/metabolic_umap.pdf", "figures/clustering_diagnostics.pdf"]
+  }
+}

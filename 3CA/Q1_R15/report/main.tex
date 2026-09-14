@@ -1,0 +1,127 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{Transcriptional Metabolic States in Meningioma Single-Cell RNA-seq Data}
+\author{Analysis of 3CA Study 3ca:20773 (Choudhury et al. 2022)}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This study investigates whether transcriptional metabolic states can be identified as distinct clusters in single-cell RNA-seq data from meningioma samples. We used the Weizmann Curated Cancer Cell Atlas (3CA) dataset 3ca:20773 (Choudhury et al. 2022), which contains 58,843 cells from 6 patients with raw UMI counts and cell-type annotations. Clustering was performed using only Reactome metabolism genes (R-HSA-1430728, 1,984 genes matched to the dataset). Leiden clustering identified 17 clusters at resolution 0.4. We compared metabolic clustering against a highest-variance gene (HVG) control and 19 size-matched random gene controls. The analysis concludes that while metabolic genes can separate observed cell groups, the evidence for discrete biological metabolic states is inconclusive.
+\end{abstract}
+
+\section{Data and Methods}
+
+\subsection{Dataset}
+The study used the 3CA dataset 3ca:20773, \textit{Meningioma DNA methylation groups identify biological drivers and therapeutic vulnerabilities}, published in \textbf{Nature Genetics} \textbf{54}:649--659 (2022) \cite{choudhury2022}. The dataset contains:
+\begin{itemize}
+    \item 58,843 cells from 6 patients
+    \item 33,538 source features (33,514 unique gene symbols after aggregation of 24 duplicate symbols)
+    \item Raw UMI counts normalized to 10,000 and log1p-transformed
+    \item Cell-type annotations (6 cell types, 15 subtypes) and patient/sample identifiers
+\end{itemize}
+
+\subsection{Metabolic Gene Set}
+We used Reactome metabolism pathways (release 97, R-HSA-1430728), containing 2,197 genes. After matching to the dataset's gene list, 1,984 metabolic genes were retained. Duplicate gene symbols were summed in raw counts before QC/normalization.
+
+\subsection{Clustering Pipeline}
+\begin{enumerate}
+    \item \textbf{Normalization}: Per-cell library size to 10,000, then log1p transformation
+    \item \textbf{Feature scaling}: Scanpy scale (zero_center=False, max_value=10)
+    \item \textbf{PCA}: 30 components, arpack solver, seed=0
+    \item \textbf{Graph construction}: k=15 neighbors, seed=0
+    \item \textbf{Clustering}: Leiden algorithm with flavors tested at resolutions 0.4, 0.8, 1.2
+    \item \textbf{Metrics}: Silhouette, Calinski-Harabasz, Davies-Bouldin on 3,000 cells; pairwise ARI/NMI across 5 random seeds
+\end{enumerate}
+
+\subsection{Controls}
+\begin{itemize}
+    \item \textbf{HVG control}: Highest variance of library-normalized log1p expression among prevalence-passing non-mitochondrial symbols
+    \item \textbf{Random controls}: 19 size-matched gene sets sampled without replacement from non-metabolic, non-mitochondrial symbols
+\end{itemize}
+
+\section{Results}
+
+\subsection{Metabolic Clustering}
+Leiden clustering on 1,984 metabolic genes produced 17 clusters at resolution 0.4 (selected seed=0). Key metrics:
+\begin{table}[h]
+\centering
+\caption{Clustering metrics for metabolic gene clustering}
+\begin{tabular}{ll}
+\toprule
+Metric & Value \\
+\midrule
+Silhouette & 0.216 \\
+Calinski-Harabasz & 6,394 \\
+Davies-Bouldin & 1.48 \\
+Mean pairwise ARI & 0.955 \\
+Mean pairwise NMI & 0.968 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{figures/metabolic_umap.pdf}
+    \caption{UMAP visualization of meningioma cells clustered using Reactome metabolism genes (1,984 genes). Each point represents a cell; colors indicate cluster assignments.}
+    \label{fig:umap}
+\end{figure}
+
+\subsection{Comparison to Controls}
+The HVG control achieved a silhouette of 0.288, higher than the metabolic clustering (0.216). Among 19 random gene controls, silhouette values ranged from 0.202 to 0.235 (mean=0.221). The baseline exceedance fraction was 0.05, meaning 5\% of random controls had silhouette $\ge$ metabolic clustering.
+
+\subsection{Confounder Sensitivity}
+We checked association with patient, sample, source, cell type, cell subtype, and cell cycle phase. NMI values with cluster:
+\begin{itemize}
+    \item Patient: NMI=0.55 (6 levels)
+    \item Sample: NMI=0.58 (10 levels)
+    \item Cell subtype: NMI=0.65 (15 levels)
+    \item Cell type: NMI=0.50 (6 levels)
+    \item Source: NMI=0.21 (3 levels)
+    \item Cell cycle phase: NMI=0.19 (5 levels)
+\end{itemize}
+
+\subsection{Cluster Composition}
+The 17 clusters were distributed across cell types and subtypes. No single cluster was dominated by one patient or sample. Within-patient clustering showed variability, with some patients contributing to multiple clusters.
+
+\section{Discussion}
+
+\subsection{Metabolic Gene Separation}
+Metabolic genes can separate observed cell groups in this dataset, as evidenced by the clustering results and non-zero silhouette. However, the HVG control performed better, suggesting that global expression variance (driven by factors like cell cycle or cell type) may be more informative than metabolic gene expression alone.
+
+\subsection{Discrete Metabolic States}
+The evidence for discrete biological metabolic states is \textbf{inconclusive}. Several limitations prevent definitive conclusions:
+\begin{itemize}
+    \item Silhouette is estimated on a fixed random subset; all QC-passing cells are retained for clustering
+    \item No significance test is performed on data-derived cluster labels
+    \item Random gene controls are matched in size, not expression mean or dispersion; their exceedance fraction is a descriptive benchmark, not a biological P value
+    \item Resolution was selected using the same dataset
+    \item A threshold on confounder NMI does not establish independence
+    \item No independent donor validation or held-out test set
+\end{itemize}
+
+The analysis does not test a null model of continuous versus discrete metabolic states. Additional validation with independent datasets, pseudobulk analysis, or continuum-based methods would be needed to address this question definitively.
+
+\section{Conclusion}
+Using only Reactome metabolism genes, we identified 17 clusters in 58,843 meningioma cells. While metabolic genes can separate observed cell groups, the evidence for discrete biological metabolic states remains inconclusive. The HVG control outperformed metabolic clustering, and confounders (patient, sample, cell subtype) showed substantial association with cluster labels.
+
+\section*{References}
+\begin{thebibliography}{9}
+\bibitem{choudhury2022}
+Abrar Choudhury, Stephen T. Magill, Charlotte D. Eaton, Briana C. Prager, William C. Chen, Martha A. Cady, Kyounghee Seo, Calixto-Hope G. Lucas, Tim J. Casey-Clyde, et al.
+\textit{Meningioma DNA methylation groups identify biological drivers and therapeutic vulnerabilities}.
+\textbf{Nature Genetics}, 54(5):649--659, 2022.
+\url{https://doi.org/10.1038/s41588-022-01061-8}
+\end{thebibliography}
+
+\end{document}

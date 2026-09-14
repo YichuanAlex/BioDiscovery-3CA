@@ -1,0 +1,53 @@
+{
+  "question": "Are there distinct clusters of transcriptional metabolic states?",
+  "conclusion": "inconclusive",
+  "interpretation": "Metabolic-only cell-group separation is described by actual labels, seed stability, gene-set controls and within-replicate sensitivity. These exploratory results do not by themselves establish discrete biological metabolic states or their absence.",
+  "cells_analyzed": 58843,
+  "source_cells": 58843,
+  "source_feature_rows": 33538,
+  "unique_gene_symbols": 33514,
+  "duplicate_symbol_rows_aggregated": 24,
+  "metabolic_genes_analyzed": 1984,
+  "selected_resolution": 0.4,
+  "n_clusters": 17,
+  "metrics": {
+    "silhouette": 0.21600039303302765,
+    "calinski_harabasz": 6393.9647617421015,
+    "davies_bouldin": 1.4783872745190978,
+    "metric_cells": 3000,
+    "mean_pairwise_ari": 0.9548198219193484,
+    "min_pairwise_ari": 0.9164576705563711,
+    "mean_pairwise_nmi": 0.9679262525435209,
+    "min_pairwise_nmi": 0.9563232281482887,
+    "median_silhouette": 0.21600039303302765
+  },
+  "matched_kmeans_control_metrics": {
+    "silhouette": 0.23988552391529083,
+    "calinski_harabasz": 8013.28618018808,
+    "davies_bouldin": 1.4807831830797236,
+    "metric_cells": 3000
+  },
+  "baseline_silhouette_summary": {
+    "HVG": 0.2878866493701935,
+    "random_min": 0.20178064703941345,
+    "random_max": 0.2350311279296875,
+    "random_mean": 0.22070464570271342
+  },
+  "evidence_checks": {
+    "stable_mean_ari_at_least_0_75": true,
+    "positive_descriptive_silhouette": true,
+    "higher_matched_k_silhouette_than_all_random_gene_controls": true,
+    "all_clusters_supported_by_at_least_two_replicates": false,
+    "not_dominated_by_patient_sample_or_cell_type_nmi_at_least_0_5": false,
+    "random_baseline_exceedance_fraction_not_a_biological_p_value": 0.05
+  },
+  "limitations": [
+    "Silhouette is estimated on a fixed random subset; all QC-passing cells are retained for PCA, graph construction, and clustering.",
+    "The unsupervised question has no predefined condition contrast; no cell-level differential-expression P values are reported.",
+    "No significance test is performed on data-derived cluster labels; within-replicate reclustering is descriptive and not held-out donor validation.",
+    "Random gene controls are matched in size, not expression mean or dispersion; their exceedance fraction is a descriptive benchmark, not a biological P value.",
+    "Resolution was selected using the same dataset. ARI/NMI assess Leiden randomization conditional on the fixed PCA/neighbor graph, not all preprocessing uncertainty.",
+    "A threshold on confounder NMI does not establish independence; independent validation, QC/batch sensitivity and a continuum-versus-discrete comparison remain necessary.",
+    "Identical source gene symbols are summed before QC/normalization. Symbol-level aggregation preserves library counts but does not disambiguate stable gene IDs or distinct loci."
+  ]
+}

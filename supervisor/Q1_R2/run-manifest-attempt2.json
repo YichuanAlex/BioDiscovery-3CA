@@ -1,0 +1,57 @@
+{
+  "engineering_tests": "passed",
+  "semantic_acceptance": "pending",
+  "task": "C:\\Users\\User\\Desktop\\agentic\\3CA\\Q1_R2",
+  "model": "Qwen3.5-4B",
+  "supervisor": "C:\\Users\\User\\Desktop\\agentic\\supervisor\\Q1_R2",
+  "attempt": 2,
+  "workflow": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex",
+  "prompt_sha256": "f11d8b0b2858be5066e88348b887d4d945d0aa6d0c92d69b81340ae3224cf8b2",
+  "supervisor_research_interventions": 0,
+  "research_workspace_initially_empty": true,
+  "started_at": "2026-09-12T09:12:37.1715999Z",
+  "supervisor_operational_restarts": 1,
+  "runner_pid": 20780,
+  "frozen_files": [
+    {
+      "file": "run-Qwen3.5-4B.ps1",
+      "sha256": "0e9d0133e6c1018e100f809cde1e03d74771a20c07eeb32a6aa437dc558eeeaa"
+    },
+    {
+      "file": "start-Qwen3.5-4B-server.ps1",
+      "sha256": "fde7699567265ab2285363523deec328a42343dff15ecb66da1f37840c999dc0"
+    },
+    {
+      "file": "codex-cli\\bin\\codex.js",
+      "sha256": "ae41734ca2b38d45be3ff3dcbc52548768bfcba1d5128deb8065530256be614a"
+    },
+    {
+      "file": "codex-cli\\bin\\Qwen3.5-4B.js",
+      "sha256": "fca64a87689b287ddeceacf970ba9aeedab99c42188629b4a7e1d1debb2a4c63"
+    },
+    {
+      "file": "codex-cli\\bin\\Qwen3.5-4B-threeca.js",
+      "sha256": "fd42fdb43d5d2b4ade06356cb25267d0ed64bfdd91c70bef49ac07f2df420f8c"
+    },
+    {
+      "file": "codex-cli\\bin\\Qwen3.5-4B-network.js",
+      "sha256": "76af75d7e5f4a53fe3340ee848fba3f84eda0f083fda49c0260b144f3ffc5731"
+    },
+    {
+      "file": "codex-cli\\bin\\Qwen3.5-4B-computer-use.js",
+      "sha256": "e720d254b550ac0bff2560dd1a5acbbd1b0901565f9c9efd3492e81ab9bb5c75"
+    },
+    {
+      "file": "codex-cli\\bin\\test-Qwen3.5-4B-recovery.mjs",
+      "sha256": "91fbbd829cb07bd965186a4a20e70af3c7f6570979ec4e09c1a2b92339ef654d"
+    },
+    {
+      "file": "tools\\tool43CA\\MCP\\server.py",
+      "sha256": "98fcf6f30281f974a1b929676d3fda6d8a1735ec15bfded5cd7c61cf0b4e1a0c"
+    },
+    {
+      "file": "tools\\tool43CA\\SKILL\\threeca-access\\SKILL.md",
+      "sha256": "1e8d567622dd18d3d578dc8cb7b0cb259d72391962f984556b18ae824ee54c87"
+    }
+  ]
+}

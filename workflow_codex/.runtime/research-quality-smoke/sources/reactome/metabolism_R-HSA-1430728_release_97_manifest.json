@@ -1,0 +1,20 @@
+{
+  "source": "Reactome",
+  "release": 97,
+  "root_pathway": "R-HSA-1430728",
+  "retrieved_at": "2026-09-14T04:18:53.989182+00:00",
+  "source_urls": {
+    "version": "https://reactome.org/ContentService/data/database/version",
+    "contained_events": "https://reactome.org/ContentService/data/pathway/R-HSA-1430728/containedEvents",
+    "gene_sets": "https://reactome.org/download/current/ReactomePathways.gmt.zip"
+  },
+  "archive_sha256": "8c1dbc8578431da5d2d5118262718c60b553a9be3398e93658daa069e4a9afd4",
+  "archive_content_length": "298479",
+  "contained_events_sha256": "ba1dcb68679e4a3ab85efbc3151d2faa34cb6937454544b9512e929fdcf25da2",
+  "contained_event_ids": 2702,
+  "pathways_with_gene_sets": 311,
+  "gene_count": 2197,
+  "genes_path": "sources\\reactome\\metabolism_R-HSA-1430728_release_97_genes.txt",
+  "genes_sha256": "1e7f5adf240a04c95cb30fd2a8ef83bcab7d519f5f2d12447d8b3112b9589164",
+  "manifest_path": "sources\\reactome\\metabolism_R-HSA-1430728_release_97_manifest.json"
+}

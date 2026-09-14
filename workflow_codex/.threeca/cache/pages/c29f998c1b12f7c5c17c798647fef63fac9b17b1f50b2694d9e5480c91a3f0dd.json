@@ -1,0 +1,19 @@
+{
+  "url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20773",
+  "final_url": "https://www.weizmann.ac.il/sites/3CA/study-data/cnas/20773",
+  "fetched_at": "2026-09-13T00:26:14.603865+00:00",
+  "raw_html_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\pages\\c29f998c1b12f7c5c17c798647fef63fac9b17b1f50b2694d9e5480c91a3f0dd.html",
+  "title": "| Curated Cancer Cell Atlas",
+  "text": "CNAs Brain: Choudhury et al. 2022 Click here to download PNG Click here to download CNA matrix",
+  "links": [
+    {
+      "url": "https://www.dropbox.com/scl/fi/uws9c187u58fjc70eazeq/CNAs_Choudhury2022_Brain.png?rlkey=3rddab9v18o8u1ko8og4l99nf&dl=1",
+      "text": "Click here to download PNG"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/k5d9t4siuwnez6rltm3u7/CNA_matrix_Choudhury2022_Brain.csv.gz?rlkey=s60l1km8vvbcle53mg5ok9hv7&dl=1",
+      "text": "Click here to download CNA matrix"
+    }
+  ],
+  "tables": []
+}

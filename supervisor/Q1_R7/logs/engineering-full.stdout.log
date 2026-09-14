@@ -1,0 +1,50 @@
+PASS: exact path, no installed-Codex references, no project Codex auto-discovery config, no external tool links.
+PASS: empty-reply recovery, failed-tool recovery, repeated verification, unchanged-read loop guard, isolated workspace.
+PASS: max-rounds 0 survives the old no-action stop and continues until verified completion.
+PASS: Desktop in a path does not expose Computer Use; new shell outputs without workspace writes trigger context recovery.
+PASS: a bare data path is rejected as a shell no-op and PowerShell is cooled for one response.
+PASS: autonomous plan recovery, nested paths, premature completion rejection, shell mutation validation, actual reasoning persistence, resume without mutation replay, unfinished budget nonzero exit.
+PASS: 3CA catalog budget cools a CLI-search tool for one response and preserves other tools for completion.
+PASS: empty JSON and fake PDF completion candidates are rejected; valid nonempty JSON can pass structural verification.
+PASS: structured actions preserve raw provider output/reasoning; missing arguments and cooled tools cannot execute; budgets and actual returned ids survive recovery.
+PASS: cookie challenge is rejected as unusable evidence.
+PASS: persistent checkpoint ENOSPC returns the retryable worker exit code with a stale resumable checkpoint.
+PASS: actual PowerShell launcher resumes stale-running exit 75, ignores unrelated malformed checkpoints, and releases its exclusive lock.
+PASS: tool43CA MCP initialized, listed all 10 tools, and completed a tool call.
+PASS: workflow-local Computer Use listed, launched, selected, observed, acted, and re-observed.
+Qwen3.5-4B local server is ready: http://127.0.0.1:8000/health
+PASS: attachment copied under C:\Users\User\Desktop\agentic\workflow_codex\.runtime\codex-home\attachments
+PASS: model, path guard, read, list, tool protocol, computer use, 3CA, network, write, shell.
+Qwen3.5-4B local server is ready: http://127.0.0.1:8000/health
+[tool] web_search: 最新新闻 2026年
+
+Qwen3.5-4B> 根据搜索结果，我为您整理了2026年最新的新闻摘要：
+
+## 📰 2026年最新新闻
+
+### 🔴 国际局势
+- **伊朗战争新进展**（2026年9月11日）：也门胡塞武装迅速控制曼德海峡，国际油价恐将进一步推高。来源：RFI
+
+### 🏢 重大活动
+- **2026年服贸会启幕**（2026年9月8日）：服贸会今日正式开幕。来源：新京报
+
+### 🏛️ 国内政策
+- **四川社保缴费基数公布**（2026年9月7日）：2026年四川社保缴费基数已正式公布。来源：川观新闻
+- **货币政策与金融数据**（2026年7月15日）：国新办举行新闻发布会，介绍2026年上半年货币政策执行和金融统计数据。来源：scio.gov.cn
+
+### 🏭 国防动态
+- **国防部例行新闻发布**（2026年7月中旬）：国防部发布例行新闻，涉及国防建设等相关信息。来源：国防部网
+
+### 🏖️ 民生经济
+- **2026年月饼价格调查**（2026年9月11日）：澳门特别行政区政府公布2026年月饼价格调查结果。来源：澳门特别行政区政府
+
+### 🎨 时尚产业
+- **迪奥2026年最新新闻**（2026年9月9日）：迪奥品牌发布2026年最新动态。来源：新浪网
+
+---
+
+这些新闻涵盖了国际局势、国内政策、民生经济等多个领域。如果您需要某个领域的更详细新闻，或者需要搜索特定主题的新闻，请告诉我，我可以进一步为您查找。
+
+PASS: session transcript C:\Users\User\Desktop\agentic\workflow_codex\.runtime\codex-home\sessions\2026\09\13\rollout-2026-09-13T01-10-22-59a8082e-42a.jsonl
+PASS: exact path, no installed-Codex references, no project Codex auto-discovery config, no external tool links.
+PASS: workflow_codex functional test completed.

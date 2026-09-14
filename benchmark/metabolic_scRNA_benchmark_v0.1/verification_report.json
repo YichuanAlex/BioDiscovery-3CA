@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-09-14T11:03:22+00:00",
+  "expected_papers": 30,
+  "paper_folders": 30,
+  "gene_symbols": 1988,
+  "origin_files": 196,
+  "origin_bytes": 396985659,
+  "main_article_files": 49,
+  "supporting_information_files": 147,
+  "papers_with_main_article": 30,
+  "papers_with_supporting_information": 16,
+  "gene_symbols_with_recommended_human_mapping": 1727,
+  "gene_symbols_unresolved": 82,
+  "problems": [],
+  "pass": true
+}

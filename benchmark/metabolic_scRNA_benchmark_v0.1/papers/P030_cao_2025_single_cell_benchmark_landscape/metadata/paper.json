@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P030",
+  "folder_id": "P030_cao_2025_single_cell_benchmark_landscape",
+  "title": "The current landscape and emerging challenges of benchmarking single-cell methods",
+  "identifiers": {
+    "doi": "10.1093/bib/bbaf380",
+    "pmid": "41045508",
+    "pmcid": "PMC12495992"
+  },
+  "publication": {
+    "venue": "Briefings in Bioinformatics",
+    "publisher": "Oxford University Press (OUP)",
+    "type": "peer_reviewed",
+    "published_at": "2025-08-31",
+    "version": "version_of_record"
+  },
+  "integrity": {
+    "checked_at": "2026-09-11T10:13:16+00:00",
+    "sources": [
+      "Crossref metadata",
+      "PubMed publication types/comments when PMID resolved"
+    ],
+    "screening_completeness": "Crossref+PubMed",
+    "retracted": false,
+    "expression_of_concern": false,
+    "corrections": [],
+    "publication_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "selection": {
+    "tier": "C",
+    "role": "benchmark_governance_reference",
+    "primary_axis": "METHOD",
+    "secondary_axes": [],
+    "rationale": "A current systematic audit of 282 single-cell benchmarking papers; retained to govern extensibility, interoperability, dataset choice, robustness, and downstream evaluation."
+  },
+  "code_sources": [],
+  "data_sources": [],
+  "verified_data_urls": [],
+  "repository_urls_extracted": [
+    "https://github.com/SydneyBioX/sc_bench_",
+    "https://github.com/SydneyBioX/",
+    "https://github.com/SydneyBioX/sc_bench_benchmark"
+  ],
+  "curation": {
+    "status": "reference_only_review",
+    "completed_stages": [
+      "S0_candidate_registration",
+      "S1_source_inventory",
+      "S2_candidate_insight",
+      "S3_paper_data_task_mapping"
+    ],
+    "pending_stages": [
+      "S4_independent_reproduction",
+      "S5_final_prompt_approval",
+      "S6_answerability_and_leakage_tests",
+      "S7_grader_adversarial_tests",
+      "S8_dual_signoff"
+    ],
+    "domain_curator": null,
+    "computational_curator": null,
+    "reviewed_at": null
+  }
+}

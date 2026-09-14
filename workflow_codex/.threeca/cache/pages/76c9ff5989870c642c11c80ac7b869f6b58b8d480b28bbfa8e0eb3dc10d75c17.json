@@ -1,0 +1,19 @@
+{
+  "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20758",
+  "final_url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20758",
+  "fetched_at": "2026-09-12T17:32:00.471587+00:00",
+  "raw_html_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\pages\\76c9ff5989870c642c11c80ac7b869f6b58b8d480b28bbfa8e0eb3dc10d75c17.html",
+  "title": "| Curated Cancer Cell Atlas",
+  "text": "Meta programs Breast: Bassez et al. 2021 Click here to download PDF Click here to download table of MP scores",
+  "links": [
+    {
+      "url": "https://www.dropbox.com/scl/fi/39ptyjstumwt1im2qfcjr/Meta-programs_Bassez2021_Breast.pdf?rlkey=bpeplg4ei3w7w7d1311eoiu6r&dl=1",
+      "text": "Click here to download PDF"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/jv5u542rdozei3n510aon/MP_scores_Bassez2021_Breast.csv.gz?rlkey=m6hg6d62kuuctrkl6we5nckby&dl=1",
+      "text": "Click here to download table of MP scores"
+    }
+  ],
+  "tables": []
+}

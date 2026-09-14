@@ -1,0 +1,19 @@
+{
+  "url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20119",
+  "final_url": "https://www.weizmann.ac.il/sites/3CA/study-data/meta-programs/20119",
+  "fetched_at": "2026-09-12T17:31:55.219752+00:00",
+  "raw_html_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\pages\\89de19fdd0008a966d08f5c25df94c8c561c4fd48ec0c8dd7dbfbc608ad3992e.html",
+  "title": "| Curated Cancer Cell Atlas",
+  "text": "Meta programs Brain: Yuan et al. 2018 Click here to download PDF Click here to download table of MP scores",
+  "links": [
+    {
+      "url": "https://www.dropbox.com/scl/fi/elxg37psp14v7dg6vkdg7/Meta-programs_Yuan2018_Brain.pdf?rlkey=axwdfoqkdqecgo5o56bw1jndc&dl=1",
+      "text": "Click here to download PDF"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/bk2yt0ma26h5hyg3nr1s3/MP_scores_Yuan2018_Brain.csv.gz?rlkey=m6poxuricl009zke21yhll9fd&dl=1",
+      "text": "Click here to download table of MP scores"
+    }
+  ],
+  "tables": []
+}

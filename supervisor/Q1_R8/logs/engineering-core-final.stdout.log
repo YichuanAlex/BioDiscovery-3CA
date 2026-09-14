@@ -1,0 +1,38 @@
+PASS: exact path, no installed-Codex references, no project Codex auto-discovery config, no external tool links.
+PASS: actual project CLI directory listing stays valid bounded JSON; file preview and cache boundary remain enforced.
+PASS: empty-reply recovery, failed-tool recovery, repeated verification, unchanged-read loop guard, isolated workspace.
+PASS: max-rounds 0 survives the old no-action stop and continues until verified completion.
+PASS: context recovery preserves independent asset references and reuses the actual original result without re-execution or new verification.
+PASS: a bare data path is rejected as a shell no-op and PowerShell is cooled for one response.
+PASS: autonomous plan recovery, nested paths, premature completion rejection, shell mutation validation, actual reasoning persistence, resume without mutation replay, unfinished budget nonzero exit.
+PASS: 3CA catalog budget cools a CLI-search tool for one response and preserves other tools for completion.
+PASS: empty JSON and fake PDF completion candidates are rejected; valid nonempty JSON can pass structural verification.
+PASS: structured actions preserve raw provider output/reasoning; missing arguments and cooled tools cannot execute; budgets and actual returned ids survive recovery.
+PASS: cookie challenge is rejected as unusable evidence.
+PASS: persistent checkpoint ENOSPC returns the retryable worker exit code with a stale resumable checkpoint.
+PASS: actual PowerShell launcher resumes stale-running exit 75, ignores unrelated malformed checkpoints, and releases its exclusive lock.
+PASS: tool43CA MCP initialized, listed all 10 tools, and completed a tool call.
+SKIP: desktop integration explicitly excluded; this run certifies core paths only, not desktop actions.
+Qwen3.5-4B local server is ready: http://127.0.0.1:8000/health
+PASS: attachment copied under C:\Users\User\Desktop\agentic\workflow_codex\.runtime\codex-home\attachments
+PASS: model, path guard, read, list, tool protocol, computer use, 3CA, network, write, shell.
+Qwen3.5-4B local server is ready: http://127.0.0.1:8000/health
+[tool] web_search: 最新新闻 2026 年
+
+Qwen3.5-4B> 检索已完成。
+
+**检索日期：** 2026-09-13
+
+**两条新闻及其来源链接：**
+
+1. **俄军袭击加剧重创乌克兰经济：2026 年 GDP 或减少 1.5 个百分点，今年冬季将"非常艰难"**
+   - 来源：RFI
+   - 链接：https://news.google.com/rss/articles/CBMi4wNBVV95cUxQbWdGc3VqTGFXendVMkQ4S0U4dlFrd2EzSFhPSE5YV2I5SGtUQ2EybEdobjdtNmVjb1NFUUpiRy1qS3pWWk5mVzVibWNHNmRjSEY0UXRZX1p5cWhkRE1Oc3hQakxpQVhYWHprRGMzMzVrWjAwMFNGZ29PLUZ4MmtoOVV0N3J1VlFteGJfd0o1a0ZNSkRNZDJ4OTRyelhxLVZJXzNERjA1T1lXWHdKMk83R0k4SG1fMDNGRGVJZVhWMS1GSW5OMld2RFdWa2pmTElsMGhZNllETEQ5RlFaRW9RZ0hGcGRmT0dsR2s4eC1ZNGRNTDlGdVJIYVhjei16YkNzY0FYWDJZRk1NQnAtVWNWUWpHVzJOVllzdXdpc2pneklyNlJtLU1rUHZpX3dkRkc5NHl5d3A0NnZMazlKZUhpaXpIVEhFbWRNWXFIdDd5MklKcHlVd2tGSi1TVmJwWEY5TFloeUlmRHlDSlJRenlqeTB2cjkyZjF0anpFTzNtX0JmVmtJM2ZhcGE0WFdfN21tUi10ZUg5enlZbmxSY3ZmMzRSZ0JxWS1Xck1NQ0xyUm9DbkZHVmI0dVQ4MUJmdHpxYWxETndRd1NROXV3V01VQXlRMzFHV0NVNlBzQkpOc3NWVzQ?oc=5
+
+2. **2026 年最新浦江海德最新新闻与全平台安装指南**
+   - 来源：ttplus.cn
+   - 链接：https://news.google.com/rss/articles/CBMiVkFVX3lxTFAxY1ZQYjV1eC02TW5ieHBRMjhDQTZlVVlhMG10b2R3RnphcFlKRmZfTWtjVGg5dFliaXpGVGxQc1o2dnBOVHVRR0NVQVJ3UHlueTlHV0RR?oc=5
+
+PASS: session transcript C:\Users\User\Desktop\agentic\workflow_codex\.runtime\codex-home\sessions\2026\09\13\rollout-2026-09-13T08-20-27-d1e6b62c-0de.jsonl
+PASS: exact path, no installed-Codex references, no project Codex auto-discovery config, no external tool links.
+PASS: workflow_codex core functional test completed; desktop action NOT certified.

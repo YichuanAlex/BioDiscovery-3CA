@@ -1,0 +1,44 @@
+\subsection{Dataset and Restricted Features}
+The melanoma Smart-seq2 dataset (3ca:20111) comprises 4\,645 cells across 19 samples, with 23\,686 genes and 20\,564\,439 nonzero entries (Fig.\ref{fig:dataset}). After detection filtering, 1\,360 metabolic genes were retained from 85 KEGG pathways. PCA on these 1\,360 features showed that the first 30 components explained 19.78\% of total variance, with PC1 strongly correlated with library complexity ($\rho = 0.650$, $p < 0.001$). The 548 unannotated cells were included in unsupervised clustering, while 4\,097 annotated cells were used for classification evaluation.
+
+\subsection{All-Cell Separation and Complexity}
+Unsupervised clustering of all 4\,645 cells with $k=2$ yielded a silhouette score of 0.377 and a mean adjusted Rand index (ARI) of 0.99965 across seeds (Table\ref{tab:clustering}). The matched random clustering achieved a mean silhouette of 0.316 (SD 0.008) , with an empirical $p$-value of 0.0476 from 20 exploratory runs without multiple-testing correction. Cell-type alignment was assessed via adjusted mutual information (AMI): 0.487 for cell type and 0.088 for sample. However, PC1 correlated strongly with library complexity ($\rho = 0.650$), suggesting that observed separation may be driven by technical variation. When clustering was performed on complexity-residualized features, the optimal $k$ increased to 4 with a reduced silhouette of 0.224 and ARI of 0.99967 (Table\ref{tab:clustering}), showing that the preferred partition changes after complexity residualization. The random mean $\pm$ SD describes 20 gene sets, and seed ARI reflects 10 seed fits across 45 pairwise comparisons, not a biological confidence interval.
+
+\subsection{Patient-Blocked Classification}
+Patient-blocked cross-validation was performed on the 4\,097 annotated cells using the 1\,360 metabolic genes (Table\ref{tab:classification}). The metabolic feature set achieved a balanced accuracy of 0.884 and macro-F1 of 0.856. In contrast, matched random feature sets yielded balanced accuracy of 0.896 $\pm$ 0.013 and macro-F1 of 0.875 $\pm$ 0.015, with metabolic scores lower than the observed random-set mean; no formal test of classifier differences was performed. The highly variable gene baseline (HVG) achieved balanced accuracy of 0.892 and macro-F1 of 0.897, suggesting that the metabolic feature set performs comparably to a standard high-dimensional baseline.
+
+\subsection{Malignant-Only Structure}
+Clustering of 1\,257 malignant cells from 15 samples selected $k=8$, with silhouette 0.227, seed ARI 0.81433, and sample AMI 0.742 (Table\ref{tab:clustering}). Joint patient and complexity residualization selected $k=2$, with silhouette 0.228 and seed ARI 0.96989; stable binary structure therefore remained. For the nine patients with at least 30 malignant cells, the median maximum within-patient silhouette was 0.271 (IQR 0.206--0.347). These summaries use a globally fitted malignant-cell PCA, not independent validation. The unadjusted optimum lies at the upper boundary of the candidate range 2--8. Neither this boundary optimum nor the adjusted binary partition establishes a biological state count. For visual context see Figs.~\ref{fig:separation} and~\ref{fig:robustness}.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Exploratory clustering settings. Candidates were $k=2$--$10$ for all cells and $k=2$--$8$ for malignant cells. Seed ARI is the descriptive mean across 45 pairwise comparisons of 10 seed fits, not biological replication.}
+\label{tab:clustering}
+\begin{tabular}{llccc}
+\toprule
+Population & Adjustment & $k$ & Silhouette & Seed ARI \\
+\midrule
+All cells & None & 2 & 0.377 & 0.99965 \\
+All cells & Complexity & 4 & 0.224 & 0.99967 \\
+Malignant & None & 8 & 0.227 & 0.81433 \\
+Malignant & Patient+complexity & 2 & 0.228 & 0.96989 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Classification on 4\,097 annotated cells using GroupKFold5; random SD reflects 20 gene sets, not a biological CI.}
+\label{tab:classification}
+\begin{tabular}{llc}
+\toprule
+Feature set & Balanced accuracy & Macro-F1 \\
+\midrule
+Metabolic & 0.884 & 0.856 \\
+Matched random (20) & 0.896 $\pm$ 0.013 & 0.875 $\pm$ 0.015 \\
+HVG & 0.892 & 0.897 \\
+\bottomrule
+\end{tabular}
+\end{table}

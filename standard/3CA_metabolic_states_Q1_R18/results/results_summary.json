@@ -1,0 +1,283 @@
+{
+  "study": {
+    "id": "3ca:20773",
+    "title": "Choudhury et al. 2022",
+    "disease": "Meningioma",
+    "technology": "10x",
+    "n_cells": 58843,
+    "n_samples": 10,
+    "n_patients": 6
+  },
+  "gene_list": {
+    "path": "C:\\Users\\User\\Desktop\\agentic\\standard\\metabolic genes total.csv",
+    "sha256": "7503180d29693bd1e654ea93281db0e3ec4177ff44842c8b02f6a098402e41a9",
+    "rows": 1988,
+    "unique_symbols": 1988,
+    "matched_symbols": 1798,
+    "unmatched_symbols": 190
+  },
+  "global": {
+    "scope": "global",
+    "n_cells": 58843,
+    "n_patients": 6,
+    "n_samples": 10,
+    "min_expression_cells": 589,
+    "n_metabolic_genes_retained": 1415,
+    "selected_k": 6,
+    "unconstrained_best_k": 5,
+    "selected_solution_meets_min_cluster_fraction": true,
+    "minimum_cluster_fraction_rule": 0.05,
+    "silhouette_selected_k": 0.21348021924495697,
+    "pca_variance_first_10": 0.11356895416975021,
+    "stability_mean_ari_vs_seed_0": 0.5268160324879227,
+    "stability_min_ari_vs_seed_0": 0.4231752360467605,
+    "matched_random_observed_silhouette": 0.28950271010398865,
+    "matched_random_exceed_count": 19,
+    "matched_random_replicates": 19,
+    "matched_random_add_one_p": 1.0,
+    "annotation_associations": {
+      "cell_type": {
+        "nmi": 0.3544447080987964,
+        "ami": 0.3543500485346131
+      },
+      "cell_subtype": {
+        "nmi": 0.47635329140288996,
+        "ami": 0.4762043584597129
+      },
+      "patient": {
+        "nmi": 0.4073024750783058,
+        "ami": 0.4072207213107819
+      },
+      "sample": {
+        "nmi": 0.3607165443041889,
+        "ami": 0.36058356698919475
+      },
+      "source": {
+        "nmi": 0.054325266901440794,
+        "ami": 0.05426034479772659
+      },
+      "per_patient_cell_type": [
+        {
+          "patient": "1",
+          "n_cells": 2538,
+          "cluster_cell_type_nmi": 0.3651286641092087
+        },
+        {
+          "patient": "2",
+          "n_cells": 914,
+          "cluster_cell_type_nmi": 0.5979261654422193
+        },
+        {
+          "patient": "3",
+          "n_cells": 3287,
+          "cluster_cell_type_nmi": 0.22634708772291284
+        },
+        {
+          "patient": "4",
+          "n_cells": 9015,
+          "cluster_cell_type_nmi": 0.2937251808381016
+        },
+        {
+          "patient": "5",
+          "n_cells": 19544,
+          "cluster_cell_type_nmi": 0.58762785375292
+        },
+        {
+          "patient": "6",
+          "n_cells": 23545,
+          "cluster_cell_type_nmi": 0.4796996141165459
+        }
+      ]
+    },
+    "patients_with_at_least_two_clusters_ge_5pct": 6,
+    "cluster_sizes": [
+      {
+        "cluster": 0,
+        "n_cells": 7790
+      },
+      {
+        "cluster": 1,
+        "n_cells": 13436
+      },
+      {
+        "cluster": 2,
+        "n_cells": 7810
+      },
+      {
+        "cluster": 3,
+        "n_cells": 6552
+      },
+      {
+        "cluster": 4,
+        "n_cells": 17736
+      },
+      {
+        "cluster": 5,
+        "n_cells": 5519
+      }
+    ],
+    "cluster_diagnostics": [
+      {
+        "cluster": 0,
+        "n_cells": 7790,
+        "median_complexity": 3139.5,
+        "mean_complexity": 3445.277406931964,
+        "n_patients": 6,
+        "n_samples": 10
+      },
+      {
+        "cluster": 1,
+        "n_cells": 13436,
+        "median_complexity": 1127.0,
+        "mean_complexity": 1285.0474099434355,
+        "n_patients": 6,
+        "n_samples": 10
+      },
+      {
+        "cluster": 2,
+        "n_cells": 7810,
+        "median_complexity": 5481.5,
+        "mean_complexity": 5445.214340588988,
+        "n_patients": 5,
+        "n_samples": 6
+      },
+      {
+        "cluster": 3,
+        "n_cells": 6552,
+        "median_complexity": 1088.5,
+        "mean_complexity": 1588.0511294261294,
+        "n_patients": 6,
+        "n_samples": 10
+      },
+      {
+        "cluster": 4,
+        "n_cells": 17736,
+        "median_complexity": 3550.0,
+        "mean_complexity": 3775.7983198015336,
+        "n_patients": 5,
+        "n_samples": 7
+      },
+      {
+        "cluster": 5,
+        "n_cells": 5519,
+        "median_complexity": 2240.0,
+        "mean_complexity": 2389.5515491936944,
+        "n_patients": 6,
+        "n_samples": 10
+      }
+    ]
+  },
+  "cd8": {
+    "scope": "cd8",
+    "n_cells": 3624,
+    "n_patients": 6,
+    "n_samples": 10,
+    "min_expression_cells": 37,
+    "n_metabolic_genes_retained": 1214,
+    "selected_k": 2,
+    "unconstrained_best_k": 2,
+    "selected_solution_meets_min_cluster_fraction": false,
+    "minimum_cluster_fraction_rule": 0.05,
+    "silhouette_selected_k": 0.6333213448524475,
+    "pca_variance_first_10": 0.05620913580060005,
+    "stability_mean_ari_vs_seed_0": 1.0,
+    "stability_min_ari_vs_seed_0": 1.0,
+    "matched_random_observed_silhouette": 0.6646566390991211,
+    "matched_random_exceed_count": 0,
+    "matched_random_replicates": 19,
+    "matched_random_add_one_p": 0.05,
+    "annotation_associations": {
+      "cell_type": {
+        "nmi": 0.0,
+        "ami": 0.0
+      },
+      "cell_subtype": {
+        "nmi": 0.0,
+        "ami": 0.0
+      },
+      "patient": {
+        "nmi": 0.145141774582862,
+        "ami": 0.14384390709892034
+      },
+      "sample": {
+        "nmi": 0.10210952383196795,
+        "ami": 0.1002596950630126
+      },
+      "source": {
+        "nmi": 0.004883055518741897,
+        "ami": 0.0040749224715550605
+      },
+      "per_patient_cell_type": []
+    },
+    "patients_with_at_least_two_clusters_ge_5pct": 0,
+    "cluster_sizes": [
+      {
+        "cluster": 0,
+        "n_cells": 54
+      },
+      {
+        "cluster": 1,
+        "n_cells": 3570
+      }
+    ],
+    "cluster_diagnostics": [
+      {
+        "cluster": 0,
+        "n_cells": 54,
+        "median_complexity": 8384.5,
+        "mean_complexity": 7775.740740740741,
+        "n_patients": 3,
+        "n_samples": 5
+      },
+      {
+        "cluster": 1,
+        "n_cells": 3570,
+        "median_complexity": 1182.0,
+        "mean_complexity": 1337.0840336134454,
+        "n_patients": 6,
+        "n_samples": 10
+      }
+    ]
+  },
+  "methods": {
+    "normalization": "per-cell library-size normalization to 10,000 counts followed by log1p",
+    "feature_prevalence": "matched metabolic genes expressed in at least 1% of cells in each scope, with a floor of 20 cells",
+    "feature_scaling": "gene-wise mean centering and standard-deviation scaling; values clipped to [-10, 10]",
+    "embedding": "randomized PCA using metabolic genes only",
+    "cluster_selection": "maximum silhouette score in prespecified k sweep",
+    "cluster_size_guardrail": "primary selection restricted to solutions whose smallest cluster contains at least 5% of the scope; an unconstrained diagnostic solution is retained only if none pass",
+    "stability_seeds": [
+      0,
+      17,
+      42,
+      73,
+      101
+    ],
+    "metric_subsample_seed": 7321,
+    "control": "19 non-metabolic random gene sets approximately matched on expression prevalence and mean count; same cells, gene count, PCA and k"
+  },
+  "environment": {
+    "python": "3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scipy": "1.14.0",
+    "scikit_learn": "1.5.1",
+    "matplotlib": "3.10.1",
+    "seaborn": "0.13.2"
+  },
+  "provenance": {
+    "catalog_fetched_at": "2026-09-14T07:28:19.364731+00:00",
+    "homepage_fetched_at": "2026-09-14T07:29:04.027738+00:00",
+    "methods_fetched_at": "2026-09-14T07:29:14.861872+00:00",
+    "data_archive_sha256": "2156a73fd5f95a198ef90821f2d734bfa7e0b5aa3686deefd1b5c5d5d1269aa1",
+    "metadata_archive_sha256": "0614f546a56916066ed8f7fca1a24dbdfc9e7b28af1bd1c9e982a59a25ea3828",
+    "data_archive_verified_at": "2026-09-14T07:32:23.523276+00:00",
+    "metadata_archive_verified_at": "2026-09-14T07:32:15.071142+00:00",
+    "study_page": "https://www.weizmann.ac.il/sites/3CA/brain",
+    "homepage": "https://www.weizmann.ac.il/sites/3CA/",
+    "methods_page": "https://www.weizmann.ac.il/sites/3CA/methods",
+    "citation_url": "https://www.nature.com/articles/s41588-022-01061-8"
+  },
+  "elapsed_seconds": 47.70297455787659
+}

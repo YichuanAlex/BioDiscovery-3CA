@@ -1,0 +1,7 @@
+cluster,replicate_field,replicates_with_at_least_5_cells,total_replicates
+0,patient,3,6
+1,patient,4,6
+2,patient,4,6
+3,patient,2,6
+4,patient,3,6
+5,patient,1,6

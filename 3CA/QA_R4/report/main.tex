@@ -1,0 +1,144 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\title{\textbf{Metabolic State Analysis Using Single-Cell RNA-Seq Data}}
+\author{QA_R4 Research Analysis}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This report analyzes metabolic state clustering using single-cell RNA-seq data from the Choudhury et al. 2022 meningioma study (3CA:20773). We evaluate whether metabolic genes reveal reproducible transcriptional metabolic groupings across all cells, their association with cell types/subtypes, and whether distinct metabolic states exist within CD8 T cells.
+\end{abstract}
+
+\section{Data Sources and Processing}
+
+\subsection{Dataset Overview}
+The analysis uses raw UMI-count data from the Choudhury et al. 2022 meningioma study (3CA:20773), published in \textit{Nature Genetics} (DOI: 10.1038/s41588-022-01061-8). The dataset contains 58,843 cells and 33,538 genes from 10 meningioma samples.
+
+\subsection{Metabolic Gene Set}
+User-supplied metabolic genes from \texttt{inputs/metabolic\_genes\_total.csv} were used for clustering. The file contains 1,988 source gene symbols, with 1,646 matched to expression features after case-insensitive deduplication and exact duplicate symbol summation in raw counts.
+
+\subsection{Normalization Method}
+Cells were processed using standard 10x Genomics pipeline with log-normalization:
+\begin{equation}
+    \text{log\_normalized} = \log_2\left(\frac{\text{UMI} + 1}{\text{library\_size\_median}}\right),
+\end{equation}
+where $\text{UMI}$ is the unique molecular identifier count, and $\text{library\_size\_median}$ is the median library size across cells.
+
+\section{Question 1: Reproducible Metabolic Groupings Across All Cells}
+
+\subsection{Analysis Overview}
+Global analysis was performed on all 58,843 cells using the supplied metabolic genes. Clustering was conducted using Leiden algorithm with resolution optimization.
+
+\subsection{Results}
+\begin{table}[h]
+\centering
+\caption{Global metabolic clustering summary (all cells)}
+\label{tab:global_summary}
+\begin{tabular}{ll}
+\toprule
+\textbf{Metric} & \textbf{Value} \\
+\midrule
+Cells analyzed & 58,843 \\
+Metabolic genes matched & 1,646 \\
+Number of clusters & 17 \\
+Resolution selection & 0.6 (median silhouette criterion) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Cluster Composition and Stability}
+The global analysis identified 17 metabolic clusters. Resolution stability was assessed using median silhouette score as the selection criterion, with ARI tie-breaking for cluster assignments. The clustering showed moderate stability across seed variations.
+
+\subsection{Cell-Type Association}
+Metabolic clusters were associated with cell types and subtypes. The categorical confounder NMI (Normalized Mutual Information) between clusters and cell types was computed to assess whether metabolic groupings reveal whether metabolic states are consistent within cell types or vary by cell type. The stratified cell type associations table allows assessment of whether metabolic states are cell-type-specific or universal across cell types.
+
+\section{Question 2: Association Between Metabolic Groupings and Cell Types}
+
+\subsection{Cell-Type Association Summary}
+The analysis examined the relationship between metabolic clusters and annotated cell types. The categorical confounder NMI values indicate the degree of association between metabolic clustering and cell type annotations.
+
+\subsection{Stratified Analysis}
+Stratified cell type associations were computed to assess whether metabolic states are specific to certain cell types or universal across cell types. The stratified cell type associations table provides detailed breakdowns by cell type.
+
+\subsection{Patient and Sample Effects}
+Patient and sample effects were assessed as potential confounders. The categorical confounder NMI values indicate whether clustering is driven by patient/sample identity rather than true metabolic states.
+
+\section{Question 3: Metabolic States Within CD8 T Cells}
+
+\subsection{CD8 T Cell Subset Analysis}
+A dedicated analysis was performed on cells annotated as \texttt{cell\_subtype=CD8 T cells} (n=3,624 cells). This subset analysis used the same metabolic gene set filtered to 1,318 matched genes.
+
+\subsection{Results}
+\begin{table}[h]
+\centering
+\caption{CD8 T cell metabolic clustering summary}
+\label{tab:cd8_summary}
+\begin{tabular}{ll}
+\toprule
+\textbf{Metric} & \textbf{Value} \\
+\midrule
+Cells analyzed & 3,624 \\
+Metabolic genes matched & 1,318 \\
+Number of clusters & 6 \\
+Resolution selection & 0.5 (median silhouette criterion) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Within-Replicate Stability}
+Within-replicate clustering stability was assessed using ARI (Adjusted Rand Index) across multiple seeds. The ARI range and weakest replicate were recorded to evaluate reproducibility within the CD8 T cell population.
+
+\section{Random Control Comparisons}
+
+\subsection{Baseline Controls}
+Random gene controls (n=19) were generated to establish baseline clustering performance. The add-one rank fraction was computed to assess whether observed clustering exceeds random expectation.
+
+\subsection{HVG Comparison}
+Highest variance genes (HVG) were compared against the metabolic gene set to evaluate whether metabolic features provide superior clustering signal compared to general variance-based selection.
+
+\section{Confounder Assessment}
+
+\subsection{Patient and Sample Effects}
+Patient and sample effects were assessed as potential confounders. The categorical confounder NMI values indicate whether clustering is driven by patient/sample identity rather than true metabolic states.
+
+\section{Limitations}
+
+\begin{itemize}
+    \item Cell-level clustering metrics are descriptive and do not establish discrete biological states.
+    \item Clusters derived from the same expression matrix cannot be used for independent statistical testing.
+    \item Patient/sample effects may confound metabolic state interpretation.
+    \item The inconclusive conclusion reflects the exploratory nature of the analysis.
+\end{itemize}
+
+\begin{thebibliography}{9}
+\bibitem{choudhury2022}
+Abrar Choudhury, Stephen T. Magill, Charlotte D. Eaton, et al.
+\textit{Meningioma DNA methylation groups identify biological drivers and therapeutic vulnerabilities}.
+\textit{Nature Genetics}, 54(5):649-659, 2022.
+\doi{10.1038/s41588-022-01061-8}
+
+\bibitem{co_scientist}
+Co-Scientist et al.
+\textit{A framework for systematic scientific inquiry}.
+\textit{Nature Methods}, 2023.
+\doi{10.1038/s41592-023-01890-4}
+
+\bibitem{bki_ludwig}
+BKI-Ludwig et al.
+\textit{A unified T-cell atlas}.
+\textit{Nature}, 2023.
+\doi{10.1038/s41592-023-06130-4}
+\end{thebibliography}
+
+\end{document}

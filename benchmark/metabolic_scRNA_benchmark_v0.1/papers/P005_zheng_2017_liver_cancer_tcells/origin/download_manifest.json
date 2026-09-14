@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P005",
+  "si_requested": true,
+  "downloaded_at": "2026-09-11T10:13:16+00:00",
+  "pmc_attempt": {
+    "status": "pmcid_not_available",
+    "pmcid": ""
+  },
+  "official_fallback_attempt": {
+    "provider": "official_publisher_or_repository",
+    "status": "full_text_available_si_not_found",
+    "attempts": [
+      {
+        "url": "https://linkinghub.elsevier.com/retrieve/pii/S0092867417305962",
+        "status": "not_full_text"
+      },
+      {
+        "url": "https://linkinghub.elsevier.com/retrieve/pii/S0092867417305962",
+        "status": "not_full_text"
+      }
+    ]
+  },
+  "files": [
+    {
+      "relative_path": "main_article.pdf",
+      "role": "main_article",
+      "media_type": "application/pdf",
+      "size_bytes": 10339111,
+      "sha256": "7447552ebab6808df3f20593c3a2b5f9097735c5402b7f3f69cdb1d991bc0dce",
+      "source_url": "user-supplied-local://workspace/Landscape%20of%20Infiltrating%20T%20Cells%20in%20Liver%20Cancer%20Revealed%20by%20Single-Cell%20Sequencing.pdf",
+      "official_landing_url": "https://doi.org/10.1016/j.cell.2017.05.035",
+      "acquisition_method": "user_supplied_local",
+      "original_filename": "Landscape of Infiltrating T Cells in Liver Cancer Revealed by Single-Cell Sequencing.pdf",
+      "pdf_validation": {
+        "checked_at": "2026-09-11",
+        "magic": "%PDF-",
+        "pdfinfo": "pass",
+        "pdftotext_all_pages": "pass",
+        "first_page_render": "pass",
+        "pages": 32,
+        "encrypted": false,
+        "doi_match": true,
+        "title_visual_match": true
+      }
+    }
+  ],
+  "verification": {
+    "checks": [
+      "nonzero size",
+      "PDF magic when applicable",
+      "SHA-256",
+      "source URL recorded"
+    ],
+    "pdf_text_or_title_check": "external acceptance check; see top-level 构建与验收报告.md"
+  },
+  "browser_verification": {
+    "checked_at": "2026-09-11",
+    "status": "full_text_html_visible_pdf_link_verified_not_exported",
+    "url": "https://www.cell.com/cell/fulltext/S0092-8674(17)30596-2",
+    "title": "Landscape of Infiltrating T Cells in Liver Cancer Revealed by Single-Cell Sequencing",
+    "article_body_visible": true,
+    "page_text_length": 77444,
+    "official_pdf_url": "https://www.cell.com/action/showPdf?pii=S0092-8674%2817%2930596-2",
+    "content_exported": false,
+    "note": "The official Cell full-text page and PDF link were verified interactively. The browser did not yield a verifiable local export, so no file was added to origin/."
+  }
+}

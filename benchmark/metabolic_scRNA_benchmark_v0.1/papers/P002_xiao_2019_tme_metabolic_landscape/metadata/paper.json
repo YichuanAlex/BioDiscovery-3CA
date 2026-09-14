@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P002",
+  "folder_id": "P002_xiao_2019_tme_metabolic_landscape",
+  "title": "Metabolic landscape of the tumor microenvironment at single cell resolution",
+  "identifiers": {
+    "doi": "10.1038/s41467-019-11738-0",
+    "pmid": "31434891",
+    "pmcid": "PMC6704063"
+  },
+  "publication": {
+    "venue": "Nature Communications",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "peer_reviewed",
+    "published_at": "2019-08-21",
+    "version": "version_of_record"
+  },
+  "integrity": {
+    "checked_at": "2026-09-11T10:13:16+00:00",
+    "sources": [
+      "Crossref metadata",
+      "PubMed publication types/comments when PMID resolved"
+    ],
+    "screening_completeness": "Crossref+PubMed",
+    "retracted": false,
+    "expression_of_concern": false,
+    "corrections": [],
+    "publication_types": [
+      "Journal Article",
+      "Research Support, N.I.H., Extramural",
+      "Research Support, Non-U.S. Gov't"
+    ]
+  },
+  "selection": {
+    "tier": "A",
+    "role": "direct_biological_benchmark",
+    "primary_axis": "Q1",
+    "secondary_axes": [
+      "Q2",
+      "Q3"
+    ],
+    "rationale": "This is the closest published precedent to clustering cells using metabolic-gene expression and testing whether metabolic profiles distinguish malignant, immune, and stromal compartments."
+  },
+  "code_sources": [],
+  "data_sources": [
+    {
+      "accession": "GSE72056",
+      "access": "public",
+      "role": "unspecified",
+      "verification": "manually_seeded_from_primary_source"
+    },
+    {
+      "accession": "GSE103322",
+      "access": "public",
+      "role": "unspecified",
+      "verification": "manually_seeded_from_primary_source"
+    }
+  ],
+  "verified_data_urls": [],
+  "repository_urls_extracted": [
+    "https://github.com/LocasaleLab/Single-Cell-Metabolic-Landscape",
+    "https://github.com/jkrijthe/Rtsne"
+  ],
+  "curation": {
+    "status": "candidate_requires_independent_reproduction",
+    "completed_stages": [
+      "S0_candidate_registration",
+      "S1_source_inventory",
+      "S2_candidate_insight",
+      "S3_paper_data_task_mapping"
+    ],
+    "pending_stages": [
+      "S4_independent_reproduction",
+      "S5_final_prompt_approval",
+      "S6_answerability_and_leakage_tests",
+      "S7_grader_adversarial_tests",
+      "S8_dual_signoff"
+    ],
+    "domain_curator": null,
+    "computational_curator": null,
+    "reviewed_at": null
+  }
+}

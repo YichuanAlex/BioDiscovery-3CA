@@ -1,0 +1,82 @@
+{
+  "source": "NCBI PubMed E-utilities",
+  "query": "single cell metabolism",
+  "retrieved_at": "2026-09-14T04:18:56.401573+00:00",
+  "count": 236625,
+  "returned": 1,
+  "records": [
+    {
+      "uid": "42732672",
+      "title": "Multi-omics and spatial transcriptomics reveal that S100A10 drives CD8+ T-cell exhaustion and immune evasion in hepatocellular carcinoma through cPLA2-5-LOX-mediated arachidonic acid metabolism and ferroptosis.",
+      "authors": [
+        {
+          "name": "Zhang J",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Wang G",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Zhou Z",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Pu B",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Zhang X",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Ji X",
+          "authtype": "Author",
+          "clusterid": ""
+        },
+        {
+          "name": "Wang X",
+          "authtype": "Author",
+          "clusterid": ""
+        }
+      ],
+      "fulljournalname": "International immunopharmacology",
+      "pubdate": "2026 Sep 13",
+      "volume": "189",
+      "issue": "",
+      "pages": "117355",
+      "elocationid": "doi: 10.1016/j.intimp.2026.117355",
+      "articleids": [
+        {
+          "idtype": "pubmed",
+          "idtypen": 1,
+          "value": "42732672"
+        },
+        {
+          "idtype": "doi",
+          "idtypen": 3,
+          "value": "10.1016/j.intimp.2026.117355"
+        },
+        {
+          "idtype": "pii",
+          "idtypen": 4,
+          "value": "S1567-5769(26)01202-6"
+        }
+      ]
+    }
+  ],
+  "source_urls": [
+    "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=single+cell+metabolism&retmode=json&retmax=1&tool=workflow_codex",
+    "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=42732672&retmode=json&tool=workflow_codex"
+  ],
+  "response_sha256": {
+    "search": "31fedc03a5b1c2a506691b7eeadc3993739eae2b9af88fd55d440aed2f101dd2",
+    "summary": "a2cda2e131fd7d49e9139c2a2d48c0825b763a19b75829c967445235ee33dc2f"
+  },
+  "metadata_path": "sources\\literature\\pubmed_86a22e973103a0b5.json"
+}

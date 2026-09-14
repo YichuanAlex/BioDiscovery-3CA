@@ -1,0 +1,166 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{fancyhdr}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{tikz}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{float}
+
+\geometry{margin=1in}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\lfoot{3CA Metabolic State Analysis - Round 12}
+\rfoot{2026-09-13}
+
+\title{\textbf{Distinct Clusters of Transcriptional Metabolic States?} \\
+Exploratory Analysis Using Reactome Metabolic Gene Sets on 3CA Brain scRNA-seq Data}
+\author{3CA Research Workflow - Round 12}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This study investigates whether transcriptional metabolic gene expression patterns can identify distinct clusters in single-cell RNA-seq data from the Choudhury et al. (2022) 3CA Brain dataset (3ca:20773). We used Reactome metabolism pathway genes (R-HSA-1430728) to perform Leiden clustering on 58,843 cells from meningioma samples. The analysis reveals that metabolic genes can separate cells into 17 clusters, but the evidence for discrete biological metabolic states remains inconclusive.
+\end{abstract}
+
+\section{Introduction}
+Metabolic reprogramming is a hallmark of cancer, with distinct metabolic programs associated with tumor subtypes and therapeutic responses. Single-cell RNA-seq has enabled the identification of metabolic heterogeneity at unprecedented resolution. However, whether metabolic gene expression defines discrete biological states or exists on a continuum remains an open question.
+
+This study asks: \textit{Are there distinct clusters of transcriptional metabolic states?} In other words, can we use metabolic genes only to cluster or separate groups in the single-cell RNA-seq dataset?
+
+\section{Data and Methods}
+
+\subsection{Dataset}
+We analyzed the Choudhury et al. (2022) meningioma dataset from the 3CA Curated Cancer Cell Atlas \citep{choudhury2022}. This 10x Genomics dataset contains:
+\begin{itemize}
+    \item 58,843 cells from 10 samples across 6 patients
+    \item 33,538 genes (33,514 unique symbols after aggregating 24 duplicate symbols)
+    \item Raw UMI count matrix (Exp_data_UMIcounts.mtx)
+    \item Cell metadata including patient, sample, cell_type, cell_subtype, and cell_cycle_phase
+\end{itemize}
+
+\subsection{Metabolic Gene Set}
+We used Reactome metabolism pathway genes (R-HSA-1430728, release 97), containing 2,197 genes. After intersecting with the expression matrix and aggregating duplicate symbols, 1,984 metabolic genes were used for clustering.
+
+\subsection{Analysis Pipeline}
+\begin{enumerate}
+    \item \textbf{Normalization}: Per-cell library size normalization to 10,000, followed by log1p transformation
+    \item \textbf{Feature Scaling}: Scanpy scale(zero_center=False, max_value=10)
+    \item \textbf{PCA}: 30 components using arpack solver (seed=0)
+    \item \textbf{Graph Construction}: k-NN graph with n_neighbors=15 (seed=0)
+    \item \textbf{Clustering}: Leiden algorithm with resolution=0.4 (selected seed=0)
+    \item \textbf{Controls}: HVG-based gene set and 19 size-matched random gene sets
+    \item \textbf{Metrics}: Silhouette, Calinski-Harabasz, Davies-Bouldin, ARI, NMI
+\end{enumerate}
+
+\section{Results}
+
+\subsection{Clustering Results}
+Leiden clustering with resolution=0.4 produced 17 clusters containing 58,843 cells. Cluster sizes range from 2,847 to 9,017 cells.
+
+\begin{table}[h!]
+\centering
+\caption{Cluster sizes from metabolic gene-based Leiden clustering}
+\begin{tabular}{lrr}
+\toprule
+Cluster & Size & Percentage \\
+\midrule
+10 & 9,017 & 15.3\% \\
+13 & 8,793 & 14.9\% \\
+16 & 6,723 & 11.4\% \\
+9 & 5,813 & 9.9\% \\
+7 & 3,834 & 6.5\% \\
+3 & 3,714 & 6.3\% \\
+6 & 3,197 & 5.4\% \\
+1 & 3,039 & 5.2\% \\
+11 & 3,021 & 5.1\% \\
+4 & 2,847 & 4.8\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Clustering Metrics}
+The clustering achieved:
+\begin{itemize}
+    \item Silhouette score: 0.216
+    \item Calinski-Harabasz index: 6,394
+    \item Davies-Bouldin index: 1.48
+    \item Mean pairwise ARI: 0.955
+    \item Mean pairwise NMI: 0.968
+\end{itemize}
+
+\subsection{Comparison to Controls}
+\begin{itemize}
+    \item \textbf{HVG control}: Silhouette = 0.288 (higher than metabolic clustering)
+    \item \textbf{Random controls (19 sets)}: Mean silhouette = 0.221, range [0.202, 0.235]
+    \item \textbf{Baseline exceedance fraction}: 0.05 (5\% of random controls exceeded metabolic clustering silhouette)
+\end{itemize}
+
+\subsection{Confounder Analysis}
+We assessed the association between clusters and potential confounders:
+\begin{itemize}
+    \item \textbf{Patient}: NMI = 0.551, ARI = 0.340 (6 patients)
+    \item \textbf{Sample}: NMI = 0.578, ARI = 0.442 (10 samples)
+    \item \textbf{Cell type}: NMI = 0.497, ARI = 0.189 (6 types)
+    \item \textbf{Cell subtype}: NMI = 0.654, ARI = 0.529 (15 subtypes)
+    \item \textbf{Cell cycle phase}: NMI = 0.191, ARI = 0.038 (5 phases)
+\end{itemize}
+
+\subsection{Seed Stability}
+Clustering was performed with 5 random seeds (0, 17, 42, 73, 101) at 3 resolutions (0.4, 0.8, 1.2). The selected resolution (0.4) and seed (0) produced the most stable results with mean pairwise ARI $\ge$ 0.75 across replicates.
+
+\section{Discussion}
+
+\subsection{Metabolic Gene-Based Clustering}
+The analysis demonstrates that Reactome metabolic genes can separate cells into 17 distinct clusters. However, several important considerations emerge:
+
+\begin{enumerate}
+    \item \textbf{Cluster stability}: The clustering is stable across multiple seeds and resolutions, with high pairwise ARI/NMI values.
+    \item \textbf{Control comparison}: The HVG-based gene set produces a higher silhouette score (0.288 vs 0.216), suggesting that general expression variance may capture more structure than metabolic genes alone.
+    \item \textbf{Confounder sensitivity}: Clusters show moderate association with cell subtype (NMI=0.654) and sample (NMI=0.578), but weak association with patient (NMI=0.551).
+    \item \textbf{Random baseline}: Only 5\% of size-matched random gene sets exceeded the metabolic clustering silhouette, indicating some signal above random chance.
+\end{enumerate}
+
+\subsection{Metabolic States vs. Cell Types}
+The moderate association with cell subtype (NMI=0.654) suggests that metabolic gene expression may partially reflect cell type identity. However, the weak association with patient (NMI=0.551) indicates that metabolic programs are not strictly donor-specific.
+
+\subsection{Limitations}
+\begin{enumerate}
+    \item \textbf{No significance testing}: Cluster labels are data-derived and not tested against a null model.
+    \item \textbf{Continuum vs. discrete}: The analysis does not formally test whether metabolic states exist as discrete entities or on a continuum.
+    \item \textbf{Within-replicate validation}: Re-clustering within replicates is descriptive, not held-out validation.
+    \item \textbf{Random controls}: Size-matched random gene sets are not matched for expression mean or dispersion.
+    \item \textbf{Resolution selection}: Resolution was selected using the same dataset, not cross-validated.
+\end{enumerate}
+
+\subsection{Conclusion}
+\textbf{Metabolic genes can separate cells into distinct clusters, but the evidence for discrete biological metabolic states remains inconclusive.} The clustering is stable and shows some signal above random chance, but the moderate confounder associations and lack of formal significance testing prevent definitive conclusions about discrete metabolic states.
+
+\section{References}
+\begin{thebibliography}{9}
+\bibitem{choudhury2022}
+Abrar Choudhury, Stephen T. Magill, Charlotte D. Eaton, Briana C. Prager, William C. Chen, Martha A. Cady, Kyounghee Seo, Calixto-Hope G. Lucas, Tim J. Casey-Clyde, Harish N. Vasudevan, S. John Liu, Javier E. Villanueva-Meyer, Tai-Chung Lam, Jenny Kan-Suen Pu, Lai-Fung Li, Gilberto Ka-Kit Leung, Danielle L. Swaney, Michael Y. Zhang, Jason W. Chan, Zhixin Qiu, Michael V. Martin, Matthew S. Susko, Steve E. Braunstein, Nancy Ann Oberheim Bush, Jessica D. Schulte, Nicholas Butowski, Penny K. Sneed, Mitchel S. Berger, Nevan J. Krogan, Arie Perry, Joanna J. Phillips, David A. Solomon, Joseph F. Costello, Michael W. McDermott, Jeremy N. Rich, David R. Raleigh.
+\textit{Meningioma DNA methylation groups identify biological drivers and therapeutic vulnerabilities}.
+\textbf{Nature Genetics}, 54(5):649-659, 2022.
+\url{https://doi.org/10.1038/s41588-022-01061-8}
+\end{thebibliography}
+
+\end{document}

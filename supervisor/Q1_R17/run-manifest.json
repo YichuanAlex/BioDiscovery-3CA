@@ -1,0 +1,119 @@
+{
+  "research_gate": "results/analysis_manifest.json required",
+  "engineering_tests": "full_passed",
+  "run_until_complete": true,
+  "supervisor": "C:\\Users\\User\\Desktop\\agentic\\supervisor\\Q1_R17",
+  "prompt_sha256": "6e95fded8c85634d3dd705e6f7d2d814cff2941e52035fdae36364fb5e0451b8",
+  "model_identity": {
+    "id": "Qwen3.5-4B",
+    "object": "model",
+    "created": 1789292817,
+    "owned_by": "vllm",
+    "root": "/mnt/c/Users/User/Desktop/agentic/model/Qwen3.5-4B",
+    "parent": null,
+    "max_model_len": 65536,
+    "permission": [
+      {
+        "id": "modelperm-8524e65f92bef975",
+        "object": "model_permission",
+        "created": 1789292817,
+        "allow_create_engine": false,
+        "allow_sampling": true,
+        "allow_logprobs": true,
+        "allow_search_indices": false,
+        "allow_view": true,
+        "allow_fine_tuning": false,
+        "organization": "*",
+        "group": null,
+        "is_blocking": false
+      }
+    ]
+  },
+  "computer_use": "removed",
+  "started_at": "2026-09-13T09:46:57.8738485Z",
+  "semantic_acceptance": "pending",
+  "research_workspace_initially_empty": true,
+  "frozen_files": [
+    {
+      "sha256": "aec6b89a2c4b3af84ce13e5c1a1dcd73bb50e2464c3354bbde3ab04438b0cc79",
+      "file": "run-Qwen3.5-4B.ps1"
+    },
+    {
+      "sha256": "0da8522bc1403117c406c0ca5267710c7c1ff09e52dbb88a4bea4b308fd27dfb",
+      "file": "start-Qwen3.5-4B-server.ps1"
+    },
+    {
+      "sha256": "e700bf77cafa82367d8bd586af98cfb8640da2690ec2330c51c81cf319bb575f",
+      "file": "codex-cli\\bin\\codex.js"
+    },
+    {
+      "sha256": "ec411ddccb281f5437608b69ed39d8aa6ffc7b5b102e53ce3ec5c9f588920525",
+      "file": "codex-cli\\bin\\Qwen3.5-4B.js"
+    },
+    {
+      "sha256": "e4b029859560fbd94566bd7c1d6d048d77e06f66ab42cffcab82d88c6eb028c5",
+      "file": "codex-cli\\bin\\Qwen3.5-4B-network.js"
+    },
+    {
+      "sha256": "176b9ed99fdf31908ec3785ef7000b28bcb0e6a3a5325f6cb11e6622ad161386",
+      "file": "codex-cli\\bin\\Qwen3.5-4B-threeca.js"
+    },
+    {
+      "sha256": "4b8faa06777852f7e5489922b40a9541adf4a0c0b0dab1a15ddcf71c27c46007",
+      "file": "codex-cli\\bin\\Qwen3.5-4B-research.js"
+    },
+    {
+      "sha256": "7fd72460986876b5ce8d5e8f80fdfc304a085ce17590ae20a94f59d6e03f64b7",
+      "file": "codex-cli\\bin\\test-Qwen3.5-4B-recovery.mjs"
+    },
+    {
+      "sha256": "b41eec38ab990178d5ff5cb5fe127971bdd8949310a948b0fcddb958bb631018",
+      "file": "tools\\tool43CA\\CLI\\src\\threeca.py"
+    },
+    {
+      "sha256": "53840d616b722c728b07c74c263a5d979e289421d9fedc8236f3251a1964adf5",
+      "file": "tools\\tool43CA\\MCP\\server.py"
+    },
+    {
+      "sha256": "33d3e9bbad74249487956fa1034f083479ebb0ab8a683411adcbc24f5545f2bb",
+      "file": "tools\\tool43CA\\SKILL\\threeca-access\\SKILL.md"
+    },
+    {
+      "sha256": "66c925e39679388123b94c54f0f005fa3f7512fecf4945050ba182428b21c36d",
+      "file": "tools\\research-quality\\research_quality.py"
+    },
+    {
+      "sha256": "ae6fc8ef52aa2d3061752f96cb0f016e1fd7efae01878c1a288ff2edc247d6fe",
+      "file": "tools\\research-quality\\metabolic_states.py"
+    },
+    {
+      "sha256": "085f833d97581e2b811565b7b51115f247a2eda5fc90406e79168bbc9cb76347",
+      "file": "tools\\research-quality\\mcp_server.py"
+    },
+    {
+      "sha256": "58b7a34bbd83aa2eb03aa005612386f697f91b0170deb5f2050dffa2deca841e",
+      "file": "tools\\research-quality\\SKILL.md"
+    },
+    {
+      "sha256": "6c5d5eeceba80712f5c06f98738a22cf85ed2368fc9336388ca08d6446d0fa48",
+      "file": "tools\\research-quality\\references\\analysis-manifest.md"
+    },
+    {
+      "sha256": "ca1e39629f6efabc8ad50a6004940107f047f864089af375a6912bc6b78b8a5d",
+      "file": "tools\\research-quality\\science-requirements.txt"
+    }
+  ],
+  "runner_pid": 15504,
+  "workflow": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex",
+  "node_runtime": {
+    "sha256": "ba4e6d110e8c1592a1ecd390f6b05f3da124b13871a5be62b341a07a853c6c32",
+    "versions": {
+      "node": "24.21.0",
+      "uv": "1.52.1"
+    },
+    "path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.runtime\\node-v24.21.0-win-x64\\node.exe"
+  },
+  "model": "Qwen3.5-4B",
+  "max_rounds": 0,
+  "task": "C:\\Users\\User\\Desktop\\agentic\\3CA\\Q1_R17"
+}

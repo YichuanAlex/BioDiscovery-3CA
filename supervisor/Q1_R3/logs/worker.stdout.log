@@ -1,0 +1,31 @@
+Qwen3.5-4B local server is ready: http://127.0.0.1:8000/health
+[tool] list_files
+[tool] web_search: weizmann.ac.il/sites/3CA single cell RNA-seq metabolic clusters
+[tool] web_search: weizmann.ac.il 3CA single cell RNA-seq metabolic
+[tool] web_search: weizmann.ac.il/sites/3CA
+[tool] get_page
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool] get_page
+[tool] search_studies
+[tool] get_page
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool] run_powershell
+[tool] get_page
+[tool] run_powershell
+[tool] get_page
+[tool] search_studies
+[tool] search_studies
+[tool] search_studies
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] run_powershell
+[tool] search_studies
+[tool] run_powershell
+[tool] run_powershell

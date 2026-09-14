@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P003",
+  "si_requested": true,
+  "downloaded_at": "2026-09-11T10:13:16+00:00",
+  "pmc_attempt": {
+    "provider": "PMC OA package",
+    "pmcid": "PMC11421770",
+    "status": "open_access_downloaded",
+    "source_url": ""
+  },
+  "official_fallback_attempt": {
+    "provider": "official_publisher_or_repository",
+    "status": "downloaded_with_si",
+    "attempts": [
+      {
+        "url": "https://www.nature.com/articles/s41591-023-02371-y?error=cookies_not_supported&code=5c23b12d-6521-48be-b3c6-6fb4d531c76b",
+        "status": "full_text_html_available"
+      }
+    ]
+  },
+  "files": [
+    {
+      "relative_path": "main_article.html",
+      "role": "main_article",
+      "media_type": "text/html",
+      "size_bytes": 372242,
+      "sha256": "72627b2f3bb8b14856c9eeb576e14ede05e9b09af84c0e66042184a61d92be27",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11421770/"
+    },
+    {
+      "relative_path": "supplementary/41591_2023_2371_MOESM1_ESM.pdf",
+      "role": "supporting_information",
+      "media_type": "application/pdf",
+      "size_bytes": 17364991,
+      "sha256": "f788989f4aad0d95f361946d159d1a8198d124d1600a8bee548e39b6070615b4",
+      "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41591-023-02371-y/MediaObjects/41591_2023_2371_MOESM1_ESM.pdf"
+    },
+    {
+      "relative_path": "supplementary/41591_2023_2371_MOESM2_ESM.pdf",
+      "role": "supporting_information",
+      "media_type": "application/pdf",
+      "size_bytes": 13493494,
+      "sha256": "9cf8370502678d2c57a21408d391525fb433ed2212070c8f06b414066370efe8",
+      "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41591-023-02371-y/MediaObjects/41591_2023_2371_MOESM2_ESM.pdf"
+    },
+    {
+      "relative_path": "supplementary/41591_2023_2371_MOESM3_ESM.xlsx",
+      "role": "supporting_information",
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "size_bytes": 402503,
+      "sha256": "4a1eecd3588237cd2e28088fe23987121d46cf451fb4f3c6e02050d5fdbb2f61",
+      "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41591-023-02371-y/MediaObjects/41591_2023_2371_MOESM3_ESM.xlsx"
+    }
+  ],
+  "verification": {
+    "checks": [
+      "nonzero size",
+      "PDF magic when applicable",
+      "SHA-256",
+      "source URL recorded"
+    ],
+    "pdf_text_or_title_check": "external acceptance check; see top-level 构建与验收报告.md"
+  }
+}

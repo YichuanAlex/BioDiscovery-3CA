@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "P023",
+  "folder_id": "P023_badia_i_mompel_2022_decoupler",
+  "title": "decoupleR: ensemble of computational methods to infer biological activities from omics data",
+  "identifiers": {
+    "doi": "10.1093/bioadv/vbac016",
+    "pmid": "36699385",
+    "pmcid": "PMC9710656"
+  },
+  "publication": {
+    "venue": "Bioinformatics Advances",
+    "publisher": "Oxford University Press (OUP)",
+    "type": "peer_reviewed",
+    "published_at": "2022-01-10",
+    "version": "version_of_record"
+  },
+  "integrity": {
+    "checked_at": "2026-09-11T10:13:16+00:00",
+    "sources": [
+      "Crossref metadata",
+      "PubMed publication types/comments when PMID resolved"
+    ],
+    "screening_completeness": "Crossref+PubMed",
+    "retracted": false,
+    "expression_of_concern": false,
+    "corrections": [],
+    "publication_types": [
+      "Journal Article"
+    ]
+  },
+  "selection": {
+    "tier": "A",
+    "role": "gene_set_scoring_method",
+    "primary_axis": "Q1",
+    "secondary_axes": [
+      "Q2"
+    ],
+    "rationale": "Provides a common interface and consensus framework for comparing several enrichment/statistical methods under one data contract."
+  },
+  "code_sources": [
+    {
+      "url": "https://github.com/saezlab/decoupleR",
+      "commit": null,
+      "license": "to_verify"
+    }
+  ],
+  "data_sources": [
+    {
+      "accession": "10.5281/zenodo.5645208",
+      "access": "public",
+      "role": "unspecified",
+      "verification": "manually_seeded_from_primary_source"
+    }
+  ],
+  "verified_data_urls": [],
+  "repository_urls_extracted": [
+    "https://github.com/saezlab/",
+    "https://github.com/saezlab/decoupleR_",
+    "https://zenodo.org/record/5645208",
+    "https://github.com/saezlab/decoupler-py",
+    "https://github.com/saezlab/decoupleR_manuscript",
+    "https://github.com/saezlab/decoupleR"
+  ],
+  "curation": {
+    "status": "candidate_requires_independent_reproduction",
+    "completed_stages": [
+      "S0_candidate_registration",
+      "S1_source_inventory",
+      "S2_candidate_insight",
+      "S3_paper_data_task_mapping"
+    ],
+    "pending_stages": [
+      "S4_independent_reproduction",
+      "S5_final_prompt_approval",
+      "S6_answerability_and_leakage_tests",
+      "S7_grader_adversarial_tests",
+      "S8_dual_signoff"
+    ],
+    "domain_curator": null,
+    "computational_curator": null,
+    "reviewed_at": null
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "benchmark_version": "0.1.0-curation",
+  "status": "provisional",
+  "groups": {
+    "curation_pool": [
+      "metabolic-scrna-p001-q1",
+      "metabolic-scrna-p002-q1",
+      "metabolic-scrna-p003-q3",
+      "metabolic-scrna-p004-q3",
+      "metabolic-scrna-p005-q3",
+      "metabolic-scrna-p006-q3",
+      "metabolic-scrna-p007-q2",
+      "metabolic-scrna-p008-q3",
+      "metabolic-scrna-p009-q2",
+      "metabolic-scrna-p010-q2",
+      "metabolic-scrna-p011-q3",
+      "metabolic-scrna-p012-q3",
+      "metabolic-scrna-p013-q1",
+      "metabolic-scrna-p014-q1",
+      "metabolic-scrna-p015-q2",
+      "metabolic-scrna-p016-q1",
+      "metabolic-scrna-p017-q2",
+      "metabolic-scrna-p018-q2",
+      "metabolic-scrna-p019-q1",
+      "metabolic-scrna-p020-q1",
+      "metabolic-scrna-p021-q1",
+      "metabolic-scrna-p022-q1",
+      "metabolic-scrna-p023-q1",
+      "metabolic-scrna-p024-q1",
+      "metabolic-scrna-p025-q1",
+      "metabolic-scrna-p026-q1",
+      "metabolic-scrna-p027-q2",
+      "metabolic-scrna-p028-q3",
+      "metabolic-scrna-p029-q2",
+      "metabolic-scrna-p030-method"
+    ]
+  },
+  "note": "No train/validation/sealed split is released before leakage groups and independent gold are finalized."
+}

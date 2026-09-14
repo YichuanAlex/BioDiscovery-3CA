@@ -1,0 +1,7 @@
+Qwen3.5-4B local server is ready: http://127.0.0.1:8000/health
+[tool] write_file
+[tool] run_powershell
+[tool] complete_task
+
+Qwen3.5-4B> Created probe.txt containing exactly ENGINE_R7_OK and verified its content via run_powershell. The file was read back and confirmed to contain the exact string ENGINE_R7_OK.
+

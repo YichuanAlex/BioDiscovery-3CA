@@ -1,0 +1,472 @@
+{
+  "snapshot_at": "2026-09-13T12:33:19.045Z",
+  "status": "running",
+  "runner_alive": true,
+  "checkpoint_error": null,
+  "rounds": 797,
+  "phase": "R17 - core analysis complete",
+  "next_action": "validate_research_bundle to verify all artifacts and PDF compilation",
+  "tools": {
+    "search_studies": 5,
+    "get_study": 6,
+    "get_page": 3,
+    "plan_asset": 2,
+    "download_asset": 1,
+    "inspect_dataset": 2,
+    "prepare_3ca_dataset": 2,
+    "inspect_research_table": 2,
+    "fetch_reactome_metabolic_genes": 3,
+    "read_file": 321,
+    "analyze_metabolic_states": 2,
+    "verify_doi": 20,
+    "search_pubmed": 4,
+    "list_files": 85,
+    "run_powershell": 259,
+    "write_file": 6,
+    "replace_in_file": 24,
+    "audit_analysis_code": 3,
+    "read_webpage": 5,
+    "validate_research_bundle": 16,
+    "refresh_catalog": 1,
+    "task_checkpoint": 2,
+    "web_search": 16,
+    "search_cached_pages": 1,
+    "complete_task": 6
+  },
+  "failures": [
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "list_files",
+      "result": "ERROR: ENOENT: no such file or directory, lstat 'C:\\Users\\User\\Desktop\\agentic\\3CA\\Q1_R17\\report'"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: ENOENT: no such file or directory, lstat 'C:\\Users\\User\\Desktop\\agentic\\3CA\\Q1_R17\\results\\analysis_manifest.json'"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "audit_analysis_code",
+      "result": "ERROR: {\"error\": \"Path does not exist: tools\\\\research-quality\\\\metabolic_states.py\"}"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "list_files",
+      "result": "ERROR: Path leaves workspace: C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\tools"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "list_files",
+      "result": "ERROR: Tool is not currently advertised: list_files"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_webpage",
+      "result": "ERROR: Only HTTP and HTTPS URLs are allowed."
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "list_files",
+      "result": "ERROR: Path leaves workspace: C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\tools\\research-quality"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "list_files",
+      "result": "ERROR: Path leaves workspace: C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\tools\\tool43CA"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "validate_research_bundle",
+      "result": "ERROR: EOF marker not found\r\n{\"error\": \"Stream has ended unexpectedly\"}"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_webpage",
+      "result": "ERROR: Unsupported content type: unknown"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "list_files",
+      "result": "ERROR: Path leaves workspace: C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\tools\\research-quality"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "list_files",
+      "result": "ERROR: Path leaves workspace: C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\tools\\research-quality"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "validate_research_bundle",
+      "result": "ERROR: EOF marker not found\r\n{\"error\": \"Stream has ended unexpectedly\"}"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "run_powershell",
+      "result": "ERROR: Tool is not currently advertised: run_powershell"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "verify_doi",
+      "result": "ERROR: Tool is not currently advertised: verify_doi"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "verify_doi",
+      "result": "ERROR: Tool is not currently advertised: verify_doi"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "validate_research_bundle",
+      "result": "ERROR: EOF marker not found\r\n{\"error\": \"Stream has ended unexpectedly\"}"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: ENOENT: no such file or directory, lstat 'C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\tools\\research-quality\\validate_research_bundle.py'"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "list_files",
+      "result": "ERROR: Path leaves workspace: C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\tools"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "list_files",
+      "result": "ERROR: Path leaves workspace: C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\tools\\research-quality"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_webpage",
+      "result": "ERROR: Invalid argument: max_chars"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: ENOENT: no such file or directory, lstat 'C:\\Users\\User\\Desktop\\agentic\\3CA\\Q1_R17\\tools'"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "run_powershell",
+      "result": "ERROR: Tool is not currently advertised: run_powershell"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "run_powershell",
+      "result": "ERROR: Tool is not currently advertised: run_powershell"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: ENOENT: no such file or directory, lstat 'C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\tools\\tool43CA\\validate_research_bundle.py'"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "list_files",
+      "result": "ERROR: Path leaves workspace: C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\tools\\tool43CA"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "validate_research_bundle",
+      "result": "ERROR: {\"error\": \"Expecting value: line 1 column 1 (char 0)\"}"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "validate_research_bundle",
+      "result": "ERROR: EOF marker not found\r\n{\"error\": \"Stream has ended unexpectedly\"}"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "validate_research_bundle",
+      "result": "ERROR: {\"error\": \"Expecting value: line 1 column 1 (char 0)\"}"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "run_powershell",
+      "result": "ERROR: Missing required argument: command"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "validate_research_bundle",
+      "result": "ERROR: EOF marker not found\r\n{\"error\": \"Stream has ended unexpectedly\"}"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: ENOENT: no such file or directory, lstat 'C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\tools\\tool43CA\\validate_research_bundle.py'"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "list_files",
+      "result": "ERROR: Path leaves workspace: C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\tools\\research-quality"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "list_files",
+      "result": "ERROR: Tool is not currently advertised: list_files"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "list_files",
+      "result": "ERROR: Path leaves workspace: C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\tools"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "run_powershell",
+      "result": "ERROR: Run audit_analysis_code successfully for the current validate_research_bundle.py content before executing it."
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "replace_in_file",
+      "result": "ERROR: old_text must occur exactly once; found 0."
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "replace_in_file",
+      "result": "ERROR: old_text must occur exactly once; found 0."
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "run_powershell",
+      "result": "ERROR: Run audit_analysis_code successfully for the current validate_research_bundle.py content before executing it."
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "run_powershell",
+      "result": "ERROR: Missing required argument: command"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "run_powershell",
+      "result": "ERROR: Tool is not currently advertised: run_powershell"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "run_powershell",
+      "result": "ERROR: Missing required argument: command"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "replace_in_file",
+      "result": "ERROR: Missing required argument: path"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "run_powershell",
+      "result": "ERROR: Tool is not currently advertised: run_powershell"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "run_powershell",
+      "result": "ERROR: Tool is not currently advertised: run_powershell"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Invalid argument: start_line"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "read_file",
+      "result": "ERROR: Tool is not currently advertised: read_file"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "run_powershell",
+      "result": "ERROR: Tool is not currently advertised: run_powershell"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "run_powershell",
+      "result": "ERROR: Tool is not currently advertised: run_powershell"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "complete_task",
+      "result": "ERROR: EOF marker not found\r\n{\"error\": \"Stream has ended unexpectedly\"}"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "complete_task",
+      "result": "ERROR: EOF marker not found\r\n{\"error\": \"Stream has ended unexpectedly\"}"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "complete_task",
+      "result": "ERROR: Tool is not currently advertised: complete_task"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "complete_task",
+      "result": "ERROR: EOF marker not found\r\n{\"error\": \"Stream has ended unexpectedly\"}"
+    },
+    {
+      "session": "rollout-2026-09-13T17-47-00-4cdfe462-0a9.jsonl",
+      "tool": "complete_task",
+      "result": "ERROR: Tool is not currently advertised: complete_task"
+    }
+  ],
+  "required_artifacts": [
+    {
+      "file": "report/main.tex",
+      "present": true
+    },
+    {
+      "file": "report/main.pdf",
+      "present": true
+    },
+    {
+      "file": "results/summary.json",
+      "present": true
+    },
+    {
+      "file": "results/analysis_manifest.json",
+      "present": true
+    },
+    {
+      "file": "README.md",
+      "present": true
+    }
+  ],
+  "research_validation": {
+    "valid": false,
+    "error": "EOF marker not found\r\n{\"error\": \"Stream has ended unexpectedly\"}\r\n"
+  },
+  "frozen_mismatches": [],
+  "structural_completion_candidate": false,
+  "semantic_acceptance": "pending_independent_review"
+}

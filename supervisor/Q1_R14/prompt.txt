@@ -1,0 +1,34 @@
+请使用项目内的 Qwen3.5-4B 自主完成以下任务。
+
+工作流根目录：C:\Users\User\Desktop\agentic\workflow_codex
+本轮唯一研究工作区：C:\Users\User\Desktop\agentic\3CA\Q1_R14
+科学 Python：C:\Users\User\Desktop\agentic\workflow_codex\tools\tool43CA\.venv\Scripts\python.exe
+只使用本工作流暴露的工具和上述 Python，不调用全局 Codex/agent，不修改工作流、supervisor 或其他任务目录。
+
+任务：以真实 3CA 单细胞 RNA-seq 表达数据回答：
+“Are there distinct clusters of transcriptional metabolic states? In other words, can we use these metabolic genes only to cluster or separate groups in the single-cell RNA-seq dataset?”
+
+这是从零开始的第十四轮。不得读取、复制或改写 Q1_R1 至 Q1_R13 的研究代码、计算结果、图表和报告，也不得读取任何 supervisor 目录寻找研究解法。可以复用工作流 3CA 缓存中的公开原始下载，前提是重新核验来源与 SHA-256，并在 R14 工作区保存本轮的输入清单、代码和结果；不得复用旧计算结果。
+
+必须遵守以下科学验收条件：
+
+在 results/core_analysis/core_result.json 出现之前，不要创建、移动或执行任何自定义 Python 分析脚本，也不要创建以 Q1_R14 命名的嵌套目录。准备工具返回的 inputs 路径已经相对于当前工作区；直接把这些路径和 Reactome genes_path 传给原生 analyze_metabolic_states。附加 Python 只能在核心完成后按必要性创建，且执行层会按当前文件 SHA-256 强制 audit_analysis_code 成功，修改后必须重审。
+
+报告应直接读取核心 JSON/CSV 的精确字段并用短筛选保存摘要，不要把整张逐细胞标签表或完整 cluster composition 输出到模型上下文。不得把 descriptive exceedance fraction 的加一修正解释成实际有相同比例随机集合超过代谢基准；同时报告实际超过数、对照总数、代谢 K-means、HVG 和随机范围。不得主观称 NMI=0.5 左右为“弱”或据此声称独立。分辨率选择必须写核心实际选择规则，不能把相邻分辨率较高的 ARI 忽略后称所选分辨率“最稳定”。簇范围/表格必须由全部标签机械计算并自洽；患者内结果至少报告范围和最弱重复，不把细胞数当独立 n，也不把患者内重聚类称 held-out validation。
+
+文献核验优先读取 get_study 的出版物锚点，直接调用 verify_doi(doi=该研究的稳定3ca:ID)，也可传真实出版社 DOI 链接；核验工具会保存 Crossref 的精确题名、期刊和卷页，不需要通过通用搜索猜原论文名称。若泛搜索返回无关页面，不作为文献证据。写作方法从 core_result.methods 读取，HVG 是 log-normalized 表达方差最高的等大小基因对照，不是 Seurat-v3；必须报告真实 HVG 结果，即使它优于代谢特征。源基因抽取、PCA/KMeans 和指标抽样的种子分开说明。优先引用带真实类别图例的矢量 PDF 图。
+
+1. 先用 search_studies、get_study、plan_asset、download_asset(extract=true) 和 inspect_dataset 选择一个同时具备原始/计数表达矩阵、细胞 ID、患者或样本字段及可解释细胞注释的研究。随后把真实 extracted_path 传给 `prepare_3ca_dataset`，由它核验并复制到 inputs，返回精确的 expression_path/cells_path/genes_path 和哈希；不使用 PowerShell 猜路径或复制。若它明确指出只有 TPM/归一化矩阵，就记录排除理由并改选原始计数研究，不重复调用同一被拒绝来源。记录稳定 3CA ID、网页 URL、获取时间、文件路径、字节数与原始下载 SHA-256。不能把 meta-program 分数表当作基因表达矩阵。
+2. 对每个 CSV/TSV 在合并或解释行数前调用 inspect_research_table；明确“每行代表什么”和唯一键。长格式 cell×program 表的行数不等于细胞数。核对 Matrix Market 的行列方向、矩阵维度、基因行数、细胞行数、唯一细胞 ID 和元数据对齐。不得仅因内存方便任意抽取 500 个细胞；优先使用稀疏矩阵和全部质量合格细胞。
+3. 调用 fetch_reactome_metabolic_genes，使用其保存的 Reactome release、R-HSA-1430728 层级、URL 和哈希定义代谢基因。保存与表达基因实际匹配的去重列表。主要聚类输入必须仅由这些匹配的代谢基因表达构成；任何 MP 分数只能作为明确标注的次要比较。
+4. Reactome 列表与矩阵/细胞/基因路径核对完成后，调用 `analyze_metabolic_states` 作为受检验的核心分析，不改写它的输出。该工具在全部 QC 合格细胞上执行稀疏 Scanpy/AnnData/Leiden 代谢基因聚类、真实标签、多种子/分辨率、HVG 和 19 个等大小随机基因对照、混杂检查、患者内描述性重聚类、图和 `results/summary.json`。可编写附加科学验证或报告代码，但须先调用 `audit_analysis_code`；不得用同一数据的聚类后显著性检验冒充独立验证。
+5. 聚类算法总能产生分区，因此“得到标签”本身不是存在代谢状态簇的证据。以 `results/core_analysis/core_result.json` 的真实输出为唯一核心数值来源；该文件及其哈希不得手工改写。解释多个随机种子的稳定性、分辨率敏感性、silhouette/Calinski-Harabasz/Davies-Bouldin、HVG 对照和 19 个等大小随机基因集对照，不虚构或重算成更有利的数值。
+6. 检查患者/供者/样本、来源、细胞类型、测序深度/complexity 和细胞周期等可用混杂因素；给出每簇组成、关联度和患者内/样本内敏感性分析。细胞不是生物学重复：涉及显著性或组间差异时采用患者/样本层汇总、分层置换或 pseudobulk，不用数万个细胞制造虚假极小 P 值。多重检验要校正。
+7. 分开回答“代谢基因能否分开本数据中的细胞组”和“是否存在离散生物学代谢状态”。核心工具对后者保守给出 inconclusive，因为它未检验连续谱对离散状态的 null model，也未独立留出供者；不能用标签、正 silhouette、随机基因比较或低 NMI 推翻这项边界。随机对照仅等大小、不是表达均值/离散度匹配，exceedance fraction 不是生物学 P 值。可做额外独立验证并以另一文件单独报告证据支持的 yes/no/inconclusive，但不能覆盖 core summary 或过度解释未显著结果为不存在。
+8. 用 search_pubmed 发现文献，用 verify_doi 核验报告中每一个 DOI。保存 Crossref 元数据文件；作者、题名、期刊、年份、卷期页必须来自核验记录。不得猜 BibTeX 字段。报告正文的每个引用键都必须出现在 results/analysis_manifest.json 的 references 中。
+9. 生成标准英文报告 report/main.tex 和 report/main.pdf。必须含本轮代码实际生成并通过 includegraphics 引入的图、booktabs 表、必要公式、方法边界与局限；图表数值必须能追溯到结果文件。最后一次 TeX 修改后重新编译，消除所有 unresolved references/citations，确认 PDF 可提取正文且与 TeX 同步。
+10. `analyze_metabolic_states` 会保存 results/summary.json；不得用主观叙述覆盖。再以 `results/core_analysis/core_result.json` 为源填写 results/analysis_manifest.json，严格遵守 research-quality Skill 的 references/analysis-manifest.md，包括固定 engine 名、core result 路径/哈希、表达矩阵/细胞/基因路径与哈希、方向与维度、Reactome 原始和匹配基因列表、真实标签和有限指标、基线、混杂字段、图件与全部 Crossref 参考文献。
+
+在提交前，实际运行 validate_research_bundle（或同一 CLI 的 validate），修正全部错误；再以同一 `analyze_metabolic_states` 参数从输入重跑核心分析、重建 PDF，并在最后一次文件变化后执行最终验证。必需文件：report/main.tex、report/main.pdf、results/summary.json、results/analysis_manifest.json、README.md。只有 complete_task 接受这五项并通过自动科研闸门才可结束；自动闸门通过仍不等于可以夸大生物学结论。
+
+按 until-complete 模式连续工作，不受人工模型轮次、总运行时间、catalog/web 请求次数或 3CA 下载/安全解压大小上限限制。每个阶段用 task_checkpoint 保存已验证证据路径和下一项实际行动；遇错依据真实输出局部修复并回归验证。监督者只观察和最终复核，不会替你选择研究对象、编写代码或逐轮纠错。
