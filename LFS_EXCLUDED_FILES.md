@@ -8,7 +8,7 @@ The local project contains 34 files larger than GitHub's 100 MiB regular-Git lim
 
 Following the repository owner's instruction, no large-file content is uploaded when the available Git LFS capacity is insufficient. These files remain unchanged on the local machine. They are not deleted, ignored by `.gitignore`, committed as broken LFS pointers, or included in the GitHub repository.
 
-The `.gitignore` file intentionally contains no ignore patterns. The remaining 36,449 files are included in the Git commit.
+The `.gitignore` file intentionally contains no ignore patterns. The remaining 36,451 files are included in Git.
 
 Official GitHub limits consulted:
 

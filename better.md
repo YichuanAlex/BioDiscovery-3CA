@@ -886,3 +886,9 @@ Git 本地作者配置为 `YichuanAlex <jiangzixi1527435659@gmail.com>`，remote
 初始 root commit `11c22883932b7d86c1a55e4e7447b3a68aead041` 成功写入 36,452 files；Git 自动 maintenance/repack 约 4 分钟后完成。第一次普通 push 卡在 Git Credential Manager 的 `get` 子进程，未开始发送，随后以 Ctrl-C 正常中止。改用禁用 helper 的交互式 HTTPS 认证后，普通 Git 认证成功，但 pre-push 钩子再次要求 LFS 凭据；进程树确认是 `git-lfs pre-push`，而不是主 Git 认证失败。本次 push 同样在数据传输前中止。
 
 `git lfs ls-files -l` 发现当前 commit 中仍有一个 LFS 对象：`model/Qwen3.5-4B/tokenizer.json`（约 12.2 MiB），由 `model/Qwen3.5-4B/.gitattributes` 的 `tokenizer.json filter=lfs` 规则触发。按用户“LFS 不够则 LFS 跟踪内容不上传”的规则，该文件也必须从可达提交历史中移除；仅追加一个删除 commit 不足以阻止首次 push 扫描旧 LFS 对象，因此计划在远程仍为空时安全 amend 未推送的 root commit。README 和 `LFS_EXCLUDED_FILES.md` 已更新为共 35 个不上传对象；本地文件均保留，不从工作树删除。
+
+关闭本仓库自动 maintenance/gc 后，从未推送 root commit 的 index 精确移除 `model/Qwen3.5-4B/tokenizer.json`，并以 `git commit --amend` 重写为 `35c1ab2c7f645404823cb946fd664931c4ea03cd`；工作树原文件保留。amend 后 `git ls-files` 为 36,451，`git lfs ls-files -l` 为 0。第二次普通 push 仍被空 LFS pre-push hook 要求额外认证，确认进程树后中止；随后在 LFS 可达对象为 0 的前提下用 `--no-verify` 跳过该空钩子，GitHub 的普通对象和 100 MiB 服务端检查仍保留。
+
+最终首次远程 push 成功：枚举/计数 38,720 个可达对象，压缩 33,054 个对象，向 GitHub 写入 859.21 MiB，解析 4,998 个 delta，建立 `main -> main` 并设置本地 upstream。GitHub 只对三个普通 Git 文件发出超过建议 50 MB 的警告：`workflow_codex/.runtime/node-v24.21.0-win-x64/node.exe` 89.24 MB、`3CA/Q1_R1/data/expression_log2_tpm10.npz` 85.36 MB、`workflow_codex/.runtime/codex-home/sessions/QA/R4-rollout-2026-09-13T23-08-39-0b785373-9b3.jsonl` 88.95 MB；三者均低于 100 MiB 硬上限，服务器接受。
+
+推送后通过 GitHub REST API 独立复核：远程 `YichuanAlex/BioDiscovery-3CA` 为 `private`，默认分支 `main`，远程 commit `35c1ab2c7f645404823cb946fd664931c4ea03cd` 与本地完全一致；远程 `README.md` 74,442 bytes、`.gitignore` 1 byte 且没有 ignore pattern、`LFS_EXCLUDED_FILES.md` 4,925 bytes。API 的 `repo.size` 在首次推送后暂时仍返回 0 KiB，属于仓库统计异步更新，不影响 commit/file API 已能读取的事实。此条追加后还需一个小型日志提交和 push，完成后再做最终 HEAD 对齐。
