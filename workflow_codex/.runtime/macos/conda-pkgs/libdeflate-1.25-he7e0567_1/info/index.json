@@ -1,0 +1,14 @@
+{
+  "arch": "arm64",
+  "build": "he7e0567_1",
+  "build_number": 1,
+  "depends": [
+    "__osx >=11.0"
+  ],
+  "license": "MIT",
+  "name": "libdeflate",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1785909153744,
+  "version": "1.25"
+}

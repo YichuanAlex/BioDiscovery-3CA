@@ -1,0 +1,18 @@
+{
+  "channels": [
+    "https://conda.anaconda.org/conda-forge/"
+  ],
+  "dev_url": "https://github.com/silnrsi/graphite",
+  "extra": {
+    "flow_run_id": "azure_20260807.4.1",
+    "recipe-maintainers": [
+      "pkgw",
+      "ocefpaf"
+    ],
+    "remote_url": "https://github.com/conda-forge/graphite2-feedstock",
+    "sha": "ba0a8e0362b411f2fa172e105d805270ac086509"
+  },
+  "home": "http://graphite.sil.org/",
+  "license": "LGPL-2.0-or-later",
+  "summary": "A \"smart font\" system that handles the complexities of lesser-known languages of the world."
+}

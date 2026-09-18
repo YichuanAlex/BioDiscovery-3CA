@@ -1,0 +1,14 @@
+{
+  "arch": null,
+  "build": "h77eed37_3",
+  "build_number": 3,
+  "depends": [],
+  "license": "LicenseRef-Ubuntu-Font-Licence-Version-1.0",
+  "license_family": "Other",
+  "name": "font-ttf-ubuntu",
+  "noarch": "generic",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1727511233259,
+  "version": "0.83"
+}

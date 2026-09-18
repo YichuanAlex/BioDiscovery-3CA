@@ -20,6 +20,24 @@ class ResearchQualityTest(unittest.TestCase):
             self.assertNotIn("includegraphics", summary.split("Possible unescaped", 1)[1])
             self.assertLess(len(summary), 2000)
 
+    def test_latex_failure_summary_prioritizes_fatal_after_warning(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            tex = Path(temporary) / "main.tex"
+            tex.write_text("\\begin{document}\nwarning line\n\\toprule\n\\end{document}\n", encoding="utf-8")
+            output = "main.tex:2: Underfull \\hbox\nmain.tex:3: Misplaced \\noalign."
+            summary = research_quality._latex_failure_summary(tex, "tectonic", 1, output)
+            self.assertIn("Reported diagnostic: main.tex:3: Misplaced \\noalign.", summary)
+            self.assertIn("3: \\toprule", summary)
+
+    def test_latex_failure_summary_prioritizes_missing_figure_after_warning(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            tex = Path(temporary) / "main.tex"
+            tex.write_text("\\begin{document}\nwarning\n\\includegraphics{figures/result.pdf}\n\\end{document}\n", encoding="utf-8")
+            output = "main.tex:2: Underfull \\hbox\nmain.tex:3: Unable to load picture or PDF file 'figures/result.pdf'."
+            summary = research_quality._latex_failure_summary(tex, "tectonic", 1, output)
+            self.assertIn("Reported diagnostic: main.tex:3: Unable to load picture", summary)
+            self.assertIn("3: \\includegraphics{figures/result.pdf}", summary)
+
     def test_cached_dataset_staging(self):
         with tempfile.TemporaryDirectory() as temporary:
             parent = Path(temporary)

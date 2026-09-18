@@ -1,0 +1,24 @@
+{
+  "round": "Q1_R20",
+  "started_at": "2026-09-17T07:12:35.925221+00:00",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "workflow": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex",
+  "task": "/Users/bytedance/Downloads/BioDiscovery-3CA/3CA/Q1_R20",
+  "model": "/Users/bytedance/Downloads/BioDiscovery-3CA/model/Qwen3.5-4B-MLX-4bit",
+  "model_config_sha256": "f3efc81b2ea8d96a45301037d3ccccbcccdef44a961845c87f286aaddbc6eaaa",
+  "prompt_sha256": "a4ad7c83bfa761342bfbbe0cd4e07713d92399536903a80d4fa3960769bc68e3",
+  "python": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/python/bin/python",
+  "api_url": "http://127.0.0.1:8000/v1",
+  "context_tokens": 32768,
+  "max_tokens": 4096,
+  "required_artifacts": [
+    "results/core_analysis/core_result.json",
+    "report/main.tex",
+    "report/main.pdf",
+    "results/summary.json",
+    "results/analysis_manifest.json",
+    "README.md"
+  ],
+  "research_workspace_initially_empty": true,
+  "source_policy": "fresh task state; verified public raw cache only"
+}

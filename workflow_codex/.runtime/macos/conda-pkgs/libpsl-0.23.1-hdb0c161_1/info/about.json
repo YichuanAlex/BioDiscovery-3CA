@@ -1,0 +1,19 @@
+{
+  "channels": [
+    "https://conda.anaconda.org/conda-forge/"
+  ],
+  "dev_url": "https://github.com/rockdaboot/libpsl",
+  "extra": {
+    "flow_run_id": "azure_20260817.1.1",
+    "recipe-maintainers": [
+      "tschoonj",
+      "JohanMabille"
+    ],
+    "remote_url": "https://github.com/conda-forge/libpsl-feedstock",
+    "sha": "d93d163e4ace3c8de663d880c0381630b65d4590"
+  },
+  "home": "https://github.com/rockdaboot/libpsl",
+  "license": "MIT",
+  "license_family": "MIT",
+  "summary": "A C library to handle the Public Suffix List"
+}

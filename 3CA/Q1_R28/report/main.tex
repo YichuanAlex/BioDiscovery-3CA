@@ -1,0 +1,101 @@
+\documentclass[sloppy,11pt]{article}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{url}
+
+\title{\textbf{Transcriptional Metabolic States in Meningioma Brain Single-Cell Data}}
+\author{}
+\date{}
+
+\begin{document}
+\sloppy
+
+\maketitle
+
+\section{Abstract}
+This study investigates whether transcriptional metabolic states can be identified as distinct clusters in single-cell RNA-seq data from meningioma brain samples. We analyze 58,843 cells from the Choudhury et al. 2022 dataset (3CA:20773) using Reactome metabolism pathway genes (R-HSA-1430728, release 97).
+
+\section{Methods}
+\subsection{Data Processing}
+Raw UMI counts were normalized using per-cell library size scaling to 10,000 counts, followed by log transformation:
+\begin{equation}
+\label{eq:normalization}
+\log(1 + \min(\text{counts} / \text{library\_size} \times 10^4, 10))
+\end{equation}
+where \texttt{counts} is the raw UMI count, \texttt{library\_size} is the per-cell library size, and the \texttt{max} value is capped at 10.
+
+\subsection{Gene Set}
+Reactome metabolism pathway genes (R-HSA-1430728, release 97) were matched to the expression matrix. Of 2,197 Reactome genes, 1,984 matched after prevalence filtering and symbol-level aggregation (24 duplicate symbols were summed in raw counts).
+
+\subsection{Clustering}
+Leiden clustering was performed with resolution 0.4, selected via stability filtering (mean pairwise ARI $\ge$ 0.75) across seeds [0, 17, 42, 73, 101] and resolutions [0.4, 0.8, 1.2].
+
+\section{Results}
+\subsection{Global Clustering Analysis}
+Leiden clustering of 1,984 metabolic genes yielded 15 clusters across 58,843 cells. Cluster sizes ranged from 1,002 to 8,985 cells.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth]{../figures/metabolic_umap.pdf}
+\caption{UMAP visualization of cells clustered by metabolic gene expression. Each point represents a cell colored by cluster assignment.}
+\label{fig:metabolic_umap}
+\end{figure}
+
+\subsection{Clustering Diagnostics}
+Clustering quality metrics include silhouette score (0.229), Calinski-Harabasz index (7,177), and Davies-Bouldin index (1.513). Stability analysis showed mean pairwise ARI of 0.980 across seeds.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth]{../figures/clustering_diagnostics.pdf}
+\caption{Clustering diagnostics including silhouette scores, stability metrics, and cluster size distribution.}
+\label{fig:clustering_diagnostics}
+\end{figure}
+
+\subsection{Confounding Factors}
+NMI analysis assessed confounding by patient, sample, source, cell type, cell subtype, cell cycle phase, and complexity. Global NMI values ranged from 0.197 (source) to 0.658 (cell subtype), indicating moderate-to-high association between clusters and biological metadata.
+
+\subsection{Random Control Comparison}
+Of 19 size-matched random control clusters, 0 exceeded or matched the metabolic cluster silhouette score. The add-one rank fraction is 0.05.
+
+\subsection{Resolution Selection and Stability}
+Resolution 0.4 was selected using stability filtering (mean pairwise ARI $\ge$ 0.75) across seeds [0, 17, 42, 73, 101]. The tie-breaker criterion was highest mean pairwise ARI.
+
+\subsection{Random Control Comparison}
+Of 19 size-matched random control clusters, 0 exceeded or matched the metabolic cluster silhouette score. The add-one rank fraction is 0.05. This result indicates that the metabolic gene-based clustering is not significantly better than random partitioning when accounting for the add-one correction.
+
+\subsection{Resolution Selection and Stability}
+Resolution 0.4 was selected using stability filtering (mean pairwise ARI $\ge$ 0.75) across seeds [0, 17, 42, 73, 101]. The tie-breaker criterion was highest mean pairwise ARI.
+
+\subsection{Within-Replicate Sensitivity}
+Within-replicate analysis across 6 patients showed global-to-within ARI range of 0.106--0.813. The weakest replicate was patient 3 with 3,287 cells.
+
+\section{Discussion}
+\subsection{Question 1: Distinct Metabolic States}
+\textbf{Verdict: Candidate partitions observed but distinct metabolic states inconclusive.}
+
+The metabolic gene-based clustering produced 15 clusters with stable resolution selection. Figure~\ref{fig:metabolic_umap} shows the UMAP visualization of cells clustered by metabolic gene expression, revealing 15 distinct clusters ranging from 1,002 to 8,985 cells. However, the inconclusive conclusion reflects that clustering alone does not prove discrete biological states. The high stability (mean pairwise ARI = 0.980) suggests reproducible partitioning, but without independent validation of biological meaning, we cannot claim these represent distinct metabolic states.
+
+\subsection{Question 2: Cell-Type Associations}
+\textbf{Verdict: Associations are descriptive and non-causal.}
+
+Clusters show moderate-to-high NMI with cell type (0.507) and cell subtype (0.658), indicating that metabolic clustering partially recapitulates known cell-type structure. These associations are descriptive and should not be interpreted as causal relationships between metabolic states and cell identity.
+
+\subsection{Question 3: CD8 T Cell Subgroup Analysis}
+\textbf{Verdict: Candidate partitions observed but distinct metabolic states inconclusive.}
+
+Within CD8 T cells, similar patterns of clustering were observed with inconclusive biological interpretation. The analysis remains descriptive without independent validation of discrete metabolic states.
+
+\section{Conclusion}
+Metabolic genes can partition cells into 15 stable clusters, but this does not prove distinct biological metabolic states. Clustering is a descriptive tool that may reflect cell-type structure or technical variation. Independent validation of biological meaning is required before claiming discrete metabolic states.
+
+\section{References}
+\begin{thebibliography}{99}
+\bibitem{Choudhury2022}
+Abrar Choudhury, Stephen T. Magill, Charlotte D. Eaton, Bria J. O'Keefe, Joseph F. Costello, Michael W. McDermott, Jeremy N. Rich, David R. Raleigh
+\newblock Meningioma DNA methylation groups identify biological drivers and therapeutic vulnerabilities
+\newblock \textit{Nature Genetics} \textbf{54}(5):649--659, 2022.
+\newblock \url{https://doi.org/10.1038/s41588-022-01061-8}
+\end{thebibliography}
+
+\end{document}

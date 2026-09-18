@@ -1,0 +1,37 @@
+{
+  "paths": [
+    {
+      "_path": "include/Lerc_c_api.h",
+      "path_type": "hardlink",
+      "sha256": "25cd1c260a579b1b71161f3ca1a8555fd59a35f0048261333acf88d2b4f2b158",
+      "size_in_bytes": 23324
+    },
+    {
+      "_path": "include/Lerc_types.h",
+      "path_type": "hardlink",
+      "sha256": "31ae1425571c2f06ce57fb92e6678596c77e8266bc3e96c92fb3e0b98a6c95e6",
+      "size_in_bytes": 1309
+    },
+    {
+      "_path": "lib/libLerc.4.dylib",
+      "path_type": "hardlink",
+      "sha256": "57f26850831e8de547d921e456a84f2ee7f5f3905ace24efdb368ae8b7254ea1",
+      "size_in_bytes": 586256
+    },
+    {
+      "_path": "lib/libLerc.dylib",
+      "path_type": "softlink",
+      "sha256": "57f26850831e8de547d921e456a84f2ee7f5f3905ace24efdb368ae8b7254ea1",
+      "size_in_bytes": 586256
+    },
+    {
+      "_path": "lib/pkgconfig/Lerc.pc",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/lerc_1785036214567/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+      "sha256": "ca03b9ab7fd94e42983e64b8c642737240ccea6a248284f5b7b5aa8d3f48385d",
+      "size_in_bytes": 549
+    }
+  ],
+  "paths_version": 1
+}

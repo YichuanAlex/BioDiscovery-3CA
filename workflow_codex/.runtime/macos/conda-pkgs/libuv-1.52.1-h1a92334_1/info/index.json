@@ -1,0 +1,14 @@
+{
+  "arch": "arm64",
+  "build": "h1a92334_1",
+  "build_number": 1,
+  "depends": [
+    "__osx >=11.0"
+  ],
+  "license": "MIT",
+  "name": "libuv",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1785914645797,
+  "version": "1.52.1"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "libzlib",
+  "version": "1.3.2",
+  "build": "h8088a28_3",
+  "build_number": 3,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "subdir": "osx-arm64",
+  "fn": "libzlib-1.3.2-h8088a28_3.conda",
+  "md5": "f39288f0ea63ae962e1a2e4f355a0d75",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libzlib-1.3.2-h8088a28_3.conda",
+  "sha256": "a18fa5d5bac452401459f966cf0d872224e8080c4ff93c77e168d43ab42ef9d7",
+  "arch": "arm64",
+  "platform": "darwin",
+  "depends": [
+    "__osx >=11.0"
+  ],
+  "constrains": [
+    "zlib 1.3.2 *_3"
+  ],
+  "license": "Zlib",
+  "license_family": "Other",
+  "timestamp": 1785277049190,
+  "size": 47822
+}

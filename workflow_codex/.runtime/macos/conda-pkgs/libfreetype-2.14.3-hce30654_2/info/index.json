@@ -1,0 +1,14 @@
+{
+  "arch": "arm64",
+  "build": "hce30654_2",
+  "build_number": 2,
+  "depends": [
+    "libfreetype6 >=2.14.3"
+  ],
+  "license": "GPL-2.0-only OR FTL",
+  "name": "libfreetype",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1786641013393,
+  "version": "2.14.3"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "libintl",
+  "version": "0.25.1",
+  "build": "h493aca8_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "subdir": "osx-arm64",
+  "fn": "libintl-0.25.1-h493aca8_0.conda",
+  "md5": "5103f6a6b210a3912faf8d7db516918c",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libintl-0.25.1-h493aca8_0.conda",
+  "sha256": "99d2cebcd8f84961b86784451b010f5f0a795ed1c08f1e7c76fbb3c22abf021a",
+  "arch": "arm64",
+  "platform": "darwin",
+  "depends": [
+    "__osx >=11.0",
+    "libiconv >=1.18,<2.0a0"
+  ],
+  "constrains": [],
+  "license": "LGPL-2.1-or-later",
+  "timestamp": 1751558394144,
+  "size": 90957
+}

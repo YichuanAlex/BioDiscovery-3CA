@@ -1,0 +1,17 @@
+{
+  "arch": "arm64",
+  "build": "h202fb40_1",
+  "build_number": 1,
+  "constrains": [
+    "libwebp 1.6.0"
+  ],
+  "depends": [
+    "__osx >=11.0"
+  ],
+  "license": "BSD-3-Clause",
+  "name": "libwebp-base",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1785955350410,
+  "version": "1.6.0"
+}

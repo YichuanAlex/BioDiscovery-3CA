@@ -1,0 +1,14 @@
+{
+  "channels": [
+    "https://conda.anaconda.org/conda-forge/"
+  ],
+  "description": "A basic set of different fonts with at least one font covering as many\nscientific glyphs as possible, looking native on Ubuntu, being suitable\nfor UI applications like Qt Creator and RStudio and being all in all\nreasonable sized. Install more fonts via conda (e.g. mscorefonts) or your\nsystem's package manager for an increased font experience.",
+  "extra": {
+    "flow_run_id": "azure_20251105.1.1",
+    "remote_url": "https://github.com/conda-forge/fonts-conda-forge-feedstock",
+    "sha": "1b7ad83c3dd122e856cbb86a4a52264cc1e28c5e"
+  },
+  "home": "https://conda-forge.org/",
+  "license": "BSD-3-Clause",
+  "summary": "The curated conda-forge standard fonts"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "lerc",
+  "version": "4.2.0",
+  "build": "h1eee2c3_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "subdir": "osx-arm64",
+  "fn": "lerc-4.2.0-h1eee2c3_0.conda",
+  "md5": "e429aec4037d5cb8fd34ded9f5dadd39",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/lerc-4.2.0-h1eee2c3_0.conda",
+  "sha256": "c97aa17d16d2ac332ba9f184e82ce8f72dcb10e9a10c5f299030be2d44e191b9",
+  "arch": "arm64",
+  "platform": "darwin",
+  "depends": [
+    "__osx >=11.0",
+    "libcxx >=19"
+  ],
+  "constrains": [],
+  "license": "Apache-2.0",
+  "license_family": "Apache",
+  "timestamp": 1785036480092,
+  "size": 166477
+}

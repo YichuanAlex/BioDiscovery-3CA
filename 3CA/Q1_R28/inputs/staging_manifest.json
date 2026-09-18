@@ -1,0 +1,20 @@
+{
+  "expression_path": "inputs/Exp_data_UMIcounts.mtx",
+  "cells_path": "inputs/Cells.csv",
+  "genes_path": "inputs/Genes.txt",
+  "cell_id_column": "cell_name",
+  "matrix_orientation": "genes_by_cells",
+  "n_cells": 58843,
+  "n_genes": 33538,
+  "matrix_entries": 177192137,
+  "unique_gene_symbols": 33514,
+  "duplicate_symbol_rows": 24,
+  "input_sha256": {
+    "Exp_data_UMIcounts.mtx": "51bf0452d166511fecca3f32d89f9fd0f631d173143173d82115f49cdaaa6c1d",
+    "Cells.csv": "459fec35fbd3c89536bab26add4f3b733b4d57ce1deb08ad591455df68b94d37",
+    "Genes.txt": "a285759694b2e6fdb495fa4e996643b50e77588013dbba7b1eb3d1926bd95b60",
+    "Samples.csv": "88b90b7eea80c9f4feaef078664c3a5a87a7e5338fcebdb9e87f6c75c9dc23b1"
+  },
+  "source_path": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.threeca/cache/downloads/b4d828443422/Data_Choudhury2022_Brain.extracted-verified-1",
+  "note": "Copied and hashed public raw inputs only. Count/gene/cell alignment is checked; record the original download URL/archive hash from download_asset separately."
+}

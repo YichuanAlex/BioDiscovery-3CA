@@ -1,0 +1,13 @@
+{
+  "etag": "\"a580e4e20f12fc933179adf1a344106c\"",
+  "mod": "Thu, 17 Sep 2026 01:38:54 GMT",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/repodata_shards.msgpack.zst",
+  "cache_control": "public, max-age=1200",
+  "has_shards": {
+    "last_checked": "2026-09-17T02:05:05.582879Z",
+    "value": true
+  },
+  "mtime_ns": 1789610705583945372,
+  "size": 970355,
+  "refresh_ns": 1789610705584894000
+}

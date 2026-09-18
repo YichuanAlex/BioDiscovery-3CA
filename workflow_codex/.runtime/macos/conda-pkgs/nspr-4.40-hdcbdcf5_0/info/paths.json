@@ -1,0 +1,447 @@
+{
+  "paths": [
+    {
+      "_path": "bin/nspr-config",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/nspr_1786154904583/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+      "sha256": "d45c690d32f8750aee8d658775fc95691054463977db70d50efb490cc5cf6173",
+      "size_in_bytes": 3355
+    },
+    {
+      "_path": "include/nspr/md/_aix32.cfg",
+      "path_type": "hardlink",
+      "sha256": "dd38fd985fd1dda6825090654a61b2b81c076a08809d4389f3e47b583ca166eb",
+      "size_in_bytes": 3374
+    },
+    {
+      "_path": "include/nspr/md/_aix64.cfg",
+      "path_type": "hardlink",
+      "sha256": "2af533589e58ffccbd7b1e5f77b20255cc7399f39716f406686a8d2b95c45564",
+      "size_in_bytes": 3388
+    },
+    {
+      "_path": "include/nspr/md/_darwin.cfg",
+      "path_type": "hardlink",
+      "sha256": "d882cea4c685b111c69fd6f794f30443b27687daa01429da386e4269d1136ed4",
+      "size_in_bytes": 4648
+    },
+    {
+      "_path": "include/nspr/md/_freebsd.cfg",
+      "path_type": "hardlink",
+      "sha256": "c5c161230d10f0859d322fe905e1dd9533b40fea5194bb5ae5903c10aeb252c1",
+      "size_in_bytes": 15811
+    },
+    {
+      "_path": "include/nspr/md/_linux.cfg",
+      "path_type": "hardlink",
+      "sha256": "9f9875142a9d3e6230d59ce5f08ef04632515862e9d3c0e6134a13a353c7e431",
+      "size_in_bytes": 35601
+    },
+    {
+      "_path": "include/nspr/md/_netbsd.cfg",
+      "path_type": "hardlink",
+      "sha256": "1ef8e83403670ccdc20ad85218d0daf6f5d414482652f191c9d01e8b0b34aa2c",
+      "size_in_bytes": 9665
+    },
+    {
+      "_path": "include/nspr/md/_nto.cfg",
+      "path_type": "hardlink",
+      "sha256": "afd237a92bf5ecb27595a38cf7ed5713d7bdb33a66bafb5395151df853b25c5e",
+      "size_in_bytes": 3420
+    },
+    {
+      "_path": "include/nspr/md/_openbsd.cfg",
+      "path_type": "hardlink",
+      "sha256": "36123d3119e1412dea0298c012e3102e3452899c5f3fc370d4b65ea4d3ee0c28",
+      "size_in_bytes": 9571
+    },
+    {
+      "_path": "include/nspr/md/_qnx.cfg",
+      "path_type": "hardlink",
+      "sha256": "e6fd202a4ac85acb33bbb51decda520190d78f11b63464a51f6269a7b27aab8a",
+      "size_in_bytes": 1623
+    },
+    {
+      "_path": "include/nspr/md/_riscos.cfg",
+      "path_type": "hardlink",
+      "sha256": "b673172177bd32cae7195acdcce7b07433af97feee1dc4db5a390f8c0af97437",
+      "size_in_bytes": 3334
+    },
+    {
+      "_path": "include/nspr/md/_solaris.cfg",
+      "path_type": "hardlink",
+      "sha256": "a413ac645dd5a66ffc98671997efd98256a088dd9e6b9f4509ee45c6f43b03be",
+      "size_in_bytes": 4808
+    },
+    {
+      "_path": "include/nspr/md/_win95.cfg",
+      "path_type": "hardlink",
+      "sha256": "d2133c7a5c5b6654a28e2e1b93b1ced282991f8decc767f80a38c4790328a91b",
+      "size_in_bytes": 8857
+    },
+    {
+      "_path": "include/nspr/md/_winnt.cfg",
+      "path_type": "hardlink",
+      "sha256": "b524cd92dd5f409065f9be77cf6202e6e91a9f28c621bab98aee0659940f49ef",
+      "size_in_bytes": 6305
+    },
+    {
+      "_path": "include/nspr/nspr.h",
+      "path_type": "hardlink",
+      "sha256": "6517b103a1193512ecad876befec29f934a2b21592fc834b8519ddd411341318",
+      "size_in_bytes": 936
+    },
+    {
+      "_path": "include/nspr/obsolete/pralarm.h",
+      "path_type": "hardlink",
+      "sha256": "6eafed9d46ea0486c685e1f7da5a936262f559d78d12552afd9451095e425b9a",
+      "size_in_bytes": 6895
+    },
+    {
+      "_path": "include/nspr/obsolete/probslet.h",
+      "path_type": "hardlink",
+      "sha256": "bf291d592a106a0c5512d6f942d74296947a208085d1914a4162e4e41eb50bcd",
+      "size_in_bytes": 5286
+    },
+    {
+      "_path": "include/nspr/obsolete/protypes.h",
+      "path_type": "hardlink",
+      "sha256": "6ce44c498ae08a44d94b0c34a6296353cc71c4d254bf4d86654f1afabc71f497",
+      "size_in_bytes": 4365
+    },
+    {
+      "_path": "include/nspr/obsolete/prsem.h",
+      "path_type": "hardlink",
+      "sha256": "0989b524d32b3b4ff6533282f314bc81d513e8f8be578d48182085ad7d5357ca",
+      "size_in_bytes": 1967
+    },
+    {
+      "_path": "include/nspr/plarena.h",
+      "path_type": "hardlink",
+      "sha256": "6d885278a7865466cb3019080a778ea6aa5e70d5f7d799a9994503ad5979165e",
+      "size_in_bytes": 13999
+    },
+    {
+      "_path": "include/nspr/plarenas.h",
+      "path_type": "hardlink",
+      "sha256": "3a995bed5e889848f14ebaa0630b7d441877811fd370741cc52186465088530e",
+      "size_in_bytes": 485
+    },
+    {
+      "_path": "include/nspr/plbase64.h",
+      "path_type": "hardlink",
+      "sha256": "227823503333c163319081e4304a539b0a2834c4a28b780062402c510dcfbff6",
+      "size_in_bytes": 2761
+    },
+    {
+      "_path": "include/nspr/plerror.h",
+      "path_type": "hardlink",
+      "sha256": "d2a2d71356b954bf77b270662da8d733bb4627795a1596d9f00f1cc6798f3531",
+      "size_in_bytes": 800
+    },
+    {
+      "_path": "include/nspr/plgetopt.h",
+      "path_type": "hardlink",
+      "sha256": "e3cc4b42fc011c3d8012084438b075b3d70873a59d006add7c7733c6fa223956",
+      "size_in_bytes": 4585
+    },
+    {
+      "_path": "include/nspr/plhash.h",
+      "path_type": "hardlink",
+      "sha256": "85758e98a6e3dd9f64e410999728123fb4dd1997ec101490a117edb277b6665a",
+      "size_in_bytes": 4492
+    },
+    {
+      "_path": "include/nspr/plstr.h",
+      "path_type": "hardlink",
+      "sha256": "6cc7b1eb4fac6bb64cef3f0b113ea0327281f1425ea021f7eb5d3a9ad0c92126",
+      "size_in_bytes": 13327
+    },
+    {
+      "_path": "include/nspr/pratom.h",
+      "path_type": "hardlink",
+      "sha256": "c870486093a059fb8b8a50a38a00bb0c2895f16742075ecd488872604f9a2ace",
+      "size_in_bytes": 5928
+    },
+    {
+      "_path": "include/nspr/prbit.h",
+      "path_type": "hardlink",
+      "sha256": "fa96ddb211be8b43e260702164213a3948f3a14e11398277909e18af58eee4dd",
+      "size_in_bytes": 5475
+    },
+    {
+      "_path": "include/nspr/prclist.h",
+      "path_type": "hardlink",
+      "sha256": "a1c6c182479454e4aa8d412a59a5242bbe4a1ff65bd454d94e6f6e6f2a13befd",
+      "size_in_bytes": 2493
+    },
+    {
+      "_path": "include/nspr/prcmon.h",
+      "path_type": "hardlink",
+      "sha256": "035e4f03ed17b7a2a4d8a9d1e1bb91dfc35f00deb1f43051fdbeebd7736ca990",
+      "size_in_bytes": 2064
+    },
+    {
+      "_path": "include/nspr/prcountr.h",
+      "path_type": "hardlink",
+      "sha256": "4d55757a5073521600ab5baa0938a05d6afc373b25c969c884e0ae072503bda7",
+      "size_in_bytes": 14622
+    },
+    {
+      "_path": "include/nspr/prcpucfg.h",
+      "path_type": "hardlink",
+      "sha256": "d882cea4c685b111c69fd6f794f30443b27687daa01429da386e4269d1136ed4",
+      "size_in_bytes": 4648
+    },
+    {
+      "_path": "include/nspr/prcvar.h",
+      "path_type": "hardlink",
+      "sha256": "c88e94bfac1b1dad008cd3dffc6ad2f8c46b65044fa075b6f7df6c9276fe496c",
+      "size_in_bytes": 3513
+    },
+    {
+      "_path": "include/nspr/prdtoa.h",
+      "path_type": "hardlink",
+      "sha256": "b82e08708bd1c315a3935491c0fbf8f09caf04c03dc4f26b0cf4e2d83445d2f9",
+      "size_in_bytes": 1494
+    },
+    {
+      "_path": "include/nspr/prenv.h",
+      "path_type": "hardlink",
+      "sha256": "525cb5aa2ee7462cb60e2229e30e312942ff5d3e673f19572827bdd3203bd166",
+      "size_in_bytes": 6131
+    },
+    {
+      "_path": "include/nspr/prerr.h",
+      "path_type": "hardlink",
+      "sha256": "2f11f76156962116e40490409d2c72a3ef41030e4d7c2cb9cc1b88e104b62916",
+      "size_in_bytes": 6913
+    },
+    {
+      "_path": "include/nspr/prerror.h",
+      "path_type": "hardlink",
+      "sha256": "fc71e4f58420f05218c09ac1149592fcf1de858f573f9fc01d8b050d86e7faf8",
+      "size_in_bytes": 11300
+    },
+    {
+      "_path": "include/nspr/prinet.h",
+      "path_type": "hardlink",
+      "sha256": "254e0edbdf592a28bd464d8693a4ccd5918b51caffe1af872569ff3e5b9ba3cc",
+      "size_in_bytes": 2759
+    },
+    {
+      "_path": "include/nspr/prinit.h",
+      "path_type": "hardlink",
+      "sha256": "9aa1407aebca90d770669f8a4a3221e938db47a930aac655f0e94aab704e7329",
+      "size_in_bytes": 6419
+    },
+    {
+      "_path": "include/nspr/prinrval.h",
+      "path_type": "hardlink",
+      "sha256": "de91102d43dbcc60d608a3fedfb4960763152ce33f31ec5cb8ece56eda88d84d",
+      "size_in_bytes": 5258
+    },
+    {
+      "_path": "include/nspr/prio.h",
+      "path_type": "hardlink",
+      "sha256": "ac63d5f5bb44528c7b88224c620d664b1556df31340bb41c156018707212e8c4",
+      "size_in_bytes": 77654
+    },
+    {
+      "_path": "include/nspr/pripcsem.h",
+      "path_type": "hardlink",
+      "sha256": "c7a4034904786bdfafa1f6b6df18525abaaef5078c3cc5414ed5a257a6b34021",
+      "size_in_bytes": 2552
+    },
+    {
+      "_path": "include/nspr/private/pprio.h",
+      "path_type": "hardlink",
+      "sha256": "a24cc17bcbf34e57ee23a727cf7bf5ce3cf8c3148d2129386f6adae4fa268607",
+      "size_in_bytes": 8077
+    },
+    {
+      "_path": "include/nspr/private/pprthred.h",
+      "path_type": "hardlink",
+      "sha256": "3c522ba617a7ecd7d7aa5a97ca5001edbe2cad8f365d345a5a04acf304b341a1",
+      "size_in_bytes": 9811
+    },
+    {
+      "_path": "include/nspr/private/prpriv.h",
+      "path_type": "hardlink",
+      "sha256": "9b063b718b05c0d6b411802061fc4204bc4a4022bde4682a4e6bec73a122b393",
+      "size_in_bytes": 362
+    },
+    {
+      "_path": "include/nspr/prlink.h",
+      "path_type": "hardlink",
+      "sha256": "d1ed3a12cd25c03251e5454df85fb8c9d9ca8e356d3421ee8ddc2adc7732ceba",
+      "size_in_bytes": 8215
+    },
+    {
+      "_path": "include/nspr/prlock.h",
+      "path_type": "hardlink",
+      "sha256": "542edfbe98af202e3e79825bb26543f7ecd38212e90f4be0d5185b83dd751cc2",
+      "size_in_bytes": 3736
+    },
+    {
+      "_path": "include/nspr/prlog.h",
+      "path_type": "hardlink",
+      "sha256": "6ffad672a93e8fdfda04c497ce2570e82e7749808ca45b8bf57e5a303447d06d",
+      "size_in_bytes": 6917
+    },
+    {
+      "_path": "include/nspr/prlong.h",
+      "path_type": "hardlink",
+      "sha256": "857dc05d1028df201d6e74bc8c58ed27c6ff5115627f50c403ae9048a6e76df6",
+      "size_in_bytes": 19179
+    },
+    {
+      "_path": "include/nspr/prmem.h",
+      "path_type": "hardlink",
+      "sha256": "77a8e55b9c490b58e433ec5cae75cbce91ef91d0eea2cd990e4399555f7c2254",
+      "size_in_bytes": 4749
+    },
+    {
+      "_path": "include/nspr/prmon.h",
+      "path_type": "hardlink",
+      "sha256": "5c3f71924c8a308bb0515a80b61d7fc845c8def1df0a2092f45581662b9d878f",
+      "size_in_bytes": 3160
+    },
+    {
+      "_path": "include/nspr/prmwait.h",
+      "path_type": "hardlink",
+      "sha256": "79541f3fed7c6354a0ad6d49d65843e695ed6547b528f51830ac086dec471bd5",
+      "size_in_bytes": 16136
+    },
+    {
+      "_path": "include/nspr/prnetdb.h",
+      "path_type": "hardlink",
+      "sha256": "8a6efb69eb5286dac56d1fe9629bd02ecb19e7c056d5d3a5ceb9c12561813a4b",
+      "size_in_bytes": 19550
+    },
+    {
+      "_path": "include/nspr/prolock.h",
+      "path_type": "hardlink",
+      "sha256": "8a7e4a9efe6e526a56e6953a324e4a29870f7c7c000ce6e6bd15353374251cb4",
+      "size_in_bytes": 4536
+    },
+    {
+      "_path": "include/nspr/prpdce.h",
+      "path_type": "hardlink",
+      "sha256": "4fd7fdf5d998db1572af8f2b9583f4f0742932c8fad51b6f257e35c0ccb2cdef",
+      "size_in_bytes": 2392
+    },
+    {
+      "_path": "include/nspr/prprf.h",
+      "path_type": "hardlink",
+      "sha256": "9dbffe583dbfc51ecbd0eaccc64abb0149cf196a67299e5ecf7a0c5f24813772",
+      "size_in_bytes": 4422
+    },
+    {
+      "_path": "include/nspr/prproces.h",
+      "path_type": "hardlink",
+      "sha256": "1159e14c5be1ff018a0300c0240e0158870f4ee5d96f63e103e23b63e319f5ed",
+      "size_in_bytes": 2263
+    },
+    {
+      "_path": "include/nspr/prrng.h",
+      "path_type": "hardlink",
+      "sha256": "379ce4b749ad720a205a744520a6f4ed1ac6fc080d1abf93f35fa8bedbfc014d",
+      "size_in_bytes": 2363
+    },
+    {
+      "_path": "include/nspr/prrwlock.h",
+      "path_type": "hardlink",
+      "sha256": "d1ac8744bca4f456c48e7098c0e7729ecd29f4a6850275ce9b040dd7c615047b",
+      "size_in_bytes": 2772
+    },
+    {
+      "_path": "include/nspr/prshm.h",
+      "path_type": "hardlink",
+      "sha256": "990d6ddfb4dbe6432c131d20567ca3c75eb01df7d1234c0a72f18e8ee206462a",
+      "size_in_bytes": 8307
+    },
+    {
+      "_path": "include/nspr/prshma.h",
+      "path_type": "hardlink",
+      "sha256": "ebdba448ba55d9f0552591546ded9da5aa163cdb558fe98bb6f9c8790926fd5f",
+      "size_in_bytes": 7007
+    },
+    {
+      "_path": "include/nspr/prsystem.h",
+      "path_type": "hardlink",
+      "sha256": "46ceb9ad0b0a1a28b106f0c619e5e6eef26d6ca879aa293c6ded9572b5719d3b",
+      "size_in_bytes": 2613
+    },
+    {
+      "_path": "include/nspr/prthread.h",
+      "path_type": "hardlink",
+      "sha256": "6f797cf15a1a1067bdc584de7db15edb5293704a24d62cd8ce475a1abe9bdadb",
+      "size_in_bytes": 9851
+    },
+    {
+      "_path": "include/nspr/prtime.h",
+      "path_type": "hardlink",
+      "sha256": "2f51c071de03009f1db40a68a22b3156c4bd90a8a9512e5712afbe2345cdc41f",
+      "size_in_bytes": 9809
+    },
+    {
+      "_path": "include/nspr/prtpool.h",
+      "path_type": "hardlink",
+      "sha256": "505d82a89aaeda3ae503076328d85b611e908ea40683afb4818f5f1183015f05",
+      "size_in_bytes": 2302
+    },
+    {
+      "_path": "include/nspr/prtrace.h",
+      "path_type": "hardlink",
+      "sha256": "4075a829d3382270688b0a8fb8b429503a06a508ddfcbd8028c036ce24949a23",
+      "size_in_bytes": 20558
+    },
+    {
+      "_path": "include/nspr/prtypes.h",
+      "path_type": "hardlink",
+      "sha256": "03f5a125ff7a5a6a4ea58ad83a4acbef04b3aba82df95e94bdabf57d5eb72913",
+      "size_in_bytes": 19168
+    },
+    {
+      "_path": "include/nspr/prvrsion.h",
+      "path_type": "hardlink",
+      "sha256": "e87496df7b8dd182e7666aa43321de35bfe6781edaa185329f81b6d0b1313cc8",
+      "size_in_bytes": 3442
+    },
+    {
+      "_path": "lib/libnspr4.dylib",
+      "path_type": "hardlink",
+      "sha256": "6b8de3e00ef2509702a5dcb1a537bd1175d459b8a7dfb014ce4f1961f5189fb5",
+      "size_in_bytes": 248272
+    },
+    {
+      "_path": "lib/libplc4.dylib",
+      "path_type": "hardlink",
+      "sha256": "941eb991e5c2ccc8388ab4521c05f4ddaad4e6e44232351c1b660f6eb9e74f4a",
+      "size_in_bytes": 54128
+    },
+    {
+      "_path": "lib/libplds4.dylib",
+      "path_type": "hardlink",
+      "sha256": "e95ce05d94d562296a1dfc2bc38d028d4708094de1cc9197e61ac759d3c107e4",
+      "size_in_bytes": 53216
+    },
+    {
+      "_path": "lib/pkgconfig/nspr.pc",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/nspr_1786154904583/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+      "sha256": "d060156f6bf5e2ee23a51323ac88286f15b29a7b592cfa3b9e10f69c7a3ccb40",
+      "size_in_bytes": 499
+    },
+    {
+      "_path": "share/aclocal/nspr.m4",
+      "path_type": "hardlink",
+      "sha256": "f5249c876d5de2708101ba49ef37b9d81db84b2cb48c39740e35c4996bdfa5d2",
+      "size_in_bytes": 2800
+    }
+  ],
+  "paths_version": 1
+}

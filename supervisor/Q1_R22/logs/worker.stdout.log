@@ -1,0 +1,19 @@
+MLX service ready; reusing the requested model.
+[tool] search_studies
+[tool-error] search_studies: Tool is not currently advertised: search_studies
+[tool] get_study
+[tool-error] verify_doi: Tool is not currently advertised: verify_doi
+[tool] plan_asset
+[tool] download_asset
+[tool] prepare_3ca_dataset
+[tool] list_files
+[tool] read_file
+[auto-continue] phase=metabolic_gene_definition; completion not verified
+[tool] list_files
+[tool] list_files
+[tool-error] list_files: ENOENT: no such file or directory, lstat '/Users/bytedance/Downloads/BioDiscovery-3CA/3CA/Q1_R22/3CA'
+[tool] list_files
+[tool-error] list_files: Path leaves workspace: /Users/bytedance/Downloads/BioDiscovery-3CA
+[tool] list_files
+[tool-error] list_files: Path leaves workspace: /Users/bytedance/Downloads/BioDiscovery-3CA/3CA
+[tool] list_files

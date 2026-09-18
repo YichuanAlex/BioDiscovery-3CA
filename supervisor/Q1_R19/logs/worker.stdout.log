@@ -1,0 +1,17 @@
+MLX service ready; reusing the requested model.
+[tool] search_studies
+[tool-error] get_study: Tool is not currently advertised: get_study
+[tool-error] get_page: Tool is not currently advertised: get_page
+[tool-error] search_studies: Tool is not currently advertised: search_studies
+[tool] download_asset
+[tool] run_shell
+[tool] run_shell
+[auto-continue] phase=input_staging; completion not verified
+[tool] prepare_3ca_dataset
+[tool] run_shell
+[tool] run_shell
+[tool] run_shell
+[tool] run_shell
+[auto-continue] phase=core_analysis; completion not verified
+[tool] run_shell
+[tool] run_shell

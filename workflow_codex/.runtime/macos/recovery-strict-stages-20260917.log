@@ -1,0 +1,29 @@
+PASS: actual project CLI directory listing stays valid bounded JSON; file preview and cache boundary remain enforced.
+PASS: empty-reply recovery, failed-tool recovery, repeated verification, unchanged-read loop guard, isolated workspace.
+PASS: repeated context compaction retains one authoritative envelope and bounded recent tool evidence.
+PASS: workspace Python execution requires a successful audit of the exact current file hash.
+PASS: research runs cannot execute custom Python before the vetted core result exists.
+PASS: empty-directory mutations advance workspace state so a prior known failure can be retried.
+PASS: status-only shell messages cannot masquerade as compilation or validation.
+PASS: research artifact milestones survive missing model checkpoints and expose the next required action.
+PASS: a prompt-fixed 3CA study advances from one catalog call to exact get_study routing.
+PASS: staged research must fetch a saved Reactome gene set before native core analysis is advertised.
+PASS: native core analysis receives exact staged and Reactome paths from saved manifests.
+PASS: every DOI explicitly required by the research prompt is verified before report authoring.
+PASS: a native build failure routes to file repair before another compile attempt.
+PASS: twelve consecutive identical native build failures stop a report edit cycle even when the TeX file keeps changing.
+PASS: twelve consecutive identical invalid bundle validations stop a manifest repair cycle even when the manifest keeps changing.
+PASS: a changed validator error set resets the consecutive-failure counter instead of terminating a progressing repair.
+PASS: research repair phases reject writes outside the exact failing deliverables.
+PASS: max-rounds 0 survives the old no-action stop and continues until verified completion.
+PASS: max-rounds 0 stops after twelve recoveries of the same phase and workspace version.
+PASS: context recovery preserves independent asset references and reuses the actual original result without re-execution or new verification.
+PASS: a bare data path is rejected as a shell no-op and the platform shell is cooled for one response.
+PASS: autonomous plan recovery, nested paths, premature completion rejection, shell mutation validation, actual reasoning persistence, resume without mutation replay, unfinished budget nonzero exit.
+PASS: native tool calls and 3CA catalog searches remain available beyond the former request ceiling.
+PASS: empty JSON and fake PDF completion candidates are rejected; valid nonempty JSON can pass structural verification.
+PASS: complete_task rejects a structurally nonempty but scientifically incomplete analysis manifest.
+PASS: bundle/code checks and core-analysis retries recompute on changed workspace inputs; unchanged duplicate guards remain intact.
+PASS: truncated legacy actions are discarded and retried as concise native function calls.
+PASS: cookie challenge is rejected as unusable evidence.
+PASS: persistent checkpoint ENOSPC returns the retryable worker exit code with a stale resumable checkpoint.

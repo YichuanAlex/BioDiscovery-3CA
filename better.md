@@ -894,3 +894,67 @@ Git 本地作者配置为 `YichuanAlex <jiangzixi1527435659@gmail.com>`，remote
 推送后通过 GitHub REST API 独立复核：远程 `YichuanAlex/BioDiscovery-3CA` 为 `private`，默认分支 `main`，远程 commit `35c1ab2c7f645404823cb946fd664931c4ea03cd` 与本地完全一致；远程 `README.md` 74,442 bytes、`.gitignore` 1 byte 且没有 ignore pattern、`LFS_EXCLUDED_FILES.md` 4,925 bytes。API 的 `repo.size` 在首次推送后暂时仍返回 0 KiB，属于仓库统计异步更新，不影响 commit/file API 已能读取的事实。此条追加后还需一个小型日志提交和 push，完成后再做最终 HEAD 对齐。
 
 `.gitignore` 随后从一个换行修正为真正的 0-byte 空文件，并把 `LFS_EXCLUDED_FILES.md` 中最终普通 Git 文件数纠正为 36,451。小型发布记录 commit `456519dca454a08f369c0eccd258fdcaf5554af2` 成功 push，传输 5 个对象/1.59 KiB。最终 GitHub API 核验返回：private/`main`，远程和本地 commit 均为 `456519dca454a08f369c0eccd258fdcaf5554af2`；递归 tree `truncated=false`，恰有 36,451 个 remote blobs，0 个超过 100 MiB，最大 blob 89.24 MiB；远程 README 74,442 bytes、`.gitignore` 0 bytes、排除清单 4,914 bytes。Git Credential Manager 清除操作退出 0，`cmdkey /list` 中没有匹配 GitHub/YichuanAlex 的凭据目标；本地 `git lfs ls-files` 为 0，tracked worktree changes 为 0，`HEAD` 与 `origin/main` 完全相同。至此仓库内容与用户指定的大文件回退边界均已远程验证。
+
+## 2026-09-17 — Mac / MLX 迁移开始
+
+用户授权将完整项目适配至 Apple Silicon Mac，使用 `model/Qwen3.5-4B-MLX-4bit` 并实际运行端到端科研流程。当前项目根为 `/Users/bytedance/Downloads/BioDiscovery-3CA`；原 Windows `C:/Users/User/Desktop/agentic/better.md` 在此机器的对应文件就是本记录，后续追加于此，保留全部旧历史。未删除、重用或修改任何旧研究轮次。
+
+环境核验：Apple M5、16 GiB 统一内存、macOS arm64；Conda 环境为 `/Users/Shared/miniforge3/envs/py38`、`py312`，后者 Python 3.12.14，已有 mlx 0.32.2、mlx-lm 0.31.3、mlx-vlm 0.7.1、transformers 5.17.0。Metal 实际可用，推荐 GPU working set 为 12,713,115,648 bytes。初次 mlx-lm import 较慢，栈显示加载 SciPy/sklearn 原生扩展；最终 import 成功，尚不代表模型推理成功。py38 为 Python 3.8.20，不满足项目 >=3.10 要求。
+
+缺少 Node、单细胞/MCP/PDF 工具，开始执行 `setup-macos.sh`：在 `.runtime/macos/python` 建立继承 py312 的项目 venv，新增依赖只安装到本项目；Node/Tectonic/Poppler 计划安装到项目 Conda prefix。旧大型原始数据不在迁移副本，后续必须经官方已记录来源重新下载并校验哈希。Qwen MLX 权重文件存在，约 3.03 GB。
+
+开始平台适配：新增 `wingpt-platform.js` 统一 Python 与 Shell 选择；工具桥使用当前 Python和源码 CLI；引擎增加模型地址/身份配置、Bash 工具、POSIX 附件、实际 provider 日志，并补上最终验证 `valid=true` 的显式判定。尚未完成测试、启动器和端到端运行，不宣称迁移成功。
+
+## 2026-09-17 — `test-wingpt-recovery.mjs` macOS 适配
+
+仅修改 `workflow_codex/codex-cli/bin/test-wingpt-recovery.mjs`，未改生产代码。测试现在从 `wingpt-platform.js` 使用 `shellToolName`、`scientificPython` 与 `isWindows`：macOS 发送 `run_shell` 和 Bash/POSIX 命令，Windows 继续发送 `run_powershell` 和原 PowerShell 命令；Python 审计测试改用平台科学 Python。另将临时目录的任务哈希与 checkpoint workspace 统一为 `fs.realpathSync`，避免 macOS `/var` 与 `/private/var` 别名导致 `probe.txt`/任务 checkpoint ENOENT；Windows 专属 PowerShell launcher 测试只在 Windows 执行。
+
+实际验证：项目本地 Node 执行 `node --check codex-cli/bin/test-wingpt-recovery.mjs` 退出 0；完整 `node codex-cli/bin/test-wingpt-recovery.mjs` 退出 0，全部输出为 PASS。`just fmt` 未执行成功，因为当前 macOS 环境没有 `just`（退出 127）；本轮只改 JavaScript 测试文件，无 Rust/生产代码变更。此前迭代真实暴露并修复了 POSIX 实路径 checkpoint、Bash 命令、平台 CLI mock 与 macOS 较慢验证周期问题。
+
+### Mac 迁移验证与 Q1_R19 放行（2026-09-17）
+
+继续迁移时发现宿主 TRAE Python 3.10 的 `PYTHONHOME/PYTHONPATH` 会污染项目 venv，使 Python 3.12 在初始化 `encodings` 前崩溃。`macos-env.sh` 现先清除两项变量、检查项目 Python 可执行，再用隔离模式读取 base prefix；`setup-macos.sh` 同样清除污染并在建 venv 前验证基础 Python >=3.10。四个 Mac shell 入口已增加执行权限。修复后项目 Python 3.12.14 可导入 MLX、mlx-lm、Scanpy、Pandas、SciPy 和 scikit-learn；Node 语法、Tectonic 0.17.0、Poppler 26.09.0 均通过。
+
+项目本地 MLX 服务真实启动为 PID 7273，`/v1/models` 返回指定 `model/Qwen3.5-4B-MLX-4bit`，主 `--self-test --allow-shell` 退出 0，覆盖模型、路径守卫、文件读取、原生工具协议、3CA、research-quality、网络和 Bash。7 项 Python 科研单元测试通过；10 个 tool43CA MCP 实际调用通过，包括在线目录、metadata 下载/解压、检查与 SHA-256；9 个 research-quality MCP 实际调用通过，包括合成分析、Tectonic PDF 构建、bundle 边界和 Reactome/PubMed/Crossref。
+
+网络预检曾有两项真实失败：旧 Dropbox 请求出现一次证书主机名不匹配；随后相同真实 MCP 下载链通过，未关闭 TLS。第一次 research-quality MCP 因 Reactome/NCBI 慢响应且旧 `_request()` 无 timeout 长时间无终态，人工终止测试，残留子进程随后精确终止。现场探针显示 Reactome 两个接口各约 61 秒、PubMed 约 32 秒、Crossref 约 1 秒。现将 3CA 与 research-quality 的默认 socket timeout 设为可配置 120 秒（`WINGPT_NETWORK_TIMEOUT`），保留原重试、TLS、host allowlist 和哈希核验；3CA 裸 CLI 默认缓存同时由 Windows 字面路径改为项目 `.threeca/cache`。
+
+完整恢复回归迁移到 `wingpt-platform.js`：Mac 使用 `run_shell`、Bash、科学 Python 和 POSIX realpath，Windows 分支保持原 PowerShell 行为。主会话复跑依次暴露并修正了模板字符串中的美元符号正则转义，以及手工 checkpoint 固定 Windows 模型名造成的 resume identity mismatch；最终 `node test-wingpt-recovery.mjs` 退出 0，27 项 PASS，覆盖上下文压缩、科研阶段、编译/validator 熔断、until-complete、checkpoint、来源和完成门禁。没有修改 Rust，因此未运行 Rust fmt/test。
+
+README 已加入 Mac/MLX 安装、服务、交互、自测和自主运行说明，明确 Mac 默认 32,768 context/4,096 output 和 120 秒网络超时，不沿用 Windows 262,144 配置。建立全新空 `3CA/Q1_R19` 与 `supervisor/Q1_R19`；未复制 Q1_R1–Q1_R18 的代码、计算、图表、报告或任务状态。R19 prompt 全部使用 Mac 路径，启动器显式要求核心结果、TeX/PDF、summary、manifest 与 README，并在启动前拒绝非空工作区或既存 checkpoint；只读 audit 脚本区分进程、checkpoint、结构产物和待独立科学语义复核。
+
+Q1_R19 于 2026-09-17T06:44:22Z 从空目录真实启动，使用本地 MLX 模型、32,768 context 和 4,096 output。它完成在线研究搜索、554,504,664-byte 3CA data archive 下载与 SHA-256 `2156a73fd5f95a198ef90821f2d734bfa7e0b5aa3686deefd1b5c5d5d1269aa1` 核验、安全解压、输入暂存及 58,843 cells/33,538 genes 的检查；随后在第 16 轮仍停留 `core_analysis`，只有 inputs，六项必需产物均不存在。原始 JSONL 证明阶段广告仅含 `analyze_metabolic_states`，但本轮尚无 Reactome genes 文件，也不再广告 `fetch_reactome_metabolic_genes`；模型连续使用 shell 查看输入，无法满足核心工具参数。监督者停止 runner 并确认进程退出，保留 R19 工作区、checkpoint、session 和日志；checkpoint 的 `running` 是停止前最后提交状态，不代表进程仍活着。R19 记录为 `not_accepted`，不恢复、不复用。
+
+R19 后修复共享 `researchMilestone()`：staging 已存在且核心缺失时，先检查本轮 `sources/reactome/*_genes.txt`；不存在则进入 `metabolic_gene_definition`，只广告 `fetch_reactome_metabolic_genes`，保存后才进入核心分析。新增恢复回归明确断言此顺序以及核心工具不会提前广告。完整 recovery suite 再次退出 0，所有既有 PASS 加上新的 Reactome 路由 PASS。按轮次规则建立全新空 `3CA/Q1_R20` 和对应 supervisor 配置；R20 不复制 R19 输入、计算或任务状态，只允许复用已经核验来源与哈希的公共原始缓存。
+
+Q1_R20 从空目录启动后进入 `source_download`，但提示未固定 3CA ID，模型在第 19 轮仍只用 shell 检查且研究文件为 0，没有调用已广告的 `download_asset`。通用 loop recovery 未促成参数选择。监督者停止并确认该轮不完成，不恢复或复用其 checkpoint。该问题不是下载/TLS 失败，而是 4B 模型没有把 catalog reference 转成阶段所需 target。根据已核验公共来源和阶段路由既有回归，新 Q1_R21 将任务合同固定为 `3ca:20773`；这不复用旧计算，只固定公开输入来源。新研究目录启动前为空。
+
+Q1_R21 使用固定公开来源后顺利完成 search/get/plan/download、公共原始缓存 SHA-256 复核、本轮输入暂存和新增 Reactome 阶段，证明前两项修复生效；但进入 `core_analysis` 后，状态机只写“existing staged input paths”，没有注入 staging manifest 与 Reactome `genes_path` 的精确参数。模型到第 19 轮仍在 list/read/shell 检查，核心未调用。监督者停止并保留 R21，不恢复、不复制其输入或来源文件。
+
+共享核心阶段现动态读取当前工作区 `inputs/staging_manifest.json` 和 `sources/reactome/*_genes.txt`，在 `next_required_action` 中提供 `expression_path`、`cells_path`、`genes_path`、`metabolic_genes_path`、`cell_id_column`、目标 `output_dir` 和 19 个随机对照的完整 JSON 参数。新增回归断言这些路径来自当前 fixture，而非硬编码旧轮次；完整 recovery suite 退出 0。建立全新空 Q1_R22，继续只复用核验后的公共原始缓存。
+
+Q1_R22 完成固定来源、缓存哈希复核和本轮输入暂存，但到第 14 轮仍停在 `metabolic_gene_definition`；模型持续选择通用 list/read 工具而不调用唯一要求的 Reactome 原生工具。监督者停止并保留 R22。根修复为仅在 `metabolic_gene_definition` 和 `core_analysis` 两个确定性阶段启用严格工具集：对应原生工具加 `task_checkpoint`，不广告无关 workspace 工具；其他需要检查/修稿的阶段仍保留文件工具。回归新增严格工具列表断言，完整 suite 退出 0。全新空 Q1_R23 已准备，不复用 R22 任务状态或研究文件。
+
+Q1_R23 的严格 Reactome 与核心阶段均成功：本轮重新暂存输入，现场获取 Reactome release 97 基因集，并用注入的精确参数完成 58,843-cell 原生核心，生成 `core_result.json`、`summary.json` 和图件。随后在 `literature_verification` 连续 13 轮未调用 `verify_doi`，反而通过仍可见的文件工具提前写了未验收 TeX/manifest；无 PDF、README 或完成候选。监督者停止并保留 R23，不复用其核心或草稿。
+
+共享阶段机进一步将 `literature_verification`、`report_build`、`bundle_validation` 和 `completion` 设为严格工具阶段；报告初写和具体修复阶段仍保留文件工具。相应回归断言 DOI 与 build 阶段只暴露目标工具和 checkpoint，完整 suite 退出 0。全新空 Q1_R24 已准备；它会重新执行计算，不复制 R23 结果。
+
+Q1_R24 从空目录真实启动并完整通过数据来源、缓存哈希复核、本轮暂存、Reactome、原生核心和 Crossref 阶段。核心为 58,843 cells、1,984 prevalence 后代谢基因、resolution 0.4、15 clusters、Leiden silhouette 0.229361、stability mean/min ARI 0.980031/0.972621、matched-k KMeans 0.246863、随机对照 0/19、患者内 ARI 0.106107–0.813369、最弱 patient 3/3,287 cells，核心结论 `inconclusive`。这些事实来自本轮 `core_result.json`，尚未构成最终报告语义验收。
+
+R24 已生成 core、summary、manifest、README、两张矢量图和 TeX，但 Tectonic 首先拒绝不存在的 `sloppy.sty`，随后持续报告 table 环境内缺少 tabular 导致的 `Misplaced \noalign`，并同时提示正文 `\log_1p` 与普通文本下划线。引擎正确维持未完成状态且未生成 PDF；当前 runner 继续运行于 report repair/build 循环，未调用 complete_task，也未宣称完成。
+
+用户要求继续修复后复核 R24：runner 仍活跃至第 133 轮，同一 `Misplaced \noalign` 根因未修复，stage failure 计数却反复回到 1。监督者停止并确认 R24 未完成，保留全部 core、草稿、日志和 checkpoint。共享引擎现把常见 LaTeX 根因归一成稳定类别，避免行号/附近源码变化绕过 12 次熔断；报告合同和 repair action 明确要求 booktabs 规则置于 `tabular` 内、`\sloppy` 是正文命令而非宏包、公式写 `\log(1+x)`、普通文本下划线转义、每图使用独立 figure/caption/label。恢复回归新增这些指令断言，完整 suite 退出 0。全新空 Q1_R25 已准备，不复用 R24 计算或草稿。
+
+Q1_R25 独立重跑并再次完成 core、DOI、manifest、README 和 TeX。模型正确改用 `\sloppy` 命令，但仍遗漏 `tabular`。Tectonic 输出先列 Underfull hbox，再列真正的 `Misplaced \noalign`；旧 `_latex_failure_summary` 选择第一个 `main.tex:line`，使 repair action 错误聚焦非致命 warning。监督者停止并保留 R25。摘要器现从全部 file:line 诊断中优先选择 Misplaced/LaTeX Error/Undefined control/Missing $/Emergency stop/Fatal error；新增“warning 在前、fatal 在后”单测，5 项 research-quality 单测和完整 recovery suite 均退出 0。全新空 Q1_R26 已准备。
+
+Q1_R26 验证了诊断优先级修复：依次准确定位 sloppy.sty、标题下划线、方法下划线，成功生成 4 页后 5 页 PDF，并三次运行 validator；错误从 10 项降到 7 项，seed、matched genes 和日志问题已消除。后续重写加入 figures/table/formula 时，Tectonic 日志先出现 Underfull warning，后出现真正的 `Unable to load picture or PDF file 'figures/metabolic_umap.pdf'`；fatal 优先列表尚未包含图片加载失败，模型再次被误导。监督者停止并保留 R26。摘要器现也优先识别 Unable to load picture/PDF 与 File not found；新增对应单测，6 项 research-quality 单测和完整 recovery suite 均退出 0。全新空 Q1_R27 已准备，并在提示中再次明确 report 目录必须使用 `../figures/...`。
+
+Q1_R27 再次完成独立 core 与 DOI，但在 report_and_manifest 阶段只缺 README 时连续使用 shell/list/read，未进入 build，暴露写作阶段仍可被通用 workspace 工具分流。监督者停止并保留 R27。`report_and_manifest`、`report_repair`、`bundle_repair` 现设为严格文件工具集，只保留 read/list/write/append/replace 与 checkpoint，不广告 shell；完整 recovery suite 退出 0。全新空 Q1_R28 已准备，轮次合同修正为不得复制 Q1_R1–Q1_R27。
+
+Q1_R28 验证严格写作工具可显著减少空转，并成功反复构建 4–6 页 PDF。Validator 错误从 8 项降到 5 项，但模型在自由同义改写中震荡：图/表/formula 的 `\ref` 字面引用、`median silhouette`/`mean pairwise ARI` 字面标准和 `0 of 19` 被反复增删，还一度重新加入禁止的 significantly/better than random。监督者停止并保留 R28。共享报告合同现注入可直接复制的固定 prose references、完整 figure/table/equation 骨架、resolution-selection 固定句、随机对照固定句和禁用措辞；完整 recovery suite 退出 0。全新空 Q1_R29 已准备。
+
+Q1_R29 从空目录独立运行，完成真实 `3ca:20773` 输入暂存与 SHA-256 复核、Reactome release 97 基因集、58,843-cell 核心分析、Crossref 核验、summary、manifest、README、两张矢量图和有效 PDF。核心结果保持 `inconclusive`；validator 错误先从 6 项降至 4 项，再降至 3 项，最后只剩 `LaTeX log contains overflow, compilation, citation or reference errors`。日志明确显示两张按自然尺寸插入的 PDF 图产生 71.81737pt 和 62.2643pt 的 `Overfull \hbox`。旧进程的报告合同没有图宽约束，模型多轮优先改写已通过的引用措辞，并在 TeX 修改后进入严格 `report_build` 阶段继续请求编辑工具，造成重复的 tool-not-advertised 和无效构建/验证循环。监督者停止 runner，保留 R29 全部现场；该轮没有 `valid=true` 或成功 `complete_task`，不得标记完成。
+
+共享 `wingpt.js` 报告合同现要求每个 `\includegraphics` 使用 `width=0.95\linewidth,height=0.78\textheight,keepaspectratio`，并在 validator 报告 overflow 或页面触边时要求优先修复图宽、不得先改无关措辞。`test-wingpt-recovery.mjs` 新增合同断言。首次直接运行回归被宿主 `PYTHONHOME/PYTHONPATH` 污染导致 Python 初始化失败；按 `macos-env.sh` 清理环境后完整 recovery suite 退出 0，全部既有检查通过。按轮次规则建立全新空 Q1_R30 和对应 supervisor 配置，提示明确图宽约束，不复制 R29 的代码、计算或报告，只允许复用已核验公共原始缓存。
+
+Q1_R30 最终成功。runner 退出码为 0，stderr 为空；日志最后依次记录 `build_research_report`、`validate_research_bundle` 和 `complete_task`。任务证据中的最终 validator 于 2026-09-17T22:24:27.712171Z 返回 `valid=true`、`errors=[]`，检查计数为 methods=1、figures=2、three_line_tables=1、formulas=1、pdf_pages=5、rendered_pages=5、references=1。六项必需产物全部存在且非空，`report/main.pdf` 为可读取的 5 页 PDF；最终 LaTeX 日志无 overflow、编译、citation 或 reference 错误。核心结果为 58,843 cells、1,984 metabolic genes、resolution 0.4、15 clusters，结论保持 `inconclusive`。R30 已由 validator 与 `complete_task` 接受。

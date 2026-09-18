@@ -1,0 +1,8 @@
+poppler_datadir=/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/tools/share/poppler
+
+Name: poppler-data
+Description: Encoding files for use with poppler
+Version: 0.4.12
+
+Cflags: -DPOPPLER_DATADIR=/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/tools/share/poppler
+

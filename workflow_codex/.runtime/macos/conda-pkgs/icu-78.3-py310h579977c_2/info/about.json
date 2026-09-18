@@ -1,0 +1,22 @@
+{
+  "channels": [
+    "https://conda.anaconda.org/conda-forge/"
+  ],
+  "dev_url": "https://github.com/unicode-org/icu",
+  "doc_url": "https://unicode-org.github.io/icu-docs/apidoc/released/icu4c/",
+  "extra": {
+    "flow_run_id": "azure_20260812.1.1",
+    "recipe-maintainers": [
+      "ccordoba12",
+      "jakirkham",
+      "msarahan",
+      "ocefpaf",
+      "xhochy"
+    ],
+    "remote_url": "https://github.com/conda-forge/icu-feedstock",
+    "sha": "72c98272513977fda6ffa2dd7a4e6f67a77976c9"
+  },
+  "home": "https://icu.unicode.org/",
+  "license": "MIT",
+  "summary": "International Components for Unicode."
+}

@@ -1,0 +1,10 @@
+loading
+loaded 3.955311959000028 tools True thinking True
+==========
+MLX_OK
+==========
+Prompt: 18 tokens, 40.239 tokens-per-sec
+Generation: 4 tokens, 12.275 tokens-per-sec
+Peak memory: 2.498 GB
+MLX_OK
+peak_GB 2.498312855

@@ -1,0 +1,10 @@
+prefix=/Users/runner/miniforge3/conda-bld/harfbuzz-split_1788405323951/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: harfbuzz-gobject
+Description: HarfBuzz text shaping library GObject integration
+Version: 14.4.0
+Requires: harfbuzz =  14.4.0, glib-2.0 >=  2.30.0, gobject-2.0 >=  2.30.0
+Libs: -L${libdir} -lharfbuzz-gobject
+Cflags: -I${includedir}/harfbuzz

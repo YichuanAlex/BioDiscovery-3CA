@@ -1,0 +1,15 @@
+{
+  "arch": "arm64",
+  "build": "h2ddc9cb_4",
+  "build_number": 4,
+  "depends": [
+    "__osx >=11.0",
+    "libbrotlicommon 1.2.0 h1dcdb26_4"
+  ],
+  "license": "MIT",
+  "name": "libbrotlienc",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1788480359341,
+  "version": "1.2.0"
+}

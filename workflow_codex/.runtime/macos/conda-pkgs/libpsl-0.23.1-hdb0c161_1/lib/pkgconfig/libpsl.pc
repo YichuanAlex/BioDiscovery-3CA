@@ -1,0 +1,10 @@
+prefix=/Users/runner/miniforge3/conda-bld/bld/rattler-build_libpsl_1786970928/host_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: libpsl
+Description: Public Suffix List C library
+Version: 0.23.1
+Requires.private: icu-uc
+Libs: -L${libdir} -lpsl
+Cflags: -I${includedir}

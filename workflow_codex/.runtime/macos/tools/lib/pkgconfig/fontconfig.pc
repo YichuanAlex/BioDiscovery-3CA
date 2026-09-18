@@ -1,0 +1,16 @@
+prefix=/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/tools
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+sysconfdir=/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/tools/etc
+localstatedir=/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/tools/var
+confdir=/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/tools/etc/fonts
+cachedir=/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/tools/var/cache/fontconfig
+
+Name: Fontconfig
+Description: Font configuration and customization library
+Version: 2.18.3
+Requires.private: freetype2 >=  21.0.15, expat
+Libs: -L${libdir} -lfontconfig
+Libs.private: -lintl -lm
+Cflags: -I${includedir}

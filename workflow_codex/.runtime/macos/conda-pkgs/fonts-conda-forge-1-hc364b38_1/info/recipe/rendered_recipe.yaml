@@ -1,0 +1,171 @@
+recipe:
+  schema_version: 1
+  context: {}
+  package:
+    name: fonts-conda-forge
+    version: '1'
+  build:
+    number: 1
+    string: hc364b38_1
+    noarch: generic
+  requirements:
+    build:
+    - font-ttf-ubuntu
+    - font-ttf-inconsolata
+    - font-ttf-dejavu-sans-mono
+    - font-ttf-source-code-pro
+    run:
+    - font-ttf-ubuntu
+    - font-ttf-inconsolata
+    - font-ttf-dejavu-sans-mono
+    - font-ttf-source-code-pro
+  tests:
+  - script:
+    - ls -alh ${PREFIX}/fonts/
+    - du -sh ${PREFIX}/fonts/
+  about:
+    homepage: https://conda-forge.org/
+    license: BSD-3-Clause
+    license_file:
+    - LICENSE.txt
+    summary: The curated conda-forge standard fonts
+    description: |-
+      A basic set of different fonts with at least one font covering as many
+      scientific glyphs as possible, looking native on Ubuntu, being suitable
+      for UI applications like Qt Creator and RStudio and being all in all
+      reasonable sized. Install more fonts via conda (e.g. mscorefonts) or your
+      system's package manager for an increased font experience.
+  extra:
+    recipe-maintainers:
+    - dbast
+build_configuration:
+  target_platform: noarch
+  host_platform:
+    platform: linux-64
+    virtual_packages:
+    - __unix=0=0
+    - __linux=6.11.0=0
+    - __glibc=2.34=0
+    - __archspec=1=x86_64_v4
+  build_platform:
+    platform: linux-64
+    virtual_packages:
+    - __unix=0=0
+    - __linux=6.11.0=0
+    - __glibc=2.34=0
+    - __archspec=1=x86_64_v4
+  variant:
+    channel_sources: conda-forge
+    channel_targets: conda-forge main
+    target_platform: noarch
+  hash:
+    hash: c364b38
+  directories:
+    host_prefix: /home/conda/feedstock_root/build_artifacts/bld/rattler-build_fonts-conda-forge_1762351264/host_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh
+    build_prefix: /home/conda/feedstock_root/build_artifacts/bld/rattler-build_fonts-conda-forge_1762351264/build_env
+    work_dir: /home/conda/feedstock_root/build_artifacts/bld/rattler-build_fonts-conda-forge_1762351264/work
+    build_dir: /home/conda/feedstock_root/build_artifacts/bld/rattler-build_fonts-conda-forge_1762351264
+  channels:
+  - https://conda.anaconda.org/conda-forge
+  channel_priority: strict
+  solve_strategy: highest
+  timestamp: 2025-11-05T14:01:04.405447166Z
+  subpackages:
+    fonts-conda-forge:
+      name: fonts-conda-forge
+      version: '1'
+      build_string: hc364b38_1
+  packaging_settings:
+    archive_type: conda
+    compression_level: 15
+finalized_dependencies:
+  build:
+    specs:
+    - source: font-ttf-ubuntu
+    - source: font-ttf-inconsolata
+    - source: font-ttf-dejavu-sans-mono
+    - source: font-ttf-source-code-pro
+    resolved:
+    - build: hab24e00_0
+      build_number: 0
+      depends: []
+      license: BSD-3-Clause
+      license_family: BSD
+      md5: 0c96522c6bdaed4b1566d11387caaf45
+      name: font-ttf-dejavu-sans-mono
+      noarch: generic
+      run_exports: {}
+      sha256: 58d7f40d2940dd0a8aa28651239adbf5613254df0f75789919c4e6762054403b
+      size: 397370
+      subdir: noarch
+      timestamp: 1566932522327
+      version: '2.37'
+      fn: font-ttf-dejavu-sans-mono-2.37-hab24e00_0.tar.bz2
+      url: https://conda.anaconda.org/conda-forge/noarch/font-ttf-dejavu-sans-mono-2.37-hab24e00_0.tar.bz2
+      channel: https://conda.anaconda.org/conda-forge/
+    - build: h77eed37_3
+      build_number: 3
+      depends: []
+      license: LicenseRef-Ubuntu-Font-Licence-Version-1.0
+      license_family: Other
+      md5: 49023d73832ef61042f6a237cb2687e7
+      name: font-ttf-ubuntu
+      noarch: generic
+      run_exports: {}
+      sha256: 2821ec1dc454bd8b9a31d0ed22a7ce22422c0aef163c59f49dfdf915d0f0ca14
+      size: 1620504
+      subdir: noarch
+      timestamp: 1727511233259
+      version: '0.83'
+      fn: font-ttf-ubuntu-0.83-h77eed37_3.conda
+      url: https://conda.anaconda.org/conda-forge/noarch/font-ttf-ubuntu-0.83-h77eed37_3.conda
+      channel: https://conda.anaconda.org/conda-forge/
+    - build: h77eed37_0
+      build_number: 0
+      depends: []
+      license: OFL-1.1
+      license_family: Other
+      md5: 34893075a5c9e55cdafac56607368fc6
+      name: font-ttf-inconsolata
+      noarch: generic
+      run_exports: {}
+      sha256: c52a29fdac682c20d252facc50f01e7c2e7ceac52aa9817aaf0bb83f7559ec5c
+      size: 96530
+      subdir: noarch
+      timestamp: 1620479909603
+      version: '3.000'
+      fn: font-ttf-inconsolata-3.000-h77eed37_0.tar.bz2
+      url: https://conda.anaconda.org/conda-forge/noarch/font-ttf-inconsolata-3.000-h77eed37_0.tar.bz2
+      channel: https://conda.anaconda.org/conda-forge/
+    - build: h77eed37_0
+      build_number: 0
+      depends: []
+      license: OFL-1.1
+      license_family: Other
+      md5: 4d59c254e01d9cde7957100457e2d5fb
+      name: font-ttf-source-code-pro
+      noarch: generic
+      run_exports: {}
+      sha256: 00925c8c055a2275614b4d983e1df637245e19058d79fc7dd1a93b8d9fb4b139
+      size: 700814
+      subdir: noarch
+      timestamp: 1620479612257
+      version: '2.038'
+      fn: font-ttf-source-code-pro-2.038-h77eed37_0.tar.bz2
+      url: https://conda.anaconda.org/conda-forge/noarch/font-ttf-source-code-pro-2.038-h77eed37_0.tar.bz2
+      channel: https://conda.anaconda.org/conda-forge/
+  host: null
+  run:
+    depends:
+    - source: font-ttf-ubuntu
+    - source: font-ttf-inconsolata
+    - source: font-ttf-dejavu-sans-mono
+    - source: font-ttf-source-code-pro
+    constraints: []
+finalized_sources: []
+system_tools:
+  rattler-build: 0.49.0
+extra_meta:
+  flow_run_id: azure_20251105.1.1
+  remote_url: https://github.com/conda-forge/fonts-conda-forge-feedstock
+  sha: 1b7ad83c3dd122e856cbb86a4a52264cc1e28c5e

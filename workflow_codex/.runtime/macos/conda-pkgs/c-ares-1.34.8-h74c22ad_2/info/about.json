@@ -1,0 +1,18 @@
+{
+  "channels": [
+    "https://conda.anaconda.org/conda-forge/"
+  ],
+  "extra": {
+    "flow_run_id": "azure_20260819.1.1",
+    "recipe-maintainers": [
+      "ocefpaf",
+      "wesm",
+      "xhochy"
+    ],
+    "remote_url": "https://github.com/conda-forge/c-ares-feedstock",
+    "sha": "782d3c50cb0114eb43d89146fff922a85e5f596e"
+  },
+  "home": "https://c-ares.haxx.se/",
+  "license": "MIT",
+  "summary": "This is c-ares, an asynchronous resolver library"
+}

@@ -1,0 +1,19 @@
+{
+  "arch": "arm64",
+  "build": "h81aa574_1",
+  "build_number": 1,
+  "depends": [
+    "__osx >=11.0",
+    "libexpat >=2.8.1,<3.0a0",
+    "libfreetype >=2.14.3",
+    "libfreetype6 >=2.14.3",
+    "libintl >=0.25.1,<1.0a0",
+    "libzlib >=1.3.2,<2.0a0"
+  ],
+  "license": "MIT",
+  "name": "fontconfig",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1786667932256,
+  "version": "2.18.3"
+}

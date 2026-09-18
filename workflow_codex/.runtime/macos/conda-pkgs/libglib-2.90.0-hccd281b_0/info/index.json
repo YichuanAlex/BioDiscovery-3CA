@@ -1,0 +1,22 @@
+{
+  "arch": "arm64",
+  "build": "hccd281b_0",
+  "build_number": 0,
+  "constrains": [
+    "glib >2.66"
+  ],
+  "depends": [
+    "__osx >=11.0",
+    "libintl >=0.25.1,<1.0a0",
+    "libzlib >=1.3.2,<2.0a0",
+    "libffi >=3.7.0,<3.8.0a0",
+    "libiconv >=1.18,<2.0a0",
+    "pcre2 >=10.47,<10.48.0a0"
+  ],
+  "license": "LGPL-2.1-or-later",
+  "name": "libglib",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1789478088421,
+  "version": "2.90.0"
+}

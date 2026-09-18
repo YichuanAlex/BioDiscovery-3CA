@@ -1,0 +1,75 @@
+{
+  "name": "pixman",
+  "version": "0.46.4",
+  "build": "h784d473_3",
+  "build_number": 3,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "subdir": "osx-arm64",
+  "fn": "pixman-0.46.4-h784d473_3.conda",
+  "md5": "9a99c0b60efe41c194d01c182d000733",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/pixman-0.46.4-h784d473_3.conda",
+  "sha256": "4779cd57231ce2e96fac643fcbdd4a6f51a57986264545445574e9c4acf526d3",
+  "depends": [
+    "__osx >=11.0",
+    "libcxx >=19"
+  ],
+  "constrains": [],
+  "license": "MIT",
+  "timestamp": 1786106922508,
+  "size": 198717,
+  "_requested_specs": [],
+  "package_tarball_full_path": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/conda-pkgs/pixman-0.46.4-h784d473_3.conda",
+  "extracted_package_dir": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/conda-pkgs/pixman-0.46.4-h784d473_3",
+  "files": [
+    "include/pixman-1/pixman-version.h",
+    "include/pixman-1/pixman.h",
+    "lib/libpixman-1.0.dylib",
+    "lib/libpixman-1.dylib",
+    "lib/pkgconfig/pixman-1.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "include/pixman-1/pixman-version.h",
+        "path_type": "hardlink",
+        "sha256": "eebbff4b66cbcc98b3ffa16c68a919d4a16dfcffb86cd1fb85faea4f07bcd76b",
+        "size_in_bytes": 1786,
+        "sha256_in_prefix": "eebbff4b66cbcc98b3ffa16c68a919d4a16dfcffb86cd1fb85faea4f07bcd76b"
+      },
+      {
+        "_path": "include/pixman-1/pixman.h",
+        "path_type": "hardlink",
+        "sha256": "af49363cee8b2340a215e1ea477761c2c867905c17abe129e5778bfc65033f53",
+        "size_in_bytes": 55372,
+        "sha256_in_prefix": "af49363cee8b2340a215e1ea477761c2c867905c17abe129e5778bfc65033f53"
+      },
+      {
+        "_path": "lib/libpixman-1.0.dylib",
+        "path_type": "hardlink",
+        "sha256": "913ff4284e639212acf7b0bfab46c1cae924375b6f893b8775d76302be7e0a2e",
+        "size_in_bytes": 491408,
+        "sha256_in_prefix": "913ff4284e639212acf7b0bfab46c1cae924375b6f893b8775d76302be7e0a2e"
+      },
+      {
+        "_path": "lib/libpixman-1.dylib",
+        "path_type": "softlink",
+        "sha256": "913ff4284e639212acf7b0bfab46c1cae924375b6f893b8775d76302be7e0a2e",
+        "size_in_bytes": 19
+      },
+      {
+        "_path": "lib/pkgconfig/pixman-1.pc",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/bld/rattler-build_pixman_1786106922/host_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "sha256": "5cd58cca69b2f6578df7e2a5209038622c016ba2f5c72dbf966973ed2c6a7859",
+        "size_in_bytes": 467,
+        "sha256_in_prefix": "54ec2e1d434bba61b6fb18715c8c711960bdfee91fd0967e3ac6959cc0fbf9a1"
+      }
+    ]
+  },
+  "link": {
+    "source": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/conda-pkgs/pixman-0.46.4-h784d473_3",
+    "type": 1
+  }
+}

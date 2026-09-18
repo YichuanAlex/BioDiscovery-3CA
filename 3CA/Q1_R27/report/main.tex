@@ -1,0 +1,93 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{sloppy}
+
+\title{\textbf{Transcriptional Metabolic States in Meningioma Single-Cell Data}}
+\author{Analysis of Choudhury et al. 2022 (3CA:20773)}
+\date{}
+
+\begin{document}
+\sloppy
+
+\maketitle
+
+\begin{abstract}
+This analysis investigates whether transcriptional metabolic states can form distinct clusters in single-cell RNA-seq data from meningioma samples. Using Reactome metabolism pathway genes (1984 genes after prevalence filtering), we performed unsupervised clustering and compared against multiple baselines and controls. Results are described below.
+\end{abstract}
+
+\section{Methods}
+
+\subsection{Data and Gene Set}
+The Choudhury et al. 2022 dataset (3CA:20773) contains 58,843 cells and 33,538 genes from 10 meningioma samples. Reactome metabolism pathway genes (R-HSA-1430728, release 97) were downloaded and matched to the dataset. After prevalence filtering, 1,984 genes were used for clustering.
+
+\subsection{Normalization and Feature Scaling}
+Expression was normalized by per-cell library size to 10,000 counts, then log-transformed:
+\begin{equation}
+\label{eq:log1p}
+\log(1 + x)
+\end{equation}
+where $x$ is the normalized count. Features were scaled using Scanpy's \texttt{scale} function with \texttt{zero_center=False} and \texttt{max_value=10}.
+
+\subsection{Clustering and Baselines}
+Leiden clustering was performed with resolution 0.4 (selected via stability filtering: mean pairwise ARI $\ge$ 0.75). Baselines included: (1) HVG-selected genes, and (2) 19 size-matched random gene controls.
+
+\section{Results}
+
+\subsection{Global Clustering with Metabolic Genes}
+Leiden clustering with 15 clusters yielded a silhouette score of 0.229. Cluster sizes ranged from 1,002 to 8,985 cells. The median silhouette across seeds was 0.221.
+
+\begin{table}[h]
+\centering
+\toprule
+Metric & Value \\
+\midrule
+Silhouette & 0.229 \\
+Calinski-Harabasz & 7,177.0 \\
+Davies-Bouldin & 1.513 \\
+Mean pairwise ARI & 0.980 \\
+Median silhouette & 0.221 \\
+\bottomrule
+\end{tabular}
+\caption{Clustering metrics on 58,843 cells with 1,984 metabolic genes, resolution 0.4, 15 clusters.}
+\label{tab:clustering_metrics}
+\end{table}
+
+\subsection{Random Control Comparison}
+None of the 19 size-matched random gene controls achieved silhouette scores $\ge$ 0.229. The metabolic gene set matched K-means clustering achieved 0.247, exceeding all random controls.
+
+\subsection{Confounder Assessment}
+NMI values for categorical confounders ranged from 0.195 (cell cycle phase) to 0.658 (cell subtype). No single confounder dominated the clustering.
+
+\subsection{Within-Replicate Sensitivity}
+Across 6 patients, the weakest replicate (patient 3, 3,287 cells) showed the lowest within-replicate ARI (0.106). Global ARI ranged from 0.106 to 0.813.
+
+\section{Discussion}
+
+\subsection{Question 1: Distinct Metabolic States?}
+Candidate partitions were observed with 15 clusters, but distinct metabolic states remain \textbf{inconclusive}. The clustering is highly stable across seeds (mean pairwise ARI = 0.980), yet the silhouette score is modest (0.229), and no biological state was predefined. The random control comparison shows metabolic genes do not outperform random gene sets in silhouette, suggesting the observed clusters may reflect cell-type composition rather than discrete metabolic states.
+
+\subsection{Question 2: Cell-Type Associations}
+Associations are \textbf{descriptive and non-causal}. Cell type NMI = 0.507, cell subtype NMI = 0.658. These values indicate clustering is partially explained by cell type, but the moderate NMI values suggest additional structure beyond cell type alone.
+
+\subsection{Question 3: CD8 T Cell Subgroup}
+For CD8 T cells specifically, candidate partitions were observed but distinct metabolic states remain \textbf{inconclusive}.
+
+\section{Limitations}
+- Silhouette is estimated on a fixed random subset; all QC-passing cells are retained for PCA, graph construction, and clustering.
+- The unsupervised question has no predefined condition contrast; no cell-level differential-expression P values are reported.
+- No significance test is performed on data-derived cluster labels.
+- Random gene controls are matched in size, not expression mean or dispersion.
+- Resolution was selected using the same dataset.
+- A threshold on confounder NMI does not establish independence.
+- Identical source gene symbols are summed before QC/normalization.
+
+\section{References}
+\begin{enumerate}
+\item Choudhury, A., Magill, S. T., Eaton, C. D., Prager, B. C., Costello, J. F., McDermott, M. W., Rich, J. N., Raleigh, D. R. (2022). Meningioma DNA methylation groups identify biological drivers and therapeutic vulnerabilities. \textit{Nature Genetics}, 54(5), 649-659. \url{https://doi.org/10.1038/s41588-022-01061-8}
+\end{enumerate}
+
+\end{document}

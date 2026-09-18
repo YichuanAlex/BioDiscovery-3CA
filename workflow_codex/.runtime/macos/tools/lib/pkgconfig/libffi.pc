@@ -1,0 +1,11 @@
+prefix=/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/tools
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+toolexeclibdir=${libdir}
+includedir=/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/tools/include
+
+Name: libffi
+Description: Library supporting Foreign Function Interfaces
+Version: 3.7.0
+Libs: -L${toolexeclibdir} -lffi
+Cflags: -I${includedir}

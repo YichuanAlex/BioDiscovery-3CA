@@ -1,8 +1,8 @@
 {
   "url": "https://www.weizmann.ac.il/sites/3CA/lung",
   "final_url": "https://www.weizmann.ac.il/sites/3CA/lung",
-  "fetched_at": "2026-09-14T04:17:29.138256+00:00",
-  "raw_html_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\pages\\28d72c5576cb258b500312227bddf0f2ad142f1a5fc92a0b0c54b2c00a25a23a.html",
+  "fetched_at": "2026-09-17T05:43:58.679563+00:00",
+  "raw_html_path": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.threeca/cache/pages/28d72c5576cb258b500312227bddf0f2ad142f1a5fc92a0b0c54b2c00a25a23a.html",
   "title": "Lung | Curated Cancer Cell Atlas",
   "text": "Lung Title Data Meta data Cell types Summary Disease Technology #samples #cells Meta programs CNAs UMAP Cell cycle Bischoff et al. 2021 Cell types Summary Lung adenocarcinoma 10x 20 120961 Meta programs CNAs UMAP Cell cycle Chan et al. 2021 Cell types Summary SCLC, Lung Adenocarcinoma 10x 37 86662 Meta programs CNAs UMAP Cell cycle Guo et al. 2018 Cell types Summary NSCLC SmartSeq2 40 12346 Meta programs UMAP Cell cycle Ireland et al. 2020 Cell types Summary SCLC 10x 12 31258 UMAP Kim et al. 2020 Cell types Summary Lung adenocarcinoma 10x 14 32493 Meta programs CNAs UMAP Cell cycle Laughney et al. 2020 Cell types Summary Lung cancer 10x 17 40505 Meta programs CNAs UMAP Cell cycle Maynard et al. 2020 Cell types Summary Lung cancer SmartSeq2 50 19777 Meta programs CNAs UMAP Cell cycle Qian et al. 2020 Cell types Summary Lung cancer 10x 8 27262 Meta programs CNAs UMAP Cell cycle Song et al. 2019 Cell types Summary NSCLC 10x 6 8772 Meta programs CNAs UMAP Xing et al. 2021 Cell types Summary Lung cancer 10x 31 118293 Meta programs CNAs UMAP Cell cycle Zilionis et al. 2019 Cell types Summary NSCLC inDrop 7 31179 Meta programs CNAs UMAP Cell cycle All Lung cancer 242 529508",
   "links": [

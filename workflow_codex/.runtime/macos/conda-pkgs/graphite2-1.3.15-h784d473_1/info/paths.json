@@ -1,0 +1,67 @@
+{
+  "paths": [
+    {
+      "_path": "include/graphite2/Font.h",
+      "path_type": "hardlink",
+      "sha256": "c8e67cc52dd19e5d98178e3d8d25216f13c2613ae2aa8e80756bc283e0fb276d",
+      "size_in_bytes": 17644
+    },
+    {
+      "_path": "include/graphite2/Log.h",
+      "path_type": "hardlink",
+      "sha256": "36c88d7c6970774ed2beac493617d18a4fecbf8b0d1a9911503b06b32f70ed06",
+      "size_in_bytes": 1869
+    },
+    {
+      "_path": "include/graphite2/Segment.h",
+      "path_type": "hardlink",
+      "sha256": "676e7357a3a84cdb8c63118d67a306113575cb30d528de906111bd00be902b18",
+      "size_in_bytes": 19209
+    },
+    {
+      "_path": "include/graphite2/Types.h",
+      "path_type": "hardlink",
+      "sha256": "5ba78bf94b6af7ad9b6dc6a494e29604711a4d1be923e55cf15fb3433838e437",
+      "size_in_bytes": 1988
+    },
+    {
+      "_path": "lib/libgraphite2.3.3.1.dylib",
+      "path_type": "hardlink",
+      "sha256": "5a1d7cb207f4131d6d79f7ea93edda09e3d250d92414d21c55e1ec8ed2907210",
+      "size_in_bytes": 170976
+    },
+    {
+      "_path": "lib/libgraphite2.3.dylib",
+      "path_type": "softlink",
+      "sha256": "5a1d7cb207f4131d6d79f7ea93edda09e3d250d92414d21c55e1ec8ed2907210",
+      "size_in_bytes": 24
+    },
+    {
+      "_path": "lib/libgraphite2.dylib",
+      "path_type": "softlink",
+      "sha256": "5a1d7cb207f4131d6d79f7ea93edda09e3d250d92414d21c55e1ec8ed2907210",
+      "size_in_bytes": 20
+    },
+    {
+      "_path": "lib/pkgconfig/graphite2.pc",
+      "path_type": "hardlink",
+      "file_mode": "text",
+      "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/bld/rattler-build_graphite2_1786118637/host_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl",
+      "sha256": "1e0700faca8d54e294adbe4abf6a144a0424785b0c3933e4d227342c51f1a037",
+      "size_in_bytes": 642
+    },
+    {
+      "_path": "share/graphite2/graphite2-release.cmake",
+      "path_type": "hardlink",
+      "sha256": "9f85bb09d9eff4666242aed7afd40b15c5e8142f7070f320e02d48e20316aa69",
+      "size_in_bytes": 870
+    },
+    {
+      "_path": "share/graphite2/graphite2.cmake",
+      "path_type": "hardlink",
+      "sha256": "8e6de8e16b89dd16866e6726a4107e1498c1fd91ededa1ad8721a3ec8c9edf5c",
+      "size_in_bytes": 4018
+    }
+  ],
+  "paths_version": 1
+}

@@ -1,0 +1,21 @@
+{
+  "name": "libev",
+  "version": "4.33",
+  "build": "h1a92334_3",
+  "build_number": 3,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "subdir": "osx-arm64",
+  "fn": "libev-4.33-h1a92334_3.conda",
+  "md5": "19e86c8a6a47e92bb2e70ca12e758c5c",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libev-4.33-h1a92334_3.conda",
+  "sha256": "c0100064506ae8abb432c5a506d474f10af2cf48c33d62bc221fb28b6d6ff6ac",
+  "arch": "arm64",
+  "platform": "darwin",
+  "depends": [
+    "__osx >=11.0"
+  ],
+  "constrains": [],
+  "license": "BSD-2-Clause OR GPL-2.0-or-later",
+  "timestamp": 1785917376956,
+  "size": 39991
+}

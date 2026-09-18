@@ -1,0 +1,24 @@
+{
+  "name": "lcms2",
+  "version": "2.19.1",
+  "build": "hce41798_3",
+  "build_number": 3,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "subdir": "osx-arm64",
+  "fn": "lcms2-2.19.1-hce41798_3.conda",
+  "md5": "4eed1ee02ef1992c046f2e81d5606633",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/lcms2-2.19.1-hce41798_3.conda",
+  "sha256": "5f9b511f918e13dfddb8495c1764aec894b66c5a88359737aa302b8899ae25fa",
+  "arch": "arm64",
+  "platform": "darwin",
+  "depends": [
+    "__osx >=11.0",
+    "libjpeg-turbo >=3.2.0,<4.0a0",
+    "libtiff >=4.7.2,<4.8.0a0"
+  ],
+  "constrains": [],
+  "license": "MIT",
+  "license_family": "MIT",
+  "timestamp": 1789052560432,
+  "size": 212689
+}

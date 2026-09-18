@@ -1,0 +1,11 @@
+{
+  "paths": [
+    {
+      "_path": "lib/libfreetype.6.dylib",
+      "path_type": "hardlink",
+      "sha256": "6654bb9cc78fca7e63e8cd36798de4b2025c6733759329cdf62ac6d64c2b5b0a",
+      "size_in_bytes": 736560
+    }
+  ],
+  "paths_version": 1
+}

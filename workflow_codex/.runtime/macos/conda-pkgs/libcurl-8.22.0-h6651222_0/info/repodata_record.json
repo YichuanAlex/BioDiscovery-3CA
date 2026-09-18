@@ -1,0 +1,29 @@
+{
+  "name": "libcurl",
+  "version": "8.22.0",
+  "build": "h6651222_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "subdir": "osx-arm64",
+  "fn": "libcurl-8.22.0-h6651222_0.conda",
+  "md5": "a7234b8d8e19a089dcb1eaaa18de1045",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libcurl-8.22.0-h6651222_0.conda",
+  "sha256": "46def32ec20d4dc6bce75d90fe5f2465a71cc22acef608c5ba37cc392e80e01d",
+  "arch": "arm64",
+  "platform": "darwin",
+  "depends": [
+    "__osx >=11.0",
+    "krb5 >=1.22.2,<1.23.0a0",
+    "libnghttp2 >=1.68.1,<2.0a0",
+    "libpsl >=0.23.1,<0.24.0a0",
+    "libssh2 >=1.11.1,<2.0a0",
+    "libzlib >=1.3.2,<2.0a0",
+    "openssl >=3.5.8,<4.0a0",
+    "zstd >=1.5.7,<1.6.0a0"
+  ],
+  "constrains": [],
+  "license": "curl",
+  "license_family": "MIT",
+  "timestamp": 1788340708264,
+  "size": 419925
+}

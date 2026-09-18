@@ -1,0 +1,22 @@
+{
+  "channels": [
+    "https://conda.anaconda.org/conda-forge/"
+  ],
+  "description": "libuv is a multi-platform support library with a focus on asynchronous I/O.\nIt was primarily developed for use by Node.js, but it's also used by Luvit,\nJulia, pyuv, and others.",
+  "dev_url": "https://github.com/libuv/libuv",
+  "doc_url": "http://docs.libuv.org/",
+  "extra": {
+    "flow_run_id": "azure_20260805.1.1",
+    "recipe-maintainers": [
+      "jjerphan",
+      "frol",
+      "mariusvniekerk",
+      "xhochy"
+    ],
+    "remote_url": "https://github.com/conda-forge/libuv-feedstock",
+    "sha": "f3e8cf8942d57511c28cec0c3624eff3699fc94d"
+  },
+  "home": "http://libuv.org/",
+  "license": "MIT",
+  "summary": "Cross-platform asynchronous I/O"
+}

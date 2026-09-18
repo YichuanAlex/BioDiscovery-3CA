@@ -1,0 +1,374 @@
+[09/17/26 13:54:01] INFO     Processing request of type            server.py:733
+                             ListToolsRequest                                   
+                    INFO     Processing request of type            server.py:733
+                             CallToolRequest                                    
+                    INFO     Processing request of type            server.py:733
+                             CallToolRequest                                    
+                    INFO     Processing request of type            server.py:733
+                             CallToolRequest                                    
+                    INFO     Processing request of type            server.py:733
+                             CallToolRequest                                    
+                    INFO     Processing request of type            server.py:733
+                             CallToolRequest                                    
+[09/17/26 13:54:31] INFO     maxp pruned                        __init__.py:3603
+                    INFO     cmap pruned                        __init__.py:3603
+                    INFO     kern dropped                       __init__.py:3587
+                    INFO     post pruned                        __init__.py:3603
+                    INFO     FFTM dropped                       __init__.py:3587
+                    INFO     GPOS pruned                        __init__.py:3603
+                    INFO     GSUB pruned                        __init__.py:3603
+                    INFO     glyf pruned                        __init__.py:3603
+                    INFO     Added gid0 to subset               __init__.py:3643
+                    INFO     Added first four glyphs to subset  __init__.py:3651
+                    INFO     Closing glyph list over 'MATH': 33 __init__.py:3656
+                             glyphs before                                      
+                    INFO     Glyph names: ['.notdef', '.null',   __init__.py:460
+                             'A', 'B', 'M', 'P', 'U', 'a', 'b',                 
+                             'c', 'e', 'eight', 'five', 'four',                 
+                             'hyphen', 'i', 'l', 'n',                           
+                             'nonmarkingreturn', 'o', 'one',                    
+                             'p', 'parenleft', 'parenright',                    
+                             'r', 's', 'six', 'space', 't',                     
+                             'two', 'u', 'y', 'zero']                           
+                    INFO     Glyph IDs:   [0, 1, 2, 3, 11, 12,   __init__.py:463
+                             16, 19, 20, 21, 23, 24, 25, 27, 36,                
+                             37, 48, 51, 56, 68, 69, 70, 72, 76,                
+                             79, 81, 82, 83, 85, 86, 87, 88, 92]                
+                    INFO     Closed glyph list over 'MATH': 39  __init__.py:3662
+                             glyphs after                                       
+                    INFO     Glyph names: ['.notdef', '.null',   __init__.py:460
+                             'A', 'B', 'M', 'P', 'U', 'a', 'b',                 
+                             'c', 'e', 'eight', 'five', 'four',                 
+                             'hyphen', 'i', 'l', 'n',                           
+                             'nonmarkingreturn', 'o', 'one',                    
+                             'p', 'parenleft', 'parenright',                    
+                             'r', 's', 'six', 'space', 't',                     
+                             'two', 'u', 'uni239B', 'uni239C',                  
+                             'uni239D', 'uni239E', 'uni239F',                   
+                             'uni23A0', 'y', 'zero']                            
+                    INFO     Glyph IDs:   [0, 1, 2, 3, 11, 12,   __init__.py:463
+                             16, 19, 20, 21, 23, 24, 25, 27, 36,                
+                             37, 48, 51, 56, 68, 69, 70, 72, 76,                
+                             79, 81, 82, 83, 85, 86, 87, 88, 92,                
+                             3506, 3507, 3508, 3509, 3510, 3511]                
+                    INFO     Closing glyph list over 'GSUB': 39 __init__.py:3670
+                             glyphs before                                      
+                    INFO     Glyph names: ['.notdef', '.null',   __init__.py:460
+                             'A', 'B', 'M', 'P', 'U', 'a', 'b',                 
+                             'c', 'e', 'eight', 'five', 'four',                 
+                             'hyphen', 'i', 'l', 'n',                           
+                             'nonmarkingreturn', 'o', 'one',                    
+                             'p', 'parenleft', 'parenright',                    
+                             'r', 's', 'six', 'space', 't',                     
+                             'two', 'u', 'uni239B', 'uni239C',                  
+                             'uni239D', 'uni239E', 'uni239F',                   
+                             'uni23A0', 'y', 'zero']                            
+                    INFO     Glyph IDs:   [0, 1, 2, 3, 11, 12,   __init__.py:463
+                             16, 19, 20, 21, 23, 24, 25, 27, 36,                
+                             37, 48, 51, 56, 68, 69, 70, 72, 76,                
+                             79, 81, 82, 83, 85, 86, 87, 88, 92,                
+                             3506, 3507, 3508, 3509, 3510, 3511]                
+                    INFO     Closed glyph list over 'GSUB': 39  __init__.py:3676
+                             glyphs after                                       
+                    INFO     Glyph names: ['.notdef', '.null',   __init__.py:460
+                             'A', 'B', 'M', 'P', 'U', 'a', 'b',                 
+                             'c', 'e', 'eight', 'five', 'four',                 
+                             'hyphen', 'i', 'l', 'n',                           
+                             'nonmarkingreturn', 'o', 'one',                    
+                             'p', 'parenleft', 'parenright',                    
+                             'r', 's', 'six', 'space', 't',                     
+                             'two', 'u', 'uni239B', 'uni239C',                  
+                             'uni239D', 'uni239E', 'uni239F',                   
+                             'uni23A0', 'y', 'zero']                            
+                    INFO     Glyph IDs:   [0, 1, 2, 3, 11, 12,   __init__.py:463
+                             16, 19, 20, 21, 23, 24, 25, 27, 36,                
+                             37, 48, 51, 56, 68, 69, 70, 72, 76,                
+                             79, 81, 82, 83, 85, 86, 87, 88, 92,                
+                             3506, 3507, 3508, 3509, 3510, 3511]                
+                    INFO     Closing glyph list over 'glyf': 39 __init__.py:3717
+                             glyphs before                                      
+                    INFO     Glyph names: ['.notdef', '.null',   __init__.py:460
+                             'A', 'B', 'M', 'P', 'U', 'a', 'b',                 
+                             'c', 'e', 'eight', 'five', 'four',                 
+                             'hyphen', 'i', 'l', 'n',                           
+                             'nonmarkingreturn', 'o', 'one',                    
+                             'p', 'parenleft', 'parenright',                    
+                             'r', 's', 'six', 'space', 't',                     
+                             'two', 'u', 'uni239B', 'uni239C',                  
+                             'uni239D', 'uni239E', 'uni239F',                   
+                             'uni23A0', 'y', 'zero']                            
+                    INFO     Glyph IDs:   [0, 1, 2, 3, 11, 12,   __init__.py:463
+                             16, 19, 20, 21, 23, 24, 25, 27, 36,                
+                             37, 48, 51, 56, 68, 69, 70, 72, 76,                
+                             79, 81, 82, 83, 85, 86, 87, 88, 92,                
+                             3506, 3507, 3508, 3509, 3510, 3511]                
+                    INFO     Closed glyph list over 'glyf': 39  __init__.py:3723
+                             glyphs after                                       
+                    INFO     Glyph names: ['.notdef', '.null',   __init__.py:460
+                             'A', 'B', 'M', 'P', 'U', 'a', 'b',                 
+                             'c', 'e', 'eight', 'five', 'four',                 
+                             'hyphen', 'i', 'l', 'n',                           
+                             'nonmarkingreturn', 'o', 'one',                    
+                             'p', 'parenleft', 'parenright',                    
+                             'r', 's', 'six', 'space', 't',                     
+                             'two', 'u', 'uni239B', 'uni239C',                  
+                             'uni239D', 'uni239E', 'uni239F',                   
+                             'uni23A0', 'y', 'zero']                            
+                    INFO     Glyph IDs:   [0, 1, 2, 3, 11, 12,   __init__.py:463
+                             16, 19, 20, 21, 23, 24, 25, 27, 36,                
+                             37, 48, 51, 56, 68, 69, 70, 72, 76,                
+                             79, 81, 82, 83, 85, 86, 87, 88, 92,                
+                             3506, 3507, 3508, 3509, 3510, 3511]                
+                    INFO     Retaining 39 glyphs                __init__.py:3776
+                    INFO     head subsetting not needed         __init__.py:3786
+                    INFO     hhea subsetting not needed         __init__.py:3786
+                    INFO     maxp subsetting not needed         __init__.py:3786
+                    INFO     OS/2 subsetting not needed         __init__.py:3786
+                    INFO     hmtx subsetted                     __init__.py:3797
+                    INFO     cmap subsetted                     __init__.py:3797
+                    INFO     fpgm subsetting not needed         __init__.py:3786
+                    INFO     prep subsetting not needed         __init__.py:3786
+                    INFO     cvt  subsetting not needed         __init__.py:3786
+                    INFO     loca subsetting not needed         __init__.py:3786
+                    INFO     post subsetted                     __init__.py:3797
+                    INFO     gasp subsetting not needed         __init__.py:3786
+                    INFO     MATH subsetted                     __init__.py:3797
+                    INFO     GDEF subsetted                     __init__.py:3797
+                    INFO     GPOS subsetted                     __init__.py:3797
+                    INFO     GSUB subsetted                     __init__.py:3797
+                    INFO     name subsetting not needed         __init__.py:3786
+                    INFO     glyf subsetted                     __init__.py:3797
+                    INFO     head pruned                        __init__.py:3856
+                    INFO     OS/2 Unicode ranges pruned: [0]    __init__.py:3823
+                    INFO     OS/2 CodePage ranges pruned: [0]   __init__.py:3832
+                    INFO     glyf pruned                        __init__.py:3856
+                    INFO     GDEF pruned                        __init__.py:3856
+                    INFO     GPOS pruned                        __init__.py:3856
+                    INFO     GSUB pruned                        __init__.py:3856
+                    INFO     name pruned                        __init__.py:3856
+                    INFO     maxp pruned                        __init__.py:3603
+                    INFO     cmap pruned                        __init__.py:3603
+                    INFO     kern dropped                       __init__.py:3587
+                    INFO     post pruned                        __init__.py:3603
+                    INFO     FFTM dropped                       __init__.py:3587
+                    INFO     GPOS pruned                        __init__.py:3603
+                    INFO     GSUB pruned                        __init__.py:3603
+                    INFO     glyf pruned                        __init__.py:3603
+                    INFO     Added gid0 to subset               __init__.py:3643
+                    INFO     Added first four glyphs to subset  __init__.py:3651
+                    INFO     Closing glyph list over 'MATH': 5  __init__.py:3656
+                             glyphs before                                      
+                    INFO     Glyph names: ['.notdef', '.null',   __init__.py:460
+                             'minus', 'nonmarkingreturn',                       
+                             'space']                                           
+                    INFO     Glyph IDs:   [0, 1, 2, 3, 3228]     __init__.py:463
+                    INFO     Closed glyph list over 'MATH': 5   __init__.py:3662
+                             glyphs after                                       
+                    INFO     Glyph names: ['.notdef', '.null',   __init__.py:460
+                             'minus', 'nonmarkingreturn',                       
+                             'space']                                           
+                    INFO     Glyph IDs:   [0, 1, 2, 3, 3228]     __init__.py:463
+                    INFO     Closing glyph list over 'GSUB': 5  __init__.py:3670
+                             glyphs before                                      
+                    INFO     Glyph names: ['.notdef', '.null',   __init__.py:460
+                             'minus', 'nonmarkingreturn',                       
+                             'space']                                           
+                    INFO     Glyph IDs:   [0, 1, 2, 3, 3228]     __init__.py:463
+                    INFO     Closed glyph list over 'GSUB': 5   __init__.py:3676
+                             glyphs after                                       
+                    INFO     Glyph names: ['.notdef', '.null',   __init__.py:460
+                             'minus', 'nonmarkingreturn',                       
+                             'space']                                           
+                    INFO     Glyph IDs:   [0, 1, 2, 3, 3228]     __init__.py:463
+                    INFO     Closing glyph list over 'glyf': 5  __init__.py:3717
+                             glyphs before                                      
+                    INFO     Glyph names: ['.notdef', '.null',   __init__.py:460
+                             'minus', 'nonmarkingreturn',                       
+                             'space']                                           
+                    INFO     Glyph IDs:   [0, 1, 2, 3, 3228]     __init__.py:463
+                    INFO     Closed glyph list over 'glyf': 5   __init__.py:3723
+                             glyphs after                                       
+                    INFO     Glyph names: ['.notdef', '.null',   __init__.py:460
+                             'minus', 'nonmarkingreturn',                       
+                             'space']                                           
+                    INFO     Glyph IDs:   [0, 1, 2, 3, 3228]     __init__.py:463
+                    INFO     Retaining 5 glyphs                 __init__.py:3776
+                    INFO     head subsetting not needed         __init__.py:3786
+                    INFO     hhea subsetting not needed         __init__.py:3786
+                    INFO     maxp subsetting not needed         __init__.py:3786
+                    INFO     OS/2 subsetting not needed         __init__.py:3786
+                    INFO     hmtx subsetted                     __init__.py:3797
+                    INFO     cmap subsetted                     __init__.py:3797
+                    INFO     fpgm subsetting not needed         __init__.py:3786
+                    INFO     prep subsetting not needed         __init__.py:3786
+                    INFO     cvt  subsetting not needed         __init__.py:3786
+                    INFO     loca subsetting not needed         __init__.py:3786
+                    INFO     post subsetted                     __init__.py:3797
+                    INFO     gasp subsetting not needed         __init__.py:3786
+                    INFO     MATH subsetted                     __init__.py:3797
+                    INFO     GDEF subsetted                     __init__.py:3797
+                    INFO     GPOS subsetted                     __init__.py:3797
+                    INFO     GSUB subsetted                     __init__.py:3797
+                    INFO     name subsetting not needed         __init__.py:3786
+                    INFO     glyf subsetted                     __init__.py:3797
+                    INFO     head pruned                        __init__.py:3856
+                    INFO     OS/2 Unicode ranges pruned: [38]   __init__.py:3823
+                    INFO     OS/2 CodePage ranges pruned: [0]   __init__.py:3832
+                    INFO     glyf pruned                        __init__.py:3856
+                    INFO     GDEF pruned                        __init__.py:3856
+                    INFO     GPOS pruned                        __init__.py:3856
+                    INFO     GSUB pruned                        __init__.py:3856
+                    INFO     name pruned                        __init__.py:3856
+[09/17/26 13:54:32] INFO     maxp pruned                        __init__.py:3603
+                    INFO     cmap pruned                        __init__.py:3603
+                    INFO     kern dropped                       __init__.py:3587
+                    INFO     post pruned                        __init__.py:3603
+                    INFO     FFTM dropped                       __init__.py:3587
+                    INFO     GPOS pruned                        __init__.py:3603
+                    INFO     GSUB pruned                        __init__.py:3603
+                    INFO     glyf pruned                        __init__.py:3603
+                    INFO     Added gid0 to subset               __init__.py:3643
+                    INFO     Added first four glyphs to subset  __init__.py:3651
+                    INFO     Closing glyph list over 'MATH': 43 __init__.py:3656
+                             glyphs before                                      
+                    INFO     Glyph names: ['.notdef', '.null',   __init__.py:460
+                             'G', 'H', 'K', 'L', 'M', 'R', 'S',                 
+                             'V', 'a', 'b', 'c', 'd', 'e',                      
+                             'eight', 'five', 'four', 'g', 'h',                 
+                             'hyphen', 'i', 'k', 'l', 'm', 'n',                 
+                             'nine', 'nonmarkingreturn', 'o',                   
+                             'one', 'period', 'r', 's', 'seven',                
+                             'six', 'space', 't', 'three',                      
+                             'two', 'u', 'v', 'y', 'zero']                      
+                    INFO     Glyph IDs:   [0, 1, 2, 3, 16, 17,   __init__.py:463
+                             19, 20, 21, 22, 23, 24, 25, 26, 27,                
+                             28, 42, 43, 46, 47, 48, 53, 54, 57,                
+                             68, 69, 70, 71, 72, 74, 75, 76, 78,                
+                             79, 80, 81, 82, 85, 86, 87, 88, 89,                
+                             92]                                                
+                    INFO     Closed glyph list over 'MATH': 43  __init__.py:3662
+                             glyphs after                                       
+                    INFO     Glyph names: ['.notdef', '.null',   __init__.py:460
+                             'G', 'H', 'K', 'L', 'M', 'R', 'S',                 
+                             'V', 'a', 'b', 'c', 'd', 'e',                      
+                             'eight', 'five', 'four', 'g', 'h',                 
+                             'hyphen', 'i', 'k', 'l', 'm', 'n',                 
+                             'nine', 'nonmarkingreturn', 'o',                   
+                             'one', 'period', 'r', 's', 'seven',                
+                             'six', 'space', 't', 'three',                      
+                             'two', 'u', 'v', 'y', 'zero']                      
+                    INFO     Glyph IDs:   [0, 1, 2, 3, 16, 17,   __init__.py:463
+                             19, 20, 21, 22, 23, 24, 25, 26, 27,                
+                             28, 42, 43, 46, 47, 48, 53, 54, 57,                
+                             68, 69, 70, 71, 72, 74, 75, 76, 78,                
+                             79, 80, 81, 82, 85, 86, 87, 88, 89,                
+                             92]                                                
+                    INFO     Closing glyph list over 'GSUB': 43 __init__.py:3670
+                             glyphs before                                      
+                    INFO     Glyph names: ['.notdef', '.null',   __init__.py:460
+                             'G', 'H', 'K', 'L', 'M', 'R', 'S',                 
+                             'V', 'a', 'b', 'c', 'd', 'e',                      
+                             'eight', 'five', 'four', 'g', 'h',                 
+                             'hyphen', 'i', 'k', 'l', 'm', 'n',                 
+                             'nine', 'nonmarkingreturn', 'o',                   
+                             'one', 'period', 'r', 's', 'seven',                
+                             'six', 'space', 't', 'three',                      
+                             'two', 'u', 'v', 'y', 'zero']                      
+                    INFO     Glyph IDs:   [0, 1, 2, 3, 16, 17,   __init__.py:463
+                             19, 20, 21, 22, 23, 24, 25, 26, 27,                
+                             28, 42, 43, 46, 47, 48, 53, 54, 57,                
+                             68, 69, 70, 71, 72, 74, 75, 76, 78,                
+                             79, 80, 81, 82, 85, 86, 87, 88, 89,                
+                             92]                                                
+                    INFO     Closed glyph list over 'GSUB': 43  __init__.py:3676
+                             glyphs after                                       
+                    INFO     Glyph names: ['.notdef', '.null',   __init__.py:460
+                             'G', 'H', 'K', 'L', 'M', 'R', 'S',                 
+                             'V', 'a', 'b', 'c', 'd', 'e',                      
+                             'eight', 'five', 'four', 'g', 'h',                 
+                             'hyphen', 'i', 'k', 'l', 'm', 'n',                 
+                             'nine', 'nonmarkingreturn', 'o',                   
+                             'one', 'period', 'r', 's', 'seven',                
+                             'six', 'space', 't', 'three',                      
+                             'two', 'u', 'v', 'y', 'zero']                      
+                    INFO     Glyph IDs:   [0, 1, 2, 3, 16, 17,   __init__.py:463
+                             19, 20, 21, 22, 23, 24, 25, 26, 27,                
+                             28, 42, 43, 46, 47, 48, 53, 54, 57,                
+                             68, 69, 70, 71, 72, 74, 75, 76, 78,                
+                             79, 80, 81, 82, 85, 86, 87, 88, 89,                
+                             92]                                                
+                    INFO     Closing glyph list over 'glyf': 43 __init__.py:3717
+                             glyphs before                                      
+                    INFO     Glyph names: ['.notdef', '.null',   __init__.py:460
+                             'G', 'H', 'K', 'L', 'M', 'R', 'S',                 
+                             'V', 'a', 'b', 'c', 'd', 'e',                      
+                             'eight', 'five', 'four', 'g', 'h',                 
+                             'hyphen', 'i', 'k', 'l', 'm', 'n',                 
+                             'nine', 'nonmarkingreturn', 'o',                   
+                             'one', 'period', 'r', 's', 'seven',                
+                             'six', 'space', 't', 'three',                      
+                             'two', 'u', 'v', 'y', 'zero']                      
+                    INFO     Glyph IDs:   [0, 1, 2, 3, 16, 17,   __init__.py:463
+                             19, 20, 21, 22, 23, 24, 25, 26, 27,                
+                             28, 42, 43, 46, 47, 48, 53, 54, 57,                
+                             68, 69, 70, 71, 72, 74, 75, 76, 78,                
+                             79, 80, 81, 82, 85, 86, 87, 88, 89,                
+                             92]                                                
+                    INFO     Closed glyph list over 'glyf': 43  __init__.py:3723
+                             glyphs after                                       
+                    INFO     Glyph names: ['.notdef', '.null',   __init__.py:460
+                             'G', 'H', 'K', 'L', 'M', 'R', 'S',                 
+                             'V', 'a', 'b', 'c', 'd', 'e',                      
+                             'eight', 'five', 'four', 'g', 'h',                 
+                             'hyphen', 'i', 'k', 'l', 'm', 'n',                 
+                             'nine', 'nonmarkingreturn', 'o',                   
+                             'one', 'period', 'r', 's', 'seven',                
+                             'six', 'space', 't', 'three',                      
+                             'two', 'u', 'v', 'y', 'zero']                      
+                    INFO     Glyph IDs:   [0, 1, 2, 3, 16, 17,   __init__.py:463
+                             19, 20, 21, 22, 23, 24, 25, 26, 27,                
+                             28, 42, 43, 46, 47, 48, 53, 54, 57,                
+                             68, 69, 70, 71, 72, 74, 75, 76, 78,                
+                             79, 80, 81, 82, 85, 86, 87, 88, 89,                
+                             92]                                                
+                    INFO     Retaining 43 glyphs                __init__.py:3776
+                    INFO     head subsetting not needed         __init__.py:3786
+                    INFO     hhea subsetting not needed         __init__.py:3786
+                    INFO     maxp subsetting not needed         __init__.py:3786
+                    INFO     OS/2 subsetting not needed         __init__.py:3786
+                    INFO     hmtx subsetted                     __init__.py:3797
+                    INFO     cmap subsetted                     __init__.py:3797
+                    INFO     fpgm subsetting not needed         __init__.py:3786
+                    INFO     prep subsetting not needed         __init__.py:3786
+                    INFO     cvt  subsetting not needed         __init__.py:3786
+                    INFO     loca subsetting not needed         __init__.py:3786
+                    INFO     post subsetted                     __init__.py:3797
+                    INFO     gasp subsetting not needed         __init__.py:3786
+                    INFO     MATH subsetted                     __init__.py:3797
+                    INFO     GDEF subsetted                     __init__.py:3797
+                    INFO     GPOS subsetted                     __init__.py:3797
+                    INFO     GSUB subsetted                     __init__.py:3797
+                    INFO     name subsetting not needed         __init__.py:3786
+                    INFO     glyf subsetted                     __init__.py:3797
+                    INFO     head pruned                        __init__.py:3856
+                    INFO     OS/2 Unicode ranges pruned: [0]    __init__.py:3823
+                    INFO     OS/2 CodePage ranges pruned: [0]   __init__.py:3832
+                    INFO     glyf pruned                        __init__.py:3856
+                    INFO     GDEF pruned                        __init__.py:3856
+                    INFO     GPOS pruned                        __init__.py:3856
+                    INFO     GSUB pruned                        __init__.py:3856
+                    INFO     name pruned                        __init__.py:3856
+[09/17/26 13:54:33] INFO     Processing request of type            server.py:733
+                             CallToolRequest                                    
+[09/17/26 13:54:35] INFO     Processing request of type            server.py:733
+                             CallToolRequest                                    
+                    INFO     Processing request of type            server.py:733
+                             CallToolRequest                                    
+[09/17/26 13:54:40] INFO     Processing request of type            server.py:733
+                             CallToolRequest                                    
+[09/17/26 13:57:12] INFO     Processing request of type            server.py:733
+                             CallToolRequest                                    
+[09/17/26 13:57:13] INFO     Processing request of type            server.py:733
+                             CallToolRequest                                    
+Process group termination failed for PID 12458: [Errno 1] Operation not permitted, falling back to simple terminate
+PASS: all nine research-quality MCP tools actually called; synthetic analysis, native report build, staging/bundle boundaries and live APIs passed.

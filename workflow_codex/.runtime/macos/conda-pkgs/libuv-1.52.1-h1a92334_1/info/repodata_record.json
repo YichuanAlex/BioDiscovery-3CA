@@ -1,0 +1,21 @@
+{
+  "name": "libuv",
+  "version": "1.52.1",
+  "build": "h1a92334_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "subdir": "osx-arm64",
+  "fn": "libuv-1.52.1-h1a92334_1.conda",
+  "md5": "de09bd0f175611e94f21b28f8c708e80",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libuv-1.52.1-h1a92334_1.conda",
+  "sha256": "4f47de9de1990efd998edbbd6793f89c8f02ffde987ae8120b1c006acefd2a04",
+  "arch": "arm64",
+  "platform": "darwin",
+  "depends": [
+    "__osx >=11.0"
+  ],
+  "constrains": [],
+  "license": "MIT",
+  "timestamp": 1785914645797,
+  "size": 122729
+}

@@ -1,0 +1,18 @@
+{
+  "arch": "arm64",
+  "build": "h4d1e80c_2",
+  "build_number": 2,
+  "depends": [
+    "__osx >=11.0",
+    "libcxx >=21",
+    "libtiff >=4.7.2,<4.8.0a0",
+    "libzlib >=1.3.2,<2.0a0",
+    "libpng >=1.6.58,<1.7.0a0"
+  ],
+  "license": "BSD-2-Clause",
+  "name": "openjpeg",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1788425205328,
+  "version": "2.5.4"
+}

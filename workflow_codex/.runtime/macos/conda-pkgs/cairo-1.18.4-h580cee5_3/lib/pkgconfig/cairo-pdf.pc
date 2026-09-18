@@ -1,0 +1,8 @@
+prefix=/Users/runner/miniforge3/conda-bld/cairo_1788221228056/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla
+includedir=${prefix}/include
+
+Name: cairo-pdf
+Description: PDF surface backend for cairo graphics library
+Version: 1.18.4
+Requires: cairo, zlib
+Cflags: -I${includedir}

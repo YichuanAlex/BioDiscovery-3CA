@@ -1,0 +1,8 @@
+- script:
+    content:
+    - tectonic --help
+    - tectonic example.tex
+    cwd: etc/conda/test-files/tectonic/0
+  files:
+    recipe:
+    - example.tex

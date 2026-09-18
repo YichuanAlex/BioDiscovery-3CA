@@ -1,0 +1,106 @@
+{
+  "name": "libuv",
+  "version": "1.52.1",
+  "build": "h1a92334_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "subdir": "osx-arm64",
+  "fn": "libuv-1.52.1-h1a92334_1.conda",
+  "md5": "de09bd0f175611e94f21b28f8c708e80",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libuv-1.52.1-h1a92334_1.conda",
+  "sha256": "4f47de9de1990efd998edbbd6793f89c8f02ffde987ae8120b1c006acefd2a04",
+  "depends": [
+    "__osx >=11.0"
+  ],
+  "constrains": [],
+  "license": "MIT",
+  "timestamp": 1785914645797,
+  "size": 122729,
+  "_requested_specs": [],
+  "package_tarball_full_path": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/conda-pkgs/libuv-1.52.1-h1a92334_1.conda",
+  "extracted_package_dir": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/conda-pkgs/libuv-1.52.1-h1a92334_1",
+  "files": [
+    "include/uv/darwin.h",
+    "include/uv/errno.h",
+    "include/uv/threadpool.h",
+    "include/uv/unix.h",
+    "include/uv/version.h",
+    "include/uv.h",
+    "lib/libuv.1.dylib",
+    "lib/libuv.dylib",
+    "lib/pkgconfig/libuv.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "include/uv/darwin.h",
+        "path_type": "hardlink",
+        "sha256": "222b6dd3ce67cfbb735b14b1662f065fc23570d6969acf463b39d946b7590d8c",
+        "size_in_bytes": 3213,
+        "sha256_in_prefix": "222b6dd3ce67cfbb735b14b1662f065fc23570d6969acf463b39d946b7590d8c"
+      },
+      {
+        "_path": "include/uv/errno.h",
+        "path_type": "hardlink",
+        "sha256": "4242edf790e4569ef349026ab4c6e31093334ee5fc02b16ed7a0d9fbacdffd16",
+        "size_in_bytes": 11216,
+        "sha256_in_prefix": "4242edf790e4569ef349026ab4c6e31093334ee5fc02b16ed7a0d9fbacdffd16"
+      },
+      {
+        "_path": "include/uv/threadpool.h",
+        "path_type": "hardlink",
+        "sha256": "09ae41099af710289155be012df45c2fce04da6a02e813278b4558935e645938",
+        "size_in_bytes": 1505,
+        "sha256_in_prefix": "09ae41099af710289155be012df45c2fce04da6a02e813278b4558935e645938"
+      },
+      {
+        "_path": "include/uv/unix.h",
+        "path_type": "hardlink",
+        "sha256": "06ccd9e0f3f312b610a7e7a8ff16596988e02796e7a0c81a62e29d5f6abe4613",
+        "size_in_bytes": 19915,
+        "sha256_in_prefix": "06ccd9e0f3f312b610a7e7a8ff16596988e02796e7a0c81a62e29d5f6abe4613"
+      },
+      {
+        "_path": "include/uv/version.h",
+        "path_type": "hardlink",
+        "sha256": "a859f2c21f7887d45b0372109ebc91759a6f8c408c7cbf2a12f9bbe579be403b",
+        "size_in_bytes": 1831,
+        "sha256_in_prefix": "a859f2c21f7887d45b0372109ebc91759a6f8c408c7cbf2a12f9bbe579be403b"
+      },
+      {
+        "_path": "include/uv.h",
+        "path_type": "hardlink",
+        "sha256": "bb9ed99b80cd22c58361bffdfbb2aa7029ce0391cde616745c0072a6f3c03219",
+        "size_in_bytes": 73038,
+        "sha256_in_prefix": "bb9ed99b80cd22c58361bffdfbb2aa7029ce0391cde616745c0072a6f3c03219"
+      },
+      {
+        "_path": "lib/libuv.1.dylib",
+        "path_type": "hardlink",
+        "sha256": "2eac587ba1d34a7dc0d8d91fbaf50cd694af1d19f0d7c98a5e4cafd879d420d5",
+        "size_in_bytes": 292000,
+        "sha256_in_prefix": "2eac587ba1d34a7dc0d8d91fbaf50cd694af1d19f0d7c98a5e4cafd879d420d5"
+      },
+      {
+        "_path": "lib/libuv.dylib",
+        "path_type": "softlink",
+        "sha256": "2eac587ba1d34a7dc0d8d91fbaf50cd694af1d19f0d7c98a5e4cafd879d420d5",
+        "size_in_bytes": 13
+      },
+      {
+        "_path": "lib/pkgconfig/libuv.pc",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/bld/rattler-build_libuv_1785914645/host_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "sha256": "ce969e743f3e22f6f6a7cc2ef2f0fddb39220fe2c904b36740daf9eaee1ca358",
+        "size_in_bytes": 558,
+        "sha256_in_prefix": "7bba4270cfc220cc1c479cdce8b1a86c373e8e8acb3bcf40e6cd9da23f754dd1"
+      }
+    ]
+  },
+  "link": {
+    "source": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/conda-pkgs/libuv-1.52.1-h1a92334_1",
+    "type": 1
+  }
+}

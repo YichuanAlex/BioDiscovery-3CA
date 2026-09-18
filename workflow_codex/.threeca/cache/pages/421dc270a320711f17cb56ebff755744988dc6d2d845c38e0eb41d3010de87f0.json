@@ -1,8 +1,8 @@
 {
   "url": "https://www.weizmann.ac.il/sites/3CA/colorectal",
   "final_url": "https://www.weizmann.ac.il/sites/3CA/colorectal",
-  "fetched_at": "2026-09-14T04:17:33.430282+00:00",
-  "raw_html_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\pages\\421dc270a320711f17cb56ebff755744988dc6d2d845c38e0eb41d3010de87f0.html",
+  "fetched_at": "2026-09-17T05:44:04.850081+00:00",
+  "raw_html_path": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.threeca/cache/pages/421dc270a320711f17cb56ebff755744988dc6d2d845c38e0eb41d3010de87f0.html",
   "title": "Colorectal | Curated Cancer Cell Atlas",
   "text": "Colorectal Title Data Meta data Cell types Summary Disease Technology #samples #cells Meta programs CNAs UMAP Cell cycle Chen et al. 2021 Cell types Summary Colon adenoma Modified InDrop 121 122811 Meta programs UMAP Cell cycle Lee et al. 2020 Cell types Summary CRC 10x 15 21657 Meta programs CNAs UMAP Cell cycle Li et al. 2017 Cell types Summary CRC SmartSeq2 18 590 UMAP Cell cycle Pelka et al. 2021 Cell types Summary Colorectal cancer 10x 100 370115 Meta programs CNAs UMAP Cell cycle Zhang et al. 2018 Cell types Summary Colorectal cancer SmartSeq2 33 11138 Meta programs UMAP Cell cycle All Colorectal cancer 287 526311",
   "links": [

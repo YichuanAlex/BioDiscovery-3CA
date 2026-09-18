@@ -1,0 +1,13 @@
+{
+  "paths": [
+    {
+      "_path": "lib/libintl.8.dylib",
+      "file_mode": "binary",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/gettext-split_1751557092446/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+      "sha256": "6df1128a8ce806f0ea76780ed98045eb9f872e950d8c91b95d5edf59e9f5c2bb",
+      "size_in_bytes": 229856
+    }
+  ],
+  "paths_version": 1
+}

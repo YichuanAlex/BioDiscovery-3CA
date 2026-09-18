@@ -1,0 +1,15 @@
+{
+  "arch": "arm64",
+  "build": "h784d473_1",
+  "build_number": 1,
+  "depends": [
+    "libcxx >=19",
+    "__osx >=11.0"
+  ],
+  "license": "LGPL-2.0-or-later",
+  "name": "graphite2",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1786118637573,
+  "version": "1.3.15"
+}

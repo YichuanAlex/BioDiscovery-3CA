@@ -1,0 +1,13 @@
+{
+  "round": "Q1_R23",
+  "started_at": "2026-09-17T08:14:47.468968+00:00",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "task": "/Users/bytedance/Downloads/BioDiscovery-3CA/3CA/Q1_R23",
+  "model": "/Users/bytedance/Downloads/BioDiscovery-3CA/model/Qwen3.5-4B-MLX-4bit",
+  "model_config_sha256": "f3efc81b2ea8d96a45301037d3ccccbcccdef44a961845c87f286aaddbc6eaaa",
+  "prompt_sha256": "42159979bcb676a694afe4cd025e3d1cc1763a53efeb4c5dd384fb85634e0113",
+  "context_tokens": 32768,
+  "max_tokens": 4096,
+  "research_workspace_initially_empty": true,
+  "source_policy": "fresh task state; verified public raw cache only"
+}

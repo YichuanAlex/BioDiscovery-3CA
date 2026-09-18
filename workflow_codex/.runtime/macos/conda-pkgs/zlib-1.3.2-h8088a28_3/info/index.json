@@ -1,0 +1,16 @@
+{
+  "arch": "arm64",
+  "build": "h8088a28_3",
+  "build_number": 3,
+  "depends": [
+    "__osx >=11.0",
+    "libzlib 1.3.2 h8088a28_3"
+  ],
+  "license": "Zlib",
+  "license_family": "Other",
+  "name": "zlib",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1785277062753,
+  "version": "1.3.2"
+}

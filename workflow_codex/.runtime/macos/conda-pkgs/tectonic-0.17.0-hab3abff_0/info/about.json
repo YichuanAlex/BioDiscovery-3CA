@@ -1,0 +1,19 @@
+{
+  "channels": [
+    "https://conda.anaconda.org/conda-forge/"
+  ],
+  "dev_url": "https://github.com/tectonic-typesetting/tectonic/",
+  "doc_url": "https://tectonic-typesetting.github.io/book/latest/",
+  "extra": {
+    "flow_run_id": "azure_20260727.1.1",
+    "recipe-maintainers": [
+      "pkgw",
+      "anjos"
+    ],
+    "remote_url": "https://github.com/conda-forge/tectonic-feedstock",
+    "sha": "0965d25cc7745c41f68dafc9e3fa5ff76dad5ae4"
+  },
+  "home": "https://tectonic-typesetting.github.io/",
+  "license": "MIT",
+  "summary": "A modernized, complete, standalone TeX/LaTeX engine."
+}

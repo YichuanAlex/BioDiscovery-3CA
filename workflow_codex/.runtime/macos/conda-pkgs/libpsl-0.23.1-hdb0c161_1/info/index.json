@@ -1,0 +1,17 @@
+{
+  "arch": "arm64",
+  "build": "hdb0c161_1",
+  "build_number": 1,
+  "depends": [
+    "__osx >=11.0",
+    "libcxx >=21",
+    "icu >=78.3,<79.0a0"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "name": "libpsl",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1786970928205,
+  "version": "0.23.1"
+}

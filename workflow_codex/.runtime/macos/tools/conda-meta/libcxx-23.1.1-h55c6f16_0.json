@@ -1,0 +1,71 @@
+{
+  "name": "libcxx",
+  "version": "23.1.1",
+  "build": "h55c6f16_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "subdir": "osx-arm64",
+  "fn": "libcxx-23.1.1-h55c6f16_0.conda",
+  "md5": "b61106a0b5ac7cfe874f8b2e4f067dfa",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libcxx-23.1.1-h55c6f16_0.conda",
+  "sha256": "3f902803f0fc2643a4f82ff15a06811d974ff5fb6fa8f957720a7ef84e13ad98",
+  "depends": [
+    "__osx >=11.0"
+  ],
+  "constrains": [],
+  "license": "Apache-2.0 WITH LLVM-exception",
+  "timestamp": 1788869180613,
+  "size": 578565,
+  "_requested_specs": [],
+  "package_tarball_full_path": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/conda-pkgs/libcxx-23.1.1-h55c6f16_0.conda",
+  "extracted_package_dir": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/conda-pkgs/libcxx-23.1.1-h55c6f16_0",
+  "files": [
+    "lib/libc++.1.0.dylib",
+    "lib/libc++.1.dylib",
+    "lib/libc++.a",
+    "lib/libc++.dylib",
+    "lib/libc++experimental.a"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/libc++.1.0.dylib",
+        "path_type": "hardlink",
+        "sha256": "e6966d1b32bc23ce40f22c346f3af401f20f3a7c172eec0bc88a5c8443ea7ce9",
+        "size_in_bytes": 1193632,
+        "sha256_in_prefix": "e6966d1b32bc23ce40f22c346f3af401f20f3a7c172eec0bc88a5c8443ea7ce9"
+      },
+      {
+        "_path": "lib/libc++.1.dylib",
+        "path_type": "softlink",
+        "sha256": "e6966d1b32bc23ce40f22c346f3af401f20f3a7c172eec0bc88a5c8443ea7ce9",
+        "size_in_bytes": 1193632
+      },
+      {
+        "_path": "lib/libc++.a",
+        "path_type": "hardlink",
+        "sha256": "075066d0e899656222ec8b408b273c11f9238ac044bd6c9c1e48a8497d12e4b6",
+        "size_in_bytes": 1706232,
+        "sha256_in_prefix": "075066d0e899656222ec8b408b273c11f9238ac044bd6c9c1e48a8497d12e4b6"
+      },
+      {
+        "_path": "lib/libc++.dylib",
+        "path_type": "softlink",
+        "sha256": "e6966d1b32bc23ce40f22c346f3af401f20f3a7c172eec0bc88a5c8443ea7ce9",
+        "size_in_bytes": 1193632
+      },
+      {
+        "_path": "lib/libc++experimental.a",
+        "path_type": "hardlink",
+        "sha256": "ab02231445aaaabeecac801298615aa76ad2cf0202b40ef3cc2743c1971ac6d5",
+        "size_in_bytes": 314392,
+        "sha256_in_prefix": "ab02231445aaaabeecac801298615aa76ad2cf0202b40ef3cc2743c1971ac6d5"
+      }
+    ]
+  },
+  "link": {
+    "source": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/conda-pkgs/libcxx-23.1.1-h55c6f16_0",
+    "type": 1
+  }
+}

@@ -1,0 +1,20 @@
+MLX service ready; reusing the requested model.
+[tool] search_studies
+[tool-error] search_studies: Tool is not currently advertised: search_studies
+[tool] get_study
+[tool] plan_asset
+[tool] download_asset
+[auto-continue] phase=input_staging; completion not verified
+[tool] prepare_3ca_dataset
+[auto-continue] phase=metabolic_gene_definition; completion not verified
+[tool] fetch_reactome_metabolic_genes
+[tool] list_files
+[tool] read_file
+[tool] list_files
+[tool] list_files
+[tool] run_shell
+[tool] run_shell
+[auto-continue] phase=core_analysis; completion not verified
+[tool] read_file
+[tool] read_file
+[tool] run_shell

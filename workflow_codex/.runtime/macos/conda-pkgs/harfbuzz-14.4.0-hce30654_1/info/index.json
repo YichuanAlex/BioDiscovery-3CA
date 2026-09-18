@@ -1,0 +1,14 @@
+{
+  "arch": "arm64",
+  "build": "hce30654_1",
+  "build_number": 1,
+  "depends": [
+    "libharfbuzz-devel 14.4.0 hcda0f7c_1"
+  ],
+  "license": "MIT",
+  "name": "harfbuzz",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1788405496569,
+  "version": "14.4.0"
+}

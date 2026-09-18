@@ -1,0 +1,12 @@
+prefix=/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/tools
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: harfbuzz-gpu
+Description: HarfBuzz GPU rasterization library
+Version: 14.4.0
+Requires: harfbuzz =  14.4.0
+Requires.private: freetype2 >=  20.0.14, glib-2.0 >=  2.30.0, graphite2 >=  1.2.0
+Libs: -L${libdir} -lharfbuzz-gpu
+Libs.private: -lm -L${libdir} -lharfbuzz -framework ApplicationServices
+Cflags: -I${includedir}/harfbuzz

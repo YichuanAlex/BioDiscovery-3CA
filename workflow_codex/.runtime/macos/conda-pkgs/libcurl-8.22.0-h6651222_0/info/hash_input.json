@@ -1,0 +1,17 @@
+{
+  "target_platform": "osx-arm64",
+  "zlib": "1",
+  "openssl": "3.5",
+  "c_stdlib": "macosx_deployment_target",
+  "libpsl": "0.23",
+  "libssh2": "1",
+  "libcurl": "8",
+  "zstd": "1.5",
+  "c_compiler": "clang",
+  "c_stdlib_version": "11.0",
+  "channel_targets": "conda-forge main",
+  "CONDA_BUILD_SYSROOT": "/opt/conda-sdks/MacOSX11.0.sdk",
+  "krb5": "1.22",
+  "c_compiler_version": "21",
+  "__osx": "__osx >=11.0"
+}

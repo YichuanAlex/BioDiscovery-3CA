@@ -1,0 +1,111 @@
+\documentclass[sloppy]{article}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{url}
+
+\title{Transcriptional Metabolic States in Meningioma Brain Single-Cell Data}
+\author{}
+\date{}
+
+\begin{document}
+\sloppy
+
+\maketitle
+
+\begin{abstract}
+This study investigates whether transcriptional metabolic states can be identified in single-cell RNA-seq data from meningioma brain samples using Reactome metabolic pathway genes. We analyze 58,843 cells from 10 samples using 1,984 metabolic genes from Reactome pathway R-HSA-1430728.
+\end{abstract}
+
+\section{Data and Methods}
+
+\subsection{Dataset}
+The Choudhury et al. 2022 study (3CA ID: 3ca:20773) provides single-cell RNA-seq data from 10 meningioma brain samples with 58,843 cells and 33,538 detected genes. The analysis uses 1,984 metabolic genes from Reactome pathway R-HSA-1430728 (release 97).
+
+\subsection{Normalization and Feature Selection}
+Expression data was normalized using per-cell library size scaling to 10,000 counts, followed by log transformation:
+\begin{equation}
+\label{eq:normalization}
+\log(1+x) = \log(1+x), \text{ where } x \text{ represents the expression value.}
+\end{equation}
+The analysis used seed grid (0, 17, 42, 73, 101) for clustering stability assessment. Resolution selection maximized median silhouette among candidates passing the mean pairwise ARI stability filter; mean pairwise ARI was the tie-breaker. Equation~\ref{eq:normalization} defines the normalization formula.
+
+\subsection{Clustering Analysis}
+We performed Leiden clustering on the metabolic gene subset with multiple seeds and resolutions. The analysis also included HVG-based and random control comparisons to establish baselines.
+
+\section{Results}
+
+\subsection{Metabolic Gene Expression Pattern}
+Figure~\ref{fig:metabolic_umap} shows the embedding of cells using the 1,984 metabolic genes. The UMAP visualization reveals candidate cluster groupings that may correspond to transcriptional metabolic states.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.95\linewidth,height=0.78\textheight,keepaspectratio]{../figures/metabolic_umap.pdf}
+\caption{UMAP embedding of 58,843 cells using 1,984 metabolic genes from Reactome pathway R-HSA-1430728. Cells are colored by cluster assignment from Leiden clustering at resolution 0.4.}
+\label{fig:metabolic_umap}
+\end{figure}
+
+\subsection{Clustering Diagnostics}
+Figure~\ref{fig:clustering_diagnostics} presents clustering quality metrics including silhouette score, Calinski-Harabasz index, Davies-Bouldin index, and pairwise stability metrics across multiple seeds and resolutions.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.95\linewidth,height=0.78\textheight,keepaspectratio]{../figures/clustering_diagnostics.pdf}
+\caption{Clustering quality metrics across multiple seeds and resolutions. The median silhouette score was maximized among candidates passing the mean pairwise ARI stability filter.}
+\label{fig:clustering_diagnostics}
+\end{figure}
+
+\subsection{Clustering Metrics}
+Table~\ref{tab:clustering_metrics} summarizes the clustering metrics obtained from the analysis.
+
+\begin{table}[h]
+\centering
+\caption{Clustering quality metrics from Leiden clustering on metabolic genes}
+\label{tab:clustering_metrics}
+\begin{tabular}{lr}
+\toprule
+Metric & Value \\
+\midrule
+Silhouette score & 0.229 \\
+Calinski-Harabasz index & 7177.0 \\
+Davies-Bouldin index & 1.513 \\
+Mean pairwise ARI & 0.980 \\
+Min pairwise ARI & 0.973 \\
+Mean pairwise NMI & 0.975 \\
+Min pairwise NMI & 0.968 \\
+Median silhouette & 0.221 \\
+Number of clusters & 15 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Random Control Comparison}
+We performed 19 random control comparisons where random gene sets of the same size were used as baselines. The observed random-control exceedance count was 0 of 19; the add-one rank fraction is descriptive, not an inferential p-value.
+
+\subsection{Within-Replicate Stability}
+The analysis assessed within-replicate stability using the mean pairwise ARI as a tie-breaker for resolution selection. The three-decimal within-replicate global-vs-within ARI range was 0.106 to 0.813. The weakest within-replicate result was patient 3 with 3,287 cells.
+
+\section{Discussion}
+
+\subsection{Candidate Partitions Observed}
+The analysis identified 15 clusters ranging from 1,002 to 8,985 cells. The clustering metrics suggest stable partitioning with high pairwise stability across seeds.
+
+\subsection{Distinct Metabolic States Inconclusive}
+While candidate partitions were observed, the analysis does not prove distinct biological metabolic states. The conclusion is inconclusive regarding whether these clusters represent true biological metabolic states versus technical artifacts or other confounding factors.
+
+\subsection{Confounding Factors}
+The analysis checked for confounding effects from patient, sample, source, cell type, cell subtype, cell cycle phase, complexity, computed total counts, computed detected genes, and computed mito percent.
+
+\subsection{Cell Type Associations}
+Cell type associations were assessed both globally and within biological replicates. The categorical confounder NMI was 0.507, and cell subtype NMI was 0.658.
+
+\section{Conclusion}
+
+The analysis demonstrates that metabolic genes can form candidate cluster partitions in the single-cell RNA-seq dataset. However, the presence of these clusters does not prove distinct biological metabolic states. The observed random-control exceedance count was 0 of 19; the add-one rank fraction is descriptive, not an inferential p-value.
+
+\begin{thebibliography}{99}
+\bibitem{Choudhury2022}
+Abrar Choudhury, Stephen T. Magill, Charlotte D. Eaton, Briana C. Prager, William C. Chen, Martha A. Cady, Kyounghee Seo, Calixto-Hope G. Lucas, Tim J. Casey-Clyde, Harish N. Vasudevan, S. John Liu, Javier E. Villanueva-Meyer, Tai-Chung Lam, Jenny Kan-Suen Pu, Lai-Fung Li, Gilberto Ka-Kit Leung, Danielle L. Swaney, Michael Y. Zhang, Jason W. Chan, Zhixin Qiu, Michael V. Martin, Matthew S. Susko, Steve E. Braunstein, Nancy Ann Oberheim, Jessica D. Schulte, Nicholas Butowski, Penny K. Sneed, Mitchel S. Berger, Nevan J. Krogan, Arie Perry, Joanna J. Phillips, David A. Solomon, Joseph F. Costello, Michael W. McDermott, Jeremy N. Rich, David R. Raleigh. ``Meningioma DNA methylation groups identify biological drivers and therapeutic vulnerabilities.'' \textit{Nature Genetics} \textbf{54} (2022): 649--659. \url{https://www.nature.com/articles/s41588-022-01061-8}
+\end{thebibliography}
+
+\end{document}

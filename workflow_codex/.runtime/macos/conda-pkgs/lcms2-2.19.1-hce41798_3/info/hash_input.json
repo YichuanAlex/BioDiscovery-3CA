@@ -1,0 +1,13 @@
+{
+  "CONDA_BUILD_SYSROOT": "/opt/conda-sdks/MacOSX11.0.sdk",
+  "c_stdlib": "macosx_deployment_target",
+  "channel_targets": "conda-forge main",
+  "lcms2": "2",
+  "c_compiler": "clang",
+  "c_compiler_version": "21",
+  "libtiff": "4.7",
+  "c_stdlib_version": "11.0",
+  "target_platform": "osx-arm64",
+  "libjpeg_turbo": "3",
+  "__osx": "__osx >=11.0"
+}

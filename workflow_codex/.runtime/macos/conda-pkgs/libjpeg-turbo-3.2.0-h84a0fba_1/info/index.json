@@ -1,0 +1,17 @@
+{
+  "arch": "arm64",
+  "build": "h84a0fba_1",
+  "build_number": 1,
+  "constrains": [
+    "jpeg <0.0.0a"
+  ],
+  "depends": [
+    "__osx >=11.0"
+  ],
+  "license": "IJG AND BSD-3-Clause AND Zlib",
+  "name": "libjpeg-turbo",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1785896382474,
+  "version": "3.2.0"
+}

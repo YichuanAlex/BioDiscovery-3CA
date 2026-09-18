@@ -1,5 +1,6 @@
 import os
 import json
+import sys
 from pathlib import Path
 
 import anyio
@@ -24,7 +25,7 @@ EXPECTED = {
 async def check() -> None:
     root = Path(__file__).resolve().parent
     parameters = StdioServerParameters(
-        command=str(root / ".venv" / "Scripts" / "python.exe"),
+        command=sys.executable,
         args=[str(root / "MCP" / "server.py")],
         env={**os.environ, "THREECA_CACHE": str(root.parent.parent / ".threeca" / "cache")},
     )

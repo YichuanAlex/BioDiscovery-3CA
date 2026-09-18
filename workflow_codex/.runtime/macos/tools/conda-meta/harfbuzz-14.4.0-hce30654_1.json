@@ -1,0 +1,31 @@
+{
+  "name": "harfbuzz",
+  "version": "14.4.0",
+  "build": "hce30654_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "subdir": "osx-arm64",
+  "fn": "harfbuzz-14.4.0-hce30654_1.conda",
+  "md5": "cdd9d9477a554951d3e0b59600e29a0f",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/harfbuzz-14.4.0-hce30654_1.conda",
+  "sha256": "c0a81c23a1b09831e46d925b5a32cfaca996ca513b81ad654696fb4288575610",
+  "depends": [
+    "libharfbuzz-devel 14.4.0 hcda0f7c_1"
+  ],
+  "constrains": [],
+  "license": "MIT",
+  "timestamp": 1788405496569,
+  "size": 11074,
+  "_requested_specs": [],
+  "package_tarball_full_path": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/conda-pkgs/harfbuzz-14.4.0-hce30654_1.conda",
+  "extracted_package_dir": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/conda-pkgs/harfbuzz-14.4.0-hce30654_1",
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/conda-pkgs/harfbuzz-14.4.0-hce30654_1",
+    "type": 1
+  }
+}

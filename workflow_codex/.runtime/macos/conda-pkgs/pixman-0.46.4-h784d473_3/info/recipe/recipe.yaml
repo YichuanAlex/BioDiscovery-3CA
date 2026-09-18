@@ -1,0 +1,58 @@
+schema_version: 1
+
+context:
+  version: 0.46.4
+
+package:
+  name: pixman
+  version: ${{ version }}
+
+source:
+  url: http://cairographics.org/releases/pixman-${{ version }}.tar.gz
+  sha256: d09c44ebc3bd5bee7021c79f922fe8fb2fb57f7320f55e97ff9914d2346a591c
+  patches:
+    - meson-darwin-versions.patch
+
+build:
+  number: 3
+
+requirements:
+  build:
+    - ${{ compiler('c') }}
+    - ${{ stdlib("c") }}
+    - ${{ compiler('cxx') }}
+    - meson
+    - ninja
+    - pkg-config
+  run_exports:
+    - ${{ pin_subpackage('pixman') }}
+
+tests:
+  - package_contents:
+      lib:
+        - if: not win
+          then: pixman-1
+      files:
+        - if: win
+          then:
+            # meson suffixes the dll with the soversion: pixman-1-0.dll
+            - Library/bin/pixman-1-*.dll
+            - Library/lib/pixman-1.lib
+
+about:
+  license: MIT
+  license_file: COPYING
+  summary: A low-level software library for pixel manipulation.
+  description: |
+    Pixman is a low-level software library for pixel manipulation, providing
+    features such as image compositing and trapezoid rasterization.
+  homepage: http://www.pixman.org/
+  repository: https://cgit.freedesktop.org/pixman/
+
+extra:
+  recipe-maintainers:
+    - ccordoba12
+    - jakirkham
+    - ocefpaf
+    - pkgw
+    - sdvillal
