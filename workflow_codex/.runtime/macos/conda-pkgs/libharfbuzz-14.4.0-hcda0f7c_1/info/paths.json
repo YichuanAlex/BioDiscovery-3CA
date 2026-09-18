@@ -1,0 +1,101 @@
+{
+  "paths": [
+    {
+      "_path": "lib/libharfbuzz-cairo.0.dylib",
+      "path_type": "hardlink",
+      "sha256": "794545c09ac3e5aafb6784c4a04a0ac8170c4c19b2c922d151c2bda9506edb64",
+      "size_in_bytes": 86496
+    },
+    {
+      "_path": "lib/libharfbuzz-cairo.dylib",
+      "path_type": "softlink",
+      "sha256": "794545c09ac3e5aafb6784c4a04a0ac8170c4c19b2c922d151c2bda9506edb64",
+      "size_in_bytes": 86496
+    },
+    {
+      "_path": "lib/libharfbuzz-gobject.0.dylib",
+      "path_type": "hardlink",
+      "sha256": "7150e3cac1b55efe5fc30235edbf0df1d54b0313606716a825ffc1b8c8a4431f",
+      "size_in_bytes": 132048
+    },
+    {
+      "_path": "lib/libharfbuzz-gobject.dylib",
+      "path_type": "softlink",
+      "sha256": "7150e3cac1b55efe5fc30235edbf0df1d54b0313606716a825ffc1b8c8a4431f",
+      "size_in_bytes": 132048
+    },
+    {
+      "_path": "lib/libharfbuzz-gpu.0.dylib",
+      "path_type": "hardlink",
+      "sha256": "fe9127918a0a021985f5d1605b2559bf82ce8d8825212640bcc788904eb7b159",
+      "size_in_bytes": 214000
+    },
+    {
+      "_path": "lib/libharfbuzz-gpu.dylib",
+      "path_type": "softlink",
+      "sha256": "fe9127918a0a021985f5d1605b2559bf82ce8d8825212640bcc788904eb7b159",
+      "size_in_bytes": 214000
+    },
+    {
+      "_path": "lib/libharfbuzz-icu.0.dylib",
+      "path_type": "hardlink",
+      "sha256": "11626f47f081266b9b8bf32e80f384fb5fc675b9dff04565c26ab9b326dcb761",
+      "size_in_bytes": 53904
+    },
+    {
+      "_path": "lib/libharfbuzz-icu.dylib",
+      "path_type": "softlink",
+      "sha256": "11626f47f081266b9b8bf32e80f384fb5fc675b9dff04565c26ab9b326dcb761",
+      "size_in_bytes": 53904
+    },
+    {
+      "_path": "lib/libharfbuzz-raster.0.dylib",
+      "path_type": "hardlink",
+      "sha256": "9759dac43c7b26ff4d48d1b708ae155673453299a0964ed475bee1626c32a0f4",
+      "size_in_bytes": 120272
+    },
+    {
+      "_path": "lib/libharfbuzz-raster.dylib",
+      "path_type": "softlink",
+      "sha256": "9759dac43c7b26ff4d48d1b708ae155673453299a0964ed475bee1626c32a0f4",
+      "size_in_bytes": 120272
+    },
+    {
+      "_path": "lib/libharfbuzz-subset.0.dylib",
+      "path_type": "hardlink",
+      "sha256": "71f6d95871f775d624fecc44e6a759ab1369146ee66936c588b73938c4490fa5",
+      "size_in_bytes": 1634448
+    },
+    {
+      "_path": "lib/libharfbuzz-subset.dylib",
+      "path_type": "softlink",
+      "sha256": "71f6d95871f775d624fecc44e6a759ab1369146ee66936c588b73938c4490fa5",
+      "size_in_bytes": 1634448
+    },
+    {
+      "_path": "lib/libharfbuzz-vector.0.dylib",
+      "path_type": "hardlink",
+      "sha256": "cd054e7f7aa55e7a616be9436fabf74b15b1ecd9ebfb67e8f4b7f89cea6f2099",
+      "size_in_bytes": 206832
+    },
+    {
+      "_path": "lib/libharfbuzz-vector.dylib",
+      "path_type": "softlink",
+      "sha256": "cd054e7f7aa55e7a616be9436fabf74b15b1ecd9ebfb67e8f4b7f89cea6f2099",
+      "size_in_bytes": 206832
+    },
+    {
+      "_path": "lib/libharfbuzz.0.dylib",
+      "path_type": "hardlink",
+      "sha256": "e16a10c3b038003f8799433a5c8d7be6dc4f05dbdd364fb0ecb1d1be97e307cc",
+      "size_in_bytes": 1385824
+    },
+    {
+      "_path": "lib/libharfbuzz.dylib",
+      "path_type": "softlink",
+      "sha256": "e16a10c3b038003f8799433a5c8d7be6dc4f05dbdd364fb0ecb1d1be97e307cc",
+      "size_in_bytes": 1385824
+    }
+  ],
+  "paths_version": 1
+}

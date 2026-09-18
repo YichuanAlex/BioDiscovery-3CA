@@ -1,0 +1,20 @@
+{
+  "name": "font-ttf-source-code-pro",
+  "version": "2.038",
+  "build": "h77eed37_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "subdir": "noarch",
+  "fn": "font-ttf-source-code-pro-2.038-h77eed37_0.tar.bz2",
+  "md5": "4d59c254e01d9cde7957100457e2d5fb",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/font-ttf-source-code-pro-2.038-h77eed37_0.tar.bz2",
+  "sha256": "00925c8c055a2275614b4d983e1df637245e19058d79fc7dd1a93b8d9fb4b139",
+  "depends": [],
+  "constrains": [],
+  "noarch": "generic",
+  "license": "OFL-1.1",
+  "license_family": "Other",
+  "package_type": "noarch_generic",
+  "timestamp": 1620479612257,
+  "size": 700814
+}

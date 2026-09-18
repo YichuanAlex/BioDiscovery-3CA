@@ -1,0 +1,14 @@
+请使用项目内 Qwen3.5-4B-MLX-4bit 在唯一工作区 `/Users/bytedance/Downloads/BioDiscovery-3CA/3CA/Q1_R21` 自主完成研究。工作流为 `/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex`，科学 Python 为其 `.runtime/macos/python/bin/python`，Shell 为 `/bin/bash`。不得读取旧研究轮次或 supervisor 寻找解法，不得修改工作流或其他任务目录。
+
+任务：使用已核验公共 3CA 来源 `3ca:20773` 的真实原始计数，回答：“Are there distinct clusters of transcriptional metabolic states? In other words, can we use these metabolic genes only to cluster or separate groups in the single-cell RNA-seq dataset?”
+
+这是全新 Q1_R21。只可复用工作流缓存中已核验来源与 SHA-256 的公共原始字节，必须重新在本轮工作区暂存输入、计算分析、生成图表和报告；不得复制 Q1_R1–Q1_R20 的代码、计算或报告。
+
+1. 依次调用 search_studies、get_study(`3ca:20773`, discover_assets=true)、plan_asset、download_asset(extract=true)、inspect_dataset 和 prepare_3ca_dataset。记录稳定 ID、URL、时间、路径、字节数、SHA-256，并核对 Matrix Market 方向、33,538 gene rows、58,843 cells、唯一 cell ID 和元数据对齐。
+2. 调用 fetch_reactome_metabolic_genes，以保存的 release、R-HSA-1430728、URL 和哈希定义代谢基因。随后调用 analyze_metabolic_states，以本轮 staging 返回的精确路径和真实 genes_path 输出 `results/core_analysis/core_result.json`，不得手改核心输出。
+3. 解释多种子/分辨率、silhouette/Calinski-Harabasz/Davies-Bouldin、HVG、19 个等大小随机对照、患者/样本/细胞类型/complexity/细胞周期混杂和患者内敏感性。细胞不是独立生物学重复。分开回答“能否形成计算分组”和“是否证明离散生物学代谢状态”，不得把标签、正 silhouette、随机 exceedance 或低 NMI 过度解释为证明。
+4. 用 search_pubmed 发现文献，用 verify_doi 核验每个 DOI；作者、题名、期刊、年份和卷页只能来自保存的 Crossref 元数据。
+5. 生成英文 `report/main.tex` 与 `report/main.pdf`：至少两张核心矢量 PDF 图、一个无竖线 booktabs 三线表、一个有 label/ref 且定义变量的真实归一化公式。最后一次 TeX 修改后真实编译，消除 LaTeX error、overfull box 和未解析引用。
+6. 以核心 JSON 为唯一数值来源填写 `results/analysis_manifest.json`，包含 engine、核心与输入路径/哈希、矩阵方向/维度、Reactome 原始及匹配基因、标签、指标、基线、混杂、图件和核验参考文献。保存 `results/summary.json` 与本轮 `README.md`。
+
+提交前运行 validate_research_bundle，修正全部错误；以相同参数重跑核心、重建 PDF，并在最后一次变化后最终验证。必需文件为 `results/core_analysis/core_result.json`、`report/main.tex`、`report/main.pdf`、`results/summary.json`、`results/analysis_manifest.json`、`README.md`。只有 complete_task 接受全部文件且科研闸门 `valid=true` 才结束。按 until-complete 连续工作，以 task_checkpoint 保存真实进展；监督者不代写研究产物。

@@ -1,0 +1,13 @@
+prefix=/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/tools
+exec_prefix=/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/tools
+libdir=/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/tools/lib
+includedir=/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/tools/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 26.6.20
+Requires: 
+Libs: -L/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/tools/lib -lfreetype
+Libs.private: 
+Cflags: -I${includedir}/freetype2

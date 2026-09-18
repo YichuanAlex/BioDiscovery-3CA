@@ -1,0 +1,24 @@
+{
+  "name": "libpsl",
+  "version": "0.23.1",
+  "build": "hdb0c161_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "subdir": "osx-arm64",
+  "fn": "libpsl-0.23.1-hdb0c161_1.conda",
+  "md5": "5d270f716a2b4bc13df9af8612071b17",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libpsl-0.23.1-hdb0c161_1.conda",
+  "sha256": "c8c3153df39abedf3413483f672151ad70f1adb0c06c192bdf7ec432c3616b07",
+  "arch": "arm64",
+  "platform": "darwin",
+  "depends": [
+    "__osx >=11.0",
+    "libcxx >=21",
+    "icu >=78.3,<79.0a0"
+  ],
+  "constrains": [],
+  "license": "MIT",
+  "license_family": "MIT",
+  "timestamp": 1786970928205,
+  "size": 72673
+}

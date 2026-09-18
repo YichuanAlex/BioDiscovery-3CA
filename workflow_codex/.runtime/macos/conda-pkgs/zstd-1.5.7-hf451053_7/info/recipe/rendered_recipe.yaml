@@ -1,0 +1,317 @@
+recipe:
+  schema_version: 1
+  context:
+    version: 1.5.7
+  package:
+    name: zstd
+    version: 1.5.7
+  source:
+  - url: https://github.com/facebook/zstd/archive/v1.5.7.tar.gz
+    sha256: 37d7284556b20954e56e1ca85b80226768902e2edabd3b649e9e72c0c9012ee3
+  build:
+    number: 7
+    string: hf451053_7
+    script:
+      interpreter: bash
+      file: install.sh
+  requirements:
+    build:
+    - macosx_deployment_target_osx-arm64 11.0.*
+    - clang_bootstrap_osx-arm64 19.*
+    - clang_bootstrap_osx-arm64 19.*
+    - ninja
+    - make
+    - cmake-no-system
+    host:
+    - zlib
+    run_exports:
+      weak:
+      - pin_subpackage:
+          name: zstd
+          lower_bound: x.x.x.x.x.x
+          upper_bound: x.x
+  tests:
+  - package_contents:
+      files:
+        exists:
+        - lib/pkgconfig/libzstd.pc
+        not_exists:
+        - lib/libzstd.a
+      lib:
+      - zstd
+      include:
+      - zstd.h
+  - script: zstd -be -i5
+  - script:
+    - export PKG_CONFIG_PATH=$PREFIX/lib/pkgconfig
+    - pkg-config --cflags libzstd
+    - cd cf_test
+    - cmake $CMAKE_ARGS .
+    requirements:
+      run:
+      - clang_bootstrap_osx-arm64 19.*
+      - cmake
+      - make
+      - pkg-config
+    files:
+      recipe:
+      - cf_test/
+  about:
+    homepage: http://www.zstd.net/
+    repository: https://github.com/facebook/zstd
+    documentation: https://facebook.github.io/zstd/zstd_manual.html
+    license: BSD-3-Clause
+    license_file:
+    - LICENSE
+    summary: Zstandard - Fast real-time compression algorithm
+    description: |-
+      Zstandard is a real-time compression algorithm, providing high compression
+      ratios. It offers a very wide range of compression / speed trade-off, while
+      being backed by a very fast decoder. It also offers a special mode for
+      small data, called dictionary compression, and can create dictionaries from
+      any sample set. Zstandard library is provided as open source software using
+      a BSD license.
+  extra:
+    feedstock-name: zstd
+    recipe-maintainers:
+    - JohanMabille
+    - rmax
+    - msarahan
+    - xhochy
+    - hmaarrfk
+build_configuration:
+  target_platform: osx-arm64
+  host_platform:
+    platform: osx-arm64
+    virtual_packages:
+    - __unix=0=0
+    - __osx=15.7.7=0
+    - __archspec=1=m1
+  build_platform:
+    platform: osx-arm64
+    virtual_packages:
+    - __unix=0=0
+    - __osx=15.7.7=0
+    - __archspec=1=m1
+  variant:
+    CONDA_BUILD_SYSROOT: /opt/conda-sdks/MacOSX11.0.sdk
+    MACOSX_DEPLOYMENT_TARGET: '11.0'
+    build_platform: osx-arm64
+    c_compiler: clang_bootstrap
+    c_compiler_version: '19'
+    c_stdlib: macosx_deployment_target
+    c_stdlib_version: '11.0'
+    channel_sources: conda-forge
+    channel_targets: conda-forge main
+    cxx_compiler: clang_bootstrap
+    cxx_compiler_version: '19'
+    target_platform: osx-arm64
+    zlib: '1'
+  hash:
+    hash: f451053
+  directories:
+    host_prefix: /Users/runner/miniforge3/conda-bld/bld/rattler-build_zstd_1786599629/host_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho
+    build_prefix: /Users/runner/miniforge3/conda-bld/bld/rattler-build_zstd_1786599629/build_env
+    work_dir: /Users/runner/miniforge3/conda-bld/bld/rattler-build_zstd_1786599629/work
+    build_dir: /Users/runner/miniforge3/conda-bld/bld/rattler-build_zstd_1786599629
+  channels:
+  - https://conda.anaconda.org/conda-forge
+  channel_priority: strict
+  solve_strategy: highest
+  timestamp: 2026-08-13T05:40:29.846913Z
+  subpackages:
+    zstd:
+      name: zstd
+      version: 1.5.7
+      build_string: hf451053_7
+  packaging_settings:
+    archive_type: conda
+    compression_level: 15
+finalized_dependencies:
+  build:
+    specs:
+    - source: macosx_deployment_target_osx-arm64 11.0.*
+    - source: clang_bootstrap_osx-arm64 19.*
+    - source: clang_bootstrap_osx-arm64 19.*
+    - source: ninja
+    - source: make
+    - source: cmake-no-system
+    resolved:
+    - build: h214bdd9_7
+      build_number: 7
+      depends: []
+      license: BSD-3-Clause
+      license_family: BSD
+      md5: 4635e71c50a59baf57126b667bbcefd5
+      name: macosx_deployment_target_osx-arm64
+      noarch: generic
+      run_exports:
+        strong:
+        - __osx >=11.0
+      sha256: f56f5514d249d29e05cf6a6ace4e45f496c11a1a98fe8e4bc619ff7105a7db11
+      size: 5001
+      subdir: noarch
+      timestamp: 1771434206386
+      version: '11.0'
+      fn: macosx_deployment_target_osx-arm64-11.0-h214bdd9_7.conda
+      url: https://conda.anaconda.org/conda-forge/noarch/macosx_deployment_target_osx-arm64-11.0-h214bdd9_7.conda
+      channel: https://conda.anaconda.org/conda-forge/
+    - build: h28a8b13_34
+      build_number: 34
+      depends: []
+      license: Apache-2.0
+      license_family: Apache
+      md5: 8d04a10ff18e5840ebc2d38e1ef77fbc
+      name: clang_bootstrap_osx-arm64
+      run_exports: {}
+      sha256: 0745c6e50a4d2d491e04083fd629767a6160b4ea846028db1f5a9f3cdc689b87
+      size: 80441187
+      subdir: osx-arm64
+      timestamp: 1785272183962
+      version: 19.1.7
+      fn: clang_bootstrap_osx-arm64-19.1.7-h28a8b13_34.conda
+      url: https://conda.anaconda.org/conda-forge/osx-arm64/clang_bootstrap_osx-arm64-19.1.7-h28a8b13_34.conda
+      channel: https://conda.anaconda.org/conda-forge/
+    - build: h49c215f_0
+      build_number: 0
+      depends:
+      - __osx >=11.0
+      - libcxx >=19
+      license: Apache-2.0
+      license_family: APACHE
+      md5: 175809cc57b2c67f27a0f238bd7f069d
+      name: ninja
+      run_exports: {}
+      sha256: 18d33c17b28d4771fc0b91b7b963c9ce31aca0a9af7dc8e9ee7c974bb207192c
+      size: 164450
+      subdir: osx-arm64
+      timestamp: 1763688228613
+      version: 1.13.2
+      fn: ninja-1.13.2-h49c215f_0.conda
+      url: https://conda.anaconda.org/conda-forge/osx-arm64/ninja-1.13.2-h49c215f_0.conda
+      channel: https://conda.anaconda.org/conda-forge/
+    - build: h84a0fba_3
+      build_number: 3
+      depends:
+      - __osx >=11.0
+      license: GPL-3.0-or-later
+      license_family: GPL
+      md5: 5e4c7921fa8489236f1599274b478bac
+      name: make
+      run_exports: {}
+      sha256: 36c769a71cfd0222de8114a6016f1def3d0411a6202aa811bca50e581450f71f
+      size: 275107
+      subdir: osx-arm64
+      timestamp: 1785879985161
+      version: 4.4.1
+      fn: make-4.4.1-h84a0fba_3.conda
+      url: https://conda.anaconda.org/conda-forge/osx-arm64/make-4.4.1-h84a0fba_3.conda
+      channel: https://conda.anaconda.org/conda-forge/
+    - build: hf6b4638_0
+      build_number: 0
+      constrains:
+      - cmake ==dev
+      depends:
+      - __osx >=11.0
+      - libcxx >=19
+      license: BSD-3-Clause
+      license_family: BSD
+      md5: ffcd38a3d7cdeced84f2b5606f041f11
+      name: cmake-no-system
+      run_exports: {}
+      sha256: 258f88a1b4a6fb01b4510107a83b62753c281040c4b9263c58e5072977b0f73a
+      size: 15985914
+      subdir: osx-arm64
+      timestamp: 1785594510211
+      version: 4.4.2
+      fn: cmake-no-system-4.4.2-hf6b4638_0.conda
+      url: https://conda.anaconda.org/conda-forge/osx-arm64/cmake-no-system-4.4.2-hf6b4638_0.conda
+      channel: https://conda.anaconda.org/conda-forge/
+    - build: h55c6f16_0
+      build_number: 0
+      depends:
+      - __osx >=11.0
+      license: Apache-2.0 WITH LLVM-exception
+      license_family: Apache
+      md5: 89f76a2a21a3ec3ec983b5eb237c4113
+      name: libcxx
+      run_exports: {}
+      sha256: a2e7abab5add9750fab064c024394de48e49f97631c605ad5db5c8ac3fc769ef
+      size: 569349
+      subdir: osx-arm64
+      timestamp: 1781670209146
+      version: 22.1.8
+      fn: libcxx-22.1.8-h55c6f16_0.conda
+      url: https://conda.anaconda.org/conda-forge/osx-arm64/libcxx-22.1.8-h55c6f16_0.conda
+      channel: https://conda.anaconda.org/conda-forge/
+  host:
+    specs:
+    - variant: zlib
+      spec: zlib 1.*
+    - spec: __osx >=11.0
+      from: build
+      run_export: macosx_deployment_target_osx-arm64
+    resolved:
+    - build: h8088a28_3
+      build_number: 3
+      depends:
+      - __osx >=11.0
+      - libzlib 1.3.2 h8088a28_3
+      license: Zlib
+      license_family: Other
+      md5: 2c966485853aa27985fbec7e3fcc4e77
+      name: zlib
+      run_exports:
+        weak:
+        - libzlib >=1.3.2,<2.0a0
+      sha256: ab46d85e4fcffff1b1c5cac517afa40b7ae784cf76fc9da1f55f6a6934291eb6
+      size: 81744
+      subdir: osx-arm64
+      timestamp: 1785277062753
+      version: 1.3.2
+      fn: zlib-1.3.2-h8088a28_3.conda
+      url: https://conda.anaconda.org/conda-forge/osx-arm64/zlib-1.3.2-h8088a28_3.conda
+      channel: https://conda.anaconda.org/conda-forge/
+    - build: h8088a28_3
+      build_number: 3
+      constrains:
+      - zlib 1.3.2 *_3
+      depends:
+      - __osx >=11.0
+      license: Zlib
+      license_family: Other
+      md5: f39288f0ea63ae962e1a2e4f355a0d75
+      name: libzlib
+      run_exports:
+        weak:
+        - libzlib >=1.3.2,<2.0a0
+      sha256: a18fa5d5bac452401459f966cf0d872224e8080c4ff93c77e168d43ab42ef9d7
+      size: 47822
+      subdir: osx-arm64
+      timestamp: 1785277049190
+      version: 1.3.2
+      fn: libzlib-1.3.2-h8088a28_3.conda
+      url: https://conda.anaconda.org/conda-forge/osx-arm64/libzlib-1.3.2-h8088a28_3.conda
+      channel: https://conda.anaconda.org/conda-forge/
+  run:
+    depends:
+    - spec: __osx >=11.0
+      from: build
+      run_export: macosx_deployment_target_osx-arm64
+    - spec: libzlib >=1.3.2,<2.0a0
+      from: host
+      run_export: zlib
+    constraints: []
+    run_exports:
+      weak:
+      - zstd >=1.5.7,<1.6.0a0
+finalized_sources:
+- url: https://github.com/facebook/zstd/archive/v1.5.7.tar.gz
+  sha256: 37d7284556b20954e56e1ca85b80226768902e2edabd3b649e9e72c0c9012ee3
+system_tools:
+  codesign: ''
+  rattler-build: 0.72.2
+extra_meta:
+  flow_run_id: azure_20260813.4.1
+  remote_url: https://github.com/conda-forge/zstd-feedstock
+  sha: 24c0f94340c0875e1a3bb815611276850f7cd7ca

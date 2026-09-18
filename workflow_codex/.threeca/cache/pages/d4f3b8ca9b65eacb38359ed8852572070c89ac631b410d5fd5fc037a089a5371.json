@@ -1,8 +1,8 @@
 {
   "url": "https://www.weizmann.ac.il/sites/3CA/ovarian",
   "final_url": "https://www.weizmann.ac.il/sites/3CA/ovarian",
-  "fetched_at": "2026-09-14T04:17:34.638762+00:00",
-  "raw_html_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\pages\\d4f3b8ca9b65eacb38359ed8852572070c89ac631b410d5fd5fc037a089a5371.html",
+  "fetched_at": "2026-09-17T05:44:06.446318+00:00",
+  "raw_html_path": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.threeca/cache/pages/d4f3b8ca9b65eacb38359ed8852572070c89ac631b410d5fd5fc037a089a5371.html",
   "title": "Ovarian | Curated Cancer Cell Atlas",
   "text": "Ovarian Title Data Meta data Cell types Summary Disease Technology #samples #cells Meta programs CNAs UMAP Cell cycle Geistlinger et al. 2020 Cell types Summary HGSOC 10x 5 41031 Meta programs CNAs UMAP Cell cycle Izar et al. 2020 Cell types Summary HGSOC 10x, SmartSeq2 14 10788 Meta programs CNAs UMAP Cell cycle Nath et al. 2021 Cell types Summary HGSOC 10x, iCell8 18 41729 Meta programs CNAs UMAP Cell cycle Olalekan et al. 2021 Cell types Summary Ovarian Drop-seq 6 9885 Meta programs CNAs UMAP Cell cycle Olbrecht et al. 2021 Cell types Summary HGSTOC 10x 11 15528 Meta programs CNAs UMAP Cell cycle Qian et al. 2020 Cell types Summary Ovarian 10x 4 16951 Meta programs CNAs UMAP Cell cycle Regner et al. 2021 Cell types Summary Ovarian and Endometrial tumors 10x 11 65144 Meta programs CNAs UMAP Cell cycle Shih et al. 2018 Cell types Summary Ovarian cancer SmartSeq2 18 3066 CNAs UMAP Cell cycle Tang-Huau et al. 2018 Cell types Summary Ovarian cancer 10x 4 8404 UMAP Cell cycle Zhang et al. 2019 Cell types Summary HGSOC 10x 2 4848 Meta programs CNAs UMAP Cell cycle Zhang et al. 2022 Cell types Summary HGSOC 10x 22 51786 Meta programs UMAP Cell cycle All Ovarian cancer 115 269160",
   "links": [

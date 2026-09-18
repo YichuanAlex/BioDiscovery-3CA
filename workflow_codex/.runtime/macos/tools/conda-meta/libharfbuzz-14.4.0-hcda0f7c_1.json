@@ -1,0 +1,162 @@
+{
+  "name": "libharfbuzz",
+  "version": "14.4.0",
+  "build": "hcda0f7c_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "subdir": "osx-arm64",
+  "fn": "libharfbuzz-14.4.0-hcda0f7c_1.conda",
+  "md5": "4afba4fae30b467d6c699bb685fa35ce",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libharfbuzz-14.4.0-hcda0f7c_1.conda",
+  "sha256": "a13bee65e7bcbc14b228351d3d5ba00d0c17c5840c471ab67a28b8ca930456d3",
+  "depends": [
+    "__osx >=11.0",
+    "cairo >=1.18.4,<2.0a0",
+    "graphite2 >=1.3.15,<2.0a0",
+    "icu >=78.3,<79.0a0",
+    "libcxx >=21",
+    "libfreetype >=2.14.3",
+    "libfreetype6 >=2.14.3",
+    "libglib >=2.88.3,<3.0a0",
+    "libpng >=1.6.58,<1.7.0a0",
+    "libzlib >=1.3.2,<2.0a0"
+  ],
+  "constrains": [],
+  "license": "MIT",
+  "timestamp": 1788405475876,
+  "size": 973351,
+  "_requested_specs": [],
+  "package_tarball_full_path": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/conda-pkgs/libharfbuzz-14.4.0-hcda0f7c_1.conda",
+  "extracted_package_dir": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/conda-pkgs/libharfbuzz-14.4.0-hcda0f7c_1",
+  "files": [
+    "lib/libharfbuzz-cairo.0.dylib",
+    "lib/libharfbuzz-cairo.dylib",
+    "lib/libharfbuzz-gobject.0.dylib",
+    "lib/libharfbuzz-gobject.dylib",
+    "lib/libharfbuzz-gpu.0.dylib",
+    "lib/libharfbuzz-gpu.dylib",
+    "lib/libharfbuzz-icu.0.dylib",
+    "lib/libharfbuzz-icu.dylib",
+    "lib/libharfbuzz-raster.0.dylib",
+    "lib/libharfbuzz-raster.dylib",
+    "lib/libharfbuzz-subset.0.dylib",
+    "lib/libharfbuzz-subset.dylib",
+    "lib/libharfbuzz-vector.0.dylib",
+    "lib/libharfbuzz-vector.dylib",
+    "lib/libharfbuzz.0.dylib",
+    "lib/libharfbuzz.dylib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/libharfbuzz-cairo.0.dylib",
+        "path_type": "hardlink",
+        "sha256": "794545c09ac3e5aafb6784c4a04a0ac8170c4c19b2c922d151c2bda9506edb64",
+        "size_in_bytes": 86496,
+        "sha256_in_prefix": "794545c09ac3e5aafb6784c4a04a0ac8170c4c19b2c922d151c2bda9506edb64"
+      },
+      {
+        "_path": "lib/libharfbuzz-cairo.dylib",
+        "path_type": "softlink",
+        "sha256": "794545c09ac3e5aafb6784c4a04a0ac8170c4c19b2c922d151c2bda9506edb64",
+        "size_in_bytes": 86496
+      },
+      {
+        "_path": "lib/libharfbuzz-gobject.0.dylib",
+        "path_type": "hardlink",
+        "sha256": "7150e3cac1b55efe5fc30235edbf0df1d54b0313606716a825ffc1b8c8a4431f",
+        "size_in_bytes": 132048,
+        "sha256_in_prefix": "7150e3cac1b55efe5fc30235edbf0df1d54b0313606716a825ffc1b8c8a4431f"
+      },
+      {
+        "_path": "lib/libharfbuzz-gobject.dylib",
+        "path_type": "softlink",
+        "sha256": "7150e3cac1b55efe5fc30235edbf0df1d54b0313606716a825ffc1b8c8a4431f",
+        "size_in_bytes": 132048
+      },
+      {
+        "_path": "lib/libharfbuzz-gpu.0.dylib",
+        "path_type": "hardlink",
+        "sha256": "fe9127918a0a021985f5d1605b2559bf82ce8d8825212640bcc788904eb7b159",
+        "size_in_bytes": 214000,
+        "sha256_in_prefix": "fe9127918a0a021985f5d1605b2559bf82ce8d8825212640bcc788904eb7b159"
+      },
+      {
+        "_path": "lib/libharfbuzz-gpu.dylib",
+        "path_type": "softlink",
+        "sha256": "fe9127918a0a021985f5d1605b2559bf82ce8d8825212640bcc788904eb7b159",
+        "size_in_bytes": 214000
+      },
+      {
+        "_path": "lib/libharfbuzz-icu.0.dylib",
+        "path_type": "hardlink",
+        "sha256": "11626f47f081266b9b8bf32e80f384fb5fc675b9dff04565c26ab9b326dcb761",
+        "size_in_bytes": 53904,
+        "sha256_in_prefix": "11626f47f081266b9b8bf32e80f384fb5fc675b9dff04565c26ab9b326dcb761"
+      },
+      {
+        "_path": "lib/libharfbuzz-icu.dylib",
+        "path_type": "softlink",
+        "sha256": "11626f47f081266b9b8bf32e80f384fb5fc675b9dff04565c26ab9b326dcb761",
+        "size_in_bytes": 53904
+      },
+      {
+        "_path": "lib/libharfbuzz-raster.0.dylib",
+        "path_type": "hardlink",
+        "sha256": "9759dac43c7b26ff4d48d1b708ae155673453299a0964ed475bee1626c32a0f4",
+        "size_in_bytes": 120272,
+        "sha256_in_prefix": "9759dac43c7b26ff4d48d1b708ae155673453299a0964ed475bee1626c32a0f4"
+      },
+      {
+        "_path": "lib/libharfbuzz-raster.dylib",
+        "path_type": "softlink",
+        "sha256": "9759dac43c7b26ff4d48d1b708ae155673453299a0964ed475bee1626c32a0f4",
+        "size_in_bytes": 120272
+      },
+      {
+        "_path": "lib/libharfbuzz-subset.0.dylib",
+        "path_type": "hardlink",
+        "sha256": "71f6d95871f775d624fecc44e6a759ab1369146ee66936c588b73938c4490fa5",
+        "size_in_bytes": 1634448,
+        "sha256_in_prefix": "71f6d95871f775d624fecc44e6a759ab1369146ee66936c588b73938c4490fa5"
+      },
+      {
+        "_path": "lib/libharfbuzz-subset.dylib",
+        "path_type": "softlink",
+        "sha256": "71f6d95871f775d624fecc44e6a759ab1369146ee66936c588b73938c4490fa5",
+        "size_in_bytes": 1634448
+      },
+      {
+        "_path": "lib/libharfbuzz-vector.0.dylib",
+        "path_type": "hardlink",
+        "sha256": "cd054e7f7aa55e7a616be9436fabf74b15b1ecd9ebfb67e8f4b7f89cea6f2099",
+        "size_in_bytes": 206832,
+        "sha256_in_prefix": "cd054e7f7aa55e7a616be9436fabf74b15b1ecd9ebfb67e8f4b7f89cea6f2099"
+      },
+      {
+        "_path": "lib/libharfbuzz-vector.dylib",
+        "path_type": "softlink",
+        "sha256": "cd054e7f7aa55e7a616be9436fabf74b15b1ecd9ebfb67e8f4b7f89cea6f2099",
+        "size_in_bytes": 206832
+      },
+      {
+        "_path": "lib/libharfbuzz.0.dylib",
+        "path_type": "hardlink",
+        "sha256": "e16a10c3b038003f8799433a5c8d7be6dc4f05dbdd364fb0ecb1d1be97e307cc",
+        "size_in_bytes": 1385824,
+        "sha256_in_prefix": "e16a10c3b038003f8799433a5c8d7be6dc4f05dbdd364fb0ecb1d1be97e307cc"
+      },
+      {
+        "_path": "lib/libharfbuzz.dylib",
+        "path_type": "softlink",
+        "sha256": "e16a10c3b038003f8799433a5c8d7be6dc4f05dbdd364fb0ecb1d1be97e307cc",
+        "size_in_bytes": 1385824
+      }
+    ]
+  },
+  "link": {
+    "source": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/conda-pkgs/libharfbuzz-14.4.0-hcda0f7c_1",
+    "type": 1
+  }
+}

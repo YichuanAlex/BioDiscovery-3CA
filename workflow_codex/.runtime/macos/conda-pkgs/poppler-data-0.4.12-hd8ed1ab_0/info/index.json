@@ -1,0 +1,14 @@
+{
+  "arch": null,
+  "build": "hd8ed1ab_0",
+  "build_number": 0,
+  "depends": [],
+  "license": "BSD-3-Clause AND (GPL-2.0-only OR GPL-3.0-only)",
+  "license_family": "OTHER",
+  "name": "poppler-data",
+  "noarch": "generic",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1675353652214,
+  "version": "0.4.12"
+}

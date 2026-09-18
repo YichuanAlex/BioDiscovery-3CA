@@ -1,0 +1,8 @@
+{
+  "round": "Q1_R19",
+  "runner_success": false,
+  "workflow_completion": "not_accepted",
+  "scientific_semantic_acceptance": "not_reviewed",
+  "stopped_at": "2026-09-17T07:07:38.802360+00:00",
+  "reason": "Stopped by the supervisor after the Mac run exposed a missing Reactome-source milestone before core analysis. The R19 workspace and checkpoint are preserved and will not be resumed or reused."
+}

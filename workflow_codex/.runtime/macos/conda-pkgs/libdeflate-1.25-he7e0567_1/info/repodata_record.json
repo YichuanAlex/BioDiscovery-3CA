@@ -1,0 +1,21 @@
+{
+  "name": "libdeflate",
+  "version": "1.25",
+  "build": "he7e0567_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "subdir": "osx-arm64",
+  "fn": "libdeflate-1.25-he7e0567_1.conda",
+  "md5": "78650d671cb56909bb3e5c13bce310f9",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libdeflate-1.25-he7e0567_1.conda",
+  "sha256": "d896f4aa4ce4c590c2838678cb1917356fdb461d2a189991c0280c818c362172",
+  "arch": "arm64",
+  "platform": "darwin",
+  "depends": [
+    "__osx >=11.0"
+  ],
+  "constrains": [],
+  "license": "MIT",
+  "timestamp": 1785909153744,
+  "size": 55727
+}

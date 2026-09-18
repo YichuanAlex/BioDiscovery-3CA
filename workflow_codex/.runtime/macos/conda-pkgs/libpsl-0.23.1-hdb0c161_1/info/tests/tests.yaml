@@ -1,0 +1,5 @@
+- script:
+  - test -f ${PREFIX}/include/libpsl.h
+  - test -f ${PREFIX}/lib/pkgconfig/libpsl.pc
+  - test -f ${PREFIX}/lib/libpsl${SHLIB_EXT}
+  - test ! -f ${PREFIX}/lib/libpsl.a

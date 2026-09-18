@@ -1,8 +1,8 @@
 {
   "url": "https://www.weizmann.ac.il/sites/3CA/prostate",
   "final_url": "https://www.weizmann.ac.il/sites/3CA/prostate",
-  "fetched_at": "2026-09-14T04:17:31.103770+00:00",
-  "raw_html_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\pages\\705bcff077ed69ee6bfc2440ecae1e8d603473f9f51ce62825aadb33b7eff285.html",
+  "fetched_at": "2026-09-17T05:44:01.290536+00:00",
+  "raw_html_path": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.threeca/cache/pages/705bcff077ed69ee6bfc2440ecae1e8d603473f9f51ce62825aadb33b7eff285.html",
   "title": "Prostate | Curated Cancer Cell Atlas",
   "text": "Prostate Title Data Meta data Cell types Summary Disease Technology #samples #cells Meta programs CNAs UMAP Cell cycle Chen et al. 2021 Cell types Summary Prostate cancer 10x 13 36424 Meta programs CNAs UMAP Cell cycle Dong et al. 2020 Cell types Summary Prostate cancer 10x 6 21292 Meta programs CNAs UMAP Cell cycle He et al. 2021 Cell types Summary Metastatic prostate cancer SmartSeq2 15 2170 Meta programs CNAs UMAP Cell cycle Song et al. 2022 Cell types Summary Prostate cancer Seq-Well S3 15 21743 Meta programs CNAs UMAP Cell cycle All Prostate cancer 49 81629",
   "links": [

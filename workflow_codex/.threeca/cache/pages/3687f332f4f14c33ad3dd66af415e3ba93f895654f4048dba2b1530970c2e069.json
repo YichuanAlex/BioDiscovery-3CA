@@ -1,8 +1,8 @@
 {
   "url": "https://www.weizmann.ac.il/sites/3CA/breast",
   "final_url": "https://www.weizmann.ac.il/sites/3CA/breast",
-  "fetched_at": "2026-09-14T04:17:32.924592+00:00",
-  "raw_html_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\pages\\3687f332f4f14c33ad3dd66af415e3ba93f895654f4048dba2b1530970c2e069.html",
+  "fetched_at": "2026-09-17T05:44:03.742726+00:00",
+  "raw_html_path": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.threeca/cache/pages/3687f332f4f14c33ad3dd66af415e3ba93f895654f4048dba2b1530970c2e069.html",
   "title": "Breast | Curated Cancer Cell Atlas",
   "text": "Breast Title Data Meta data Cell types Summary Disease Technology #samples #cells Meta programs CNAs UMAP Cell cycle Azizi et al. 2018 Cell types Summary Breast cancer 10x, InDrop 58 75029 Meta programs UMAP Cell cycle Bassez et al. 2021 Cell types Summary Breast cancer 10x 42 226635 Meta programs CNAs UMAP Cell cycle Chung et al. 2017 Cell types Summary Breast cancer SmartSeq2 13 515 UMAP Cell cycle Gao et al. 2021 Cell types Summary Breast cancer 10x 11 29992 Meta programs CNAs UMAP Cell cycle Griffiths et al. 2021 Cell types Summary Breast cancer 10x, iCell8 95 111372 Meta programs UMAP Cell cycle Gulati et al. 2020 Cell types Summary Breast cancer SmartSeq2 15 1902 Meta programs UMAP Jordan et al. 2016 Cell types Summary Breast cancer 2 74 UMAP Karaayvas et al. 2018 Cell types Summary Breast cancer SmartSeq2 6 1534 Meta programs UMAP Cell cycle Kim et al. 2018 Cell types Summary TNBC Nanogrid 16 2472 Meta programs UMAP Pal et al. 2021 Cell types Summary Breast cancer 10x 45 305224 Meta programs CNAs UMAP Cell cycle Qian et al. 2020 Cell types Summary Breast cancer 10x 7 16537 Meta programs CNAs UMAP Cell cycle Savas et al. 2018 Cell types Summary TNBC 10x 2 6311 Meta programs UMAP Cell cycle Wu et al. 2021 Cell types Summary Breast cancer 10x 26 100064 Meta programs CNAs UMAP Cell cycle All Breast cancer 338 877661",
   "links": [

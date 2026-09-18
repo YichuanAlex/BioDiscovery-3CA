@@ -1,0 +1,17 @@
+{
+  "paths": [
+    {
+      "_path": "bin/tectonic",
+      "path_type": "hardlink",
+      "sha256": "ca18a7ecbacf4cc66fbd430d9de6b0a971e69de5f69305218727784b4f288e8f",
+      "size_in_bytes": 19633520
+    },
+    {
+      "_path": "etc/conda/test-files/tectonic/0/example.tex",
+      "path_type": "hardlink",
+      "sha256": "59002b62de211f0e51fc6737f58d8c3db9bd7aba2057702f669f0a5fe6c5a0d5",
+      "size_in_bytes": 87
+    }
+  ],
+  "paths_version": 1
+}

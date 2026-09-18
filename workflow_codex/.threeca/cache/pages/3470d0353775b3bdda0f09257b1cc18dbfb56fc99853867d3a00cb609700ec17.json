@@ -1,8 +1,8 @@
 {
   "url": "https://www.weizmann.ac.il/sites/3CA/pancreas",
   "final_url": "https://www.weizmann.ac.il/sites/3CA/pancreas",
-  "fetched_at": "2026-09-14T04:17:33.089152+00:00",
-  "raw_html_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\pages\\3470d0353775b3bdda0f09257b1cc18dbfb56fc99853867d3a00cb609700ec17.html",
+  "fetched_at": "2026-09-17T05:44:04.688452+00:00",
+  "raw_html_path": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.threeca/cache/pages/3470d0353775b3bdda0f09257b1cc18dbfb56fc99853867d3a00cb609700ec17.html",
   "title": "Pancreas | Curated Cancer Cell Atlas",
   "text": "Pancreas Title Data Meta data Cell types Summary Disease Technology #samples #cells Meta programs CNAs UMAP Cell cycle Hwang et al. 2022 Cell types Summary PDAC 10x 43 224988 Meta programs CNAs UMAP Cell cycle Lin et al. 2020 Cell types Summary PDAC 10x 16 14926 Meta programs CNAs UMAP Cell cycle Moncada et al. 2020 Cell types Summary PDAC inDrop 2 3659 Meta programs CNAs UMAP Cell cycle Peng et al. 2019 Cell types Summary PDAC 10x 16 27953 Meta programs CNAs UMAP Cell cycle Raghavan et al. 2021 Cell types Summary PDAC Seq-Well 24 24412 Meta programs CNAs UMAP Cell cycle Steele et al. 2020 Cell types Summary PDAC 10x 16 48570 Meta programs CNAs UMAP Cell cycle Yue et al. 2020 Cell types Summary PDAC 10x 15 33970 Meta programs CNAs UMAP Cell cycle All Pancreatic cancer 132 378478",
   "links": [

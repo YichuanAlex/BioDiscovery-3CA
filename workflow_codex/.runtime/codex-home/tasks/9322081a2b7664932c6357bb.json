@@ -1,0 +1,1 @@
+{"model":"Qwen3.5-4B","workspace":"/var/folders/4b/ygc3pxt15w7fp3p78n5skjw40000gn/T/wingpt-recovery-Uknt6J/stale-checkpoint","prompt":"stale probe","required_artifacts":[],"phase":"start","next_action":"continue","artifacts":[],"evidence":[],"observations":[],"rounds":0,"status":"running","messages":[{"role":"system","content":"stale"}]}

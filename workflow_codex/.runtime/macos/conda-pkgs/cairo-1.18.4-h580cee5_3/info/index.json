@@ -1,0 +1,25 @@
+{
+  "arch": "arm64",
+  "build": "h580cee5_3",
+  "build_number": 3,
+  "depends": [
+    "__osx >=11.0",
+    "fontconfig >=2.18.3,<3.0a0",
+    "fonts-conda-ecosystem",
+    "icu >=78.3,<79.0a0",
+    "libcxx >=21",
+    "libexpat >=2.8.1,<3.0a0",
+    "libfreetype >=2.14.3",
+    "libfreetype6 >=2.14.3",
+    "libglib >=2.88.3,<3.0a0",
+    "libpng >=1.6.58,<1.7.0a0",
+    "libzlib >=1.3.2,<2.0a0",
+    "pixman >=0.46.4,<1.0a0"
+  ],
+  "license": "LGPL-2.1-only or MPL-1.1",
+  "name": "cairo",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1788221324814,
+  "version": "1.18.4"
+}

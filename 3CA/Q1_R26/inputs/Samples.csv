@@ -1,0 +1,11 @@
+sample,patient,source,cancer_type,technology,n_cells,age
+MSC1,1,Meningioma,Meningioma,10x,2538,44.3
+MSC2,2,Meningioma,Meningioma,10x,914,74.2
+MSC3,3,Meningioma,Meningioma,10x,3287,59
+MSC4,4,Meningioma,Meningioma,10x,7870,38.1
+MSC4-Dura,4,Dura,Meningioma,10x,1145,38.1
+MSC5,5,Meningioma,Meningioma,10x,10422,86.3
+MSC5-BTI,5,Meningioma brain-tumor interface,Meningioma,10x,8568,86.3
+MSC5-Dura,5,Dura,Meningioma,10x,554,86.3
+MSC6,6,Meningioma,Meningioma,10x,10374,71
+MSC6-BTI,6,Meningioma brain-tumor interface,Meningioma,10x,13171,71

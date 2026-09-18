@@ -1,0 +1,23 @@
+{
+  "name": "libedit",
+  "version": "3.1.20250104",
+  "build": "pl5321h26f1114_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "subdir": "osx-arm64",
+  "fn": "libedit-3.1.20250104-pl5321h26f1114_1.conda",
+  "md5": "843ef89082f368cb889305084d3b483c",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libedit-3.1.20250104-pl5321h26f1114_1.conda",
+  "sha256": "257c926f19e32bdb981fc674c76966049b6fc73f706bae58e9fed8757ad1da70",
+  "arch": "arm64",
+  "platform": "darwin",
+  "depends": [
+    "ncurses",
+    "__osx >=11.0",
+    "ncurses >=6.6,<7.0a0"
+  ],
+  "constrains": [],
+  "license": "BSD-2-Clause",
+  "timestamp": 1786616721640,
+  "size": 107742
+}

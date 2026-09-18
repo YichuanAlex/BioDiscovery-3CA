@@ -1,0 +1,12 @@
+prefix=/Users/runner/miniforge3/conda-bld/poppler-split_1788834320096/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place
+libdir=/Users/runner/miniforge3/conda-bld/poppler-split_1788834320096/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place/lib
+includedir=/Users/runner/miniforge3/conda-bld/poppler-split_1788834320096/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place/include
+
+Name: poppler-cpp
+Description: cpp backend for Poppler PDF rendering library
+Version: 26.09.0
+Requires.private: poppler = 26.09.0
+
+Libs: -L${libdir} -lpoppler-cpp
+Libs.private: 
+Cflags: -I${includedir}/poppler/cpp

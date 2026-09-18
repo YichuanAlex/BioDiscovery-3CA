@@ -1,0 +1,6 @@
+- script:
+    content: opj_dump -i p0_01.j2k
+    cwd: etc/conda/test-files/openjpeg/0
+  files:
+    recipe:
+    - p0_01.j2k

@@ -1,0 +1,10 @@
+prefix=/Users/runner/miniforge3/conda-bld/nspr_1786154904583/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/nspr
+
+Name: NSPR
+Description: The Netscape Portable Runtime
+Version: 4.40.0
+Libs: -L${exec_prefix}/lib -lplds4 -lplc4 -lnspr4
+Cflags: -I${prefix}/include/nspr

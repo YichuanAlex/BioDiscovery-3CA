@@ -1,0 +1,18 @@
+PASS: actual project CLI directory listing stays valid bounded JSON; file preview and cache boundary remain enforced.
+node:fs:483
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open '/var/folders/4b/ygc3pxt15w7fp3p78n5skjw40000gn/T/wingpt-recovery-Z54M84/probe.txt'
+    at Object.readFileSync (node:fs:483:20)
+    at file:///Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/codex-cli/bin/test-wingpt-recovery.mjs:66:19
+    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:647:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/var/folders/4b/ygc3pxt15w7fp3p78n5skjw40000gn/T/wingpt-recovery-Z54M84/probe.txt'
+}
+
+Node.js v24.21.0

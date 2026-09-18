@@ -1,0 +1,22 @@
+{
+  "name": "nspr",
+  "version": "4.40",
+  "build": "hdcbdcf5_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "subdir": "osx-arm64",
+  "fn": "nspr-4.40-hdcbdcf5_0.conda",
+  "md5": "7697df3a4af3427af9bc66dfaec228ae",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/nspr-4.40-hdcbdcf5_0.conda",
+  "sha256": "429549e611c625d1f90714646b94aa62531be258b614414a54f6a402f8124c4a",
+  "arch": "arm64",
+  "platform": "darwin",
+  "depends": [
+    "__osx >=11.0",
+    "libcxx >=19"
+  ],
+  "constrains": [],
+  "license": "MPL-2.0",
+  "timestamp": 1786155286337,
+  "size": 202842
+}

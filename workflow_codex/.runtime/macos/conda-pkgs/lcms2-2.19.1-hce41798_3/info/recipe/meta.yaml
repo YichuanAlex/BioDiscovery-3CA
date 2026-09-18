@@ -1,0 +1,101 @@
+# This file created by conda-build 26.7.1
+# meta.yaml template originally from:
+# /Users/runner/work/1/s/recipe, last modified Thu Sep 10 14:50:25 2026
+# ------------------------------------------------
+
+package:
+  name: lcms2
+  version: 2.19.1
+source:
+  url: https://github.com/mm2/Little-CMS/releases/download/lcms2.19.1/lcms2-2.19.1.tar.gz
+  sha256: bfc54f7bab59fbc921012014a8032e4cba4abd46db47d46b76416a8c0b2815c8
+  patches:
+    - lcms-sln-winarm64.patch
+    - win_jpegturbo.patch
+build:
+  number: '3'
+  run_exports:
+    - lcms2 >=2.19.1,<3.0a0
+  string: hce41798_3
+requirements:
+  build:
+    - ca-certificates 2026.7.22 hbd8a1cb_0
+    - cctools_impl_osx-64 1030.6.3 llvm21_1_hd9d6719_6
+    - cctools_impl_osx-arm64 1030.6.3 llvm21_1_h2f43298_6
+    - cctools_osx-arm64 1030.6.3 llvm21_1_hafcbf4c_6
+    - clang-21 21.1.8 default_h0a1f3f9_6
+    - clang_impl_osx-64 21.1.8 default_ha1a018a_6
+    - clang_impl_osx-arm64 21.1.8 h48769cb_34
+    - clang_osx-arm64 21.1.8 h6de71d5_34
+    - compiler-rt 21.1.8 h694c41f_2
+    - compiler-rt21 21.1.8 h8c1e6b9_2
+    - compiler-rt21_osx-64 21.1.8 h8d5f570_2
+    - compiler-rt_osx-64 21.1.8 h694c41f_2
+    - ld64_osx-64 956.6 llvm21_1_hb373d2a_6
+    - ld64_osx-arm64 956.6 llvm21_1_h6c1ea37_6
+    - libclang-cpp21.1 21.1.8 default_h0a1f3f9_6
+    - libcompiler-rt 21.1.8 h8c1e6b9_2
+    - libcxx 23.1.1 h19cb2f5_0
+    - libiconv 1.18 h4ae439b_3
+    - libllvm21 21.1.8 hd11396f_1
+    - libltdl 2.4.3a h240833e_0
+    - liblzma 5.8.3 hbb4bfdb_1
+    - libsigtool 0.1.3 h8c25ef7_1
+    - libtool 2.5.4 h240833e_0
+    - libxml2 2.15.4 h3668fe6_0
+    - libxml2-16 2.15.4 h341e563_0
+    - libzlib 1.3.2 hbb4bfdb_3
+    - llvm-tools 21.1.8 h8c1e6b9_1
+    - llvm-tools-21 21.1.8 h36529c3_1
+    - macosx_deployment_target_osx-arm64 11.0 h214bdd9_7
+    - make 4.4.1 ha1e9b39_3
+    - ncurses 6.6 hcc0dc9a_1
+    - openssl 3.6.4 h332eb6d_0
+    - sdkroot_env_osx-arm64 26.0 ha3f98da_7
+    - sigtool-codesign 0.1.3 h8c25ef7_1
+    - tapi 1600.0.11.8 h44950e2_3
+    - zstd 1.5.7 hbc1a06c_7
+  host:
+    - lerc 4.2.0 h1eee2c3_0
+    - libcxx 23.1.1 h55c6f16_0
+    - libdeflate 1.25 he7e0567_1
+    - libjpeg-turbo 3.2.0 h84a0fba_1
+    - liblzma 5.8.3 h8088a28_1
+    - libtiff 4.7.2 hf67920b_1
+    - libwebp-base 1.6.0 h202fb40_1
+    - libzlib 1.3.2 h8088a28_3
+    - zstd 1.5.7 hf451053_7
+  run:
+    - __osx >=11.0
+    - libjpeg-turbo >=3.2.0,<4.0a0
+    - libtiff >=4.7.2,<4.8.0a0
+test:
+  commands:
+    - test -f ${PREFIX}/include/lcms2.h
+    - test ! -f ${PREFIX}/lib/liblcms2.a
+    - test -f ${PREFIX}/lib/liblcms2${SHLIB_EXT}
+    - jpgicc
+    - tificc
+    - linkicc
+    - transicc
+    - psicc
+    - pkg-config --modversion lcms2
+    - pkg-config --cflags lcms2
+    - pkg-config --libs lcms2
+  requires:
+    - pkg-config
+about:
+  home: http://www.littlecms.com/
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Open Source Color Management Engine
+extra:
+  recipe-maintainers:
+    - hmaarrfk
+    - isuruf
+  final: true
+  copy_test_source_files: true
+  flow_run_id: azure_20260910.2.1
+  remote_url: https://github.com/conda-forge/lcms2-feedstock
+  sha: 3cefa7a569e5d8918e253214097b6c4fdef2eef0

@@ -1,0 +1,108 @@
+\documentclass[sloppy]{article}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{url}
+
+\title{Distinct Clusters of Transcriptional Metabolic States in Meningioma scRNA-seq Data}
+\author{}
+\date{}
+
+\begin{document}
+\sloppy
+
+\maketitle
+
+\section{Abstract}
+
+This study investigates whether transcriptional metabolic states can be identified as distinct clusters in single-cell RNA-seq data from meningioma samples. We analyzed 58,843 cells from 10 samples using 1,984 metabolic genes from Reactome pathway R-HSA-1430728 (release 97).
+
+\section{Methods}
+
+\subsection{Data Processing}
+
+Raw UMI counts were normalized using per-cell library size scaling to 10,000 counts, followed by log transformation:
+
+\begin{equation}
+\label{eq:normalize}
+\log(1 + x_{ij}) = \log(1 + \text{UMI}_{ij} / \text{library\_size}_i)
+\end{equation}
+
+where $x_{ij}$ represents the normalized expression of gene $j$ in cell $i$, $\text{UMI}_{ij}$ is the raw UMI count, and $\text{library\_size}_i$ is the total UMI count for cell $i$.
+
+Features were scaled using Scanpy's \texttt{scale} function with \texttt{zero\_center=False} and \texttt{max\_value=10}.
+
+\subsection{Clustering Analysis}
+
+Leiden clustering was performed on the metabolic gene set with multiple seeds and resolutions. Clustering quality was assessed using silhouette score, Calinski-Harabasz index, Davies-Bouldin index, and pairwise ARI/NMI metrics.
+
+\subsection{Random Control Comparison}
+
+We compared metabolic gene clustering against 19 random gene sets of the same size, size-matched controls, and HVG-based baselines.
+
+\section{Results}
+
+\subsection{Global Clustering Analysis}
+
+Leiden clustering with resolution 0.4 identified 15 clusters ranging from 1,002 to 8,985 cells. The silhouette score was 0.229 (median 0.221), indicating moderate cluster separation.
+
+\begin{table}[h]
+\centering
+\caption{Clustering metrics and random control comparison}
+\label{tab:clustering_metrics}
+\toprule
+\textbf{Metric} & \textbf{Value} \\
+\midrule
+Silhouette score & 0.229 \\
+Calinski-Harabasz & 7,177.0 \\
+Davies-Bouldin & 1.513 \\
+Mean pairwise ARI & 0.980 \\
+Mean pairwise NMI & 0.975 \\
+Median silhouette & 0.221 \\
+\midrule
+Random controls (N=19) & 0 exceeded metabolic: 0 \\
+Add-one rank fraction & 0.05 \\
+\bottomrule
+\end{table}
+
+\subsection{Random Control Comparison}
+
+None of the 19 random gene sets achieved silhouette scores equal to or exceeding the metabolic gene clustering (0.247 for matched KMeans). The add-one rank fraction was 0.05, indicating no random control exceeded the metabolic clustering in the add-one correction.
+
+\subsection{Confounder Analysis}
+
+We assessed potential confounders including patient, sample, source, cell type, cell subtype, cell cycle phase, complexity, computed total counts, computed detected genes, and computed mito percent.
+
+\subsection{Cell-Type Association}
+
+Cell-type association metrics were calculated across multiple confounders. Patient-level NMI was 0.544, cell type NMI was 0.507, and cell subtype NMI was 0.658.
+
+\subsection{Within-Replicate Sensitivity}
+
+Patient-level clustering ARI ranged from 0.106 to 0.813 across replicates. The weakest replicate was patient 3 with 3,287 cells.
+
+\section{Discussion}
+
+\subsection{Question 1: Distinct Metabolic States}
+
+The analysis identified candidate partitions that could separate cells based on metabolic gene expression. However, the conclusion is \textbf{inconclusive} regarding whether these represent distinct biological metabolic states. The clustering metrics indicate moderate separation, but the random control comparison shows no random gene set exceeded the metabolic clustering, suggesting the signal is detectable but not definitively reproducible across seeds.
+
+\subsection{Question 2: Descriptive Associations}
+
+Cell-type associations were found to be descriptive and non-causal. The NMI values (0.507-0.658) indicate moderate association between clustering and cell-type annotations, but these should not be interpreted as causal relationships.
+
+\subsection{Question 3: CD8 T Cell Subtype Analysis}
+
+For CD8 T cells specifically, candidate partitions were observed but distinct metabolic states remain inconclusive. The subgroup analysis follows the same analytical framework as the global analysis.
+
+\section{Limitations}
+
+This analysis is exploratory and does not establish discrete biological metabolic states. Cell-level counts are not independent biological replicates. No automatic threshold proves independence, multimodality, mechanism, causality, or statistical significance.
+
+\section{References}
+
+\begin{enumerate}
+\item Choudhury, A. et al. (2022). \textit{Meningioma DNA methylation groups identify biological drivers and therapeutic vulnerabilities}. Nature Genetics, 54(5), 649-659. \url{https://doi.org/10.1038/s41588-022-01061-8}
+\end{enumerate}
+
+\end{document}

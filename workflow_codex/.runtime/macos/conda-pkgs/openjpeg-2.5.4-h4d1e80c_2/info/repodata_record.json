@@ -1,0 +1,25 @@
+{
+  "name": "openjpeg",
+  "version": "2.5.4",
+  "build": "h4d1e80c_2",
+  "build_number": 2,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "subdir": "osx-arm64",
+  "fn": "openjpeg-2.5.4-h4d1e80c_2.conda",
+  "md5": "487d92910109a711fdb77631bf1aabf0",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/openjpeg-2.5.4-h4d1e80c_2.conda",
+  "sha256": "e71bd04b5d0e39f39a3c039d021d3b76cd65bee3032e7f859ab7082f0ace8be5",
+  "arch": "arm64",
+  "platform": "darwin",
+  "depends": [
+    "__osx >=11.0",
+    "libcxx >=21",
+    "libtiff >=4.7.2,<4.8.0a0",
+    "libzlib >=1.3.2,<2.0a0",
+    "libpng >=1.6.58,<1.7.0a0"
+  ],
+  "constrains": [],
+  "license": "BSD-2-Clause",
+  "timestamp": 1788425205328,
+  "size": 377958
+}

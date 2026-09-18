@@ -1,0 +1,35 @@
+# This file created by conda-build 26.7.0
+# ------------------------------------------------
+
+package:
+  name: libfreetype
+  version: 2.14.3
+source:
+  url: https://download.savannah.gnu.org/releases/freetype/freetype-2.14.3.tar.gz
+  sha256: e61b31ab26358b946e767ed7eb7f4bb2e507da1cfefeb7a8861ace7fd5c899a1
+build:
+  number: '2'
+  noarch: false
+  noarch_python: false
+  python_version_independent: false
+  string: hce30654_2
+requirements:
+  run:
+    - libfreetype6 >=2.14.3
+  build: []
+about:
+  license: GPL-2.0-only OR FTL
+  summary: The libfreetype runtime library.
+  description: This is a runtime meta-package only. Developers should install freetype
+    to build with libfreetype.
+extra:
+  recipe-maintainers:
+    - carterbox
+    - ccordoba12
+    - msarahan
+    - ocefpaf
+  final: true
+  copy_test_source_files: true
+  flow_run_id: azure_20260813.3.1
+  remote_url: https://github.com/conda-forge/freetype-feedstock
+  sha: 3520c4122afde3a5c30609f035de7cc4f501c069

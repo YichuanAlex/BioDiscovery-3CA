@@ -1,0 +1,21 @@
+{
+  "name": "icu",
+  "version": "78.3",
+  "build": "py310h579977c_2",
+  "build_number": 2,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "subdir": "osx-arm64",
+  "fn": "icu-78.3-py310h579977c_2.conda",
+  "md5": "a5efc0b42bb8b42e97d0a29ae3e3c187",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/icu-78.3-py310h579977c_2.conda",
+  "sha256": "6cdb5dee54c72e56ab189fb3ad33cb28533553d42590e7e831160248f4416a43",
+  "arch": "arm64",
+  "platform": "darwin",
+  "depends": [
+    "__osx >=11.0"
+  ],
+  "constrains": [],
+  "license": "MIT",
+  "timestamp": 1786545847761,
+  "size": 14070242
+}

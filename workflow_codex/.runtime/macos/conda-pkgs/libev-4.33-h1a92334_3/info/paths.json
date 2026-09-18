@@ -1,0 +1,29 @@
+{
+  "paths": [
+    {
+      "_path": "include/ev++.h",
+      "path_type": "hardlink",
+      "sha256": "918c757dc7f2ccf58012326b9aa6e5060d3b951b5e2c0542111204762df936e7",
+      "size_in_bytes": 20549
+    },
+    {
+      "_path": "include/ev.h",
+      "path_type": "hardlink",
+      "sha256": "6622bd23ae922f066cecbba48b3290a6c9325c879db158484cf0899ca95687d2",
+      "size_in_bytes": 30257
+    },
+    {
+      "_path": "lib/libev.4.dylib",
+      "path_type": "hardlink",
+      "sha256": "ff5014d75b58f6f71dcd2568a7fa9205e5c8c931641c41fa0c2f697a661e0e52",
+      "size_in_bytes": 109456
+    },
+    {
+      "_path": "lib/libev.dylib",
+      "path_type": "softlink",
+      "sha256": "ff5014d75b58f6f71dcd2568a7fa9205e5c8c931641c41fa0c2f697a661e0e52",
+      "size_in_bytes": 13
+    }
+  ],
+  "paths_version": 1
+}

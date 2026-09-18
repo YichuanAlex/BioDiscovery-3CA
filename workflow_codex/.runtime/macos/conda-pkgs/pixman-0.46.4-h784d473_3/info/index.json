@@ -1,0 +1,15 @@
+{
+  "arch": "arm64",
+  "build": "h784d473_3",
+  "build_number": 3,
+  "depends": [
+    "__osx >=11.0",
+    "libcxx >=19"
+  ],
+  "license": "MIT",
+  "name": "pixman",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1786106922508,
+  "version": "0.46.4"
+}

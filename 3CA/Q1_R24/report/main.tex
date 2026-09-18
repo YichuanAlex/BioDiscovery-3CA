@@ -1,0 +1,67 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{url}
+
+\title{\textbf{Metabolic State Clustering in Meningioma Single-Cell RNA-seq Data}}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Abstract}
+This study addresses whether transcriptional metabolic states can be used to cluster or separate groups in a single-cell RNA-seq dataset of 58,843 cells from 10 meningioma samples. We analyze 1,984 metabolic genes from Reactome pathway R-HSA-1430728 (release 97) after aggregating duplicate symbols and filtering for prevalence.
+
+\section{Methods}
+\subsection{Data Processing}
+Raw UMI counts were normalized by per-cell library size to 10,000, then log-transformed using the natural logarithm:
+\begin{equation}
+\label{eq:log1p}
+\log(1+x) = \log(1 + x)
+\end{equation}
+where $x$ is the normalized count and $\log(1+x)$ is the log1p-transformed value.
+
+\subsection{Gene Set Selection}
+Reactome metabolism pathway R-HSA-1430728 (release 97) provided 2,197 genes. After filtering for prevalence ($\ge 20$ cells) and excluding mitochondria, 1,984 genes remained. Duplicate symbols were aggregated by summing raw counts before QC.
+
+\subsection{Clustering}
+Leiden clustering was performed with resolution 0.4, selected via stability filtering (mean pairwise ARI $\ge 0.75$) across seeds $[0, 17, 42, 73, 101]$ and resolutions $[0.4, 0.8, 1.2]$. Feature scaling used Scanpy's scale with $zero\_center=False$ and $max\_value=10$.
+
+\subsection{Baseline Comparisons}
+HVG-based clustering and 19 size-matched random controls were compared. The metabolic gene set achieved silhouette score 0.229, with 0 of 19 random controls exceeding or equal to this value (add-one rank fraction: 0.05).
+
+\section{Results}
+\subsection{Global Clustering Analysis}
+Leiden clustering with 15 clusters (sizes: 1,002--8,985 cells) yielded a silhouette score of 0.229. Cluster sizes ranged from 1,002 to 8,985 cells.
+
+\subsection{Confounder Assessment}
+
+NMI values for categorical confounders:
+\begin{table}
+\toprule
+Confounder & NMI \\
+\midrule
+patient & 0.544 \\
+sample & 0.567 \\
+source & 0.197 \\
+cell type & 0.507 \\
+cell subtype & 0.658 \\
+cell cycle phase & 0.195 \\
+\bottomrule
+\end{table}
+
+\subsection{Within-Replicate Sensitivity}
+Across 6 patients, the weakest replicate (patient 3, 3,287 cells) showed global ARI 0.106 and within-replicate ARI range 0.106--0.813.
+
+\section{Discussion}
+The analysis found candidate partitions but distinct metabolic states remain inconclusive. Associations are descriptive and non-causal. CD8 candidate partitions were observed but distinct metabolic states remain inconclusive.
+
+\section{References}
+\begin{enumerate}
+\item Choudhury, A. et al. (2022). \textit{Meningioma DNA methylation groups identify biological drivers and therapeutic vulnerabilities}. Nature Genetics, 54(5), 649--659. \url{https://doi.org/10.1038/s41588-022-01061-8}
+\end{enumerate}
+
+\end{document}

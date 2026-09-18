@@ -5,6 +5,7 @@ import csv
 import hashlib
 import io
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -29,6 +30,7 @@ if hasattr(sys.stdout, "reconfigure"):
 USER_AGENT = "workflow-codex-research-quality/1.0"
 REACTOME_ROOT = "R-HSA-1430728"
 THREECA_CACHE = Path(__file__).resolve().parents[2] / ".threeca" / "cache"
+NETWORK_TIMEOUT = float(os.environ.get("WINGPT_NETWORK_TIMEOUT", "120"))
 
 
 def _now() -> str:
@@ -53,7 +55,7 @@ def _inside(root: Path, value: str, *, exists: bool = True) -> Path:
 
 def _request(url: str) -> tuple[bytes, dict[str, str]]:
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/json,*/*"})
-    with urllib.request.urlopen(request) as response:
+    with urllib.request.urlopen(request, timeout=NETWORK_TIMEOUT) as response:
         return response.read(), {key.lower(): value for key, value in response.headers.items()}
 
 
@@ -343,8 +345,10 @@ def _latex_failure_summary(tex: Path, label: str, returncode: int, output: str) 
     """Keep compiler failures short and include source clues a small model can act on."""
     source = tex.read_text(encoding="utf-8", errors="replace").splitlines()
     matches = list(re.finditer(rf"{re.escape(tex.name)}:(\d+):\s*([^\r\n]+)", output))
-    line_number = int(matches[0].group(1)) if matches else None
-    reported = f"{tex.name}:{line_number}: {matches[0].group(2).strip()}" if matches else "No file:line diagnostic was emitted."
+    fatal_pattern = re.compile(r"Misplaced|LaTeX Error|Undefined control|Missing \$|Emergency stop|Fatal error|Unable to load (?:picture|PDF)|File `[^']+' not found", re.I)
+    selected = next((match for match in matches if fatal_pattern.search(match.group(2))), matches[0] if matches else None)
+    line_number = int(selected.group(1)) if selected else None
+    reported = f"{tex.name}:{line_number}: {selected.group(2).strip()}" if selected else "No file:line diagnostic was emitted."
     context = []
     if line_number:
         for index in range(max(0, line_number - 4), min(len(source), line_number + 2)):
@@ -376,9 +380,9 @@ def build_report(workspace: str, tex_path: str = "report/main.tex", pdf_path: st
     pdf = _inside(root, pdf_path, exists=False)
     if tex.suffix.lower() != ".tex" or pdf != tex.with_suffix(".pdf"):
         raise ValueError("pdf_path must be the same-directory PDF counterpart of tex_path")
-    engine = shutil.which("pdflatex")
+    engine = shutil.which("pdflatex") or shutil.which("tectonic")
     if not engine:
-        raise ValueError("pdflatex is required")
+        raise ValueError("pdflatex or tectonic is required")
 
     def run(command: list[str], label: str) -> None:
         completed = subprocess.run(command, cwd=tex.parent, capture_output=True, text=True, errors="replace")
@@ -386,18 +390,22 @@ def build_report(workspace: str, tex_path: str = "report/main.tex", pdf_path: st
             output = (completed.stdout + "\n" + completed.stderr).strip()
             raise ValueError(_latex_failure_summary(tex, label, completed.returncode, output))
 
-    latex = [engine, "-interaction=nonstopmode", "-halt-on-error", "-file-line-error", tex.name]
-    run(latex, "pdflatex pass 1")
-    aux = tex.with_suffix(".aux")
-    passes = 1
-    if aux.is_file() and "\\bibdata" in aux.read_text(encoding="utf-8", errors="replace"):
-        bibtex = shutil.which("bibtex")
-        if not bibtex:
-            raise ValueError("The report requests BibTeX but bibtex is unavailable")
-        run([bibtex, tex.stem], "bibtex")
-    run(latex, "pdflatex pass 2")
-    run(latex, "pdflatex pass 3")
-    passes = 3
+    if Path(engine).name == "tectonic":
+        latex = [engine, "--keep-logs", "--keep-intermediates", "--reruns", "2", tex.name]
+        run(latex, "tectonic")
+        passes = 3
+    else:
+        latex = [engine, "-interaction=nonstopmode", "-halt-on-error", "-file-line-error", tex.name]
+        run(latex, "pdflatex pass 1")
+        aux = tex.with_suffix(".aux")
+        if aux.is_file() and "\\bibdata" in aux.read_text(encoding="utf-8", errors="replace"):
+            bibtex = shutil.which("bibtex")
+            if not bibtex:
+                raise ValueError("The report requests BibTeX but bibtex is unavailable")
+            run([bibtex, tex.stem], "bibtex")
+        run(latex, "pdflatex pass 2")
+        run(latex, "pdflatex pass 3")
+        passes = 3
     if not pdf.is_file() or pdf.stat().st_size < 1000 or pdf.read_bytes()[:5] != b"%PDF-":
         raise ValueError(f"Compiler did not produce a valid PDF at {pdf_path}")
     pages = len(PdfReader(pdf).pages)

@@ -1,0 +1,7 @@
+
+Name: Graphite2
+Description: Font rendering engine for Complex Scripts
+Version: 3.3.1
+Libs: -L/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/tools/lib -lgraphite2
+Cflags: -I/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/tools/include
+

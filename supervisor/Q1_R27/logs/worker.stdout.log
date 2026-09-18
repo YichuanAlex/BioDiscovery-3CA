@@ -1,0 +1,45 @@
+MLX service ready; reusing the requested model.
+[tool] search_studies
+[tool-error] search_studies: Tool is not currently advertised: search_studies
+[tool] get_study
+[tool-error] verify_doi: Tool is not currently advertised: verify_doi
+[tool] plan_asset
+[tool] download_asset
+[tool] prepare_3ca_dataset
+[auto-continue] phase=metabolic_gene_definition; completion not verified
+[tool] fetch_reactome_metabolic_genes
+[tool] analyze_metabolic_states
+[tool] task_checkpoint
+[tool-error] search_pubmed: Tool is not currently advertised: search_pubmed
+[tool] verify_doi
+[tool-error] build_research_report: Tool is not currently advertised: build_research_report
+[tool-error] ls -la /Users/bytedance/Downloads/BioDiscovery-3CA/3CA/Q1_R27/
+</parameter: Tool is not currently advertised: ls -la /Users/bytedance/Downloads/BioDiscovery-3CA/3CA/Q1_R27/
+</parameter
+[tool-error] run_shell: Tool is not currently advertised: run_shell
+[tool-error] run_shell: Tool is not currently advertised: run_shell
+[tool-error] run_shell: Tool is not currently advertised: run_shell
+[tool-error] run_shell: Tool is not currently advertised: run_shell
+[tool-error] run_shell: Tool is not currently advertised: run_shell
+[tool] task_checkpoint
+[tool] verify_doi
+[tool] list_files
+[tool] read_file
+[tool] write_file
+[tool] read_file
+[auto-continue] phase=report_and_manifest; completion not verified
+[tool] write_file
+[auto-continue] phase=report_and_manifest; completion not verified
+[tool] run_shell
+[tool] run_shell
+[tool] run_shell
+[tool] run_shell
+[tool] run_shell
+[auto-continue] phase=report_and_manifest; completion not verified
+[tool] run_shell
+[auto-continue] phase=report_and_manifest; completion not verified
+[tool] run_shell
+[auto-continue] phase=report_and_manifest; completion not verified
+[tool] run_shell
+[auto-continue] phase=report_and_manifest; completion not verified
+[tool] run_shell

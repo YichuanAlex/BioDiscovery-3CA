@@ -1,0 +1,4 @@
+/Users/Shared/miniforge3/envs/py312/lib/python3.12/site-packages/mlx_lm/server.py:1723: UserWarning: mlx_lm.server is not recommended for production as it only implements basic security checks.
+  warnings.warn(
+2026-09-17 10:10:29,120 - INFO - Starting httpd at 127.0.0.1 on port 8000...
+127.0.0.1 - - [17/Sep/2026 10:10:31] "GET /v1/models HTTP/1.1" 200 -

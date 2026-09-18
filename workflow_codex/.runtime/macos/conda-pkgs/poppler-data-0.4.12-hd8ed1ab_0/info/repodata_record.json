@@ -1,0 +1,20 @@
+{
+  "name": "poppler-data",
+  "version": "0.4.12",
+  "build": "hd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "subdir": "noarch",
+  "fn": "poppler-data-0.4.12-hd8ed1ab_0.conda",
+  "md5": "d8d7293c5b37f39b2ac32940621c6592",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/poppler-data-0.4.12-hd8ed1ab_0.conda",
+  "sha256": "2f227e17b3c0346112815faa605502b66c1c4511a856127f2899abf15a98a2cf",
+  "depends": [],
+  "constrains": [],
+  "noarch": "generic",
+  "license": "BSD-3-Clause AND (GPL-2.0-only OR GPL-3.0-only)",
+  "license_family": "OTHER",
+  "package_type": "noarch_generic",
+  "timestamp": 1675353652214,
+  "size": 2348171
+}

@@ -1,0 +1,15 @@
+{
+  "arch": "arm64",
+  "build": "hdcbdcf5_0",
+  "build_number": 0,
+  "depends": [
+    "__osx >=11.0",
+    "libcxx >=19"
+  ],
+  "license": "MPL-2.0",
+  "name": "nspr",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1786155286337,
+  "version": "4.40"
+}

@@ -1,0 +1,37 @@
+{
+  "paths": [
+    {
+      "_path": "include/pixman-1/pixman-version.h",
+      "path_type": "hardlink",
+      "sha256": "eebbff4b66cbcc98b3ffa16c68a919d4a16dfcffb86cd1fb85faea4f07bcd76b",
+      "size_in_bytes": 1786
+    },
+    {
+      "_path": "include/pixman-1/pixman.h",
+      "path_type": "hardlink",
+      "sha256": "af49363cee8b2340a215e1ea477761c2c867905c17abe129e5778bfc65033f53",
+      "size_in_bytes": 55372
+    },
+    {
+      "_path": "lib/libpixman-1.0.dylib",
+      "path_type": "hardlink",
+      "sha256": "913ff4284e639212acf7b0bfab46c1cae924375b6f893b8775d76302be7e0a2e",
+      "size_in_bytes": 491408
+    },
+    {
+      "_path": "lib/libpixman-1.dylib",
+      "path_type": "softlink",
+      "sha256": "913ff4284e639212acf7b0bfab46c1cae924375b6f893b8775d76302be7e0a2e",
+      "size_in_bytes": 19
+    },
+    {
+      "_path": "lib/pkgconfig/pixman-1.pc",
+      "path_type": "hardlink",
+      "file_mode": "text",
+      "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/bld/rattler-build_pixman_1786106922/host_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+      "sha256": "5cd58cca69b2f6578df7e2a5209038622c016ba2f5c72dbf966973ed2c6a7859",
+      "size_in_bytes": 467
+    }
+  ],
+  "paths_version": 1
+}

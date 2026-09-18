@@ -1,0 +1,45 @@
+PASS: actual project CLI directory listing stays valid bounded JSON; file preview and cache boundary remain enforced.
+PASS: empty-reply recovery, failed-tool recovery, repeated verification, unchanged-read loop guard, isolated workspace.
+PASS: repeated context compaction retains one authoritative envelope and bounded recent tool evidence.
+PASS: workspace Python execution requires a successful audit of the exact current file hash.
+PASS: research runs cannot execute custom Python before the vetted core result exists.
+PASS: empty-directory mutations advance workspace state so a prior known failure can be retried.
+PASS: status-only shell messages cannot masquerade as compilation or validation.
+PASS: research artifact milestones survive missing model checkpoints and expose the next required action.
+PASS: a prompt-fixed 3CA study advances from one catalog call to exact get_study routing.
+PASS: every DOI explicitly required by the research prompt is verified before report authoring.
+PASS: a native build failure routes to file repair before another compile attempt.
+PASS: twelve consecutive identical native build failures stop a report edit cycle even when the TeX file keeps changing.
+PASS: twelve consecutive identical invalid bundle validations stop a manifest repair cycle even when the manifest keeps changing.
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: file:///Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/codex-cli/bin/wingpt.js:785
+    if (job.workspace !== workspace || job.model !== model || (prompt && job.prompt !== prompt)) throw new Error("Resume task identity/prompt mismatch.");
+                                                                                                       ^
+
+Error: Resume task identity/prompt mismatch.
+    at file:///Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/codex-cli/bin/wingpt.js:785:104
+    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:647:26)
+    at async file:///Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/[eval1]:4:5
+
+Node.js v24.21.0
+
+
+1 !== 2
+
+    at file:///Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/codex-cli/bin/test-wingpt-recovery.mjs:285:10
+    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:647:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 1,
+  expected: 2,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.21.0

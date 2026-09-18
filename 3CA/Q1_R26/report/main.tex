@@ -1,0 +1,234 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{url}
+
+\title{\textbf{Q1\_R26: Metabolic State Clustering Analysis}}
+\author{Analysis of Choudhury et al. 2022 (3CA:20773)}
+\date{}
+
+\begin{document}
+
+\sloppy
+
+\maketitle
+
+\section{Introduction}
+
+This analysis investigates whether transcriptional metabolic states can be used to cluster or separate groups in the single-cell RNA-seq dataset from the Choudhury et al. 2022 study. The study examines brain tissue from patients with meningioma using 10x Genomics technology.
+
+\section{Methods}
+
+\subsection{Data Processing}
+
+The analysis was performed on the Choudhury et al. 2022 dataset (3CA:20773) with the following preprocessing steps:
+
+\begin{enumerate}
+    \item \textbf{Normalization}: Per-cell library size normalization to 10,000 counts, followed by log1p transformation
+    \item \textbf{Feature Scaling}: Scanpy scale with zero\_center=False and max\_value=10
+    \item \textbf{Clustering}: Leiden algorithm with resolution selection based on stability criteria
+\end{enumerate}
+
+The normalization equation is:
+\begin{equation}
+\label{eq:normalize}
+\log_2\left(1 + \frac{x_{ij}}{L_i}\right)
+\end{equation}
+where $x_{ij}$ is the raw count of gene $j$ in cell $i$, and $L_i$ is the library size (total counts) for cell $i$, normalized to 10,000.
+
+\subsection{Clustering and Validation}
+
+\begin{itemize}
+    \item \textbf{Leiden Clustering}: Performed with resolution selection based on stability (mean pairwise ARI $\ge$ 0.75)
+    \item \textbf{Random Controls}: 19 size-matched KMeans baselines for comparison
+    \item \textbf{HVG Control}: Highest variance genes among prevalence-passing non-mitochondrial symbols
+\end{itemize}
+
+\subsection{Confounder Assessment}
+
+The following confounders were checked: patient, sample, source, cell type, cell subtype, cell cycle phase, complexity, computed total counts, computed detected genes, and computed mito percent.
+
+\section{Results}
+
+\subsection{Dataset Summary}
+
+\begin{tabular}{ll}
+\toprule
+\textbf{Metric} & \textbf{Value} \\
+\midrule
+Cells analyzed & 58,843 \\
+Total genes & 33,538 \\
+Unique gene symbols & 33,514 \\
+Duplicate symbol rows (summed) & 24 \\
+Metabolic genes (Reactome R-HSA-1430728) & 2,197 \\
+Matched metabolic genes (after prevalence filter) & 1,984 \\
+\bottomrule
+\end{tabular}
+
+\subsection{Clustering Results}
+
+The Leiden clustering with resolution 0.4 produced 15 clusters with the following metrics:
+
+\begin{itemize}
+    \item \textbf{Leiden Silhouette}: 0.229
+    \item \textbf{Calinski-Harabasz}: 7,177
+    \item \textbf{Davies-Bouldin}: 1.513
+    \item \textbf{Mean pairwise ARI}: 0.980
+    \item \textbf{Median silhouette}: 0.221
+\end{itemize}
+
+The cluster size range was 1,002 - 8,985 cells.
+
+\subsection{Random Control Comparison}
+
+The random control comparison showed:
+
+\begin{itemize}
+    \item \textbf{Random controls exceeding or equal to metabolic}: 0 of 19
+    \item \textbf{Add-one rank fraction}: 0.05
+    \item \textbf{HVG silhouette}: 0.295
+    \item \textbf{Random control mean silhouette}: 0.221
+    \item \textbf{Metabolic matched KMeans silhouette}: 0.247
+\end{itemize}
+
+\subsection{Confounder NMI Values}
+
+\begin{tabular}{ll}
+\toprule
+\textbf{Confounder} & \textbf{NMI} \\
+\midrule
+Patient & 0.544 \\
+Sample & 0.567 \\
+Source & 0.197 \\
+Cell type & 0.507 \\
+Cell subtype & 0.658 \\
+Cell cycle phase & 0.195 \\
+\bottomrule
+\end{tabular}
+
+\subsection{Cell-Type Association Summary}
+
+\begin{itemize}
+    \item \textbf{Cell type global NMI}: 0.507 (replicates assessable: 6)
+    \item \textbf{Cell subtype global NMI}: 0.658 (replicates assessable: 6)
+    \item \textbf{Within-replicate NMI range (cell type)}: 0.377 - 0.770 (median: 0.613)
+    \item \textbf{Within-replicate NMI range (cell subtype)}: 0.214 - 0.690 (median: 0.646)
+\end{itemize}
+
+\subsection{Within-Replicate Sensitivity}
+
+\begin{itemize}
+    \item \textbf{Replicates analyzed}: 6
+    \item \textbf{Global vs within ARI range}: 0.106 - 0.813
+    \item \textbf{Weakest replicate}: 3 (3,287 cells)
+\end{itemize}
+
+\section{Discussion}
+
+\subsection{Question 1: Are there distinct clusters of transcriptional metabolic states?}
+
+\textbf{Verdict: Inconclusive}
+
+The analysis shows that metabolic genes can form clusters (15 clusters observed), but the conclusion is inconclusive regarding whether these represent distinct biological metabolic states. The clustering is highly stable across seeds (0, 17, 42, 73, 101), suggesting the clusters are reproducible. However, the categorical NMI for cell type (0.507) and cell subtype (0.658) indicates that cell-type associations are present, which may confound the interpretation of metabolic states.
+
+\subsection{Question 2: Can we use metabolic genes only to cluster or separate groups?}
+
+\textbf{Verdict: Descriptive clustering observed, but biological interpretation limited}
+
+The metabolic genes alone can produce clusters with reasonable silhouette score (0.229), comparable to HVG-based clustering (0.295). However, the presence of cell-type associations (NMI: 0.507 for cell type, 0.658 for cell subtype) suggests that the clusters may reflect cell-type composition rather than distinct metabolic states.
+
+\subsection{Question 3: Within-cell-type metabolic states?}
+
+\textbf{Verdict: Not analyzed separately}
+
+The global analysis was performed on all cells. Within-cell-type analysis would require a separate call to \texttt{analyze\_metabolic\_states} with the appropriate subset parameters.
+
+\section{Limitations}
+
+\begin{enumerate}
+    \item \textbf{Cell-level tests do not create biological replicates}: The analysis is at the cell level, not at the biological replicate level.
+    \item \textbf{No statistical significance testing}: The metrics are descriptive, not inferential.
+    \item \textbf{Cell-type associations present}: The presence of cell-type associations in the clustering suggests that the clusters may reflect cell-type composition rather than distinct metabolic states.
+    \item \textbf{No independent validation}: The analysis was performed on a single dataset without independent validation.
+\end{enumerate}
+
+\section{References}
+
+\begin{thebibliography}{1}
+
+\bibitem{choudhury2022}
+Choudhury, A., Magill, S. T., Eaton, C. D., et al. (2022). \textit{Meningioma DNA methylation groups identify biological drivers and therapeutic vulnerabilities}. \textit{Nature Genetics}, \textbf{54}(5), 649-659. \url{https://doi.org/10.1038/s41588-022-01061-8}
+
+\end{thebibliography}
+
+\section{Limitations}
+
+\begin{enumerate}
+    \item \textbf{Cell-level tests do not create biological replicates}: The analysis is at the cell level, not at the biological replicate level.
+    \item \textbf{No statistical significance testing}: The metrics are descriptive, not inferential.
+    \item \textbf{Cell-type associations present}: The presence of cell-type associations in the clustering suggests that the clusters may reflect cell-type composition rather than distinct metabolic states.
+    \item \textbf{No independent validation}: The analysis was performed on a single dataset without independent validation.
+\end{enumerate}
+
+\section{References}
+
+\begin{thebibliography}{1}
+
+\bibitem{choudhury2022}
+Choudhury, A., Magill, S. T., Eaton, C. D., et al. (2022). \textit{Meningioma DNA methylation groups identify biological drivers and therapeutic vulnerabilities}. \textit{Nature Genetics}, \textbf{54}(5), 649-659. \url{https://doi.org/10.1038/s41588-022-01061-8}
+
+\end{thebibliography}
+
+\section{Question 1: Are there distinct clusters of transcriptional metabolic states?}
+
+\textbf{Verdict: Inconclusive}
+
+The analysis shows that metabolic genes can form clusters (15 clusters observed), but the conclusion is inconclusive regarding whether these represent distinct biological metabolic states. The clustering is highly stable across seeds (0, 17, 42, 73, 101), suggesting the clusters are reproducible. However, the categorical NMI for cell type (0.507) and cell subtype (0.658) indicates that cell-type associations are present, which may confound the interpretation of metabolic states.
+
+\section{Question 2: Can we use metabolic genes only to cluster or separate groups?}
+
+\textbf{Verdict: Descriptive clustering observed, but biological interpretation limited}
+
+The metabolic genes alone can produce clusters with reasonable silhouette score (0.229), comparable to HVG-based clustering (0.295). However, the presence of cell-type associations (NMI: 0.507 for cell type, 0.658 for cell subtype) suggests that the clusters may reflect cell-type composition rather than distinct metabolic states.
+
+\section{Question 3: Within-cell-type metabolic states?}
+
+\textbf{Verdict: Not analyzed separately}
+
+The global analysis was performed on all cells. Within-cell-type analysis would require a separate call to \texttt{analyze\_metabolic\_states} with the appropriate subset parameters.
+
+\section{Limitations}
+
+\begin{enumerate}
+    \item \textbf{Cell-level tests do not create biological replicates}: The analysis is at the cell level, not at the biological replicate level.
+    \item \textbf{No statistical significance testing}: The metrics are descriptive, not inferential.
+    \item \textbf{Cell-type associations present}: The presence of cell-type associations in the clustering suggests that the clusters may reflect cell-type composition rather than distinct metabolic states.
+    \item \textbf{No independent validation}: The analysis was performed on a single dataset without independent validation.
+\end{enumerate}
+
+\section{References}
+
+\begin{thebibliography}{1}
+
+\bibitem{choudhury2022}
+Choudhury, A., Magill, S. T., Eaton, C. D., et al. (2022). \textit{Meningioma DNA methylation groups identify biological drivers and therapeutic vulnerabilities}. \textit{Nature Genetics}, \textbf{54}(5), 649-659. \url{https://doi.org/10.1038/s41588-022-01061-8}
+
+\end{thebibliography}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{figures/metabolic_umap.pdf}
+    \caption{UMAP embedding of cells colored by metabolic cluster (15 clusters). Clusters are based on clustering of Reactome metabolic genes (R-HSA-1430728) after prevalence filtering.}
+    \label{fig:metabolic_umap}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{figures/clustering_diagnostics.pdf}
+    \caption{Clustering diagnostics showing silhouette scores and cluster sizes. The Leiden clustering (silhouette: 0.229) is compared to HVG-based clustering (silhouette: 0.295) and random controls.}
+    \label{fig:clustering_diagnostics}
+\end{figure}
+
+\end{document}

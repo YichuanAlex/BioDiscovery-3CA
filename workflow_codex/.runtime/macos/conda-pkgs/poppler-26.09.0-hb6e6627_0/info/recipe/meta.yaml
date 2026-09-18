@@ -1,0 +1,255 @@
+# This file created by conda-build 26.7.1
+# ------------------------------------------------
+
+package:
+  name: poppler
+  version: 26.09.0
+source:
+  url: https://poppler.freedesktop.org/poppler-26.09.0.tar.xz
+  sha256: 8059eadb6805340768f138c465b57f8164c92b4a0773c37ef031ea6c0d987b2e
+  patches: null
+build:
+  ignore_run_exports_from:
+    - libboost-devel
+    - qt-main
+  run_exports:
+    - poppler >=26.9.0,<26.10.0a0
+  number: 0
+  string: hb6e6627_0
+requirements:
+  build:
+    - bzip2 1.0.8 h374f1ed_10
+    - c-ares 1.34.8 had63097_2
+    - ca-certificates 2026.7.22 hbd8a1cb_0
+    - cairo 1.18.4 h5791faa_3
+    - cctools_impl_osx-64 1030.6.3 llvm21_1_hd9d6719_6
+    - cctools_impl_osx-arm64 1030.6.3 llvm21_1_h2f43298_6
+    - cctools_osx-arm64 1030.6.3 llvm21_1_hafcbf4c_6
+    - clang-21 21.1.8 default_h0a1f3f9_6
+    - clang-format 23.1.0 default_h13fa537_1
+    - clang-format-23 23.1.0 default_h6e863b9_1
+    - clang-scan-deps 23.1.0 default_h6e863b9_1
+    - clang_impl_osx-64 21.1.8 default_ha1a018a_5
+    - clang_impl_osx-arm64 21.1.8 h48769cb_34
+    - clang_osx-arm64 21.1.8 h6de71d5_34
+    - clangxx_impl_osx-64 21.1.8 default_ha1a018a_5
+    - clangxx_impl_osx-arm64 21.1.8 hf098e41_34
+    - clangxx_osx-arm64 21.1.8 h6de71d5_34
+    - cmake 4.4.3 haddf760_0
+    - compiler-rt 21.1.8 h694c41f_2
+    - compiler-rt21 21.1.8 h8c1e6b9_2
+    - compiler-rt21_osx-64 21.1.8 h8d5f570_2
+    - compiler-rt_osx-64 21.1.8 h694c41f_2
+    - curl 8.22.0 h5318221_0
+    - font-ttf-dejavu-sans-mono 2.37 hab24e00_0
+    - font-ttf-inconsolata 3.000 h77eed37_0
+    - font-ttf-source-code-pro 2.038 h77eed37_0
+    - font-ttf-ubuntu 0.83 h77eed37_3
+    - fontconfig 2.18.3 h7f3b9c9_1
+    - fonts-conda-ecosystem 1 0
+    - fonts-conda-forge 1 hc364b38_1
+    - freetype 2.14.3 h694c41f_2
+    - g-ir-build-tools 1.86.0 py314h1ffbf03_2
+    - g-ir-host-tools 1.86.0 h855ae14_2
+    - gettext 0.25.1 he52a196_1
+    - gettext-tools 0.25.1 h3184127_1
+    - glib 2.88.3 h9b143ba_3
+    - glib-tools 2.88.3 hec94a46_3
+    - gobject-introspection 1.86.0 py314haba95cd_2
+    - graphite2 1.3.15 h2fb4741_1
+    - harfbuzz 14.4.0 h694c41f_1
+    - icu 78.3 py313hbf1d544_2
+    - krb5 1.22.2 h69064fd_2
+    - lcms2 2.19.1 h4e6bd4b_2
+    - ld64_osx-64 956.6 llvm21_1_hb373d2a_6
+    - ld64_osx-arm64 956.6 llvm21_1_h6c1ea37_6
+    - lerc 4.2.0 h35c7297_0
+    - libasprintf 0.25.1 h3184127_1
+    - libasprintf-devel 0.25.1 h3184127_1
+    - libboost 1.90.0 hd38a60b_2
+    - libboost-devel 1.90.0 h9c9b644_2
+    - libboost-headers 1.90.0 h707e725_2
+    - libclang-cpp21.1 21.1.8 default_h0a1f3f9_6
+    - libclang-cpp23.1 23.1.0 default_h6e863b9_1
+    - libclang13 23.1.0 default_h74d5376_1
+    - libcompiler-rt 21.1.8 h8c1e6b9_2
+    - libcurl 8.22.0 h5318221_0
+    - libcxx 23.1.0 h19cb2f5_0
+    - libcxx-devel 21.1.8 h7c275be_3
+    - libcxx-headers 21.1.8 h707e725_3
+    - libdeflate 1.25 h7ad9622_1
+    - libedit 3.1.20250104 pl5321hba2e2ab_1
+    - libev 4.33 ha3d0635_3
+    - libexpat 2.8.1 hcc62823_1
+    - libffi 3.7.0 h6b3a05b_1
+    - libfreetype 2.14.3 h694c41f_2
+    - libfreetype6 2.14.3 h8afe040_2
+    - libgettextpo 0.25.1 h3184127_1
+    - libgettextpo-devel 0.25.1 h3184127_1
+    - libgirepository 1.86.0 h5009137_2
+    - libglib 2.88.3 hf4b7cfa_3
+    - libharfbuzz 14.4.0 h2974713_1
+    - libharfbuzz-devel 14.4.0 h2974713_1
+    - libiconv 1.18 h4ae439b_3
+    - libintl 0.25.1 h3184127_1
+    - libintl-devel 0.25.1 h3184127_1
+    - libjpeg-turbo 3.2.0 ha1e9b39_1
+    - libllvm21 21.1.8 hd11396f_1
+    - libllvm23 23.1.0 hd11396f_0
+    - liblzma 5.8.3 hbb4bfdb_1
+    - libmpdec 4.0.0 ha1e9b39_2
+    - libnghttp2 1.68.1 h1e30255_1
+    - libpng 1.6.58 h4382c61_1
+    - libpsl 0.23.1 h7ff43d8_1
+    - libpython 3.14.7 hfe304d0_106_cp314
+    - libsigtool 0.1.3 h8c25ef7_1
+    - libsqlite 3.53.4 ha5db789_1
+    - libssh2 1.11.1 hd53bb72_1
+    - libtiff 4.7.2 h01c3a8c_1
+    - libuv 1.52.1 ha3d0635_1
+    - libwebp-base 1.6.0 hb276fe9_1
+    - libxml2 2.15.4 hb56241c_0
+    - libxml2-16 2.15.4 h8376fb4_0
+    - libzlib 1.3.2 hbb4bfdb_3
+    - llvm-tools 21.1.8 h8c1e6b9_1
+    - llvm-tools-21 21.1.8 h36529c3_1
+    - macosx_deployment_target_osx-arm64 11.0 h214bdd9_7
+    - make 4.4.1 ha1e9b39_3
+    - ncurses 6.6 hcc0dc9a_1
+    - ninja 1.13.2 hebe015c_1
+    - nspr 4.40 h8ea0cdc_0
+    - nss 3.118 h2b2a826_0
+    - openjpeg 2.5.4 he4eae51_1
+    - openssl 3.6.4 h332eb6d_0
+    - packaging 26.3 pyhc364b38_0
+    - patch 2.8 ha3d0635_1003
+    - pcre2 10.47 h31793e3_1
+    - perl 5.32.1 7_h10d778d_perl5
+    - pixman 0.46.4 h2fb4741_3
+    - pkg-config 0.29.2 hbd237c1_1013
+    - python 3.14.7 hafa0b4b_106_cp314
+    - python_abi 3.14 9_cp314
+    - readline 8.3 h000c2f7_1
+    - rhash 1.4.6 ha1e9b39_2
+    - sdkroot_env_osx-arm64 26.0 ha3f98da_7
+    - setuptools 84.0.0 pyh332efcf_0
+    - sigtool-codesign 0.1.3 h8c25ef7_1
+    - tapi 1600.0.11.8 h44950e2_3
+    - tk 8.6.13 ha6c374e_4
+    - tzdata 2026c h151e31d_0
+    - xorg-xorgproto 2025.1 had63097_2
+    - zlib 1.3.2 hbb4bfdb_3
+    - zstd 1.5.7 hbc1a06c_7
+  host:
+    - bzip2 1.0.8 h4e30115_10
+    - c-ares 1.34.8 h74c22ad_2
+    - ca-certificates 2026.7.22 hbd8a1cb_0
+    - cairo 1.18.4 h580cee5_3
+    - curl 8.22.0 h6651222_0
+    - font-ttf-dejavu-sans-mono 2.37 hab24e00_0
+    - font-ttf-inconsolata 3.000 h77eed37_0
+    - font-ttf-source-code-pro 2.038 h77eed37_0
+    - font-ttf-ubuntu 0.83 h77eed37_3
+    - fontconfig 2.18.3 h81aa574_1
+    - fonts-conda-ecosystem 1 0
+    - fonts-conda-forge 1 hc364b38_1
+    - freetype 2.14.3 hce30654_2
+    - glib 2.88.3 he369a58_3
+    - glib-tools 2.88.3 h0d72ea3_3
+    - graphite2 1.3.15 h784d473_1
+    - harfbuzz 14.4.0 hce30654_1
+    - icu 78.3 py310h579977c_2
+    - krb5 1.22.2 h34f8a20_2
+    - lcms2 2.19.1 hce41798_2
+    - lerc 4.2.0 h1eee2c3_0
+    - libboost 1.90.0 h30c325d_2
+    - libboost-devel 1.90.0 hf450f58_2
+    - libboost-headers 1.90.0 h707e725_2
+    - libcurl 8.22.0 h6651222_0
+    - libcxx 23.1.0 h55c6f16_0
+    - libdeflate 1.25 he7e0567_1
+    - libedit 3.1.20250104 pl5321h26f1114_1
+    - libev 4.33 h1a92334_3
+    - libexpat 2.8.1 hf6b4638_1
+    - libffi 3.7.0 h47dc5ef_1
+    - libfreetype 2.14.3 hce30654_2
+    - libfreetype6 2.14.3 h2ed5691_2
+    - libglib 2.88.3 h81decf1_3
+    - libharfbuzz 14.4.0 hcda0f7c_1
+    - libharfbuzz-devel 14.4.0 hcda0f7c_1
+    - libiconv 1.18 he4c29f2_3
+    - libintl 0.25.1 h493aca8_0
+    - libintl-devel 0.25.1 h493aca8_0
+    - libjpeg-turbo 3.2.0 h84a0fba_1
+    - liblzma 5.8.3 h8088a28_1
+    - libmpdec 4.0.0 h84a0fba_2
+    - libnghttp2 1.68.1 h435687b_1
+    - libpng 1.6.58 hf5e6511_1
+    - libpsl 0.23.1 hdb0c161_1
+    - libpython 3.14.7 h4311e70_106_cp314
+    - libsqlite 3.53.4 hca69786_1
+    - libssh2 1.11.1 hbf2880b_1
+    - libtiff 4.7.2 hf67920b_1
+    - libwebp-base 1.6.0 h202fb40_1
+    - libzlib 1.3.2 h8088a28_3
+    - ncurses 6.6 he64c551_1
+    - nspr 4.40 hdcbdcf5_0
+    - nss 3.118 h1c710a3_0
+    - openjpeg 2.5.4 h4d1e80c_2
+    - openssl 3.6.4 h55eecbc_0
+    - packaging 26.3 pyhc364b38_0
+    - pcre2 10.47 he63d830_1
+    - pixman 0.46.4 h784d473_3
+    - python 3.14.7 h0ae1c2c_106_cp314
+    - python_abi 3.14 9_cp314
+    - readline 8.3 h8b90a29_1
+    - tk 8.6.13 hbeba79b_4
+    - tzdata 2026c h151e31d_0
+    - xorg-xorgproto 2025.1 h74c22ad_2
+    - zlib 1.3.2 h8088a28_3
+    - zstd 1.5.7 hf451053_7
+  run:
+    - __osx >=11.0
+    - cairo >=1.18.4,<2.0a0
+    - fontconfig >=2.18.3,<3.0a0
+    - fonts-conda-ecosystem
+    - lcms2 >=2.19.1,<3.0a0
+    - libcurl >=8.22.0,<9.0a0
+    - libcxx >=21
+    - libfreetype >=2.14.3
+    - libfreetype6 >=2.14.3
+    - libglib >=2.88.3,<3.0a0
+    - libharfbuzz >=14.4.0
+    - libiconv >=1.18,<2.0a0
+    - libintl >=0.25.1,<1.0a0
+    - libjpeg-turbo >=3.2.0,<4.0a0
+    - libpng >=1.6.58,<1.7.0a0
+    - libtiff >=4.7.2,<4.8.0a0
+    - libzlib >=1.3.2,<2.0a0
+    - nspr >=4.40,<5.0a0
+    - nss >=3.118,<4.0a0
+    - openjpeg >=2.5.4,<3.0a0
+    - poppler-data
+test:
+  commands:
+    - pdfinfo -listenc
+    - pdfunite --help
+    - pdftocairo --help
+about:
+  home: https://poppler.freedesktop.org/
+  license: GPL-2.0-or-later
+  license_family: GPL
+  license_file: COPYING
+  summary: The Poppler PDF manipulation library.
+extra:
+  feedstock-name: poppler
+  recipe-maintainers:
+    - ocefpaf
+    - pkgw
+    - xhochy
+    - xylar
+  final: true
+  copy_test_source_files: true
+  flow_run_id: azure_20260907.1.1
+  remote_url: https://github.com/conda-forge/poppler-feedstock
+  sha: 13d784d77510e73d6066a75a79cd8e6040a6a261

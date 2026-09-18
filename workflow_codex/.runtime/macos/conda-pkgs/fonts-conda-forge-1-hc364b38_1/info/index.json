@@ -1,0 +1,16 @@
+{
+  "build": "hc364b38_1",
+  "build_number": 1,
+  "depends": [
+    "font-ttf-ubuntu",
+    "font-ttf-inconsolata",
+    "font-ttf-dejavu-sans-mono",
+    "font-ttf-source-code-pro"
+  ],
+  "license": "BSD-3-Clause",
+  "name": "fonts-conda-forge",
+  "noarch": "generic",
+  "subdir": "noarch",
+  "timestamp": 1762351264405,
+  "version": "1"
+}

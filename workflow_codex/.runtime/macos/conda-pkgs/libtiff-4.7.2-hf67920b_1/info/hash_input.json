@@ -1,0 +1,20 @@
+{
+  "libjpeg_turbo": "3",
+  "libdeflate": "1.25",
+  "zlib": "1",
+  "lerc": "4",
+  "libwebp_base": "1",
+  "CONDA_BUILD_SYSROOT": "/opt/conda-sdks/MacOSX11.0.sdk",
+  "c_stdlib": "macosx_deployment_target",
+  "c_compiler_version": "21",
+  "cxx_compiler_version": "21",
+  "liblzma_devel": "5",
+  "libtiff": "4.7",
+  "zstd": "1.5",
+  "c_stdlib_version": "11.0",
+  "c_compiler": "clang",
+  "cxx_compiler": "clangxx",
+  "channel_targets": "conda-forge main",
+  "target_platform": "osx-arm64",
+  "__osx": "__osx >=11.0"
+}

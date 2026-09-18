@@ -1,0 +1,22 @@
+{
+  "channels": [
+    "https://conda.anaconda.org/conda-forge/"
+  ],
+  "dev_url": "https://github.com/nodejs/node",
+  "extra": {
+    "flow_run_id": "azure_20260914.1.1",
+    "recipe-maintainers": [
+      "minrk",
+      "msarahan",
+      "pelson",
+      "blink1073",
+      "xhochy",
+      "ytausch"
+    ],
+    "remote_url": "https://github.com/conda-forge/nodejs-feedstock",
+    "sha": "11c6e98fb60c83d01dd3ed520ad93c250816d22b"
+  },
+  "home": "https://nodejs.org/",
+  "license": "MIT",
+  "summary": "a platform for easily building fast, scalable network applications"
+}

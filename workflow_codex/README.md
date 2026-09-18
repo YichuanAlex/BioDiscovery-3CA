@@ -1,6 +1,53 @@
 # 本地 WiNGPT Workflow
 
-本项目的唯一目录是：
+本项目支持 Windows/vLLM 与 Apple Silicon macOS/MLX 两条本地运行路径。模型、工具和会话状态均保存在项目目录内，不调用全局 Codex/agent。
+
+## macOS / MLX
+
+当前 Mac 入口使用项目同级的 `model/Qwen3.5-4B-MLX-4bit`，复用 Conda `py312` 中的 MLX，并把科研 Python、Node、Tectonic 和 Poppler 固定在 `.runtime/macos`。`macos-env.sh` 会清除宿主 `PYTHONHOME`/`PYTHONPATH`，避免其他应用内置 Python 污染项目解释器。
+
+```bash
+cd '/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex'
+
+# 首次安装或重建项目运行时
+./setup-macos.sh
+
+# 启动、检查和停止本地 MLX 服务
+./start-wingpt-server.sh start
+./start-wingpt-server.sh status
+./start-wingpt-server.sh stop
+
+# 交互模式
+./run-wingpt.sh
+./run-wingpt.sh --allow-write --allow-shell
+
+# 本地模型、文件、工具协议、联网与 shell 冒烟测试
+./run-wingpt.sh --self-test --allow-shell
+```
+
+Mac 自主任务示例：
+
+```bash
+./run-wingpt.sh \
+  --workspace '/absolute/path/to/new-task' \
+  --allow-write \
+  --allow-shell \
+  --autonomous \
+  --max-rounds 0 \
+  --prompt-file '/absolute/path/to/prompt.txt' \
+  --require-artifact 'results/core_analysis/core_result.json' \
+  --require-artifact 'report/main.tex' \
+  --require-artifact 'report/main.pdf' \
+  --require-artifact 'results/summary.json' \
+  --require-artifact 'results/analysis_manifest.json' \
+  --require-artifact 'README.md'
+```
+
+Mac 默认上下文为 32,768 tokens、单次输出上限为 4,096 tokens，可通过 `WINGPT_CONTEXT_TOKENS` 与 `WINGPT_MAX_TOKENS` 调整；不要直接套用 Windows 16 GB GPU 上验证过的 262,144 配置。在线来源请求默认使用 120 秒 socket 超时，可用 `WINGPT_NETWORK_TIMEOUT` 调整；TLS 校验、来源白名单和 SHA-256 核验不会关闭。
+
+## Windows / vLLM
+
+Windows 项目的历史目录是：
 
 ```text
 C:\Users\User\Desktop\agentic\workflow_codex

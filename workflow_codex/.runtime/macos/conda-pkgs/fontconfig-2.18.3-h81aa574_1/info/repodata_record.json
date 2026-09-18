@@ -1,0 +1,26 @@
+{
+  "name": "fontconfig",
+  "version": "2.18.3",
+  "build": "h81aa574_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "subdir": "osx-arm64",
+  "fn": "fontconfig-2.18.3-h81aa574_1.conda",
+  "md5": "8ac8cc3fe744b484de4387703134d8b2",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/fontconfig-2.18.3-h81aa574_1.conda",
+  "sha256": "004570d35fb0eff73ce3ae49b209a47622d0c2e580dd0dc4c61d59626b386a09",
+  "arch": "arm64",
+  "platform": "darwin",
+  "depends": [
+    "__osx >=11.0",
+    "libexpat >=2.8.1,<3.0a0",
+    "libfreetype >=2.14.3",
+    "libfreetype6 >=2.14.3",
+    "libintl >=0.25.1,<1.0a0",
+    "libzlib >=1.3.2,<2.0a0"
+  ],
+  "constrains": [],
+  "license": "MIT",
+  "timestamp": 1786667932256,
+  "size": 265659
+}

@@ -1,0 +1,17 @@
+{
+  "arch": "arm64",
+  "build": "hce41798_3",
+  "build_number": 3,
+  "depends": [
+    "__osx >=11.0",
+    "libjpeg-turbo >=3.2.0,<4.0a0",
+    "libtiff >=4.7.2,<4.8.0a0"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "name": "lcms2",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1789052560432,
+  "version": "2.19.1"
+}

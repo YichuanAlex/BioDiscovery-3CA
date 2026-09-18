@@ -1,0 +1,71 @@
+{
+  "name": "tectonic",
+  "version": "0.17.0",
+  "build": "hab3abff_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "subdir": "osx-arm64",
+  "fn": "tectonic-0.17.0-hab3abff_0.conda",
+  "md5": "acf5e5a3b77d5448b76f54f9499c406c",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/tectonic-0.17.0-hab3abff_0.conda",
+  "sha256": "fc898f40d6dac7e67300bbbb78d4d497cb25d8af69e4eb4e0d9570d4d02915ec",
+  "depends": [
+    "freetype",
+    "graphite2",
+    "harfbuzz",
+    "icu",
+    "libpng",
+    "openssl",
+    "zlib",
+    "libcxx >=19",
+    "__osx >=11.0",
+    "libpng >=1.6.58,<1.7.0a0",
+    "libharfbuzz >=14.2.1",
+    "libfreetype >=2.14.3",
+    "libfreetype6 >=2.14.3",
+    "libzlib >=1.3.2,<2.0a0",
+    "libglib >=2.88.2,<3.0a0",
+    "openssl >=3.5.7,<4.0a0",
+    "icu >=78.3,<79.0a0",
+    "graphite2 >=1.3.15,<2.0a0"
+  ],
+  "constrains": [
+    "__osx >=11.0"
+  ],
+  "license": "MIT",
+  "timestamp": 1785125298227,
+  "size": 5823433,
+  "requested_spec": "tectonic",
+  "package_tarball_full_path": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/conda-pkgs/tectonic-0.17.0-hab3abff_0.conda",
+  "extracted_package_dir": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/conda-pkgs/tectonic-0.17.0-hab3abff_0",
+  "files": [
+    "bin/tectonic",
+    "etc/conda/test-files/tectonic/0/example.tex"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "bin/tectonic",
+        "path_type": "hardlink",
+        "sha256": "ca18a7ecbacf4cc66fbd430d9de6b0a971e69de5f69305218727784b4f288e8f",
+        "size_in_bytes": 19633520,
+        "sha256_in_prefix": "ca18a7ecbacf4cc66fbd430d9de6b0a971e69de5f69305218727784b4f288e8f"
+      },
+      {
+        "_path": "etc/conda/test-files/tectonic/0/example.tex",
+        "path_type": "hardlink",
+        "sha256": "59002b62de211f0e51fc6737f58d8c3db9bd7aba2057702f669f0a5fe6c5a0d5",
+        "size_in_bytes": 87,
+        "sha256_in_prefix": "59002b62de211f0e51fc6737f58d8c3db9bd7aba2057702f669f0a5fe6c5a0d5"
+      }
+    ]
+  },
+  "link": {
+    "source": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/conda-pkgs/tectonic-0.17.0-hab3abff_0",
+    "type": 1
+  },
+  "requested_specs": [
+    "tectonic"
+  ]
+}

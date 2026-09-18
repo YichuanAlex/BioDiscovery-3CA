@@ -1,0 +1,14 @@
+{
+  "arch": "arm64",
+  "build": "py310h579977c_2",
+  "build_number": 2,
+  "depends": [
+    "__osx >=11.0"
+  ],
+  "license": "MIT",
+  "name": "icu",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1786545847761,
+  "version": "78.3"
+}

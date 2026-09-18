@@ -1,0 +1,191 @@
+{% set version = "14.4.0" %}
+
+{% set libs = [
+    "harfbuzz", "harfbuzz-cairo", "harfbuzz-gobject", "harfbuzz-gpu",
+    "harfbuzz-icu", "harfbuzz-raster", "harfbuzz-subset", "harfbuzz-vector"]
+%}
+
+package:
+  name: harfbuzz-split
+  version: {{ version }}
+
+source:
+  url: https://github.com/harfbuzz/harfbuzz/archive/{{ version }}.tar.gz
+  sha256: 46dc4f3b6aefc4d8256b10017186f5ebe50ea086714ab8948cdac4695a7a80a8
+  patches:
+    - patches/0001-Revert-meson-fix-generating-introspection.patch  # [win]
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - meson
+    - ninja
+    - pkg-config
+    - {{ stdlib("c") }}
+    - {{ compiler("c") }}
+    - {{ compiler("cxx") }}
+    - cairo           # [build_platform != target_platform]
+    - freetype        # [build_platform != target_platform]
+    - glib            # [build_platform != target_platform]
+    - gobject-introspection  # [build_platform != target_platform]
+    - graphite2       # [build_platform != target_platform]
+    - icu             # [build_platform != target_platform]
+    - libpng          # [build_platform != target_platform]
+    - pthread-stubs   # [build_platform != target_platform]
+    # needed for development files:
+    - expat           # [build_platform != target_platform]
+    - xorg-xorgproto  # [build_platform != target_platform]
+    - zlib            # [build_platform != target_platform]
+    # necessary binaries that we need at build time in all cases
+    - g-ir-build-tools
+  host:
+    - cairo
+    - freetype
+    - glib
+    - gobject-introspection
+    - graphite2
+    - icu
+    - libpng
+    - pthread-stubs             # [unix]
+    # needed for development files:
+    - expat
+    - xorg-xorgproto
+    - zlib
+
+outputs:
+  - name: libharfbuzz
+    script: install_pkg.sh  # [unix]
+    script: install_pkg.bat  # [win]
+    files:
+      - lib/libharfbuzz*.so*        # [linux]
+      - lib/libharfbuzz*.dylib      # [osx]
+      - Library/bin/harfbuzz*.dll   # [win]
+    requirements:
+      build:
+        - {{ stdlib("c") }}
+        - {{ compiler("c") }}
+        - {{ compiler("cxx") }}
+        - meson
+        - ninja
+        - pkg-config
+        # for bin/g-ir-scanner
+        - g-ir-build-tools
+        # for bin/g-ir-compiler
+        - g-ir-host-tools           # [osx]
+        # for bin/glib-mkenums
+        - glib                      # [build_platform != target_platform]
+      host:
+        - cairo
+        - expat                     # [win]
+        - freetype
+        - glib
+        - gobject-introspection
+        - graphite2
+        - icu
+        - libpng
+        - pthread-stubs             # [unix]
+        - zlib
+    test:
+      commands:
+        # shared ibraries
+        {% for lib in libs %}
+        - test -f $PREFIX/lib/lib{{ lib }}${SHLIB_EXT}      # [unix]
+        - if not exist %LIBRARY_BIN%\{{ lib }}.dll exit 1   # [win]
+        {% endfor %}
+
+  - name: libharfbuzz-devel
+    script: install_pkg.sh  # [unix]
+    script: install_pkg.bat  # [win]
+    build:
+      run_exports:
+        # "We will never break the ABI."
+        # https://github.com/conda-forge/harfbuzz-feedstock/issues/123
+        # https://github.com/harfbuzz/harfbuzz/discussions/5245#discussioncomment-12728609
+        - libharfbuzz >={{ version }}
+    requirements:
+      build:
+        - {{ stdlib("c") }}
+        - {{ compiler("c") }}
+        - {{ compiler("cxx") }}
+        - meson
+        - ninja
+        - pkg-config
+        # for bin/g-ir-scanner
+        - g-ir-build-tools
+        # for bin/g-ir-compiler
+        - g-ir-host-tools           # [osx]
+        # for bin/glib-mkenums
+        - glib                      # [build_platform != target_platform]
+      host:
+        - {{ pin_subpackage("libharfbuzz", exact=True) }}
+        - cairo
+        - expat                     # [win]
+        - freetype
+        - glib
+        - gobject-introspection
+        - graphite2
+        - icu
+        - libpng
+        - pthread-stubs             # [unix]
+        - zlib
+      run:
+        - {{ pin_subpackage("libharfbuzz", exact=True) }}
+        # necessary for pkg-config metadata
+        - freetype
+        - glib      # [win]
+    test:
+      requires:
+        - pkg-config
+        - pygobject
+      commands:
+        # Headers
+        - test -f $PREFIX/include/harfbuzz/hb-ft.h              # [unix]
+        - if not exist %LIBRARY_INC%\harfbuzz\hb-ft.h exit 1    # [win]
+
+        # gobject-introspection metadata
+        - test -f $PREFIX/lib/girepository-1.0/HarfBuzz-0.0.typelib                 # [unix]
+        - test -f $PREFIX/share/gir-1.0/HarfBuzz-0.0.gir                            # [unix]
+        - if not exist %LIBRARY_LIB%\girepository-1.0\HarfBuzz-0.0.typelib exit 1   # [win]
+        - if not exist %LIBRARY_PREFIX%\share\gir-1.0\HarfBuzz-0.0.gir exit 1       # [win]
+
+        # CLI tests.
+        - hb-view --version
+
+        # test that pkg-config metadata is satisfied
+        - pkg-config --print-errors --exact-version "{{ version }}" harfbuzz
+
+  # compatibility wrapper
+  - name: harfbuzz
+    build:
+      run_exports:
+        # see above
+        - libharfbuzz >={{ version }}
+    requirements:
+      host:
+        - {{ pin_subpackage("libharfbuzz-devel", exact=True) }}
+      run:
+        - {{ pin_subpackage("libharfbuzz-devel", exact=True) }}
+    test:
+      commands:
+        - echo "pure metapackage"
+
+about:
+  home: https://harfbuzz.github.io/
+  license: MIT
+  license_file: COPYING
+  summary: An OpenType text shaping engine.
+  description: |
+    HarfBuzz is a text shaping library. New Harbuzz targets various font
+    technologies while Old HarfBuzz targets only OpenType fonts.
+  doc_url: https://harfbuzz.github.io/
+  dev_url: https://github.com/harfbuzz/harfbuzz
+
+extra:
+  recipe-maintainers:
+    - ocefpaf
+    - pkgw
+    - tschoonj
+    - h-vetinari
+  feedstock-name: harfbuzz

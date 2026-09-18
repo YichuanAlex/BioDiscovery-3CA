@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "dataset": {
+    "study_id": "3ca:20773",
+    "source_url": "https://www.dropbox.com/scl/fi/4y8x28n9v6y5bkss3mqgu/Data_Choudhury2022_Brain.tar.gz?rlkey=3jhc85s8p3tp5jatdrauh6ka7&dl=1",
+    "sha256": "51bf0452d166511fecca3f32d89f9fd0f631d173143173d82115f49cdaaa6c1d",
+    "expression_path": "inputs/Exp_data_UMIcounts.mtx",
+    "cells_path": "inputs/Cells.csv",
+    "gene_names_path": "inputs/Genes.txt",
+    "n_cells": 58843,
+    "n_genes": 33538,
+    "matrix_orientation": "genes_by_cells",
+    "cell_id_field": "cell_name"
+  },
+  "feature_set": {
+    "name": "User-supplied metabolic genes",
+    "source_url": "local-user-supplied-input",
+    "retrieved_at": "2026-09-17T17:36:09.276461+00:00",
+    "sha256": "6397fd2c8e76de32addd5044080c7599f5297fcab6ac2ee97363fe9349fb521c",
+    "genes_path": "sources/reactome/metabolism_R-HSA-1430728_release_97_genes.txt",
+    "matched_genes_path": "results/core_analysis/matched_metabolic_genes.txt",
+    "source_gene_count": 2197,
+    "matched_gene_count": 1984
+  },
+  "analysis": {
+    "engine": "workflow_research_quality_metabolic_states_v2",
+    "core_result_path": "results/core_analysis/core_result.json",
+    "core_result_sha256": "1b37c534580f2b3f15c6b389420d5cbefa87375e6af0b9825c59c9770e1ff761",
+    "input_unit": "cell",
+    "rows_analyzed": 58843,
+    "unique_cells_analyzed": 58843,
+    "random_seeds": [0, 17, 42, 73, 101],
+    "baselines": [
+      {
+        "name": "HVG and random size-matched controls",
+        "metrics": {
+          "random_controls_exceeding_or_equal": 0,
+          "random_controls_total": 19,
+          "add_one_rank_fraction": 0.05
+        },
+        "result_path": "results/core_analysis/baseline_metrics.csv"
+      }
+    ],
+    "confounders_checked": [
+      "patient",
+      "sample",
+      "source",
+      "cell_type",
+      "cell_subtype",
+      "cell_cycle_phase",
+      "complexity",
+      "computed_total_counts",
+      "computed_detected_genes",
+      "computed_mito_percent"
+    ],
+    "methods": [
+      {
+        "name": "Scanpy Leiden on supplied metabolic genes",
+        "labels_path": "results/core_analysis/cluster_labels.csv",
+        "cell_id_column": "cell_name",
+        "label_column": "cluster",
+        "n_clusters": 15,
+        "metrics": {
+          "silhouette": 0.22936132550239563,
+          "calinski_harabasz": 7176.993934518632,
+          "davies_bouldin": 1.5126569440646473,
+          "metric_cells": 3000,
+          "mean_pairwise_ari": 0.9800312604552696,
+          "min_pairwise_ari": 0.9726212551138069,
+          "mean_pairwise_nmi": 0.9746475657925906,
+          "min_pairwise_nmi": 0.9682848872034521,
+          "median_silhouette": 0.22109878063201904
+        }
+      }
+    ],
+    "subgroup_analyses": []
+  },
+  "references": [
+    {
+      "key": "citation_3ca_20773",
+      "doi": "10.1038/s41588-022-01061-8",
+      "metadata_path": "sources/literature/crossref_db798362115f799a.json"
+    }
+  ],
+  "artifacts": {
+    "tex": "report/main.tex",
+    "pdf": "report/main.pdf",
+    "summary": "results/summary.json",
+    "figures": [
+      "figures/metabolic_umap.pdf",
+      "figures/clustering_diagnostics.pdf"
+    ]
+  }
+}

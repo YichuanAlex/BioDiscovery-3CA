@@ -1,0 +1,25 @@
+{
+  "archive_sha256": "2156a73fd5f95a198ef90821f2d734bfa7e0b5aa3686deefd1b5c5d5d1269aa1",
+  "files": [
+    {
+      "path": "Data_Choudhury2022_Brain/Cells.csv",
+      "bytes": 8509974,
+      "sha256": "459fec35fbd3c89536bab26add4f3b733b4d57ce1deb08ad591455df68b94d37"
+    },
+    {
+      "path": "Data_Choudhury2022_Brain/Exp_data_UMIcounts.mtx",
+      "bytes": 2398853961,
+      "sha256": "51bf0452d166511fecca3f32d89f9fd0f631d173143173d82115f49cdaaa6c1d"
+    },
+    {
+      "path": "Data_Choudhury2022_Brain/Genes.txt",
+      "bytes": 275592,
+      "sha256": "a285759694b2e6fdb495fa4e996643b50e77588013dbba7b1eb3d1926bd95b60"
+    },
+    {
+      "path": "Data_Choudhury2022_Brain/Samples.csv",
+      "bytes": 532,
+      "sha256": "88b90b7eea80c9f4feaef078664c3a5a87a7e5338fcebdb9e87f6c75c9dc23b1"
+    }
+  ]
+}

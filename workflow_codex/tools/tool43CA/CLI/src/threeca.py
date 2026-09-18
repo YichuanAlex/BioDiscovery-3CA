@@ -32,6 +32,7 @@ SITE_PREFIX = "/sites/3CA"
 USER_AGENT = "threeca-access/1.0 (local research client; source: weizmann.ac.il/sites/3CA)"
 DEFAULT_MAX_BYTES = 0
 DEFAULT_MAX_EXTRACT_BYTES = 0
+DEFAULT_NETWORK_TIMEOUT = float(os.environ.get("WINGPT_NETWORK_TIMEOUT", "120"))
 VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
 SKIP_TAGS = {"script", "style", "noscript", "svg"}
 
@@ -50,7 +51,7 @@ def cache_root(value: str | Path | None = None) -> Path:
     elif os.environ.get("THREECA_CACHE"):
         root = Path(os.environ["THREECA_CACHE"])
     else:
-        root = Path(r"C:\Users\User\Desktop\agentic\workflow_codex\.threeca\cache")
+        root = Path(__file__).resolve().parents[4] / ".threeca" / "cache"
     root.mkdir(parents=True, exist_ok=True)
     return root.resolve()
 
@@ -219,6 +220,7 @@ class _PageParser(HTMLParser):
 
 
 def _open(request: Request, timeout: float | None = None):
+    timeout = DEFAULT_NETWORK_TIMEOUT if timeout is None else timeout
     last_error: Exception | None = None
     for attempt in range(3):
         try:
@@ -593,10 +595,13 @@ def _filename(headers, url: str) -> str:
 
 def plan_asset(target: str, kind: str = "", cache: str | Path | None = None) -> dict[str, object]:
     url = resolve_asset(target, kind, cache)
+    transport_url = url
+    if urlparse(url).hostname in {"www.dropbox.com", "dropbox.com"}:
+        transport_url = url.replace(urlparse(url).netloc, "dl.dropboxusercontent.com", 1)
     try:
-        response = _open(Request(url, method="HEAD", headers={"User-Agent": USER_AGENT}))
+        response = _open(Request(transport_url, method="HEAD", headers={"User-Agent": USER_AGENT}))
     except ThreeCAError:
-        response = _open(Request(url, headers={"User-Agent": USER_AGENT, "Range": "bytes=0-0"}))
+        response = _open(Request(transport_url, headers={"User-Agent": USER_AGENT, "Range": "bytes=0-0"}))
     with response:
         headers = response.headers
         final_url = _validate_asset_transport_url(response.geturl())
@@ -637,20 +642,22 @@ def download_asset(
     asset_key = hashlib.sha256(str(plan["source_url"]).encode()).hexdigest()[:12]
     destination = root / "downloads" / asset_key / str(plan["filename"])
     manifest_path = destination.with_suffix(destination.suffix + ".manifest.json")
+    previous = json.loads(manifest_path.read_text(encoding="utf-8")) if manifest_path.exists() else {}
     if destination.exists() and manifest_path.exists():
-        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-        if manifest.get("bytes") == destination.stat().st_size:
-            result = {**manifest, "cache_hit": True}
+        actual_hash = _sha256(destination)
+        if previous.get("sha256") == actual_hash and previous.get("bytes") == destination.stat().st_size and previous.get("source_url") == plan["source_url"]:
+            result = {**previous, "path": str(destination), "cache_hit": True, "hash_verified": True}
             if extract:
                 result["extraction"] = extract_archive(destination, max_extract_bytes)
             return result
+        raise ThreeCAError(f"Cached asset failed source/size/hash validation; preserve it for inspection: {destination}")
 
     destination.parent.mkdir(parents=True, exist_ok=True)
     temporary = destination.with_suffix(destination.suffix + f".{os.getpid()}.part")
     digest = hashlib.sha256()
     total = 0
     try:
-        response = _open(Request(str(plan["source_url"]), headers={"User-Agent": USER_AGENT}))
+        response = _open(Request(str(plan["final_url"]), headers={"User-Agent": USER_AGENT}))
         with response, temporary.open("wb") as output:
             _validate_asset_transport_url(response.geturl())
             while chunk := response.read(1024 * 1024):
@@ -659,6 +666,8 @@ def download_asset(
                     raise ThreeCAError(f"Download exceeded max_bytes={max_bytes}.")
                 output.write(chunk)
                 digest.update(chunk)
+        if previous.get("sha256") and digest.hexdigest() != previous["sha256"]:
+            raise ThreeCAError("Downloaded content differs from the recorded source hash; refusing silent replacement.")
         temporary.replace(destination)
     except Exception:
         temporary.unlink(missing_ok=True)
@@ -694,8 +703,26 @@ def _archive_stem(path: Path) -> str:
 def extract_archive(path: str | Path, max_extract_bytes: int = DEFAULT_MAX_EXTRACT_BYTES) -> dict[str, object]:
     source = Path(path).resolve()
     destination = source.parent / (_archive_stem(source) + ".extracted")
-    if destination.exists():
-        return {"path": str(destination), "cache_hit": True}
+    source_hash = _sha256(source)
+    suffix = 1
+    while destination.exists():
+        receipt_path = destination / ".threeca-extraction.json"
+        if receipt_path.is_file():
+            receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
+            valid = receipt.get("archive_sha256") == source_hash
+            for item in receipt.get("files", []):
+                candidate = destination / item["path"]
+                if not candidate.is_file() or candidate.stat().st_size != item["bytes"]:
+                    valid = False
+                    break
+                if _sha256(candidate) != item["sha256"]:
+                    valid = False
+                    break
+            if valid and receipt.get("files"):
+                return {"path": str(destination), "cache_hit": True, "hash_verified": True}
+        # Migrated folders may lack excluded large files. Preserve them and extract fresh.
+        destination = source.parent / f"{_archive_stem(source)}.extracted-verified-{suffix}"
+        suffix += 1
     temporary = source.parent / (destination.name + f".{os.getpid()}.part")
     temporary.mkdir(parents=True, exist_ok=False)
     try:
@@ -730,6 +757,12 @@ def extract_archive(path: str | Path, max_extract_bytes: int = DEFAULT_MAX_EXTRA
                     uncompressed.write(chunk)
         else:
             raise ThreeCAError("Supported extraction formats: tar.*, zip, and gzip.")
+        files = []
+        for candidate in sorted(temporary.rglob("*")):
+            if candidate.is_file():
+                digest = _sha256(candidate)
+                files.append({"path": candidate.relative_to(temporary).as_posix(), "bytes": candidate.stat().st_size, "sha256": digest})
+        _write_json(temporary / ".threeca-extraction.json", {"archive_sha256": source_hash, "files": files})
         temporary.replace(destination)
     except Exception:
         shutil.rmtree(temporary, ignore_errors=True)

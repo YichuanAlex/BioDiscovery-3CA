@@ -1,0 +1,12 @@
+prefix=/Users/runner/miniforge3/conda-bld/harfbuzz-split_1788405323951/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: harfbuzz-cairo
+Description: HarfBuzz cairo support
+Version: 14.4.0
+Requires: harfbuzz =  14.4.0
+Requires.private: freetype2 >=  20.0.14, glib-2.0 >=  2.30.0, graphite2 >=  1.2.0, cairo >=  1.10.0
+Libs: -L${libdir} -lharfbuzz-cairo
+Libs.private: -lm -L${libdir} -lharfbuzz -framework ApplicationServices
+Cflags: -I${includedir}/harfbuzz

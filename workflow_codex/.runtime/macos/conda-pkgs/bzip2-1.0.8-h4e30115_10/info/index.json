@@ -1,0 +1,15 @@
+{
+  "arch": "arm64",
+  "build": "h4e30115_10",
+  "build_number": 10,
+  "depends": [
+    "__osx >=11.0"
+  ],
+  "license": "bzip2-1.0.6",
+  "license_family": "BSD",
+  "name": "bzip2",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1785906749812,
+  "version": "1.0.8"
+}

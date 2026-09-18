@@ -1,0 +1,22 @@
+{
+  "name": "bzip2",
+  "version": "1.0.8",
+  "build": "h4e30115_10",
+  "build_number": 10,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "subdir": "osx-arm64",
+  "fn": "bzip2-1.0.8-h4e30115_10.conda",
+  "md5": "b50612e7d190b8061ab4e7dc119cf4d5",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/bzip2-1.0.8-h4e30115_10.conda",
+  "sha256": "8ec22f0ba25cbfc2e64d70cf29459eccd7ffdf6436f6a6ff15bbfef799f7d4f6",
+  "arch": "arm64",
+  "platform": "darwin",
+  "depends": [
+    "__osx >=11.0"
+  ],
+  "constrains": [],
+  "license": "bzip2-1.0.6",
+  "license_family": "BSD",
+  "timestamp": 1785906749812,
+  "size": 124965
+}

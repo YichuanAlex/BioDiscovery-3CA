@@ -1,0 +1,22 @@
+{
+  "channels": [
+    "https://conda.anaconda.org/conda-forge/"
+  ],
+  "description": "Pixman is a low-level software library for pixel manipulation, providing\nfeatures such as image compositing and trapezoid rasterization.",
+  "dev_url": "https://cgit.freedesktop.org/pixman/",
+  "extra": {
+    "flow_run_id": "azure_20260807.1.1",
+    "recipe-maintainers": [
+      "ccordoba12",
+      "jakirkham",
+      "ocefpaf",
+      "pkgw",
+      "sdvillal"
+    ],
+    "remote_url": "https://github.com/conda-forge/pixman-feedstock",
+    "sha": "aa115040c3fa1c298ba27ed7afb42d6feb4fac28"
+  },
+  "home": "http://www.pixman.org/",
+  "license": "MIT",
+  "summary": "A low-level software library for pixel manipulation."
+}

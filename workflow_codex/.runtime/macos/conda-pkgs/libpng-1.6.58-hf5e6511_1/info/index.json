@@ -1,0 +1,15 @@
+{
+  "arch": "arm64",
+  "build": "hf5e6511_1",
+  "build_number": 1,
+  "depends": [
+    "__osx >=11.0",
+    "libzlib >=1.3.2,<2.0a0"
+  ],
+  "license": "zlib-acknowledgement",
+  "name": "libpng",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1786616561185,
+  "version": "1.6.58"
+}

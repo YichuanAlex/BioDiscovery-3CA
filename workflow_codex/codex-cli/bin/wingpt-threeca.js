@@ -3,6 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
+import { scientificPython } from "./wingpt-platform.js";
 
 function boundedResult(stdout) {
   if (stdout.length <= 16000) return stdout;
@@ -26,7 +27,8 @@ function boundedResult(stdout) {
 }
 
 export function createThreeCaTools(functionTool, workflowRoot, workspace = workflowRoot) {
-  const executable = path.join(workflowRoot, "tools", "tool43CA", ".venv", "Scripts", "threeca.exe");
+  const executable = scientificPython(workflowRoot);
+  const cli = path.join(workflowRoot, "tools", "tool43CA", "CLI", "src", "threeca.py");
   const cache = path.join(workflowRoot, ".threeca", "cache");
   const text = (description) => ({ type: "string", description });
   const integer = (description, minimum = 0) => ({ type: "integer", minimum, description });
@@ -53,7 +55,7 @@ export function createThreeCaTools(functionTool, workflowRoot, workspace = workf
     execute(name, args) {
       if (!fs.existsSync(executable)) throw new Error(`tool43CA is not installed: ${executable}`);
       const cliArgs = commandArgs(name, args, cache);
-      const result = spawnSync(executable, ["--pretty", "--cache", cache, ...cliArgs], {
+      const result = spawnSync(executable, [cli, "--pretty", "--cache", cache, ...cliArgs], {
         cwd: workspace,
         encoding: "utf8",
         timeout: 0,

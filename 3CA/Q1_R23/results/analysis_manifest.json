@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "dataset": {
+    "study_id": "3ca:20773",
+    "source_url": "https://dl.dropboxusercontent.com/scl/fi/4y8x28n9v6y5bkss3mqgu/Data_Choudhury2022_Brain.tar.gz?rlkey=3jhc85s8p3tp5jatdrauh6ka7&dl=1",
+    "sha256": "2156a73fd5f95a198ef90821f2d734bfa7e0b5aa3686deefd1b5c5d5d1269aa1",
+    "expression_path": "inputs/Exp_data_UMIcounts.mtx",
+    "cells_path": "inputs/Cells.csv",
+    "gene_names_path": "inputs/Genes.txt",
+    "n_cells": 58843,
+    "n_genes": 33538,
+    "matrix_orientation": "genes_by_cells",
+    "cell_id_field": "cell_name"
+  },
+  "feature_set": {
+    "name": "Reactome metabolism R-HSA-1430728",
+    "source_url": "https://reactome.org/download/current/ReactomePathways.gmt.zip",
+    "retrieved_at": "2026-09-17T08:23:14.798759+00:00",
+    "sha256": "6397fd2c8e76de32addd5044080c7599f5297fcab6ac2ee97363fe9349fb521c",
+    "genes_path": "sources/reactome/metabolism_R-HSA-1430728_release_97_genes.txt",
+    "source_gene_count": 2197,
+    "matched_gene_count": 1984
+  },
+  "analysis": {
+    "engine": "workflow_research_quality_metabolic_states_v2",
+    "core_result_path": "results/core_analysis/core_result.json",
+    "core_result_sha256": "f3198ab5d64f75e8576217f1ddd08128c49003af2b3030540e594d855063d7b8",
+    "input_unit": "cell",
+    "rows_analyzed": 58843,
+    "random_seeds": [0, 17, 42, 73, 101],
+    "baselines": [
+      {
+        "name": "HVG and random size-matched controls",
+        "metrics": {
+          "random_controls_exceeding_or_equal": 0,
+          "random_controls_total": 19,
+          "add_one_rank_fraction": 0.05
+        },
+        "result_path": "results/core_analysis/baseline_metrics.csv"
+      }
+    ],
+    "methods": [
+      {
+        "name": "Scanpy Leiden on supplied metabolic genes",
+        "labels_path": "results/core_analysis/cluster_labels.csv",
+        "cell_id_column": "cell_name",
+        "label_column": "cluster",
+        "n_clusters": 15,
+        "metrics": {
+          "silhouette": 0.22936132550239563,
+          "calinski_harabasz": 7176.993934518632,
+          "davies_bouldin": 1.5126569440646473,
+          "mean_pairwise_ari": 0.9800312604552696,
+          "median_silhouette": 0.22109878063201904
+        }
+      }
+    ],
+    "subgroup_analyses": []
+  },
+  "references": [],
+  "artifacts": {
+    "tex": "report/main.tex",
+    "pdf": "report/main.pdf",
+    "summary": "results/summary.json",
+    "figures": ["figures/metabolic_umap.pdf", "figures/clustering_diagnostics.pdf"]
+  }
+}

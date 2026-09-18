@@ -1,0 +1,9 @@
+请使用项目内 Qwen3.5-4B-MLX-4bit 在唯一工作区 `/Users/bytedance/Downloads/BioDiscovery-3CA/3CA/Q1_R24` 自主研究。工作流为 `/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex`，科学 Python 为其 `.runtime/macos/python/bin/python`，Shell 为 `/bin/bash`。不得读取旧研究轮次或 supervisor 寻找解法，不得修改工作流或其他任务目录。
+
+任务：使用已核验公共来源 `3ca:20773` 的真实原始计数回答：“Are there distinct clusters of transcriptional metabolic states? In other words, can we use these metabolic genes only to cluster or separate groups in the single-cell RNA-seq dataset?”
+
+这是全新 Q1_R24。只可复用已核验来源与 SHA-256 的公共原始缓存，必须重新暂存输入、计算、生成图表和报告；不得复制 Q1_R1–Q1_R23 的代码、计算或报告。按引擎阶段依次调用原生来源、Reactome、核心分析、文献、报告构建、验证和完成工具，不用 shell 绕过。
+
+核心输出为 `results/core_analysis/core_result.json`。检查多种子/分辨率、聚类指标、HVG、19 个随机对照、患者/样本/细胞类型/complexity/细胞周期混杂和患者内敏感性。细胞不是独立重复；分开回答“能否形成计算分组”和“是否证明离散生物学代谢状态”，不得过度解释。
+
+用 search_pubmed 和 verify_doi 保存可核验文献。生成英文 `report/main.tex`、`report/main.pdf`、`results/summary.json`、`results/analysis_manifest.json` 和 `README.md`。报告至少两张核心矢量图、一个 booktabs 三线表和一个带 label/ref 的真实归一化公式。以 core JSON 为唯一数值来源，最后运行 validate_research_bundle，按相同参数重跑核心、重建 PDF 并最终验证。只有 complete_task 接受全部六项必需文件且 `valid=true` 才结束；监督者不代写研究产物。

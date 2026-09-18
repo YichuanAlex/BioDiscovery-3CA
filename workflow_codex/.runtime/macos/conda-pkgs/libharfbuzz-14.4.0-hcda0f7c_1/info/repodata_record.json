@@ -1,0 +1,30 @@
+{
+  "name": "libharfbuzz",
+  "version": "14.4.0",
+  "build": "hcda0f7c_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "subdir": "osx-arm64",
+  "fn": "libharfbuzz-14.4.0-hcda0f7c_1.conda",
+  "md5": "4afba4fae30b467d6c699bb685fa35ce",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libharfbuzz-14.4.0-hcda0f7c_1.conda",
+  "sha256": "a13bee65e7bcbc14b228351d3d5ba00d0c17c5840c471ab67a28b8ca930456d3",
+  "arch": "arm64",
+  "platform": "darwin",
+  "depends": [
+    "__osx >=11.0",
+    "cairo >=1.18.4,<2.0a0",
+    "graphite2 >=1.3.15,<2.0a0",
+    "icu >=78.3,<79.0a0",
+    "libcxx >=21",
+    "libfreetype >=2.14.3",
+    "libfreetype6 >=2.14.3",
+    "libglib >=2.88.3,<3.0a0",
+    "libpng >=1.6.58,<1.7.0a0",
+    "libzlib >=1.3.2,<2.0a0"
+  ],
+  "constrains": [],
+  "license": "MIT",
+  "timestamp": 1788405475876,
+  "size": 973351
+}

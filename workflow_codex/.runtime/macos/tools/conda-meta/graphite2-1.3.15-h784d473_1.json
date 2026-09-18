@@ -1,0 +1,114 @@
+{
+  "name": "graphite2",
+  "version": "1.3.15",
+  "build": "h784d473_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "subdir": "osx-arm64",
+  "fn": "graphite2-1.3.15-h784d473_1.conda",
+  "md5": "0c7b78d9ffff4f5a6ca28d346f734d8f",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/graphite2-1.3.15-h784d473_1.conda",
+  "sha256": "471f34a187fdb4f2df33e26f2e471b16c239a5b277903f643d9c3a8c9a9f44ec",
+  "depends": [
+    "libcxx >=19",
+    "__osx >=11.0"
+  ],
+  "constrains": [],
+  "license": "LGPL-2.0-or-later",
+  "timestamp": 1786118637573,
+  "size": 86493,
+  "_requested_specs": [],
+  "package_tarball_full_path": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/conda-pkgs/graphite2-1.3.15-h784d473_1.conda",
+  "extracted_package_dir": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/conda-pkgs/graphite2-1.3.15-h784d473_1",
+  "files": [
+    "include/graphite2/Font.h",
+    "include/graphite2/Log.h",
+    "include/graphite2/Segment.h",
+    "include/graphite2/Types.h",
+    "lib/libgraphite2.3.3.1.dylib",
+    "lib/libgraphite2.3.dylib",
+    "lib/libgraphite2.dylib",
+    "lib/pkgconfig/graphite2.pc",
+    "share/graphite2/graphite2-release.cmake",
+    "share/graphite2/graphite2.cmake"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "include/graphite2/Font.h",
+        "path_type": "hardlink",
+        "sha256": "c8e67cc52dd19e5d98178e3d8d25216f13c2613ae2aa8e80756bc283e0fb276d",
+        "size_in_bytes": 17644,
+        "sha256_in_prefix": "c8e67cc52dd19e5d98178e3d8d25216f13c2613ae2aa8e80756bc283e0fb276d"
+      },
+      {
+        "_path": "include/graphite2/Log.h",
+        "path_type": "hardlink",
+        "sha256": "36c88d7c6970774ed2beac493617d18a4fecbf8b0d1a9911503b06b32f70ed06",
+        "size_in_bytes": 1869,
+        "sha256_in_prefix": "36c88d7c6970774ed2beac493617d18a4fecbf8b0d1a9911503b06b32f70ed06"
+      },
+      {
+        "_path": "include/graphite2/Segment.h",
+        "path_type": "hardlink",
+        "sha256": "676e7357a3a84cdb8c63118d67a306113575cb30d528de906111bd00be902b18",
+        "size_in_bytes": 19209,
+        "sha256_in_prefix": "676e7357a3a84cdb8c63118d67a306113575cb30d528de906111bd00be902b18"
+      },
+      {
+        "_path": "include/graphite2/Types.h",
+        "path_type": "hardlink",
+        "sha256": "5ba78bf94b6af7ad9b6dc6a494e29604711a4d1be923e55cf15fb3433838e437",
+        "size_in_bytes": 1988,
+        "sha256_in_prefix": "5ba78bf94b6af7ad9b6dc6a494e29604711a4d1be923e55cf15fb3433838e437"
+      },
+      {
+        "_path": "lib/libgraphite2.3.3.1.dylib",
+        "path_type": "hardlink",
+        "sha256": "5a1d7cb207f4131d6d79f7ea93edda09e3d250d92414d21c55e1ec8ed2907210",
+        "size_in_bytes": 170976,
+        "sha256_in_prefix": "5a1d7cb207f4131d6d79f7ea93edda09e3d250d92414d21c55e1ec8ed2907210"
+      },
+      {
+        "_path": "lib/libgraphite2.3.dylib",
+        "path_type": "softlink",
+        "sha256": "5a1d7cb207f4131d6d79f7ea93edda09e3d250d92414d21c55e1ec8ed2907210",
+        "size_in_bytes": 24
+      },
+      {
+        "_path": "lib/libgraphite2.dylib",
+        "path_type": "softlink",
+        "sha256": "5a1d7cb207f4131d6d79f7ea93edda09e3d250d92414d21c55e1ec8ed2907210",
+        "size_in_bytes": 20
+      },
+      {
+        "_path": "lib/pkgconfig/graphite2.pc",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/bld/rattler-build_graphite2_1786118637/host_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "sha256": "1e0700faca8d54e294adbe4abf6a144a0424785b0c3933e4d227342c51f1a037",
+        "size_in_bytes": 642,
+        "sha256_in_prefix": "7bfa0ff5b9500d35074a7eb84098d00b7572ddc7688b6ae3f3d58d1a655726fd"
+      },
+      {
+        "_path": "share/graphite2/graphite2-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "9f85bb09d9eff4666242aed7afd40b15c5e8142f7070f320e02d48e20316aa69",
+        "size_in_bytes": 870,
+        "sha256_in_prefix": "9f85bb09d9eff4666242aed7afd40b15c5e8142f7070f320e02d48e20316aa69"
+      },
+      {
+        "_path": "share/graphite2/graphite2.cmake",
+        "path_type": "hardlink",
+        "sha256": "8e6de8e16b89dd16866e6726a4107e1498c1fd91ededa1ad8721a3ec8c9edf5c",
+        "size_in_bytes": 4018,
+        "sha256_in_prefix": "8e6de8e16b89dd16866e6726a4107e1498c1fd91ededa1ad8721a3ec8c9edf5c"
+      }
+    ]
+  },
+  "link": {
+    "source": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/conda-pkgs/graphite2-1.3.15-h784d473_1",
+    "type": 1
+  }
+}

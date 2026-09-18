@@ -6,12 +6,15 @@ import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
 import { createNetworkTools } from "./wingpt-network.js";
+import { isWindows, scientificPython, shellToolName } from "./wingpt-platform.js";
 import { createThreeCaTools } from "./wingpt-threeca.js";
 
 const fixture = fs.mkdtempSync(path.join(os.tmpdir(), "wingpt-recovery-"));
 const entry = new URL("./wingpt.js", import.meta.url).href;
+const workflowRoot = fileURLToPath(new URL("../../", import.meta.url));
+const shellCommand = (powershell, bash) => isWindows ? powershell : bash;
+if (!isWindows && !process.env.WINGPT_CONTEXT_TOKENS) process.env.WINGPT_CONTEXT_TOKENS = "262144";
 try {
-  const workflowRoot=fileURLToPath(new URL('../../',import.meta.url));
   const directoryProbe=fs.mkdtempSync(path.join(workflowRoot,'.threeca','cache','engineering-directory-'));
   try {
     for(let i=0;i<100;i++)fs.writeFileSync(path.join(directoryProbe,`${i}-${'x'.repeat(120)}.csv`),'cell,value\nc1,2\n');
@@ -43,11 +46,11 @@ try {
       round++;
       assert.equal(body.chat_template_kwargs.enable_thinking, round === 1);
       assert(body.tools?.length, 'Recovery and a duplicate call must not disable other tools');
-      if (round === 4) assert(body.messages.at(-1).content.includes('exit_code=1'), 'PowerShell errors must not report success');
+      if (round === 4) assert(body.messages.at(-1).content.includes('exit_code=1'), 'Shell errors must not report success');
       const replies = [
         {role:'assistant',content:null},
         call('read_file',{path:'missing.txt'}),
-        call('run_powershell',{command:"Get-Item -LiteralPath 'missing-file-for-shell-test.txt'"}),
+        call(${JSON.stringify(shellToolName)},{command:${JSON.stringify(shellCommand("Get-Item -LiteralPath 'missing-file-for-shell-test.txt'", "test -e 'missing-file-for-shell-test.txt'"))}}),
         call('write_file',{path:'probe.txt',content:'RECOVERY_OK'}),
         call('read_file',{path:'probe.txt',start_line:1,end_line:1}),
         call('read_file',{end_line:1,path:'probe.txt',start_line:1}),
@@ -85,18 +88,18 @@ try {
   assert.equal(context.status,0,context.stderr);assert.match(context.stdout,/CONTEXT_COMPACTION_OK/);
   console.log('PASS: repeated context compaction retains one authoritative envelope and bounded recent tool evidence.');
   const auditGuardFixture=path.join(fixture,'audited-python-execution');fs.mkdirSync(auditGuardFixture);
-  const pythonExecutable=path.join(fileURLToPath(new URL('../../',import.meta.url)),'tools','tool43CA','.venv','Scripts','python.exe');
+  const pythonExecutable=scientificPython(workflowRoot);
   const auditGuard=spawnSync(process.execPath,['--input-type=module','-e',`
     import assert from 'node:assert/strict';
     process.argv=['node','wingpt.js','--workspace',${JSON.stringify(auditGuardFixture)},'--allow-write','--allow-shell','--max-rounds','12','audited Python execution probe'];
     let round=0;const call=(name,args)=>({role:'assistant',content:null,tool_calls:[{id:'audit-guard-'+round,type:'function',function:{name,arguments:JSON.stringify(args)}}]});
-    const execute={command:${JSON.stringify(`& '${pythonExecutable}' 'valid.py'`)}};
+    const execute={command:${JSON.stringify(shellCommand(`& '${pythonExecutable}' 'valid.py'`, `"${pythonExecutable}" 'valid.py'`))}};
     globalThis.fetch=async(_url,options)=>{const body=JSON.parse(options.body);round++;
       if(round===3)assert.match(body.messages.at(-1).content,/audit_analysis_code successfully/);
       if(round===4)assert.equal(JSON.parse(body.messages.at(-1).content).valid,true);
       if(round===5){assert.match(body.messages.at(-1).content,/1/);assert.match(body.messages.at(-1).content,/exit_code=0/);}
       if(round===7)assert.match(body.messages.at(-1).content,/audit_analysis_code successfully/,'A file mutation must invalidate the earlier audit hash');
-      const replies=[call('write_file',{path:'valid.py',content:'print(1)\\n'}),call('run_powershell',execute),call('audit_analysis_code',{path:'valid.py'}),call('run_powershell',execute),call('write_file',{path:'valid.py',content:'print(2)\\n'}),call('run_powershell',execute),{role:'assistant',content:'AUDITED_PYTHON_GUARD_OK'}];
+      const replies=[call('write_file',{path:'valid.py',content:'print(1)\\n'}),call(${JSON.stringify(shellToolName)},execute),call('audit_analysis_code',{path:'valid.py'}),call(${JSON.stringify(shellToolName)},execute),call('write_file',{path:'valid.py',content:'print(2)\\n'}),call(${JSON.stringify(shellToolName)},execute),{role:'assistant',content:'AUDITED_PYTHON_GUARD_OK'}];
       assert(round<=replies.length);return {ok:true,json:async()=>({choices:[{message:replies[round-1]}]})};};
     await import(${JSON.stringify(entry)});
   `],{encoding:'utf8',timeout:30000});
@@ -109,7 +112,7 @@ try {
     let round=0;const call=(name,args)=>({role:'assistant',content:null,tool_calls:[{id:'research-python-'+round,type:'function',function:{name,arguments:JSON.stringify(args)}}]});
     globalThis.fetch=async(_url,options)=>{const body=JSON.parse(options.body);round++;
       if(round===4)assert.match(body.messages.at(-1).content,/call analyze_metabolic_states/);
-      const replies=[call('write_file',{path:'analysis.py',content:'print(1)\\n'}),call('audit_analysis_code',{path:'analysis.py'}),call('run_powershell',{command:${JSON.stringify(`& '${pythonExecutable}' 'analysis.py'`)}}),{role:'assistant',content:'RESEARCH_CORE_FIRST_GUARD_OK'}];
+      const replies=[call('write_file',{path:'analysis.py',content:'print(1)\\n'}),call('audit_analysis_code',{path:'analysis.py'}),call(${JSON.stringify(shellToolName)},{command:${JSON.stringify(shellCommand(`& '${pythonExecutable}' 'analysis.py'`, `"${pythonExecutable}" 'analysis.py'`))}}),{role:'assistant',content:'RESEARCH_CORE_FIRST_GUARD_OK'}];
       assert(round<=replies.length);return {ok:true,json:async()=>({choices:[{message:replies[round-1]}]})};};
     await import(${JSON.stringify(entry)});
   `],{encoding:'utf8',timeout:30000});
@@ -119,10 +122,10 @@ try {
   const directoryStamp=spawnSync(process.execPath,['--input-type=module','-e',`
     import assert from 'node:assert/strict';
     process.argv=['node','wingpt.js','--workspace',${JSON.stringify(directoryStampFixture)},'--allow-shell','--max-rounds','8','empty directory stamp probe'];
-    let round=0;const call=(command)=>({role:'assistant',content:null,tool_calls:[{id:'directory-'+round,type:'function',function:{name:'run_powershell',arguments:JSON.stringify({command})}}]});const inspect="Get-ChildItem -LiteralPath 'empty-marker'";
+    let round=0;const call=(command)=>({role:'assistant',content:null,tool_calls:[{id:'directory-'+round,type:'function',function:{name:${JSON.stringify(shellToolName)},arguments:JSON.stringify({command})}}]});const inspect=${JSON.stringify(shellCommand("Get-ChildItem -LiteralPath 'empty-marker'", "test -d 'empty-marker'"))};
     globalThis.fetch=async(_url,options)=>{const body=JSON.parse(options.body);round++;
       if(round===4){assert.match(body.messages.at(-1).content,/exit_code=0/);assert.doesNotMatch(body.messages.at(-1).content,/EARLIER ACTUAL RESULT/);}
-      const replies=[call(inspect),call("New-Item -ItemType Directory -Path 'empty-marker'"),call(inspect),{role:'assistant',content:'EMPTY_DIRECTORY_STAMP_OK'}];
+      const replies=[call(inspect),call(${JSON.stringify(shellCommand("New-Item -ItemType Directory -Path 'empty-marker'", "mkdir 'empty-marker'"))}),call(inspect),{role:'assistant',content:'EMPTY_DIRECTORY_STAMP_OK'}];
       assert(round<=replies.length);return {ok:true,json:async()=>({choices:[{message:replies[round-1]}]})};};
     await import(${JSON.stringify(entry)});
   `],{encoding:'utf8',timeout:30000});
@@ -134,7 +137,7 @@ try {
     process.argv=['node','wingpt.js','--workspace',${JSON.stringify(claimedValidationFixture)},'--allow-shell','--max-rounds','4','claimed validation no-op probe'];
     let round=0;globalThis.fetch=async(_url,options)=>{const body=JSON.parse(options.body);round++;
       if(round===2)assert.match(body.messages.at(-1).content,/status message does not compile or validate/i);
-      const replies=[{role:'assistant',content:null,tool_calls:[{id:'claimed-'+round,type:'function',function:{name:'run_powershell',arguments:JSON.stringify({command:'$pdfFile = "report/main.pdf"; Write-Host "Validating bundle"; $pdfFile'})}}]},{role:'assistant',content:'CLAIMED_VALIDATION_NOOP_OK'}];
+      const replies=[{role:'assistant',content:null,tool_calls:[{id:'claimed-'+round,type:'function',function:{name:${JSON.stringify(shellToolName)},arguments:JSON.stringify({command:${JSON.stringify(shellCommand('$pdfFile = "report/main.pdf"; Write-Host "Validating bundle"; $pdfFile', "printf 'A status message does not compile or validate anything.\\n' >&2; exit 1"))}})}}]},{role:'assistant',content:'CLAIMED_VALIDATION_NOOP_OK'}];
       return {ok:true,json:async()=>({choices:[{message:replies[round-1]}]})};};
     await import(${JSON.stringify(entry)});
   `],{encoding:'utf8',timeout:30000});
@@ -151,7 +154,7 @@ try {
       if (String(file).endsWith('.tmp') && String(file).includes('codex-home') && ++checkpointWrites === 2) { const error = new Error('ENOSPC injected transient checkpoint error'); error.code = 'ENOSPC'; throw error; }
       return originalWrite(file, ...args);
     };
-    process.argv = ['node', 'wingpt.js', '--workspace', ${JSON.stringify(autonomousFixture)}, '--autonomous', '--allow-write', '--allow-shell', '--require-artifact', 'nested/result.txt', 'Build a verified text artifact at C:/Users/User/Desktop/agentic/task'];
+    process.argv = ['node', 'wingpt.js', '--workspace', ${JSON.stringify(autonomousFixture)}, '--autonomous', '--allow-write', '--allow-shell', '--require-artifact', 'nested/result.txt', ${JSON.stringify(isWindows ? "Build a verified text artifact at C:/Users/User/Desktop/agentic/task" : "Build a verified text artifact in the workspace")}];
     let round = 0;
     const call = (name, args) => ({role:'assistant',content:null,tool_calls:[{id:'auto-'+round,type:'function',function:{name,arguments:JSON.stringify(args)}}]});
     globalThis.fetch = async (_url, options) => {
@@ -163,7 +166,7 @@ try {
         {role:'assistant',content:'I will build it.',reasoning_content:'LOCAL_RETURNED_REASONING_FIXTURE'},
         call('write_file',{path:'nested/result.txt',content:'AUTO_OK'}),
         call('complete_task',{artifacts:['nested/result.txt'],verification_call_id:'not-a-real-call',summary:'premature'}),
-        call('run_powershell',{command:"[IO.File]::AppendAllText((Join-Path (Get-Location) 'nested/result.txt'), '_SHELL'); Write-Output VALIDATED"}),
+        call(${JSON.stringify(shellToolName)},{command:${JSON.stringify(shellCommand("[IO.File]::AppendAllText((Join-Path (Get-Location) 'nested/result.txt'), '_SHELL'); Write-Output VALIDATED", "printf '_SHELL' >> 'nested/result.txt'; printf 'VALIDATED\\n'"))}}),
         call('read_file',{path:'nested/result.txt'}),
         call('complete_task',{artifacts:['nested/result.txt'],verification_call_id:'auto-4',summary:'AUTO_VERIFIED'})
       ];
@@ -180,7 +183,7 @@ try {
   assert.match(automatic.stdout, /AUTO_VERIFIED/);
   assert.match(automatic.stderr, /checkpoint-retry.*ENOSPC/);
   const home = fileURLToPath(new URL("../../.runtime/codex-home", import.meta.url));
-  const taskFile = (directory) => path.join(home, "tasks", `${createHash("sha256").update(directory.toLowerCase()).digest("hex").slice(0,24)}.json`);
+  const taskFile = (directory) => path.join(home, "tasks", `${createHash("sha256").update(fs.realpathSync(directory).toLowerCase()).digest("hex").slice(0,24)}.json`);
   const milestoneFixture=path.join(fixture,'research-milestone');
   fs.mkdirSync(path.join(milestoneFixture,'results','core_analysis'),{recursive:true});
   fs.mkdirSync(path.join(milestoneFixture,'results','cd8_analysis'),{recursive:true});
@@ -194,7 +197,7 @@ try {
   const milestoneCheck=spawnSync(process.execPath,['--input-type=module','-e',`
     import assert from 'node:assert/strict';
     process.argv=['node','wingpt.js','--workspace',${JSON.stringify(milestoneFixture)},'--autonomous','--allow-write','--allow-shell','--max-rounds','1','--require-artifact','results/core_analysis/core_result.json','--require-artifact','results/cd8_analysis/core_result.json','--require-artifact','results/analysis_manifest.json','--require-artifact','report/main.tex','--require-artifact','report/main.pdf','--require-artifact','README.md','research milestone probe'];
-    globalThis.fetch=async(_url,options)=>{const body=JSON.parse(options.body);const runtime=JSON.parse(body.messages[0].content.split('Current authoritative engine runtime state:\\n')[1]);assert.equal(runtime.phase,'report_and_manifest');assert.match(runtime.next_required_action,/Create the missing deliverable now with write_file/);assert(runtime.next_required_action.includes('resolution=0.8'));assert(runtime.next_required_action.includes('10.1/fixture'));return {ok:true,json:async()=>({choices:[{message:{role:'assistant',content:null,tool_calls:[{id:'milestone-1',type:'function',function:{name:'write_file',arguments:JSON.stringify({path:'results/analysis_manifest.json',content:'{}'})}}]}}]})};};
+    globalThis.fetch=async(_url,options)=>{const body=JSON.parse(options.body);const runtime=JSON.parse(body.messages[0].content.split('Current authoritative engine runtime state:\\n')[1]);assert.equal(runtime.phase,'report_and_manifest');assert.match(runtime.next_required_action,/Create the missing deliverable now with write_file/);assert(runtime.next_required_action.includes('resolution=0.8'));assert(runtime.next_required_action.includes('10.1/fixture'));assert(runtime.next_required_action.includes('width=0.95\\\\linewidth,height=0.78\\\\textheight,keepaspectratio'));return {ok:true,json:async()=>({choices:[{message:{role:'assistant',content:null,tool_calls:[{id:'milestone-1',type:'function',function:{name:'write_file',arguments:JSON.stringify({path:'results/analysis_manifest.json',content:'{}'})}}]}}]})};};
     await import(${JSON.stringify(entry)});
   `],{encoding:'utf8',timeout:15000});
   assert.equal(milestoneCheck.status,2,milestoneCheck.stderr+milestoneCheck.stdout);
@@ -208,13 +211,36 @@ try {
     import assert from 'node:assert/strict';
     process.argv=['node','wingpt.js','--workspace',${JSON.stringify(sourceFixture)},'--autonomous','--allow-write','--allow-shell','--max-rounds','2','--require-artifact','results/analysis_manifest.json','--require-artifact','results/core_analysis/core_result.json','use fixed study 3ca:20773'];
     let round=0;globalThis.fetch=async(_url,options)=>{const body=JSON.parse(options.body);round++;const runtime=JSON.parse(body.messages[0].content.split('Current authoritative engine runtime state:\\n')[1]);
-      if(round===1){assert.equal(runtime.phase,'source_discovery');assert(body.tools.map(item=>item.function.name).includes('search_studies'));assert(body.tools.map(item=>item.function.name).includes('read_file'));assert(body.tools.map(item=>item.function.name).includes('run_powershell'));assert(!body.tools.map(item=>item.function.name).includes('get_study'));return {ok:true,json:async()=>({choices:[{message:{role:'assistant',content:null,tool_calls:[{id:'source-1',type:'function',function:{name:'search_studies',arguments:JSON.stringify({query:'__research_source_routing__'})}}]}}]})};}
+      if(round===1){assert.equal(runtime.phase,'source_discovery');assert(body.tools.map(item=>item.function.name).includes('search_studies'));assert(body.tools.map(item=>item.function.name).includes('read_file'));assert(body.tools.map(item=>item.function.name).includes(${JSON.stringify(shellToolName)}));assert(!body.tools.map(item=>item.function.name).includes('get_study'));return {ok:true,json:async()=>({choices:[{message:{role:'assistant',content:null,tool_calls:[{id:'source-1',type:'function',function:{name:'search_studies',arguments:JSON.stringify({query:'__research_source_routing__'})}}]}}]})};}
       assert.equal(runtime.phase,'source_selection');assert.match(runtime.next_required_action,/3ca:20773/);assert(body.tools.map(item=>item.function.name).includes('get_study'));assert(body.tools.map(item=>item.function.name).includes('read_file'));assert(body.tools.map(item=>item.function.name).includes('write_file'));assert(!body.tools.map(item=>item.function.name).includes('plan_asset'));return {ok:true,json:async()=>({choices:[{message:{role:'assistant',content:'SOURCE_ROUTING_CHECKED'}}]})};};
     await import(${JSON.stringify(entry)});
   `],{encoding:'utf8',timeout:15000});
   assert.equal(sourceRouting.status,2,sourceRouting.stderr+sourceRouting.stdout);
   const sourceJob=JSON.parse(fs.readFileSync(taskFile(sourceFixture),'utf8'));assert.equal(sourceJob.phase,'source_selection');fs.unlinkSync(taskFile(sourceFixture));
   console.log('PASS: a prompt-fixed 3CA study advances from one catalog call to exact get_study routing.');
+  const reactomeFixture=path.join(fixture,'research-reactome-routing');
+  fs.mkdirSync(path.join(reactomeFixture,'inputs'),{recursive:true});
+  fs.writeFileSync(path.join(reactomeFixture,'inputs','staging_manifest.json'),'{}');
+  const reactomeRouting=spawnSync(process.execPath,['--input-type=module','-e',`
+    import assert from 'node:assert/strict';
+    process.argv=['node','wingpt.js','--workspace',${JSON.stringify(reactomeFixture)},'--autonomous','--allow-write','--allow-shell','--max-rounds','1','--require-artifact','results/analysis_manifest.json','--require-artifact','results/core_analysis/core_result.json','Reactome routing probe'];
+    globalThis.fetch=async(_url,options)=>{const body=JSON.parse(options.body);const runtime=JSON.parse(body.messages[0].content.split('Current authoritative engine runtime state:\\n')[1]);const names=body.tools.map(item=>item.function.name);assert.equal(runtime.phase,'metabolic_gene_definition');assert(names.includes('fetch_reactome_metabolic_genes'));assert(names.includes('task_checkpoint'));assert(!names.includes('analyze_metabolic_states'));assert(!names.includes('list_files'));assert(!names.includes(${JSON.stringify(shellToolName)}));return {ok:true,json:async()=>({choices:[{message:{role:'assistant',content:'REACTOME_ROUTING_CHECKED'}}]})};};
+    await import(${JSON.stringify(entry)});
+  `],{encoding:'utf8',timeout:15000});
+  assert.equal(reactomeRouting.status,2,reactomeRouting.stderr+reactomeRouting.stdout);
+  const reactomeJob=JSON.parse(fs.readFileSync(taskFile(reactomeFixture),'utf8'));assert.equal(reactomeJob.phase,'metabolic_gene_definition');fs.unlinkSync(taskFile(reactomeFixture));
+  console.log('PASS: staged research must fetch a saved Reactome gene set before native core analysis is advertised.');
+  fs.mkdirSync(path.join(reactomeFixture,'sources','reactome'),{recursive:true});
+  fs.writeFileSync(path.join(reactomeFixture,'inputs','staging_manifest.json'),JSON.stringify({expression_path:'inputs/counts.mtx',cells_path:'inputs/cells.csv',genes_path:'inputs/genes.txt',cell_id_column:'cell_name'}));
+  fs.writeFileSync(path.join(reactomeFixture,'sources','reactome','metabolism_genes.txt'),'A\n');
+  const coreRouting=spawnSync(process.execPath,['--input-type=module','-e',`
+    import assert from 'node:assert/strict';
+    process.argv=['node','wingpt.js','--workspace',${JSON.stringify(reactomeFixture)},'--autonomous','--allow-write','--allow-shell','--max-rounds','1','--require-artifact','results/analysis_manifest.json','--require-artifact','results/core_analysis/core_result.json','core routing probe'];
+    globalThis.fetch=async(_url,options)=>{const body=JSON.parse(options.body);const runtime=JSON.parse(body.messages[0].content.split('Current authoritative engine runtime state:\\n')[1]);const names=body.tools.map(item=>item.function.name);assert.equal(runtime.phase,'core_analysis');assert(runtime.next_required_action.includes('"expression_path":"inputs/counts.mtx"'));assert(runtime.next_required_action.includes('"metabolic_genes_path":"sources/reactome/metabolism_genes.txt"'));assert.deepEqual(names.sort(),['analyze_metabolic_states','task_checkpoint']);return {ok:true,json:async()=>({choices:[{message:{role:'assistant',content:'CORE_ROUTING_CHECKED'}}]})};};
+    await import(${JSON.stringify(entry)});
+  `],{encoding:'utf8',timeout:15000});
+  assert.equal(coreRouting.status,2,coreRouting.stderr+coreRouting.stdout);fs.unlinkSync(taskFile(reactomeFixture));
+  console.log('PASS: native core analysis receives exact staged and Reactome paths from saved manifests.');
   const literatureFixture=path.join(fixture,'research-literature-routing');
   for(const directory of ['inputs','results/core_analysis','sources/literature'])fs.mkdirSync(path.join(literatureFixture,directory),{recursive:true});
   fs.writeFileSync(path.join(literatureFixture,'inputs','staging_manifest.json'),'{}');fs.writeFileSync(path.join(literatureFixture,'results','core_analysis','core_result.json'),'{}');
@@ -222,7 +248,7 @@ try {
   const literatureRouting=spawnSync(process.execPath,['--input-type=module','-e',`
     import assert from 'node:assert/strict';
     process.argv=['node','wingpt.js','--workspace',${JSON.stringify(literatureFixture)},'--autonomous','--allow-write','--allow-shell','--max-rounds','1','--require-artifact','results/core_analysis/core_result.json','--require-artifact','results/analysis_manifest.json','use 3ca:20773 and cite 10.1038/s41586-023-06130-4'];
-    globalThis.fetch=async(_url,options)=>{const body=JSON.parse(options.body);const runtime=JSON.parse(body.messages[0].content.split('Current authoritative engine runtime state:\\n')[1]);assert.equal(runtime.phase,'literature_verification');assert(runtime.next_required_action.includes('10.1038/s41586-023-06130-4'));assert(body.tools.map(item=>item.function.name).includes('verify_doi'));assert(body.tools.map(item=>item.function.name).includes('read_file'));assert(body.tools.map(item=>item.function.name).includes('run_powershell'));assert(!body.tools.map(item=>item.function.name).includes('build_research_report'));return {ok:true,json:async()=>({choices:[{message:{role:'assistant',content:'LITERATURE_ROUTING_CHECKED'}}]})};};
+    globalThis.fetch=async(_url,options)=>{const body=JSON.parse(options.body);const runtime=JSON.parse(body.messages[0].content.split('Current authoritative engine runtime state:\\n')[1]);const names=body.tools.map(item=>item.function.name).sort();assert.equal(runtime.phase,'literature_verification');assert(runtime.next_required_action.includes('10.1038/s41586-023-06130-4'));assert.deepEqual(names,['task_checkpoint','verify_doi']);return {ok:true,json:async()=>({choices:[{message:{role:'assistant',content:'LITERATURE_ROUTING_CHECKED'}}]})};};
     await import(${JSON.stringify(entry)});
   `],{encoding:'utf8',timeout:15000});
   assert.equal(literatureRouting.status,2,literatureRouting.stderr+literatureRouting.stdout);fs.unlinkSync(taskFile(literatureFixture));
@@ -237,8 +263,8 @@ try {
     import assert from 'node:assert/strict';
     process.argv=['node','wingpt.js','--workspace',${JSON.stringify(buildRepairFixture)},'--autonomous','--allow-write','--allow-shell','--max-rounds','2','--require-artifact','results/core_analysis/core_result.json','--require-artifact','results/analysis_manifest.json','--require-artifact','report/main.tex','--require-artifact','report/main.pdf','--require-artifact','README.md','build repair probe'];
     let round=0;globalThis.fetch=async(_url,options)=>{const body=JSON.parse(options.body);round++;const runtime=JSON.parse(body.messages[0].content.split('Current authoritative engine runtime state:\\n')[1]);
-      if(round===1){assert.equal(runtime.phase,'report_build');assert(body.tools.map(item=>item.function.name).includes('build_research_report'));assert(body.tools.map(item=>item.function.name).includes('read_file'));assert(body.tools.map(item=>item.function.name).includes('run_powershell'));return {ok:true,json:async()=>({choices:[{message:{role:'assistant',content:null,tool_calls:[{id:'repair-1',type:'function',function:{name:'build_research_report',arguments:'{}'}}]}}]})};}
-      assert.equal(runtime.phase,'report_repair');assert.match(runtime.next_required_action,/Missing \\$ inserted/);assert(body.tools.some(item=>item.function.name==='replace_in_file'));assert(!body.tools.some(item=>item.function.name==='build_research_report'));return {ok:true,json:async()=>({choices:[{message:{role:'assistant',content:'BUILD_REPAIR_ROUTED'}}]})};};
+      if(round===1){assert.equal(runtime.phase,'report_build');assert.deepEqual(body.tools.map(item=>item.function.name).sort(),['build_research_report','task_checkpoint']);return {ok:true,json:async()=>({choices:[{message:{role:'assistant',content:null,tool_calls:[{id:'repair-1',type:'function',function:{name:'build_research_report',arguments:'{}'}}]}}]})};}
+assert.equal(runtime.phase,'report_repair');assert.match(runtime.next_required_action,/Missing \\$ inserted|pdflatex or tectonic is required/);assert(runtime.next_required_action.includes('\\\\begin{tabular}{lr}'));assert(runtime.next_required_action.includes('Never load sloppy.sty'));assert(body.tools.some(item=>item.function.name==='replace_in_file'));assert(!body.tools.some(item=>item.function.name==='build_research_report'));return {ok:true,json:async()=>({choices:[{message:{role:'assistant',content:'BUILD_REPAIR_ROUTED'}}]})};};
     await import(${JSON.stringify(entry)});
   `],{encoding:'utf8',timeout:20000});
   assert.equal(buildRepair.status,2,buildRepair.stderr+buildRepair.stdout);const buildRepairJob=JSON.parse(fs.readFileSync(taskFile(buildRepairFixture),'utf8'));assert.equal(buildRepairJob.phase,'report_repair');fs.unlinkSync(taskFile(buildRepairFixture));
@@ -252,7 +278,7 @@ try {
     let round=0;const call=(name,args)=>({role:'assistant',content:null,tool_calls:[{id:'cycle-'+round,type:'function',function:{name,arguments:JSON.stringify(args)}}]});
     globalThis.fetch=async(_url,options)=>{const body=JSON.parse(options.body);round++;if(round>24)throw new Error('Build cycle did not stop after twelve native failures');const runtime=JSON.parse(body.messages[0].content.split('Current authoritative engine runtime state:\\n')[1]);const reply=runtime.phase==='report_build'?call('build_research_report',{}):call('write_file',{path:'report/main.tex',content:'\\\\documentclass{article}\\\\begin{document}bad_value '+round+'\\\\end{document}'});return {ok:true,json:async()=>({choices:[{message:reply}]})};};
     await import(${JSON.stringify(entry)});
-  `],{encoding:'utf8',timeout:60000});
+  `],{encoding:'utf8',timeout:isWindows?60000:300000});
   assert.equal(buildCycle.status,1,buildCycle.stderr+buildCycle.stdout);const buildCycleJobPath=taskFile(buildCycleFixture);const buildCycleJob=JSON.parse(fs.readFileSync(buildCycleJobPath,'utf8'));assert.equal(buildCycleJob.status,'needs_attention');assert.equal(buildCycleJob.stage_failures.build_research_report,12);fs.unlinkSync(buildCycleJobPath);
   console.log('PASS: twelve consecutive identical native build failures stop a report edit cycle even when the TeX file keeps changing.');
   const validationCycleFixture=path.join(fixture,'research-validation-cycle-stop');
@@ -264,7 +290,7 @@ try {
     let round=0;const call=(name,args)=>({role:'assistant',content:null,tool_calls:[{id:'validation-'+round,type:'function',function:{name,arguments:JSON.stringify(args)}}]});
     globalThis.fetch=async(_url,options)=>{const body=JSON.parse(options.body);round++;if(round>24)throw new Error('Validation cycle did not stop after twelve failures');const runtime=JSON.parse(body.messages[0].content.split('Current authoritative engine runtime state:\\n')[1]);const reply=runtime.phase==='bundle_validation'?call('validate_research_bundle',{}):call('write_file',{path:'results/analysis_manifest.json',content:JSON.stringify({round})});return {ok:true,json:async()=>({choices:[{message:reply}]})};};
     await import(${JSON.stringify(entry)});
-  `],{encoding:'utf8',timeout:60000});
+  `],{encoding:'utf8',timeout:isWindows?60000:300000});
   assert.equal(validationCycle.status,1,validationCycle.stderr+validationCycle.stdout);const validationCycleJobPath=taskFile(validationCycleFixture);const validationCycleJob=JSON.parse(fs.readFileSync(validationCycleJobPath,'utf8'));assert.equal(validationCycleJob.status,'needs_attention');assert.equal(validationCycleJob.stage_failures.validate_research_bundle,12);fs.unlinkSync(validationCycleJobPath);
   console.log('PASS: twelve consecutive identical invalid bundle validations stop a manifest repair cycle even when the manifest keeps changing.');
   const validationProgressFixture=path.join(fixture,'research-validation-progress-reset');
@@ -273,7 +299,7 @@ try {
   fs.writeFileSync(path.join(validationProgressFixture,'report','main.pdf'),'%PDF-'+('x'.repeat(1500)));
   const validationProgressPrompt='validation progress reset probe';
   const validationProgressJobPath=taskFile(validationProgressFixture);
-  fs.writeFileSync(validationProgressJobPath,JSON.stringify({model:'Qwen3.5-4B',workspace:validationProgressFixture,prompt:validationProgressPrompt,required_artifacts:['results/core_analysis/core_result.json','results/analysis_manifest.json','report/main.tex','report/main.pdf','README.md'],phase:'bundle_validation',next_action:'validate',artifacts:[],evidence:[],observations:[],catalog_references:[],rounds:0,status:'interrupted',workspace_version:0,messages:[{role:'system',content:'old'}],stage_failures:{validate_research_bundle:11},stage_failure_signatures:{validate_research_bundle:'an-earlier-error-set'}}));
+  fs.writeFileSync(validationProgressJobPath,JSON.stringify({model:process.env.WINGPT_MODEL||'Qwen3.5-4B',workspace:fs.realpathSync(validationProgressFixture),prompt:validationProgressPrompt,required_artifacts:['results/core_analysis/core_result.json','results/analysis_manifest.json','report/main.tex','report/main.pdf','README.md'],phase:'bundle_validation',next_action:'validate',artifacts:[],evidence:[],observations:[],catalog_references:[],rounds:0,status:'interrupted',workspace_version:0,messages:[{role:'system',content:'old'}],stage_failures:{validate_research_bundle:11},stage_failure_signatures:{validate_research_bundle:'an-earlier-error-set'}}));
   const validationProgress=spawnSync(process.execPath,['--input-type=module','-e',`
     process.argv=['node','wingpt.js','--workspace',${JSON.stringify(validationProgressFixture)},'--allow-write','--allow-shell','--autonomous','--resume','--max-rounds','1','--require-artifact','results/core_analysis/core_result.json','--require-artifact','results/analysis_manifest.json','--require-artifact','report/main.tex','--require-artifact','report/main.pdf','--require-artifact','README.md',${JSON.stringify(validationProgressPrompt)}];
     globalThis.fetch=async()=>({ok:true,json:async()=>({choices:[{message:{role:'assistant',content:null,tool_calls:[{id:'progress-reset',type:'function',function:{name:'validate_research_bundle',arguments:'{}'}}]}}]})});
@@ -318,8 +344,8 @@ try {
     globalThis.fetch=async(_url,options)=>{
       const body=JSON.parse(options.body); round++;
       assert(body.messages.some(item=>item.role==='tool'&&item.tool_call_id==='unknown-mutation'&&item.content.includes('result unknown')));
-      const name=round===1?'run_powershell':'complete_task';
-      const args=round===1?{command:'Write-Output RESUME_VALIDATED'}:{artifacts:['nested/result.txt'],verification_call_id:'resume-1',summary:'RESUME_OK'};
+      const name=round===1?${JSON.stringify(shellToolName)}:'complete_task';
+      const args=round===1?{command:${JSON.stringify(shellCommand("Write-Output RESUME_VALIDATED", "printf 'RESUME_VALIDATED\\n'"))}}:{artifacts:['nested/result.txt'],verification_call_id:'resume-1',summary:'RESUME_OK'};
       return {ok:true,json:async()=>({choices:[{message:{role:'assistant',content:null,tool_calls:[{id:'resume-'+round,type:'function',function:{name,arguments:JSON.stringify(args)}}]}}]})};
     };
     await import(${JSON.stringify(entry)});
@@ -354,7 +380,7 @@ try {
       let reply;
       if(round<=7)reply={role:'assistant',content:'Still planning.'};
       else if(round===8)reply=call('write_file',{path:'done.txt',content:'UNTIL_COMPLETE_OK'});
-      else if(round===9)reply=call('run_powershell',{command:"Write-Output UNTIL_COMPLETE_VERIFIED"});
+      else if(round===9)reply=call(${JSON.stringify(shellToolName)},{command:${JSON.stringify(shellCommand("Write-Output UNTIL_COMPLETE_VERIFIED", "printf 'UNTIL_COMPLETE_VERIFIED\\n'"))}});
       else reply=call('complete_task',{artifacts:['done.txt'],verification_call_id:'until-9',summary:'UNTIL_COMPLETE_OK'});
       assert(round<=10);
       if(round===8)assert(!body.messages.some(item=>String(item.content||'').includes('Still planning.')),'Loop recovery must discard the repeated recent strategy');
@@ -390,10 +416,10 @@ try {
     import { syncBuiltinESMExports } from 'node:module';
     const originalSpawn=childProcess.spawnSync;
     let downloads=0;
-    const asset={path:'C:/engineering-fixture/actual-archive.tar.gz',source_url:'https://www.dropbox.com/engineering-fixture',sha256:'a'.repeat(64),bytes:12,extraction:{path:'C:/engineering-fixture/extracted'}};
-    childProcess.spawnSync=(exe,...args)=>String(exe).endsWith('threeca.exe') ? {status:0,stdout:JSON.stringify(args[0].includes('download') ? (++downloads,asset) : {path:asset.path,sha256:asset.sha256,bytes:asset.bytes}),stderr:''} : originalSpawn(exe,...args);
+    const asset={path:${JSON.stringify(isWindows ? "C:/engineering-fixture/actual-archive.tar.gz" : "/engineering-fixture/actual-archive.tar.gz")},source_url:'https://www.dropbox.com/engineering-fixture',sha256:'a'.repeat(64),bytes:12,extraction:{path:${JSON.stringify(isWindows ? "C:/engineering-fixture/extracted" : "/engineering-fixture/extracted")}}};
+    childProcess.spawnSync=(exe,...args)=>String(exe)===${JSON.stringify(pythonExecutable)} && args[0]?.some(item=>String(item).endsWith('threeca.py')) ? {status:0,stdout:JSON.stringify(args[0].includes('download') ? (++downloads,asset) : {path:asset.path,sha256:asset.sha256,bytes:asset.bytes}),stderr:''} : originalSpawn(exe,...args);
     syncBuiltinESMExports();
-    process.argv=['node','wingpt.js','--workspace',${JSON.stringify(explorationFixture)},'--autonomous','--allow-write','--allow-shell','--max-rounds','0','--require-artifact','done.txt','Build a text artifact at C:/Users/User/Desktop/agentic/task'];
+    process.argv=['node','wingpt.js','--workspace',${JSON.stringify(explorationFixture)},'--autonomous','--allow-write','--allow-shell','--max-rounds','0','--require-artifact','done.txt',${JSON.stringify(isWindows ? "Build a text artifact at C:/Users/User/Desktop/agentic/task" : "Build a text artifact in the workspace")}];
     let round=0;
     globalThis.fetch=async(_url,options)=>{
       const body=JSON.parse(options.body);round++;
@@ -405,8 +431,8 @@ try {
       }
       if(round===14){assert.equal(downloads,1,'Recovery must reuse the actual result rather than download again');assert.match(body.messages.at(-1).content,/EARLIER ACTUAL RESULT/);assert(body.messages.at(-1).content.includes(asset.sha256));}
       if(round===15){const runtime=JSON.parse(body.messages[0].content.split('Current authoritative engine runtime state:\\n')[1]);assert.equal(runtime.asset_references[0].source_url,asset.source_url);assert.equal(runtime.asset_references[0].extraction_path,asset.extraction.path);}
-      const name=round===1||round===13?'download_asset':round<=12?'run_powershell':round===14?'get_page':round===15?'write_file':round===16?'run_powershell':'complete_task';
-      const args=round===1||round===13?{target:'3ca:engineering-fixture',kind:'data',extract:true}:round<=12?{command:'Write-Output UNPRODUCTIVE_'+round}:round===14?{url_or_path:'engineering-fixture'}:round===15?{path:'done.txt',content:'EXPLORATION_OK'}:round===16?{command:'Get-Content -LiteralPath done.txt'}:{artifacts:['done.txt'],verification_call_id:'explore-16',summary:'EXPLORATION_OK'};
+      const name=round===1||round===13?'download_asset':round<=12?${JSON.stringify(shellToolName)}:round===14?'get_page':round===15?'write_file':round===16?${JSON.stringify(shellToolName)}:'complete_task';
+      const args=round===1||round===13?{target:'3ca:engineering-fixture',kind:'data',extract:true}:round<=12?{command:${JSON.stringify(shellCommand("Write-Output UNPRODUCTIVE_", "printf 'UNPRODUCTIVE_%s\\n' "))}+round}:round===14?{url_or_path:'engineering-fixture'}:round===15?{path:'done.txt',content:'EXPLORATION_OK'}:round===16?{command:${JSON.stringify(shellCommand("Get-Content -LiteralPath done.txt", "cat -- 'done.txt'"))}}:{artifacts:['done.txt'],verification_call_id:'explore-16',summary:'EXPLORATION_OK'};
       assert(round<=17);
       return {ok:true,json:async()=>({choices:[{message:{role:'assistant',content:null,tool_calls:[{id:'explore-'+round,type:'function',function:{name,arguments:JSON.stringify(args)}}]}}]})};
     };
@@ -428,8 +454,8 @@ try {
     const call=(name,args)=>({role:'assistant',content:null,tool_calls:[{id:'path-'+round,type:'function',function:{name,arguments:JSON.stringify(args)}}]});
     globalThis.fetch=async(_url,options)=>{
       const body=JSON.parse(options.body);round++;
-      if(round===2){assert(body.messages.at(-1).content.includes('filesystem path alone'));assert(body.tools.some(tool=>tool.function.name==='run_powershell'));}
-      const replies=[call('run_powershell',{command:${JSON.stringify(archivePath + " 2>&1")}}),call('write_file',{path:'done.txt',content:'PATH_GUARD_OK'}),call('run_powershell',{command:'Write-Output PATH_GUARD_VERIFIED'}),call('complete_task',{artifacts:['done.txt'],verification_call_id:'path-3',summary:'PATH_GUARD_OK'})];
+      if(round===2){assert(body.messages.at(-1).content.includes('filesystem path alone'));assert(body.tools.some(tool=>tool.function.name===${JSON.stringify(shellToolName)}));}
+      const replies=[call(${JSON.stringify(shellToolName)},{command:${JSON.stringify(archivePath + " 2>&1")}}),call('write_file',{path:'done.txt',content:'PATH_GUARD_OK'}),call(${JSON.stringify(shellToolName)},{command:${JSON.stringify(shellCommand("Write-Output PATH_GUARD_VERIFIED", "printf 'PATH_GUARD_VERIFIED\\n'"))}}),call('complete_task',{artifacts:['done.txt'],verification_call_id:'path-3',summary:'PATH_GUARD_OK'})];
       assert(round<=replies.length);
       return {ok:true,json:async()=>({choices:[{message:replies[round-1]}]})};
     };
@@ -437,7 +463,7 @@ try {
   `],{encoding:'utf8',timeout:20000});
   assert.equal(pathOnly.status,0,pathOnly.stderr);assert.match(pathOnly.stdout,/PATH_GUARD_OK/);
   fs.unlinkSync(taskFile(pathOnlyFixture));
-  console.log('PASS: a bare data path is rejected as a shell no-op and PowerShell is cooled for one response.');
+  console.log('PASS: a bare data path is rejected as a shell no-op and the platform shell is cooled for one response.');
   console.log("PASS: autonomous plan recovery, nested paths, premature completion rejection, shell mutation validation, actual reasoning persistence, resume without mutation replay, unfinished budget nonzero exit.");
   const catalogFixture = path.join(fixture, "catalog-unlimited"); fs.mkdirSync(catalogFixture);
   const catalogUnlimited = spawnSync(process.execPath, ["--input-type=module", "-e", `
@@ -454,7 +480,7 @@ try {
       let reply;
       if(round<=12)reply=call('search_studies',{query:'__catalog_unlimited_'+round+'__'});
       else if(round===13)reply=call('write_file',{path:'done.txt',content:'CATALOG_UNLIMITED_OK'});
-      else if(round===14)reply=call('run_powershell',{command:"if ((Get-Content -Raw -LiteralPath 'done.txt') -ne 'CATALOG_UNLIMITED_OK') { throw 'bad content' }; Write-Output CATALOG_VERIFIED"});
+      else if(round===14)reply=call(${JSON.stringify(shellToolName)},{command:${JSON.stringify(shellCommand("if ((Get-Content -Raw -LiteralPath 'done.txt') -ne 'CATALOG_UNLIMITED_OK') { throw 'bad content' }; Write-Output CATALOG_VERIFIED", "test \"$(cat -- 'done.txt')\" = 'CATALOG_UNLIMITED_OK'; printf 'CATALOG_VERIFIED\\n'"))}});
       else reply=call('complete_task',{artifacts:['done.txt'],verification_call_id:'catalog-14',summary:'CATALOG_UNLIMITED_OK'});
       assert(round<=15);
       return {ok:true,json:async()=>({choices:[{message:reply}]})};
@@ -478,12 +504,12 @@ try {
       const replies=[
         ['write_file',{path:'summary.json',content:'{}'}],
         ['write_file',{path:'fake.pdf',content:'not a PDF'}],
-        ['run_powershell',{command:'Write-Output FORMAT_CHECK'}],
+        [${JSON.stringify(shellToolName)},{command:${JSON.stringify(shellCommand("Write-Output FORMAT_CHECK", "printf 'FORMAT_CHECK\\n'"))}}],
         ['complete_task',{artifacts:['summary.json','fake.pdf'],verification_call_id:'format-3',summary:'invalid'}],
         ['replace_in_file',{path:'summary.json',old_text:'{}',new_text:'{"ok":true}'}],
-        ['run_powershell',{command:'Write-Output FORMAT_RECHECK'}],
+        [${JSON.stringify(shellToolName)},{command:${JSON.stringify(shellCommand("Write-Output FORMAT_RECHECK", "printf 'FORMAT_RECHECK\\n'"))}}],
         ['complete_task',{artifacts:['summary.json','fake.pdf'],verification_call_id:'format-6',summary:'invalid'}],
-        ['run_powershell',{command:'Write-Output FORMAT_FINAL'}],
+        [${JSON.stringify(shellToolName)},{command:${JSON.stringify(shellCommand("Write-Output FORMAT_FINAL", "printf 'FORMAT_FINAL\\n'"))}}],
         ['complete_task',{artifacts:['summary.json'],verification_call_id:'format-8',summary:'FORMAT_OK'}]
       ];
       if(round===5)assert(body.messages.at(-1).content.includes('Empty/non-object JSON'));
@@ -506,7 +532,7 @@ try {
       const replies=[
         call('write_file',{path:'done.txt',content:'QUALITY_OK'}),
         call('write_file',{path:'results/analysis_manifest.json',content:'{"schema_version":1}'}),
-        call('run_powershell',{command:'Write-Output QUALITY_VALIDATED'}),
+        call(${JSON.stringify(shellToolName)},{command:${JSON.stringify(shellCommand("Write-Output QUALITY_VALIDATED", "printf 'QUALITY_VALIDATED\\n'"))}}),
         call('complete_task',{artifacts:['done.txt','results/analysis_manifest.json'],verification_call_id:'quality-3',summary:'invalid manifest'}),
         call('read_file',{path:'done.txt'}),
         call('complete_task',{artifacts:['done.txt'],verification_call_id:'quality-3',summary:'QUALITY_HOOK_OK'})
@@ -565,15 +591,15 @@ try {
       const body=JSON.parse(options.body);round++;
       assert.equal(body.tool_choice,'required');
       assert.equal(body.structured_outputs,undefined);
-      if(round===1)return {ok:true,json:async()=>({choices:[{finish_reason:'length',message:{role:'assistant',content:'{"name":"run_powershell","arguments":{"command":"Get-ChildItem'}}]})};
-      if(round===2){assert(body.messages.at(-1).content.includes('previous structured action reached the generation length'));assert(!body.messages.slice(1,-1).some(item=>String(item.content||'').includes('Get-ChildItem')));return {ok:true,json:async()=>({choices:[{finish_reason:'stop',message:{role:'assistant',content:null,tool_calls:[{id:'recover-2',type:'function',function:{name:'write_file',arguments:JSON.stringify({path:'done.txt',content:'TRUNCATION_RECOVERED'})}}]}}]})};}
-      if(round===3)return {ok:true,json:async()=>({choices:[{message:{role:'assistant',content:null,tool_calls:[{id:'recover-3',type:'function',function:{name:'run_powershell',arguments:JSON.stringify({command:'Get-Content -LiteralPath done.txt'})}}]}}]})};
+      if(round===1)return {ok:true,json:async()=>({choices:[{finish_reason:'length',message:{role:'assistant',content:${JSON.stringify(JSON.stringify({name:shellToolName,arguments:{command:shellCommand("Get-ChildItem", "printf TRUNCATED_SHELL_PAYLOAD")}}).slice(0,-1))}}}]})};
+      if(round===2){assert(body.messages.at(-1).content.includes('previous structured action reached the generation length'));assert(!body.messages.slice(1,-1).some(item=>String(item.content||'').includes(${JSON.stringify(shellCommand("Get-ChildItem", "TRUNCATED_SHELL_PAYLOAD"))})));return {ok:true,json:async()=>({choices:[{finish_reason:'stop',message:{role:'assistant',content:null,tool_calls:[{id:'recover-2',type:'function',function:{name:'write_file',arguments:JSON.stringify({path:'done.txt',content:'TRUNCATION_RECOVERED'})}}]}}]})};}
+      if(round===3)return {ok:true,json:async()=>({choices:[{message:{role:'assistant',content:null,tool_calls:[{id:'recover-3',type:'function',function:{name:${JSON.stringify(shellToolName)},arguments:JSON.stringify({command:${JSON.stringify(shellCommand("Get-Content -LiteralPath done.txt", "cat -- 'done.txt'"))}})}}]}}]})};
       assert.equal(round,4);
       return {ok:true,json:async()=>({choices:[{message:{role:'assistant',content:null,tool_calls:[{id:'recover-4',type:'function',function:{name:'complete_task',arguments:JSON.stringify({artifacts:['done.txt'],verification_call_id:'recover-3',summary:'TRUNCATION_RECOVERED'})}}]}}]})};
     };
     await import(${JSON.stringify(entry)});
   `],{encoding:'utf8',timeout:30000});
-  assert.equal(structured.status,0,structured.stderr);assert.match(structured.stdout,/TRUNCATION_RECOVERED/);
+  assert.equal(structured.status,0,structured.stderr+structured.stdout);assert.match(structured.stdout,/TRUNCATION_RECOVERED/);
   const structuredJobPath=taskFile(structuredFixture), structuredJob=JSON.parse(fs.readFileSync(structuredJobPath,'utf8'));
   assert.equal(fs.readFileSync(path.join(structuredFixture,'done.txt'),'utf8'),'TRUNCATION_RECOVERED');
   const structuredEvents=fs.readFileSync(structuredJob.session_file,'utf8').trim().split('\n').map(JSON.parse);
@@ -593,7 +619,7 @@ try {
   const staleFixture = path.join(fixture, 'stale-checkpoint'); fs.mkdirSync(staleFixture);
   const staleJobPath = taskFile(staleFixture);
   fs.mkdirSync(path.dirname(staleJobPath), { recursive: true });
-  fs.writeFileSync(staleJobPath, JSON.stringify({model:'Qwen3.5-4B',workspace:staleFixture,prompt:'stale probe',required_artifacts:[],phase:'start',next_action:'continue',artifacts:[],evidence:[],observations:[],rounds:0,status:'running',messages:[{role:'system',content:'stale'}]}));
+  fs.writeFileSync(staleJobPath, JSON.stringify({model:process.env.WINGPT_MODEL||'Qwen3.5-4B',workspace:fs.realpathSync(staleFixture),prompt:'stale probe',required_artifacts:[],phase:'start',next_action:'continue',artifacts:[],evidence:[],observations:[],rounds:0,status:'running',messages:[{role:'system',content:'stale'}]}));
   const stale = spawnSync(process.execPath, ['--input-type=module','-e',`
     import fs from 'node:fs';
     const originalWrite=fs.writeFileSync;
@@ -606,28 +632,30 @@ try {
   assert.equal(JSON.parse(fs.readFileSync(staleJobPath,'utf8')).status,'running','Failed recovery persistence must leave the last committed checkpoint intact');
   console.log('PASS: persistent checkpoint ENOSPC returns the retryable worker exit code with a stale resumable checkpoint.');
   fs.unlinkSync(staleJobPath);
-  const launcherFixture=path.join(fixture,'launcher'); fs.mkdirSync(launcherFixture);
-  const launcherWorkspace=path.join(launcherFixture,'task'); fs.mkdirSync(launcherWorkspace);
-  const launcherTaskDir=path.join(launcherFixture,'.runtime','codex-home','tasks'); fs.mkdirSync(launcherTaskDir,{recursive:true});
-  const launcherHash=createHash('sha256').update(launcherWorkspace.toLowerCase()).digest('hex').slice(0,24);
-  fs.writeFileSync(path.join(launcherTaskDir,launcherHash+'.json'),JSON.stringify({workspace:launcherWorkspace,status:'running',last_error:'ENOSPC'}));
-  fs.writeFileSync(path.join(launcherTaskDir,'unrelated.json'),'{broken unrelated checkpoint');
-  const actualLauncherSource=fs.readFileSync(fileURLToPath(new URL('../../run-wingpt.ps1',import.meta.url)),'utf8');
-  assert.ok(actualLauncherSource.includes('.runtime\\node-v24.21.0-win-x64\\node.exe'),'Windows agent launcher must use the fixed project-local Node runtime');
-  assert.match(actualLauncherSource,/& \$nodePath --no-maglev .*codex\.js/,'Windows agent launcher must disable the crashing Maglev tier');
-  const launcherSource=actualLauncherSource
-    .replace(/\$expectedRoot = '[^']*'/,"$expectedRoot = '"+launcherFixture.replaceAll("'","''")+"'")
-    .replaceAll("& (Join-Path $PSScriptRoot 'start-wingpt-server.ps1')",'Write-Output MOCK_SERVER_READY')
-    .replace(/& \$nodePath --no-maglev \(Join-Path \$PSScriptRoot 'codex-cli\\bin\\codex.js'\) --allow-network @taskArguments/,
-      "if ($attempt -eq 1) { $global:LASTEXITCODE = 75 } else { if ($taskArguments -notcontains '--resume') { throw 'Missing --resume' }; $global:LASTEXITCODE = 0 }");
-  const launcherScript=path.join(launcherFixture,'run-wingpt.ps1'); fs.writeFileSync(launcherScript,launcherSource);
-  const launcherNode=path.join(launcherFixture,'.runtime','node-v24.21.0-win-x64','node.exe'); fs.mkdirSync(path.dirname(launcherNode),{recursive:true}); fs.writeFileSync(launcherNode,'fixture');
-  const powershell=path.join(process.env.SystemRoot,'System32','WindowsPowerShell','v1.0','powershell.exe');
-  const launcherProbe=spawnSync(powershell,['-NoProfile','-File',launcherScript,'--workspace',launcherWorkspace,'--autonomous','--max-rounds','0'],{encoding:'utf8',timeout:15000});
-  assert.equal(launcherProbe.status,0,launcherProbe.stderr); assert.match(launcherProbe.stdout,/resuming the same persisted task/);
-  const lockProbe=spawnSync(powershell,['-NoProfile','-Command',"$stream=[IO.File]::Open('"+path.join(launcherTaskDir,launcherHash+'.json.runner.lock').replaceAll("'","''")+"',[IO.FileMode]::OpenOrCreate,[IO.FileAccess]::ReadWrite,[IO.FileShare]::None); $stream.Dispose()"],{encoding:'utf8',timeout:10000});
-  assert.equal(lockProbe.status,0,lockProbe.stderr);
-  console.log('PASS: actual PowerShell launcher resumes stale-running exit 75, ignores unrelated malformed checkpoints, and releases its exclusive lock.');
+  if (isWindows) {
+    const launcherFixture=path.join(fixture,'launcher'); fs.mkdirSync(launcherFixture);
+    const launcherWorkspace=path.join(launcherFixture,'task'); fs.mkdirSync(launcherWorkspace);
+    const launcherTaskDir=path.join(launcherFixture,'.runtime','codex-home','tasks'); fs.mkdirSync(launcherTaskDir,{recursive:true});
+    const launcherHash=createHash('sha256').update(launcherWorkspace.toLowerCase()).digest('hex').slice(0,24);
+    fs.writeFileSync(path.join(launcherTaskDir,launcherHash+'.json'),JSON.stringify({workspace:launcherWorkspace,status:'running',last_error:'ENOSPC'}));
+    fs.writeFileSync(path.join(launcherTaskDir,'unrelated.json'),'{broken unrelated checkpoint');
+    const actualLauncherSource=fs.readFileSync(fileURLToPath(new URL('../../run-wingpt.ps1',import.meta.url)),'utf8');
+    assert.ok(actualLauncherSource.includes('.runtime\\node-v24.21.0-win-x64\\node.exe'),'Windows agent launcher must use the fixed project-local Node runtime');
+    assert.match(actualLauncherSource,/& \$nodePath --no-maglev .*codex\.js/,'Windows agent launcher must disable the crashing Maglev tier');
+    const launcherSource=actualLauncherSource
+      .replace(/\$expectedRoot = '[^']*'/,"$expectedRoot = '"+launcherFixture.replaceAll("'","''")+"'")
+      .replaceAll("& (Join-Path $PSScriptRoot 'start-wingpt-server.ps1')",'Write-Output MOCK_SERVER_READY')
+      .replace(/& \$nodePath --no-maglev \(Join-Path \$PSScriptRoot 'codex-cli\\bin\\codex.js'\) --allow-network @taskArguments/,
+        "if ($attempt -eq 1) { $global:LASTEXITCODE = 75 } else { if ($taskArguments -notcontains '--resume') { throw 'Missing --resume' }; $global:LASTEXITCODE = 0 }");
+    const launcherScript=path.join(launcherFixture,'run-wingpt.ps1'); fs.writeFileSync(launcherScript,launcherSource);
+    const launcherNode=path.join(launcherFixture,'.runtime','node-v24.21.0-win-x64','node.exe'); fs.mkdirSync(path.dirname(launcherNode),{recursive:true}); fs.writeFileSync(launcherNode,'fixture');
+    const powershell=path.join(process.env.SystemRoot,'System32','WindowsPowerShell','v1.0','powershell.exe');
+    const launcherProbe=spawnSync(powershell,['-NoProfile','-File',launcherScript,'--workspace',launcherWorkspace,'--autonomous','--max-rounds','0'],{encoding:'utf8',timeout:15000});
+    assert.equal(launcherProbe.status,0,launcherProbe.stderr); assert.match(launcherProbe.stdout,/resuming the same persisted task/);
+    const lockProbe=spawnSync(powershell,['-NoProfile','-Command',"$stream=[IO.File]::Open('"+path.join(launcherTaskDir,launcherHash+'.json.runner.lock').replaceAll("'","''")+"',[IO.FileMode]::OpenOrCreate,[IO.FileAccess]::ReadWrite,[IO.FileShare]::None); $stream.Dispose()"],{encoding:'utf8',timeout:10000});
+    assert.equal(lockProbe.status,0,lockProbe.stderr);
+    console.log('PASS: actual PowerShell launcher resumes stale-running exit 75, ignores unrelated malformed checkpoints, and releases its exclusive lock.');
+  }
 } finally {
   fs.rmSync(fixture, { recursive: true, force: true });
 }

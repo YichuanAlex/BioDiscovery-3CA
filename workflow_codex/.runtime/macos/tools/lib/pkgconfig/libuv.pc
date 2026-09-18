@@ -1,0 +1,13 @@
+prefix=/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.runtime/macos/tools
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+LIBUV_STATIC=-L${libdir} -l:libuv.a  
+
+Name: libuv
+Version: 1.52.1
+Description: multi-platform support library with a focus on asynchronous I/O.
+URL: http://libuv.org/
+
+Libs: -L${libdir} -luv  
+Cflags: -I${includedir}

@@ -1,0 +1,12 @@
+prefix=/Users/runner/miniforge3/conda-bld/poppler-split_1788834320096/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place
+libdir=/Users/runner/miniforge3/conda-bld/poppler-split_1788834320096/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place/lib
+includedir=/Users/runner/miniforge3/conda-bld/poppler-split_1788834320096/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place/include
+
+Name: poppler
+Description: PDF rendering library
+Version: 26.09.0
+Requires.private: freetype2 >= 2.13 zlib fontconfig >= 2.15 libjpeg libcurl >= 8.5 nss >= 3.118.0 libopenjp2 lcms2 >= 2.14 libpng libtiff-4 >= 4.7.2 harfbuzz harfbuzz-subset
+
+Libs: -L${libdir} -lpoppler
+Libs.private: 
+Cflags: -I${includedir}/poppler

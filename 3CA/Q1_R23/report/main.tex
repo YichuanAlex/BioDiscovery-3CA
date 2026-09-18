@@ -1,0 +1,112 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+
+\title{\textbf{Transcriptional Metabolic States in Meningioma Brain Single-Cell Data}}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Question}
+\textit{Are there distinct clusters of transcriptional metabolic states? In other words, can we use these metabolic genes only to cluster or separate groups in the single-cell RNA-seq dataset?}
+
+\section{Methods}
+We analyzed the Choudhury et al. 2022 meningioma brain single-cell dataset (3ca:20773), which contains 58,843 cells from 10 samples. The analysis used Reactome metabolism pathway genes (R-HSA-1430728, release 97) as the feature set.
+
+\subsection{Data Processing}
+Raw UMI counts were normalized by per-cell library size to 10,000, then log-transformed using $\log(1+x)$ where $x$ is the normalized count. Features were scaled with zero\_center=False and max\_value=10.
+
+The normalization formula is:
+\begin{equation}
+\text{normalized\_count} = \frac{\text{raw\_count}}{\text{library\_size}} \times 10000, \quad \text{log1p} = \log(\text{normalized\_count} + 1)
+\end{equation}
+
+\subsection{Clustering Pipeline}
+We performed unsupervised clustering using Leiden algorithm with resolution selection based on stability filtering (mean pairwise ARI $\ge$ 0.75). The selected resolution was 0.4 with seed 0.
+
+\section{Results}
+
+\subsection{Global Clustering Results}
+Using only Reactome metabolism genes (1,984 of 2,197 matched after prevalence filtering), we identified 15 clusters across all 58,843 cells. The cluster size summary shows:
+\begin{table}[h]
+\centering
+\toprule
+\textbf{Metric} & \textbf{Value} \\
+\midrule
+Minimum cluster size (cells) & 1,002 \\
+Maximum cluster size (cells) & 8,985 \\
+Silhouette coefficient & 0.229 \\
+Calinski-Harabasz index & 7,177 \\
+Davies-Bouldin index & 1.513 \\
+Mean pairwise ARI (across seeds) & 0.980 \\
+Median silhouette (across seeds) & 0.221 \\
+\bottomrule
+\end{table}
+
+\subsection{Resolution and Seed Stability}
+Resolution selection used the stability filter (mean pairwise ARI $\ge$ 0.75) with stable candidates at resolutions 0.4, 0.8, and 1.2. The primary criterion was highest median silhouette across seeds, with tie-breaking by highest mean pairwise ARI. The selected resolution was 0.4.
+
+\subsection{Random Control Comparison}
+We compared the metabolic gene clustering against 19 size-matched random gene controls. The metabolic gene clustering (silhouette = 0.247) did not exceed any random control (silhouette range: 0.206--0.235). The add-one rank fraction was 0.05, indicating no random control exceeded the metabolic gene clustering.
+
+\subsection{Confounder Assessment}
+We checked for confounding by patient, sample, source, cell type, cell subtype, cell cycle phase, complexity, and computed metrics. The categorical confounder NMI values were:
+\begin{itemize}
+    \item patient: 0.544
+    \item sample: 0.567
+    \item source: 0.197
+    \item cell type: 0.507
+    \item cell subtype: 0.658
+    \item cell cycle phase: 0.195
+\end{itemize}
+
+\subsection{Cell Type Association}
+The global NMI for cell type was 0.507, with within-replicate NMI ranging from 0.377 to 0.770 (median: 0.613). For cell subtype, the global NMI was 0.658, with within-replicate NMI ranging from 0.214 to 0.690 (median: 0.646).
+
+\subsection{Within-Replicate Sensitivity}
+Across 6 patients, the global vs within-replicate ARI ranged from 0.106 to 0.813. The weakest replicate was patient 3 with 3,287 cells.
+
+\section{Discussion}
+
+\subsection{Can Metabolic Genes Form Computational Groups?}
+Yes, metabolic genes alone can form computational clusters. The Leiden algorithm identified 15 clusters with reasonable size distribution (minimum 1,002 cells, maximum 8,985 cells). The clustering showed positive silhouette (0.229) and high stability (mean pairwise ARI = 0.980 across seeds).
+
+\subsection{Do These Clusters Represent Discrete Biological Metabolic States?}
+The analysis is \textbf{inconclusive} regarding discrete biological metabolic states. Several factors limit this interpretation:
+
+\begin{itemize}
+    \item The clustering was unsupervised with no predefined condition contrast.
+    \item No cell-level differential expression P values were reported.
+    \item Within-replicate reclustering was descriptive, not held-out donor validation.
+    \item Random gene controls were matched in size, not expression mean or dispersion.
+    \item Resolution was selected using the same dataset.
+    \item A threshold on confounder NMI does not establish independence.
+    \item Identical source gene symbols were summed before QC/normalization.
+\end{itemize}
+
+The high mean pairwise ARI (0.980) and high mean pairwise NMI (0.975) suggest stable clustering across seeds, but this reflects the fixed PCA/neighbor graph rather than biological state discovery. The moderate silhouette (0.229) is comparable to HVG baseline (0.295) and random controls (mean: 0.221), suggesting the clustering is not dramatically better than random or HVG-based clustering.
+
+\subsection{Limitations}
+This exploratory analysis cannot establish discrete biological metabolic states. Additional validation including independent-donor testing, QC/batch sensitivity analysis, and a continuum-versus-discrete comparison would be needed for stronger biological conclusions.
+
+\section{References}
+\begin{thebibliography}{9}
+\begin{tabular}{ll}
+\toprule
+\textbf{Citation} & \textbf{DOI} \\
+\midrule
+Choudhury et al. 2022 & 10.1038/s41588-022-01061-8 \\
+\bottomrule
+\end{tabular}
+\end{thebibliography}
+
+\end{document}

@@ -1,8 +1,8 @@
 {
   "url": "https://www.weizmann.ac.il/sites/3CA/sarcoma",
   "final_url": "https://www.weizmann.ac.il/sites/3CA/sarcoma",
-  "fetched_at": "2026-09-14T04:17:31.313032+00:00",
-  "raw_html_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\pages\\37cf554512566f4ffb150d03660115a7bf2177dd732f786d40ba5ef2a0dabbe3.html",
+  "fetched_at": "2026-09-17T05:44:00.887510+00:00",
+  "raw_html_path": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.threeca/cache/pages/37cf554512566f4ffb150d03660115a7bf2177dd732f786d40ba5ef2a0dabbe3.html",
   "title": "Sarcoma | Curated Cancer Cell Atlas",
   "text": "Sarcoma Title Data Meta data Cell types Summary Disease Technology #samples #cells Meta programs CNAs UMAP Cell cycle Jerby-Arnon et al. 2021 Cell types Summary Synovial sarcoma 10x, SmartSeq2 15 16125 Meta programs CNAs UMAP Cell cycle Zhou et al. 2020 Cell types Summary Osteosarcoma 10x 11 64557 Meta programs UMAP Cell cycle All Sarcoma 26 80682",
   "links": [

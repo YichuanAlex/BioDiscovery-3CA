@@ -1,0 +1,16 @@
+lib/libharfbuzz-cairo.0.dylib
+lib/libharfbuzz-cairo.dylib
+lib/libharfbuzz-gobject.0.dylib
+lib/libharfbuzz-gobject.dylib
+lib/libharfbuzz-gpu.0.dylib
+lib/libharfbuzz-gpu.dylib
+lib/libharfbuzz-icu.0.dylib
+lib/libharfbuzz-icu.dylib
+lib/libharfbuzz-raster.0.dylib
+lib/libharfbuzz-raster.dylib
+lib/libharfbuzz-subset.0.dylib
+lib/libharfbuzz-subset.dylib
+lib/libharfbuzz-vector.0.dylib
+lib/libharfbuzz-vector.dylib
+lib/libharfbuzz.0.dylib
+lib/libharfbuzz.dylib

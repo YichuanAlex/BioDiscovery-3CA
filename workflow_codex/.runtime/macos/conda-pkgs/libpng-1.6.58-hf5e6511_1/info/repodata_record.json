@@ -1,0 +1,22 @@
+{
+  "name": "libpng",
+  "version": "1.6.58",
+  "build": "hf5e6511_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "subdir": "osx-arm64",
+  "fn": "libpng-1.6.58-hf5e6511_1.conda",
+  "md5": "e0466c58fd07db190b9a81b5e58539f2",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libpng-1.6.58-hf5e6511_1.conda",
+  "sha256": "f88da60b348ee1f3e1a9c20fe02142fdafe889f08da0b1cc33c1f3f14460239d",
+  "arch": "arm64",
+  "platform": "darwin",
+  "depends": [
+    "__osx >=11.0",
+    "libzlib >=1.3.2,<2.0a0"
+  ],
+  "constrains": [],
+  "license": "zlib-acknowledgement",
+  "timestamp": 1786616561185,
+  "size": 290219
+}
