@@ -1,0 +1,87 @@
+[
+  {
+    "type": "CBioPortalRESTTool",
+    "name": "cBioPortal_get_cancer_studies",
+    "description": "Get list of cancer studies from cBioPortal",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "limit": {"type": "integer", "default": 20, "description": "Number of studies to return"}
+      }
+    },
+    "fields": {
+      "endpoint": "https://www.cbioportal.org/api/studies?limit={limit}",
+      "return_format": "JSON"
+    },
+    "return_schema": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "studyId": {"type": "string"},
+          "name": {"type": "string"},
+          "description": {"type": "string"},
+          "cancerTypeId": {"type": "string"},
+          "publicStudy": {"type": "boolean"},
+          "pmid": {"type": "string"},
+          "citation": {"type": "string"},
+          "groups": {"type": "array"},
+          "status": {"type": "string"},
+          "importDate": {"type": "string"},
+          "allSampleCount": {"type": "integer"},
+          "readPermission": {"type": "boolean"},
+          "referenceGenome": {"type": "string"}
+        }
+      }
+    },
+    "test_examples": [{"limit": 5}, {"limit": 10}]
+  },
+  {
+    "type": "CBioPortalRESTTool",
+    "name": "cBioPortal_get_mutations",
+    "description": "Get mutation data for specific genes in a cancer study",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "study_id": {"type": "string", "description": "Cancer study ID"},
+        "gene_list": {"type": "string", "description": "Comma-separated gene symbols"}
+      },
+      "required": ["study_id", "gene_list"]
+    },
+    "fields": {
+      "endpoint": "https://www.cbioportal.org/api/mutations?studyId={study_id}&geneList={gene_list}",
+      "return_format": "JSON"
+    },
+    "return_schema": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sampleId": {"type": "string"},
+          "studyId": {"type": "string"},
+          "geneSymbol": {"type": "string"},
+          "mutationType": {"type": "string"},
+          "proteinChange": {"type": "string"},
+          "aminoAcidChange": {"type": "string"},
+          "chromosome": {"type": "string"},
+          "startPosition": {"type": "integer"},
+          "endPosition": {"type": "integer"},
+          "referenceAllele": {"type": "string"},
+          "variantAllele": {"type": "string"},
+          "mutationStatus": {"type": "string"},
+          "validationStatus": {"type": "string"},
+          "sequencingCenter": {"type": "string"},
+          "sequencer": {"type": "string"},
+          "tumorSeqAllele1": {"type": "string"},
+          "tumorSeqAllele2": {"type": "string"},
+          "matchedNormSampleBarcode": {"type": "string"},
+          "tumorSampleBarcode": {"type": "string"}
+        }
+      }
+    },
+    "test_examples": [
+      {"study_id": "brca_tcga", "gene_list": "BRCA1,BRCA2"},
+      {"study_id": "luad_tcga", "gene_list": "EGFR,KRAS"}
+    ]
+  }
+]

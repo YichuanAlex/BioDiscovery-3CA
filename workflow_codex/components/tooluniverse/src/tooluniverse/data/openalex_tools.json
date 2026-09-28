@@ -1,0 +1,147 @@
+[
+  {
+    "type": "OpenAlexTool",
+    "name": "openalex_literature_search",
+    "description": "Search for academic literature using OpenAlex API. Retrieves papers with title, abstract, authors, publication year, and organizational affiliations based on search keywords.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "search_keywords": {
+          "type": "string",
+          "description": "Keywords to search for in paper titles, abstracts, and content. Use relevant scientific terms or phrases."
+        },
+        "max_results": {
+          "type": "integer",
+          "description": "Maximum number of papers to retrieve (default: 10, maximum: 200).",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 200
+        },
+        "year_from": {
+          "type": "integer",
+          "description": "Start year for publication date filter (e.g., 2020). Optional parameter to limit search to papers published from this year onwards."
+        },
+        "year_to": {
+          "type": "integer",
+          "description": "End year for publication date filter (e.g., 2023). Optional parameter to limit search to papers published up to this year."
+        },
+        "open_access": {
+          "type": "boolean",
+          "description": "Filter for open access papers only. Set to true for open access papers, false for non-open access, or omit for all papers."
+        }
+      },
+      "required": [
+        "search_keywords"
+      ]
+    },
+    "return_schema": {
+      "type": "array",
+      "description": "List of academic papers from OpenAlex matching the search query",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Title of the paper"
+          },
+          "abstract": {
+            "type": "string",
+            "description": "Abstract of the paper"
+          },
+          "authors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of author names"
+          },
+          "year": {
+            "type": ["integer", "string"],
+            "description": "Publication year (integer) or 'Year not available' (string)"
+          },
+          "organizations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of organizational affiliations"
+          },
+          "venue": {
+            "type": "string",
+            "description": "Journal or venue name"
+          },
+          "doi": {
+            "type": "string",
+            "description": "Digital Object Identifier (DOI) of the paper"
+          },
+          "citation_count": {
+            "type": "integer",
+            "description": "Number of citations"
+          },
+          "open_access": {
+            "type": "boolean",
+            "description": "Open access status"
+          },
+          "pdf_url": {
+            "type": ["string", "null"],
+            "description": "URL to PDF if available, or null if not available"
+          },
+          "keywords": {
+            "type": ["array", "string"],
+            "description": "List of keywords/concepts associated with the paper, or 'Keywords not available' if none"
+          },
+          "article_type": {
+            "type": "string",
+            "description": "Type of article (e.g., 'article', 'review', etc.)"
+          },
+          "publisher": {
+            "type": "string",
+            "description": "Publisher name"
+          },
+          "openalex_id": {
+            "type": "string",
+            "description": "OpenAlex identifier (URL format)"
+          },
+          "url": {
+            "type": "string",
+            "description": "URL to the paper (DOI if available, otherwise OpenAlex ID)"
+          },
+          "data_quality": {
+            "type": "object",
+            "description": "Data quality indicators for the paper",
+            "properties": {
+              "has_abstract": {
+                "type": "boolean",
+                "description": "Whether the paper has an abstract"
+              },
+              "has_authors": {
+                "type": "boolean",
+                "description": "Whether author information is available"
+              },
+              "has_venue": {
+                "type": "boolean",
+                "description": "Whether venue/journal information is available"
+              },
+              "has_year": {
+                "type": "boolean",
+                "description": "Whether publication year is available"
+              },
+              "has_doi": {
+                "type": "boolean",
+                "description": "Whether DOI is available"
+              },
+              "has_citation_count": {
+                "type": "boolean",
+                "description": "Whether citation count is available and greater than 0"
+              },
+              "has_keywords": {
+                "type": "boolean",
+                "description": "Whether keywords/concepts are available"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]

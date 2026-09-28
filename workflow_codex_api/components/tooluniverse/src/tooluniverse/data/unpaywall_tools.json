@@ -1,0 +1,86 @@
+[
+    {
+        "type": "UnpaywallTool",
+        "name": "Unpaywall_check_oa_status",
+        "description": "Query Unpaywall by DOI to check open-access status and OA locations. Requires a contact email for API access.",
+        "parameter": {
+            "type": "object",
+            "properties": {
+                "doi": {
+                    "type": "string",
+                    "description": "DOI (Digital Object Identifier) of the article to check for open access status."
+                },
+                "email": {
+                    "type": "string",
+                    "description": "Contact email address required by Unpaywall API for polite usage tracking."
+                }
+            },
+            "required": ["doi", "email"]
+        },
+        "return_schema": {
+            "type": "object",
+            "description": "Open access status and location information for the given DOI",
+            "properties": {
+                "is_oa": {
+                    "type": "boolean",
+                    "description": "Whether the article is open access"
+                },
+                "oa_status": {
+                    "type": "string",
+                    "description": "Open access status (e.g., 'gold', 'green', 'hybrid', 'closed')"
+                },
+                "best_oa_location": {
+                    "type": "object",
+                    "description": "Best available open access location"
+                },
+                "oa_locations": {
+                    "type": "array",
+                    "description": "All available open access locations"
+                },
+                "journal_is_oa": {
+                    "type": "boolean",
+                    "description": "Whether the journal is open access"
+                },
+                "journal_issn_l": {
+                    "type": "string",
+                    "description": "Journal ISSN-L"
+                },
+                "journal_issns": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "Journal ISSNs"
+                },
+                "doi": {
+                    "type": "string",
+                    "description": "The DOI that was queried"
+                },
+                "title": {
+                    "type": "string",
+                    "description": "Article title"
+                },
+                "year": {
+                    "type": "integer",
+                    "description": "Publication year"
+                },
+                "publisher": {
+                    "type": "string",
+                    "description": "Publisher name"
+                },
+                "url": {
+                    "type": "string",
+                    "description": "URL to the article"
+                }
+            }
+        },
+        "test_examples": [
+            {
+                "doi": "10.1038/nature12373",
+                "email": "test@example.com"
+            },
+            {
+                "doi": "10.1126/science.1234567",
+                "email": "user@example.com"
+            }
+        ]
+    }
+]

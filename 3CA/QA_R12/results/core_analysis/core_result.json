@@ -1,0 +1,270 @@
+{
+  "engine": "workflow_research_quality_metabolic_states_v2",
+  "engine_path": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/tools/research-quality/metabolic_states.py",
+  "engine_sha256": "51ddbf26c336a932f10d216db6092bc5aa24f402adf9dafee6a0435382592401",
+  "methods": {
+    "unit": "Exact-symbol aggregated raw counts; all source features form each cell library-size denominator",
+    "normalization": "Per-cell library size to 10000, then log1p",
+    "feature_scaling": "Scanpy scale(zero_center=False, max_value=10)",
+    "pca": {
+      "solver": "arpack",
+      "zero_center": true,
+      "components": 30,
+      "seed": 0
+    },
+    "neighbors": {
+      "n_neighbors": 15,
+      "seed": 0
+    },
+    "leiden": {
+      "flavor": "igraph",
+      "n_iterations": 2,
+      "directed": false
+    },
+    "HVG_control": "Highest variance of library-normalized log1p expression among prevalence-passing non-mitochondrial symbols; no dispersion/mean bin normalization",
+    "random_controls": "Size-matched sampling without replacement from prevalence-passing non-metabolic, non-mitochondrial symbols",
+    "control_partition": {
+      "method": "KMeans",
+      "n_init": 20,
+      "clusters": 13,
+      "seed": 0
+    },
+    "metrics": {
+      "space": "PCA",
+      "silhouette_subsample_seed": 7321,
+      "silhouette_cells": 3000,
+      "CH_DBI_population": "All QC-passing cells"
+    },
+    "stability": "Leiden randomization on a fixed PCA/neighbor graph; resolution chosen on the same dataset",
+    "resolution_selection": {
+      "stability_filter": "mean_pairwise_ari >= 0.75",
+      "stable_candidates": [
+        0.4,
+        0.8,
+        1.2
+      ],
+      "fallback_to_all_resolutions": false,
+      "primary_criterion": "highest median silhouette across seeds",
+      "tie_breaker": "highest mean_pairwise_ari",
+      "selected_resolution": 0.4
+    }
+  },
+  "inputs": {
+    "expression_path": "inputs/Exp_data_UMIcounts.mtx",
+    "expression_sha256": "51bf0452d166511fecca3f32d89f9fd0f631d173143173d82115f49cdaaa6c1d",
+    "cells_path": "inputs/Cells.csv",
+    "cells_sha256": "459fec35fbd3c89536bab26add4f3b733b4d57ce1deb08ad591455df68b94d37",
+    "genes_path": "inputs/Genes.txt",
+    "genes_sha256": "a285759694b2e6fdb495fa4e996643b50e77588013dbba7b1eb3d1926bd95b60",
+    "matrix_orientation": "genes_by_cells",
+    "matrix_shape": [
+      33538,
+      58843
+    ],
+    "metabolic_genes_path": "inputs/metabolic_genes_total.csv",
+    "metabolic_genes_sha256": "7503180d29693bd1e654ea93281db0e3ec4177ff44842c8b02f6a098402e41a9",
+    "gene_set_audit": {
+      "format": "csv",
+      "nonempty_rows": 1988,
+      "unique_exact_symbols": 1988,
+      "duplicate_exact_rows": 0,
+      "casefold_collision_groups": 0,
+      "exact_matches": 341,
+      "case_insensitive_unique_matches": 1457,
+      "unmatched_symbols": 190,
+      "ambiguous_casefold_symbols": 0,
+      "duplicate_expression_mappings": 0,
+      "matched_expression_symbols_before_prevalence": 1798,
+      "included_expression_symbols_after_prevalence": 1646
+    },
+    "subset": {
+      "field": null,
+      "values": [],
+      "source_cells_selected": 58843
+    }
+  },
+  "parameters": {
+    "seeds": [
+      0,
+      17,
+      42,
+      73,
+      101
+    ],
+    "resolutions": [
+      0.4,
+      0.8,
+      1.2
+    ],
+    "random_baselines": 19,
+    "min_counts": 500,
+    "min_genes": 200,
+    "max_mito_percent": 20.0,
+    "min_feature_cells": 20,
+    "min_metabolic_genes": 30,
+    "metric_cells": 3000,
+    "duplicate_gene_symbols": "sum_raw_counts_by_exact_symbol_before_qc"
+  },
+  "outputs": {
+    "summary_path": "results/summary.json",
+    "summary_sha256": "d65a29ef6f5fba4a0cd85c0d2754dd237d80b45e3b5399082154c5ec9aa3bba7",
+    "labels_path": "results/core_analysis/cluster_labels.csv",
+    "labels_sha256": "b5d8b91703160b387182274bde5f2f2872259d15c5f4d4ca0c6ab4721cf2808c",
+    "matched_genes_path": "results/core_analysis/matched_metabolic_genes.txt",
+    "matched_genes_sha256": "393590468ddfdf13e3167e25085f52d3d53f92e09be9b35d5d422c33c0bac3a8",
+    "matched_expression_genes_path": "results/core_analysis/matched_expression_genes.txt",
+    "matched_expression_genes_sha256": "a906125313cb079f34a25c9bb2894b8ba4afe90d4894b9ee81b08698818d2129",
+    "gene_set_mapping_path": "results/core_analysis/gene_set_mapping.csv",
+    "gene_set_mapping_sha256": "5b6234b2b55c81a31246d1b8291fb44234f48c39ebf33c1611932f9d2abd03ad",
+    "baseline_metrics_path": "results/core_analysis/baseline_metrics.csv",
+    "baseline_metrics_sha256": "9f04440c098066e168b076e485c04865eae595aae30b46339051f60c90bf57ae",
+    "resolution_seed_metrics_path": "results/core_analysis/resolution_seed_metrics.csv",
+    "resolution_seed_metrics_sha256": "a2c3176741f1d8401202dd15ed5e89a7e26fe290d253ff1befd4b174a35480c8",
+    "stability_metrics_path": "results/core_analysis/stability_metrics.csv",
+    "stability_metrics_sha256": "a3a7e4faa7e9bf7c450db0e7b9966013fc8b0777ede4820093ab1d0d5f16fd49",
+    "confounder_metrics_path": "results/core_analysis/confounder_metrics.csv",
+    "confounder_metrics_sha256": "96d60577588cdf9d9fc1b59e667bba06c6093ab5852ddbb44527b3dd4e338cfb",
+    "stratified_cell_type_associations_path": "results/core_analysis/stratified_cell_type_associations.csv",
+    "stratified_cell_type_associations_sha256": "1c98c2c60e6265e950a0c145b5aedcd3f7b10439ca090c478146ee2769533bde",
+    "cluster_composition_path": "results/core_analysis/cluster_composition.csv",
+    "cluster_composition_sha256": "77172cea65321d99297e8b2761666037a3f546b63d9c44f6f2110d384b50e3c3",
+    "replicate_support_path": "results/core_analysis/replicate_support.csv",
+    "replicate_support_sha256": "780d582dd77fdc7018c8b66abb4ce31ab410fba7e016c7fa317fc2935c887fe3",
+    "within_replicate_sensitivity_path": "results/core_analysis/within_replicate_sensitivity.csv",
+    "within_replicate_sensitivity_sha256": "e24deb7efe7f609f575f9c28aade6675a58d6515ccbf4dd1755c746d8d2939ae",
+    "source_feature_mapping_path": "results/core_analysis/source_feature_to_symbol.csv",
+    "source_feature_mapping_sha256": "5c48ea5e7857ce21eb352358b73c0daddfeed2a57c5d77c59d602f3c171c69b0",
+    "umap_coordinates_path": "results/core_analysis/umap_coordinates.csv",
+    "umap_coordinates_sha256": "90c038cbbd94885277dac5035fb4a0753efe3aab9f8a6061fa2256ad269ff86e",
+    "figures": [
+      "figures/metabolic_umap.pdf",
+      "figures/clustering_diagnostics.pdf"
+    ],
+    "figure_sha256": {
+      "figures/metabolic_umap.pdf": "d2b824afe6408b31f1de38dbf047b6b960628f5d622a7edd84e59db1a33d00e6",
+      "figures/clustering_diagnostics.pdf": "a81e53f0835b7b560ce7efb179b5844927e4a28dee43640495c3565bd4975494"
+    }
+  },
+  "facts": {
+    "source_cells": 58843,
+    "source_cells_selected": 58843,
+    "source_genes": 33538,
+    "unique_gene_symbols": 33514,
+    "duplicate_symbol_rows_aggregated": 24,
+    "cells_analyzed": 58843,
+    "unique_cells_analyzed": 58843,
+    "metabolic_source_genes": 1988,
+    "gene_set_audit": {
+      "format": "csv",
+      "nonempty_rows": 1988,
+      "unique_exact_symbols": 1988,
+      "duplicate_exact_rows": 0,
+      "casefold_collision_groups": 0,
+      "exact_matches": 341,
+      "case_insensitive_unique_matches": 1457,
+      "unmatched_symbols": 190,
+      "ambiguous_casefold_symbols": 0,
+      "duplicate_expression_mappings": 0,
+      "matched_expression_symbols_before_prevalence": 1798,
+      "included_expression_symbols_after_prevalence": 1646
+    },
+    "subset": {
+      "field": null,
+      "values": [],
+      "source_cells_selected": 58843
+    },
+    "metabolic_genes_analyzed": 1646,
+    "n_clusters": 13,
+    "conclusion": "inconclusive",
+    "selected_resolution": 0.4,
+    "selected_seed": 0,
+    "resolution_selection": {
+      "stability_filter": "mean_pairwise_ari >= 0.75",
+      "stable_candidates": [
+        0.4,
+        0.8,
+        1.2
+      ],
+      "fallback_to_all_resolutions": false,
+      "primary_criterion": "highest median silhouette across seeds",
+      "tie_breaker": "highest mean_pairwise_ari",
+      "selected_resolution": 0.4
+    },
+    "cluster_size_summary": {
+      "minimum_cells": 1051,
+      "minimum_cluster": "0",
+      "maximum_cells": 9041,
+      "maximum_cluster": "8"
+    },
+    "metrics": {
+      "silhouette": 0.2179557830095291,
+      "calinski_harabasz": 7268.85601539818,
+      "davies_bouldin": 1.4841936593560798,
+      "metric_cells": 3000,
+      "mean_pairwise_ari": 0.9508929508918944,
+      "min_pairwise_ari": 0.918719326147211,
+      "mean_pairwise_nmi": 0.9631111766361935,
+      "min_pairwise_nmi": 0.9416616646963119,
+      "median_silhouette": 0.2179557830095291
+    },
+    "confounders_checked": [
+      "patient",
+      "sample",
+      "source",
+      "cell_type",
+      "cell_subtype",
+      "cell_cycle_phase",
+      "complexity",
+      "computed_total_counts",
+      "computed_detected_genes",
+      "computed_mito_percent"
+    ],
+    "categorical_confounder_nmi": {
+      "patient": 0.5208415826507528,
+      "sample": 0.5450497635834771,
+      "source": 0.19621712990982657,
+      "cell_type": 0.5080146713853227,
+      "cell_subtype": 0.6555593452169448,
+      "cell_cycle_phase": 0.18892107438494368
+    },
+    "cell_type_association_summary": {
+      "cell_type": {
+        "global_nmi": 0.5080146713853227,
+        "replicates_assessable": 6,
+        "within_replicate_nmi_min": 0.3776556876083117,
+        "within_replicate_nmi_max": 0.7401510699062429,
+        "within_replicate_nmi_median": 0.6101373644753265
+      },
+      "cell_subtype": {
+        "global_nmi": 0.6555593452169448,
+        "replicates_assessable": 6,
+        "within_replicate_nmi_min": 0.2202536461964898,
+        "within_replicate_nmi_max": 0.6641405332854194,
+        "within_replicate_nmi_median": 0.6423986366100086
+      }
+    },
+    "replicate_field": "patient",
+    "within_replicate_summary": {
+      "replicate_field": "patient",
+      "replicates_analyzed": 6,
+      "global_vs_within_ari_min": 0.1172606348871376,
+      "global_vs_within_ari_max": 0.9423923871662461,
+      "weakest_replicate": "3",
+      "weakest_replicate_cells": 3287
+    },
+    "baseline_exceedance_fraction": 0.3,
+    "random_control_comparison": {
+      "metabolic_matched_kmeans_silhouette": 0.22800350189208984,
+      "random_controls_exceeding_or_equal": 5,
+      "random_controls_total": 19,
+      "add_one_rank_fraction": 0.3,
+      "interpretation": "descriptive add-one rank, not the observed exceedance proportion and not a biological P value"
+    },
+    "baseline_silhouette_summary": {
+      "HVG": 0.27407148480415344,
+      "random_min": 0.1938902586698532,
+      "random_max": 0.24147167801856995,
+      "random_mean": 0.21696445424305766
+    }
+  }
+}

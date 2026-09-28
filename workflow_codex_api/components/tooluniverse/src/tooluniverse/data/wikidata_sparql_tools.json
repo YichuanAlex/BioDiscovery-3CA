@@ -1,0 +1,45 @@
+[
+  {
+    "type": "WikidataSPARQLTool",
+    "name": "Wikidata_SPARQL_query",
+    "description": "Execute SPARQL queries against Wikidata to retrieve structured data. This tool powers Scholia-style visualizations and can query academic topics, authors, institutions, and research relationships.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "sparql": {
+          "type": "string",
+          "description": "SPARQL query string to execute against Wikidata. Use SPARQL syntax to query academic entities, relationships, and properties."
+        },
+        "max_results": {
+          "type": "integer",
+          "description": "Optional result limit override. If not specified, uses the LIMIT clause in the SPARQL query or returns all results.",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "sparql",
+        "max_results"
+      ]
+    },
+    "return_schema": {
+      "type": "array",
+      "description": "List of query results from Wikidata SPARQL endpoint",
+      "items": {
+        "type": "object",
+        "description": "Each result is a dictionary with variable names as keys and their values from the SPARQL query results"
+      }
+    },
+    "test_examples": [
+      {
+        "sparql": "SELECT ?item ?itemLabel WHERE { ?item wdt:P31 wd:Q11424 . ?item rdfs:label ?itemLabel . FILTER(LANG(?itemLabel) = 'en') } LIMIT 5",
+        "max_results": 5
+      },
+      {
+        "sparql": "SELECT ?author ?authorLabel WHERE { ?author wdt:P31 wd:Q5 . ?author wdt:P106 wd:Q188094 . ?author rdfs:label ?authorLabel . FILTER(LANG(?authorLabel) = 'en') } LIMIT 3"
+      },
+      {
+        "sparql": "SELECT ?university ?universityLabel WHERE { ?university wdt:P31 wd:Q3918 . ?university rdfs:label ?universityLabel . FILTER(LANG(?universityLabel) = 'en') } LIMIT 3"
+      }
+    ]
+  }
+]

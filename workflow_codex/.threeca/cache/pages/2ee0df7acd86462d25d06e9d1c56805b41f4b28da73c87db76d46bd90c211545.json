@@ -1,8 +1,8 @@
 {
   "url": "https://www.weizmann.ac.il/sites/3CA/neuroendocrine",
   "final_url": "https://www.weizmann.ac.il/sites/3CA/neuroendocrine",
-  "fetched_at": "2026-09-14T04:17:32.906167+00:00",
-  "raw_html_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\pages\\2ee0df7acd86462d25d06e9d1c56805b41f4b28da73c87db76d46bd90c211545.html",
+  "fetched_at": "2026-09-17T05:44:04.469997+00:00",
+  "raw_html_path": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.threeca/cache/pages/2ee0df7acd86462d25d06e9d1c56805b41f4b28da73c87db76d46bd90c211545.html",
   "title": "Neuroendocrine | Curated Cancer Cell Atlas",
   "text": "Neuroendocrine Title Data Meta data Cell types Summary Disease Technology #samples #cells Meta programs CNAs UMAP Cell cycle Dong et al. 2020 Cell types Summary Neuroblastoma 10x 13 55190 Meta programs CNAs UMAP Cell cycle Jansky et al. 2021 Cell types Summary Neuroblastoma 10x 14 64769 Meta programs CNAs UMAP Cell cycle Kildisiute et al. 2021 Cell types Summary Neuroblastoma 10x, CEL-seq2 21 19723 Meta programs CNAs UMAP Cell cycle Rao et al. 2020 Cell types Summary Small intestinal neuroendocrine tumor 10x 2 4739 Meta programs CNAs UMAP Cell cycle All Neuroendocrine cancer 50 144421",
   "links": [

@@ -1,0 +1,263 @@
+[
+  {
+    "type": "EnsemblLookupGene",
+    "name": "ensembl_lookup_gene",
+    "description": "Lookup gene information by Ensembl gene ID or symbol. Returns gene details including location, description, and external references.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "gene_id": {
+          "type": "string",
+          "description": "Ensembl gene ID or symbol (e.g., 'ENSG00000139618' or 'BRCA1')"
+        },
+        "species": {
+          "type": "string",
+          "description": "Species name required for gene symbols (default 'homo_sapiens')"
+        }
+      },
+      "required": ["gene_id"]
+    },
+    "fields": {
+      "endpoint": "/lookup/id",
+      "return_format": "JSON"
+    },
+    "return_schema": {
+      "type": "object",
+      "description": "Ensembl gene lookup data",
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "Status of the request"
+        },
+        "data": {
+          "type": "object",
+          "description": "Gene information object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Ensembl gene ID"
+            },
+            "display_name": {
+              "type": "string",
+              "description": "Gene symbol"
+            },
+            "description": {
+              "type": "string",
+              "description": "Gene description"
+            },
+            "biotype": {
+              "type": "string",
+              "description": "Gene biotype"
+            },
+            "start": {
+              "type": "integer",
+              "description": "Gene start position"
+            },
+            "end": {
+              "type": "integer",
+              "description": "Gene end position"
+            },
+            "strand": {
+              "type": "integer",
+              "description": "Gene strand"
+            },
+            "seq_region_name": {
+              "type": "string",
+              "description": "Chromosome name"
+            }
+          }
+        },
+        "gene_id": {
+          "type": "string",
+          "description": "Input gene ID"
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "description": "Lookup BRCA1 gene information",
+        "input": {
+          "gene_id": "ENSG00000012048"
+        },
+        "expected_output": {
+          "status": "success",
+          "data": "Gene information object with BRCA1 details"
+        }
+      }
+    ],
+    "metadata": {
+      "tags": ["gene", "lookup", "annotation"],
+      "difficulty_level": "easy",
+      "estimated_execution_time": "< 2 seconds"
+    }
+  },
+  {
+    "type": "EnsemblGetSequence",
+    "name": "ensembl_get_sequence",
+    "description": "Get DNA sequence for a gene, transcript, or genomic region. Returns sequence in FASTA format.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "sequence_id": {
+          "type": "string",
+          "description": "Ensembl gene/transcript ID or genomic region (e.g., 'ENSG00000139618' or '1:1000000-2000000')"
+        },
+        "type": {
+          "type": "string",
+          "description": "Sequence type: 'genomic', 'cds', 'cdna', 'peptide'",
+          "default": "genomic"
+        }
+      },
+      "required": ["sequence_id"]
+    },
+    "fields": {
+      "endpoint": "/sequence/id",
+      "return_format": "JSON"
+    },
+    "return_schema": {
+      "type": "object",
+      "description": "Ensembl sequence data",
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "Status of the request"
+        },
+        "data": {
+          "type": "array",
+          "description": "Array of sequence objects",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "Sequence ID"
+              },
+              "seq": {
+                "type": "string",
+                "description": "DNA/protein sequence"
+              },
+              "desc": {
+                "type": "string",
+                "description": "Sequence description"
+              },
+              "molecule": {
+                "type": "string",
+                "description": "Molecule type (dna, rna, protein)"
+              }
+            }
+          }
+        },
+        "sequence_id": {
+          "type": "string",
+          "description": "Input sequence ID"
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "description": "Get genomic sequence for BRCA1 gene",
+        "input": {
+          "sequence_id": "ENSG00000012048",
+          "type": "genomic"
+        },
+        "expected_output": {
+          "status": "success",
+          "data": "Array with sequence object containing BRCA1 genomic sequence"
+        }
+      }
+    ],
+    "metadata": {
+      "tags": ["sequence", "dna", "genomic"],
+      "difficulty_level": "easy",
+      "estimated_execution_time": "< 3 seconds"
+    }
+  },
+  {
+    "type": "EnsemblGetVariants",
+    "name": "ensembl_get_variants",
+    "description": "Get genetic variants in a genomic region. Returns SNP and indel information.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "region": {
+          "type": "string",
+          "description": "Genomic region in format 'chromosome:start-end' (e.g., '13:32315086-32400268')"
+        },
+        "species": {
+          "type": "string",
+          "description": "Species name",
+          "default": "homo_sapiens"
+        }
+      },
+      "required": ["region"]
+    },
+    "fields": {
+      "endpoint": "/overlap/region",
+      "return_format": "JSON"
+    },
+    "return_schema": {
+      "type": "object",
+      "description": "Ensembl variant data",
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "Status of the request"
+        },
+        "data": {
+          "type": "array",
+          "description": "Array of variant objects",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "Variant ID"
+              },
+              "start": {
+                "type": "integer",
+                "description": "Variant start position"
+              },
+              "end": {
+                "type": "integer",
+                "description": "Variant end position"
+              },
+              "strand": {
+                "type": "integer",
+                "description": "Variant strand"
+              },
+              "allele_string": {
+                "type": "string",
+                "description": "Allele string (e.g., 'A/T')"
+              },
+              "consequence_type": {
+                "type": "string",
+                "description": "Variant consequence"
+              }
+            }
+          }
+        },
+        "region": {
+          "type": "string",
+          "description": "Input genomic region"
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "description": "Get variants in BRCA1 region",
+        "input": {
+          "region": "13:32315086-32400268"
+        },
+        "expected_output": {
+          "status": "success",
+          "data": "Array of variant objects in BRCA1 region"
+        }
+      }
+    ],
+    "metadata": {
+      "tags": ["variants", "snp", "indel"],
+      "difficulty_level": "easy",
+      "estimated_execution_time": "< 2 seconds"
+    }
+  }
+]

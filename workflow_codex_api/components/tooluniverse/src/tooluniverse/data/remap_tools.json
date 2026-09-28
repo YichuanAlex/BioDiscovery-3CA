@@ -1,0 +1,89 @@
+[
+  {
+    "type": "ReMapRESTTool",
+    "name": "ReMap_get_transcription_factor_binding",
+    "description": "Get transcription factor binding sites from ReMap database for specific genes and cell types",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "gene_name": {
+          "type": "string",
+          "description": "Gene symbol (e.g., BRCA1, TP53, MYC)"
+        },
+        "cell_type": {
+          "type": "string",
+          "description": "Cell type (e.g., HepG2, K562, MCF-7)",
+          "default": "HepG2"
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Number of results to return",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 50
+        }
+      },
+      "required": [
+        "gene_name"
+      ]
+    },
+    "fields": {
+      "endpoint": "https://www.encodeproject.org/search/?type=Experiment&assay_title=ChIP-seq&target.label={gene_name}&biosample_ontology.term_name={cell_type}&format=json&limit={limit}",
+      "return_format": "JSON"
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "experiments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "accession": {
+                "type": "string"
+              },
+              "assay_title": {
+                "type": "string"
+              },
+              "target": {
+                "type": "object"
+              },
+              "biosample_ontology": {
+                "type": "object"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "gene_name": {
+          "type": "string"
+        },
+        "cell_type": {
+          "type": "string"
+        },
+        "count": {
+          "type": "integer"
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "gene_name": "BRCA1",
+        "cell_type": "HepG2",
+        "limit": 5
+      },
+      {
+        "gene_name": "TP53",
+        "cell_type": "K562",
+        "limit": 3
+      },
+      {
+        "gene_name": "MYC",
+        "cell_type": "MCF-7",
+        "limit": 5
+      }
+    ]
+  }
+]

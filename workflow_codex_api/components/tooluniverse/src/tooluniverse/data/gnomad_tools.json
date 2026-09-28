@@ -1,0 +1,109 @@
+[
+  {
+    "type": "gnomADGetGeneConstraints",
+    "name": "gnomad_get_gene_constraints",
+    "description": "Get gene constraint metrics from gnomAD. Returns pLI, LOEUF, and other constraint scores for genes.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "gene_symbol": {
+          "type": "string",
+          "description": "Gene symbol (e.g., 'BRCA1', 'TP53')"
+        }
+      },
+      "required": ["gene_symbol"]
+    },
+    "fields": {
+      "endpoint": "https://gnomad.broadinstitute.org/api",
+      "return_format": "JSON",
+      "query_schema": "query GeneConstraints($geneSymbol: String!) { gene(gene_symbol: $geneSymbol, reference_genome: GRCh38) { symbol gene_id exac_constraint { exp_lof obs_lof pLI exp_mis obs_mis exp_syn obs_syn } gnomad_constraint { exp_lof obs_lof oe_lof pLI exp_mis obs_mis oe_mis exp_syn obs_syn oe_syn } } }"
+    },
+    "return_schema": {
+      "type": "object",
+      "description": "gnomAD gene constraint data",
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "Status of the request"
+        },
+        "data": {
+          "type": "object",
+          "description": "GraphQL response data",
+          "properties": {
+            "data": {
+              "type": "object",
+              "properties": {
+                "gene": {
+                  "type": "object",
+                  "properties": {
+                    "symbol": {
+                      "type": "string",
+                      "description": "Gene symbol"
+                    },
+                    "gene_id": {
+                      "type": "string",
+                      "description": "Ensembl gene ID"
+                    },
+                    "exac_constraint": {
+                      "type": "object",
+                      "description": "ExAC constraint metrics",
+                      "properties": {
+                        "exp_lof": {
+                          "type": "number",
+                          "description": "Expected number of loss-of-function variants"
+                        },
+                        "obs_lof": {
+                          "type": "number",
+                          "description": "Observed number of loss-of-function variants"
+                        },
+                        "pLI": {
+                          "type": "number",
+                          "description": "Probability of being loss-of-function intolerant"
+                        }
+                      }
+                    },
+                    "gnomad_constraint": {
+                      "type": "object",
+                      "description": "gnomAD constraint metrics",
+                      "properties": {
+                        "oe_lof": {
+                          "type": "number",
+                          "description": "Observed/Expected ratio for loss-of-function variants"
+                        },
+                        "pLI": {
+                          "type": "number",
+                          "description": "Probability of being loss-of-function intolerant"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "gene_symbol": {
+          "type": "string",
+          "description": "Input gene symbol"
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "description": "Get constraint metrics for BRCA1 gene",
+        "input": {
+          "gene_symbol": "BRCA1"
+        },
+        "expected_output": {
+          "status": "success",
+          "data": "Gene constraint data with pLI and LOEUF scores"
+        }
+      }
+    ],
+    "metadata": {
+      "tags": ["constraint", "pLI", "LOEUF", "gnomAD"],
+      "difficulty_level": "intermediate",
+      "estimated_execution_time": "< 3 seconds"
+    }
+  }
+]

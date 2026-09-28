@@ -1,0 +1,131 @@
+[
+  {
+    "name": "who_gho_get_data",
+    "description": "Retrieve health data from WHO GHO for a specific indicator. Supports filtering by country, year, and other dimensions. Returns actual health statistics and measurements.",
+    "type": "WHOGHORESTTool",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "indicator_code": {
+          "type": "string",
+          "description": "The WHO GHO indicator code (e.g., 'WHOSIS_000001', 'Adult_curr_cig_smoking')"
+        },
+        "country_code": {
+          "type": "string",
+          "description": "ISO 3-letter country code (e.g., 'USA', 'GBR', 'CHN'). Optional, returns all countries if not specified."
+        },
+        "year": {
+          "type": "integer",
+          "description": "Year to filter data (e.g., 2020). Optional, returns all years if not specified."
+        },
+        "top": {
+          "type": "integer",
+          "description": "Maximum number of results to return (default: 100, max: 1000)",
+          "default": 100
+        },
+        "skip": {
+          "type": "integer",
+          "description": "Number of results to skip for pagination (default: 0)",
+          "default": 0
+        }
+      },
+      "required": ["indicator_code"]
+    },
+    "fields": {
+      "endpoint": "/Data",
+      "return_format": "JSON"
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "@odata.context": {
+          "type": "string"
+        },
+        "value": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "Id": {
+                "type": "integer"
+              },
+              "IndicatorCode": {
+                "type": "string"
+              },
+              "SpatialDim": {
+                "type": "string"
+              },
+              "TimeDim": {
+                "type": "string"
+              },
+              "Value": {
+                "type": ["number", "string", "null"]
+              },
+              "NumericValue": {
+                "type": ["number", "null"]
+              },
+              "Date": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "who_gho_query_health_data",
+    "description": "Answer generic health questions using natural language queries. Automatically searches for relevant indicators, retrieves health data, and returns formatted answers with actual values. Example: 'smoking rate in USA 2020' returns the actual smoking percentage.",
+    "type": "WHOGHOQueryTool",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Natural language query (e.g., 'smoking rate in USA', 'diabetes prevalence in China 2020')"
+        },
+        "country_code": {
+          "type": "string",
+          "description": "ISO 3-letter country code (e.g., 'USA', 'GBR'). Optional, will be extracted from query if not provided."
+        },
+        "year": {
+          "type": "integer",
+          "description": "Year for data (e.g., 2020). Optional, will be extracted from query if not provided."
+        },
+        "top": {
+          "type": "integer",
+          "description": "Maximum number of results to return (default: 5)",
+          "default": 5
+        }
+      },
+      "required": ["query"]
+    },
+    "fields": {
+      "endpoint": "query",
+      "return_format": "JSON"
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "answer": {
+          "type": "string"
+        },
+        "value": {
+          "type": ["number", "string", "null"]
+        },
+        "indicator": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+              },
+        "year": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        }
+      }
+    }
+  }
+]

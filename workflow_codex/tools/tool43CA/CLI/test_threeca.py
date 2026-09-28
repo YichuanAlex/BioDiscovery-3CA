@@ -26,6 +26,25 @@ HTML = """
 
 
 class ThreeCATest(unittest.TestCase):
+    def test_migrated_partial_extraction_is_preserved_and_rebuilt(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            archive_path = root / "data.tar.gz"
+            with tarfile.open(archive_path, "w:gz") as archive:
+                contents = b"matrix contents"
+                info = tarfile.TarInfo("counts.mtx")
+                info.size = len(contents)
+                archive.addfile(info, io.BytesIO(contents))
+            partial = root / "data.extracted"
+            partial.mkdir()
+            (partial / "old.txt").write_text("preserve")
+            result = threeca.extract_archive(archive_path)
+            rebuilt = Path(result["path"])
+            self.assertNotEqual(rebuilt, partial)
+            self.assertEqual((partial / "old.txt").read_text(), "preserve")
+            self.assertEqual((rebuilt / "counts.mtx").read_bytes(), contents)
+            self.assertTrue((rebuilt / ".threeca-extraction.json").is_file())
+
     def test_parse_search_and_archive_safety(self):
         self.assertEqual(threeca.DEFAULT_MAX_BYTES, 0)
         self.assertEqual(threeca.DEFAULT_MAX_EXTRACT_BYTES, 0)

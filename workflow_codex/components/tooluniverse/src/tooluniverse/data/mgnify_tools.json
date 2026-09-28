@@ -1,0 +1,121 @@
+[
+  {
+    "name": "MGnify_search_studies",
+    "type": "MGnifyStudiesTool",
+    "description": "Search MGnify metagenomics/microbiome studies by biome/keyword. Use to discover study accessions and attributes for downstream analyses and downloads.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "biome": {
+          "type": "string",
+          "description": "Biome identifier (e.g., 'root:Host-associated')."
+        },
+        "search": {
+          "type": "string",
+          "description": "Keyword to search in study titles/descriptions."
+        },
+        "size": {
+          "type": "integer",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100,
+          "description": "Number of records per page (1–100)."
+        }
+      }
+    },
+    "fields": {
+      "endpoint": "https://www.ebi.ac.uk/metagenomics/api/latest/studies",
+      "format": "json"
+    },
+    "return_schema": {
+      "type": "object",
+      "description": "MGnify study list response",
+      "properties": {
+        "status": {"type": "string"},
+        "data": {
+          "type": "object",
+          "properties": {
+            "data": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {"type": "string"},
+                  "type": {"type": "string"},
+                  "attributes": {"type": "object"}
+                }
+              }
+            }
+          }
+        },
+        "url": {"type": "string"}
+      }
+    },
+    "test_examples": [
+      {"biome": "root:Host-associated", "size": 1}
+    ],
+    "label": ["MGnify", "Microbiome", "Study"],
+    "metadata": {
+      "tags": ["microbiome", "metagenomics", "study"],
+      "estimated_execution_time": "< 2 seconds"
+    }
+  },
+  {
+    "name": "MGnify_list_analyses",
+    "type": "MGnifyAnalysesTool",
+    "description": "List analyses associated with a study accession (taxonomic/functional outputs). Use to enumerate available processed results for programmatic retrieval.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "study_accession": {
+          "type": "string",
+          "description": "MGnify study accession (e.g., 'MGYS00000001')."
+        },
+        "size": {
+          "type": "integer",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100,
+          "description": "Number of records per page (1–100)."
+        }
+      },
+      "required": ["study_accession"]
+    },
+    "fields": {
+      "endpoint": "https://www.ebi.ac.uk/metagenomics/api/latest/analyses",
+      "format": "json"
+    },
+    "return_schema": {
+      "type": "object",
+      "description": "MGnify analyses list response",
+      "properties": {
+        "status": {"type": "string"},
+        "data": {
+          "type": "object",
+          "properties": {
+            "data": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {"type": "string"},
+                  "type": {"type": "string"},
+                  "attributes": {"type": "object"}
+                }
+              }
+            }
+          }
+        },
+        "url": {"type": "string"}
+      }
+    },
+    "test_examples": [
+      {"study_accession": "MGYS00000001", "size": 1}
+    ],
+    "label": ["MGnify", "Microbiome", "Analysis"],
+    "metadata": {
+      "tags": ["analysis", "taxonomy", "function"],
+      "estimated_execution_time": "< 2 seconds"
+    }
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "type": "NCBIBlastTool",
+    "name": "BLAST_nucleotide_search",
+    "description": "Search nucleotide sequences using NCBI BLAST blastn against nucleotide databases",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "sequence": {"type": "string", "description": "DNA sequence to search"},
+        "database": {"type": "string", "default": "nt", "description": "Database (nt, est, etc.)"},
+        "expect": {"type": "number", "default": 10.0, "description": "E-value threshold"},
+        "hitlist_size": {"type": "integer", "default": 50, "description": "Max hits to return"}
+      },
+      "required": ["sequence"]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "query_id": {"type": "string"},
+        "query_length": {"type": "integer"},
+        "database": {"type": "string"},
+        "alignments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "hit_id": {"type": "string"},
+              "hit_def": {"type": "string"},
+              "hit_length": {"type": "integer"},
+              "hsps": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "score": {"type": "number"},
+                    "bits": {"type": "number"},
+                    "expect": {"type": "number"},
+                    "identities": {"type": "integer"},
+                    "positives": {"type": "integer"},
+                    "gaps": {"type": "integer"},
+                    "query": {"type": "string"},
+                    "match": {"type": "string"},
+                    "sbjct": {"type": "string"}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {"sequence": "ATGCGATCGATCGATCGATCG", "database": "nt"},
+      {"sequence": "AAAAATTTTTCCCCCGGGGG", "database": "est"}
+    ]
+  },
+  {
+    "type": "NCBIBlastTool",
+    "name": "BLAST_protein_search",
+    "description": "Search protein sequences using NCBI BLAST blastp against protein databases",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "sequence": {"type": "string", "description": "Protein sequence to search"},
+        "database": {"type": "string", "default": "nr", "description": "Database (nr, swissprot, etc.)"},
+        "expect": {"type": "number", "default": 10.0},
+        "hitlist_size": {"type": "integer", "default": 50}
+      },
+      "required": ["sequence"]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "query_id": {"type": "string"},
+        "query_length": {"type": "integer"},
+        "database": {"type": "string"},
+        "alignments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "hit_id": {"type": "string"},
+              "hit_def": {"type": "string"},
+              "hit_length": {"type": "integer"},
+              "hsps": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "score": {"type": "number"},
+                    "bits": {"type": "number"},
+                    "expect": {"type": "number"},
+                    "identities": {"type": "integer"},
+                    "positives": {"type": "integer"},
+                    "gaps": {"type": "integer"},
+                    "query": {"type": "string"},
+                    "match": {"type": "string"},
+                    "sbjct": {"type": "string"}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {"sequence": "MKLLILTCLVAVALARPKHPIKHQGLPQEVLNENLLRFFVAPFPEVFGKEKVNEL"},
+      {"sequence": "MKWVTFISLLFLFSSAYS"}
+    ]
+  }
+]

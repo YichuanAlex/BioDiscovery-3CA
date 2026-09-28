@@ -1,0 +1,372 @@
+[
+  {
+    "type": "HPASearchGenesTool",
+    "name": "HPA_search_genes_by_query",
+    "description": "Search for matching genes by gene name, keywords, or cell line names and return Ensembl ID list. This is the entry tool for many HPA query workflows.",
+    "fields": {
+      "endpoint": "https://www.proteinatlas.org/api/search_download.php",
+      "timeout": 30,
+      "format": "json"
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "search_query": {
+          "type": "string",
+          "description": "Gene name, alias, keyword, or cell line name to search for, e.g., 'EGFR', 'TP53', or 'MCF7'."
+        }
+      },
+      "required": [
+        "search_query"
+      ]
+    },
+    "input_description": "Input a search query string such as 'BCAS1' or 'MCF7'. The tool will search HPA database for matching genes.",
+    "output_description": "Returns a list containing all matching genes, each with official name, Ensembl ID, and known synonyms. Use the Ensembl ID for subsequent detailed queries."
+  },
+  {
+    "type": "HPAGetComparativeExpressionTool",
+    "name": "HPA_get_comparative_expression_by_gene_and_cellline",
+    "description": "Compare the expression level differences of a gene between a specific cell line and healthy tissues using gene name and cell line name.",
+    "fields": {
+      "endpoint": "https://www.proteinatlas.org/api/search_download.php",
+      "timeout": 30,
+      "format": "json"
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "gene_name": {
+          "type": "string",
+          "description": "Gene name or gene symbol, e.g., 'TP53', 'BRCA1', 'EGFR', etc."
+        },
+        "cell_line": {
+          "type": "string",
+          "description": "Cell line name, supported cell lines include: ishikawa, hela, mcf7, a549, hepg2, jurkat, pc3, rh30, siha, u251."
+        }
+      },
+      "required": [
+        "gene_name",
+        "cell_line"
+      ]
+    },
+    "input_description": "Input gene name (e.g., TP53) and cell line name (e.g., hela). The tool will query the RNA expression level of the specified gene in the specific cell line and simultaneously obtain and compare the average expression level of the gene in healthy tissues.",
+    "output_description": "Returns comparison results containing gene basic information, cell line expression value, and healthy tissue expression value. Provides expression values in nTPM units and textual description of expression level differences. Includes gene symbol, synonyms, expression unit explanation, and detailed comparison summary."
+  },
+  {
+    "type": "HPAGetDiseaseExpressionTool",
+    "name": "HPA_get_disease_expression_by_gene_tissue_disease",
+    "description": "Compare the expression level of a gene in specific disease state versus healthy state using gene name, tissue type, and disease name.",
+    "fields": {
+      "endpoint": "https://www.proteinatlas.org/api/search_download.php",
+      "timeout": 30,
+      "format": "json"
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "gene_name": {
+          "type": "string",
+          "description": "Gene name or gene symbol, e.g., 'TP53', 'BRCA1', 'KRAS', etc."
+        },
+        "tissue_type": {
+          "type": "string",
+          "description": "Tissue type, e.g., 'brain', 'breast', 'colon', 'lung', etc., optional parameter."
+        },
+        "disease_name": {
+          "type": "string",
+          "description": "Disease name, supported diseases include: brain_cancer, breast_cancer, colon_cancer, lung_cancer, liver_cancer, prostate_cancer, kidney_cancer, pancreatic_cancer, stomach_cancer, ovarian_cancer."
+        }
+      },
+      "required": [
+        "gene_name",
+        "tissue_type",
+        "disease_name"
+      ]
+    },
+    "input_description": "Input gene name (e.g., BRCA1) and disease name (e.g., breast_cancer). Optionally specify tissue type to precisely locate disease-related tissue. The tool will query the RNA expression level of the specified gene in disease state.",
+    "output_description": "Returns comparison analysis of gene expression in disease state versus healthy state. Contains nTPM values for disease expression and healthy expression. Provides fold change analysis and determination of expression up/down regulation."
+  },
+  {
+    "type": "HPAGetBiologicalProcessTool",
+    "name": "HPA_get_biological_processes_by_gene",
+    "description": "Get biological process information for a gene, with special focus on key processes like apoptosis, cell cycle, etc.",
+    "fields": {
+      "endpoint": "https://www.proteinatlas.org/api/search_download.php",
+      "timeout": 30,
+      "format": "json"
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "gene_name": {
+          "type": "string",
+          "description": "Gene name or gene symbol, e.g., 'TP53', 'CDK1', 'CASP3', etc."
+        },
+        "filter_processes": {
+          "type": "boolean",
+          "description": "Whether to filter and focus on specific biological processes (apoptosis, cell cycle, transcription regulation, etc.), defaults to true."
+        }
+      },
+      "required": [
+        "gene_name",
+        "filter_processes"
+      ]
+    },
+    "input_description": "Input gene name (e.g., TP53). Optionally choose whether to filter specific biological process categories. The tool will retrieve gene function annotation information from Human Protein Atlas.",
+    "output_description": "Returns list of all biological processes the gene is involved in. Highlights target processes (apoptosis, biological rhythm, cell cycle, host-virus interaction, necrosis, transcription, transcription regulation). Provides total process count statistics and detailed descriptions of target processes."
+  },
+  {
+    "type": "HPAGetGenePageDetailsTool",
+    "name": "HPA_get_comprehensive_gene_details_by_ensembl_id",
+    "description": "Get detailed in-depth information from gene page using Ensembl Gene ID, including image URLs, antibody data, protein expression, and comprehensive information. This is the core tool for retrieving all images (tissue immunohistochemistry, subcellular immunofluorescence).",
+    "fields": {
+      "endpoint": "https://www.proteinatlas.org/{ensembl_id}.xml",
+      "timeout": 30,
+      "format": "xml"
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "ensembl_id": {
+          "type": "string",
+          "description": "Ensembl Gene ID, e.g., 'ENSG00000064787' (BCAS1), 'ENSG00000141510' (TP53), etc. Usually obtained through HPA_search_genes_by_query tool."
+        },
+        "include_images": {
+          "type": "boolean",
+          "description": "Whether to include image URL information (immunofluorescence, cell line images, etc.), defaults to true."
+        },
+        "include_antibodies": {
+          "type": "boolean",
+          "description": "Whether to include detailed antibody information (validation status, Western blot data, etc.), defaults to true."
+        },
+        "include_expression": {
+          "type": "boolean",
+          "description": "Whether to include detailed expression data (tissue specificity, subcellular localization, etc.), defaults to true."
+        }
+      },
+      "required": [
+        "ensembl_id",
+        "include_images",
+        "include_antibodies",
+        "include_expression"
+      ]
+    },
+    "input_description": "Input Ensembl Gene ID (e.g., ENSG00000064787). The tool will parse HPA's single gene XML page to get the most comprehensive data. Optionally include detailed information for images, antibodies, and expression data.",
+    "output_description": "Returns comprehensive gene details including basic information, tissue immunohistochemistry (IHC) image URL list with metadata, subcellular immunofluorescence (IF) image URL list with metadata, antibody validation data, detailed expression data for tissues and cell lines, subcellular localization information, and statistical summary (antibody count, image count, expression tissue count, etc.)."
+  },
+  {
+    "type": "HPAGetCancerPrognosticsTool",
+    "name": "HPA_get_cancer_prognostics_by_gene",
+    "description": "Retrieve prognostic value of a gene across various cancer types, indicating if its expression level correlates with patient survival outcomes.",
+    "fields": {
+      "endpoint": "https://www.proteinatlas.org/{ensembl_id}.json",
+      "timeout": 30,
+      "format": "json"
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "ensembl_id": {
+          "type": "string",
+          "description": "Ensembl Gene ID of the gene to check, e.g., 'ENSG00000141510' for TP53, 'ENSG00000012048' for BRCA1."
+        }
+      },
+      "required": [
+        "ensembl_id"
+      ]
+    },
+    "input_description": "Input a single Ensembl Gene ID. The tool will use HPA's efficient JSON API to retrieve cancer prognostic data.",
+    "output_description": "Returns a list of cancers where the gene has significant prognostic value, including the prognostic type (favorable/unfavorable), p-value, and summary statistics. Explains whether high/low expression correlates with better/worse patient survival."
+  },
+  {
+    "type": "HPAGetProteinInteractionsTool",
+    "name": "HPA_get_protein_interactions_by_gene",
+    "description": "Fetch known protein-protein interaction partners for a given gene from Human Protein Atlas database.",
+    "fields": {
+      "endpoint": "https://www.proteinatlas.org/api/search_download.php",
+      "timeout": 30,
+      "format": "json"
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "gene_name": {
+          "type": "string",
+          "description": "Official gene symbol, e.g., 'EGFR', 'TP53', 'BRCA1', etc."
+        }
+      },
+      "required": [
+        "gene_name"
+      ]
+    },
+    "input_description": "Input a single gene name. The tool will query HPA's protein-protein interaction database.",
+    "output_description": "Returns a list of proteins that are known to interact with the protein product of the queried gene. Includes interaction partner count and detailed interaction summary."
+  },
+  {
+    "type": "HPAGetRnaExpressionByTissueTool",
+    "name": "HPA_get_rna_expression_in_specific_tissues",
+    "description": "Query RNA expression levels (nTPM) for a specific gene in one or more user-specified tissues with precise tissue matching.",
+    "fields": {
+      "endpoint": "https://www.proteinatlas.org/{ensembl_id}.json",
+      "timeout": 30,
+      "format": "json"
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "ensembl_id": {
+          "type": "string",
+          "description": "Ensembl Gene ID for the gene, e.g., 'ENSG00000141510' for TP53."
+        },
+        "tissue_names": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "List of tissue names to query, e.g., ['brain', 'liver', 'heart muscle', 'kidney']. Case-insensitive matching is supported."
+        }
+      },
+      "required": [
+        "ensembl_id",
+        "tissue_names"
+      ]
+    },
+    "input_description": "Input an Ensembl Gene ID and a list of tissue names. The tool will perform intelligent tissue name matching.",
+    "output_description": "Returns a dictionary mapping queried tissue names to their expression data, including matched tissue name, expression value in nTPM, and categorized expression level (Very high/High/Medium/Low/Very low). Also provides a sample of available tissues for reference."
+  },
+  {
+    "type": "HPAGetContextualBiologicalProcessTool",
+    "name": "HPA_get_contextual_biological_process_analysis",
+    "description": "Analyze a gene's biological processes in the context of a specific tissue or cell line by integrating functional annotation with expression data to determine functional relevance.",
+    "fields": {
+      "endpoint": "composite_workflow",
+      "timeout": 60,
+      "format": "json"
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "gene_name": {
+          "type": "string",
+          "description": "Gene name or symbol, e.g., 'TP53', 'EGFR', 'BRCA1'."
+        },
+        "context_name": {
+          "type": "string",
+          "description": "Name of the tissue or cell line to provide context, e.g., 'brain', 'liver', 'hela', 'mcf7'."
+        }
+      },
+      "required": [
+        "gene_name",
+        "context_name"
+      ]
+    },
+    "input_description": "Input a gene name and a context (tissue or cell line name). This composite tool will perform multi-step analysis combining biological processes and expression data.",
+    "output_description": "Returns a comprehensive contextual analysis including: gene's biological processes, expression level in the specified context, contextual conclusion about functional relevance, and intelligent interpretation of whether the gene's roles are likely important in the given tissue/cell line context."
+  },
+  {
+    "type": "HPAGetRnaExpressionBySourceTool",
+    "name": "HPA_get_rna_expression_by_source",
+    "description": "Get RNA expression level (nTPM) for a gene in a specific biological source using optimized columns parameter. Supports tissue, blood, brain, and single_cell source types with comprehensive source mappings.",
+    "fields": {
+      "endpoint": "https://www.proteinatlas.org/api/search_download.php",
+      "timeout": 30,
+      "format": "json"
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "gene_name": {
+          "type": "string",
+          "description": "Gene name or gene symbol, e.g., 'GFAP', 'TP53', 'BRCA1', etc."
+        },
+        "source_type": {
+          "type": "string",
+          "description": "The type of biological source. Choose from: 'tissue', 'blood', 'brain', 'single_cell'."
+        },
+        "source_name": {
+          "type": "string",
+          "description": "The specific name of the biological source, e.g., 'liver', 'heart_muscle', 't_cell', 'hepatocytes', 'cerebellum'. Must be a valid name from the comprehensive HPA columns mapping."
+        }
+      },
+      "required": [
+        "gene_name",
+        "source_type",
+        "source_name"
+      ]
+    },
+    "input_description": "Input gene name (e.g., GFAP), source type (tissue/blood/brain/single_cell), and specific source name (e.g., liver). The tool will directly query the specific column for highly efficient data retrieval.",
+    "output_description": "Returns precise RNA expression data with nTPM value, expression level categorization (Very high/High/Medium/Low/Very low), and metadata about the query. Includes gene information, source details, expression unit explanation, and the specific data column used."
+  },
+  {
+    "type": "HPAGetSubcellularLocationTool",
+    "name": "HPA_get_subcellular_location",
+    "description": "Get annotated subcellular locations for a protein using optimized columns parameter. Retrieves both main and additional subcellular locations efficiently.",
+    "fields": {
+      "endpoint": "https://www.proteinatlas.org/api/search_download.php",
+      "timeout": 30,
+      "format": "json"
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "gene_name": {
+          "type": "string",
+          "description": "Gene name or gene symbol, e.g., 'CCNB1', 'TP53', 'EGFR', etc."
+        }
+      },
+      "required": [
+        "gene_name"
+      ]
+    },
+    "input_description": "Input gene name (e.g., CCNB1). The tool will use optimized scml and scal columns to efficiently retrieve subcellular location annotations.",
+    "output_description": "Returns comprehensive subcellular location data including main locations (primary sites), additional locations (secondary sites), total location count, and a formatted location summary. Provides both structured data and human-readable summary."
+  },
+  {
+    "type": "HPAGetGeneJSONTool",
+    "name": "HPA_get_gene_basic_info_by_ensembl_id",
+    "description": "Get gene basic information and expression data from Human Protein Atlas using Ensembl Gene ID. Enhanced version now uses efficient JSON API.",
+    "fields": {
+      "endpoint": "https://www.proteinatlas.org/{ensembl_id}.json",
+      "timeout": 30,
+      "format": "json"
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "ensembl_id": {
+          "type": "string",
+          "description": "Ensembl Gene ID, e.g., 'ENSG00000134057', 'ENSG00000141510', etc."
+        }
+      },
+      "required": [
+        "ensembl_id"
+      ]
+    },
+    "input_description": "Input Ensembl Gene ID (e.g., ENSG00000134057). This enhanced tool now uses HPA's direct JSON API for more comprehensive and faster data retrieval.",
+    "output_description": "Returns gene information in compatible JSON format including Ensembl ID, gene name, gene synonyms, Uniprot ID, biological process annotations, and comprehensive RNA tissue-specific expression data."
+  },
+  {
+    "type": "HPAGetGeneXMLTool",
+    "name": "HPA_get_gene_tsv_data_by_ensembl_id",
+    "description": "Get detailed gene data in TSV format from Human Protein Atlas using Ensembl Gene ID (backward compatibility tool).",
+    "fields": {
+      "endpoint": "https://www.proteinatlas.org/api/search_download.php",
+      "timeout": 30,
+      "format": "tsv"
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "ensembl_id": {
+          "type": "string",
+          "description": "Ensembl Gene ID, e.g., 'ENSG00000134057', 'ENSG00000141510', etc."
+        }
+      },
+      "required": [
+        "ensembl_id"
+      ]
+    },
+    "input_description": "Input Ensembl Gene ID (e.g., ENSG00000134057). This tool uses TSV format to get detailed gene expression and annotation data.",
+    "output_description": "Returns detailed gene data in TSV format. Includes gene basic information, biological processes, RNA expression levels, and covers expression data from multiple cell lines for in-depth analysis."
+  }
+]

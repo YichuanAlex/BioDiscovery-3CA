@@ -1,0 +1,76 @@
+[
+  {
+    "type": "PubTatorTool",
+    "name": "PubTator3_EntityAutocomplete",
+    "description": "Provides suggestions for the best‐matching standardized PubTator IDs for a partial biomedical term (gene, disease, chemical, or variant). Use this tool first to convert free‐text names into the stable @IDs required by the other PubTator APIs.",
+    "endpoint_path": "/entity/autocomplete/",
+    "method": "GET",
+    "param_map": {
+      "text": "query",
+      "entity_type": "concept",
+      "max_results": "limit"
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "A few characters or the full name of the biomedical concept you are trying to look up (e.g. “BRAF V6”)."
+        },
+        "entity_type": {
+          "type": "string",
+          "description": "Optional filter to restrict suggestions to a single category such as GENE, DISEASE, CHEMICAL, or VARIANT."
+        },
+        "max_results": {
+          "type": "integer",
+          "description": "Maximum number of suggestions to return (1 - 50, default = 10)."
+        }
+      },
+      "required": [
+        "text",
+        "entity_type",
+        "max_results"
+      ]
+    },
+    "fields": {
+      "tool_subtype": "PubTatorEntity"
+    }
+  },
+  {
+    "type": "PubTatorTool",
+    "name": "PubTator3_LiteratureSearch",
+    "description": "Find PubMed articles that match a keyword, a PubTator entity ID (e.g. “@GENE_BRAF”), or an entity-to-entity relation expression (e.g. “relations:treat|@CHEMICAL_Doxorubicin|@DISEASE_Neoplasms”).",
+    "endpoint_path": "/search/",
+    "method": "GET",
+    "param_map": {
+      "query": "text",
+      "page": "page",
+      "page_size": "page_size"
+    },
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "What you want to search for. This can be plain keywords, a single PubTator ID, or the special relation syntax shown above."
+        },
+        "page": {
+          "type": "integer",
+          "description": "Zero-based results page (optional; default = 0)."
+        },
+        "page_size": {
+          "type": "integer",
+          "description": "How many PMIDs to return per page (optional; default = 20, maximum = 200)."
+        }
+      },
+      "required": [
+        "query",
+        "page",
+        "page_size"
+      ]
+    },
+    "fields": {
+      "tool_subtype": "PubTatorSearch"
+    }
+  }
+]

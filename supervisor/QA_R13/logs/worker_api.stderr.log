@@ -1,0 +1,2 @@
+ERROR: API 400: {"error":{"message":"Thinking mode does not support this tool_choice (request_id: ad5fdd58-b757-46f3-9e81-44421b295a62)","type":"invalid_request_error","param":null,"code":"invalid_request_error"}}
+ERROR: API 400: {"error":{"message":"The `reasoning_content` in the thinking mode must be passed back to the API. (request_id: f63e4e45-5edd-4fbb-b960-b43a5db3a9e0)","type":"invalid_request_error","param":null,"code":"invalid_request_error"}}

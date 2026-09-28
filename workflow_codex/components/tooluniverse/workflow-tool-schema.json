@@ -1,0 +1,375 @@
+{
+  "schema_version": 1,
+  "mode": "local-stdio-compact",
+  "tool_count": 5,
+  "tools_sha256": "2a26b3fc4406e31cecd9db93cd6c32aa86b09379ad18c374fb5cb11b52a1ece5",
+  "tools": [
+    {
+      "_meta": {
+        "fastmcp": {
+          "tags": []
+        }
+      },
+      "annotations": {
+        "destructiveHint": false,
+        "readOnlyHint": true
+      },
+      "description": "Unified tool listing with multiple modes for different use cases. Supports listing tool names, basic info, categories, grouped by category, summary info, or custom fields. Replaces the previous separate list tools (list_tool_names, list_categories, list_tools_by_category, list_tools_basic, list_tools_by_fields, list_available_tooluniverse_tools).",
+      "inputSchema": {
+        "properties": {
+          "mode": {
+            "description": "Output mode: 'names' (tool names only), 'basic' (name+description), 'categories' (category statistics), 'by_category' (grouped by category), 'summary' (name+description+type+has_parameters), 'custom' (user-specified fields)",
+            "type": "string"
+          },
+          "categories": {
+            "anyOf": [
+              {
+                "items": {},
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Optional list of tool categories to filter by (applies to all modes except 'categories')",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "fields": {
+            "anyOf": [
+              {
+                "items": {},
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Required for mode='custom'. List of fields to include (e.g., [\"name\", \"type\", \"category\"])",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "group_by_category": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Whether to group results by category (only for mode='names', 'basic', or 'summary')"
+          },
+          "brief": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Whether to truncate description to brief (only for mode='basic' or 'summary')"
+          },
+          "limit": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Maximum number of tools to return (optional, for pagination)"
+          },
+          "offset": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Number of tools to skip (optional, for pagination, default: 0)"
+          }
+        },
+        "required": [
+          "mode"
+        ],
+        "type": "object",
+        "additionalProperties": false
+      },
+      "name": "tooluniverse__list_tools",
+      "title": "List Tools"
+    },
+    {
+      "_meta": {
+        "fastmcp": {
+          "tags": []
+        }
+      },
+      "annotations": {
+        "destructiveHint": false,
+        "readOnlyHint": true
+      },
+      "description": "Search tools using simple text matching or regex patterns. Supports both simple text search (default, agent-friendly) and regex patterns (advanced). Independent from Tool_Finder_Keyword, uses basic text/regex matching without TF-IDF or NLP processing. Fast and simple for pattern searches.",
+      "inputSchema": {
+        "properties": {
+          "pattern": {
+            "description": "Search pattern (text or regex depending on search_mode)",
+            "type": "string"
+          },
+          "field": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Field to search in: name, description, type, or category"
+          },
+          "search_mode": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Search mode: 'text' for simple case-insensitive text matching (default, agent-friendly), 'regex' for regex pattern matching"
+          },
+          "limit": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Maximum number of tools to return (default: 100)"
+          },
+          "offset": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Number of tools to skip (optional, for pagination, default: 0)"
+          },
+          "categories": {
+            "anyOf": [
+              {
+                "items": {},
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Optional list of tool categories to filter by",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "pattern"
+        ],
+        "type": "object",
+        "additionalProperties": false
+      },
+      "name": "tooluniverse__grep_tools",
+      "title": "Grep Tools"
+    },
+    {
+      "_meta": {
+        "fastmcp": {
+          "tags": []
+        }
+      },
+      "annotations": {
+        "destructiveHint": false,
+        "readOnlyHint": true
+      },
+      "description": "Get tool information with configurable detail level. Supports single tool (string) or multiple tools (list). Use detail_level='description' to get only the description field, or detail_level='full' to get complete tool definition including parameter schema.",
+      "inputSchema": {
+        "properties": {
+          "tool_names": {
+            "description": "Single tool name (string) or list of tool names (max 20 tools)",
+            "type": "string"
+          },
+          "detail_level": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Detail level: 'description' returns only the description field (complete, not truncated), 'full' returns complete tool definition including parameter schema"
+          }
+        },
+        "required": [
+          "tool_names"
+        ],
+        "type": "object",
+        "additionalProperties": false
+      },
+      "name": "tooluniverse__get_tool_info",
+      "title": "Get Tool Info"
+    },
+    {
+      "_meta": {
+        "fastmcp": {
+          "tags": []
+        }
+      },
+      "annotations": {
+        "destructiveHint": false,
+        "readOnlyHint": false
+      },
+      "description": "Execute a ToolUniverse tool directly with custom arguments. This is the primary way to run any tool in the ToolUniverse system. You must get the tool definition first to figure out the arguments to pass.",
+      "inputSchema": {
+        "properties": {
+          "tool_name": {
+            "description": "Name of the tool to execute (e.g., 'example_tool_name')",
+            "type": "string"
+          },
+          "arguments": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Tool arguments as a JSON object (dictionary), NOT a JSON string. Pass the parameters required by the target tool as key-value pairs. Example: {\"param1\": \"value1\", \"param2\": 5}. Do NOT use string format like 'param1=value1' or '\"{\\\"param1\\\":\\\"value1\\\"}\"'. Must be a proper JSON object."
+          }
+        },
+        "required": [
+          "tool_name"
+        ],
+        "type": "object",
+        "additionalProperties": false
+      },
+      "name": "tooluniverse__execute_tool",
+      "title": "Execute Tool"
+    },
+    {
+      "_meta": {
+        "fastmcp": {
+          "tags": []
+        }
+      },
+      "annotations": {
+        "destructiveHint": false,
+        "readOnlyHint": true
+      },
+      "description": "Find and search available ToolUniverse tools using AI-powered search.\n\nThis tool provides the same functionality as the tools/find MCP method.",
+      "inputSchema": {
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Search query describing the desired functionality"
+          },
+          "categories": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Optional list of categories to filter by"
+          },
+          "limit": {
+            "default": 10,
+            "type": "integer",
+            "description": "Maximum number of results to return (default: 10)"
+          },
+          "use_advanced_search": {
+            "default": true,
+            "type": "boolean",
+            "description": "Use AI-powered search if available (default: True)"
+          },
+          "search_method": {
+            "default": "auto",
+            "type": "string",
+            "description": "Specific search method - 'auto', 'llm', 'embedding', 'keyword' (default: 'auto')"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "type": "object",
+        "additionalProperties": false
+      },
+      "name": "tooluniverse__find_tools",
+      "outputSchema": {
+        "properties": {
+          "result": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "type": "object",
+        "x-fastmcp-wrap-result": true
+      },
+      "title": "Find Tools"
+    }
+  ]
+}

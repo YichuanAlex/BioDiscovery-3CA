@@ -1,0 +1,17 @@
+[
+    {
+        "type": "EFOTool",
+        "name": "OSL_get_efo_id_by_disease_name",
+        "description": "Tool to lookup Experimental Factor Ontology (EFO) IDs for diseases via the EMBL-EBI OLS API.",
+        "parameter": {
+            "type": "object",
+            "properties": {
+                "disease": {
+                    "type": "string",
+                    "description": "Search query for diseases. Provide the disease name to lookup the corresponding EFO ID."
+                }
+            },
+            "required": ["disease"]
+        }
+    }
+]

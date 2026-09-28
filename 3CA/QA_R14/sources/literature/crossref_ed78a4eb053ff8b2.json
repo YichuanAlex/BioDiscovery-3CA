@@ -1,0 +1,71 @@
+{
+  "source": "Crossref REST API",
+  "requested_identifier": "10.1186/s13059-017-1382-0",
+  "catalog_citation_url": null,
+  "source_url": "https://api.crossref.org/v1/works/10.1186%2Fs13059-017-1382-0",
+  "retrieved_at": "2026-09-28T09:08:11.962623+00:00",
+  "response_sha256": "08cdec990756255fdc42df64ddd57167a68a507949e1bacb6ffe127633b92ba2",
+  "doi": "10.1186/s13059-017-1382-0",
+  "title": [
+    "SCANPY: large-scale single-cell gene expression data analysis"
+  ],
+  "container_title": [
+    "Genome Biology"
+  ],
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0002-8760-7838",
+      "authenticated-orcid": false,
+      "given": "F. Alexander",
+      "family": "Wolf",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Philipp",
+      "family": "Angerer",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Fabian J.",
+      "family": "Theis",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "published": {
+    "date-parts": [
+      [
+        2018,
+        2,
+        6
+      ]
+    ]
+  },
+  "volume": "19",
+  "issue": "1",
+  "page": null,
+  "type": "journal-article",
+  "publisher": "Springer Science and Business Media LLC",
+  "url": "https://doi.org/10.1186/s13059-017-1382-0",
+  "metadata_path": "sources/literature/crossref_ed78a4eb053ff8b2.json"
+}

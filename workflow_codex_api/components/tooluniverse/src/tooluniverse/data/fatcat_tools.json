@@ -1,0 +1,77 @@
+[
+  {
+    "type": "FatcatScholarTool",
+    "name": "Fatcat_search_scholar",
+    "description": "Search Internet Archive Scholar via Fatcat releases search. Fatcat is the underlying database powering Internet Archive Scholar, providing access to millions of research papers and academic publications.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search query for Fatcat releases. Use keywords to search across titles, abstracts, and metadata of research papers."
+        },
+        "max_results": {
+          "type": "integer",
+          "description": "Maximum number of results to return. Default is 10, maximum is 100.",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100
+        }
+      },
+      "required": [
+        "query",
+        "max_results"
+      ]
+    },
+    "return_schema": {
+      "type": "array",
+      "description": "List of Fatcat releases matching the search query",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Title of the research paper"
+          },
+          "authors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of author names"
+          },
+          "year": {
+            "type": "integer",
+            "description": "Publication year"
+          },
+          "doi": {
+            "type": "string",
+            "description": "Digital Object Identifier"
+          },
+          "url": {
+            "type": "string",
+            "description": "URL to the paper on Fatcat"
+          },
+          "source": {
+            "type": "string",
+            "description": "Source identifier (always 'Fatcat/IA Scholar')"
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "machine learning",
+        "max_results": 2
+      },
+      {
+        "query": "quantum physics",
+        "max_results": 1
+      },
+      {
+        "query": "artificial intelligence",
+        "max_results": 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "type": "RegulomeDBRESTTool",
+    "name": "RegulomeDB_query_variant",
+    "description": "Query RegulomeDB for regulatory variant annotations using rsID",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "rsid": {"type": "string", "description": "dbSNP rsID (e.g., rs123456)"}
+      },
+      "required": ["rsid"]
+    },
+    "fields": {
+      "endpoint": "https://regulomedb.org/regulome-search/?regions={rsid}&assembly=hg19",
+      "return_format": "JSON"
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "rsid": {"type": "string"},
+        "chromosome": {"type": "string"},
+        "position": {"type": "integer"},
+        "ref_allele": {"type": "string"},
+        "alt_allele": {"type": "string"},
+        "regulome_score": {"type": "string"},
+        "regulome_evidence": {"type": "array"},
+        "regulatory_features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "feature_type": {"type": "string"},
+              "cell_type": {"type": "string"},
+              "evidence": {"type": "string"},
+              "score": {"type": "number"}
+            }
+          }
+        },
+        "motif_break": {"type": "boolean"},
+        "motif_name": {"type": "string"},
+        "motif_score": {"type": "number"},
+        "motif_concordance": {"type": "string"}
+      }
+    },
+    "test_examples": [
+      {"rsid": "rs123456"},
+      {"rsid": "rs429358"}
+    ]
+  }
+]

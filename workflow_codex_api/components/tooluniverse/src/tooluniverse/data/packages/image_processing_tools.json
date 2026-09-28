@@ -1,0 +1,38 @@
+[
+  {
+    "type": "PackageTool",
+    "name": "get_pillow_info",
+    "description": "Get information about the pillow package. Python Imaging Library fork",
+    "package_name": "pillow",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": []
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_imageio_info",
+    "description": "Get information about the imageio package. Python library for reading and writing image data",
+    "package_name": "imageio",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": []
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_albumentations_info",
+    "description": "Get information about the albumentations package. Fast image augmentation library",
+    "package_name": "albumentations",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": []
+  }
+]

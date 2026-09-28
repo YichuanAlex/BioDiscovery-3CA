@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "source": "anthropics-life-sciences/tooluniverse/tooluniverse.mcpb",
+  "source_sha256": "b8ab7b8a9475fed5362271f5c6b3dd1a04bc466840433d28876dd7bd02298f77",
+  "bundle_version": "1.0.15",
+  "mode": "local-stdio-compact",
+  "authenticated_mcp_installed": false,
+  "local_compatibility_patch": "replace unavailable fitz distribution with PyMuPDF provider",
+  "schema_cache": "workflow-tool-schema.json",
+  "schema_cache_generation": "post-install live stdio tools/list with SHA-256",
+  "exposed_tools": [
+    "tooluniverse__list_tools",
+    "tooluniverse__grep_tools",
+    "tooluniverse__get_tool_info",
+    "tooluniverse__execute_tool",
+    "tooluniverse__find_tools"
+  ]
+}

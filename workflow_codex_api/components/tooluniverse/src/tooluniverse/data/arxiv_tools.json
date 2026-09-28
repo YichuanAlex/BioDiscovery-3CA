@@ -1,0 +1,91 @@
+[
+  {
+    "type": "ArXivTool",
+    "name": "ArXiv_search_papers",
+    "description": "Search arXiv for papers by keyword using the public arXiv API. Returns papers with title, abstract, authors, publication date, category, and URL.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search query for arXiv papers. Use keywords separated by spaces to refine your search."
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Number of papers to return. This sets the maximum number of papers retrieved from arXiv.",
+          "default": 10
+        },
+        "sort_by": {
+          "type": "string",
+          "description": "Sort order for results. Options: 'relevance', 'lastUpdatedDate', 'submittedDate'",
+          "default": "relevance"
+        },
+        "sort_order": {
+          "type": "string",
+          "description": "Sort direction. Options: 'ascending', 'descending'",
+          "default": "descending"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    },
+    "return_schema": {
+      "type": "array",
+      "description": "List of arXiv papers matching the search query",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Title of the paper"
+          },
+          "abstract": {
+            "type": "string",
+            "description": "Abstract of the paper"
+          },
+          "authors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of author names"
+          },
+          "published": {
+            "type": "string",
+            "description": "Publication date in ISO format"
+          },
+          "updated": {
+            "type": "string",
+            "description": "Last updated date in ISO format"
+          },
+          "category": {
+            "type": "string",
+            "description": "arXiv category (e.g., cs.LG, math.CO)"
+          },
+          "url": {
+            "type": "string",
+            "description": "URL to the paper on arXiv"
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "machine learning",
+        "limit": 2,
+        "sort_by": "relevance"
+      },
+      {
+        "query": "quantum physics",
+        "limit": 1,
+        "sort_by": "submittedDate",
+        "sort_order": "descending"
+      },
+      {
+        "query": "computer vision",
+        "limit": 3
+      }
+    ]
+  }
+]

@@ -1,0 +1,113 @@
+[
+  {
+    "type": "EuropePMCTool",
+    "name": "EuropePMC_search_articles",
+    "description": "Search for articles on Europe PMC including abstracts. The tool queries the Europe PMC web service using provided keywords and returns articles with details such as title, abstract, journal, publication year, and a URL to the full article.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search query for Europe PMC. Use keywords separated by spaces to refine your search."
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Number of articles to return. This sets the maximum number of articles retrieved from Europe PMC.",
+          "default": 5
+        }
+      },
+      "required": [
+        "query"
+      ]
+    },
+    "return_schema": {
+      "type": "array",
+      "description": "List of articles from Europe PMC matching the search query",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Title of the article"
+          },
+          "abstract": {
+            "type": "string",
+            "description": "Abstract of the article"
+          },
+          "authors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of author names"
+          },
+          "journal": {
+            "type": "string",
+            "description": "Journal name where the article was published"
+          },
+          "year": {
+            "type": "integer",
+            "description": "Publication year"
+          },
+          "doi": {
+            "type": "string",
+            "description": "Digital Object Identifier"
+          },
+          "url": {
+            "type": "string",
+            "description": "URL to the article on Europe PMC"
+          },
+          "citations": {
+            "type": "integer",
+            "description": "Number of citations"
+          },
+          "open_access": {
+            "type": "boolean",
+            "description": "Open access status"
+          },
+          "keywords": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of keywords"
+          },
+          "source": {
+            "type": "string",
+            "description": "Source identifier (always 'Europe PMC')"
+          },
+          "data_quality": {
+            "type": "object",
+            "description": "Data quality indicators",
+            "properties": {
+              "has_abstract": {
+                "type": "boolean"
+              },
+              "has_authors": {
+                "type": "boolean"
+              },
+              "has_journal": {
+                "type": "boolean"
+              },
+              "has_year": {
+                "type": "boolean"
+              },
+              "has_doi": {
+                "type": "boolean"
+              },
+              "has_citations": {
+                "type": "boolean"
+              },
+              "has_keywords": {
+                "type": "boolean"
+              },
+              "has_url": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]

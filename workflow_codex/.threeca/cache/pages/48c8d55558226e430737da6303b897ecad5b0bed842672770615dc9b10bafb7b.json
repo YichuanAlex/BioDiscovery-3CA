@@ -1,8 +1,8 @@
 {
   "url": "https://www.weizmann.ac.il/sites/3CA/brain",
   "final_url": "https://www.weizmann.ac.il/sites/3CA/brain",
-  "fetched_at": "2026-09-14T04:17:31.281668+00:00",
-  "raw_html_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\pages\\48c8d55558226e430737da6303b897ecad5b0bed842672770615dc9b10bafb7b.html",
+  "fetched_at": "2026-09-17T05:44:01.502468+00:00",
+  "raw_html_path": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.threeca/cache/pages/48c8d55558226e430737da6303b897ecad5b0bed842672770615dc9b10bafb7b.html",
   "title": "Brain | Curated Cancer Cell Atlas",
   "text": "Brain Title Data Meta data Cell types Summary Disease Technology #samples #cells Meta programs CNAs UMAP Cell cycle Choudhury et al. 2022 Cell types Summary Meningioma 10x 10 58843 Meta programs CNAs UMAP Cell cycle Couturier et al. 2020 Cell types Summary GBM 10x 29 100335 Meta programs Cell cycle Darmanis et al. 2017 Cell types Summary GBM SmartSeq2 4 3589 Meta programs CNAs UMAP Cell cycle Filbin et al. 2018 Cell types Summary Pediatric H3-K27M mutant glioma SmartSeq2 7 2587 Meta programs UMAP Cell cycle Gojo et al. 2020 Cell types Summary Pediatric ependymoma SmartSeq2 25 6739 Meta programs CNAs UMAP Cell cycle Hovestadt et al. 2019 Cell types Summary Medulloblastoma SmartSeq2 36 8691 UMAP Cell cycle Neftel et al. 2019 Cell types Summary GBM SmartSeq2 38 24131 Meta programs CNAs UMAP Cell cycle Tirosh et al. 2016 Cell types Summary IDH-mutant oligodendroglioma SmartSeq2 6 4347 Meta programs UMAP Cell cycle Venteicher et al. 2017 Cell types Summary IDH-mutant astrocytoma SmartSeq2 10 6341 Meta programs UMAP Cell cycle Wang et al. 2019 Cell types Summary GBM 10x 10 16317 Meta programs CNAs UMAP Cell cycle Yuan et al. 2018 Cell types Summary HGG Microwell array-based platform 8 23793 Meta programs CNAs UMAP Cell cycle All Brain cancer 183 255713",
   "links": [

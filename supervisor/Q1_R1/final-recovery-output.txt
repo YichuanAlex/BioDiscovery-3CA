@@ -1,2 +1,0 @@
-PASS: empty-reply recovery, failed-tool recovery, repeated verification, unchanged-read loop guard, isolated workspace.
-PASS: cookie challenge is rejected as unusable evidence.

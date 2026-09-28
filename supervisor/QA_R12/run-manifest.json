@@ -1,0 +1,150 @@
+{
+  "round": "QA_R12",
+  "started_at": "2026-09-28T03:14:22.294492+00:00",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "workflow": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex",
+  "task": "/Users/bytedance/Downloads/BioDiscovery-3CA/3CA/QA_R12",
+  "supervisor": "/Users/bytedance/Downloads/BioDiscovery-3CA/supervisor/QA_R12",
+  "runner_pid": 69016,
+  "model": "/Users/bytedance/Downloads/BioDiscovery-3CA/model/Qwen3.5-4B-MLX-4bit",
+  "model_config_sha256": "f3efc81b2ea8d96a45301037d3ccccbcccdef44a961845c87f286aaddbc6eaaa",
+  "context": {
+    "model_native": 262144,
+    "production_context": 49152,
+    "maximum_prompt": 45056,
+    "generation": 4096,
+    "profile": "workflow_codex/macos-context-profile.json"
+  },
+  "max_rounds": 0,
+  "run_until_complete": true,
+  "prompt_sha256": "b338ba61b24fdf7921dbd93cb0d2d8f28ffc6bd65e9e6779d92c12c936448a63",
+  "seeded_inputs": [
+    {
+      "source_path": "3CA/QA_R10/inputs/metabolic_genes_total.csv",
+      "source_role": "immutable_user_supplied_input_only; no prior analysis artifact reused",
+      "staged_path": "inputs/metabolic_genes_total.csv",
+      "staged_at": "2026-09-28T03:14:22.294492+00:00",
+      "sha256": "7503180d29693bd1e654ea93281db0e3ec4177ff44842c8b02f6a098402e41a9",
+      "bytes": 14789,
+      "role": "immutable_user_supplied_gene_set"
+    },
+    {
+      "staged_path": "AGENTS.md",
+      "sha256": "df650c6f6f0cf60ec126f64bd20d6c0a3c136914239e5210d13c5bd6ff7db0da",
+      "role": "round_execution_contract"
+    }
+  ],
+  "external_components": {
+    "skills": 7,
+    "anonymous_http_mcp_endpoints": 5,
+    "anonymous_http_mcp_tools": 31,
+    "tooluniverse_compact_tools": 5,
+    "strict_research_phases_expose_external_mcp": false,
+    "authenticated_or_subscription_components": 0
+  },
+  "frozen_files": [
+    {
+      "file": "codex-cli/bin/wingpt.js",
+      "sha256": "e21b5e6855c9fe74eee26c2e3d580437a3c4393c014953b57f8bef6a998d2870"
+    },
+    {
+      "file": "codex-cli/bin/wingpt-http-mcp.js",
+      "sha256": "274ca99b44a38cf333f8a2f359ae8ea966c19b91d84bce52c1524fecc102ae9e"
+    },
+    {
+      "file": "codex-cli/bin/wingpt-tooluniverse-mcp.js",
+      "sha256": "ea944df6aa63ee13891256d45f4d2616d3feb6803b94771d193eb2bf62caa695"
+    },
+    {
+      "file": "codex-cli/bin/wingpt-research.js",
+      "sha256": "2e0846df05e47bc28ea443742c2c083dfd8faa9fce527095164a5afb6f0202c7"
+    },
+    {
+      "file": "codex-cli/bin/wingpt-threeca.js",
+      "sha256": "e3f0168bb452141e69ca939179c4a79263966a778cd25e1ec5e905bc7c19d9b0"
+    },
+    {
+      "file": "scripts/macos_runtime.py",
+      "sha256": "44a684703248f53833fa44b5dbbc5d1b6caa7d1b8dc2364e7455fb5985216cff"
+    },
+    {
+      "file": "skills/anthropic-life-sciences/manifest.json",
+      "sha256": "2ebec8579e84b759a7222b8d745ffb7adf550bd64c7a51b1481d3d67f5c6f4b2"
+    },
+    {
+      "file": ".runtime/anonymous-http-mcp/manifest.json",
+      "sha256": "7875d0e3bde24a26553eb79f8ff78517287db9ed32b7db6d31af96702cc8257f"
+    },
+    {
+      "file": "components/tooluniverse/workflow-install.json",
+      "sha256": "262d220ec30d0d53fde2d0f6a5596e3ffe217505da75824617c255fba6131e3d"
+    },
+    {
+      "file": "components/tooluniverse/workflow-tool-schema.json",
+      "sha256": "38326c294804a40212191a1813bbd0b4ca11280a88c3991c761589d71fe9451e"
+    },
+    {
+      "file": "macos-context-profile.json",
+      "sha256": "2b0cc8ce760138c8c851a70bf87d4717076c3dcab2f314fa57a2e339205a8c67"
+    }
+  ],
+  "engineering_tests": "JS recovery, macOS runtime, research quality, main self-test, anonymous MCP, ToolUniverse, and life-sciences smoke passed",
+  "post_launch_updates": [
+    {
+      "file": "codex-cli/bin/wingpt.js",
+      "reason": "Source discovery, selection, plan, download, and staging were made strict after one observed list_files diversion.",
+      "launch_sha256": "e21b5e6855c9fe74eee26c2e3d580437a3c4393c014953b57f8bef6a998d2870",
+      "current_sha256": "21f17950753b70a7c2c273c4569ac1e91184f551a40434c4e3a3cacf5fafb0f2",
+      "current_process_effect": "The running process retains its loaded code; any bounded transport resume will load the stricter source-stage routing. Source staging was already complete before this update."
+    }
+  ],
+  "research_gate": "both cores use staged user CSV; validate_research_bundle valid=true and complete_task required",
+  "research_workspace_initially_empty_before_supplied_input": true,
+  "source_policy": "immutable user CSV plus verified hash-addressed public raw cache only",
+  "completed_at": "2026-09-28T07:08:00.531Z",
+  "completion_status": "completed_candidate",
+  "validator": {
+    "valid": true,
+    "verification_call_id": "engine_fcfd9cde-8bd6-42e9-a5b9-2bcc5a7e11d7",
+    "checked_at": "2026-09-28T07:05:31.774606+00:00",
+    "independent_recheck_at": "2026-09-28T07:10:45.614724+00:00",
+    "errors": [],
+    "checks": {
+      "methods": 1,
+      "figures": 4,
+      "three_line_tables": 1,
+      "formulas": 1,
+      "pdf_pages": 5,
+      "rendered_pages": 5,
+      "references": 2,
+      "dual_core_contract": true
+    }
+  },
+  "observed_core_contract": {
+    "global_metabolic_genes_path": "inputs/metabolic_genes_total.csv",
+    "cd8_metabolic_genes_path": "inputs/metabolic_genes_total.csv",
+    "metabolic_genes_sha256": "7503180d29693bd1e654ea93281db0e3ec4177ff44842c8b02f6a098402e41a9",
+    "global_cells": 58843,
+    "cd8_subset": {
+      "field": "cell_subtype",
+      "value": "CD8 T cells",
+      "cells": 3624
+    }
+  },
+  "final_artifacts": {
+    "report/main.tex": "3ff295a5738bb99074064ffc778b91c8488604eeec2e04467e841972a2655e79",
+    "report/main.pdf": "5df36fc0148e96cbd288f5d4014e97867a75e884935f76c2ae29bdf4ec69cb7c",
+    "results/summary.json": "d65a29ef6f5fba4a0cd85c0d2754dd237d80b45e3b5399082154c5ec9aa3bba7",
+    "results/analysis_manifest.json": "ee1b6ffc35c819024c6a5186c4415ac33fe268fbd86e4e819005dd57c82eacd0",
+    "results/core_analysis/core_result.json": "5079a83bc9a6fd3115e9b7b0d95f1e139fbbfc93cfbf671a50eac709efc353b6",
+    "results/cd8_analysis/core_result.json": "c81767048e5f1ce9ec1200e9cbec9ecef174dd657fe689c9b9ac346a482ea17e",
+    "results/cd8_analysis/summary.json": "219ec74e373c48d96d8705454650a27908eb91610257baed3691efe63169f52c",
+    "README.md": "2e02db42fc918e3b4f181b5c3c65f26c626f211ad66e87419ad857240cb0d054"
+  },
+  "final_framework_hashes": {
+    "codex-cli/bin/wingpt.js": "5a2e5c037ec586537248310ed807109d307fd6f713f93f026dbe586979013ae1",
+    "codex-cli/bin/test-wingpt-recovery.mjs": "d4cc77162b359ade9e4d9ff1c76773e6a6aa68b0d47cd75a4f2f72200eb4dd15",
+    "tools/research-quality/research_quality.py": "12e25e8d61197c8904da547cb68c7059b930d02e740cc964a1f8af10bb0c2afc",
+    "tools/research-quality/test_research_quality.py": "197e6c5b3b867a92aced190a8f8e32bcd81cc6a7acf86991fbeb31520a1fa20b"
+  }
+}

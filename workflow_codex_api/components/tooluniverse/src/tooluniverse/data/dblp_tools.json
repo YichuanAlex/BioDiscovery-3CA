@@ -1,0 +1,144 @@
+[
+  {
+    "type": "DBLPTool",
+    "name": "DBLP_search_publications",
+    "description": "Search DBLP Computer Science Bibliography for publications. Returns publications with title, authors, year, venue, URL, and electronic edition link.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search query for DBLP publications. Use keywords separated by spaces to refine your search."
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Number of publications to return. This sets the maximum number of publications retrieved from DBLP.",
+          "default": 10
+        }
+      },
+      "required": [
+        "query",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "type": "array",
+      "description": "List of DBLP publications matching the search query",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Title of the publication"
+          },
+          "abstract": {
+            "type": "string",
+            "description": "Abstract of the publication (not available from DBLP)"
+          },
+          "authors": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "@pid": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                }
+              }
+            },
+            "description": "List of authors with DBLP person IDs"
+          },
+          "year": {
+            "type": "integer",
+            "description": "Publication year"
+          },
+          "venue": {
+            "type": "string",
+            "description": "Venue information (conference/journal name)"
+          },
+          "url": {
+            "type": "string",
+            "description": "URL to the publication on DBLP"
+          },
+          "ee": {
+            "type": "string",
+            "description": "Electronic edition URL (DOI or publisher link)"
+          },
+          "doi": {
+            "type": "string",
+            "description": "Digital Object Identifier (extracted from ee field)"
+          },
+          "citations": {
+            "type": "integer",
+            "description": "Number of citations (not available from DBLP)"
+          },
+          "open_access": {
+            "type": "boolean",
+            "description": "Open access status (not available from DBLP)"
+          },
+          "keywords": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of keywords (not available from DBLP)"
+          },
+          "article_type": {
+            "type": "string",
+            "description": "Type of publication (conference-paper)"
+          },
+          "publisher": {
+            "type": "string",
+            "description": "Publisher name (not available from DBLP)"
+          },
+          "source": {
+            "type": "string",
+            "description": "Source identifier (always 'DBLP')"
+          },
+          "data_quality": {
+            "type": "object",
+            "description": "Data quality indicators",
+            "properties": {
+              "has_abstract": {
+                "type": "boolean"
+              },
+              "has_authors": {
+                "type": "boolean"
+              },
+              "has_journal": {
+                "type": "boolean"
+              },
+              "has_year": {
+                "type": "boolean"
+              },
+              "has_doi": {
+                "type": "boolean"
+              },
+              "has_citations": {
+                "type": "boolean"
+              },
+              "has_keywords": {
+                "type": "boolean"
+              },
+              "has_url": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "computer science",
+        "limit": 2
+      },
+      {
+        "query": "machine learning",
+        "limit": 1
+      }
+    ]
+  }
+]

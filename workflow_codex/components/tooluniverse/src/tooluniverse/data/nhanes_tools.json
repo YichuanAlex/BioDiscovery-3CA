@@ -1,0 +1,112 @@
+[
+  {
+    "name": "nhanes_get_dataset_info",
+    "description": "Get information about NHANES (National Health and Nutrition Examination Survey) datasets. NHANES data is typically available as downloadable files (SAS, XPT formats) from the CDC website. This tool provides information about available datasets, years, and download links. Note: Actual data retrieval may require downloading and converting files.",
+    "type": "NHANESTool",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "year": {
+          "type": "string",
+          "description": "NHANES cycle/year (e.g., '2017-2018', '2015-2016', '2013-2014')"
+        },
+        "component": {
+          "type": "string",
+          "enum": ["Demographics", "Dietary", "Examination", "Laboratory", "Questionnaire"],
+          "description": "Optional component type to filter datasets"
+        }
+      },
+      "required": []
+    },
+    "fields": {
+      "endpoint": "dataset_info",
+      "return_format": "JSON"
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "datasets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Dataset name"
+              },
+              "year": {
+                "type": "string",
+                "description": "NHANES cycle"
+              },
+              "component": {
+                "type": "string"
+              },
+              "download_url": {
+                "type": "string",
+                "description": "URL to download the dataset"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "note": {
+          "type": "string",
+          "description": "Information about data format and access"
+        }
+      }
+    }
+  },
+  {
+    "name": "nhanes_search_datasets",
+    "description": "Search for NHANES datasets by keyword. Returns information about matching datasets including download links. Note: NHANES data files are typically in SAS/XPT format and may require conversion tools.",
+    "type": "NHANESTool",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "search_term": {
+          "type": "string",
+          "description": "Search term to find datasets (e.g., 'glucose', 'blood pressure', 'diabetes')"
+        },
+        "year": {
+          "type": "string",
+          "description": "Optional NHANES cycle to filter (e.g., '2017-2018')"
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of results (default: 20)",
+          "default": 20
+        }
+      },
+      "required": []
+    },
+    "fields": {
+      "endpoint": "search",
+      "return_format": "JSON"
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "datasets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "year": {
+                "type": "string"
+              },
+              "download_url": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]
+

@@ -1,0 +1,87 @@
+[
+  {
+    "type": "MPDRESTTool",
+    "name": "MPD_get_phenotype_data",
+    "description": "Get mouse phenotype data from Mouse Phenome Database for specific strains and phenotypes",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "strain": {
+          "type": "string",
+          "description": "Mouse strain (e.g., C57BL/6J, BALB/c, DBA/2J)",
+          "default": "C57BL/6J"
+        },
+        "phenotype_category": {
+          "type": "string",
+          "description": "Phenotype category (behavior, physiology, morphology)",
+          "default": "behavior"
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Number of results to return",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 50
+        }
+      },
+      "required": [
+        "strain"
+      ]
+    },
+    "fields": {
+      "endpoint": "https://www.encodeproject.org/search/?type=Experiment&biosample_ontology.term_name={strain}&biosample_ontology.classification=primary_cell&format=json&limit={limit}",
+      "return_format": "JSON"
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "phenotype_data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "accession": {
+                "type": "string"
+              },
+              "assay_title": {
+                "type": "string"
+              },
+              "biosample_ontology": {
+                "type": "object"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "strain": {
+          "type": "string"
+        },
+        "phenotype_category": {
+          "type": "string"
+        },
+        "count": {
+          "type": "integer"
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "strain": "C57BL/6J",
+        "phenotype_category": "behavior",
+        "limit": 5
+      },
+      {
+        "strain": "BALB/c",
+        "phenotype_category": "physiology",
+        "limit": 3
+      },
+      {
+        "strain": "DBA/2J",
+        "phenotype_category": "morphology",
+        "limit": 5
+      }
+    ]
+  }
+]

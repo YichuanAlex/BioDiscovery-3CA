@@ -1,8 +1,8 @@
 {
   "url": "https://www.weizmann.ac.il/sites/3CA/head-and-neck",
   "final_url": "https://www.weizmann.ac.il/sites/3CA/head-and-neck",
-  "fetched_at": "2026-09-14T04:17:28.947568+00:00",
-  "raw_html_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\pages\\e8adc95c9b5de07b700baf4d29f8bcdc0fe35c27213b489c9716feb9e56fa51d.html",
+  "fetched_at": "2026-09-17T05:43:58.708579+00:00",
+  "raw_html_path": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.threeca/cache/pages/e8adc95c9b5de07b700baf4d29f8bcdc0fe35c27213b489c9716feb9e56fa51d.html",
   "title": "Head and Neck | Curated Cancer Cell Atlas",
   "text": "Head and Neck Title Data Meta data Cell types Summary Disease Technology #samples #cells Meta programs CNAs UMAP Cell cycle Chen et al. 2020 Cell types Summary Nasopharyngeal carcinoma 10x 14 71896 Meta programs CNAs UMAP Cell cycle Cillo et al. 2020 Cell types Summary HNSCC 10x 48 92569 Meta programs UMAP Cell cycle Kürten et al. 2021 HNSCC 10x 33 62700 Puram et al. 2017 Cell types Summary HNSCC SmartSeq2 18 5902 Meta programs CNAs UMAP Cell cycle All Head and Neck cancer 113 233067",
   "links": [

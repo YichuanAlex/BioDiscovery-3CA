@@ -1,0 +1,89 @@
+[
+  {
+    "type": "ZenodoTool",
+    "name": "Zenodo_search_records",
+    "description": "Search Zenodo for research data, publications, and datasets. Zenodo is an open-access repository that hosts research outputs from all fields of science, including papers, datasets, software, and more.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Free text search query for Zenodo records. Use keywords to search across titles, descriptions, authors, and other metadata."
+        },
+        "max_results": {
+          "type": "integer",
+          "description": "Maximum number of results to return. Must be between 1 and 200.",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 200
+        },
+        "community": {
+          "type": "string",
+          "description": "Optional community slug to filter results by specific research community (e.g., 'zenodo', 'ecfunded')."
+        }
+      },
+      "required": [
+        "query",
+        "max_results"
+      ]
+    },
+    "return_schema": {
+      "type": "array",
+      "description": "List of Zenodo records matching the search query",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Title of the record"
+          },
+          "authors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of author/creator names"
+          },
+          "date": {
+            "type": "string",
+            "description": "Publication date"
+          },
+          "doi": {
+            "type": "string",
+            "description": "Digital Object Identifier (DOI)"
+          },
+          "url": {
+            "type": "string",
+            "description": "URL to the record on Zenodo"
+          },
+          "files": {
+            "type": [
+              "array",
+              "string"
+            ],
+            "description": "List of files or link to files associated with the record"
+          },
+          "source": {
+            "type": "string",
+            "description": "Source identifier (always 'Zenodo')"
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "machine learning",
+        "max_results": 2
+      },
+      {
+        "query": "COVID-19",
+        "max_results": 1
+      },
+      {
+        "query": "climate change",
+        "max_results": 3,
+        "community": "zenodo"
+      }
+    ]
+  }
+]

@@ -1,0 +1,125 @@
+[
+  {
+    "name": "GO_search_terms",
+    "description": "Searches for Gene Ontology (GO) terms by a keyword using the GOlr search engine. Returns GO terms and related biological entities.",
+    "type": "GeneOntologyTool",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "The keyword to search for, e.g., 'apoptosis' or 'kinase activity'."
+        }
+      },
+      "required": [
+        "query"
+      ]
+    },
+    "fields": {
+      "endpoint": "http://golr-aux.geneontology.io/solr/select?fq=document_category:\"ontology_class\"&q=*:*&fq=annotation_class_label:\"{query}\"&wt=json&rows=10",
+      "input_description": "Input search keyword, e.g., 'cell cycle'.",
+      "output_description": "Returns GO terms matching the search keyword with their details."
+    }
+  },
+  {
+    "name": "GO_get_term_details",
+    "description": "Retrieves detailed information for a specific GO ID using the Biolink API, including definition, synonyms, and annotations.",
+    "type": "GeneOntologyTool",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "The standard GO term ID, e.g., 'GO:0006915' for apoptotic process."
+        }
+      },
+      "required": [
+        "id"
+      ]
+    },
+    "fields": {
+      "endpoint": "http://api.geneontology.org/api/bioentity/function/{id}",
+      "input_description": "Input GO term ID, e.g., 'GO:0006915'.",
+      "output_description": "Returns complete term details including definition, synonyms, and annotations."
+    }
+  },
+  {
+    "name": "GO_get_term_by_id",
+    "description": "Retrieves basic GO term information by ID using GOlr search.",
+    "type": "GeneOntologyTool",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "The standard GO term ID, e.g., 'GO:0006915' for apoptotic process."
+        }
+      },
+      "required": [
+        "id"
+      ]
+    },
+    "fields": {
+      "endpoint": "http://golr-aux.geneontology.io/solr/select?fq=document_category:\"ontology_class\"&q=*:*&fq=id:\"{id}\"&wt=json",
+      "extract_path": "response.docs[0]",
+      "input_description": "Input GO term ID, e.g., 'GO:0006915'.",
+      "output_description": "Returns the GO term details including label, definition, and namespace."
+    }
+  },
+  {
+    "name": "GO_get_genes_for_term",
+    "description": "Finds all genes/proteins associated with a specific Gene Ontology term using the Biolink API.",
+    "type": "GeneOntologyTool",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "The standard GO term ID, e.g., 'GO:0006915'."
+        },
+        "taxon": {
+          "type": "string",
+          "description": "Optional species filter using a NCBI taxon ID. For example, Human is 'NCBITaxon:9606', and Mouse is 'NCBITaxon:10090'."
+        },
+        "rows": {
+          "type": "integer",
+          "description": "The number of genes to return. Default is 100."
+        }
+      },
+      "required": [
+        "id",
+        "taxon",
+        "rows"
+      ]
+    },
+    "fields": {
+      "endpoint": "http://api.geneontology.org/api/bioentity/function/{id}",
+      "extract_path": "associations[*].subject",
+      "input_description": "Input GO term ID, e.g., 'GO:0006915'.",
+      "output_description": "Returns a list of genes/proteins associated with the GO term."
+    }
+  },
+  {
+    "name": "GO_get_annotations_for_gene",
+    "description": "Finds all GO annotations for a specific gene/protein using GOlr search.",
+    "type": "GeneOntologyTool",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "gene_id": {
+          "type": "string",
+          "description": "A gene identifier such as gene symbol (e.g., 'TP53') or database ID."
+        }
+      },
+      "required": [
+        "gene_id"
+      ]
+    },
+    "fields": {
+      "endpoint": "http://golr-aux.geneontology.io/solr/select?fq=document_category:\"annotation\"&q=*:*&fq=bioentity_label:\"{gene_id}\"&wt=json&rows=50",
+      "extract_path": "response.docs",
+      "input_description": "Input gene identifier, e.g., 'TP53'.",
+      "output_description": "Returns a list of GO annotations for the gene."
+    }
+  }
+]

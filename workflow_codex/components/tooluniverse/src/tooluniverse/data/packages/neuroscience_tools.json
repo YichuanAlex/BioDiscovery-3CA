@@ -1,0 +1,62 @@
+[
+  {
+    "type": "PackageTool",
+    "name": "get_mne_info",
+    "description": "Get information about the mne package. MEG and EEG data analysis",
+    "package_name": "mne",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": []
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_nilearn_info",
+    "description": "Get information about the nilearn package. Machine learning for neuroimaging",
+    "package_name": "nilearn",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": []
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_brian2_info",
+    "description": "Get information about the brian2 package. Spiking neural network simulator",
+    "package_name": "brian2",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": []
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_elephant_info",
+    "description": "Get information about the elephant package. Electrophysiology analysis toolkit",
+    "package_name": "elephant",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": []
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_neo_info",
+    "description": "Get information about the neo package. Representation of electrophysiology data",
+    "package_name": "neo",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": []
+  }
+]

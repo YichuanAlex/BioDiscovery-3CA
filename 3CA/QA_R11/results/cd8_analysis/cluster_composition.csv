@@ -1,0 +1,157 @@
+field,cluster,value,cells,within_cluster_fraction
+patient,0,1,45,0.8035714285714286
+patient,0,2,0,0.0
+patient,0,3,0,0.0
+patient,0,4,6,0.10714285714285714
+patient,0,5,5,0.08928571428571429
+patient,0,6,0,0.0
+patient,1,1,1,0.002369668246445498
+patient,1,2,26,0.061611374407582936
+patient,1,3,7,0.016587677725118485
+patient,1,4,181,0.42890995260663506
+patient,1,5,139,0.3293838862559242
+patient,1,6,68,0.16113744075829384
+patient,2,1,0,0.0
+patient,2,2,5,0.01179245283018868
+patient,2,3,0,0.0
+patient,2,4,261,0.6155660377358491
+patient,2,5,156,0.36792452830188677
+patient,2,6,2,0.0047169811320754715
+patient,3,1,0,0.0
+patient,3,2,1,0.003105590062111801
+patient,3,3,0,0.0
+patient,3,4,0,0.0
+patient,3,5,2,0.006211180124223602
+patient,3,6,319,0.9906832298136646
+patient,4,1,0,0.0
+patient,4,2,2,0.008368200836820083
+patient,4,3,1,0.0041841004184100415
+patient,4,4,2,0.008368200836820083
+patient,4,5,1,0.0041841004184100415
+patient,4,6,233,0.9748953974895398
+patient,5,1,0,0.0
+patient,5,2,0,0.0
+patient,5,3,0,0.0
+patient,5,4,3,0.0013882461823229986
+patient,5,5,4,0.0018509949097639982
+patient,5,6,2154,0.996760758907913
+sample,0,MSC1,45,0.8035714285714286
+sample,0,MSC2,0,0.0
+sample,0,MSC3,0,0.0
+sample,0,MSC4,5,0.08928571428571429
+sample,0,MSC4-Dura,1,0.017857142857142856
+sample,0,MSC5,3,0.05357142857142857
+sample,0,MSC5-BTI,2,0.03571428571428571
+sample,0,MSC5-Dura,0,0.0
+sample,0,MSC6,0,0.0
+sample,0,MSC6-BTI,0,0.0
+sample,1,MSC1,1,0.002369668246445498
+sample,1,MSC2,26,0.061611374407582936
+sample,1,MSC3,7,0.016587677725118485
+sample,1,MSC4,177,0.4194312796208531
+sample,1,MSC4-Dura,4,0.009478672985781991
+sample,1,MSC5,78,0.1848341232227488
+sample,1,MSC5-BTI,57,0.13507109004739337
+sample,1,MSC5-Dura,4,0.009478672985781991
+sample,1,MSC6,41,0.0971563981042654
+sample,1,MSC6-BTI,27,0.06398104265402843
+sample,2,MSC1,0,0.0
+sample,2,MSC2,5,0.01179245283018868
+sample,2,MSC3,0,0.0
+sample,2,MSC4,2,0.0047169811320754715
+sample,2,MSC4-Dura,259,0.6108490566037735
+sample,2,MSC5,0,0.0
+sample,2,MSC5-BTI,0,0.0
+sample,2,MSC5-Dura,156,0.36792452830188677
+sample,2,MSC6,2,0.0047169811320754715
+sample,2,MSC6-BTI,0,0.0
+sample,3,MSC1,0,0.0
+sample,3,MSC2,1,0.003105590062111801
+sample,3,MSC3,0,0.0
+sample,3,MSC4,0,0.0
+sample,3,MSC4-Dura,0,0.0
+sample,3,MSC5,1,0.003105590062111801
+sample,3,MSC5-BTI,1,0.003105590062111801
+sample,3,MSC5-Dura,0,0.0
+sample,3,MSC6,279,0.8664596273291926
+sample,3,MSC6-BTI,40,0.12422360248447205
+sample,4,MSC1,0,0.0
+sample,4,MSC2,2,0.008368200836820083
+sample,4,MSC3,1,0.0041841004184100415
+sample,4,MSC4,2,0.008368200836820083
+sample,4,MSC4-Dura,0,0.0
+sample,4,MSC5,0,0.0
+sample,4,MSC5-BTI,1,0.0041841004184100415
+sample,4,MSC5-Dura,0,0.0
+sample,4,MSC6,229,0.9581589958158996
+sample,4,MSC6-BTI,4,0.016736401673640166
+sample,5,MSC1,0,0.0
+sample,5,MSC2,0,0.0
+sample,5,MSC3,0,0.0
+sample,5,MSC4,2,0.0009254974548819991
+sample,5,MSC4-Dura,1,0.00046274872744099955
+sample,5,MSC5,1,0.00046274872744099955
+sample,5,MSC5-BTI,3,0.0013882461823229986
+sample,5,MSC5-Dura,0,0.0
+sample,5,MSC6,1995,0.923183711244794
+sample,5,MSC6-BTI,159,0.07357704766311893
+source,0,Dura,1,0.017857142857142856
+source,0,Meningioma,53,0.9464285714285714
+source,0,Meningioma brain-tumor interface,2,0.03571428571428571
+source,1,Dura,8,0.018957345971563982
+source,1,Meningioma,330,0.7819905213270142
+source,1,Meningioma brain-tumor interface,84,0.1990521327014218
+source,2,Dura,415,0.9787735849056604
+source,2,Meningioma,9,0.02122641509433962
+source,2,Meningioma brain-tumor interface,0,0.0
+source,3,Dura,0,0.0
+source,3,Meningioma,281,0.8726708074534162
+source,3,Meningioma brain-tumor interface,41,0.12732919254658384
+source,4,Dura,0,0.0
+source,4,Meningioma,234,0.9790794979079498
+source,4,Meningioma brain-tumor interface,5,0.02092050209205021
+source,5,Dura,1,0.00046274872744099955
+source,5,Meningioma,1998,0.9245719574271171
+source,5,Meningioma brain-tumor interface,162,0.07496529384544193
+cell_type,0,T_cell,56,1.0
+cell_type,1,T_cell,422,1.0
+cell_type,2,T_cell,424,1.0
+cell_type,3,T_cell,322,1.0
+cell_type,4,T_cell,239,1.0
+cell_type,5,T_cell,2161,1.0
+cell_subtype,0,CD8 T cells,56,1.0
+cell_subtype,1,CD8 T cells,422,1.0
+cell_subtype,2,CD8 T cells,424,1.0
+cell_subtype,3,CD8 T cells,322,1.0
+cell_subtype,4,CD8 T cells,239,1.0
+cell_subtype,5,CD8 T cells,2161,1.0
+cell_cycle_phase,0,G1/S,2,0.03571428571428571
+cell_cycle_phase,0,G2/M,3,0.05357142857142857
+cell_cycle_phase,0,Intermediate,0,0.0
+cell_cycle_phase,0,Not cycling,51,0.9107142857142857
+cell_cycle_phase,0,missing,0,0.0
+cell_cycle_phase,1,G1/S,3,0.0071090047393364926
+cell_cycle_phase,1,G2/M,1,0.002369668246445498
+cell_cycle_phase,1,Intermediate,0,0.0
+cell_cycle_phase,1,Not cycling,128,0.3033175355450237
+cell_cycle_phase,1,missing,290,0.6872037914691943
+cell_cycle_phase,2,G1/S,1,0.0023584905660377358
+cell_cycle_phase,2,G2/M,0,0.0
+cell_cycle_phase,2,Intermediate,0,0.0
+cell_cycle_phase,2,Not cycling,416,0.9811320754716981
+cell_cycle_phase,2,missing,7,0.01650943396226415
+cell_cycle_phase,3,G1/S,22,0.06832298136645963
+cell_cycle_phase,3,G2/M,29,0.09006211180124224
+cell_cycle_phase,3,Intermediate,5,0.015527950310559006
+cell_cycle_phase,3,Not cycling,233,0.7236024844720497
+cell_cycle_phase,3,missing,33,0.10248447204968944
+cell_cycle_phase,4,G1/S,84,0.3514644351464435
+cell_cycle_phase,4,G2/M,79,0.3305439330543933
+cell_cycle_phase,4,Intermediate,35,0.14644351464435146
+cell_cycle_phase,4,Not cycling,40,0.16736401673640167
+cell_cycle_phase,4,missing,1,0.0041841004184100415
+cell_cycle_phase,5,G1/S,2,0.0009254974548819991
+cell_cycle_phase,5,G2/M,6,0.002776492364645997
+cell_cycle_phase,5,Intermediate,1,0.00046274872744099955
+cell_cycle_phase,5,Not cycling,1519,0.7029153169828783
+cell_cycle_phase,5,missing,633,0.2929199444701527

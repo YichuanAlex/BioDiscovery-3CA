@@ -1,0 +1,110 @@
+[
+  {
+    "type": "CoreTool",
+    "name": "CORE_search_papers",
+    "description": "Search for open access academic papers using CORE API. CORE is the world's largest collection of open access research papers, providing access to over 200 million papers from repositories and journals worldwide.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search query for CORE papers. Use keywords separated by spaces to refine your search."
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of papers to return. This sets the maximum number of papers retrieved from CORE.",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100
+        },
+        "year_from": {
+          "type": "integer",
+          "description": "Start year for publication date filter (e.g., 2020). Optional parameter to limit search to papers published from this year onwards."
+        },
+        "year_to": {
+          "type": "integer",
+          "description": "End year for publication date filter (e.g., 2024). Optional parameter to limit search to papers published up to this year."
+        },
+        "language": {
+          "type": "string",
+          "description": "Language filter for papers (e.g., 'en', 'es', 'fr'). Optional parameter to limit search to papers in specific language."
+        }
+      },
+      "required": [
+        "query",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "type": "array",
+      "description": "List of open access papers from CORE matching the search query",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Title of the paper"
+          },
+          "abstract": {
+            "type": "string",
+            "description": "Abstract of the paper"
+          },
+          "authors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of author names"
+          },
+          "year": {
+            "type": "string",
+            "description": "Publication year"
+          },
+          "doi": {
+            "type": "string",
+            "description": "Digital Object Identifier (DOI) of the paper"
+          },
+          "url": {
+            "type": "string",
+            "description": "URL to access the paper"
+          },
+          "venue": {
+            "type": "string",
+            "description": "Publisher or venue name"
+          },
+          "language": {
+            "type": "string",
+            "description": "Language of the paper"
+          },
+          "open_access": {
+            "type": "boolean",
+            "description": "Open access status (always true for CORE)"
+          },
+          "source": {
+            "type": "string",
+            "description": "Source identifier (always 'CORE')"
+          },
+          "citations": {
+            "type": "integer",
+            "description": "Number of citations"
+          },
+          "downloads": {
+            "type": "integer",
+            "description": "Number of downloads"
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "machine learning",
+        "limit": 2
+      },
+      {
+        "query": "artificial intelligence",
+        "limit": 1,
+        "year_from": 2020
+      }
+    ]
+  }
+]

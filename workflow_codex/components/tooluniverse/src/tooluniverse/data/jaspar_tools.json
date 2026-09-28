@@ -1,0 +1,70 @@
+[
+  {
+    "type": "JASPARRESTTool",
+    "name": "JASPAR_get_transcription_factors",
+    "description": "Get transcription factor binding site matrices from JASPAR",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "collection": {"type": "string", "default": "CORE", "description": "JASPAR collection"},
+        "limit": {"type": "integer", "default": 20, "description": "Number of results"}
+      }
+    },
+    "fields": {
+      "endpoint": "https://jaspar.elixir.no/api/v1/matrix/?collection={collection}&limit={limit}",
+      "return_format": "JSON"
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "matrix_id": {"type": "string"},
+              "name": {"type": "string"},
+              "collection": {"type": "string"},
+              "species": {"type": "array"},
+              "class": {"type": "string"},
+              "family": {"type": "string"},
+              "tax_group": {"type": "string"},
+              "type": {"type": "string"},
+              "version": {"type": "integer"},
+              "base_id": {"type": "string"},
+              "uniprot_ids": {"type": "array"},
+              "data_type": {"type": "string"},
+              "pubmed_id": {"type": "array"},
+              "jaspar_id": {"type": "string"},
+              "pfm": {
+                "type": "object",
+                "properties": {
+                  "A": {"type": "array"},
+                  "C": {"type": "array"},
+                  "G": {"type": "array"},
+                  "T": {"type": "array"}
+                }
+              },
+              "pwm": {
+                "type": "object",
+                "properties": {
+                  "A": {"type": "array"},
+                  "C": {"type": "array"},
+                  "G": {"type": "array"},
+                  "T": {"type": "array"}
+                }
+              }
+            }
+          }
+        },
+        "count": {"type": "integer"},
+        "next": {"type": "string"},
+        "previous": {"type": "string"}
+      }
+    },
+    "test_examples": [
+      {"collection": "CORE", "limit": 5},
+      {"collection": "CNE", "limit": 10}
+    ]
+  }
+]

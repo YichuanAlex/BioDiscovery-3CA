@@ -1,0 +1,29 @@
+[
+  {
+    "type": "SpecialTool",
+    "name": "Finish",
+    "description": "Indicate the end of multi-step reasoning.",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    }
+  },
+  {
+    "type": "SpecialTool",
+    "name": "CallAgent",
+    "description": "Give a solution plan to the agent and let it solve the problem. Solution plan should reflect a distinct method, approach, or viewpoint to solve the given question. Call these function multiple times, and each solution plan should start with different aspects of the question, for example, genes, phenotypes, diseases, or drugs, etc. The CallAgent will achieve the task based on the plan, so only give the plan instead of unverified information.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "solution": {
+          "type": "string",
+          "description": "A feasible and concise solution plan that address the question."
+        }
+      },
+      "required": [
+        "solution"
+      ]
+    }
+  }
+]

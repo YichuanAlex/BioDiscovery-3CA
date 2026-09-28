@@ -1,0 +1,199 @@
+[
+  {
+    "type": "InterProRESTTool",
+    "name": "InterPro_get_protein_domains",
+    "description": "Get protein domain annotations from InterPro database using UniProt protein ID. Returns domain families, signatures, and functional annotations.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "protein_id": {
+          "type": "string",
+          "description": "UniProt protein ID (e.g., P05067, Q9Y6K9)"
+        }
+      },
+      "required": ["protein_id"]
+    },
+    "fields": {
+      "endpoint": "https://www.ebi.ac.uk/interpro/api/entry/interpro/protein/UniProt/{protein_id}",
+      "extract_path": "results",
+      "return_format": "JSON"
+    },
+    "return_schema": {
+      "type": "array",
+      "description": "List of InterPro entries for the protein",
+      "items": {
+        "type": "object",
+        "properties": {
+          "metadata": {
+            "type": "object",
+            "properties": {
+              "accession": {"type": "string"},
+              "name": {"type": "string"},
+              "type": {"type": "string"},
+              "source_database": {"type": "string"},
+              "integrated": {"type": "string"},
+              "member_databases": {"type": "object"},
+              "go_terms": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {"type": "string"},
+                    "name": {"type": "string"},
+                    "category": {
+                      "type": "object",
+                      "properties": {
+                        "code": {"type": "string"},
+                        "name": {"type": "string"}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "proteins": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "accession": {"type": "string"},
+                "protein_length": {"type": "integer"},
+                "source_database": {"type": "string"},
+                "organism": {"type": "string"},
+                "in_alphafold": {"type": "boolean"},
+                "in_bfvd": {"type": "boolean"},
+                "entry_protein_locations": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "fragments": {"type": "array"},
+                      "representative": {"type": "boolean"},
+                      "model": {"type": "string"},
+                      "score": {"type": "number"}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "protein_id": "P05067"
+      },
+      {
+        "protein_id": "Q9Y6K9"
+      }
+    ]
+  },
+  {
+    "type": "InterProRESTTool",
+    "name": "InterPro_search_domains",
+    "description": "Search InterPro database for protein domains and families by name or accession. Returns matching domain entries with metadata.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Domain name, accession, or search term (e.g., 'kinase', 'IPR000719')"
+        },
+        "size": {
+          "type": "integer",
+          "description": "Number of results to return (default: 20, max: 100)",
+          "default": 20,
+          "minimum": 1,
+          "maximum": 100
+        }
+      },
+      "required": ["query"]
+    },
+    "fields": {
+      "endpoint": "https://www.ebi.ac.uk/interpro/api/entry/interpro/search?query={query}&size={size}",
+      "extract_path": "results",
+      "return_format": "JSON"
+    },
+    "return_schema": {
+      "type": "array",
+      "description": "List of matching InterPro entries",
+      "items": {
+        "type": "object",
+        "properties": {
+          "metadata": {
+            "type": "object",
+            "properties": {
+              "accession": {"type": "string"},
+              "name": {"type": "string"},
+              "type": {"type": "string"},
+              "source_database": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "kinase",
+        "size": 5
+      },
+      {
+        "query": "IPR000719",
+        "size": 1
+      }
+    ]
+  },
+  {
+    "type": "InterProRESTTool",
+    "name": "InterPro_get_domain_details",
+    "description": "Get detailed information about a specific InterPro domain entry including description, hierarchy, and member databases.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "accession": {
+          "type": "string",
+          "description": "InterPro accession ID (e.g., IPR000719, IPR000719)"
+        }
+      },
+      "required": ["accession"]
+    },
+    "fields": {
+      "endpoint": "https://www.ebi.ac.uk/interpro/api/entry/interpro/{accession}",
+      "return_format": "JSON"
+    },
+    "return_schema": {
+      "type": "object",
+      "description": "Detailed InterPro entry information",
+      "properties": {
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "accession": {"type": "string"},
+            "name": {"type": "string"},
+            "type": {"type": "string"},
+            "source_database": {"type": "string"},
+            "description": {"type": "string"}
+          }
+        },
+        "hierarchy": {
+          "type": "object",
+          "description": "Domain hierarchy information"
+        },
+        "member_databases": {
+          "type": "object",
+          "description": "Member database signatures"
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "accession": "IPR000719"
+      },
+      {
+        "accession": "IPR000719"
+      }
+    ]
+  }
+]

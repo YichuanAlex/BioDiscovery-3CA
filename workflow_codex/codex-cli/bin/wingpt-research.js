@@ -3,9 +3,10 @@
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
+import { scientificPython } from "./wingpt-platform.js";
 
 export function createResearchTools(functionTool, workflowRoot, workspace) {
-  const python = path.join(workflowRoot, "tools", "tool43CA", ".venv", "Scripts", "python.exe");
+  const python = scientificPython(workflowRoot);
   const cli = path.join(workflowRoot, "tools", "research-quality", "research_quality.py");
   const text = (description) => ({ type: "string", description });
   const definitions = [

@@ -1,0 +1,164 @@
+[
+    {
+        "name": "ADMETAI_predict_physicochemical_properties",
+        "description": "Predicts physicochemical properties (molecular weight, logP, hydrogen bond acceptors/donors, Lipinski, QED, stereo centers, TPSA) for a given list of molecules in SMILES format.",
+        "parameter": {
+            "type": "object",
+            "properties": {
+                "smiles": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "The list of SMILES strings."
+                }
+            },
+            "required": ["smiles"]
+        },
+        "type": "ADMETAITool",
+        "required_packages": ["admet_ai"],
+        "columns": ["molecular_weight", "logP", "hydrogen_bond_acceptors", "hydrogen_bond_donors", "Lipinski", "QED", "stereo_centers", "tpsa"]
+    },
+    {
+        "name": "ADMETAI_predict_CYP_interactions",
+        "description": "Predicts CYP enzyme interactions for a given list of molecules in SMILES format.",
+        "parameter": {
+            "type": "object",
+            "properties": {
+                "smiles": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "The list of SMILES strings."
+                }
+            },
+            "required": ["smiles"]
+        },
+        "type": "ADMETAITool",
+        "required_packages": ["admet_ai"],
+        "columns": ["CYP1A2_Veith", "CYP2C19_Veith", "CYP2C9_Substrate_CarbonMangels", "CYP2C9_Veith", "CYP2D6_Substrate_CarbonMangels", "CYP2D6_Veith", "CYP3A4_Substrate_CarbonMangels", "CYP3A4_Veith"]
+    },
+    {
+        "name": "ADMETAI_predict_BBB_penetrance",
+        "description": "Predicts blood-brain barrier (BBB) penetrance for a given list of molecules in SMILES format.",
+        "parameter": {
+            "type": "object",
+            "properties": {
+                "smiles": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "The list of SMILES strings."
+                }
+            },
+            "required": ["smiles"]
+        },
+        "type": "ADMETAITool",
+        "required_packages": ["admet_ai"],
+        "columns": ["BBB_Martins"]
+    },
+    {
+        "name": "ADMETAI_predict_toxicity",
+        "description": "Predicts toxicity endpoints (AMES, Carcinogens_Lagunin, ClinTox, DILI, LD50_Zhu, Skin_Reaction, hERG) for a given list of molecules in SMILES format.",
+        "parameter": {
+            "type": "object",
+            "properties": {
+                "smiles": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "The list of SMILES strings."
+                }
+            },
+            "required": ["smiles"]
+        },
+        "type": "ADMETAITool",
+        "required_packages": ["admet_ai"],
+        "columns": ["AMES", "Carcinogens_Lagunin", "ClinTox", "DILI", "LD50_Zhu", "Skin_Reaction", "hERG"]
+    },
+    {
+        "name": "ADMETAI_predict_bioavailability",
+        "description": "Predicts bioavailability endpoints (Bioavailability_Ma, HIA_Hou, PAMPA_NCATS, Caco2_Wang, Pgp_Broccatelli) for a given list of molecules in SMILES format.",
+        "parameter": {
+            "type": "object",
+            "properties": {
+                "smiles": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "The list of SMILES strings."
+                }
+            },
+            "required": ["smiles"]
+        },
+        "type": "ADMETAITool",
+        "required_packages": ["admet_ai"],
+        "columns": ["Bioavailability_Ma", "HIA_Hou", "PAMPA_NCATS", "Caco2_Wang", "Pgp_Broccatelli"]
+    },
+    {
+        "name": "ADMETAI_predict_clearance_distribution",
+        "description": "Predicts clearance and distribution endpoints (Clearance_Hepatocyte_AZ, Clearance_Microsome_AZ, Half_Life_Obach, VDss_Lombardo, PPBR_AZ) for a given list of molecules in SMILES format.",
+        "parameter": {
+            "type": "object",
+            "properties": {
+                "smiles": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "The list of SMILES strings."
+                }
+            },
+            "required": ["smiles"]
+        },
+        "type": "ADMETAITool",
+        "required_packages": ["admet_ai"],
+        "columns": ["Clearance_Hepatocyte_AZ", "Clearance_Microsome_AZ", "Half_Life_Obach", "VDss_Lombardo", "PPBR_AZ"]
+    },
+    {
+        "name": "ADMETAI_predict_nuclear_receptor_activity",
+        "description": "Predicts nuclear receptor activity endpoints (NR-AR-LBD, NR-AR, NR-AhR, NR-Aromatase, NR-ER-LBD, NR-ER, NR-PPAR-gamma) for a given list of molecules in SMILES format.",
+        "parameter": {
+            "type": "object",
+            "properties": {
+                "smiles": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "The list of SMILES strings."
+                }
+            },
+            "required": ["smiles"]
+        },
+        "type": "ADMETAITool",
+        "required_packages": ["admet_ai"],
+        "columns": ["NR-AR-LBD", "NR-AR", "NR-AhR", "NR-Aromatase", "NR-ER-LBD", "NR-ER", "NR-PPAR-gamma"]
+    },
+    {
+        "name": "ADMETAI_predict_stress_response",
+        "description": "Predicts stress response endpoints (SR-ARE, SR-ATAD5, SR-HSE, SR-MMP, SR-p53) for a given list of molecules in SMILES format.",
+        "parameter": {
+            "type": "object",
+            "properties": {
+                "smiles": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "The list of SMILES strings."
+                }
+            },
+            "required": ["smiles"]
+        },
+        "type": "ADMETAITool",
+        "required_packages": ["admet_ai"],
+        "columns": ["SR-ARE", "SR-ATAD5", "SR-HSE", "SR-MMP", "SR-p53"]
+    },
+    {
+        "name": "ADMETAI_predict_solubility_lipophilicity_hydration",
+        "description": "Predicts solubility, lipophilicity, and hydration endpoints (Solubility_AqSolDB, Lipophilicity_AstraZeneca, HydrationFreeEnergy_FreeSolv) for a given list of molecules in SMILES format.",
+        "parameter": {
+            "type": "object",
+            "properties": {
+                "smiles": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "The list of SMILES strings."
+                }
+            },
+            "required": ["smiles"]
+        },
+        "type": "ADMETAITool",
+        "required_packages": ["admet_ai"],
+        "columns": ["Solubility_AqSolDB", "Lipophilicity_AstraZeneca", "HydrationFreeEnergy_FreeSolv"]
+    }
+]

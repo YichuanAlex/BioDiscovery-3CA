@@ -1,0 +1,7 @@
+replicate,cells,status,reason,n_clusters_reclustered,mean_pairwise_ari,min_pairwise_ari,mean_pairwise_nmi,min_pairwise_nmi,ari_global_vs_within_replicate,silhouette,calinski_harabasz,davies_bouldin,metric_cells
+1,46,not_assessable,Fewer than 100 cells or unknown replicate; no per-replicate inference,,,,,,,,,,
+2,34,not_assessable,Fewer than 100 cells or unknown replicate; no per-replicate inference,,,,,,,,,,
+3,8,not_assessable,Fewer than 100 cells or unknown replicate; no per-replicate inference,,,,,,,,,,
+4,453,descriptive_only,,2.0,1.0,1.0,1.0,1.0,0.8315273811402226,0.0819881334900856,30.67522710971411,3.49209811238486,453.0
+5,307,descriptive_only,,2.0,0.9189430144606069,0.8252861849751026,0.8783217106592272,0.7732720751707788,0.5918774685927073,0.05773474648594856,14.542896414532969,3.8571399029899154,307.0
+6,2776,descriptive_only,,3.0,0.7447395143346845,0.5051285959408637,0.6835158550079801,0.43501251257025403,0.48640544368435706,0.167416051030159,193.8414466886324,2.3201875144135258,2776.0

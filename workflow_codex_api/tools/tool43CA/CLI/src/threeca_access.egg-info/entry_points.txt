@@ -1,0 +1,2 @@
+[console_scripts]
+threeca = threeca:main

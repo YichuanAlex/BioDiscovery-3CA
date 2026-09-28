@@ -1,0 +1,139 @@
+[
+  {
+    "type": "STRINGRESTTool",
+    "name": "STRING_get_protein_interactions",
+    "description": "Query protein-protein interactions from the STRING database. STRING is a comprehensive database of known and predicted protein-protein interactions with confidence scores and functional annotations.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "protein_ids": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "List of protein identifiers (UniProt IDs, gene names, etc.)",
+          "minItems": 1
+        },
+        "species": {
+          "type": "integer",
+          "description": "NCBI taxonomy ID (default: 9606 for human)",
+          "default": 9606
+        },
+        "confidence_score": {
+          "type": "number",
+          "description": "Minimum confidence score (0-1, default: 0.4)",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.4
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of interactions to return (default: 50)",
+          "minimum": 1,
+          "maximum": 1000,
+          "default": 50
+        },
+        "network_type": {
+          "type": "string",
+          "description": "Type of network ('full', 'physical', 'functional')",
+          "enum": ["full", "physical", "functional"],
+          "default": "full"
+        }
+      },
+      "required": ["protein_ids"]
+    },
+    "fields": {
+      "endpoint": "/tsv/network",
+      "return_format": "TSV"
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "success": {"type": "boolean"},
+        "interactions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "protein1": {"type": "string"},
+              "protein2": {"type": "string"},
+              "protein1_name": {"type": "string"},
+              "protein2_name": {"type": "string"},
+              "combined_score": {"type": "number"},
+              "confidence_score": {"type": "number"},
+              "interaction_sources": {"type": "array", "items": {"type": "string"}},
+              "interaction_type": {"type": "string"}
+            }
+          }
+        },
+        "mapping_data": {"type": "array"},
+        "functional_enrichment": {"type": "array"},
+        "summary": {"type": "object"},
+        "error": {"type": "string"}
+      }
+    },
+    "implementation": {
+      "language": "python",
+      "dependencies": ["requests"],
+      "source_file": "STRING_get_protein_interactions.py"
+    }
+  },
+  {
+    "type": "BioGRIDRESTTool",
+    "name": "BioGRID_get_interactions",
+    "description": "Query protein and genetic interactions from the BioGRID database. BioGRID is a comprehensive database of physical and genetic interactions with detailed experimental evidence.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "gene_names": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "List of gene names or protein identifiers",
+          "minItems": 1
+        },
+        "organism": {
+          "type": "string",
+          "description": "Organism name (e.g., 'Homo sapiens', 'Mus musculus')",
+          "default": "Homo sapiens"
+        },
+        "interaction_type": {
+          "type": "string",
+          "description": "Type of interaction ('physical', 'genetic', 'both')",
+          "enum": ["physical", "genetic", "both"],
+          "default": "both"
+        },
+        "evidence_types": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "List of evidence types to include"
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of interactions to return (default: 100)",
+          "minimum": 1,
+          "maximum": 1000,
+          "default": 100
+        },
+        "format": {
+          "type": "string",
+          "description": "Output format ('json' or 'tab', default: 'json')",
+          "enum": ["json", "tab"],
+          "default": "json"
+        }
+      },
+      "required": ["gene_names"]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "success": {"type": "boolean"},
+        "interactions": {"type": "array"},
+        "summary": {"type": "object"},
+        "statistics": {"type": "object"},
+        "error": {"type": "string"}
+      }
+    },
+    "fields": {
+      "endpoint": "/interactions/",
+      "return_format": "JSON"
+    }
+  }
+]

@@ -1,0 +1,296 @@
+[
+    {
+      "name": "UniProt_get_entry_by_accession",
+      "description": "Get the complete JSON entry for a specified UniProtKB accession. WARNING: This tool returns the complete UniProtKB entry, which can be extremely large (40,000+ lines for some entries) and may cause LLM context limits to be exceeded or crashes. For most use cases, consider using more specific extraction tools instead: UniProt_get_function_by_accession, UniProt_get_sequence_by_accession, UniProt_get_recommended_name_by_accession, UniProt_get_organism_by_accession, UniProt_get_subcellular_location_by_accession, UniProt_get_disease_variants_by_accession, or UniProt_get_ptm_processing_by_accession.",
+      "parameter": {
+        "type": "object",
+        "properties": {
+          "accession": {
+            "type": "string",
+            "description": "UniProtKB entry accession, e.g., P05067."
+          }
+        },
+        "required": ["accession"]
+      },
+      "fields": {
+        "endpoint": "https://rest.uniprot.org/uniprotkb/{accession}.json",
+        "input_description": "Input UniProtKB accession, e.g., P05067.",
+        "output_description": "Returns the complete UniProtKB entry JSON for that accession. WARNING: Output can be extremely large (40,000+ lines) and may exceed LLM context limits. Consider using specific extraction tools instead."
+      },
+      "type": "UniProtRESTTool"
+    },
+    {
+      "name": "UniProt_get_function_by_accession",
+      "description": "Extract functional annotations from UniProtKB entry (Comment type = FUNCTION).",
+      "parameter": {
+        "type": "object",
+        "properties": {
+          "accession": {
+            "type": "string",
+            "description": "UniProtKB accession, e.g., P05067."
+          }
+        },
+        "required": ["accession"]
+      },
+      "fields": {
+        "endpoint": "https://rest.uniprot.org/uniprotkb/{accession}.json",
+        "extract_path": "comments[?(@.commentType=='FUNCTION')].texts[*].value",
+        "input_description": "Input UniProtKB accession, e.g., P05067.",
+        "output_description": "Returns a list of all functional paragraph texts from that entry."
+      },
+      "type": "UniProtRESTTool"
+    },
+    {
+      "name": "UniProt_get_recommended_name_by_accession",
+      "description": "Extract the recommended protein name (recommendedName) from UniProtKB entry.",
+      "parameter": {
+        "type": "object",
+        "properties": {
+          "accession": {
+            "type": "string",
+            "description": "UniProtKB accession, e.g., P05067."
+          }
+        },
+        "required": ["accession"]
+      },
+      "fields": {
+        "endpoint": "https://rest.uniprot.org/uniprotkb/{accession}.json",
+        "extract_path": "proteinDescription.recommendedName.fullName.value",
+        "input_description": "Input UniProtKB accession, e.g., P05067.",
+        "output_description": "Returns the recommended protein full name string."
+      },
+      "type": "UniProtRESTTool"
+    },
+    {
+      "name": "UniProt_get_alternative_names_by_accession",
+      "description": "Extract all alternative names (alternativeNames) from UniProtKB entry.",
+      "parameter": {
+        "type": "object",
+        "properties": {
+          "accession": {
+            "type": "string",
+            "description": "UniProtKB accession, e.g., P05067."
+          }
+        },
+        "required": ["accession"]
+      },
+      "fields": {
+        "endpoint": "https://rest.uniprot.org/uniprotkb/{accession}.json",
+        "extract_path": "proteinDescription.alternativeNames[*].fullName.value",
+        "input_description": "Input UniProtKB accession, e.g., P05067.",
+        "output_description": "Returns a list containing all alternative name strings."
+      },
+      "type": "UniProtRESTTool"
+    },
+    {
+      "name": "UniProt_get_organism_by_accession",
+      "description": "Extract the organism scientific name from UniProtKB entry.",
+      "parameter": {
+        "type": "object",
+        "properties": {
+          "accession": {
+            "type": "string",
+            "description": "UniProtKB accession, e.g., P05067."
+          }
+        },
+        "required": ["accession"]
+      },
+      "fields": {
+        "endpoint": "https://rest.uniprot.org/uniprotkb/{accession}.json",
+        "extract_path": "organism.scientificName",
+        "input_description": "Input UniProtKB accession, e.g., P05067.",
+        "output_description": "Returns the organism scientific name string, e.g., \"Homo sapiens\"."
+      },
+      "type": "UniProtRESTTool"
+    },
+    {
+      "name": "UniProt_get_subcellular_location_by_accession",
+      "description": "Extract subcellular localization annotations from UniProtKB entry (Comment type = SUBCELLULAR LOCATION).",
+      "parameter": {
+        "type": "object",
+        "properties": {
+          "accession": {
+            "type": "string",
+            "description": "UniProtKB accession, e.g., P05067."
+          }
+        },
+        "required": ["accession"]
+      },
+      "fields": {
+        "endpoint": "https://rest.uniprot.org/uniprotkb/{accession}.json",
+        "extract_path": "comments[?(@.commentType=='SUBCELLULAR LOCATION')].subcellularLocations[*].location.value",
+        "input_description": "Input UniProtKB accession, e.g., P05067.",
+        "output_description": "Returns a list containing all annotated subcellular localization locations."
+      },
+      "type": "UniProtRESTTool"
+    },
+    {
+      "name": "UniProt_get_disease_variants_by_accession",
+      "description": "Extract all variants (feature type = VARIANT) and their related annotations from UniProtKB entry.",
+      "parameter": {
+        "type": "object",
+        "properties": {
+          "accession": {
+            "type": "string",
+            "description": "UniProtKB accession, e.g., P05067."
+          }
+        },
+        "required": ["accession"]
+      },
+      "fields": {
+        "endpoint": "https://rest.uniprot.org/uniprotkb/{accession}.json",
+        "extract_path": "features[?(@.type=='VARIANT')]",
+        "input_description": "Input UniProtKB accession, e.g., P05067.",
+        "output_description": "Returns a list of all variant feature objects, including position, original residue, variant residue, and disease annotations."
+      },
+      "type": "UniProtRESTTool"
+    },
+    {
+      "name": "UniProt_get_ptm_processing_by_accession",
+      "description": "Extract all PTM and processing sites from UniProtKB entry (feature type = MODIFIED RESIDUE or SIGNAL, etc.).",
+      "parameter": {
+        "type": "object",
+        "properties": {
+          "accession": {
+            "type": "string",
+            "description": "UniProtKB accession, e.g., P05067."
+          }
+        },
+        "required": ["accession"]
+      },
+      "fields": {
+        "endpoint": "https://rest.uniprot.org/uniprotkb/{accession}.json",
+        "extract_path": "features[?(@.type=='MODIFIED RESIDUE' || @.type=='SIGNAL')]",
+        "input_description": "Input UniProtKB accession, e.g., P05067.",
+        "output_description": "Returns a list containing all modification sites and signal peptide feature objects."
+      },
+      "type": "UniProtRESTTool"
+    },
+    {
+      "name": "UniProt_get_sequence_by_accession",
+      "description": "Extract the canonical sequence from UniProtKB entry.",
+      "parameter": {
+        "type": "object",
+        "properties": {
+          "accession": {
+            "type": "string",
+            "description": "UniProtKB accession, e.g., P05067."
+          }
+        },
+        "required": ["accession"]
+      },
+      "fields": {
+        "endpoint": "https://rest.uniprot.org/uniprotkb/{accession}.json",
+        "extract_path": "sequence.value",
+        "input_description": "Input UniProtKB accession, e.g., P05067.",
+        "output_description": "Returns the canonical sequence string."
+      },
+      "type": "UniProtRESTTool"
+    },
+    {
+      "name": "UniProt_get_isoform_ids_by_accession",
+      "description": "Extract all splice isoform IDs from UniProtKB entry (isoformNames).",
+      "parameter": {
+        "type": "object",
+        "properties": {
+          "accession": {
+            "type": "string",
+            "description": "UniProtKB accession, e.g., P05067."
+          }
+        },
+        "required": ["accession"]
+      },
+      "fields": {
+        "endpoint": "https://rest.uniprot.org/uniprotkb/{accession}.json",
+        "extract_path": "comments[?(@.commentType=='ALTERNATIVE PRODUCTS')].isoforms[*].isoformIds[*]",
+        "input_description": "Input UniProtKB accession, e.g., P05067.",
+        "output_description": "Returns a list containing all isoform ID strings."
+      },
+      "type": "UniProtRESTTool"
+    },
+    {
+      "name": "UniProt_search",
+      "description": "Search UniProtKB database with flexible query syntax. Returns protein entries with accession numbers and metadata. Query syntax supports: field searches (gene:TP53, organism_id:9606, reviewed:true), ranges (length:[100 TO 500], mass:[20000 TO 50000]), wildcards (gene:MEIOB*), boolean operators (AND/OR/NOT), and parentheses for grouping. Examples: 'gene:TP53 AND organism_id:9606', 'length:[400 TO 500] AND reviewed:true', 'tissue:brain NOT organism_id:10090'.",
+      "parameter": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Search query using UniProt syntax. Simple: 'MEIOB', 'insulin'. Field searches: 'gene:TP53', 'protein_name:insulin', 'organism_id:9606', 'reviewed:true'. Ranges: 'length:[100 TO 500]', 'mass:[20000 TO 50000]'. Wildcards: 'gene:MEIOB*'. Boolean: 'gene:TP53 AND organism_id:9606', 'tissue:brain OR tissue:liver', 'reviewed:true NOT fragment:true'. Use parentheses for grouping: '(organism_id:9606 OR organism_id:10090) AND gene:TP53'. Note: 'organism:' auto-converts to 'organism_id:'."
+          },
+          "organism": {
+            "type": "string",
+            "description": "Optional organism filter. Use common names ('human', 'mouse', 'rat', 'yeast') or taxonomy ID ('9606'). Automatically combined with query using AND. Will not duplicate if organism is already in query."
+          },
+          "limit": {
+            "type": "integer",
+            "description": "Maximum number of results to return (default: 25, max: 500). Accepts string or integer."
+          },
+          "min_length": {
+            "type": "integer",
+            "description": "Minimum sequence length. Auto-converts to 'length:[min TO *]' range query."
+          },
+          "max_length": {
+            "type": "integer",
+            "description": "Maximum sequence length. Auto-converts to 'length:[* TO max]' range query."
+          },
+          "fields": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of field names to return (e.g., ['accession','gene_primary','length','organism_name']). When specified, returns raw API response with requested fields. Common fields: accession, id, gene_names, gene_primary, protein_name, organism_name, organism_id, length, mass, sequence, reviewed, cc_function. See UniProt API docs for full list. Default (no fields): returns formatted response with accession, id, protein_name, gene_names, organism, length."
+          }
+        },
+        "required": ["query"]
+      },
+      "fields": {
+        "endpoint": "https://rest.uniprot.org/uniprotkb/search",
+        "search_type": "search",
+        "format": "json"
+      },
+      "type": "UniProtRESTTool"
+    },
+    {
+      "name": "UniProt_id_mapping",
+      "description": "Map IDs between different databases (e.g., Ensembl to UniProt, Gene Name to UniProt). Supports batch mapping and async task processing. Use this to convert between different database identifiers.",
+      "parameter": {
+        "type": "object",
+        "properties": {
+          "ids": {
+            "oneOf": [
+              {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "description": "ID(s) to map. Can be single string or array of strings, e.g., 'ENSG00000141510' or ['MEIOB', 'TP53']"
+          },
+          "from_db": {
+            "type": "string",
+            "description": "Source database. Examples: 'Ensembl', 'Gene_Name', 'RefSeq_Protein', 'PDB', 'EMBL'"
+          },
+          "to_db": {
+            "type": "string",
+            "description": "Target database (default: 'UniProtKB')"
+          },
+          "max_wait_time": {
+            "type": "integer",
+            "description": "Maximum time to wait for async task completion in seconds (default: 30)"
+          }
+        },
+        "required": ["ids", "from_db"]
+      },
+      "fields": {
+        "endpoint": "https://rest.uniprot.org/idmapping",
+        "mapping_type": "async",
+        "format": "json"
+      },
+      "type": "UniProtRESTTool"
+    }
+  ]

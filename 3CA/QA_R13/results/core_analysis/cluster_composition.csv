@@ -1,0 +1,586 @@
+field,cluster,value,cells,within_cluster_fraction
+patient,0,1,517,0.49191246431969554
+patient,0,2,29,0.02759276879162702
+patient,0,3,131,0.12464319695528069
+patient,0,4,354,0.3368220742150333
+patient,0,5,19,0.01807802093244529
+patient,0,6,1,0.0009514747859181732
+patient,1,1,1759,0.9926636568848759
+patient,1,2,0,0.0
+patient,1,3,0,0.0
+patient,1,4,11,0.006207674943566591
+patient,1,5,2,0.001128668171557562
+patient,1,6,0,0.0
+patient,10,1,7,0.0015082956259426848
+patient,10,2,47,0.010127127774186598
+patient,10,3,23,0.00495582848524025
+patient,10,4,757,0.16311139840551606
+patient,10,5,429,0.09243697478991597
+patient,10,6,3378,0.7278603749191984
+patient,11,1,0,0.0
+patient,11,2,0,0.0
+patient,11,3,3,0.0004476943739740337
+patient,11,4,0,0.0
+patient,11,5,6698,0.9995523056260259
+patient,11,6,0,0.0
+patient,12,1,0,0.0
+patient,12,2,0,0.0
+patient,12,3,3,0.00034067681126504656
+patient,12,4,1,0.00011355893708834885
+patient,12,5,8799,0.9992050874403816
+patient,12,6,3,0.00034067681126504656
+patient,2,1,174,0.026157546602525557
+patient,2,2,759,0.11410102224894768
+patient,2,3,139,0.0208959711365003
+patient,2,4,820,0.1232711966325917
+patient,2,5,1879,0.2824714371617559
+patient,2,6,2881,0.43310282621767887
+patient,3,1,51,0.014634146341463415
+patient,3,2,15,0.00430416068866571
+patient,3,3,23,0.006599713055954089
+patient,3,4,1935,0.5552367288378766
+patient,3,5,1003,0.28780487804878047
+patient,3,6,458,0.13142037302725967
+patient,4,1,20,0.006546644844517185
+patient,4,2,17,0.005564648117839607
+patient,4,3,8,0.002618657937806874
+patient,4,4,2975,0.9738134206219312
+patient,4,5,33,0.010801963993453356
+patient,4,6,2,0.0006546644844517185
+patient,5,1,4,0.00133422281521014
+patient,5,2,37,0.012341561040693796
+patient,5,3,2933,0.9783188792528352
+patient,5,4,7,0.0023348899266177454
+patient,5,5,16,0.00533689126084056
+patient,5,6,1,0.000333555703802535
+patient,6,1,1,0.00034153005464480874
+patient,6,2,2,0.0006830601092896175
+patient,6,3,2,0.0006830601092896175
+patient,6,4,2092,0.7144808743169399
+patient,6,5,348,0.11885245901639344
+patient,6,6,483,0.16495901639344263
+patient,7,1,5,0.0008305647840531562
+patient,7,2,8,0.00132890365448505
+patient,7,3,22,0.003654485049833887
+patient,7,4,61,0.010132890365448505
+patient,7,5,132,0.021926910299003323
+patient,7,6,5792,0.9621262458471761
+patient,8,1,0,0.0
+patient,8,2,0,0.0
+patient,8,3,0,0.0
+patient,8,4,0,0.0
+patient,8,5,0,0.0
+patient,8,6,9041,1.0
+patient,9,1,0,0.0
+patient,9,2,0,0.0
+patient,9,3,0,0.0
+patient,9,4,2,0.0011813349084465446
+patient,9,5,186,0.10986414648552864
+patient,9,6,1505,0.8889545186060248
+sample,0,MSC1,517,0.49191246431969554
+sample,0,MSC2,29,0.02759276879162702
+sample,0,MSC3,131,0.12464319695528069
+sample,0,MSC4,341,0.32445290199809707
+sample,0,MSC4-Dura,13,0.012369172216936251
+sample,0,MSC5,14,0.013320647002854425
+sample,0,MSC5-BTI,5,0.004757373929590866
+sample,0,MSC5-Dura,0,0.0
+sample,0,MSC6,0,0.0
+sample,0,MSC6-BTI,1,0.0009514747859181732
+sample,1,MSC1,1759,0.9926636568848759
+sample,1,MSC2,0,0.0
+sample,1,MSC3,0,0.0
+sample,1,MSC4,11,0.006207674943566591
+sample,1,MSC4-Dura,0,0.0
+sample,1,MSC5,2,0.001128668171557562
+sample,1,MSC5-BTI,0,0.0
+sample,1,MSC5-Dura,0,0.0
+sample,1,MSC6,0,0.0
+sample,1,MSC6-BTI,0,0.0
+sample,10,MSC1,7,0.0015082956259426848
+sample,10,MSC2,47,0.010127127774186598
+sample,10,MSC3,23,0.00495582848524025
+sample,10,MSC4,317,0.068304244774833
+sample,10,MSC4-Dura,440,0.09480715363068304
+sample,10,MSC5,118,0.025425554837319543
+sample,10,MSC5-BTI,88,0.018961430726136607
+sample,10,MSC5-Dura,223,0.04804998922645982
+sample,10,MSC6,2853,0.6147382029734971
+sample,10,MSC6-BTI,525,0.11312217194570136
+sample,11,MSC1,0,0.0
+sample,11,MSC2,0,0.0
+sample,11,MSC3,3,0.0004476943739740337
+sample,11,MSC4,0,0.0
+sample,11,MSC4-Dura,0,0.0
+sample,11,MSC5,130,0.019400089538874794
+sample,11,MSC5-BTI,6568,0.9801522160871512
+sample,11,MSC5-Dura,0,0.0
+sample,11,MSC6,0,0.0
+sample,11,MSC6-BTI,0,0.0
+sample,12,MSC1,0,0.0
+sample,12,MSC2,0,0.0
+sample,12,MSC3,3,0.00034067681126504656
+sample,12,MSC4,0,0.0
+sample,12,MSC4-Dura,1,0.00011355893708834885
+sample,12,MSC5,8380,0.9516238928003634
+sample,12,MSC5-BTI,415,0.04712695889166477
+sample,12,MSC5-Dura,4,0.0004542357483533954
+sample,12,MSC6,2,0.0002271178741766977
+sample,12,MSC6-BTI,1,0.00011355893708834885
+sample,2,MSC1,174,0.026157546602525557
+sample,2,MSC2,759,0.11410102224894768
+sample,2,MSC3,139,0.0208959711365003
+sample,2,MSC4,704,0.105832832230908
+sample,2,MSC4-Dura,116,0.017438364401683705
+sample,2,MSC5,1099,0.16521346963319303
+sample,2,MSC5-BTI,719,0.10808779314491881
+sample,2,MSC5-Dura,61,0.009170174383644017
+sample,2,MSC6,1191,0.17904389657245942
+sample,2,MSC6-BTI,1690,0.2540589296452195
+sample,3,MSC1,51,0.014634146341463415
+sample,3,MSC2,15,0.00430416068866571
+sample,3,MSC3,23,0.006599713055954089
+sample,3,MSC4,1764,0.5061692969870876
+sample,3,MSC4-Dura,171,0.049067431850789094
+sample,3,MSC5,464,0.13314203730272597
+sample,3,MSC5-BTI,354,0.10157819225251076
+sample,3,MSC5-Dura,185,0.05308464849354376
+sample,3,MSC6,188,0.0539454806312769
+sample,3,MSC6-BTI,270,0.07747489239598278
+sample,4,MSC1,20,0.006546644844517185
+sample,4,MSC2,17,0.005564648117839607
+sample,4,MSC3,8,0.002618657937806874
+sample,4,MSC4,2677,0.8762684124386252
+sample,4,MSC4-Dura,298,0.09754500818330605
+sample,4,MSC5,5,0.0016366612111292963
+sample,4,MSC5-BTI,0,0.0
+sample,4,MSC5-Dura,28,0.009165302782324058
+sample,4,MSC6,0,0.0
+sample,4,MSC6-BTI,2,0.0006546644844517185
+sample,5,MSC1,4,0.00133422281521014
+sample,5,MSC2,37,0.012341561040693796
+sample,5,MSC3,2933,0.9783188792528352
+sample,5,MSC4,7,0.0023348899266177454
+sample,5,MSC4-Dura,0,0.0
+sample,5,MSC5,10,0.00333555703802535
+sample,5,MSC5-BTI,6,0.0020013342228152103
+sample,5,MSC5-Dura,0,0.0
+sample,5,MSC6,1,0.000333555703802535
+sample,5,MSC6-BTI,0,0.0
+sample,6,MSC1,1,0.00034153005464480874
+sample,6,MSC2,2,0.0006830601092896175
+sample,6,MSC3,2,0.0006830601092896175
+sample,6,MSC4,2024,0.6912568306010929
+sample,6,MSC4-Dura,68,0.023224043715846996
+sample,6,MSC5,145,0.04952185792349727
+sample,6,MSC5-BTI,170,0.05806010928961749
+sample,6,MSC5-Dura,33,0.011270491803278689
+sample,6,MSC6,239,0.08162568306010928
+sample,6,MSC6-BTI,244,0.08333333333333333
+sample,7,MSC1,5,0.0008305647840531562
+sample,7,MSC2,8,0.00132890365448505
+sample,7,MSC3,22,0.003654485049833887
+sample,7,MSC4,24,0.003986710963455149
+sample,7,MSC4-Dura,37,0.006146179401993355
+sample,7,MSC5,55,0.009136212624584718
+sample,7,MSC5-BTI,57,0.00946843853820598
+sample,7,MSC5-Dura,20,0.0033222591362126247
+sample,7,MSC6,2351,0.390531561461794
+sample,7,MSC6-BTI,3441,0.5715946843853821
+sample,8,MSC1,0,0.0
+sample,8,MSC2,0,0.0
+sample,8,MSC3,0,0.0
+sample,8,MSC4,0,0.0
+sample,8,MSC4-Dura,0,0.0
+sample,8,MSC5,0,0.0
+sample,8,MSC5-BTI,0,0.0
+sample,8,MSC5-Dura,0,0.0
+sample,8,MSC6,3473,0.3841389226855436
+sample,8,MSC6-BTI,5568,0.6158610773144564
+sample,9,MSC1,0,0.0
+sample,9,MSC2,0,0.0
+sample,9,MSC3,0,0.0
+sample,9,MSC4,1,0.0005906674542232723
+sample,9,MSC4-Dura,1,0.0005906674542232723
+sample,9,MSC5,0,0.0
+sample,9,MSC5-BTI,186,0.10986414648552864
+sample,9,MSC5-Dura,0,0.0
+sample,9,MSC6,76,0.0448907265209687
+sample,9,MSC6-BTI,1429,0.8440637920850561
+source,0,Dura,13,0.012369172216936251
+source,0,Meningioma,1032,0.9819219790675547
+source,0,Meningioma brain-tumor interface,6,0.005708848715509039
+source,1,Dura,0,0.0
+source,1,Meningioma,1772,1.0
+source,1,Meningioma brain-tumor interface,0,0.0
+source,10,Dura,663,0.14285714285714285
+source,10,Meningioma,3365,0.7250592544710192
+source,10,Meningioma brain-tumor interface,613,0.13208360267183797
+source,11,Dura,0,0.0
+source,11,Meningioma,133,0.01984778391284883
+source,11,Meningioma brain-tumor interface,6568,0.9801522160871512
+source,12,Dura,5,0.0005677946854417443
+source,12,Meningioma,8385,0.9521916874858052
+source,12,Meningioma brain-tumor interface,416,0.047240517828753124
+source,2,Dura,177,0.02660853878532772
+source,2,Meningioma,4066,0.611244738424534
+source,2,Meningioma brain-tumor interface,2409,0.3621467227901383
+source,3,Dura,356,0.10215208034433286
+source,3,Meningioma,2505,0.7187948350071736
+source,3,Meningioma brain-tumor interface,624,0.17905308464849354
+source,4,Dura,326,0.10671031096563012
+source,4,Meningioma,2727,0.8926350245499182
+source,4,Meningioma brain-tumor interface,2,0.0006546644844517185
+source,5,Dura,0,0.0
+source,5,Meningioma,2992,0.9979986657771848
+source,5,Meningioma brain-tumor interface,6,0.0020013342228152103
+source,6,Dura,101,0.03449453551912568
+source,6,Meningioma,2413,0.8241120218579235
+source,6,Meningioma brain-tumor interface,414,0.1413934426229508
+source,7,Dura,57,0.00946843853820598
+source,7,Meningioma,2465,0.40946843853820597
+source,7,Meningioma brain-tumor interface,3498,0.5810631229235881
+source,8,Dura,0,0.0
+source,8,Meningioma,3473,0.3841389226855436
+source,8,Meningioma brain-tumor interface,5568,0.6158610773144564
+source,9,Dura,1,0.0005906674542232723
+source,9,Meningioma,77,0.045481393975191964
+source,9,Meningioma brain-tumor interface,1615,0.9539279385705848
+cell_type,0,Endothelial,4,0.003805899143672693
+cell_type,0,Glia,6,0.005708848715509039
+cell_type,0,Malignant,1027,0.9771646051379639
+cell_type,0,Monocyte,2,0.0019029495718363464
+cell_type,0,Pericyte,9,0.008563273073263558
+cell_type,0,T_cell,3,0.0028544243577545195
+cell_type,1,Endothelial,2,0.001128668171557562
+cell_type,1,Glia,23,0.012979683972911963
+cell_type,1,Malignant,1675,0.9452595936794582
+cell_type,1,Monocyte,2,0.001128668171557562
+cell_type,1,Pericyte,25,0.014108352144469526
+cell_type,1,T_cell,45,0.025395033860045147
+cell_type,10,Endothelial,34,0.007326007326007326
+cell_type,10,Glia,10,0.0021547080370609784
+cell_type,10,Malignant,105,0.02262443438914027
+cell_type,10,Monocyte,121,0.026071967248437838
+cell_type,10,Pericyte,46,0.0099116569704805
+cell_type,10,T_cell,4325,0.9319112260288731
+cell_type,11,Endothelial,2,0.00029846291598268916
+cell_type,11,Glia,3,0.0004476943739740337
+cell_type,11,Malignant,6602,0.9852260856588568
+cell_type,11,Monocyte,76,0.011341590807342188
+cell_type,11,Pericyte,16,0.0023877033278615132
+cell_type,11,T_cell,2,0.00029846291598268916
+cell_type,12,Endothelial,13,0.0014762661821485351
+cell_type,12,Glia,1,0.00011355893708834885
+cell_type,12,Malignant,8532,0.9688848512377924
+cell_type,12,Monocyte,152,0.017260958437429027
+cell_type,12,Pericyte,103,0.011696570520099932
+cell_type,12,T_cell,5,0.0005677946854417443
+cell_type,2,Endothelial,2,0.0003006614552014432
+cell_type,2,Glia,3,0.0004509921828021648
+cell_type,2,Malignant,46,0.006915213469633193
+cell_type,2,Monocyte,6591,0.990829825616356
+cell_type,2,Pericyte,0,0.0
+cell_type,2,T_cell,10,0.001503307276007216
+cell_type,3,Endothelial,2963,0.8502152080344333
+cell_type,3,Glia,34,0.00975609756097561
+cell_type,3,Malignant,224,0.0642754662840746
+cell_type,3,Monocyte,65,0.018651362984218076
+cell_type,3,Pericyte,171,0.049067431850789094
+cell_type,3,T_cell,28,0.008034433285509325
+cell_type,4,Endothelial,83,0.02716857610474632
+cell_type,4,Glia,36,0.011783960720130934
+cell_type,4,Malignant,2556,0.8366612111292963
+cell_type,4,Monocyte,46,0.015057283142389525
+cell_type,4,Pericyte,327,0.10703764320785597
+cell_type,4,T_cell,7,0.0022913256955810145
+cell_type,5,Endothelial,8,0.00266844563042028
+cell_type,5,Glia,15,0.005003335557038025
+cell_type,5,Malignant,2903,0.9683122081387592
+cell_type,5,Monocyte,31,0.010340226817878585
+cell_type,5,Pericyte,41,0.013675783855903937
+cell_type,5,T_cell,0,0.0
+cell_type,6,Endothelial,9,0.0030737704918032786
+cell_type,6,Glia,60,0.020491803278688523
+cell_type,6,Malignant,52,0.017759562841530054
+cell_type,6,Monocyte,131,0.044740437158469946
+cell_type,6,Pericyte,2675,0.9135928961748634
+cell_type,6,T_cell,1,0.00034153005464480874
+cell_type,7,Endothelial,19,0.0031561461794019936
+cell_type,7,Glia,77,0.012790697674418604
+cell_type,7,Malignant,5088,0.8451827242524917
+cell_type,7,Monocyte,674,0.11196013289036545
+cell_type,7,Pericyte,30,0.0049833887043189366
+cell_type,7,T_cell,132,0.021926910299003323
+cell_type,8,Endothelial,4,0.00044242893485233934
+cell_type,8,Glia,79,0.008737971463333702
+cell_type,8,Malignant,8571,0.9480146001548502
+cell_type,8,Monocyte,297,0.032850348412786196
+cell_type,8,Pericyte,19,0.002101537440548612
+cell_type,8,T_cell,71,0.007853113593629023
+cell_type,9,Endothelial,1,0.0005906674542232723
+cell_type,9,Glia,1585,0.9362079149438866
+cell_type,9,Malignant,68,0.04016538688718252
+cell_type,9,Monocyte,26,0.01535735380980508
+cell_type,9,Pericyte,7,0.004134672179562906
+cell_type,9,T_cell,6,0.0035440047253396337
+cell_subtype,0,Active monocytes,0,0.0
+cell_subtype,0,CD163 monocytes,2,0.0019029495718363464
+cell_subtype,0,CD4 T cells,1,0.0009514747859181732
+cell_subtype,0,CD8 T cells,2,0.0019029495718363464
+cell_subtype,0,Cycling G2M phase meningioma cells 1,0,0.0
+cell_subtype,0,Cycling G2M phase meningioma cells 2,0,0.0
+cell_subtype,0,Cycling S phase meningioma cells,7,0.006660323501427212
+cell_subtype,0,ECM remodeling meningioma cells,15,0.014272121788772598
+cell_subtype,0,G1 phase meningioma cells,21,0.019980970504281638
+cell_subtype,0,Glia,6,0.005708848715509039
+cell_subtype,0,Meningioma cells,982,0.934348239771646
+cell_subtype,0,Monocytes,0,0.0
+cell_subtype,0,Pericytes,9,0.008563273073263558
+cell_subtype,0,SSTR2A meningioma cells,2,0.0019029495718363464
+cell_subtype,0,Vascular cells,4,0.003805899143672693
+cell_subtype,1,Active monocytes,0,0.0
+cell_subtype,1,CD163 monocytes,2,0.001128668171557562
+cell_subtype,1,CD4 T cells,0,0.0
+cell_subtype,1,CD8 T cells,45,0.025395033860045147
+cell_subtype,1,Cycling G2M phase meningioma cells 1,17,0.009593679458239277
+cell_subtype,1,Cycling G2M phase meningioma cells 2,3,0.001693002257336343
+cell_subtype,1,Cycling S phase meningioma cells,6,0.003386004514672686
+cell_subtype,1,ECM remodeling meningioma cells,171,0.09650112866817155
+cell_subtype,1,G1 phase meningioma cells,1443,0.8143340857787811
+cell_subtype,1,Glia,23,0.012979683972911963
+cell_subtype,1,Meningioma cells,24,0.013544018058690745
+cell_subtype,1,Monocytes,0,0.0
+cell_subtype,1,Pericytes,25,0.014108352144469526
+cell_subtype,1,SSTR2A meningioma cells,11,0.006207674943566591
+cell_subtype,1,Vascular cells,2,0.001128668171557562
+cell_subtype,10,Active monocytes,91,0.0196078431372549
+cell_subtype,10,CD163 monocytes,12,0.002585649644473174
+cell_subtype,10,CD4 T cells,930,0.20038784744667099
+cell_subtype,10,CD8 T cells,3395,0.7315233785822021
+cell_subtype,10,Cycling G2M phase meningioma cells 1,25,0.0053867700926524455
+cell_subtype,10,Cycling G2M phase meningioma cells 2,3,0.0006464124111182935
+cell_subtype,10,Cycling S phase meningioma cells,15,0.003232062055591467
+cell_subtype,10,ECM remodeling meningioma cells,18,0.003878474466709761
+cell_subtype,10,G1 phase meningioma cells,12,0.002585649644473174
+cell_subtype,10,Glia,10,0.0021547080370609784
+cell_subtype,10,Meningioma cells,32,0.00689506571859513
+cell_subtype,10,Monocytes,18,0.003878474466709761
+cell_subtype,10,Pericytes,46,0.0099116569704805
+cell_subtype,10,SSTR2A meningioma cells,0,0.0
+cell_subtype,10,Vascular cells,34,0.007326007326007326
+cell_subtype,11,Active monocytes,1,0.00014923145799134458
+cell_subtype,11,CD163 monocytes,73,0.010893896433368154
+cell_subtype,11,CD4 T cells,0,0.0
+cell_subtype,11,CD8 T cells,2,0.00029846291598268916
+cell_subtype,11,Cycling G2M phase meningioma cells 1,3,0.0004476943739740337
+cell_subtype,11,Cycling G2M phase meningioma cells 2,85,0.01268467392926429
+cell_subtype,11,Cycling S phase meningioma cells,21,0.0031338606178182363
+cell_subtype,11,ECM remodeling meningioma cells,6142,0.9165796149828384
+cell_subtype,11,G1 phase meningioma cells,134,0.019997015370840174
+cell_subtype,11,Glia,3,0.0004476943739740337
+cell_subtype,11,Meningioma cells,86,0.012833905387255633
+cell_subtype,11,Monocytes,2,0.00029846291598268916
+cell_subtype,11,Pericytes,16,0.0023877033278615132
+cell_subtype,11,SSTR2A meningioma cells,131,0.01954932099686614
+cell_subtype,11,Vascular cells,2,0.00029846291598268916
+cell_subtype,12,Active monocytes,3,0.00034067681126504656
+cell_subtype,12,CD163 monocytes,144,0.016352486940722236
+cell_subtype,12,CD4 T cells,2,0.0002271178741766977
+cell_subtype,12,CD8 T cells,3,0.00034067681126504656
+cell_subtype,12,Cycling G2M phase meningioma cells 1,37,0.004201680672268907
+cell_subtype,12,Cycling G2M phase meningioma cells 2,5,0.0005677946854417443
+cell_subtype,12,Cycling S phase meningioma cells,6,0.0006813536225300931
+cell_subtype,12,ECM remodeling meningioma cells,1642,0.18646377469906883
+cell_subtype,12,G1 phase meningioma cells,6710,0.7619804678628208
+cell_subtype,12,Glia,1,0.00011355893708834885
+cell_subtype,12,Meningioma cells,32,0.0036338859868271633
+cell_subtype,12,Monocytes,5,0.0005677946854417443
+cell_subtype,12,Pericytes,103,0.011696570520099932
+cell_subtype,12,SSTR2A meningioma cells,100,0.011355893708834885
+cell_subtype,12,Vascular cells,13,0.0014762661821485351
+cell_subtype,2,Active monocytes,1688,0.25375826819001807
+cell_subtype,2,CD163 monocytes,4639,0.6973842453397474
+cell_subtype,2,CD4 T cells,4,0.0006013229104028864
+cell_subtype,2,CD8 T cells,6,0.0009019843656043296
+cell_subtype,2,Cycling G2M phase meningioma cells 1,1,0.0001503307276007216
+cell_subtype,2,Cycling G2M phase meningioma cells 2,1,0.0001503307276007216
+cell_subtype,2,Cycling S phase meningioma cells,10,0.001503307276007216
+cell_subtype,2,ECM remodeling meningioma cells,0,0.0
+cell_subtype,2,G1 phase meningioma cells,9,0.0013529765484064944
+cell_subtype,2,Glia,3,0.0004509921828021648
+cell_subtype,2,Meningioma cells,25,0.00375826819001804
+cell_subtype,2,Monocytes,264,0.0396873120865905
+cell_subtype,2,Pericytes,0,0.0
+cell_subtype,2,SSTR2A meningioma cells,0,0.0
+cell_subtype,2,Vascular cells,2,0.0003006614552014432
+cell_subtype,3,Active monocytes,16,0.004591104734576757
+cell_subtype,3,CD163 monocytes,39,0.011190817790530846
+cell_subtype,3,CD4 T cells,13,0.0037302725968436155
+cell_subtype,3,CD8 T cells,15,0.00430416068866571
+cell_subtype,3,Cycling G2M phase meningioma cells 1,7,0.0020086083213773313
+cell_subtype,3,Cycling G2M phase meningioma cells 2,3,0.000860832137733142
+cell_subtype,3,Cycling S phase meningioma cells,19,0.0054519368723099
+cell_subtype,3,ECM remodeling meningioma cells,17,0.004878048780487805
+cell_subtype,3,G1 phase meningioma cells,35,0.010043041606886656
+cell_subtype,3,Glia,34,0.00975609756097561
+cell_subtype,3,Meningioma cells,54,0.015494978479196557
+cell_subtype,3,Monocytes,10,0.0028694404591104736
+cell_subtype,3,Pericytes,171,0.049067431850789094
+cell_subtype,3,SSTR2A meningioma cells,89,0.025538020086083215
+cell_subtype,3,Vascular cells,2963,0.8502152080344333
+cell_subtype,4,Active monocytes,2,0.0006546644844517185
+cell_subtype,4,CD163 monocytes,32,0.010474631751227497
+cell_subtype,4,CD4 T cells,0,0.0
+cell_subtype,4,CD8 T cells,7,0.0022913256955810145
+cell_subtype,4,Cycling G2M phase meningioma cells 1,5,0.0016366612111292963
+cell_subtype,4,Cycling G2M phase meningioma cells 2,5,0.0016366612111292963
+cell_subtype,4,Cycling S phase meningioma cells,10,0.0032733224222585926
+cell_subtype,4,ECM remodeling meningioma cells,1352,0.4425531914893617
+cell_subtype,4,G1 phase meningioma cells,1053,0.3446808510638298
+cell_subtype,4,Glia,36,0.011783960720130934
+cell_subtype,4,Meningioma cells,69,0.02258592471358429
+cell_subtype,4,Monocytes,12,0.003927986906710311
+cell_subtype,4,Pericytes,327,0.10703764320785597
+cell_subtype,4,SSTR2A meningioma cells,62,0.020294599018003272
+cell_subtype,4,Vascular cells,83,0.02716857610474632
+cell_subtype,5,Active monocytes,21,0.007004669779853236
+cell_subtype,5,CD163 monocytes,0,0.0
+cell_subtype,5,CD4 T cells,0,0.0
+cell_subtype,5,CD8 T cells,0,0.0
+cell_subtype,5,Cycling G2M phase meningioma cells 1,71,0.023682454969979987
+cell_subtype,5,Cycling G2M phase meningioma cells 2,57,0.019012675116744496
+cell_subtype,5,Cycling S phase meningioma cells,23,0.007671781187458306
+cell_subtype,5,ECM remodeling meningioma cells,391,0.1304202801867912
+cell_subtype,5,G1 phase meningioma cells,649,0.21647765176784523
+cell_subtype,5,Glia,15,0.005003335557038025
+cell_subtype,5,Meningioma cells,800,0.266844563042028
+cell_subtype,5,Monocytes,10,0.00333555703802535
+cell_subtype,5,Pericytes,41,0.013675783855903937
+cell_subtype,5,SSTR2A meningioma cells,912,0.30420280186791193
+cell_subtype,5,Vascular cells,8,0.00266844563042028
+cell_subtype,6,Active monocytes,7,0.0023907103825136613
+cell_subtype,6,CD163 monocytes,123,0.042008196721311473
+cell_subtype,6,CD4 T cells,0,0.0
+cell_subtype,6,CD8 T cells,1,0.00034153005464480874
+cell_subtype,6,Cycling G2M phase meningioma cells 1,7,0.0023907103825136613
+cell_subtype,6,Cycling G2M phase meningioma cells 2,10,0.0034153005464480873
+cell_subtype,6,Cycling S phase meningioma cells,16,0.00546448087431694
+cell_subtype,6,ECM remodeling meningioma cells,12,0.004098360655737705
+cell_subtype,6,G1 phase meningioma cells,4,0.001366120218579235
+cell_subtype,6,Glia,60,0.020491803278688523
+cell_subtype,6,Meningioma cells,3,0.0010245901639344263
+cell_subtype,6,Monocytes,1,0.00034153005464480874
+cell_subtype,6,Pericytes,2675,0.9135928961748634
+cell_subtype,6,SSTR2A meningioma cells,0,0.0
+cell_subtype,6,Vascular cells,9,0.0030737704918032786
+cell_subtype,7,Active monocytes,88,0.014617940199335547
+cell_subtype,7,CD163 monocytes,62,0.010299003322259137
+cell_subtype,7,CD4 T cells,41,0.00681063122923588
+cell_subtype,7,CD8 T cells,91,0.015116279069767442
+cell_subtype,7,Cycling G2M phase meningioma cells 1,4157,0.6905315614617941
+cell_subtype,7,Cycling G2M phase meningioma cells 2,137,0.022757475083056478
+cell_subtype,7,Cycling S phase meningioma cells,430,0.07142857142857142
+cell_subtype,7,ECM remodeling meningioma cells,8,0.00132890365448505
+cell_subtype,7,G1 phase meningioma cells,19,0.0031561461794019936
+cell_subtype,7,Glia,77,0.012790697674418604
+cell_subtype,7,Meningioma cells,237,0.0393687707641196
+cell_subtype,7,Monocytes,524,0.08704318936877077
+cell_subtype,7,Pericytes,30,0.0049833887043189366
+cell_subtype,7,SSTR2A meningioma cells,100,0.016611295681063124
+cell_subtype,7,Vascular cells,19,0.0031561461794019936
+cell_subtype,8,Active monocytes,31,0.00342882424510563
+cell_subtype,8,CD163 monocytes,88,0.009733436566751465
+cell_subtype,8,CD4 T cells,19,0.002101537440548612
+cell_subtype,8,CD8 T cells,52,0.005751576153080412
+cell_subtype,8,Cycling G2M phase meningioma cells 1,246,0.02720937949341887
+cell_subtype,8,Cycling G2M phase meningioma cells 2,2822,0.3121336135383254
+cell_subtype,8,Cycling S phase meningioma cells,5396,0.5968366331158058
+cell_subtype,8,ECM remodeling meningioma cells,15,0.0016591085056962725
+cell_subtype,8,G1 phase meningioma cells,20,0.002212144674261697
+cell_subtype,8,Glia,79,0.008737971463333702
+cell_subtype,8,Meningioma cells,72,0.007963720827342109
+cell_subtype,8,Monocytes,178,0.0196880876009291
+cell_subtype,8,Pericytes,19,0.002101537440548612
+cell_subtype,8,SSTR2A meningioma cells,0,0.0
+cell_subtype,8,Vascular cells,4,0.00044242893485233934
+cell_subtype,9,Active monocytes,3,0.0017720023626698169
+cell_subtype,9,CD163 monocytes,15,0.008860011813349085
+cell_subtype,9,CD4 T cells,1,0.0005906674542232723
+cell_subtype,9,CD8 T cells,5,0.0029533372711163615
+cell_subtype,9,Cycling G2M phase meningioma cells 1,10,0.005906674542232723
+cell_subtype,9,Cycling G2M phase meningioma cells 2,1,0.0005906674542232723
+cell_subtype,9,Cycling S phase meningioma cells,20,0.011813349084465446
+cell_subtype,9,ECM remodeling meningioma cells,13,0.00767867690490254
+cell_subtype,9,G1 phase meningioma cells,11,0.006497341996455995
+cell_subtype,9,Glia,1585,0.9362079149438866
+cell_subtype,9,Meningioma cells,12,0.0070880094506792675
+cell_subtype,9,Monocytes,8,0.004725339633786178
+cell_subtype,9,Pericytes,7,0.004134672179562906
+cell_subtype,9,SSTR2A meningioma cells,1,0.0005906674542232723
+cell_subtype,9,Vascular cells,1,0.0005906674542232723
+cell_cycle_phase,0,G1/S,2,0.0019029495718363464
+cell_cycle_phase,0,G2/M,0,0.0
+cell_cycle_phase,0,Intermediate,0,0.0
+cell_cycle_phase,0,Not cycling,461,0.4386298763082778
+cell_cycle_phase,0,missing,588,0.5594671741198858
+cell_cycle_phase,1,G1/S,47,0.02652370203160271
+cell_cycle_phase,1,G2/M,5,0.0028216704288939053
+cell_cycle_phase,1,Intermediate,0,0.0
+cell_cycle_phase,1,Not cycling,1717,0.968961625282167
+cell_cycle_phase,1,missing,3,0.001693002257336343
+cell_cycle_phase,10,G1/S,104,0.022408963585434174
+cell_cycle_phase,10,G2/M,111,0.023917259211376857
+cell_cycle_phase,10,Intermediate,41,0.00883430295195001
+cell_cycle_phase,10,Not cycling,2838,0.6115061409179057
+cell_cycle_phase,10,missing,1547,0.3333333333333333
+cell_cycle_phase,11,G1/S,89,0.013281599761229668
+cell_cycle_phase,11,G2/M,47,0.007013878525593195
+cell_cycle_phase,11,Intermediate,18,0.0026861662438442025
+cell_cycle_phase,11,Not cycling,6528,0.9741829577674974
+cell_cycle_phase,11,missing,19,0.002835397701835547
+cell_cycle_phase,12,G1/S,7,0.000794912559618442
+cell_cycle_phase,12,G2/M,7,0.000794912559618442
+cell_cycle_phase,12,Intermediate,1,0.00011355893708834885
+cell_cycle_phase,12,Not cycling,8765,0.9953440835793776
+cell_cycle_phase,12,missing,26,0.0029525323642970703
+cell_cycle_phase,2,G1/S,138,0.02074564040889958
+cell_cycle_phase,2,G2/M,131,0.019693325315694527
+cell_cycle_phase,2,Intermediate,63,0.00947083583884546
+cell_cycle_phase,2,Not cycling,5628,0.8460613349368611
+cell_cycle_phase,2,missing,692,0.10402886349969934
+cell_cycle_phase,3,G1/S,15,0.00430416068866571
+cell_cycle_phase,3,G2/M,8,0.0022955523672883787
+cell_cycle_phase,3,Intermediate,6,0.001721664275466284
+cell_cycle_phase,3,Not cycling,2569,0.7371592539454807
+cell_cycle_phase,3,missing,887,0.254519368723099
+cell_cycle_phase,4,G1/S,19,0.006219312602291326
+cell_cycle_phase,4,G2/M,5,0.0016366612111292963
+cell_cycle_phase,4,Intermediate,2,0.0006546644844517185
+cell_cycle_phase,4,Not cycling,2971,0.9725040916530279
+cell_cycle_phase,4,missing,58,0.018985270049099837
+cell_cycle_phase,5,G1/S,60,0.0200133422281521
+cell_cycle_phase,5,G2/M,45,0.015010006671114077
+cell_cycle_phase,5,Intermediate,23,0.007671781187458306
+cell_cycle_phase,5,Not cycling,2529,0.8435623749166111
+cell_cycle_phase,5,missing,341,0.11374249499666444
+cell_cycle_phase,6,G1/S,30,0.010245901639344262
+cell_cycle_phase,6,G2/M,10,0.0034153005464480873
+cell_cycle_phase,6,Intermediate,12,0.004098360655737705
+cell_cycle_phase,6,Not cycling,2672,0.912568306010929
+cell_cycle_phase,6,missing,204,0.06967213114754098
+cell_cycle_phase,7,G1/S,83,0.013787375415282393
+cell_cycle_phase,7,G2/M,396,0.06578073089700996
+cell_cycle_phase,7,Intermediate,12,0.0019933554817275745
+cell_cycle_phase,7,Not cycling,1399,0.2323920265780731
+cell_cycle_phase,7,missing,4130,0.686046511627907
+cell_cycle_phase,8,G1/S,1647,0.1821701139254507
+cell_cycle_phase,8,G2/M,1864,0.20617188364119013
+cell_cycle_phase,8,Intermediate,1551,0.1715518194889946
+cell_cycle_phase,8,Not cycling,3974,0.43955314677579915
+cell_cycle_phase,8,missing,5,0.0005530361685654242
+cell_cycle_phase,9,G1/S,3,0.0017720023626698169
+cell_cycle_phase,9,G2/M,9,0.005316007088009451
+cell_cycle_phase,9,Intermediate,0,0.0
+cell_cycle_phase,9,Not cycling,1549,0.9149438865918488
+cell_cycle_phase,9,missing,132,0.07796810395747195

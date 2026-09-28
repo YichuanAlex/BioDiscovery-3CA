@@ -1,0 +1,84 @@
+[
+  {
+    "type": "SearchSPLTool",
+    "name": "DailyMed_search_spls",
+    "description": "Search SPL list using multiple filter conditions (drug_name/ndc/rxcui/setid) and return metadata + data array.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "drug_name": {
+          "type": "string",
+          "description": "Generic or brand name of the drug, e.g., 'TAMSULOSIN HYDROCHLORIDE'."
+        },
+        "ndc": {
+          "type": "string",
+          "description": "National Drug Code (NDC)."
+        },
+        "rxcui": {
+          "type": "string",
+          "description": "RxNorm Code (RXCUI)."
+        },
+        "setid": {
+          "type": "string",
+          "format": "uuid",
+          "description": "Set ID corresponding to the SPL."
+        },
+        "published_date_gte": {
+          "type": "string",
+          "description": "Published date >= specified date, format 'YYYY-MM-DD'."
+        },
+        "published_date_eq": {
+          "type": "string",
+          "description": "Published date == specified date, format 'YYYY-MM-DD'."
+        },
+        "pagesize": {
+          "type": "integer",
+          "description": "Number of items per page, maximum 100, default 100.",
+          "default": 100
+        },
+        "page": {
+          "type": "integer",
+          "description": "Page number, starts from 1, default 1.",
+          "default": 1
+        }
+      },
+      "required": [
+        "drug_name",
+        "ndc",
+        "rxcui",
+        "setid",
+        "published_date_gte",
+        "published_date_eq",
+        "pagesize",
+        "page"
+      ]
+    }
+  },
+  {
+    "type": "GetSPLBySetIDTool",
+    "name": "DailyMed_get_spl_by_setid",
+    "description": "Get complete label corresponding to SPL Set ID, returns content in XML or JSON format.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "setid": {
+          "type": "string",
+          "format": "uuid",
+          "description": "SPL Set ID to query."
+        },
+        "format": {
+          "type": "string",
+          "enum": [
+            "xml"
+          ],
+          "default": "xml",
+          "description": "Return format, only supports 'xml'."
+        }
+      },
+      "required": [
+        "setid",
+        "format"
+      ]
+    }
+  }
+]

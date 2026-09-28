@@ -1,0 +1,74 @@
+[
+  {
+    "type": "PackageTool",
+    "name": "get_xesmf_info",
+    "description": "Get information about the xesmf package. Universal regridder for geospatial data",
+    "package_name": "xesmf",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": []
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_rasterio_info",
+    "description": "Get information about the rasterio package. Access to geospatial raster data",
+    "package_name": "rasterio",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": []
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_geopandas_info",
+    "description": "Get information about the geopandas package. Geospatial data manipulation and analysis",
+    "package_name": "geopandas",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": []
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_cartopy_info",
+    "description": "Get information about the cartopy package. Cartographic projections and geospatial data processing",
+    "package_name": "cartopy",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": []
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_netcdf4_info",
+    "description": "Get information about the netcdf4 package. Python interface to netCDF C library",
+    "package_name": "netcdf4",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": []
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_cftime_info",
+    "description": "Get information about the cftime package. Time-handling functionality from netcdf4-python",
+    "package_name": "cftime",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": []
+  }
+]

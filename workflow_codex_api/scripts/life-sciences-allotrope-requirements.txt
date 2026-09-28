@@ -1,0 +1,8 @@
+# Exact, resolver-compatible pins for the isolated Allotrope runtime.
+# The upstream example pairs allotropy 0.1.55 with pandas 2.0.3, but
+# allotropy 0.1.55 declares pandas>=2.2.0. Keep the parser version and
+# use an exact compatible pandas release instead of bypassing pip checks.
+allotropy==0.1.55
+pandas==2.3.3
+openpyxl==3.1.2
+pdfplumber==0.9.0

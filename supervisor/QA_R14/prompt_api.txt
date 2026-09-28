@@ -1,0 +1,25 @@
+请使用独立 API 工作流 `/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex_api` 和 DeepSeek `deepseek-v4-pro` 在唯一工作区 `/Users/bytedance/Downloads/BioDiscovery-3CA/3CA/QA_R14` 自主完成全新研究。API 工作流使用 1,000,000-token 上下文、65,536-token 单次最大输出、thinking enabled 和 max reasoning effort。不得读取、复制、恢复或修改任何 `Q1_R*`、`QA_R10`、`QA_R11`、`QA_R12`、`QA_R13` 或其他旧轮次研究产物；不得修改工作流、supervisor、凭据或外部组件。
+
+任务：只使用工作区内监督者重新暂存且哈希核验的不可变用户基因文件 `inputs/metabolic_genes_total.csv` 作为代谢基因集，以及已核验公共来源 `3ca:20773` 的真实原始计数，回答：“Are there distinct clusters of transcriptional metabolic states? In other words, can we use these metabolic genes only to cluster or separate groups in the single-cell RNA-seq dataset?” 同时对精确元数据子集 `cell_subtype=CD8 T cells` 重复分析。
+
+这是全新 QA_R14。只可复用不可变用户原始输入与已核验 SHA-256 的公共原始缓存，必须重新暂存公共数据、重新计算、重新生成图表和报告；不得复制旧轮次代码、计算、结果、图表、报告或 checkpoint。用户 CSV 存在，因此禁止调用 Reactome 生成替代基因集，禁止把 Reactome 基因误称为用户输入。全局与 CD8 两个原生核心的 `metabolic_genes_path` 必须都是 `inputs/metabolic_genes_total.csv`，其 SHA-256 必须与 `inputs/input-provenance.json` 和 manifest `feature_set.sha256` 一致。
+
+按引擎阶段依次调用原生 3CA、核心分析、DOI 核验、报告构建、validator 和 completion 工具；每个响应只调用一个工具。不得用 shell、自写分析代码、Skill 或外部 MCP 绕过原生核心。先运行全局核心，再用精确过滤 `cell_subtype=CD8 T cells` 运行子集核心。保存精确与唯一的大小写不敏感基因匹配、歧义/未匹配及 prevalence 过滤结果。两次分析均检查多种子/分辨率、聚类指标、HVG、19 个随机对照、患者/样本/细胞类型/complexity/细胞周期混杂和患者内敏感性。细胞不是独立重复；所有指标均为描述性证据，不是独立重复显著性检验或因果证据。
+
+用 `verify_doi` 分别保存并核验以下两个 DOI，不得虚构其他引用：
+- 数据集论文：`10.1038/s41588-022-01061-8`
+- Scanpy 方法论文：`10.1186/s13059-017-1382-0`
+
+生成英文 `report/main.tex`、`report/main.pdf`、`results/summary.json`、`results/analysis_manifest.json`、`results/core_analysis/core_result.json`、`results/cd8_analysis/core_result.json`、`results/cd8_analysis/summary.json` 和 `README.md`。
+
+报告必须满足：
+- 4 张核心矢量图：全局 UMAP/diagnostics 与 CD8 UMAP/diagnostics；每张图独立 figure、caption、label、正文 ref，并使用 `[width=0.95\linewidth,height=0.78\textheight,keepaspectratio]`。
+- 只放 1 个合并的 booktabs 三线表，以 Global 和 CD8 列展示核心指标。
+- 只放 1 个带唯一 label/ref 的归一化公式：`x'_{ig}=\log(1+10^4 x_{ig}/\sum_g x_{ig})`，定义全部符号；不得使用 median UMI 分母或 `log(1+x/10000)`。
+- 包含独立的 Question 1、Question 2、Question 3 章节和明确但受证据约束的答案。
+- 写明真实 seeds、cluster size、随机对照计数、三位小数患者内 ARI 范围和最弱患者。
+- 从 report 目录引用图时使用 `../figures/...`；使用 `\sloppy` 命令而非 sloppy 宏包。
+- 避免 moderate、weaker、more similar、not strongly supported、significantly、statistically significant、better/worse than random 等未校准措辞。
+- 分开回答“能否形成计算分组”和“是否证明离散生物学代谢状态”，不得过度解释。
+
+以两个 core JSON 为唯一数值来源。最后重建 PDF，并运行 `validate_research_bundle`。只有 validator 返回 `valid=true` 且 `complete_task` 接受全部八项必需文件才结束。引擎必须在本次单次启动中自主处理报告修复、构建、验证和完成；监督者只读观察，不会停止进程、恢复 checkpoint、修改文件或热修工作流。

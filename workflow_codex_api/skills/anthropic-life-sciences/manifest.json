@@ -1,0 +1,544 @@
+{
+  "schema_version": 2,
+  "package": "anthropic-life-sciences",
+  "installed_skill_count": 7,
+  "duplicate_policy": "bio-research is canonical when a skill exists in both source collections",
+  "authenticated_mcp_installed": false,
+  "runtime": {
+    "platform": "macOS arm64",
+    "installer": "setup-life-sciences-macos.sh",
+    "smoke_test": "test-life-sciences-macos.sh",
+    "isolation_root": ".runtime/macos/life-sciences",
+    "profiles": {
+      "scverse": {
+        "skills": [
+          "single-cell-rna-qc",
+          "scvi-tools",
+          "nextflow-development Python helpers",
+          "clinical-trial-protocol-skill"
+        ],
+        "python": "3.12",
+        "requirements": "scripts/life-sciences-scverse-requirements.txt"
+      },
+      "allotrope": {
+        "skills": [
+          "instrument-data-to-allotrope"
+        ],
+        "python": "3.11",
+        "requirements": "scripts/life-sciences-allotrope-requirements.txt",
+        "exact_pins": true,
+        "note": "pandas 2.3.3 satisfies allotropy 0.1.55's declared pandas>=2.2.0 requirement"
+      },
+      "nextflow": {
+        "skills": [
+          "nextflow-development"
+        ],
+        "openjdk": "17.0.18",
+        "nextflow": "25.04.8",
+        "execution": "local process executor; no Docker required for the bundled smoke test"
+      }
+    }
+  },
+  "skills": [
+    {
+      "name": "instrument-data-to-allotrope",
+      "directory": "instrument-data-to-allotrope",
+      "description": "Convert laboratory instrument output files (PDF, CSV, Excel, TXT) to Allotrope Simple Model (ASM) JSON format or flattened 2D CSV. Use this skill when scientists need to standardize instrument data for LIMS systems, data lakes, or downstream analysis. Supports auto-detection of instrument types. Outputs include full ASM JSON, flattened CSV for easy import, and exportable Python code for data engineers. Common triggers include converting instrument files, standardizing lab data, preparing data for upload to LIMS/ELN systems, or generating parser code for production pipelines.",
+      "canonical_source": "anthropics-knowledge-work-plugins/bio-research/skills/instrument-data-to-allotrope",
+      "source_kind": "bio-research-canonical",
+      "duplicate_source": "anthropics-life-sciences/instrument-data-to-allotrope",
+      "duplicate_identical_to_canonical": true,
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "bytes": 10254,
+          "sha256": "7505b489cc8ad7f16ba08343184320f1583303cfacdb9121b9b756bc073df1ab"
+        },
+        {
+          "path": "references/asm_schema_overview.md",
+          "bytes": 6110,
+          "sha256": "339dc491f567d58535dc7c3db1c4bef143eae53ba964dcaf1995f91c970fd37d"
+        },
+        {
+          "path": "references/field_classification_guide.md",
+          "bytes": 17665,
+          "sha256": "de83b5b6a0b16a3b3da2671efe94fb9535081154efdc55955caa3bfaf1bcd604"
+        },
+        {
+          "path": "references/flattening_guide.md",
+          "bytes": 7500,
+          "sha256": "4f3602b21e6fd6c3dd384a072b983470133d2b7abe5ec46da60a1ce8b7629aab"
+        },
+        {
+          "path": "references/supported_instruments.md",
+          "bytes": 5304,
+          "sha256": "eb9d30845eb05d8366d073883cd967a4ccc40eab18dfc1707c35a4100764c8bd"
+        },
+        {
+          "path": "requirements.txt",
+          "bytes": 811,
+          "sha256": "21433e5a443ee926e059dd51ef4497a208bd2f4ae04f8585205375ca12d2510c"
+        },
+        {
+          "path": "scripts/convert_to_asm.py",
+          "bytes": 17278,
+          "sha256": "ac7984666cd18a7a1767209b84dadf19a36b02006bd9390a9579e049814d3e53"
+        },
+        {
+          "path": "scripts/export_parser.py",
+          "bytes": 13847,
+          "sha256": "32467ff33bd588520d8a7a0acda12b2ec1b26d8058c6cd48c00ad44797a9d3b5"
+        },
+        {
+          "path": "scripts/flatten_asm.py",
+          "bytes": 7339,
+          "sha256": "7ded9de71f82a88a3d9dedadb2713b5d33c9cb4d9a2014401dc6af35f90ef72d"
+        },
+        {
+          "path": "scripts/validate_asm.py",
+          "bytes": 36719,
+          "sha256": "bb06708d3d2376fdd5fcca1b189440d0d7a4044b4ac949f85aab69644386ccf7"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 10726,
+          "sha256": "6167bf1731e568b63110a8f27e987cfe386f44e64cd2d78d9080d5d7628a79c5"
+        }
+      ],
+      "tree_sha256": "fe778c9189705a7b147e773b50986ca6449a61ff9032f1ca0ab0717707ee7391"
+    },
+    {
+      "name": "nextflow-development",
+      "directory": "nextflow-development",
+      "description": "Run nf-core bioinformatics pipelines (rnaseq, sarek, atacseq) on sequencing data. Use when analyzing RNA-seq, WGS/WES, or ATAC-seq data—either local FASTQs or public datasets from GEO/SRA. Triggers on nf-core, Nextflow, FASTQ analysis, variant calling, gene expression, differential expression, GEO reanalysis, GSE/GSM/SRR accessions, or samplesheet creation.",
+      "canonical_source": "anthropics-knowledge-work-plugins/bio-research/skills/nextflow-development",
+      "source_kind": "bio-research-canonical",
+      "duplicate_source": "anthropics-life-sciences/nextflow-development",
+      "duplicate_identical_to_canonical": false,
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "bytes": 10254,
+          "sha256": "7505b489cc8ad7f16ba08343184320f1583303cfacdb9121b9b756bc073df1ab"
+        },
+        {
+          "path": "references/geo-sra-acquisition.md",
+          "bytes": 14122,
+          "sha256": "85238c3bf2c43d2ca5ad8c4fb4418927ff3443bf8993813925a188a1c287d170"
+        },
+        {
+          "path": "references/installation.md",
+          "bytes": 1816,
+          "sha256": "d214ad4508868ed9fd648ec625e633c2b7629df300a4953a4b89fc6010fa7577"
+        },
+        {
+          "path": "references/pipelines/atacseq.md",
+          "bytes": 4181,
+          "sha256": "ca6ca22e409e78be3aa6f0e18de9c255fd5e9ac66c59d71ce214fc4a76849a1b"
+        },
+        {
+          "path": "references/pipelines/rnaseq.md",
+          "bytes": 3614,
+          "sha256": "c7b0c59b33d52b62d6ca2a476f1f45c849dc83923773f258a0731ba2b7b7c93a"
+        },
+        {
+          "path": "references/pipelines/sarek.md",
+          "bytes": 4018,
+          "sha256": "67fa5ee65022875b95e6181baa3eec67c572d0564d2aa7bb498d85551458c2fa"
+        },
+        {
+          "path": "references/troubleshooting.md",
+          "bytes": 3368,
+          "sha256": "f49b6b48590170770d8e0eb69ee9894c3de04d779b0031d0515529f2e7c01450"
+        },
+        {
+          "path": "scripts/check_environment.py",
+          "bytes": 14111,
+          "sha256": "ab259534959c86c4bcdb7a4a6d2eab1edf9d47de6e273c2a3ca0eb13e6b61604"
+        },
+        {
+          "path": "scripts/config/genomes.yaml",
+          "bytes": 3520,
+          "sha256": "940bd833b87542a25705668a3ba8f157ea25fcb698f654f2d410efd410fa4172"
+        },
+        {
+          "path": "scripts/config/pipelines/atacseq.yaml",
+          "bytes": 5158,
+          "sha256": "fb63a0f76fec6b71303e8a58bba8c4c38a56ee533784d438953fe5e394444158"
+        },
+        {
+          "path": "scripts/config/pipelines/rnaseq.yaml",
+          "bytes": 4173,
+          "sha256": "8df7b123fc64328aa4b97d047b316cdbaf4622d89684dfd0b6aca5a5da263f5a"
+        },
+        {
+          "path": "scripts/config/pipelines/sarek.yaml",
+          "bytes": 6278,
+          "sha256": "03a904ab4a5f3de216200b60646f58faa37416d4bafda6289fcca91caf1c4f2f"
+        },
+        {
+          "path": "scripts/detect_data_type.py",
+          "bytes": 9953,
+          "sha256": "b69c0293c00f292b27e00b5d36629469e843e60f952d299ce85845fbf258314b"
+        },
+        {
+          "path": "scripts/generate_samplesheet.py",
+          "bytes": 15440,
+          "sha256": "14a4acb03e08369ea9d73de872b20e3578bcd3eec7bbfa03c2df6adcf5eacbf1"
+        },
+        {
+          "path": "scripts/manage_genomes.py",
+          "bytes": 16718,
+          "sha256": "d27e36e0c442b081ef7e60d426c037967afec97e441e8fd7ae0a5e436b64e863"
+        },
+        {
+          "path": "scripts/sra_geo_fetch.py",
+          "bytes": 24982,
+          "sha256": "0bd4f292350b47b71e0048a223ca50ebdde0ced1f33d5661daf756c73d1b5a31"
+        },
+        {
+          "path": "scripts/utils/__init__.py",
+          "bytes": 1788,
+          "sha256": "4ef421fc4ad6f13aafc0c34e8c92cf3463cebb0c9f7732d2b9ff876c5cd4d89c"
+        },
+        {
+          "path": "scripts/utils/file_discovery.py",
+          "bytes": 5169,
+          "sha256": "3540e5411b1bf52e017a1636a127c4f52392f5e888e0ace47361e4c29e3ef380"
+        },
+        {
+          "path": "scripts/utils/ncbi_utils.py",
+          "bytes": 28480,
+          "sha256": "bfed0a0570f3344036277867c3e69fb6136ae87040ed2640d5b62919a046cfc8"
+        },
+        {
+          "path": "scripts/utils/sample_inference.py",
+          "bytes": 7848,
+          "sha256": "3f2dcebbc540fa76e9285dd247cb0d6922d4fbe2588b7f7b3ad7ac7ab82b63af"
+        },
+        {
+          "path": "scripts/utils/validators.py",
+          "bytes": 8419,
+          "sha256": "2572671195244a3ac7e67a6ebe4c44bbd541fbaa1afe3ebab1f81a46b29feea1"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 8828,
+          "sha256": "f30017df5d499427a701ec6cedfc5c9948ca3bd04ee1a2b6a585a29cd93ad0d7"
+        }
+      ],
+      "tree_sha256": "e244c80fff7cf46a45d349c27c860ed89328391afb6ea06f1d32d9867dcd2749"
+    },
+    {
+      "name": "scientific-problem-selection",
+      "directory": "scientific-problem-selection",
+      "description": "This skill should be used when scientists need help with research problem selection, project ideation, troubleshooting stuck projects, or strategic scientific decisions. Use this skill when users ask to pitch a new research idea, work through a project problem, evaluate project risks, plan research strategy, navigate decision trees, or get help choosing what scientific problem to work on. Typical requests include \"I have an idea for a project\", \"I'm stuck on my research\", \"help me evaluate this project\", \"what should I work on\", or \"I need strategic advice about my research\".",
+      "canonical_source": "anthropics-knowledge-work-plugins/bio-research/skills/scientific-problem-selection",
+      "source_kind": "bio-research-canonical",
+      "duplicate_source": "anthropics-life-sciences/scientific-problem-selection",
+      "duplicate_identical_to_canonical": true,
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "bytes": 10254,
+          "sha256": "7505b489cc8ad7f16ba08343184320f1583303cfacdb9121b9b756bc073df1ab"
+        },
+        {
+          "path": "references/01-intuition-pumps.md",
+          "bytes": 12495,
+          "sha256": "b29e16c5e55d32ff133aef8ee933cc1abdafae30390f9bb775a8d2e26d129876"
+        },
+        {
+          "path": "references/02-risk-assessment.md",
+          "bytes": 13177,
+          "sha256": "4643c7d964060df29c5dc71a41c93e4f6f399fdd4b4f5ffbc3bc5c3919b8a626"
+        },
+        {
+          "path": "references/03-optimization-function.md",
+          "bytes": 18167,
+          "sha256": "478641cbcc20e245903543df0d57a86b96e7365eacd2aa61892914488e005bea"
+        },
+        {
+          "path": "references/04-parameter-strategy.md",
+          "bytes": 14423,
+          "sha256": "8a286e9e7e21926b7d9e02c50b960f7f9ea03c43542b8ae60c4ce40604966906"
+        },
+        {
+          "path": "references/05-decision-tree.md",
+          "bytes": 3295,
+          "sha256": "3a9e164a029b3dc7626f7c3e92978dacca67656e91b5ab60fef21e6381e04f8b"
+        },
+        {
+          "path": "references/06-adversity-planning.md",
+          "bytes": 4734,
+          "sha256": "e00b671c3493725339f0bbdb12ad4d876d95f124948ef8ee7c0eb77bf604cda5"
+        },
+        {
+          "path": "references/07-problem-inversion.md",
+          "bytes": 5671,
+          "sha256": "19211d825ea39931f2c67b1032f8521462c64a3874116a630aa9e1246d413979"
+        },
+        {
+          "path": "references/08-integration-synthesis.md",
+          "bytes": 5416,
+          "sha256": "17e2ddcbb943d2d1053f18b29c858afb91eb3815aa66df3006701ce7659d6189"
+        },
+        {
+          "path": "references/09-meta-framework.md",
+          "bytes": 16539,
+          "sha256": "91f4880cef12916d33cf9f12cd42aa23d7cf97f9b9d18e0fb5f0f64e36166602"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 11184,
+          "sha256": "9ec99e3e5b2f4cd7474ef2bb8a1b10ee1f97dbe688c7723c7ec0b18deb8ff0f4"
+        }
+      ],
+      "tree_sha256": "163147781378c8a053829712754a1f24f0118cbb26ade1015e7d66312fa625ba"
+    },
+    {
+      "name": "scvi-tools",
+      "directory": "scvi-tools",
+      "description": "Deep learning for single-cell analysis using scvi-tools. This skill should be used when users need (1) data integration and batch correction with scVI/scANVI, (2) ATAC-seq analysis with PeakVI, (3) CITE-seq multi-modal analysis with totalVI, (4) multiome RNA+ATAC analysis with MultiVI, (5) spatial transcriptomics deconvolution with DestVI, (6) label transfer and reference mapping with scANVI/scArches, (7) RNA velocity with veloVI, or (8) any deep learning-based single-cell method. Triggers include mentions of scVI, scANVI, totalVI, PeakVI, MultiVI, DestVI, veloVI, sysVI, scArches, variational autoencoder, VAE, batch correction, data integration, multi-modal, CITE-seq, multiome, reference mapping, latent space.",
+      "canonical_source": "anthropics-knowledge-work-plugins/bio-research/skills/scvi-tools",
+      "source_kind": "bio-research-canonical",
+      "duplicate_source": "anthropics-life-sciences/scvi-tools",
+      "duplicate_identical_to_canonical": true,
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "bytes": 10254,
+          "sha256": "7505b489cc8ad7f16ba08343184320f1583303cfacdb9121b9b756bc073df1ab"
+        },
+        {
+          "path": "references/atac_peakvi.md",
+          "bytes": 9498,
+          "sha256": "9be865ba995796bd2e691df0d49d91039719a4c925b061f1b2a4a044ef6a0316"
+        },
+        {
+          "path": "references/batch_correction_sysvi.md",
+          "bytes": 10456,
+          "sha256": "cde389092f5e482ef817a08d08907b6526ddff12e6809333cc5fdab6d8d44d2b"
+        },
+        {
+          "path": "references/citeseq_totalvi.md",
+          "bytes": 10341,
+          "sha256": "33fd95d9e435937885a0e0e7f8a3825907a6fbb89a437459a267cd24892521f8"
+        },
+        {
+          "path": "references/data_preparation.md",
+          "bytes": 6335,
+          "sha256": "9f67453f39d0ec555540fdc9236a04aef5398e2620417daf987066a68b462027"
+        },
+        {
+          "path": "references/environment_setup.md",
+          "bytes": 6473,
+          "sha256": "e262ef9b78fa4d3413eefacdb5d131be4cd16ddf77433daf87aa05eab46dd956"
+        },
+        {
+          "path": "references/label_transfer.md",
+          "bytes": 10431,
+          "sha256": "76847bc77975f84c0d5ab00fa13251d85511027cc25c6f76fc671a1b47af0af5"
+        },
+        {
+          "path": "references/multiome_multivi.md",
+          "bytes": 9145,
+          "sha256": "f400da4d29456474b8d13e65145b14edb23497ddaf65583ffff5f6967f68dccd"
+        },
+        {
+          "path": "references/rna_velocity_velovi.md",
+          "bytes": 8824,
+          "sha256": "ca74c13f859dcd15e1b0389b6a5ff1a2f68113d263a110186057071190a9c20c"
+        },
+        {
+          "path": "references/scarches_mapping.md",
+          "bytes": 11090,
+          "sha256": "8afb6c5eb77225f4ac3eaf4e7f18a8fffde5ed1ee46512ff734531afc0ce29f9"
+        },
+        {
+          "path": "references/scrna_integration.md",
+          "bytes": 9877,
+          "sha256": "7a04d1fe5a4822be6a395ef4d8e2d528d556fd9a8bcf38e384dbd3da517f93f7"
+        },
+        {
+          "path": "references/spatial_deconvolution.md",
+          "bytes": 11428,
+          "sha256": "d7445af2474b22f24ffe8cfff53a445ed5fa43e6cdca31969dfea24018ee54a4"
+        },
+        {
+          "path": "references/troubleshooting.md",
+          "bytes": 11010,
+          "sha256": "f74ec705d240ec93acf8127bbf4adf6a6203e24e509ff40a047020d836a5ea1d"
+        },
+        {
+          "path": "scripts/cluster_embed.py",
+          "bytes": 6416,
+          "sha256": "eb2f269e15fa1eca1621703631b2848d61655e0eefee65899c082c74f0dcfc47"
+        },
+        {
+          "path": "scripts/differential_expression.py",
+          "bytes": 6821,
+          "sha256": "09fff28f11f1650a4179c5a68e32b84b017e54fe5d1f53da766ff3ea4a7a7a01"
+        },
+        {
+          "path": "scripts/integrate_datasets.py",
+          "bytes": 7027,
+          "sha256": "f7e3adfd6500cba58617d667745e9101ac953d1c8acc4a5544c788ff9b1e0ba8"
+        },
+        {
+          "path": "scripts/model_utils.py",
+          "bytes": 17434,
+          "sha256": "6ce6b43a2b0df4de6253b88fb588373c14504f62d7915d6ef03f295a60313bd4"
+        },
+        {
+          "path": "scripts/prepare_data.py",
+          "bytes": 5218,
+          "sha256": "3566b749d45c692bd1ad730de60025675bb1930775048607ff8a59e2e9dd4c67"
+        },
+        {
+          "path": "scripts/train_model.py",
+          "bytes": 11604,
+          "sha256": "a0486beaeef3a04799f1b8d06680d56ff9cb5466fa1ea8baa0f2740488947258"
+        },
+        {
+          "path": "scripts/transfer_labels.py",
+          "bytes": 7354,
+          "sha256": "4d9f66ef7b3bd682d72b326ba4fec07a9b1ee23e7d8edaad94eb6cac5f333791"
+        },
+        {
+          "path": "scripts/validate_adata.py",
+          "bytes": 12211,
+          "sha256": "d72ba68d04ee17c10b7e35eef212ca7b3a8d64327270ab3f24c7bb26d58c14a3"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 7423,
+          "sha256": "03a69b32b77db86afe5f87b75db2ae4c92b03b6e9e16e2c5e66cde2d4ad9c5bc"
+        }
+      ],
+      "tree_sha256": "ad744488ef67883ff61bd58f7cff2c21cd9adf9aaa2d9308b05833fa3b2b675d"
+    },
+    {
+      "name": "single-cell-rna-qc",
+      "directory": "single-cell-rna-qc",
+      "description": "Performs quality control on single-cell RNA-seq data (.h5ad or .h5 files) using scverse best practices with MAD-based filtering and comprehensive visualizations. Use when users request QC analysis, filtering low-quality cells, assessing data quality, or following scverse/scanpy best practices for single-cell analysis.",
+      "canonical_source": "anthropics-knowledge-work-plugins/bio-research/skills/single-cell-rna-qc",
+      "source_kind": "bio-research-canonical",
+      "duplicate_source": "anthropics-life-sciences/single-cell-rna-qc",
+      "duplicate_identical_to_canonical": false,
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "bytes": 10254,
+          "sha256": "7505b489cc8ad7f16ba08343184320f1583303cfacdb9121b9b756bc073df1ab"
+        },
+        {
+          "path": "references/scverse_qc_guidelines.md",
+          "bytes": 7587,
+          "sha256": "a056c4d17d8d39aa9b034aff89e435c5d2371e66470853d3cdff978e34c6fc45"
+        },
+        {
+          "path": "scripts/qc_analysis.py",
+          "bytes": 9533,
+          "sha256": "dbcc2983cacaefffd2369bfae35342fedc22a1ff6415571055e0d9515a85e525"
+        },
+        {
+          "path": "scripts/qc_core.py",
+          "bytes": 6675,
+          "sha256": "24fa2e13fed1b5cecff1f7ed8c5c594314426fd44d418d0526a00480a0c96352"
+        },
+        {
+          "path": "scripts/qc_plotting.py",
+          "bytes": 8501,
+          "sha256": "12bf1a733540817fca963d42deca1b55cc3bd0b6ab26a34472ffd9d344e63c48"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 7980,
+          "sha256": "49cb573916deec6fcf6cc2cb1b573469cbc8c34b84326597ce2db22d0202393f"
+        }
+      ],
+      "tree_sha256": "86fc6a952d0244af185f7b94bc001b8f47151771a99cce3f443715f2aab37f55"
+    },
+    {
+      "name": "start",
+      "directory": "start",
+      "description": "Set up your bio-research environment and explore available tools. Use when first getting oriented with the plugin, checking which literature, drug-discovery, or visualization MCP servers are connected, or surveying available analysis skills before starting a new project.",
+      "canonical_source": "anthropics-knowledge-work-plugins/bio-research/skills/start",
+      "source_kind": "bio-research-canonical",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "bytes": 3526,
+          "sha256": "6016fe5c28952feef14ac851134b35b56a1c86614d9163d21fb82205d7e7694b"
+        }
+      ],
+      "tree_sha256": "de580fbc7e411e2ac9c4a0a352d51cc5383ccc47f3810d3d5b93cd2b7a4a032f"
+    },
+    {
+      "name": "clinical-trial-protocol-skill",
+      "directory": "clinical-trial-protocol-skill",
+      "description": "Generate clinical trial protocols for medical devices or drugs. This skill should be used when users say \"Create a clinical trial protocol\", \"Generate protocol for [device/drug]\", \"Help me design a clinical study\", \"Research similar trials for [intervention]\", or when developing FDA submission documentation for investigational products.",
+      "canonical_source": "anthropics-life-sciences/clinical-trial-protocol-skill",
+      "source_kind": "life-sciences-unique",
+      "files": [
+        {
+          "path": "assets/FDA-Clinical-Protocol-Template.md",
+          "bytes": 176697,
+          "sha256": "a4ed30c4c4eb3d5fda7e93dd5ff91e5b8092cbbf3552862b852e5fd6d4d794c0"
+        },
+        {
+          "path": "LICENSE.txt",
+          "bytes": 10254,
+          "sha256": "7505b489cc8ad7f16ba08343184320f1583303cfacdb9121b9b756bc073df1ab"
+        },
+        {
+          "path": "README.md",
+          "bytes": 2967,
+          "sha256": "a62f7f50bd90e0a27e2bcdcfcf5fa5f669eb2780df9e7f2686f8a0a609b01871"
+        },
+        {
+          "path": "references/00-initialize-intervention.md",
+          "bytes": 8823,
+          "sha256": "e732d65a89006bbaee3262fe308ef0aa76e59687e43c6d98ac65d6cd6ac5d9dd"
+        },
+        {
+          "path": "references/01-research-protocols.md",
+          "bytes": 19123,
+          "sha256": "81d9d8e74f258d66dc830b038645cf0fdbabc1e2e49ea91b46b2eacfe2f965c8"
+        },
+        {
+          "path": "references/02-protocol-foundation.md",
+          "bytes": 40691,
+          "sha256": "fcca7e625ef97199c875400acb223b55d2f0c894a34dd0130b61ef245f528d75"
+        },
+        {
+          "path": "references/03-protocol-intervention.md",
+          "bytes": 33535,
+          "sha256": "1ce26ede7fed4265840f1b8e7d789f4b62b30549a5c97017fa9660ab6a08bf44"
+        },
+        {
+          "path": "references/04-protocol-operations.md",
+          "bytes": 83349,
+          "sha256": "f309f4c3d527c06ffe23400d0fbb5d042f25f8f8a159464b207ff9bb20f5f87a"
+        },
+        {
+          "path": "references/05-concatenate-protocol.md",
+          "bytes": 8998,
+          "sha256": "3cada712f03fad90fbb9cb6fff06f7b8fcb7f89aeb2b1b62873cb052a54b8d1f"
+        },
+        {
+          "path": "scripts/sample_size_calculator.py",
+          "bytes": 15768,
+          "sha256": "9ed53cf8f57403312d59dd95c4038c5bca0da50559750f28969a14bc57b53f2e"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 20426,
+          "sha256": "e60ffb7aaebbd5e95f365082a10fe70541d0b8a0fe82a7b7ec2ba2821f2af4cf"
+        }
+      ],
+      "tree_sha256": "2d36304fb7c50cb7b78cd08f14a0fcf86f6fa78ac05c52ef3869aecc8d3731f1"
+    }
+  ]
+}

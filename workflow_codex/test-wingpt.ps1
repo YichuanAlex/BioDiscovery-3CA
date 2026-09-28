@@ -11,6 +11,8 @@ foreach ($name in $environmentNames) {
 & (Join-Path $PSScriptRoot 'test-isolation.ps1')
 & $nodePath (Join-Path $PSScriptRoot 'codex-cli\bin\test-wingpt-recovery.mjs')
 if ($LASTEXITCODE -ne 0) { throw 'Agent recovery regression failed.' }
+& $nodePath (Join-Path $PSScriptRoot 'codex-cli\bin\test-wingpt-http-mcp.mjs')
+if ($LASTEXITCODE -ne 0) { throw 'Anonymous HTTP MCP adapter regression failed.' }
 $toolRoot = Join-Path $PSScriptRoot 'tools\tool43CA'
 & (Join-Path $toolRoot '.venv\Scripts\python.exe') (Join-Path $toolRoot 'CLI\test_threeca.py')
 if ($LASTEXITCODE -ne 0) { throw 'Shared threeca inspection and archive safety regression failed.' }

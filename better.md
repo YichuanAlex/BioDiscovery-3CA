@@ -547,6 +547,16 @@ audit-r14.mjs 语法和 launch-r14.ps1 -Probe 通过，Q1_R14 为空且无旧 ma
 
 16:31:07 首次审计 runner_alive=true、status=running、0 轮、冻结差异 0、无失败，五项产物不存在，semantic_acceptance=pending_independent_review。R12/R13 原目录及失败现场均未改动；这只是启动成功，后续继续观察核心、报告、验证与独立科学复核。
 
+### 轮 18：5 个免认证 HTTP MCP 接入与实际探测（2026-09-21）
+
+在 `workflow_codex` 的 WiNGPT 函数工具层接入固定白名单中的 PubMed、bioRxiv、ClinicalTrials、ChEMBL 和 OpenTargets；未加入任何需要账号、订阅、令牌或 Authorization header 的 MCP。安装器逐端点实际执行 `initialize`、`notifications/initialized` 和 `tools/list`，将成功端点的工具输入 schema、逐 schema SHA-256、端点工具集 SHA-256 和整份清单 SHA-256 原子写入项目内 `.runtime/anonymous-http-mcp/manifest.json`。401/402/403/407、`WWW-Authenticate`、超时、协议错误和无 tools 数组均记录为 disabled，运行时不暴露失败端点。
+
+运行时只读取并校验安装清单和固定 URL 白名单，以 `pubmed__`、`biorxiv__`、`clinicaltrials__`、`chembl__`、`opentargets__` 前缀暴露只读工具；首次调用重新 initialize/tools-list 并核对工具集哈希，schema 漂移要求重新安装。传输同时解析 JSON 与 SSE，保持初始化/调用独立超时、8 MiB 网络响应上限，并将交给模型的工具结果按 UTF-8 字节硬限制为 16 KiB。新增 macOS/Windows 安装与卸载入口、macOS 总安装入口挂接及 Mock 回归。
+
+首次 Mock 回归因 50 ms 测试超时在本机调度下误将 SSE mock 判为失败，真实记录为退出 1；随后把成功端点测试预算改为 200 ms、故意慢端点延迟改为 500 ms，回归退出 0，覆盖安装探测/schema 哈希、缓存运行时、JSON/SSE、前缀调用、认证排除、超时、失败端点不启用、只读过滤、session 传播和 16 KiB 边界。实际公网安装探测退出 0：PubMed 7、bioRxiv 7、ClinicalTrials 6、ChEMBL 6、OpenTargets 5 个工具均启用，共 31 个；端点工具集哈希分别为 `14e89a5677e4d055d993b334ada32acd54aed73dc97ceae862e4f5d45a41ea90`、`60b392a0bd3a652a1522f4243d44ccfa655bbf6d89d29e0abbe1840de7b4ef77`、`c77c9175635bb0d5eeb7885d9d856399a9bb5cc08c55745abed003990115547a`、`0fbad6dbe10ce9cc8944224955e282b76aa28e4c5fcab4fa10431eb38098d92e`、`5e3883785f22cc7477799d98f3a2b42d5b0367aec9cb0e2ff4d5266f5793e5db`。随后从缓存加载确认 5 端点/31 工具/0 失败，并实际调用 `pubmed__search_articles` 查询 TP53、返回 255 字节有效结果；`git diff --check` 退出 0。
+
+按仓库规则尝试 `just fmt`，环境没有 `just`，退出 127；随后直接运行其目标 `python3 scripts/format.py`，因环境同时缺少 cargo、just、uv、dotslash 而退出 1。此次只修改 JavaScript、Shell、PowerShell 和 Markdown，相关 Node `--check` 与 `git diff --check` 均退出 0；未把缺少 Rust/Python/Bazel 格式工具伪报为格式化成功。安装→卸载→确认清单消失→重新安装的完整入口回归退出 0，重新安装后 Mock 回归再次退出 0。
+
 ### 轮 17.25：R14 暴露缓存失效与核心前自定义脚本绕行，保留失败轮并修复共享根因
 
 R14 正确完成 Choudhury 2022 原始数据准备和 Reactome 基因获取，但仍在核心结果出现前写入 `Q1_R14/match_genes.py` 并试图执行。第一版精确哈希闸门确实先拒绝未审计脚本；代理随后成功审计同一文件，但审计成功没有推进 workspaceVersion，导致此前同一命令的拒绝结果仍从重复调用缓存返回。脚本换一种命令形式后被执行，又因 `results` 目录不存在而失败；代理创建空 `results` 目录，但旧 workspaceStamp 只记录文件、不记录目录，故相同命令仍复用此前失败。之后代理误把 `results/matched_metabolic_genes.txt` 当作 genes_path 调用核心，而准备入口已给出的真实文件是 `inputs/Genes.txt`；核心按边界检查拒绝，未产生 `results/core_analysis/core_result.json`。停止时研究区保留真实输入、Reactome 来源和错误辅助脚本，五项交付物均缺失，R14 不接受、不删除、不 resume。
@@ -894,3 +904,189 @@ Git 本地作者配置为 `YichuanAlex <jiangzixi1527435659@gmail.com>`，remote
 推送后通过 GitHub REST API 独立复核：远程 `YichuanAlex/BioDiscovery-3CA` 为 `private`，默认分支 `main`，远程 commit `35c1ab2c7f645404823cb946fd664931c4ea03cd` 与本地完全一致；远程 `README.md` 74,442 bytes、`.gitignore` 1 byte 且没有 ignore pattern、`LFS_EXCLUDED_FILES.md` 4,925 bytes。API 的 `repo.size` 在首次推送后暂时仍返回 0 KiB，属于仓库统计异步更新，不影响 commit/file API 已能读取的事实。此条追加后还需一个小型日志提交和 push，完成后再做最终 HEAD 对齐。
 
 `.gitignore` 随后从一个换行修正为真正的 0-byte 空文件，并把 `LFS_EXCLUDED_FILES.md` 中最终普通 Git 文件数纠正为 36,451。小型发布记录 commit `456519dca454a08f369c0eccd258fdcaf5554af2` 成功 push，传输 5 个对象/1.59 KiB。最终 GitHub API 核验返回：private/`main`，远程和本地 commit 均为 `456519dca454a08f369c0eccd258fdcaf5554af2`；递归 tree `truncated=false`，恰有 36,451 个 remote blobs，0 个超过 100 MiB，最大 blob 89.24 MiB；远程 README 74,442 bytes、`.gitignore` 0 bytes、排除清单 4,914 bytes。Git Credential Manager 清除操作退出 0，`cmdkey /list` 中没有匹配 GitHub/YichuanAlex 的凭据目标；本地 `git lfs ls-files` 为 0，tracked worktree changes 为 0，`HEAD` 与 `origin/main` 完全相同。至此仓库内容与用户指定的大文件回退边界均已远程验证。
+
+## 2026-09-17 — Mac / MLX 迁移开始
+
+用户授权将完整项目适配至 Apple Silicon Mac，使用 `model/Qwen3.5-4B-MLX-4bit` 并实际运行端到端科研流程。当前项目根为 `/Users/bytedance/Downloads/BioDiscovery-3CA`；原 Windows `C:/Users/User/Desktop/agentic/better.md` 在此机器的对应文件就是本记录，后续追加于此，保留全部旧历史。未删除、重用或修改任何旧研究轮次。
+
+环境核验：Apple M5、16 GiB 统一内存、macOS arm64；Conda 环境为 `/Users/Shared/miniforge3/envs/py38`、`py312`，后者 Python 3.12.14，已有 mlx 0.32.2、mlx-lm 0.31.3、mlx-vlm 0.7.1、transformers 5.17.0。Metal 实际可用，推荐 GPU working set 为 12,713,115,648 bytes。初次 mlx-lm import 较慢，栈显示加载 SciPy/sklearn 原生扩展；最终 import 成功，尚不代表模型推理成功。py38 为 Python 3.8.20，不满足项目 >=3.10 要求。
+
+缺少 Node、单细胞/MCP/PDF 工具，开始执行 `setup-macos.sh`：在 `.runtime/macos/python` 建立继承 py312 的项目 venv，新增依赖只安装到本项目；Node/Tectonic/Poppler 计划安装到项目 Conda prefix。旧大型原始数据不在迁移副本，后续必须经官方已记录来源重新下载并校验哈希。Qwen MLX 权重文件存在，约 3.03 GB。
+
+开始平台适配：新增 `wingpt-platform.js` 统一 Python 与 Shell 选择；工具桥使用当前 Python和源码 CLI；引擎增加模型地址/身份配置、Bash 工具、POSIX 附件、实际 provider 日志，并补上最终验证 `valid=true` 的显式判定。尚未完成测试、启动器和端到端运行，不宣称迁移成功。
+
+## 2026-09-17 — `test-wingpt-recovery.mjs` macOS 适配
+
+仅修改 `workflow_codex/codex-cli/bin/test-wingpt-recovery.mjs`，未改生产代码。测试现在从 `wingpt-platform.js` 使用 `shellToolName`、`scientificPython` 与 `isWindows`：macOS 发送 `run_shell` 和 Bash/POSIX 命令，Windows 继续发送 `run_powershell` 和原 PowerShell 命令；Python 审计测试改用平台科学 Python。另将临时目录的任务哈希与 checkpoint workspace 统一为 `fs.realpathSync`，避免 macOS `/var` 与 `/private/var` 别名导致 `probe.txt`/任务 checkpoint ENOENT；Windows 专属 PowerShell launcher 测试只在 Windows 执行。
+
+实际验证：项目本地 Node 执行 `node --check codex-cli/bin/test-wingpt-recovery.mjs` 退出 0；完整 `node codex-cli/bin/test-wingpt-recovery.mjs` 退出 0，全部输出为 PASS。`just fmt` 未执行成功，因为当前 macOS 环境没有 `just`（退出 127）；本轮只改 JavaScript 测试文件，无 Rust/生产代码变更。此前迭代真实暴露并修复了 POSIX 实路径 checkpoint、Bash 命令、平台 CLI mock 与 macOS 较慢验证周期问题。
+
+### Mac 迁移验证与 Q1_R19 放行（2026-09-17）
+
+继续迁移时发现宿主 TRAE Python 3.10 的 `PYTHONHOME/PYTHONPATH` 会污染项目 venv，使 Python 3.12 在初始化 `encodings` 前崩溃。`macos-env.sh` 现先清除两项变量、检查项目 Python 可执行，再用隔离模式读取 base prefix；`setup-macos.sh` 同样清除污染并在建 venv 前验证基础 Python >=3.10。四个 Mac shell 入口已增加执行权限。修复后项目 Python 3.12.14 可导入 MLX、mlx-lm、Scanpy、Pandas、SciPy 和 scikit-learn；Node 语法、Tectonic 0.17.0、Poppler 26.09.0 均通过。
+
+项目本地 MLX 服务真实启动为 PID 7273，`/v1/models` 返回指定 `model/Qwen3.5-4B-MLX-4bit`，主 `--self-test --allow-shell` 退出 0，覆盖模型、路径守卫、文件读取、原生工具协议、3CA、research-quality、网络和 Bash。7 项 Python 科研单元测试通过；10 个 tool43CA MCP 实际调用通过，包括在线目录、metadata 下载/解压、检查与 SHA-256；9 个 research-quality MCP 实际调用通过，包括合成分析、Tectonic PDF 构建、bundle 边界和 Reactome/PubMed/Crossref。
+
+网络预检曾有两项真实失败：旧 Dropbox 请求出现一次证书主机名不匹配；随后相同真实 MCP 下载链通过，未关闭 TLS。第一次 research-quality MCP 因 Reactome/NCBI 慢响应且旧 `_request()` 无 timeout 长时间无终态，人工终止测试，残留子进程随后精确终止。现场探针显示 Reactome 两个接口各约 61 秒、PubMed 约 32 秒、Crossref 约 1 秒。现将 3CA 与 research-quality 的默认 socket timeout 设为可配置 120 秒（`WINGPT_NETWORK_TIMEOUT`），保留原重试、TLS、host allowlist 和哈希核验；3CA 裸 CLI 默认缓存同时由 Windows 字面路径改为项目 `.threeca/cache`。
+
+完整恢复回归迁移到 `wingpt-platform.js`：Mac 使用 `run_shell`、Bash、科学 Python 和 POSIX realpath，Windows 分支保持原 PowerShell 行为。主会话复跑依次暴露并修正了模板字符串中的美元符号正则转义，以及手工 checkpoint 固定 Windows 模型名造成的 resume identity mismatch；最终 `node test-wingpt-recovery.mjs` 退出 0，27 项 PASS，覆盖上下文压缩、科研阶段、编译/validator 熔断、until-complete、checkpoint、来源和完成门禁。没有修改 Rust，因此未运行 Rust fmt/test。
+
+README 已加入 Mac/MLX 安装、服务、交互、自测和自主运行说明，明确 Mac 默认 32,768 context/4,096 output 和 120 秒网络超时，不沿用 Windows 262,144 配置。建立全新空 `3CA/Q1_R19` 与 `supervisor/Q1_R19`；未复制 Q1_R1–Q1_R18 的代码、计算、图表、报告或任务状态。R19 prompt 全部使用 Mac 路径，启动器显式要求核心结果、TeX/PDF、summary、manifest 与 README，并在启动前拒绝非空工作区或既存 checkpoint；只读 audit 脚本区分进程、checkpoint、结构产物和待独立科学语义复核。
+
+Q1_R19 于 2026-09-17T06:44:22Z 从空目录真实启动，使用本地 MLX 模型、32,768 context 和 4,096 output。它完成在线研究搜索、554,504,664-byte 3CA data archive 下载与 SHA-256 `2156a73fd5f95a198ef90821f2d734bfa7e0b5aa3686deefd1b5c5d5d1269aa1` 核验、安全解压、输入暂存及 58,843 cells/33,538 genes 的检查；随后在第 16 轮仍停留 `core_analysis`，只有 inputs，六项必需产物均不存在。原始 JSONL 证明阶段广告仅含 `analyze_metabolic_states`，但本轮尚无 Reactome genes 文件，也不再广告 `fetch_reactome_metabolic_genes`；模型连续使用 shell 查看输入，无法满足核心工具参数。监督者停止 runner 并确认进程退出，保留 R19 工作区、checkpoint、session 和日志；checkpoint 的 `running` 是停止前最后提交状态，不代表进程仍活着。R19 记录为 `not_accepted`，不恢复、不复用。
+
+R19 后修复共享 `researchMilestone()`：staging 已存在且核心缺失时，先检查本轮 `sources/reactome/*_genes.txt`；不存在则进入 `metabolic_gene_definition`，只广告 `fetch_reactome_metabolic_genes`，保存后才进入核心分析。新增恢复回归明确断言此顺序以及核心工具不会提前广告。完整 recovery suite 再次退出 0，所有既有 PASS 加上新的 Reactome 路由 PASS。按轮次规则建立全新空 `3CA/Q1_R20` 和对应 supervisor 配置；R20 不复制 R19 输入、计算或任务状态，只允许复用已经核验来源与哈希的公共原始缓存。
+
+Q1_R20 从空目录启动后进入 `source_download`，但提示未固定 3CA ID，模型在第 19 轮仍只用 shell 检查且研究文件为 0，没有调用已广告的 `download_asset`。通用 loop recovery 未促成参数选择。监督者停止并确认该轮不完成，不恢复或复用其 checkpoint。该问题不是下载/TLS 失败，而是 4B 模型没有把 catalog reference 转成阶段所需 target。根据已核验公共来源和阶段路由既有回归，新 Q1_R21 将任务合同固定为 `3ca:20773`；这不复用旧计算，只固定公开输入来源。新研究目录启动前为空。
+
+Q1_R21 使用固定公开来源后顺利完成 search/get/plan/download、公共原始缓存 SHA-256 复核、本轮输入暂存和新增 Reactome 阶段，证明前两项修复生效；但进入 `core_analysis` 后，状态机只写“existing staged input paths”，没有注入 staging manifest 与 Reactome `genes_path` 的精确参数。模型到第 19 轮仍在 list/read/shell 检查，核心未调用。监督者停止并保留 R21，不恢复、不复制其输入或来源文件。
+
+共享核心阶段现动态读取当前工作区 `inputs/staging_manifest.json` 和 `sources/reactome/*_genes.txt`，在 `next_required_action` 中提供 `expression_path`、`cells_path`、`genes_path`、`metabolic_genes_path`、`cell_id_column`、目标 `output_dir` 和 19 个随机对照的完整 JSON 参数。新增回归断言这些路径来自当前 fixture，而非硬编码旧轮次；完整 recovery suite 退出 0。建立全新空 Q1_R22，继续只复用核验后的公共原始缓存。
+
+Q1_R22 完成固定来源、缓存哈希复核和本轮输入暂存，但到第 14 轮仍停在 `metabolic_gene_definition`；模型持续选择通用 list/read 工具而不调用唯一要求的 Reactome 原生工具。监督者停止并保留 R22。根修复为仅在 `metabolic_gene_definition` 和 `core_analysis` 两个确定性阶段启用严格工具集：对应原生工具加 `task_checkpoint`，不广告无关 workspace 工具；其他需要检查/修稿的阶段仍保留文件工具。回归新增严格工具列表断言，完整 suite 退出 0。全新空 Q1_R23 已准备，不复用 R22 任务状态或研究文件。
+
+Q1_R23 的严格 Reactome 与核心阶段均成功：本轮重新暂存输入，现场获取 Reactome release 97 基因集，并用注入的精确参数完成 58,843-cell 原生核心，生成 `core_result.json`、`summary.json` 和图件。随后在 `literature_verification` 连续 13 轮未调用 `verify_doi`，反而通过仍可见的文件工具提前写了未验收 TeX/manifest；无 PDF、README 或完成候选。监督者停止并保留 R23，不复用其核心或草稿。
+
+共享阶段机进一步将 `literature_verification`、`report_build`、`bundle_validation` 和 `completion` 设为严格工具阶段；报告初写和具体修复阶段仍保留文件工具。相应回归断言 DOI 与 build 阶段只暴露目标工具和 checkpoint，完整 suite 退出 0。全新空 Q1_R24 已准备；它会重新执行计算，不复制 R23 结果。
+
+Q1_R24 从空目录真实启动并完整通过数据来源、缓存哈希复核、本轮暂存、Reactome、原生核心和 Crossref 阶段。核心为 58,843 cells、1,984 prevalence 后代谢基因、resolution 0.4、15 clusters、Leiden silhouette 0.229361、stability mean/min ARI 0.980031/0.972621、matched-k KMeans 0.246863、随机对照 0/19、患者内 ARI 0.106107–0.813369、最弱 patient 3/3,287 cells，核心结论 `inconclusive`。这些事实来自本轮 `core_result.json`，尚未构成最终报告语义验收。
+
+R24 已生成 core、summary、manifest、README、两张矢量图和 TeX，但 Tectonic 首先拒绝不存在的 `sloppy.sty`，随后持续报告 table 环境内缺少 tabular 导致的 `Misplaced \noalign`，并同时提示正文 `\log_1p` 与普通文本下划线。引擎正确维持未完成状态且未生成 PDF；当前 runner 继续运行于 report repair/build 循环，未调用 complete_task，也未宣称完成。
+
+用户要求继续修复后复核 R24：runner 仍活跃至第 133 轮，同一 `Misplaced \noalign` 根因未修复，stage failure 计数却反复回到 1。监督者停止并确认 R24 未完成，保留全部 core、草稿、日志和 checkpoint。共享引擎现把常见 LaTeX 根因归一成稳定类别，避免行号/附近源码变化绕过 12 次熔断；报告合同和 repair action 明确要求 booktabs 规则置于 `tabular` 内、`\sloppy` 是正文命令而非宏包、公式写 `\log(1+x)`、普通文本下划线转义、每图使用独立 figure/caption/label。恢复回归新增这些指令断言，完整 suite 退出 0。全新空 Q1_R25 已准备，不复用 R24 计算或草稿。
+
+Q1_R25 独立重跑并再次完成 core、DOI、manifest、README 和 TeX。模型正确改用 `\sloppy` 命令，但仍遗漏 `tabular`。Tectonic 输出先列 Underfull hbox，再列真正的 `Misplaced \noalign`；旧 `_latex_failure_summary` 选择第一个 `main.tex:line`，使 repair action 错误聚焦非致命 warning。监督者停止并保留 R25。摘要器现从全部 file:line 诊断中优先选择 Misplaced/LaTeX Error/Undefined control/Missing $/Emergency stop/Fatal error；新增“warning 在前、fatal 在后”单测，5 项 research-quality 单测和完整 recovery suite 均退出 0。全新空 Q1_R26 已准备。
+
+Q1_R26 验证了诊断优先级修复：依次准确定位 sloppy.sty、标题下划线、方法下划线，成功生成 4 页后 5 页 PDF，并三次运行 validator；错误从 10 项降到 7 项，seed、matched genes 和日志问题已消除。后续重写加入 figures/table/formula 时，Tectonic 日志先出现 Underfull warning，后出现真正的 `Unable to load picture or PDF file 'figures/metabolic_umap.pdf'`；fatal 优先列表尚未包含图片加载失败，模型再次被误导。监督者停止并保留 R26。摘要器现也优先识别 Unable to load picture/PDF 与 File not found；新增对应单测，6 项 research-quality 单测和完整 recovery suite 均退出 0。全新空 Q1_R27 已准备，并在提示中再次明确 report 目录必须使用 `../figures/...`。
+
+Q1_R27 再次完成独立 core 与 DOI，但在 report_and_manifest 阶段只缺 README 时连续使用 shell/list/read，未进入 build，暴露写作阶段仍可被通用 workspace 工具分流。监督者停止并保留 R27。`report_and_manifest`、`report_repair`、`bundle_repair` 现设为严格文件工具集，只保留 read/list/write/append/replace 与 checkpoint，不广告 shell；完整 recovery suite 退出 0。全新空 Q1_R28 已准备，轮次合同修正为不得复制 Q1_R1–Q1_R27。
+
+Q1_R28 验证严格写作工具可显著减少空转，并成功反复构建 4–6 页 PDF。Validator 错误从 8 项降到 5 项，但模型在自由同义改写中震荡：图/表/formula 的 `\ref` 字面引用、`median silhouette`/`mean pairwise ARI` 字面标准和 `0 of 19` 被反复增删，还一度重新加入禁止的 significantly/better than random。监督者停止并保留 R28。共享报告合同现注入可直接复制的固定 prose references、完整 figure/table/equation 骨架、resolution-selection 固定句、随机对照固定句和禁用措辞；完整 recovery suite 退出 0。全新空 Q1_R29 已准备。
+
+Q1_R29 从空目录独立运行，完成真实 `3ca:20773` 输入暂存与 SHA-256 复核、Reactome release 97 基因集、58,843-cell 核心分析、Crossref 核验、summary、manifest、README、两张矢量图和有效 PDF。核心结果保持 `inconclusive`；validator 错误先从 6 项降至 4 项，再降至 3 项，最后只剩 `LaTeX log contains overflow, compilation, citation or reference errors`。日志明确显示两张按自然尺寸插入的 PDF 图产生 71.81737pt 和 62.2643pt 的 `Overfull \hbox`。旧进程的报告合同没有图宽约束，模型多轮优先改写已通过的引用措辞，并在 TeX 修改后进入严格 `report_build` 阶段继续请求编辑工具，造成重复的 tool-not-advertised 和无效构建/验证循环。监督者停止 runner，保留 R29 全部现场；该轮没有 `valid=true` 或成功 `complete_task`，不得标记完成。
+
+共享 `wingpt.js` 报告合同现要求每个 `\includegraphics` 使用 `width=0.95\linewidth,height=0.78\textheight,keepaspectratio`，并在 validator 报告 overflow 或页面触边时要求优先修复图宽、不得先改无关措辞。`test-wingpt-recovery.mjs` 新增合同断言。首次直接运行回归被宿主 `PYTHONHOME/PYTHONPATH` 污染导致 Python 初始化失败；按 `macos-env.sh` 清理环境后完整 recovery suite 退出 0，全部既有检查通过。按轮次规则建立全新空 Q1_R30 和对应 supervisor 配置，提示明确图宽约束，不复制 R29 的代码、计算或报告，只允许复用已核验公共原始缓存。
+
+Q1_R30 最终成功。runner 退出码为 0，stderr 为空；日志最后依次记录 `build_research_report`、`validate_research_bundle` 和 `complete_task`。任务证据中的最终 validator 于 2026-09-17T22:24:27.712171Z 返回 `valid=true`、`errors=[]`，检查计数为 methods=1、figures=2、three_line_tables=1、formulas=1、pdf_pages=5、rendered_pages=5、references=1。六项必需产物全部存在且非空，`report/main.pdf` 为可读取的 5 页 PDF；最终 LaTeX 日志无 overflow、编译、citation 或 reference 错误。核心结果为 58,843 cells、1,984 metabolic genes、resolution 0.4、15 clusters，结论保持 `inconclusive`。R30 已由 validator 与 `complete_task` 接受。
+
+## 2026-09-21 — workflow_codex 本地 life-sciences 技能安装与按需加载
+
+新增 `scripts/install-anthropic-life-sciences.mjs`，从 bio-research 完整复制 6 个技能（含 `start`），并加入 life-sciences 独有的 `clinical-trial-protocol-skill`，合计 7 个技能、84 个文件。重复技能固定以 bio-research 为 canonical；安装清单记录 canonical/duplicate 来源、重复内容是否一致、逐文件字节数与 SHA-256、整棵技能目录哈希，并明确 `authenticated_mcp_installed=false`。安装脚本连续运行两次均成功，验证可重复安装；未复制或接入任何需认证 MCP。
+
+`codex-cli/bin/wingpt.js` 现仅向系统提示注入最多 8,000 字符的技能名称、描述、来源与 tree SHA-256 索引，不预注入技能正文。新增 `load_skill` 与 `read_skill_resource`：只接受清单白名单技能/资源，真实路径必须留在对应技能目录内，每次读取重新核对文件长度和 SHA-256；SKILL/资源返回均限制为最多 30,000 字符，资源读取另限制最多 400 行。技能工具在恢复和严格科研阶段仍可用，但技能文本不能绕过 workspace、写入、shell、网络、验证或认证边界。
+
+扩展 `test-wingpt-recovery.mjs`，覆盖索引不含正文、恢复后工具仍可用、按需加载 start、读取临床模板资源、目录穿越拒绝、严格阶段工具集合以及任务 resume 后索引/工具保留。第一次完整 Node 回归在新增工具改变严格阶段预期集合处失败；修正预期后复跑退出 0，30 条 PASS 全部通过。安装脚本、wingpt 和恢复测试的 Node 语法检查退出 0，`git diff --check` 退出 0。仓库没有可用的 `just` 命令，且本轮未修改 Rust，未运行 Rust fmt/test。
+
+### macOS 生命科学技能隔离运行时与实际安装（2026-09-21）
+
+为 `workflow_codex` 的 7 项本地生命科学技能新增独立安装入口 `setup-life-sciences-macos.sh` 和冒烟入口 `test-life-sciences-macos.sh`。运行时全部位于 `.runtime/macos/life-sciences`，拆分为 Python 3.12 `scverse`、Python 3.11 `allotrope`、OpenJDK/Nextflow 三个 prefix；没有修改系统 Python、主科研 Python 或用户 site-packages，也没有安装账号/订阅 MCP 或 Docker。`setup-macos.sh` 已串联该安装入口，`macos-env.sh` 暴露独立 Python、Nextflow 与 Java 路径。
+
+实际安装过程中记录两次失败并修复：首次入口直接调用 PATH 中不存在的 `node`，退出 127，随后改为项目本地 Node；首次 scverse 选 Python 3.11，但 `scvi-tools==1.5.1` 明确要求 Python >=3.12，解析失败，随后重建为独立 Python 3.12。Allotrope 上游示例 pins 也存在真实冲突：`allotropy==0.1.55` 声明 `pandas>=2.2.0`，而原 requirements 固定 `pandas==2.0.3`。没有用 `--no-deps` 绕过检查，改为 resolver-compatible 精确组合 `allotropy==0.1.55`、`pandas==2.3.3`、`openpyxl==3.1.2`、`pdfplumber==0.9.0`，`pip check` 通过。
+
+最终实际版本为 scvi-tools 1.5.1、scanpy 1.12.4、anndata 0.12.19、torch 2.13.0、mudata 0.4.1、scvelo 0.3.4、leidenalg 0.12.0；Nextflow 25.04.8 与 OpenJDK 17.0.18。安装器输出完整 pip freeze 和 Conda explicit 快照到运行时 locks。安装器第二次执行退出 0，证明可重复校准。最终 shell/Node 语法检查退出 0；scverse/scvi/Allotrope imports、四项 Allotrope 精确版本断言、QC/scvi/Nextflow helper/Allotrope/临床脚本 `--help`、Java/Nextflow CLI 均通过；无 Docker 的本地 Nextflow DSL2 流程提交并退出 0，最终输出 `Life-sciences macOS smoke tests: PASS`。
+
+技能安装清单升级为 schema v2，记录三套 runtime profile、固定版本、安装/测试入口及 `authenticated_mcp_installed=false`；生成的技能根 README 与项目 README 已说明解释器选择、隔离边界、Java 路径和无账号/订阅 MCP/Docker 边界。
+
+## 2026-09-21 — ToolUniverse MCPB 本地 compact 接入
+
+将仓库内 `anthropics-life-sciences/tooluniverse/tooluniverse.mcpb` 按固定 SHA-256 `b8ab7b8a9475fed5362271f5c6b3dd1a04bc466840433d28876dd7bd02298f77` 安全解包到 `workflow_codex/components/tooluniverse`。解包器拒绝路径穿越和符号链接，并核对 MCPB manifest 的名称、1.0.15 版本和 `src/run_stdio.py` 入口；安装记录明确 `authenticated_mcp_installed=false`。运行依赖位于独立 `.runtime/macos/tooluniverse` Conda Python 3.12 prefix，不修改系统 Python、主科研 Python或用户 site-packages。
+
+首次按 MCPB 原始 `pyproject.toml` 安装失败：其声明 `fitz>=0.0.1.dev2`，Python 3.12 没有可安装发行版。没有跳过依赖一致性检查；安装器在核对该声明只出现一次后，将解包副本的已知错误依赖改为提供实际 `fitz` 模块的 `PyMuPDF>=1.24.0`，同时保留该兼容修补记录。随后依赖安装、bundle wheel 安装和 `pip check` 全部退出 0。
+
+新增 Node stdio MCP 适配器并接入 `wingpt.js`。适配器只接受 compact 模式的 5 个工具，统一暴露为 `tooluniverse__list_tools`、`tooluniverse__grep_tools`、`tooluniverse__get_tool_info`、`tooluniverse__execute_tool`、`tooluniverse__find_tools`；非白名单调用拒绝。请求与最终工具结果执行 16 KiB 边界，默认 45 秒调用超时，超时、stdin 结束及进程退出均清理 Python 子进程；传给子进程的环境删除 API key、token、authorization、credential、secret、password、subscription、account 类变量，并将 HOME/XDG 指向项目隔离目录。没有写入 API key、账号、远程 MCP 或订阅服务配置。
+
+新增独立安装、卸载、Mock 和实际 smoke 入口。首次实际 smoke 的唯一失败是测试错误地要求成功结果不含 `isError`，而 MCP SDK合法返回 `isError=false`；断言修正为仅拒绝 `true` 后，完整测试退出 0。Mock 覆盖 5 工具白名单/前缀、额外工具过滤、敏感账号环境变量清除、超大结果截断、未批准工具拒绝、1 秒超时、超时子进程终止，并通过真实 JSON-lines stdin/stdout 验证代理入口在 stdin 关闭后退出；实际 smoke 覆盖 Python 3.12 import、Node 语法、真实 MCP initialize/tools/list 和 `tooluniverse__list_tools` 调用，最终输出 `ToolUniverse local compact MCP smoke tests: PASS`。`pip check`、shell/Node/Python 语法检查与 `git diff --check` 均退出 0，测试后没有残留 ToolUniverse/Mock 子进程。仓库要求的 `just fmt` 已尝试，但宿主未安装 `just`，命令退出 127；本轮未修改 Rust。`setup-macos.sh` 已串联 ToolUniverse 安装，README 已补充安装、测试、卸载和安全边界。
+
+## 2026-09-21 — ToolUniverse schema 缓存、运行期懒启动与退出修复
+
+问题复现定位到 `createToolUniverseMcpTools()`：`wingpt.js` 仅导入或执行主 self-test 时，它也会立即调用真实 `tools/list`，启动 ToolUniverse stdio Python；Node 的 import 已完成但该子进程仍持有管道，造成主进程不退出。修复后安装器在依赖安装与 `pip check` 成功后，实际启动一次 ToolUniverse，执行 initialize 和 `tools/list`，只选择并规范化 compact 白名单的 5 个 schema，写入 `components/tooluniverse/workflow-tool-schema.json`。缓存记录 `tool_count=5` 和对 canonical tools JSON 计算的 SHA-256；本次实际缓存摘要为 `2a26b3fc4406e31cecd9db93cd6c32aa86b09379ad18c374fb5cb11b52a1ece5`。
+
+运行期 `createToolUniverseMcpTools()` 只同步读取缓存，重新计算 SHA-256，并核对 schema 版本、compact 模式、精确 5 个白名单名称和无重复项；缺失、篡改或集合不符会要求重新安装，不退回运行期 `tools/list`。首次真实 `tools/call` 才通过 `ToolUniverseStdioClient` 懒启动 stdio。`stop()` 改为等待子进程 exit，并在 1.5 秒后升级 SIGKILL；`wingpt.js` 使用顶层 `await main()` 和 `finally await close()`，确保普通完成、自测完成和错误路径都等待清理。
+
+Mock 新增启动 PID 日志。适配器回归现验证：安装缓存只启动一次；create/读取 schema 不产生子进程；首次 call 才产生第二次启动；close 后 PID 不存在；篡改 schema 而不更新摘要会被拒绝；stdio proxy 的 tools/list 也只读缓存，call 后 stdin 关闭可退出。恢复总测试使用 Mock 缓存，并断言普通 `wingpt.js` 导入及其他工具执行期间没有 ToolUniverse 启动。
+
+实际验证结果：Node/Python 语法检查退出 0；Mock 与真实 ToolUniverse adapter 全部 smoke 退出 0；完整 `test-wingpt-recovery.mjs` 两次退出 0；主 `./run-wingpt.sh --self-test --allow-write --allow-shell` 退出 0。最后一次 self-test 和真实 adapter smoke 后均用进程查询确认没有 `components/tooluniverse/src/run_stdio.py` 残留。`git diff --check` 退出 0。仓库要求的 `just fmt` 已尝试，但当前宿主没有 `just`/Cargo/Brew 命令，退出 127；本轮未修改 Rust。
+
+## 2026-09-21 — Mac 上下文实测、匿名科研 MCP 与 QA_R11
+
+本机为 arm64、16 GiB 内存、10 个逻辑 CPU；模型 `config.json` 声明 `max_position_embeddings=262144`。使用现有 MLX server、`max_tokens=1` 做递增长提示实测：目标 65,536 的请求实际 prompt 65,514 tokens，369.62 秒完成，服务保持健康；目标 98,304 在 900 秒内未完成，客户端超时，服务之后仍能响应。按“真实完成且服务健康”而非模型理论位置上限选择默认值，将 `macos-env.sh` 和 JS fallback 从 32,768 提升到 65,536，并增加范围校验；`macos-context-profile.json` 保存硬件、服务参数、探测结果和选择策略。README 已纠正原先把 262,144 写成当前硬件配置的表述。
+
+从两个 Anthropic 源目录中只接入免账号/免订阅的公共 MCP。旧 `mcp.deepsense.ai` bioRxiv/ClinicalTrials/ChEMBL POST 探测返回 403，未启用；实际通过匿名 initialize 的端点为 PubMed、`hcls.mcp.claude.com` 的 bioRxiv/ClinicalTrials/ChEMBL，以及 Open Targets。安装器缓存 5 个端点共 31 个只读工具的 schema、逐工具哈希、工具集哈希与清单哈希；运行时使用 `pubmed__`、`biorxiv__`、`clinicaltrials__`、`chembl__`、`opentargets__` 前缀，支持 JSON/SSE、会话传播、超时、认证挑战拒绝和 16 KiB 输出边界。Mock 全套回归退出 0，实际 `pubmed__search_articles` 调用成功；没有发送或保存 Authorization、Token 或账号信息。
+
+根目录新增 `EXTERNAL_COMPONENTS.md`，以项目相对路径列出 7 个 Skill、5 个匿名 HTTP MCP、ToolUniverse compact MCP、隔离 Python/Java/Nextflow/CLI、安装器、卸载器、测试入口和完整文件树；明确当前外部执行 Hook 为 0，并列出所有因认证/订阅而未安装的组件。新增 `uninstall-life-sciences-macos.sh`，要求显式选择 `--skills`、`--runtimes` 或 `--all`。
+
+技能 manifest 升级为 schema v2 后，主加载器仍只接受 v1，导致恢复测试和主 self-test 报 `Invalid local life-sciences skill manifest`；加载器现接受 v1/v2，并对 v2 runtime 对象额外校验。随后完整 recovery suite、主 `--self-test --allow-write --allow-shell`、匿名 MCP Mock、ToolUniverse Mock/真实调用、scverse/Allotrope/Nextflow 冒烟及 shell/Node 语法检查均退出 0。
+
+全新 `3CA/QA_R11` 在任何研究文件写入前为空。监督者只从 QA_R10 输入目录重新暂存不可变用户 CSV，不复制旧代码、计算、结果、图表或报告；源与本轮副本均为 14,789 bytes、SHA-256 `7503180d29693bd1e654ea93281db0e3ec4177ff44842c8b02f6a098402e41a9`。运行清单记录模型/组件哈希、65,536 实测上下文、4,096 生成上限、7 Skill、5/31 匿名 HTTP MCP、5 ToolUniverse compact 工具和八项完成门禁。QA_R11 已启动，首个 `search_studies` 已成功；当前仍在运行，尚无 validator 或 complete_task 成功证据，不得标记完成。
+
+## 2026-09-28 — QA_R11 失败审计、编排修复与 QA_R12
+
+QA_R11 最终未完成。supervisor stdout 记录 29 个工具错误，其中 22 个为阶段未广告工具；stderr 记录 37 次 `fetch failed`，外层运行器在 checkpoint 存在时无上限恢复。最后 checkpoint 仍错误标记 running/bundle_validation，`evidence=[]`，没有成功 validator 或 complete_task。最后完整 validator 仍有 18 项错误，包括 manifest 缺 matched genes 路径、Q1/Q2/Q3 缺失、图环境/引用不全、公式未引用、全局/CD8 范围与最弱患者缺失、未解析引用、LaTeX 日志错误和不存在的第二条 Crossref 文件。
+
+更严重的科学语义错误是两个 QA_R11 core 都使用 `sources/reactome/metabolism_R-HSA-1430728_release_97_genes.txt`，而非已暂存用户 CSV。根因是阶段机在任何缺 core 情况下强制先生成 Reactome，并把它注入核心参数。QA_R11 的全局/CD8 计算、报告和 manifest 因此不能用于原任务；该轮全部现场保留，但不得通过只修 TeX 继续完成。
+
+QA_R11 的真实生产请求达到约 59,018 prompt tokens，MLX 日志出现 `[METAL] ... OutOfMemory`。`/v1/models` 在推理线程故障后仍返回 200，旧健康检查误判服务可用；`wingpt.js` 把所有 fetch failed 统一返回 75，`macos_runtime.py` 又无上限重启，形成失败闭环。此前 65,514-token 单 token 合成探测不能代表生产安全容量。默认上下文现降为 49,152，预留 4,096 输出，最大 prompt 预算 45,056；context profile 和 README 已按生产证据更新。
+
+`macos_runtime.py` 现同时检查模型身份和最小 chat-completion canary；Metal OOM 或受管服务 canary 失败时只终止命令行身份匹配的 `server.json` PID并重启。相同 checkpoint/version 最多恢复 3 次、单次 runner 总计最多 5 次，退避为 3/6/12/24/48 秒；超过限制将 checkpoint 标记 `needs_attention`。6 项 Python 单测、Ruff format/check 均通过。真实 self-test 检测旧服务不可用后启动新 PID 67722，chat canary、模型、路径、工具协议、3CA、research-quality、网络、写入和 shell 均通过。
+
+`wingpt.js` 现优先选择存在且哈希核验的 `inputs/metabolic_genes_total.csv`，只有未提供用户 feature set 时才调用 Reactome；全局和 CD8 两个 core 均注入同一路径，CD8 固定 `cell_subtype=CD8 T cells`。双 core validator 附加检查 provenance/core/manifest 三方 feature-set SHA-256、基因路径和 matched-gene 路径一致。严格阶段不再允许 31 个匿名 MCP 或 Skill 绕过阶段白名单；每个模型响应只执行首个工具，额外调用写入审计但不执行，mutation 后立即重算阶段。报告合同按单/双 core 条件化：双 core 要求 Q1/Q2/Q3、4 个实际图环境、1 个表、正确公式和仅引用实际存在的 Crossref 元数据；单 core 不继承四图/三问题要求。
+
+JS recovery suite 现 32 项全部通过，包括单/双 core 合同、用户 CSV 覆盖 Reactome、精确 CD8 参数、严格阶段无外部 MCP、单工具原子性和 mutation 后阶段重算。research-quality 7 项、匿名 MCP、ToolUniverse Mock/真实调用、生命科学运行时及 `git diff --check` 均通过。
+
+按规则保留 QA_R11，创建全新空 QA_R12。监督者仅重新暂存 14,789-byte 用户 CSV，SHA-256 仍为 `7503180d29693bd1e654ea93281db0e3ec4177ff44842c8b02f6a098402e41a9`，不复制 QA_R11 代码、计算、图表或报告。R12 清单冻结当前引擎/组件哈希，记录 49,152/45,056/4,096 context/prompt/generation 配置、两个明确 DOI 和八项验收门禁。R12 已启动并完成一次 `search_studies`，随后正确进入 source selection 并调用 `get_study`；当前仍在运行，尚未声称最终完成。
+
+## 2026-09-28 — QA_R12 完成与报告编排加固
+
+QA_R12 的两个原生核心均从本轮暂存数据重新计算完成。全局核心分析 58,843 个细胞，`inputs.metabolic_genes_total.csv` 路径和 SHA-256 `7503180d29693bd1e654ea93281db0e3ec4177ff44842c8b02f6a098402e41a9` 与输入 provenance 一致；CD8 核心使用同一 CSV，并精确记录 `cell_subtype=CD8 T cells`、3,624 个细胞。两个核心均给出 `inconclusive`，未将描述性聚类指标解释为独立重复显著性或因果证据。
+
+报告阶段实际暴露并修复了多项共享编排缺陷：首版报告虚构 CD8 Calinski--Harabasz/Davies--Bouldin 数值、遗漏两张 diagnostics 图、使用未转义下划线、双核心三列表格错误声明为 `lr`、重复选择未广告工具，以及在确定性构建/验证阶段仍让模型选工具。共享引擎现按核心 JSON 校验全局/CD8 五项指标，拒绝 unsupported qualitative strength/statistical significance；双核心表格固定为 `lrr`；`report_build` 与 `bundle_validation` 由引擎直接执行；已知下划线、表格列数和权威图路径错误使用受控确定性修复；bundle repair 强制单次完整写入并压缩旧上下文。新增双核心代谢报告确定性渲染器，数字、四张图、交叉引用、随机对照、患者内敏感性、归一化公式和 DOI 均来自保存的核心/核验记录。
+
+真实失败均保留：首次 JS 回归因宿主 `PYTHONHOME/PYTHONPATH` 将项目 Python 3.12 错配到 Python 3.10 标准库而退出 1，清除两个宿主变量后通过；首次独立 validator 命令误用不存在的子命令 `validate-research-bundle` 而退出 2，改用实际 CLI 子命令 `validate` 后通过。LaTeX 构建先后捕获 `Missing $ inserted`、`Undefined control sequence`、`Extra alignment tab`、错误图路径和 Overfull hbox，均未绕过验证或手工标记完成。
+
+最终 `test-wingpt-recovery.mjs` 多次退出 0，research-quality 7 项 unittest 退出 0。QA_R12 的八项必需产物全部存在且非空；独立 `research_quality.py ... validate results/analysis_manifest.json` 返回 `valid=true`、`errors=[]`、4 张图、1 个三线表、1 个公式、5 页全部渲染、2 条核验文献。工作流 validator 证据 ID 为 `engine_fcfd9cde-8bd6-42e9-a5b9-2bcc5a7e11d7`，随后 `complete_task` 成功，runner 退出 0，checkpoint 状态为 `completed_candidate`。
+
+## 2026-09-28 — DeepSeek API 独立工作流与 QA_R13 启动
+
+创建独立 `workflow_codex_api/` 源码副本，约 35MB；没有重复复制原工作流 5.1GB 本地模型运行时和 2.9GB 3CA 缓存。API 版通过 `_api` 后缀入口串联 `run-wingpt_api.sh`、`macos-env_api.sh`、`scripts/macos_runtime_api.py`、`codex-cli/bin/codex_api.js` 和 `codex-cli/bin/wingpt_api.js`。API checkpoint/会话位于 `.runtime_api/codex-home`，公共原始缓存只按内容哈希复用原 `.threeca/cache`，Python/Node/Java/Nextflow 复用已安装隔离运行时；原 `workflow_codex` 启动链未修改。
+
+根据 DeepSeek 官方 API 文档，后端固定为 OpenAI 兼容 `https://api.deepseek.com`、模型 `deepseek-v4-pro`、thinking enabled、`reasoning_effort=max`。模型文档上下文记录为 1,000,000，工作流主动限制为 262,144 tokens，输出上限 16,384，单请求超时 900 秒。工具调用后的 `reasoning_content` 会完整回传后续请求。密钥仅从 Git 忽略的 `.secrets/deepseek_api_key` 或环境变量加载，文件权限 `600`；源码与 `.runtime_api` 全量文本扫描均未发现密钥正文，清单只记录 `credential_source`。
+
+实际测试记录：首次创建凭据文件受宿主错误 `PYTHONHOME/PYTHONPATH` 污染而失败，清除变量后成功。API runtime 3 项 unittest、Node/Bash/Python 语法、mocked DeepSeek 鉴权/thinking/reasoning 连续性测试、真实 API status 和真实主 self-test 均退出 0。API 真实状态确认 `deepseek-v4-pro` 模型列表与 chat canary 可用；主 self-test 通过模型、路径边界、读写、工具协议、3CA、research-quality、网络和 shell 检查。复制的旧 recovery fixture 因本地 MLX LaTeX 故障计数假设不适用于 API 确定性构建而失败，已用 API 专项恢复入口替代，不隐瞒该失败。
+
+全新 `3CA/QA_R13` 和 `supervisor/QA_R13` 从不存在状态创建，仅重新暂存 14,789-byte 用户 CSV，SHA-256 为 `7503180d29693bd1e654ea93281db0e3ec4177ff44842c8b02f6a098402e41a9`；未复制 R12 或其他旧轮次计算、图表或报告。首次 R13 请求在任何研究工具执行前被 DeepSeek 400 拒绝，原因是 thinking 模式不支持 `tool_choice=required`。API 适配器现仅在 thinking 模式移除 `tool_choice`，保留 tools、max reasoning 和非 thinking 协议自测的定向 tool choice。恢复后已实际连续执行 `search_studies`、`get_study`、`plan_asset`、`download_asset`、`prepare_3ca_dataset` 并进入全局 `analyze_metabolic_states`；运行命令确认使用 `inputs/metabolic_genes_total.csv`，输出到 `results/core_analysis`，当前 R13 仍在运行，尚无 validator 或 complete_task 成功证据。
+
+## 2026-09-28 — QA_R13 1M 恢复与报告修复上下文缺陷
+
+按用户要求，API 默认配置提升为完整 1,000,000-token 上下文、65,536-token 最大输出、thinking enabled、`reasoning_effort=max` 和 `deepseek-v4-pro`。R13 在两个核心完成后被安全停止，再从同一 `report_and_manifest` checkpoint 恢复；恢复后首个变更仅为创建缺失的 `README.md`，随后调用 `build_research_report`，没有重新执行任一 `analyze_metabolic_states`。
+
+首次报告构建被原生门禁拒绝，诊断为 Underfull hbox 和公式下标/普通文本下划线问题。随后发现 API runner 的恢复阶段上下文缺陷：`compactContext(force=true, recovery=true)` 每轮把最近消息全部清空，模型读取 `report/main.tex` 后，工具结果会在下一请求前被删除，因而连续重复读取同一文件；loop breaker 能复用旧结果但无法跨强制压缩保留它，形成付费空转。监督者在未修改研究结果的前提下停止 runner。
+
+API 副本现令恢复阶段保留最近 8 条有界消息，普通阶段仍保留 48 条；每条文本继续受 12,000 字符上限约束。`node --check workflow_codex_api/codex-cli/bin/wingpt_api.js` 与 `test-deepseek-api-adapter_api.mjs` 均退出 0，后者再次确认 Bearer 鉴权、thinking 参数和工具调用 reasoning 连续性。R13 将继续从原 checkpoint 恢复，最终状态仍以 `validate_research_bundle valid=true` 和成功 `complete_task` 为准。
+
+## 2026-09-28 — QA_R13 最终完成与独立验收
+
+保留最近恢复消息后，DeepSeek 能跨轮读取报告，但仍对权威 JSON 进行过量读取而未及时写回。API runner 已存在由保存的双核心、manifest 和已核验 DOI 驱动的确定性报告渲染器；本轮将该渲染器从仅 `bundle_repair` 扩展到 `report_repair`。报告修复后 `build_research_report` 成功，生成 5 页、210,077 bytes 的 `report/main.pdf`，SHA-256 为 `c305c7de87b8605bba6a24c83289e4d20791da2cc00daf75acb45b008c9adc43`。
+
+首次成功 validator 后，后续完成请求被 DeepSeek 拒绝，错误为 thinking 模式回放缺少 `reasoning_content`。根因是确定性引擎工具消息并非模型返回，因此原先没有该字段。API runner 现为新旧确定性 assistant tool-call 消息附加受控 `reasoning_content`，不覆盖模型真实返回的 reasoning。Node 语法检查和 DeepSeek adapter 回归再次退出 0。
+
+工作流 `validate_research_bundle` 最终返回 `valid=true`、`errors=[]`，verification call ID 为 `engine_e74e7ce9-b2b6-45c1-b65c-3502e23124fa`；检查包含 4 张图、1 个三线表、1 个公式、5 个已渲染 PDF 页面、2 条文献和双核心合同。随后 `complete_task` 成功，runner 退出 0，checkpoint 为 `completed_candidate/completion`。
+
+独立验收再次运行 `research_quality.py ... validate results/analysis_manifest.json`，退出 0 且返回 `valid=true`、`errors=[]`。八项必需产物全部存在且非空。全局和 CD8 核心均记录 `inputs/metabolic_genes_total.csv` 及同一 SHA-256 `7503180d29693bd1e654ea93281db0e3ec4177ff44842c8b02f6a098402e41a9`；CD8 核心精确记录 `cell_subtype=["CD8 T cells"]` 和 3,624 个细胞。PDF 五页逐页渲染检查，无裁切或空白页。最终科学结论保持克制：全局与 CD8 均观察到候选计算分区，但独立生物代谢状态证据仍为 `inconclusive`。
+
+## 2026-09-28 — R13 多会话审计与 QA_R14 单次启动加固
+
+R13 日期目录共 7 个 session。首个生产 session 完成数据发现、暂存、两个核心、DOI 和初版报告；随后 3 个生产 session 来自监督者为热修而执行的人工停止/恢复，2 个短 session 来自 API adapter 探针误用生产 `CODEX_HOME`，最后 1 个 session 完成 `complete_task`。因此 R13 证明了科学门禁可通过，但没有证明用户单次启动即可无人干预完成。
+
+R14 前已把全部已知人工介入点固化到引擎。thinking 请求始终删除不兼容的 `tool_choice`；模型实际返回的 `reasoning_content` 现在即使为空字符串也精确保留，旧确定性消息才使用受控回填；报告修复压缩保留最近 8 条有界消息；双核心报告修复可直接使用权威 core JSON 的确定性渲染器；`report_build`、`bundle_validation` 和 `completion` 均为确定性阶段动作，validator 成功后引擎直接把同一 verification call ID 交给 `complete_task`，不再增加一次模型选择。外层 Python runner 与 Node 引擎均尊重每轮独立 `CODEX_HOME`。
+
+启动前 canary 新增真实 thinking 工具调用及工具结果后的 reasoning 连续回放。API adapter/recovery 测试改用临时 `CODEX_HOME`，并在单进程、单 session 中实际完成 `write_file`、带明确输出的 shell 验证和 `complete_task`。Node/Bash/Python 语法检查、4 项 runtime unittest、隔离单-session 生命周期测试、主 self-test 和真实 API status 全部退出 0；真实状态为 model/chat/thinking-tool canary 全部 ready。源码密钥正文扫描为 0。
+
+已创建全新空 `3CA/QA_R14`、`supervisor/QA_R14` 和专属 `.runtime_api/runs/QA_R14/codex-home`。启动前任务条目数与专属运行条目数均为 0。R14 只会重新暂存 14,789-byte 用户 CSV（SHA-256 `7503180d29693bd1e654ea93281db0e3ec4177ff44842c8b02f6a098402e41a9`），不复制 R13 或其他旧轮次计算、图、报告或 checkpoint。R14 合同明确：单次启动后监督者只读检查日志、checkpoint、进程和产物，不停止、恢复、修改或热修运行进程。
+
+R14 随后只启动一次，监督期间没有停止、恢复、文件修改或热修。原始进程依次完成 `search_studies`、`get_study`、`plan_asset`、`download_asset`、`prepare_3ca_dataset`、全局核心、CD8 核心、两个 DOI、manifest、报告、README、构建、验证、确定性修复、重建、再验证和 `complete_task`。外层 runner 总重试数为 0，研究 session 数为 1，stderr 为 0 bytes，最终退出码为 0，checkpoint 为 `completed_candidate/completion`。
+
+R14 两个核心均重新计算。全局为 58,843 个细胞和 1,646 个 prevalence 后代谢基因；CD8 精确子集为 `cell_subtype=["CD8 T cells"]`、3,624 个细胞和 1,318 个代谢基因。两者均使用 `inputs/metabolic_genes_total.csv` 和 SHA-256 `7503180d29693bd1e654ea93281db0e3ec4177ff44842c8b02f6a098402e41a9`，结论均为 `inconclusive`。
+
+同一 session 内出现一次受控写保护拒绝：模型在 `main.tex` 已写入、阶段只允许 `README.md` 后尝试继续替换 TeX，未执行且流程继续。首次 validator 返回 7 个报告错误；引擎没有退出或要求监督者介入，而是确定性重写、重建并再次验证。第二次 validator 返回 `valid=true`、`errors=[]`、4 图、1 表、1 公式、5 个渲染页面、2 条文献和双核心合同，verification call ID 为 `engine_080f1170-6dfe-46b8-9215-e6ce50811755`；`complete_task` 随后成功。独立 validator 再次退出 0 并返回 `valid=true`。
+
+只读监督还发现每轮专属 `CODEX_HOME` 被 `run-wingpt_api.sh` 二次 source 环境脚本时覆盖，因此 R14 session 实际写入 API 全局目录；该问题未影响 R14 单 session 或结果，也没有在运行中修复。R14 退出后，`macos-env_api.sh` 改为保留显式 `CODEX_HOME`，并通过隔离路径探针。另将确定性双核心报告渲染提前到首次缺少 `report/main.tex` 时，避免未来轮次先生成已知会被 validator 驳回的报告。修改均发生在 R14 完成后，没有改变 R14 冻结代码、研究产物或 checkpoint；Node/Bash/Python 检查、4 项 unittest 和隔离单-session 生命周期测试再次通过。

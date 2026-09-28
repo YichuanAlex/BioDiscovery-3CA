@@ -1,0 +1,139 @@
+[
+  {
+    "name": "ENCODE_search_experiments",
+    "type": "ENCODESearchTool",
+    "description": "Search ENCODE functional genomics experiments (e.g., ChIP-seq, ATAC-seq) by assay/target/organism/status. Use to discover datasets and access experiment-level metadata.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "assay_title": {
+          "type": "string",
+          "description": "Assay name filter (e.g., 'ChIP-seq', 'ATAC-seq')."
+        },
+        "target": {
+          "type": "string",
+          "description": "Target filter (e.g., 'CTCF')."
+        },
+        "organism": {
+          "type": "string",
+          "description": "Organism filter (e.g., 'Homo sapiens', 'Mus musculus')."
+        },
+        "status": {
+          "type": "string",
+          "default": "released",
+          "description": "Record status filter (default 'released')."
+        },
+        "limit": {
+          "type": "integer",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100,
+          "description": "Max number of results (1–100)."
+        }
+      }
+    },
+    "fields": {
+      "endpoint": "https://www.encodeproject.org/search/",
+      "format": "json"
+    },
+    "return_schema": {
+      "type": "object",
+      "description": "ENCODE experiments search response",
+      "properties": {
+        "status": {"type": "string"},
+        "data": {
+          "type": "object",
+          "properties": {
+            "total": {"type": "integer"},
+            "@graph": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "accession": {"type": "string"},
+                  "assay_title": {"type": "string"},
+                  "target": {"type": "object"},
+                  "organism": {"type": "string"},
+                  "status": {"type": "string"}
+                }
+              }
+            }
+          }
+        },
+        "url": {"type": "string"}
+      }
+    },
+    "test_examples": [
+      {"assay_title": "ChIP-seq", "limit": 1},
+      {"assay_title": "ATAC-seq", "limit": 1}
+    ],
+    "label": ["ENCODE", "Experiment", "Search"],
+    "metadata": {
+      "tags": ["functional-genomics", "chip-seq", "atac-seq"],
+      "estimated_execution_time": "< 3 seconds"
+    }
+  },
+  {
+    "name": "ENCODE_list_files",
+    "type": "ENCODEFilesTool",
+    "description": "List ENCODE files with filters (file_format, output_type, assay). Use to programmatically retrieve downloadable artifact metadata (FASTQ, BAM, bigWig, peaks).",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "file_type": {
+          "type": "string",
+          "description": "File type filter (e.g., 'fastq', 'bam', 'bigWig')."
+        },
+        "assay_title": {
+          "type": "string",
+          "description": "Assay filter (e.g., 'ChIP-seq')."
+        },
+        "limit": {
+          "type": "integer",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100,
+          "description": "Max number of results (1–100)."
+        }
+      }
+    },
+    "fields": {
+      "endpoint": "https://www.encodeproject.org/search/",
+      "format": "json"
+    },
+    "return_schema": {
+      "type": "object",
+      "description": "ENCODE files search response",
+      "properties": {
+        "status": {"type": "string"},
+        "data": {
+          "type": "object",
+          "properties": {
+            "total": {"type": "integer"},
+            "@graph": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "accession": {"type": "string"},
+                  "file_format": {"type": "string"},
+                  "output_type": {"type": "string"},
+                  "file_type": {"type": "string"}
+                }
+              }
+            }
+          }
+        },
+        "url": {"type": "string"}
+      }
+    },
+    "test_examples": [
+      {"file_type": "fastq", "limit": 1}
+    ],
+    "label": ["ENCODE", "File", "Search"],
+    "metadata": {
+      "tags": ["downloads", "artifacts", "metadata"],
+      "estimated_execution_time": "< 3 seconds"
+    }
+  }
+]

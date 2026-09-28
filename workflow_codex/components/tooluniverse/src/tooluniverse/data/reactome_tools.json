@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Reactome_get_pathway_reactions",
+    "description": "Query all Reactions contained under a Pathway using Pathway Stable ID. This is currently the only working Reactome tool.",
+    "endpoint": "/data/pathway/{stId}/containedEvents",
+    "method": "GET",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "stId": {
+          "type": "string",
+          "description": "Pathway Stable ID, e.g., 'R-HSA-73817' (verified valid)."
+        }
+      },
+      "required": ["stId"]
+    },
+    "type": "ReactomeRESTTool"
+  }
+]

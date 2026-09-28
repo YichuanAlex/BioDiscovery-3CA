@@ -1,0 +1,51 @@
+DeepSeek API ready with model deepseek-v4-pro.
+[tool] search_studies
+[tool] get_study
+[tool] plan_asset
+[tool] download_asset
+[tool] prepare_3ca_dataset
+[tool] analyze_metabolic_states
+[tool] analyze_metabolic_states
+[tool] verify_doi
+[tool] verify_doi
+[tool] read_file
+[tool] read_file
+[tool] list_files
+[tool] read_file
+[tool] write_file
+[tool] write_file
+[tool-error] replace_in_file: Current report_and_manifest phase may only modify: README.md
+[tool] write_file
+[tool] build_research_report
+[tool] validate_research_bundle
+[tool-error] validate_research_bundle: {
+  "valid": false,
+  "checked_at": "2026-09-28T09:13:40.588015+00:00",
+  "manifest_path": "results/analysis_manifest.json",
+  "manifest_sha256": "7507345312de9369eafbf3b58ec53f1a8080a53ce110eb43b948bcbf9c3a2907",
+  "errors": [
+    "Report must state the actual global calinski_harabasz (7268.856)",
+    "Report must state the actual minimum cluster size (1051)",
+    "Report must state the actual maximum cluster size (9041)",
+    "Subgroup 1 report must state the actual maximum cluster size (1872)",
+    "Subgroup 1 report must state the observed random-control exceedance count (17 of 19)",
+    "LaTeX log contains overflow, compilation, citation or reference errors",
+    "Rendered PDF content touches the page edge and may be cropped: page-1.png"
+  ],
+  "checks": {
+    "methods": 1,
+    "figures": 4,
+    "three_line_tables": 1,
+    "formulas": 1,
+    "pdf_pages": 6,
+    "rendered_pages": 6,
+    "references": 2
+  }
+}
+[tool] write_file
+[tool] build_research_report
+[tool] validate_research_bundle
+[tool] complete_task
+
+WiNGPT> Research bundle verified: conclusion=inconclusive; cells=58843; metabolic_genes=1646; clusters=13; selected_resolution=0.4.
+

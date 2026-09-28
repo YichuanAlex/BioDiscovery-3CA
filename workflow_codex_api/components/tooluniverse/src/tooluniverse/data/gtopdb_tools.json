@@ -1,0 +1,68 @@
+[
+  {
+    "type": "GtoPdbRESTTool",
+    "name": "GtoPdb_get_targets",
+    "description": "Get pharmacological targets from Guide to Pharmacology database",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "target_type": {"type": "string", "default": "protein", "description": "Target type"},
+        "limit": {"type": "integer", "default": 20, "description": "Number of results"}
+      }
+    },
+    "fields": {
+      "endpoint": "https://www.guidetopharmacology.org/services/targets",
+      "return_format": "JSON"
+    },
+    "return_schema": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "targetId": {"type": "integer"},
+          "name": {"type": "string"},
+          "targetType": {"type": "string"},
+          "species": {"type": "string"},
+          "uniprotId": {"type": "string"},
+          "ensemblGeneId": {"type": "string"},
+          "hgncId": {"type": "string"},
+          "description": {"type": "string"},
+          "family": {"type": "string"},
+          "subfamily": {"type": "string"},
+          "subunit": {"type": "string"},
+          "tissue": {"type": "array"},
+          "cellLine": {"type": "array"},
+          "diseases": {"type": "array"},
+          "drugs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "drugId": {"type": "integer"},
+                "name": {"type": "string"},
+                "action": {"type": "string"},
+                "mechanism": {"type": "string"}
+              }
+            }
+          },
+          "ligands": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "ligandId": {"type": "integer"},
+                "name": {"type": "string"},
+                "type": {"type": "string"},
+                "affinity": {"type": "string"}
+              }
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {"target_type": "protein", "limit": 5},
+      {"target_type": "receptor", "limit": 10}
+    ]
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "round": "QA_R14",
+  "validated_at": "2026-09-28",
+  "purpose": "Freeze the unattended single-launch API workflow before any R14 research artifact is created.",
+  "configuration": {
+    "provider": "deepseek-api",
+    "model": "deepseek-v4-pro",
+    "context_tokens": 1000000,
+    "maximum_output_tokens": 65536,
+    "thinking": "enabled",
+    "reasoning_effort": "max"
+  },
+  "r13_findings_addressed": [
+    "Thinking requests omit unsupported tool_choice.",
+    "Exact returned reasoning_content is preserved for every assistant tool-call message.",
+    "Old deterministic tool-call messages receive a bounded reasoning_content backfill.",
+    "Report-repair compaction retains the latest 8 bounded messages.",
+    "Recognized dual-core report repair uses the authoritative deterministic renderer.",
+    "Report build, bundle validation, and completion are deterministic stage actions.",
+    "API adapter tests use a temporary CODEX_HOME and cannot pollute production sessions.",
+    "Each formal round can use a dedicated CODEX_HOME shared by the outer runner and Node engine."
+  ],
+  "tests": {
+    "node_syntax": "passed",
+    "bash_syntax": "passed",
+    "python_compile": "passed",
+    "python_runtime_unittests": {
+      "passed": 4,
+      "failed": 0
+    },
+    "isolated_single_session_lifecycle": {
+      "passed": true,
+      "sequence": [
+        "write_file",
+        "run_shell verification",
+        "complete_task"
+      ],
+      "session_count": 1
+    },
+    "main_self_test": "passed",
+    "live_api_status": {
+      "ready": true,
+      "model_endpoint_ready": true,
+      "chat_canary_ready": true,
+      "thinking_tool_canary_ready": true
+    },
+    "credential_leaks_in_source": 0,
+    "r14_task_entries_before_launch": 0,
+    "r14_runtime_entries_before_launch": 0
+  },
+  "immutable_input": {
+    "bytes": 14789,
+    "sha256": "7503180d29693bd1e654ea93281db0e3ec4177ff44842c8b02f6a098402e41a9"
+  },
+  "frozen_sha256": {
+    "workflow_codex_api/codex-cli/bin/wingpt_api.js": "73445d3b5f12379d88ee2a737cd7ef215ba20b5fa7760206456d15fe770e38f3",
+    "workflow_codex_api/scripts/macos_runtime_api.py": "40bb091748e2c8547f30258affd710b9108f7b1255f87184a91ea336a2bb8983",
+    "workflow_codex_api/scripts/test_macos_runtime_api.py": "a49cad7363f325ad25d79fc1bc946d9085918fa0165818f1c290b2ab4c3eab67",
+    "workflow_codex_api/codex-cli/bin/test-deepseek-api-adapter_api.mjs": "4c3b12ccefd085c47bcab481c8462846dbbe1df585c06b494e7f9d425278f218",
+    "workflow_codex_api/codex-cli/bin/test-wingpt-recovery_api.mjs": "d26baa85dc9fd76fcd73e8ad4b5d6e3754a38dab2e7719b8a65c26ce5af0c750",
+    "workflow_codex_api/README_api.md": "0be68cea78901d71115b1324adb0ba8afd17bf369d529175776a24ae60bbe70c",
+    "supervisor/QA_R14/prompt_api.txt": "c220ff085a026c14e41ba896580a73088ce15a6424f1a149997d8ccad03312fc",
+    "supervisor/QA_R14/workspace-AGENTS_api.md": "dd665349f56893210a2110702ca22969c33f2d20df3e4912d38b30187a9c73f5",
+    "supervisor/QA_R14/launch-qa-r14_api.sh": "abc322b7cedebe3efd0764aeed71abc5ebb74fbe50bc320be07a48c2d3699004"
+  }
+}

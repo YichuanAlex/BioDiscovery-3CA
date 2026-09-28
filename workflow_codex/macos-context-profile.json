@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "measured_at": "2026-09-28",
+  "machine": {
+    "architecture": "arm64",
+    "memory_bytes": 17179869184,
+    "logical_cpu_count": 10
+  },
+  "model": {
+    "path": "../model/Qwen3.5-4B-MLX-4bit",
+    "declared_max_position_embeddings": 262144,
+    "quantization_bits": 4
+  },
+  "runtime": {
+    "provider": "local-mlx",
+    "decode_concurrency": 1,
+    "prompt_concurrency": 1,
+    "prefill_step_size": 512,
+    "prompt_cache_bytes": "2GB",
+    "max_generation_tokens": 4096
+  },
+  "selected_context_tokens": 49152,
+  "reserved_generation_tokens": 4096,
+  "maximum_prompt_tokens": 45056,
+  "selection_policy": "conservative production default below the observed 59k-token Metal OOM boundary, with 4096 tokens reserved for generation",
+  "probes": [
+    {
+      "target_tokens": 65536,
+      "actual_prompt_tokens": 65514,
+      "completion_tokens": 1,
+      "elapsed_seconds": 369.62,
+      "result": "synthetic_probe_passed_but_not_production_safe"
+    },
+    {
+      "actual_prompt_tokens": 59000,
+      "result": "metal_oom",
+      "evidence": "production request exhausted Metal memory and left the model endpoint insufficient as a health signal"
+    },
+    {
+      "target_tokens": 98304,
+      "timeout_seconds": 900,
+      "result": "timed_out",
+      "service_healthy_after_timeout": true
+    }
+  ],
+  "notes": [
+    "The model architecture declares 262144 positions, but that is not treated as a verified machine capacity.",
+    "A 65514-token synthetic prompt completed once, but a production prompt of approximately 59000 tokens caused Metal OOM on this 16 GB Mac.",
+    "The 49152-token context window reserves 4096 tokens for output, limiting the prompt budget to 45056 tokens.",
+    "Higher values require a production-representative successful benchmark before becoming the default."
+  ]
+}

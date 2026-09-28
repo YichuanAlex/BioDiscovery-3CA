@@ -1,8 +1,8 @@
 {
   "url": "https://www.weizmann.ac.il/sites/3CA/kidney",
   "final_url": "https://www.weizmann.ac.il/sites/3CA/kidney",
-  "fetched_at": "2026-09-14T04:17:28.958264+00:00",
-  "raw_html_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\pages\\a430fcb7b718aa8a6eccb55ce2ec942da9afdf7c668f28320e34dd64bce313d3.html",
+  "fetched_at": "2026-09-17T05:43:58.693465+00:00",
+  "raw_html_path": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.threeca/cache/pages/a430fcb7b718aa8a6eccb55ce2ec942da9afdf7c668f28320e34dd64bce313d3.html",
   "title": "Kidney | Curated Cancer Cell Atlas",
   "text": "Kidney Title Data Meta data Cell types Summary Disease Technology #samples #cells Meta programs CNAs UMAP Cell cycle Bi et al. 2021 Cell types Summary RCC 10x 8 34326 Meta programs CNAs UMAP Cell cycle Krishna et al. 2021 Cell types Summary RCC 10x 29 167283 Meta programs CNAs UMAP Cell cycle Obradovic et al. 2021 Cell types Summary RCC 10x 8 19781 Meta programs CNAs UMAP Cell cycle Young et al. 2018 Cell types Summary Wilms tumor, ccRCC, papillary RCC 10x 66 125139 Meta programs CNAs UMAP Cell cycle Zhang et al. 2021 Cell types Summary RCC 10x 14 29474 Meta programs CNAs UMAP Cell cycle All Kidney cancer 125 376003",
   "links": [

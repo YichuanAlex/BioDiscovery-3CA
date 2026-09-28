@@ -1,5 +1,6 @@
 import os
 import json
+import sys
 import tempfile
 from pathlib import Path
 
@@ -34,7 +35,7 @@ async def check() -> None:
         (Path(workspace) / "report" / "main.tex").write_text("\\documentclass{article}\n\\begin{document}\nResearch tool build check.\n\\end{document}\n", encoding="utf-8")
         (Path(workspace) / "invalid_manifest.json").write_text('{"schema_version":1}', encoding="utf-8")
         parameters = StdioServerParameters(
-            command=str(root.parent / "tool43CA" / ".venv" / "Scripts" / "python.exe"),
+            command=sys.executable,
             args=[str(root / "mcp_server.py")],
             env={**os.environ, "RESEARCH_WORKSPACE": workspace, "PYTHONPATH": str(root)},
         )

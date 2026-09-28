@@ -1,0 +1,116 @@
+[
+  {
+    "name": "GDC_search_cases",
+    "type": "GDCCasesTool",
+    "description": "Search cancer cohort cases in NCI GDC by project and filters. Use to retrieve case-level metadata for cohort construction and downstream file queries.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "project_id": {
+          "type": "string",
+          "description": "GDC project identifier (e.g., 'TCGA-BRCA')."
+        },
+        "size": {
+          "type": "integer",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100,
+          "description": "Number of results (1–100)."
+        },
+        "offset": {
+          "type": "integer",
+          "default": 0,
+          "minimum": 0,
+          "description": "Offset for pagination (0-based)."
+        }
+      }
+    },
+    "fields": {
+      "endpoint": "https://api.gdc.cancer.gov/cases",
+      "format": "json"
+    },
+    "return_schema": {
+      "type": "object",
+      "description": "GDC cases response",
+      "properties": {
+        "status": {"type": "string"},
+        "data": {
+          "type": "object",
+          "properties": {
+            "hits": {
+              "type": "array",
+              "items": {"type": "object"}
+            },
+            "pagination": {"type": "object"}
+          }
+        },
+        "url": {"type": "string"}
+      }
+    },
+    "test_examples": [
+      {"project_id": "TCGA-BRCA", "size": 1}
+    ],
+    "label": ["GDC", "Cases", "Oncogenomics"],
+    "metadata": {
+      "tags": ["oncogenomics", "cohort", "cases"],
+      "estimated_execution_time": "< 3 seconds"
+    }
+  },
+  {
+    "name": "GDC_list_files",
+    "type": "GDCFilesTool",
+    "description": "List GDC files filtered by data_type and other fields. Use to identify downloadable artifacts (e.g., expression quantification) for analysis pipelines.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "data_type": {
+          "type": "string",
+          "description": "Data type filter (e.g., 'Gene Expression Quantification')."
+        },
+        "size": {
+          "type": "integer",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 100,
+          "description": "Number of results (1–100)."
+        },
+        "offset": {
+          "type": "integer",
+          "default": 0,
+          "minimum": 0,
+          "description": "Offset for pagination (0-based)."
+        }
+      }
+    },
+    "fields": {
+      "endpoint": "https://api.gdc.cancer.gov/files",
+      "format": "json"
+    },
+    "return_schema": {
+      "type": "object",
+      "description": "GDC files response",
+      "properties": {
+        "status": {"type": "string"},
+        "data": {
+          "type": "object",
+          "properties": {
+            "hits": {
+              "type": "array",
+              "items": {"type": "object"}
+            },
+            "pagination": {"type": "object"}
+          }
+        },
+        "url": {"type": "string"}
+      }
+    },
+    "test_examples": [
+      {"data_type": "Gene Expression Quantification", "size": 1}
+    ],
+    "label": ["GDC", "Files", "Oncogenomics"],
+    "metadata": {
+      "tags": ["downloads", "files", "expression"],
+      "estimated_execution_time": "< 3 seconds"
+    }
+  }
+]

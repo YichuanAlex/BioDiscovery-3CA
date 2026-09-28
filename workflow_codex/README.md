@@ -1,6 +1,86 @@
 # 本地 WiNGPT Workflow
 
-本项目的唯一目录是：
+本项目支持 Windows/vLLM 与 Apple Silicon macOS/MLX 两条本地运行路径。模型、工具和会话状态均保存在项目目录内，不调用全局 Codex/agent。
+
+## macOS / MLX
+
+当前 Mac 入口使用项目同级的 `model/Qwen3.5-4B-MLX-4bit`，复用 Conda `py312` 中的 MLX，并把科研 Python、Node、Tectonic 和 Poppler 固定在 `.runtime/macos`。`macos-env.sh` 会清除宿主 `PYTHONHOME`/`PYTHONPATH`，避免其他应用内置 Python 污染项目解释器。
+
+已安装的 7 项本地生命科学技能使用单独的 `.runtime/macos/life-sciences`：`scverse`
+环境承载 scRNA QC/scvi-tools，`allotrope` 环境保留 Allotrope 的精确版本组合，
+`nextflow` 环境固定 OpenJDK 17 与 Nextflow。它们不会向系统 Python、主科研 Python
+或用户 site-packages 写包，也不要求账号、订阅 MCP 或 Docker。
+
+随仓库提供的 ToolUniverse 1.0.15 MCPB 解包到 `components/tooluniverse`，依赖安装在
+独立 `.runtime/macos/tooluniverse` Python 3.12 环境。Node stdio 适配器只暴露
+`tooluniverse__list_tools`、`tooluniverse__grep_tools`、`tooluniverse__get_tool_info`、
+`tooluniverse__execute_tool` 和 `tooluniverse__find_tools`，并执行超时、16 KiB 工具结果
+边界及子进程清理。适配器会清除 API key/token/authorization 类环境变量；安装过程不写入
+账号、API key、远程 MCP 或订阅配置，并把子进程 HOME/XDG 配置目录隔离在项目运行时内。
+
+```bash
+cd '/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex'
+
+# 首次安装或重建项目运行时
+./setup-macos.sh
+
+# 仅安装/校准 7 项生命科学技能运行时，并执行独立冒烟测试
+./setup-life-sciences-macos.sh
+./test-life-sciences-macos.sh
+
+# 单独安装、验证或卸载本地 ToolUniverse compact MCP
+./install-tooluniverse-macos.sh
+./test-tooluniverse-macos.sh
+./uninstall-tooluniverse-macos.sh
+
+# 单独探测并安装/卸载 5 个免认证 HTTP MCP
+./install-anonymous-http-mcp.sh
+./uninstall-anonymous-http-mcp.sh
+
+# 启动、检查和停止本地 MLX 服务
+./start-wingpt-server.sh start
+./start-wingpt-server.sh status
+./start-wingpt-server.sh stop
+
+# 交互模式
+./run-wingpt.sh
+./run-wingpt.sh --allow-write --allow-shell
+
+# 本地模型、文件、工具协议、联网与 shell 冒烟测试
+./run-wingpt.sh --self-test --allow-shell
+```
+
+Mac 自主任务示例：
+
+```bash
+./run-wingpt.sh \
+  --workspace '/absolute/path/to/new-task' \
+  --allow-write \
+  --allow-shell \
+  --autonomous \
+  --max-rounds 0 \
+  --prompt-file '/absolute/path/to/prompt.txt' \
+  --require-artifact 'results/core_analysis/core_result.json' \
+  --require-artifact 'report/main.tex' \
+  --require-artifact 'report/main.pdf' \
+  --require-artifact 'results/summary.json' \
+  --require-artifact 'results/analysis_manifest.json' \
+  --require-artifact 'README.md'
+```
+
+Mac 默认上下文为生产安全配置 49,152 tokens、单次输出上限为 4,096 tokens，可通过 `WINGPT_CONTEXT_TOKENS` 与 `WINGPT_MAX_TOKENS` 调整。当前 16GB Apple Silicon 上 65,514-token 单 token 合成探测曾完成，但真实约 59K-token 工作流请求触发 Metal OOM；因此生产 prompt 预算限制为 45,056，不把模型声明的 262,144 位置上限或合成探测当作稳定容量。完整证据见 `macos-context-profile.json`。在线来源请求默认使用 120 秒 socket 超时，可用 `WINGPT_NETWORK_TIMEOUT` 调整；TLS 校验、来源白名单和 SHA-256 核验不会关闭。
+
+`setup-macos.sh` 会调用匿名 MCP 安装器，对 PubMed、bioRxiv、ClinicalTrials、ChEMBL
+和 OpenTargets 逐一执行 `initialize` 与 `tools/list`。只有探测成功且不要求认证的端点
+会写入 `.runtime/anonymous-http-mcp/manifest.json`；清单缓存每个输入 schema、schema
+SHA-256 和端点工具集 SHA-256。运行时只从该清单暴露
+`pubmed__*`/`biorxiv__*`/`clinicaltrials__*`/`chembl__*`/`opentargets__*` 工具，调用前
+重新初始化并拒绝 schema 漂移，支持 JSON 与 SSE 响应，保留超时并把返回硬限制为
+16 KiB。配置和请求不携带认证信息；401/402/403/407 或认证挑战会使端点保持禁用。
+
+## Windows / vLLM
+
+Windows 项目的历史目录是：
 
 ```text
 C:\Users\User\Desktop\agentic\workflow_codex
@@ -13,8 +93,12 @@ C:\Users\User\Desktop\agentic\workflow_codex
 ```powershell
 Set-Location 'C:\Users\User\Desktop\agentic\workflow_codex'
 & '.\tools\tool43CA\install.ps1'
+& '.\install-anonymous-http-mcp.ps1'
 & '.\test-WiNGPT.ps1'
 ```
+
+需要移除这 5 个匿名 HTTP MCP 时运行 `.\uninstall-anonymous-http-mcp.ps1`；卸载仅删除
+项目内探测清单，因此这些工具会在后续运行中保持不启用。
 
 完整测试包含：路径隔离、当前 Qwen 模型、文件工具、联网工具、3CA CLI/MCP、research-quality CLI/MCP、Ruff、Reactome 基因集、PubMed/Crossref 元数据、合成单细胞代谢聚类回归和科研产物闸门。联网冒烟最多六轮，要求一次实际检索及带来源的可见答复，超限/停滞不算通过。测试脚本使用 UTF-8 BOM 兼容 Windows PowerShell 5 的中文文本；长任务提示通过 `--prompt-file` 显式 UTF-8 读取，不依赖 shell 的中文字面量编码。
 
@@ -54,7 +138,7 @@ Windows 11 Insider build 26200 上，正式启动器固定使用项目内的 Nod
 
 3CA catalog 与公开网页检索不再有每任务请求次数上限，计数仅作为审计指标，工具不会因达到旧的 8/3 次阈值而消失。完全相同的发现类请求允许在新证据或精炼策略需要时重试；相同的写入、Shell、下载与验收调用仍防止盲目重放，失败工具只临时隐藏一个响应。3CA `download_asset` 的模型接口不再暴露猜测式大小参数，CLI/MCP 默认下载与安全解压上限均为 0（无限制）；`crawl_site` 默认遍历全部可发现页面。长 catalog 返回保持为可解析的压缩 JSON，完整公开缓存与 manifest 保留在磁盘。仅包含数据路径的 PowerShell 输入会被明确拒绝；空输出、无工作区变化的 exit 0 不再算作进展或完成验证。
 
-在 until-complete 模式中，即使搜索或 shell 每次都有新输出，连续 12 个工具轮次没有工作区修改仍会触发上下文恢复，但不会退出任务或禁止发现工具；恢复不能替代科学规划。实际工具返回中的研究 ID、完整标题、资产来源/哈希、观察和验证证据不再按固定条目数从检查点删除；每次模型请求只投影最近的必要索引，以适配 65,536-token 的物理上下文，完整记录仍可从检查点、manifest、工作区和 JSONL 读取。PowerShell、模型 API、3CA 与 research-quality 桥不设人工执行总时限，来源请求不设本工作流固定 socket 超时；实际网络/远端服务和操作系统仍可能返回错误，错误重试与检查点恢复保留。公网文本读取仍保留私网/localhost 阻断和有限内存保护，避免 SSRF 或单页响应耗尽进程。启动器只读取当前工作区的检查点，并持有操作系统独占文件锁，进程退出后自动释放，避免并行运行同一任务。
+在 until-complete 模式中，即使搜索或 shell 每次都有新输出，连续 12 个工具轮次没有工作区修改仍会触发上下文恢复，但不会替代科学规划。实际工具返回中的研究 ID、完整标题、资产来源/哈希、观察和验证证据不再按固定条目数从检查点删除；每次模型请求只投影最近的必要索引，以适配 49,152-token 上下文和 45,056-token prompt 预算，完整记录仍可从检查点、manifest、工作区和 JSONL 读取。macOS 启动器使用 chat-completion canary，而不只检查 `/v1/models`；检测 Metal OOM 或受管服务 canary 失败时会重启受管 PID。同一 checkpoint/version 最多自动恢复 3 次、单次运行总计最多 5 次，之后标记 `needs_attention`，避免无限恢复。公网文本读取仍保留私网/localhost 阻断和有限内存保护。启动器只读取当前工作区的检查点，并持有操作系统独占文件锁，避免并行运行同一任务。
 
 ## 会话记录
 
@@ -115,4 +199,4 @@ tools\tool43CA\SKILL\threeca-access
 
 `inspect_dataset` 的共享 CLI 实现区分文件、目录及不存在路径；目录仅返回最多 100 个浅层实际名称、不跟随符号链接，长清单仍以有截断标记的可解析 JSON 返回。目录存在不是矩阵内容验证，必须检查实际返回的文件名。CLI、MCP、函数工具共用此实现。
 
-Qwen 服务直接加载指定本地目录，文本任务使用 language-model-only，原生工具解析器 qwen3_coder、reasoning 解析器 qwen3；自主任务使用原生函数调用并保留真实 reasoning。当前硬件下上下文长度为 262144，未启用视觉模块，也未修改权重或全局已安装的 agent。
+Qwen 服务直接加载指定本地目录，文本任务使用 language-model-only，原生工具解析器 qwen3_coder、reasoning 解析器 qwen3；自主任务使用原生函数调用并保留真实 reasoning。模型配置声明 262,144 个位置，但当前 16GB Mac 的生产安全配置为 49,152，其中保留 4,096 tokens 用于生成；未启用视觉模块，也未修改权重或全局已安装的 agent。

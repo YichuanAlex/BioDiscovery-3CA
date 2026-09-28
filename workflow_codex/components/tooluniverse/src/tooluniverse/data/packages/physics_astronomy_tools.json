@@ -1,0 +1,62 @@
+[
+  {
+    "type": "PackageTool",
+    "name": "get_astropy_info",
+    "description": "Get information about the astropy package. Astronomy and astrophysics library",
+    "package_name": "astropy",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": []
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_sunpy_info",
+    "description": "Get information about the sunpy package. Solar data analysis library",
+    "package_name": "sunpy",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": []
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_galpy_info",
+    "description": "Get information about the galpy package. Galactic dynamics library",
+    "package_name": "galpy",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": []
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_pyephem_info",
+    "description": "Get information about the pyephem package. Astronomical computations for Python",
+    "package_name": "pyephem",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": []
+  },
+  {
+    "type": "PackageTool",
+    "name": "get_qutip_info",
+    "description": "Get information about the qutip package. Quantum toolbox in Python",
+    "package_name": "qutip",
+    "parameter": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "required": []
+  }
+]

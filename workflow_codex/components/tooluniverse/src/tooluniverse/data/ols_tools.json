@@ -1,0 +1,314 @@
+[
+  {
+    "type": "OLSTool",
+    "name": "ols_search_terms",
+    "description": "Search for terms in OLS (Ontology Lookup Service)",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "operation": {
+          "type": "string",
+          "const": "search_terms",
+          "description": "The operation to perform (search_terms)"
+        },
+        "query": {
+          "type": "string",
+          "description": "The search query for terms"
+        },
+        "rows": {
+          "type": "integer",
+          "description": "Number of results to return (default: 10)",
+          "default": 10
+        },
+        "ontology": {
+          "type": "string",
+          "description": "Filter by specific ontology (optional)"
+        },
+        "exact_match": {
+          "type": "boolean",
+          "description": "Search for exact matches only (default: false)",
+          "default": false
+        },
+        "include_obsolete": {
+          "type": "boolean",
+          "description": "Include obsolete terms (default: false)",
+          "default": false
+        }
+      },
+      "required": ["operation", "query"]
+    },
+    "examples": [
+      {
+        "description": "Search for disease terms",
+        "arguments": {
+          "operation": "search_terms",
+          "query": "diabetes",
+          "rows": 10
+        }
+      },
+      {
+        "description": "Search for exact term in specific ontology",
+        "arguments": {
+          "operation": "search_terms",
+          "query": "cancer",
+          "ontology": "efo",
+          "exact_match": true
+        }
+      }
+    ],
+    "tags": ["ontology", "search", "ebi", "ols"],
+    "author": "EBI OLS",
+    "version": "1.0.0"
+  },
+  {
+    "type": "OLSTool",
+    "name": "ols_get_ontology_info",
+    "description": "Get detailed information about an ontology",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "operation": {
+          "type": "string",
+          "const": "get_ontology_info",
+          "description": "The operation to perform (get_ontology_info)"
+        },
+        "ontology_id": {
+          "type": "string",
+          "description": "The ID of the ontology to retrieve"
+        }
+      },
+      "required": ["operation", "ontology_id"]
+    },
+    "examples": [
+      {
+        "description": "Get information about the EFO ontology",
+        "arguments": {
+          "operation": "get_ontology_info",
+          "ontology_id": "efo"
+        }
+      }
+    ],
+    "tags": ["ontology", "metadata", "ebi", "ols"],
+    "author": "EBI OLS",
+    "version": "1.0.0"
+  },
+  {
+    "type": "OLSTool",
+    "name": "ols_search_ontologies",
+    "description": "Search for ontologies in OLS",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "operation": {
+          "type": "string",
+          "const": "search_ontologies",
+          "description": "The operation to perform (search_ontologies)"
+        },
+        "search": {
+          "type": "string",
+          "description": "Search query for ontologies (optional)"
+        },
+        "page": {
+          "type": "integer",
+          "description": "Page number (default: 0)",
+          "default": 0
+        },
+        "size": {
+          "type": "integer",
+          "description": "Number of results per page (default: 20)",
+          "default": 20
+        }
+      },
+      "required": ["operation"]
+    },
+    "examples": [
+      {
+        "description": "Search all ontologies",
+        "arguments": {
+          "operation": "search_ontologies"
+        }
+      },
+      {
+        "description": "Search for disease-related ontologies",
+        "arguments": {
+          "operation": "search_ontologies",
+          "search": "disease",
+          "size": 10
+        }
+      }
+    ],
+    "tags": ["ontology", "search", "ebi", "ols"],
+    "author": "EBI OLS",
+    "version": "1.0.0"
+  },
+  {
+    "type": "OLSTool",
+    "name": "ols_get_term_info",
+    "description": "Get detailed information about a specific term in OLS",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "operation": {
+          "type": "string",
+          "const": "get_term_info",
+          "description": "The operation to perform (get_term_info)"
+        },
+        "id": {
+          "type": "string",
+          "description": "The ID or IRI of the term to retrieve"
+        }
+      },
+      "required": ["operation", "id"]
+    },
+    "examples": [
+      {
+        "description": "Get term information by ID",
+        "arguments": {
+          "operation": "get_term_info",
+          "id": "EFO:0000408"
+        }
+      }
+    ],
+    "tags": ["ontology", "term", "metadata", "ebi", "ols"],
+    "author": "EBI OLS",
+    "version": "1.0.0"
+  },
+  {
+    "type": "OLSTool",
+    "name": "ols_get_term_children",
+    "description": "Get child terms of a specific term in an ontology",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "operation": {
+          "type": "string",
+          "const": "get_term_children",
+          "description": "The operation to perform (get_term_children)"
+        },
+        "term_iri": {
+          "type": "string",
+          "description": "The IRI of the term to retrieve children for"
+        },
+        "ontology": {
+          "type": "string",
+          "description": "The ontology ID"
+        },
+        "include_obsolete": {
+          "type": "boolean",
+          "description": "Include obsolete terms (default: false)",
+          "default": false
+        },
+        "size": {
+          "type": "integer",
+          "description": "Number of results to return (default: 20)",
+          "default": 20
+        }
+      },
+      "required": ["operation", "term_iri", "ontology"]
+    },
+    "examples": [
+      {
+        "description": "Get child terms",
+        "arguments": {
+          "operation": "get_term_children",
+          "term_iri": "http://www.ebi.ac.uk/efo/EFO_0000408",
+          "ontology": "efo",
+          "size": 10
+        }
+      }
+    ],
+    "tags": ["ontology", "hierarchy", "term", "ebi", "ols"],
+    "author": "EBI OLS",
+    "version": "1.0.0"
+  },
+  {
+    "type": "OLSTool",
+    "name": "ols_get_term_ancestors",
+    "description": "Get ancestor terms of a specific term in an ontology",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "operation": {
+          "type": "string",
+          "const": "get_term_ancestors",
+          "description": "The operation to perform (get_term_ancestors)"
+        },
+        "term_iri": {
+          "type": "string",
+          "description": "The IRI of the term to retrieve ancestors for"
+        },
+        "ontology": {
+          "type": "string",
+          "description": "The ontology ID"
+        },
+        "include_obsolete": {
+          "type": "boolean",
+          "description": "Include obsolete terms (default: false)",
+          "default": false
+        },
+        "size": {
+          "type": "integer",
+          "description": "Number of results to return (default: 20)",
+          "default": 20
+        }
+      },
+      "required": ["operation", "term_iri", "ontology"]
+    },
+    "examples": [
+      {
+        "description": "Get ancestor terms",
+        "arguments": {
+          "operation": "get_term_ancestors",
+          "term_iri": "http://www.ebi.ac.uk/efo/EFO_0000408",
+          "ontology": "efo"
+        }
+      }
+    ],
+    "tags": ["ontology", "hierarchy", "term", "ebi", "ols"],
+    "author": "EBI OLS",
+    "version": "1.0.0"
+  },
+  {
+    "type": "OLSTool",
+    "name": "ols_find_similar_terms",
+    "description": "Find similar terms using LLM-based similarity",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "operation": {
+          "type": "string",
+          "const": "find_similar_terms",
+          "description": "The operation to perform (find_similar_terms)"
+        },
+        "term_iri": {
+          "type": "string",
+          "description": "The IRI of the term to find similar terms for"
+        },
+        "ontology": {
+          "type": "string",
+          "description": "The ontology ID"
+        },
+        "size": {
+          "type": "integer",
+          "description": "Number of similar terms to return (default: 10)",
+          "default": 10
+        }
+      },
+      "required": ["operation", "term_iri", "ontology"]
+    },
+    "examples": [
+      {
+        "description": "Find similar terms using LLM",
+        "arguments": {
+          "operation": "find_similar_terms",
+          "term_iri": "http://www.ebi.ac.uk/efo/EFO_0000408",
+          "ontology": "efo",
+          "size": 5
+        }
+      }
+    ],
+    "tags": ["ontology", "similarity", "llm", "ebi", "ols"],
+    "author": "EBI OLS",
+    "version": "1.0.0"
+  }
+]

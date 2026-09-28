@@ -1,0 +1,138 @@
+[
+  {
+    "type": "CrossrefTool",
+    "name": "Crossref_search_works",
+    "description": "Search Crossref Works API for articles by keyword. Returns articles with title, abstract, journal, year, DOI, and URL. Supports filtering by publication type and date range.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search query for Crossref works. Use keywords separated by spaces to refine your search."
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Number of articles to return. This sets the maximum number of articles retrieved from Crossref.",
+          "default": 10
+        },
+        "filter": {
+          "type": "string",
+          "description": "Optional filter string for Crossref API. Examples: 'type:journal-article,from-pub-date:2020-01-01'"
+        }
+      },
+      "required": [
+        "query",
+        "limit",
+        "filter"
+      ]
+    },
+    "return_schema": {
+      "type": "array",
+      "description": "List of Crossref articles matching the search query",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Title of the article"
+          },
+          "abstract": {
+            "type": "string",
+            "description": "Abstract of the article (HTML tags removed)"
+          },
+          "authors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of author names"
+          },
+          "journal": {
+            "type": "string",
+            "description": "Journal name where the article was published"
+          },
+          "year": {
+            "type": "integer",
+            "description": "Publication year"
+          },
+          "doi": {
+            "type": "string",
+            "description": "Digital Object Identifier"
+          },
+          "url": {
+            "type": "string",
+            "description": "URL to the article"
+          },
+          "citations": {
+            "type": "integer",
+            "description": "Number of citations"
+          },
+          "open_access": {
+            "type": "boolean",
+            "description": "Open access status"
+          },
+          "keywords": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of subject keywords"
+          },
+          "article_type": {
+            "type": "string",
+            "description": "Type of article"
+          },
+          "publisher": {
+            "type": "string",
+            "description": "Publisher name"
+          },
+          "source": {
+            "type": "string",
+            "description": "Source identifier (always 'Crossref')"
+          },
+          "data_quality": {
+            "type": "object",
+            "description": "Data quality indicators",
+            "properties": {
+              "has_abstract": {
+                "type": "boolean"
+              },
+              "has_authors": {
+                "type": "boolean"
+              },
+              "has_journal": {
+                "type": "boolean"
+              },
+              "has_year": {
+                "type": "boolean"
+              },
+              "has_doi": {
+                "type": "boolean"
+              },
+              "has_citations": {
+                "type": "boolean"
+              },
+              "has_keywords": {
+                "type": "boolean"
+              },
+              "has_url": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      }
+    },
+    "test_examples": [
+      {
+        "query": "artificial intelligence",
+        "limit": 2
+      },
+      {
+        "query": "machine learning",
+        "limit": 1,
+        "filter": "type:journal-article,from-pub-date:2020-01-01"
+      }
+    ]
+  }
+]

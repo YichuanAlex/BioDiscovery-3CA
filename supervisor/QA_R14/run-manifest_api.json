@@ -1,0 +1,158 @@
+{
+  "round": "QA_R14",
+  "started_at": "2026-09-28T09:00:26.302709+00:00",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "workflow": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex_api",
+  "task": "/Users/bytedance/Downloads/BioDiscovery-3CA/3CA/QA_R14",
+  "supervisor": "/Users/bytedance/Downloads/BioDiscovery-3CA/supervisor/QA_R14",
+  "runner_pid": 34297,
+  "provider": "deepseek-api",
+  "model": "deepseek-v4-pro",
+  "base_url": "https://api.deepseek.com",
+  "credential_source": "protected environment file; value excluded",
+  "thinking": {
+    "type": "enabled",
+    "reasoning_effort": "max"
+  },
+  "context": {
+    "model_documented": 1000000,
+    "workflow_context": 1000000,
+    "maximum_prompt": 934464,
+    "generation": 65536
+  },
+  "execution_policy": {
+    "single_launch": true,
+    "run_until_complete": true,
+    "manual_stop_resume_or_hotfix_during_run": false,
+    "supervisor_role": "read_only_monitoring",
+    "internal_api_retries": 3,
+    "internal_checkpoint_retries_per_version": 3,
+    "internal_checkpoint_retries_total": 5,
+    "deterministic_stages": [
+      "report_build",
+      "bundle_validation",
+      "completion",
+      "recognized report repair"
+    ]
+  },
+  "runtime_isolation": {
+    "codex_home": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex_api/.runtime_api/runs/QA_R14/codex-home",
+    "expected_initial_session_count": 1,
+    "shared_public_raw_cache": "workflow_codex/.threeca/cache by verified content hash only"
+  },
+  "prompt_sha256": "c220ff085a026c14e41ba896580a73088ce15a6424f1a149997d8ccad03312fc",
+  "preflight_record": {
+    "path": "supervisor/QA_R14/engineering-validation_api.json",
+    "sha256": "39b258e33c8b820d01203d7978b3472452c6da11218d634e22b630dd0704d360"
+  },
+  "seeded_inputs": [
+    {
+      "source_path": "3CA/QA_R10/inputs/metabolic_genes_total.csv",
+      "source_role": "immutable_user_supplied_input_only; no prior analysis artifact reused",
+      "staged_path": "inputs/metabolic_genes_total.csv",
+      "staged_at": "2026-09-28T09:00:26.302709+00:00",
+      "sha256": "7503180d29693bd1e654ea93281db0e3ec4177ff44842c8b02f6a098402e41a9",
+      "bytes": 14789,
+      "role": "immutable_user_supplied_gene_set"
+    },
+    {
+      "staged_path": "AGENTS.md",
+      "sha256": "dd665349f56893210a2110702ca22969c33f2d20df3e4912d38b30187a9c73f5",
+      "role": "round_execution_contract"
+    }
+  ],
+  "prior_research_artifacts_reused": false,
+  "frozen_files": [
+    {
+      "file": "codex-cli/bin/wingpt_api.js",
+      "sha256": "73445d3b5f12379d88ee2a737cd7ef215ba20b5fa7760206456d15fe770e38f3"
+    },
+    {
+      "file": "codex-cli/bin/codex_api.js",
+      "sha256": "e9f82c66a12d1fa624e9f24badb92ef75569168fcb0a0a815777afb0a581a283"
+    },
+    {
+      "file": "codex-cli/bin/test-deepseek-api-adapter_api.mjs",
+      "sha256": "4c3b12ccefd085c47bcab481c8462846dbbe1df585c06b494e7f9d425278f218"
+    },
+    {
+      "file": "codex-cli/bin/test-wingpt-recovery_api.mjs",
+      "sha256": "d26baa85dc9fd76fcd73e8ad4b5d6e3754a38dab2e7719b8a65c26ce5af0c750"
+    },
+    {
+      "file": "scripts/macos_runtime_api.py",
+      "sha256": "40bb091748e2c8547f30258affd710b9108f7b1255f87184a91ea336a2bb8983"
+    },
+    {
+      "file": "scripts/test_macos_runtime_api.py",
+      "sha256": "a49cad7363f325ad25d79fc1bc946d9085918fa0165818f1c290b2ab4c3eab67"
+    },
+    {
+      "file": "macos-env_api.sh",
+      "sha256": "23b84f5fe81cd6839c6bcb6352bcac30f82e083c2dbd47a2e0977bf67aa15855"
+    },
+    {
+      "file": "run-wingpt_api.sh",
+      "sha256": "ca246bffca2015f45a8c3126073724ddd0cacbfb35747599ee2879b39b50266a"
+    },
+    {
+      "file": "codex-cli/bin/wingpt-research.js",
+      "sha256": "2e0846df05e47bc28ea443742c2c083dfd8faa9fce527095164a5afb6f0202c7"
+    },
+    {
+      "file": "codex-cli/bin/wingpt-threeca.js",
+      "sha256": "e3f0168bb452141e69ca939179c4a79263966a778cd25e1ec5e905bc7c19d9b0"
+    }
+  ],
+  "research_gate": "both cores use staged user CSV; validate_research_bundle valid=true and complete_task required",
+  "status": "completed_candidate",
+  "final_outcome": {
+    "runner_exit_code": 0,
+    "outer_checkpoint_retries": 0,
+    "research_session_count": 1,
+    "session_file": "workflow_codex_api/.runtime_api/codex-home/sessions/2026/09/28/rollout-2026-09-28T17-00-32-ffe6e787-bd3.jsonl",
+    "checkpoint_phase": "completion",
+    "checkpoint_updated_at": "2026-09-28T09:14:06.335Z",
+    "workflow_validator": {
+      "valid": true,
+      "verification_call_id": "engine_080f1170-6dfe-46b8-9215-e6ce50811755",
+      "errors": [],
+      "pdf_pages": 5,
+      "figures": 4,
+      "three_line_tables": 1,
+      "formulas": 1,
+      "references": 2,
+      "dual_core_contract": true
+    },
+    "independent_validator": {
+      "valid": true,
+      "checked_at": "2026-09-28T09:15:05.029714+00:00",
+      "errors": [],
+      "rendered_pages": 5
+    },
+    "complete_task": "success",
+    "required_artifacts_nonempty": 8,
+    "stderr_bytes": 0,
+    "supervisor_interventions_during_run": 0,
+    "scientific_verdict": "Both global and exact CD8 analyses observed candidate computational partitions, but distinct biological metabolic states remain inconclusive."
+  },
+  "post_completion_maintenance": {
+    "performed_after_runner_exit": true,
+    "r14_artifacts_or_checkpoint_modified": false,
+    "changes": [
+      "Preserve an explicitly supplied per-round CODEX_HOME when run-wingpt_api.sh sources macos-env_api.sh a second time.",
+      "Use the authoritative deterministic report renderer immediately when report/main.tex is missing, avoiding an unnecessary invalid first report."
+    ],
+    "current_sha256": {
+      "workflow_codex_api/codex-cli/bin/wingpt_api.js": "a319fb8389597762a66226e0e6d74ebe7b4d066e78291f1ad2b11d83d9f27ed6",
+      "workflow_codex_api/macos-env_api.sh": "46e990500dfe428dc7eb88af88badc49e893cfd5774ee6ee7686e00e80a1f1be",
+      "workflow_codex_api/codex-cli/bin/test-wingpt-recovery_api.mjs": "e6b47fc9cceb8112f5034d7334fab9ff41c86b3afe29e0c0e068f992cfec8244"
+    },
+    "tests": [
+      "Node syntax and isolated one-session lifecycle: passed",
+      "Python runtime unittests: 4 passed",
+      "CODEX_HOME preservation probe: passed",
+      "Bash syntax: passed"
+    ]
+  }
+}

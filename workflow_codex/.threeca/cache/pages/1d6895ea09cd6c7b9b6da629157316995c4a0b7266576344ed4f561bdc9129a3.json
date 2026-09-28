@@ -1,8 +1,8 @@
 {
   "url": "https://www.weizmann.ac.il/sites/3CA/liverbiliary",
   "final_url": "https://www.weizmann.ac.il/sites/3CA/liverbiliary",
-  "fetched_at": "2026-09-14T04:17:28.951943+00:00",
-  "raw_html_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\pages\\1d6895ea09cd6c7b9b6da629157316995c4a0b7266576344ed4f561bdc9129a3.html",
+  "fetched_at": "2026-09-17T05:43:58.763231+00:00",
+  "raw_html_path": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.threeca/cache/pages/1d6895ea09cd6c7b9b6da629157316995c4a0b7266576344ed4f561bdc9129a3.html",
   "title": "Liver/Biliary | Curated Cancer Cell Atlas",
   "text": "Liver/Biliary Title Data Meta data Cell types Summary Disease Technology #samples #cells Meta programs CNAs UMAP Cell cycle Ma et al. 2019 Cell types Summary HCC/iCCA 10x 8 3018 Meta programs CNAs UMAP Cell cycle Sharma et al. 2020 Cell types Summary HCC 10x 58 73589 Meta programs UMAP Cell cycle Sun et al. 2021 Cell types Summary HCC 10x 18 16498 Meta programs CNAs UMAP Cell cycle Zhang et al. 2019 Cell types Summary HCC 10x, SmartSeq2 42 73261 Meta programs UMAP Cell cycle Zheng et al. 2017 Cell types Summary HCC 10x 17 5063 Meta programs UMAP Cell cycle All Liver/Biliary cancer 143 171429",
   "links": [

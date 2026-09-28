@@ -1,8 +1,8 @@
 {
   "url": "https://www.weizmann.ac.il/sites/3CA/skin",
   "final_url": "https://www.weizmann.ac.il/sites/3CA/skin",
-  "fetched_at": "2026-09-14T04:17:34.717693+00:00",
-  "raw_html_path": "C:\\Users\\User\\Desktop\\agentic\\workflow_codex\\.threeca\\cache\\pages\\9b8d9d933559acf638325ce8de0f1ab7e09127d7ab4b2672ad95f435e764b00d.html",
+  "fetched_at": "2026-09-17T05:44:07.411556+00:00",
+  "raw_html_path": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex/.threeca/cache/pages/9b8d9d933559acf638325ce8de0f1ab7e09127d7ab4b2672ad95f435e764b00d.html",
   "title": "Skin | Curated Cancer Cell Atlas",
   "text": "Skin Title Data Meta data Cell types Summary Disease Technology #samples #cells Meta programs CNAs UMAP Cell cycle Biermann et al. 2022 Cell types Summary Metastatic melanoma 10x 32 136973 Meta programs CNAs Cell cycle Ferrari de Andrade et al. 2019 Cell types Summary Metastatic melanoma 10x 12 40823 Meta programs UMAP Cell cycle Jerby-Arnon et al. 2018 Cell types Summary Melanoma SmartSeq2 32 7186 Meta programs CNAs UMAP Cell cycle Ji et al. 2020 Cell types Summary Skin SCC 10x 10 48164 Meta programs CNAs UMAP Cell cycle Li et al. 2019 Cell types Summary Melanoma MARS-seq 27 78336 Meta programs UMAP Cell cycle Mahuron et al. 2020 Cell types Summary Metastatic melanoma 10x 6 27935 Meta programs UMAP Cell cycle Paulson et al. 2020 Cell types Summary Merkel cell carcinoma 10x 8 31376 Meta programs CNAs UMAP Cell cycle Sade-Feldman et al. 2018 Cell types Summary Primary melanoma SmartSeq2 48 16291 Meta programs UMAP Cell cycle Tirosh et al. 2016 Cell types Summary Melanoma SmartSeq2 19 4645 Meta programs CNAs UMAP Cell cycle Yost et al. 2019 Cell types Summary BCC, SCC 10x 30 79046 Meta programs CNAs UMAP Cell cycle All Skin cancer 224 470775",
   "links": [

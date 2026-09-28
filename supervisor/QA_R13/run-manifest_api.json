@@ -1,0 +1,205 @@
+{
+  "round": "QA_R13",
+  "started_at": "2026-09-28T07:47:11.966965+00:00",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "workflow": "/Users/bytedance/Downloads/BioDiscovery-3CA/workflow_codex_api",
+  "task": "/Users/bytedance/Downloads/BioDiscovery-3CA/3CA/QA_R13",
+  "supervisor": "/Users/bytedance/Downloads/BioDiscovery-3CA/supervisor/QA_R13",
+  "runner_pid": 21020,
+  "provider": "deepseek-api",
+  "model": "deepseek-v4-pro",
+  "base_url": "https://api.deepseek.com",
+  "credential_source": "protected environment file; value excluded",
+  "thinking": {
+    "type": "enabled",
+    "reasoning_effort": "max"
+  },
+  "context": {
+    "model_documented": 1000000,
+    "workflow_context": 262144,
+    "maximum_prompt": 245760,
+    "generation": 16384
+  },
+  "max_rounds": 0,
+  "run_until_complete": true,
+  "prompt_sha256": "65bfc2aa45b192175c7990f43f2cee218b147c6cfc5a8e9746bf82655b9259af",
+  "seeded_inputs": [
+    {
+      "source_path": "3CA/QA_R10/inputs/metabolic_genes_total.csv",
+      "source_role": "immutable_user_supplied_input_only; no prior analysis artifact reused",
+      "staged_path": "inputs/metabolic_genes_total.csv",
+      "staged_at": "2026-09-28T07:47:11.966965+00:00",
+      "sha256": "7503180d29693bd1e654ea93281db0e3ec4177ff44842c8b02f6a098402e41a9",
+      "bytes": 14789,
+      "role": "immutable_user_supplied_gene_set"
+    },
+    {
+      "staged_path": "AGENTS.md",
+      "sha256": "4e83f7eeeb84ceae9d44b580bc52458208e43b6520f472ff86caf828c4877f95",
+      "role": "round_execution_contract"
+    }
+  ],
+  "cache_policy": {
+    "public_raw_cache": "shared read-only by content hash from workflow_codex/.threeca/cache",
+    "api_checkpoint_and_sessions": "isolated under workflow_codex_api/.runtime_api",
+    "prior_research_artifacts_reused": false
+  },
+  "external_components": {
+    "skills": 7,
+    "anonymous_http_mcp_endpoints": 5,
+    "anonymous_http_mcp_tools": 31,
+    "tooluniverse_compact_tools": 5,
+    "strict_research_phases_expose_external_mcp": false
+  },
+  "frozen_files": [
+    {
+      "file": "codex-cli/bin/wingpt_api.js",
+      "sha256": "459d1ae094133cdb23f46ee0f05a7a41c5759cf09b40cc09a65d106ef17a346f"
+    },
+    {
+      "file": "codex-cli/bin/codex_api.js",
+      "sha256": "e9f82c66a12d1fa624e9f24badb92ef75569168fcb0a0a815777afb0a581a283"
+    },
+    {
+      "file": "scripts/macos_runtime_api.py",
+      "sha256": "9328303da2d3a9f61ddccc007eb8bbc563165c63e78f2b686c85a8d1d0f217a2"
+    },
+    {
+      "file": "macos-env_api.sh",
+      "sha256": "5a059c6ae074912697801fa09cb023fa773f5538c059ffac1ec6987a5e06aa00"
+    },
+    {
+      "file": "run-wingpt_api.sh",
+      "sha256": "ca246bffca2015f45a8c3126073724ddd0cacbfb35747599ee2879b39b50266a"
+    },
+    {
+      "file": "codex-cli/bin/wingpt-http-mcp.js",
+      "sha256": "274ca99b44a38cf333f8a2f359ae8ea966c19b91d84bce52c1524fecc102ae9e"
+    },
+    {
+      "file": "codex-cli/bin/wingpt-tooluniverse-mcp.js",
+      "sha256": "ea944df6aa63ee13891256d45f4d2616d3feb6803b94771d193eb2bf62caa695"
+    },
+    {
+      "file": "codex-cli/bin/wingpt-research.js",
+      "sha256": "2e0846df05e47bc28ea443742c2c083dfd8faa9fce527095164a5afb6f0202c7"
+    },
+    {
+      "file": "codex-cli/bin/wingpt-threeca.js",
+      "sha256": "e3f0168bb452141e69ca939179c4a79263966a778cd25e1ec5e905bc7c19d9b0"
+    },
+    {
+      "file": "skills/anthropic-life-sciences/manifest.json",
+      "sha256": "2ebec8579e84b759a7222b8d745ffb7adf550bd64c7a51b1481d3d67f5c6f4b2"
+    },
+    {
+      "file": "components/tooluniverse/workflow-install.json",
+      "sha256": "262d220ec30d0d53fde2d0f6a5596e3ffe217505da75824617c255fba6131e3d"
+    },
+    {
+      "file": "components/tooluniverse/workflow-tool-schema.json",
+      "sha256": "38326c294804a40212191a1813bbd0b4ca11280a88c3991c761589d71fe9451e"
+    }
+  ],
+  "engineering_tests": "API syntax, API runtime unit tests, mocked DeepSeek tool-call continuity, live API status, and live main self-test passed",
+  "research_gate": "both cores use staged user CSV; validate_research_bundle valid=true and complete_task required",
+  "research_workspace_initially_empty_before_supplied_input": true,
+  "source_policy": "immutable user CSV plus verified hash-addressed public raw cache only",
+  "post_launch_updates": [
+    {
+      "file": "codex-cli/bin/wingpt_api.js",
+      "reason": "DeepSeek thinking mode rejected tool_choice=required before any research tool ran; thinking requests now retain tools but omit tool_choice.",
+      "launch_sha256": "459d1ae094133cdb23f46ee0f05a7a41c5759cf09b40cc09a65d106ef17a346f",
+      "current_sha256": "9e19f44e1f7193f1d88bed718685982e676f63463523e31acee3bd4b7569452f",
+      "initial_error": "HTTP 400: thinking mode does not support this tool_choice",
+      "resume_effect": "The same empty-analysis R13 checkpoint resumed at source_discovery and then executed native source and staging phases."
+    },
+    {
+      "files": [
+        "macos-env_api.sh",
+        "codex-cli/bin/wingpt_api.js"
+      ],
+      "reason": "User requested the documented maximum context and deepest thinking after both cores were complete.",
+      "effective_on_resume": {
+        "workflow_context": 1000000,
+        "maximum_output": 65536,
+        "thinking": "enabled",
+        "reasoning_effort": "max"
+      },
+      "resume_effect": "R13 resumes from report_and_manifest; saved global/CD8 cores are preserved and are not rerun."
+    },
+    {
+      "file": "codex-cli/bin/wingpt_api.js",
+      "reason": "Forced report-repair compaction discarded the immediately preceding file-read result, causing repeated paid reads without workspace progress.",
+      "change": "Recovery compaction now retains the latest 8 bounded messages; normal compaction retains 48.",
+      "tests": [
+        "node --check codex-cli/bin/wingpt_api.js: exit 0",
+        "test-deepseek-api-adapter_api.mjs: PASS"
+      ],
+      "resume_effect": "The same R13 report_repair checkpoint can retain report/main.tex across the next model request and proceed to a write/rebuild."
+    },
+    {
+      "file": "codex-cli/bin/wingpt_api.js",
+      "reason": "DeepSeek continued excessive report reads, and deterministic engine-generated tool messages needed reasoning_content for thinking-mode replay.",
+      "changes": [
+        "Use the existing authoritative dual-core deterministic renderer in report_repair as well as bundle_repair.",
+        "Attach and backfill reasoning_content on deterministic assistant tool-call messages."
+      ],
+      "tests": [
+        "node --check codex-cli/bin/wingpt_api.js: exit 0",
+        "test-deepseek-api-adapter_api.mjs: PASS"
+      ],
+      "resume_effect": "Report build, valid bundle verification, and complete_task all succeeded without rerunning either scientific core."
+    }
+  ],
+  "observed_startup": {
+    "api_status_ready": true,
+    "model": "deepseek-v4-pro",
+    "successful_tools": [
+      "search_studies",
+      "get_study",
+      "plan_asset",
+      "download_asset",
+      "prepare_3ca_dataset",
+      "analyze_metabolic_states"
+    ],
+    "global_core_command_contract": {
+      "metabolic_genes_path": "inputs/metabolic_genes_total.csv",
+      "output_dir": "results/core_analysis",
+      "random_baselines": 19
+    },
+    "credential_leaks_detected": 0,
+    "status": "running",
+    "latest_checkpoint": "report_and_manifest"
+  },
+  "final_outcome": {
+    "status": "completed_candidate",
+    "runner_exit_code": 0,
+    "checkpoint_phase": "completion",
+    "checkpoint_updated_at": "2026-09-28T08:20:42.346Z",
+    "workflow_validator": {
+      "valid": true,
+      "verification_call_id": "engine_e74e7ce9-b2b6-45c1-b65c-3502e23124fa",
+      "errors": [],
+      "pdf_pages": 5,
+      "figures": 4,
+      "three_line_tables": 1,
+      "formulas": 1,
+      "references": 2,
+      "dual_core_contract": true
+    },
+    "independent_validator": {
+      "valid": true,
+      "checked_at": "2026-09-28T08:21:20.788146+00:00",
+      "errors": [],
+      "rendered_pages": 5
+    },
+    "pdf": {
+      "bytes": 210077,
+      "sha256": "c305c7de87b8605bba6a24c83289e4d20791da2cc00daf75acb45b008c9adc43",
+      "visual_page_review": "five rendered pages inspected; no cropping or blank page"
+    },
+    "complete_task": "success",
+    "scientific_verdict": "Both global and exact CD8 analyses observed candidate computational partitions, but distinct biological metabolic states remain inconclusive."
+  }
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "type": "SemanticScholarTool",
+    "name": "SemanticScholar_search_papers",
+    "description": "Search for papers on Semantic Scholar including abstracts. This tool queries the Semantic Scholar API using natural language keywords and returns papers with details such as title, abstract, publication year, journal (venue), and URL.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search query for Semantic Scholar. Use keywords separated by spaces to refine the search."
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of papers to return from Semantic Scholar.",
+          "default": 5
+        },
+        "api_key": {
+          "type": "string",
+          "description": "Optional API key for Semantic Scholar to obtain a higher quota."
+        }
+      },
+      "required": [
+        "query",
+        "limit"
+      ]
+    },
+    "return_schema": {
+      "type": "array",
+      "description": "List of papers from Semantic Scholar matching the search query",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Title of the paper"
+          },
+          "abstract": {
+            "type": "string",
+            "description": "Abstract of the paper"
+          },
+          "journal": {
+            "type": "string",
+            "description": "Journal or venue name"
+          },
+          "year": {
+            "type": "integer",
+            "description": "Publication year"
+          },
+          "url": {
+            "type": "string",
+            "description": "URL to the paper on Semantic Scholar"
+          }
+        }
+      }
+    }
+  }
+]

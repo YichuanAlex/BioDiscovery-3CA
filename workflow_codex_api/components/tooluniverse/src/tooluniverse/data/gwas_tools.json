@@ -1,0 +1,1875 @@
+[
+  {
+    "type": "GWASAssociationSearch",
+    "name": "gwas_search_associations",
+    "description": "Search for GWAS associations by various criteria including EFO trait, rs ID, accession ID, with sorting and pagination support.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "efo_trait": {
+          "type": "string",
+          "description": "EFO trait identifier or name"
+        },
+        "rs_id": {
+          "type": "string",
+          "description": "dbSNP rs identifier"
+        },
+        "accession_id": {
+          "type": "string",
+          "description": "Study accession identifier"
+        },
+        "sort": {
+          "type": "string",
+          "description": "Sort field (e.g., 'p_value', 'or_value')"
+        },
+        "direction": {
+          "type": "string",
+          "description": "Sort direction ('asc' or 'desc')"
+        },
+        "size": {
+          "type": "integer",
+          "description": "Number of results to return"
+        },
+        "page": {
+          "type": "integer",
+          "description": "Page number for pagination"
+        }
+      },
+      "required": []
+    },
+    "label": [
+      "GWAS",
+      "Association",
+      "Genetics",
+      "Search"
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "GWAS associations search results with pagination metadata",
+      "properties": {
+        "data": {
+          "type": "array",
+          "description": "Array of GWAS association objects",
+          "items": {
+            "type": "object",
+            "properties": {
+              "association_id": {
+                "type": "integer",
+                "description": "Unique association identifier"
+              },
+              "p_value": {
+                "type": "number",
+                "description": "Statistical p-value"
+              },
+              "beta": {
+                "type": "string",
+                "description": "Effect size (beta coefficient)"
+              },
+              "efo_traits": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "efo_id": {
+                      "type": "string"
+                    },
+                    "efo_trait": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "reported_trait": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "accession_id": {
+                "type": "string",
+                "description": "Study accession ID"
+              },
+              "pubmed_id": {
+                "type": "string",
+                "description": "PubMed reference"
+              },
+              "first_author": {
+                "type": "string",
+                "description": "First author name"
+              },
+              "snp_effect_allele": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "snp_allele": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "rs_id": {
+                      "type": "string"
+                    },
+                    "effect_allele": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "locations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "mapped_genes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "ci_lower": {
+                "type": "number",
+                "description": "Lower confidence interval"
+              },
+              "ci_upper": {
+                "type": "number",
+                "description": "Upper confidence interval"
+              },
+              "risk_frequency": {
+                "type": "string",
+                "description": "Risk allele frequency"
+              },
+              "range": {
+                "type": "string",
+                "description": "Effect size range"
+              },
+              "_links": {
+                "type": "object",
+                "description": "API links"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "description": "Pagination and navigation metadata",
+          "properties": {
+            "pagination": {
+              "type": "object",
+              "properties": {
+                "size": {
+                  "type": "integer"
+                },
+                "totalElements": {
+                  "type": "integer"
+                },
+                "totalPages": {
+                  "type": "integer"
+                },
+                "number": {
+                  "type": "integer"
+                }
+              }
+            },
+            "links": {
+              "type": "object",
+              "description": "Navigation links"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "GWASStudySearch",
+    "name": "gwas_search_studies",
+    "description": "Search for GWAS studies by various criteria including EFO trait, disease trait, cohort, GxE interactions, and summary statistics availability.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "efo_trait": {
+          "type": "string",
+          "description": "EFO trait identifier or name"
+        },
+        "disease_trait": {
+          "type": "string",
+          "description": "Disease trait name"
+        },
+        "cohort": {
+          "type": "string",
+          "description": "Cohort name (e.g., 'UKB' for UK Biobank)"
+        },
+        "gxe": {
+          "type": "boolean",
+          "description": "Filter for Gene-by-Environment interaction studies"
+        },
+        "full_pvalue_set": {
+          "type": "boolean",
+          "description": "Filter for studies with full summary statistics"
+        },
+        "size": {
+          "type": "integer",
+          "description": "Number of results to return"
+        },
+        "page": {
+          "type": "integer",
+          "description": "Page number for pagination"
+        }
+      },
+      "required": []
+    },
+    "label": [
+      "GWAS",
+      "Study",
+      "Research",
+      "Search"
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "GWAS studies search results with pagination metadata",
+      "properties": {
+        "data": {
+          "type": "array",
+          "description": "Array of GWAS study objects",
+          "items": {
+            "type": "object",
+            "properties": {
+              "accession_id": {
+                "type": "string",
+                "description": "Study accession identifier"
+              },
+              "disease_trait": {
+                "type": "string",
+                "description": "Disease or trait name"
+              },
+              "efo_traits": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "efo_id": {
+                      "type": "string"
+                    },
+                    "efo_trait": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "initial_sample_size": {
+                "type": "string",
+                "description": "Initial sample size description"
+              },
+              "replication_sample_size": {
+                "type": "string",
+                "description": "Replication sample size"
+              },
+              "discovery_ancestry": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "replication_ancestry": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "cohort": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "genotyping_technologies": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "platforms": {
+                "type": "string",
+                "description": "Genotyping platforms used"
+              },
+              "snp_count": {
+                "type": "integer",
+                "description": "Number of SNPs analyzed"
+              },
+              "imputed": {
+                "type": "boolean",
+                "description": "Whether data was imputed"
+              },
+              "pooled": {
+                "type": "boolean",
+                "description": "Whether data was pooled"
+              },
+              "gxe": {
+                "type": "boolean",
+                "description": "Gene-environment interaction study"
+              },
+              "gxg": {
+                "type": "boolean",
+                "description": "Gene-gene interaction study"
+              },
+              "full_summary_stats_available": {
+                "type": "boolean",
+                "description": "Full summary statistics available"
+              },
+              "full_summary_stats": {
+                "type": "string",
+                "description": "URL to full summary statistics"
+              },
+              "pubmed_id": {
+                "type": "string",
+                "description": "PubMed reference"
+              },
+              "terms_of_license": {
+                "type": "string",
+                "description": "Data usage license"
+              },
+              "array_manufacturer": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "_links": {
+                "type": "object",
+                "description": "API links"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "description": "Pagination and navigation metadata",
+          "properties": {
+            "pagination": {
+              "type": "object",
+              "properties": {
+                "size": {
+                  "type": "integer"
+                },
+                "totalElements": {
+                  "type": "integer"
+                },
+                "totalPages": {
+                  "type": "integer"
+                },
+                "number": {
+                  "type": "integer"
+                }
+              }
+            },
+            "links": {
+              "type": "object",
+              "description": "Navigation links"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "GWASSNPSearch",
+    "name": "gwas_search_snps",
+    "description": "Search for GWAS single nucleotide polymorphisms (SNPs) by rs ID or mapped gene.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "rs_id": {
+          "type": "string",
+          "description": "dbSNP rs identifier"
+        },
+        "mapped_gene": {
+          "type": "string",
+          "description": "Gene name or symbol"
+        },
+        "size": {
+          "type": "integer",
+          "description": "Number of results to return"
+        },
+        "page": {
+          "type": "integer",
+          "description": "Page number for pagination"
+        }
+      },
+      "required": []
+    },
+    "label": [
+      "GWAS",
+      "SNP",
+      "Variant",
+      "Search"
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "GWAS SNPs search results with pagination metadata",
+      "properties": {
+        "data": {
+          "type": "array",
+          "description": "Array of SNP objects",
+          "items": {
+            "type": "object",
+            "properties": {
+              "rs_id": {
+                "type": "string",
+                "description": "dbSNP rs identifier"
+              },
+              "merged": {
+                "type": "integer",
+                "description": "Merged status"
+              },
+              "functional_class": {
+                "type": "string",
+                "description": "Functional classification"
+              },
+              "last_update_date": {
+                "type": "string",
+                "description": "Last update timestamp"
+              },
+              "locations": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "chromosome_name": {
+                      "type": "string"
+                    },
+                    "chromosome_position": {
+                      "type": "integer"
+                    },
+                    "region": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "alleles": {
+                "type": "string",
+                "description": "Allele information"
+              },
+              "most_severe_consequence": {
+                "type": "string",
+                "description": "Most severe functional consequence"
+              },
+              "mapped_genes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "maf": {
+                "type": "number",
+                "description": "Minor allele frequency"
+              },
+              "minor_allele": {
+                "type": "string",
+                "description": "Minor allele"
+              },
+              "_links": {
+                "type": "object",
+                "description": "API links"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "description": "Pagination and navigation metadata",
+          "properties": {
+            "pagination": {
+              "type": "object",
+              "properties": {
+                "size": {
+                  "type": "integer"
+                },
+                "totalElements": {
+                  "type": "integer"
+                },
+                "totalPages": {
+                  "type": "integer"
+                },
+                "number": {
+                  "type": "integer"
+                }
+              }
+            },
+            "links": {
+              "type": "object",
+              "description": "Navigation links"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "GWASAssociationByID",
+    "name": "gwas_get_association_by_id",
+    "description": "Get a specific GWAS association by its unique identifier.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "association_id": {
+          "type": "string",
+          "description": "GWAS association identifier"
+        }
+      },
+      "required": [
+        "association_id"
+      ]
+    },
+    "label": [
+      "GWAS",
+      "Association",
+      "Lookup"
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Single GWAS association object",
+      "properties": {
+        "association_id": {
+          "type": "integer",
+          "description": "Unique association identifier"
+        },
+        "p_value": {
+          "type": "number",
+          "description": "Statistical p-value"
+        },
+        "beta": {
+          "type": "string",
+          "description": "Effect size (beta coefficient)"
+        },
+        "efo_traits": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "efo_id": {
+                "type": "string"
+              },
+              "efo_trait": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "reported_trait": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "accession_id": {
+          "type": "string",
+          "description": "Study accession ID"
+        },
+        "pubmed_id": {
+          "type": "string",
+          "description": "PubMed reference"
+        },
+        "first_author": {
+          "type": "string",
+          "description": "First author name"
+        },
+        "snp_effect_allele": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "snp_allele": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "rs_id": {
+                "type": "string"
+              },
+              "effect_allele": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "locations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "mapped_genes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "ci_lower": {
+          "type": "number",
+          "description": "Lower confidence interval"
+        },
+        "ci_upper": {
+          "type": "number",
+          "description": "Upper confidence interval"
+        },
+        "risk_frequency": {
+          "type": "string",
+          "description": "Risk allele frequency"
+        },
+        "range": {
+          "type": "string",
+          "description": "Effect size range"
+        },
+        "_links": {
+          "type": "object",
+          "description": "API links"
+        }
+      }
+    }
+  },
+  {
+    "type": "GWASStudyByID",
+    "name": "gwas_get_study_by_id",
+    "description": "Get a specific GWAS study by its unique identifier.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "study_id": {
+          "type": "string",
+          "description": "GWAS study identifier"
+        }
+      },
+      "required": [
+        "study_id"
+      ]
+    },
+    "label": [
+      "GWAS",
+      "Study",
+      "Lookup"
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Single GWAS study object",
+      "properties": {
+        "accession_id": {
+          "type": "string",
+          "description": "Study accession identifier"
+        },
+        "disease_trait": {
+          "type": "string",
+          "description": "Disease or trait name"
+        },
+        "efo_traits": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "efo_id": {
+                "type": "string"
+              },
+              "efo_trait": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "initial_sample_size": {
+          "type": "string",
+          "description": "Initial sample size description"
+        },
+        "replication_sample_size": {
+          "type": "string",
+          "description": "Replication sample size"
+        },
+        "discovery_ancestry": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "replication_ancestry": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "cohort": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "genotyping_technologies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "platforms": {
+          "type": "string",
+          "description": "Genotyping platforms used"
+        },
+        "snp_count": {
+          "type": "integer",
+          "description": "Number of SNPs analyzed"
+        },
+        "imputed": {
+          "type": "boolean",
+          "description": "Whether data was imputed"
+        },
+        "pooled": {
+          "type": "boolean",
+          "description": "Whether data was pooled"
+        },
+        "gxe": {
+          "type": "boolean",
+          "description": "Gene-environment interaction study"
+        },
+        "gxg": {
+          "type": "boolean",
+          "description": "Gene-gene interaction study"
+        },
+        "full_summary_stats_available": {
+          "type": "boolean",
+          "description": "Full summary statistics available"
+        },
+        "full_summary_stats": {
+          "type": "string",
+          "description": "URL to full summary statistics"
+        },
+        "pubmed_id": {
+          "type": "string",
+          "description": "PubMed reference"
+        },
+        "terms_of_license": {
+          "type": "string",
+          "description": "Data usage license"
+        },
+        "array_manufacturer": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "_links": {
+          "type": "object",
+          "description": "API links"
+        }
+      }
+    }
+  },
+  {
+    "type": "GWASSNPByID",
+    "name": "gwas_get_snp_by_id",
+    "description": "Get a specific GWAS SNP by its rs ID.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "rs_id": {
+          "type": "string",
+          "description": "dbSNP rs identifier"
+        }
+      },
+      "required": [
+        "rs_id"
+      ]
+    },
+    "label": [
+      "GWAS",
+      "SNP",
+      "Lookup"
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "Single SNP object",
+      "properties": {
+        "rs_id": {
+          "type": "string",
+          "description": "dbSNP rs identifier"
+        },
+        "merged": {
+          "type": "integer",
+          "description": "Merged status"
+        },
+        "functional_class": {
+          "type": "string",
+          "description": "Functional classification"
+        },
+        "last_update_date": {
+          "type": "string",
+          "description": "Last update timestamp"
+        },
+        "locations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "chromosome_name": {
+                "type": "string"
+              },
+              "chromosome_position": {
+                "type": "integer"
+              },
+              "region": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "alleles": {
+          "type": "string",
+          "description": "Allele information"
+        },
+        "most_severe_consequence": {
+          "type": "string",
+          "description": "Most severe functional consequence"
+        },
+        "mapped_genes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "maf": {
+          "type": "number",
+          "description": "Minor allele frequency"
+        },
+        "minor_allele": {
+          "type": "string",
+          "description": "Minor allele"
+        },
+        "_links": {
+          "type": "object",
+          "description": "API links"
+        }
+      }
+    }
+  },
+  {
+    "type": "GWASVariantsForTrait",
+    "name": "gwas_get_variants_for_trait",
+    "description": "Get all variants associated with a specific trait with pagination support.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "efo_trait": {
+          "type": "string",
+          "description": "EFO trait identifier or name"
+        },
+        "size": {
+          "type": "integer",
+          "description": "Number of results to return per page"
+        },
+        "page": {
+          "type": "integer",
+          "description": "Page number for pagination"
+        }
+      },
+      "required": [
+        "efo_trait"
+      ]
+    },
+    "label": [
+      "GWAS",
+      "Variants",
+      "Trait",
+      "Genetics"
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "GWAS variants for trait results with pagination metadata",
+      "properties": {
+        "data": {
+          "type": "array",
+          "description": "Array of variant objects",
+          "items": {
+            "type": "object",
+            "properties": {
+              "rs_id": {
+                "type": "string",
+                "description": "dbSNP rs identifier"
+              },
+              "merged": {
+                "type": "integer",
+                "description": "Merged status"
+              },
+              "functional_class": {
+                "type": "string",
+                "description": "Functional classification"
+              },
+              "last_update_date": {
+                "type": "string",
+                "description": "Last update timestamp"
+              },
+              "locations": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "chromosome_name": {
+                      "type": "string"
+                    },
+                    "chromosome_position": {
+                      "type": "integer"
+                    },
+                    "region": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "alleles": {
+                "type": "string",
+                "description": "Allele information"
+              },
+              "most_severe_consequence": {
+                "type": "string",
+                "description": "Most severe functional consequence"
+              },
+              "mapped_genes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "maf": {
+                "type": "number",
+                "description": "Minor allele frequency"
+              },
+              "minor_allele": {
+                "type": "string",
+                "description": "Minor allele"
+              },
+              "_links": {
+                "type": "object",
+                "description": "API links"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "description": "Pagination and navigation metadata",
+          "properties": {
+            "pagination": {
+              "type": "object",
+              "properties": {
+                "size": {
+                  "type": "integer"
+                },
+                "totalElements": {
+                  "type": "integer"
+                },
+                "totalPages": {
+                  "type": "integer"
+                },
+                "number": {
+                  "type": "integer"
+                }
+              }
+            },
+            "links": {
+              "type": "object",
+              "description": "Navigation links"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "GWASAssociationsForTrait",
+    "name": "gwas_get_associations_for_trait",
+    "description": "Get all associations for a specific trait, sorted by p-value (most significant first).",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "efo_trait": {
+          "type": "string",
+          "description": "EFO trait identifier or name"
+        },
+        "size": {
+          "type": "integer",
+          "description": "Number of results to return per page"
+        },
+        "page": {
+          "type": "integer",
+          "description": "Page number for pagination"
+        }
+      },
+      "required": [
+        "efo_trait"
+      ]
+    },
+    "label": [
+      "GWAS",
+      "Associations",
+      "Trait",
+      "Significance"
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "GWAS associations for trait results with pagination metadata",
+      "properties": {
+        "data": {
+          "type": "array",
+          "description": "Array of GWAS association objects",
+          "items": {
+            "type": "object",
+            "properties": {
+              "association_id": {
+                "type": "integer",
+                "description": "Unique association identifier"
+              },
+              "p_value": {
+                "type": "number",
+                "description": "Statistical p-value"
+              },
+              "beta": {
+                "type": "string",
+                "description": "Effect size (beta coefficient)"
+              },
+              "efo_traits": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "efo_id": {
+                      "type": "string"
+                    },
+                    "efo_trait": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "reported_trait": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "accession_id": {
+                "type": "string",
+                "description": "Study accession ID"
+              },
+              "pubmed_id": {
+                "type": "string",
+                "description": "PubMed reference"
+              },
+              "first_author": {
+                "type": "string",
+                "description": "First author name"
+              },
+              "snp_effect_allele": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "snp_allele": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "rs_id": {
+                      "type": "string"
+                    },
+                    "effect_allele": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "locations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "mapped_genes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "ci_lower": {
+                "type": "number",
+                "description": "Lower confidence interval"
+              },
+              "ci_upper": {
+                "type": "number",
+                "description": "Upper confidence interval"
+              },
+              "risk_frequency": {
+                "type": "string",
+                "description": "Risk allele frequency"
+              },
+              "range": {
+                "type": "string",
+                "description": "Effect size range"
+              },
+              "_links": {
+                "type": "object",
+                "description": "API links"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "description": "Pagination and navigation metadata",
+          "properties": {
+            "pagination": {
+              "type": "object",
+              "properties": {
+                "size": {
+                  "type": "integer"
+                },
+                "totalElements": {
+                  "type": "integer"
+                },
+                "totalPages": {
+                  "type": "integer"
+                },
+                "number": {
+                  "type": "integer"
+                }
+              }
+            },
+            "links": {
+              "type": "object",
+              "description": "Navigation links"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "GWASAssociationsForSNP",
+    "name": "gwas_get_associations_for_snp",
+    "description": "Get all associations for a specific SNP with optional sorting.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "rs_id": {
+          "type": "string",
+          "description": "dbSNP rs identifier"
+        },
+        "sort": {
+          "type": "string",
+          "description": "Sort field (e.g., 'p_value', 'or_value')"
+        },
+        "direction": {
+          "type": "string",
+          "description": "Sort direction ('asc' or 'desc')"
+        },
+        "size": {
+          "type": "integer",
+          "description": "Number of results to return per page"
+        },
+        "page": {
+          "type": "integer",
+          "description": "Page number for pagination"
+        }
+      },
+      "required": [
+        "rs_id"
+      ]
+    },
+    "label": [
+      "GWAS",
+      "Associations",
+      "SNP",
+      "Traits"
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "GWAS associations for SNP results with pagination metadata",
+      "properties": {
+        "data": {
+          "type": "array",
+          "description": "Array of GWAS association objects",
+          "items": {
+            "type": "object",
+            "properties": {
+              "association_id": {
+                "type": "integer",
+                "description": "Unique association identifier"
+              },
+              "p_value": {
+                "type": "number",
+                "description": "Statistical p-value"
+              },
+              "beta": {
+                "type": "string",
+                "description": "Effect size (beta coefficient)"
+              },
+              "efo_traits": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "efo_id": {
+                      "type": "string"
+                    },
+                    "efo_trait": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "reported_trait": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "accession_id": {
+                "type": "string",
+                "description": "Study accession ID"
+              },
+              "pubmed_id": {
+                "type": "string",
+                "description": "PubMed reference"
+              },
+              "first_author": {
+                "type": "string",
+                "description": "First author name"
+              },
+              "snp_effect_allele": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "snp_allele": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "rs_id": {
+                      "type": "string"
+                    },
+                    "effect_allele": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "locations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "mapped_genes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "ci_lower": {
+                "type": "number",
+                "description": "Lower confidence interval"
+              },
+              "ci_upper": {
+                "type": "number",
+                "description": "Upper confidence interval"
+              },
+              "risk_frequency": {
+                "type": "string",
+                "description": "Risk allele frequency"
+              },
+              "range": {
+                "type": "string",
+                "description": "Effect size range"
+              },
+              "_links": {
+                "type": "object",
+                "description": "API links"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "description": "Pagination and navigation metadata",
+          "properties": {
+            "pagination": {
+              "type": "object",
+              "properties": {
+                "size": {
+                  "type": "integer"
+                },
+                "totalElements": {
+                  "type": "integer"
+                },
+                "totalPages": {
+                  "type": "integer"
+                },
+                "number": {
+                  "type": "integer"
+                }
+              }
+            },
+            "links": {
+              "type": "object",
+              "description": "Navigation links"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "GWASStudiesForTrait",
+    "name": "gwas_get_studies_for_trait",
+    "description": "Get studies for a specific trait with optional filters for cohort, GxE interactions, and summary statistics.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "efo_trait": {
+          "type": "string",
+          "description": "EFO trait identifier or name"
+        },
+        "disease_trait": {
+          "type": "string",
+          "description": "Disease trait name"
+        },
+        "cohort": {
+          "type": "string",
+          "description": "Cohort name (e.g., 'UKB' for UK Biobank)"
+        },
+        "gxe": {
+          "type": "boolean",
+          "description": "Filter for Gene-by-Environment interaction studies"
+        },
+        "full_pvalue_set": {
+          "type": "boolean",
+          "description": "Filter for studies with full summary statistics"
+        },
+        "size": {
+          "type": "integer",
+          "description": "Number of results to return per page"
+        },
+        "page": {
+          "type": "integer",
+          "description": "Page number for pagination"
+        }
+      },
+      "required": []
+    },
+    "label": [
+      "GWAS",
+      "Studies",
+      "Trait",
+      "Research"
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "GWAS studies for trait results with pagination metadata",
+      "properties": {
+        "data": {
+          "type": "array",
+          "description": "Array of GWAS study objects",
+          "items": {
+            "type": "object",
+            "properties": {
+              "accession_id": {
+                "type": "string",
+                "description": "Study accession identifier"
+              },
+              "disease_trait": {
+                "type": "string",
+                "description": "Disease or trait name"
+              },
+              "efo_traits": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "efo_id": {
+                      "type": "string"
+                    },
+                    "efo_trait": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "initial_sample_size": {
+                "type": "string",
+                "description": "Initial sample size description"
+              },
+              "replication_sample_size": {
+                "type": "string",
+                "description": "Replication sample size"
+              },
+              "discovery_ancestry": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "replication_ancestry": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "cohort": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "genotyping_technologies": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "platforms": {
+                "type": "string",
+                "description": "Genotyping platforms used"
+              },
+              "snp_count": {
+                "type": "integer",
+                "description": "Number of SNPs analyzed"
+              },
+              "imputed": {
+                "type": "boolean",
+                "description": "Whether data was imputed"
+              },
+              "pooled": {
+                "type": "boolean",
+                "description": "Whether data was pooled"
+              },
+              "gxe": {
+                "type": "boolean",
+                "description": "Gene-environment interaction study"
+              },
+              "gxg": {
+                "type": "boolean",
+                "description": "Gene-gene interaction study"
+              },
+              "full_summary_stats_available": {
+                "type": "boolean",
+                "description": "Full summary statistics available"
+              },
+              "full_summary_stats": {
+                "type": "string",
+                "description": "URL to full summary statistics"
+              },
+              "pubmed_id": {
+                "type": "string",
+                "description": "PubMed reference"
+              },
+              "terms_of_license": {
+                "type": "string",
+                "description": "Data usage license"
+              },
+              "array_manufacturer": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "_links": {
+                "type": "object",
+                "description": "API links"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "description": "Pagination and navigation metadata",
+          "properties": {
+            "pagination": {
+              "type": "object",
+              "properties": {
+                "size": {
+                  "type": "integer"
+                },
+                "totalElements": {
+                  "type": "integer"
+                },
+                "totalPages": {
+                  "type": "integer"
+                },
+                "number": {
+                  "type": "integer"
+                }
+              }
+            },
+            "links": {
+              "type": "object",
+              "description": "Navigation links"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "GWASSNPsForGene",
+    "name": "gwas_get_snps_for_gene",
+    "description": "Get all SNPs mapped to a specific gene.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "mapped_gene": {
+          "type": "string",
+          "description": "Gene name or symbol"
+        },
+        "size": {
+          "type": "integer",
+          "description": "Number of results to return per page"
+        },
+        "page": {
+          "type": "integer",
+          "description": "Page number for pagination"
+        }
+      },
+      "required": [
+        "mapped_gene"
+      ]
+    },
+    "label": [
+      "GWAS",
+      "SNPs",
+      "Gene",
+      "Mapping"
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "GWAS SNPs for gene results with pagination metadata",
+      "properties": {
+        "data": {
+          "type": "array",
+          "description": "Array of SNP objects",
+          "items": {
+            "type": "object",
+            "properties": {
+              "rs_id": {
+                "type": "string",
+                "description": "dbSNP rs identifier"
+              },
+              "merged": {
+                "type": "integer",
+                "description": "Merged status"
+              },
+              "functional_class": {
+                "type": "string",
+                "description": "Functional classification"
+              },
+              "last_update_date": {
+                "type": "string",
+                "description": "Last update timestamp"
+              },
+              "locations": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "chromosome_name": {
+                      "type": "string"
+                    },
+                    "chromosome_position": {
+                      "type": "integer"
+                    },
+                    "region": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "alleles": {
+                "type": "string",
+                "description": "Allele information"
+              },
+              "most_severe_consequence": {
+                "type": "string",
+                "description": "Most severe functional consequence"
+              },
+              "mapped_genes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "maf": {
+                "type": "number",
+                "description": "Minor allele frequency"
+              },
+              "minor_allele": {
+                "type": "string",
+                "description": "Minor allele"
+              },
+              "_links": {
+                "type": "object",
+                "description": "API links"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "description": "Pagination and navigation metadata",
+          "properties": {
+            "pagination": {
+              "type": "object",
+              "properties": {
+                "size": {
+                  "type": "integer"
+                },
+                "totalElements": {
+                  "type": "integer"
+                },
+                "totalPages": {
+                  "type": "integer"
+                },
+                "number": {
+                  "type": "integer"
+                }
+              }
+            },
+            "links": {
+              "type": "object",
+              "description": "Navigation links"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "GWASAssociationsForStudy",
+    "name": "gwas_get_associations_for_study",
+    "description": "Get all associations for a specific study, sorted by p-value.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "accession_id": {
+          "type": "string",
+          "description": "Study accession identifier"
+        },
+        "size": {
+          "type": "integer",
+          "description": "Number of results to return per page"
+        },
+        "page": {
+          "type": "integer",
+          "description": "Page number for pagination"
+        }
+      },
+      "required": [
+        "accession_id"
+      ]
+    },
+    "label": [
+      "GWAS",
+      "Associations",
+      "Study",
+      "Results"
+    ],
+    "return_schema": {
+      "type": "object",
+      "description": "GWAS associations for study results with pagination metadata",
+      "properties": {
+        "data": {
+          "type": "array",
+          "description": "Array of GWAS association objects",
+          "items": {
+            "type": "object",
+            "properties": {
+              "association_id": {
+                "type": "integer",
+                "description": "Unique association identifier"
+              },
+              "p_value": {
+                "type": "number",
+                "description": "Statistical p-value"
+              },
+              "beta": {
+                "type": "string",
+                "description": "Effect size (beta coefficient)"
+              },
+              "efo_traits": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "efo_id": {
+                      "type": "string"
+                    },
+                    "efo_trait": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "reported_trait": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "accession_id": {
+                "type": "string",
+                "description": "Study accession ID"
+              },
+              "pubmed_id": {
+                "type": "string",
+                "description": "PubMed reference"
+              },
+              "first_author": {
+                "type": "string",
+                "description": "First author name"
+              },
+              "snp_effect_allele": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "snp_allele": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "rs_id": {
+                      "type": "string"
+                    },
+                    "effect_allele": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "locations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "mapped_genes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "ci_lower": {
+                "type": "number",
+                "description": "Lower confidence interval"
+              },
+              "ci_upper": {
+                "type": "number",
+                "description": "Upper confidence interval"
+              },
+              "risk_frequency": {
+                "type": "string",
+                "description": "Risk allele frequency"
+              },
+              "range": {
+                "type": "string",
+                "description": "Effect size range"
+              },
+              "_links": {
+                "type": "object",
+                "description": "API links"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "description": "Pagination and navigation metadata",
+          "properties": {
+            "pagination": {
+              "type": "object",
+              "properties": {
+                "size": {
+                  "type": "integer"
+                },
+                "totalElements": {
+                  "type": "integer"
+                },
+                "totalPages": {
+                  "type": "integer"
+                },
+                "number": {
+                  "type": "integer"
+                }
+              }
+            },
+            "links": {
+              "type": "object",
+              "description": "Navigation links"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "GWASGeneSearch",
+    "name": "GWAS_search_associations_by_gene",
+    "description": "Search GWAS Catalog associations by gene name (returns strongest risk allele and p-value fields).",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "gene_name": {"type": "string", "description": "Gene symbol (e.g., BRCA1)."},
+        "size": {"type": "integer", "description": "Max associations to return.", "default": 5}
+      },
+      "required": ["gene_name"]
+    },
+    "return_schema": {
+      "type": "object",
+      "properties": {
+        "gene_name": {"type": "string"},
+        "association_count": {"type": "integer"},
+        "associations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "study": {"type": "string"},
+              "strongestRiskAllele": {"type": "string"},
+              "pvalue": {"type": "number"}
+            }
+          }
+        },
+        "total_found": {"type": "integer"}
+      }
+    }
+  }
+]
